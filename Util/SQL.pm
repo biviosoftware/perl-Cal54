@@ -26,6 +26,18 @@ sub initialize_test_data {
     my($self) = @_;
     my(@res) = shift->SUPER::initialize_test_data(@_);
     $self->new_other('TestUser')->init;
+    my($ro) = $self->new('RealmOwnerBase')->create_realm({
+	
+    });
+    $self->model(CalendarEventForm => {
+	'RealmOwner.display_name' => 'abc',
+	'CalendarEvent.description' => 'def',
+	'CalendarEvent.url' => 'http://www.google.com',
+	'start_date' => '2010/12/28',
+	'end_date' => '2010/12/28',
+	'start_time' => '12:00',
+	'end_time' => '12:00',
+    });
     return @res;
 }
 
