@@ -23,13 +23,13 @@ sub merge_overrides {
 		'Bivio::TypeError' => 'Cal54::Delegate::TypeError',
 	    },
 	    maps => {
-		Action => ['Cal54::Action'],
+#		Action => ['Cal54::Action'],
 		Delegate => ['Cal54::Delegate'],
 		Facade => ['Cal54::Facade'],
-		Model => ['Cal54::Model'],
+#		Model => ['Cal54::Model'],
 		ShellUtil => ['Cal54::Util'],
 		TestLanguage => ['Cal54::Test'],
-		Type => ['Cal54::Type'],
+#		Type => ['Cal54::Type'],
 		View => ['Cal54::View'],
 	    },
 	}),
@@ -37,6 +37,9 @@ sub merge_overrides {
 	    default => 'Cal54',
 	    http_suffix => 'www.cal54.com',
 	    mail_host => 'cal54.com',
+	},
+	'Bivio::UI::View::ThreePartPage' => {
+	    center_replaces_middle => 1,
 	},
 	$proto->merge_http_log({
 	    ignore_list => [

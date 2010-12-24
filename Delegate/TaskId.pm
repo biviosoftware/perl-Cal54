@@ -9,6 +9,12 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 sub get_delegate_info {
     my($proto) = @_;
     return $proto->merge_task_info(@{$proto->standard_components}, [
+	{
+	    name => 'SITE_ROOT',
+	    items => [
+		'View.Calendar->home_page',
+	    ],
+	},
 #TODO:  Your tasks go here
     ]);
 }
