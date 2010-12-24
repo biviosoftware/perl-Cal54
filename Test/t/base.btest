@@ -1,0 +1,30 @@
+# Copyright (c) 2010 bivio Software, Inc.  All rights reserved.
+# $Id$
+test_setup('Cal54');
+home_page();
+verify_no_link('login');
+follow_menu_link('register');
+my($e) = generate_local_email(test_name() . $$);
+submit_form({
+    email => $e,
+});
+follow_link_in_mail($e, 'register');
+submit_form({
+    '^new' => 'password',
+    '^re' => 'password',
+});
+follow_menu_link(qw(logout login));
+save_excursion(sub {
+    test_deviance('not found');
+    submit_form({
+	email => 'no_such_email@nowhere.com',
+	pass => 'password',
+    });
+    test_conformance();
+});
+submit_form({
+    email => $e,
+    pass => 'password',
+});
+verify_link('logout');
+
