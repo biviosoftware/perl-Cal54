@@ -27,6 +27,7 @@ sub list {
 		    query => 'THIS_DETAIL',
 		},
 	    }],
+	    'Address.street1',
 	    ['calendar.Website.url', {
 		uri => ['calendar.Website.url'],
 	    }],
