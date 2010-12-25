@@ -12,7 +12,7 @@ sub get_delegate_info {
 	{
 	    name => 'SITE_ROOT',
 	    items => [
-		'View.Calendar->home_page',
+		'View.Home->list',
 	    ],
 	},
 #TODO:  Your tasks go here

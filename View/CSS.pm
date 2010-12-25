@@ -9,42 +9,62 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub internal_site_css {
     return shift->SUPER::internal_site_css(@_) . <<'EOF';
+body.c4_home {
+  Font('c4_home');
+  margin: 2ex 1em;
+}
 form.c4_query {
-  position: fixed;
-  margin-top: 1ex;
+  If(
+    ['!', 'Type.UserAgent', '->is_msie_6_or_before'],
+    q{position: fixed;},
+  );
 }
-td.footer_center,
-div.main_body {
+div.c4_list {
+  padding-left: 12em;
   width: 40em;
+  If(
+    ['Type.UserAgent', '->is_msie_6_or_before'],
+    q{position: absolute; top: 2ex; left: 1em;},
+  );
 }
-td.footer_left,
-td.main_left {
-  width: 12em;
+.c4_query img.c4_logo {
+  margin-bottom: .5ex;
 }
-form.c4_query input {
+.c4_query input {
   width: 10em;
   display: block;
 }
-form.c4_query div.item {
+.c4_query div.item {
+  padding-left: 2px;
   margin-bottom: 2ex;
-!  width: 5em;
 }
-.c4_main_list .item {
-  margin-bottom: 1ex;
-  margin-top: 0;
+.c4_list .item {
+  margin-bottom: 2ex;
 }
-.c4_main_list .item a {
-  text-decoration: underline;
+.c4_list .item a.c4_go {
+  Font('c4_item_a');
+  margin-bottom: .2ex;
+  display: block;
 }
-div.item div.excerpt {
-  margin-top: .5ex;
-  font-size: 90%;
+.c4_list .item a:hover {
+  Font('c4_item_a_hover');
 }
-span.cal54 {
-  font-size: 80%;
+.c4_list .item a:visited {
+  Font('c4_item_a_visited');
 }
-.c4_main_list div.date {
-  font-weight: bold;
+.c4_list .item .excerpt {
+  Font('c4_excerpt');
+}
+.c4_list div.date {
+  Font('c4_date');
+  margin-bottom: .7ex;
+  color: #FF3333;
+}
+span.c4_site_name {
+  Font('c4_site_name');
+}
+div.c4_copy {
+  Font('c4_copy');
 }
 EOF
 }

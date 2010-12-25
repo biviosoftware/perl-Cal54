@@ -10,26 +10,24 @@ my($_SELF) = __PACKAGE__->new({
     uri => 'cal54',
     http_host => 'www.cal54.com',
     mail_host => 'cal54.com',
+    Color => [
+	[[qw(c4_site_name c4_date)]=> 0xff3333],
+	[c4_item_a_visited => 0xaa3333],
+	[c4_item_a_hover => 0xff0000],
+    ],
     Constant => [
 	[ThreePartPage_want_ForumDropDown => 1],
 	[ThreePartPage_want_dock_left_standard => 1],
-	[ThreePartPage_want_SearchForm => 0],
-    ],
-    CSS => [
-	[table_footer => q{
-            margin: .5ex 0 .5ex 0;
-	    padding-top: .5ex;
-	    padding-bottom: 7ex;
-        }],
-	[logo_su_logo => q{}],
-	[td_header_left => q{}],
-	[table_main => q{
-	    width: 100%;
-	    margin: 0 auto;
-        }],
     ],
     Font => [
-	[body => ['family=Verdana', 'medium', 'style=margin-top: 0; margin-bottom: 0; margin-right: .5em; margin-left: .5em; min-width: 50em']],
+	[c4_home => ['family=Arial, Helvetica, sans-serif', 'medium']],
+	[c4_date => ['bold']],
+	[c4_site_name => ['family=Times', 'bold']],
+	[c4_excerpt => ['size=80%']],
+	[c4_item_a => ['underline']],
+	[c4_item_a_visited => []],
+	[c4_item_a_hover => []],
+	[c4_copy => ['size=80%', 'center']],
     ],
     Text => [
 	[site_name => q{bivio Software, Inc.}],
