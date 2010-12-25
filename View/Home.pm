@@ -41,24 +41,28 @@ sub _body {
 		DIV_item(Join([
 		    SPAN('Where are you?'),
 		    INPUT({
-			VALUE => 'Denver',
+			VALUE => 'Boulder',
+			DISABLED => 1,
 		    }),
 		])),
 		DIV_item(Join([
 		    SPAN('What kind of event?'),
 		    INPUT({
 			VALUE => 'music',
+			DISABLED => 1,
 		    }),
 		])),
 		DIV_item(Join([
 		    SPAN('When are you free?'),
 		    INPUT({
 			VALUE => 'now',
+			DISABLED => 1,
 		    }),
 		])),
 		DIV_item(Join([
 		    INPUT({
 			TYPE => 'submit',
+			DISABLED => 1,
 			VALUE => "Let's go!",
 		    }),
 		])),
