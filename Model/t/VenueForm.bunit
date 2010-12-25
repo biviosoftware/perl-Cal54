@@ -2,18 +2,19 @@
 # $Id$
 FormModel();
 req()->set_realm_and_user(qw(site-admin adm));
+my($values);
 my($rid);
 [
-    [{
-	'RealmOwner.display_name' => 'The Laughing Goat Coffeehouse',
-	'Address.street1' => '1709 Pearl Street',
+    [$values = {
+	'RealmOwner.display_name' => 'VenueForm Test',
+	'Address.street1' => '1709 Venue Street',
 	'Address.city' => 'Boulder',
 	'Address.state' => 'CO',
 	'Address.zip' => 80302,
 	'Address.country' => 'US',
-	'calendar.Website.url' => 'http://thelaughinggoat.com/events.php',
-	'Website.url' => 'http://thelaughinggoat.com',
-	'Email.email' => 'contact@thelaughinggoat.com',
+	'calendar.Website.url' => 'http://venue-form-test.com/events.php',
+	'Website.url' => 'http://venue-form-test.com',
+	'Email.email' => 'contact@venue-form-test.com',
 	'Phone.phone' => undef,
 	
     }] => [{
@@ -22,16 +23,16 @@ my($rid);
 	},
 	'Model.RealmOwner' => {
 	    realm_id => sub {$rid = req('Model.Venue', 'venue_id')},
-	    display_name => 'The Laughing Goat Coffeehouse',
+	    display_name => 'VenueForm Test',
 	},
 	'Model.Phone' => {
 	    phone => undef,
 	},
 	'Model.Website' => {
-	    url => 'http://thelaughinggoat.com/events.php',
+	    url => 'http://venue-form-test.com/events.php',
 	},
 	'Model.Email' => {
-	    email => 'contact@thelaughinggoat.com',
+	    email => 'contact@venue-form-test.com',
 	},
 	'Model.Address' => {
 	    country => 'US',
@@ -40,20 +41,9 @@ my($rid);
     req_state({
 	query => sub {{this => [$rid]}},
     }),
-    empty_case({
-	'RealmOwner.display_name' => 'The Laughing Goat Coffeehouse',
-	'Address.street1' => '1709 Pearl Street',
-	'Address.city' => 'Boulder',
-	'Address.state' => 'CO',
-	'Address.zip' => 80302,
-	'Address.country' => 'US',
-	'calendar.Website.url' => 'http://thelaughinggoat.com/events.php',
-	'Website.url' => 'http://thelaughinggoat.com',
-	'Email.email' => 'contact@thelaughinggoat.com',
-	'Phone.phone' => undef,
-    }),
+    empty_case($values),
     [{
-	'RealmOwner.display_name' => 'dn',
+	'RealmOwner.display_name' => 'dn Test',
 	'Address.street1' => 's1',
 	'Address.city' => 'Boulder',
 	'Address.state' => 'CO',
@@ -61,11 +51,11 @@ my($rid);
 	'Address.country' => 'US',
 	'calendar.Website.url' => 'http://tlg.com/cal',
 	'Website.url' => 'http://tlg.com',
-	'Email.email' => 'a@a.a',
+	'Email.email' => 'e2@venue-form-test.com',
 	'Phone.phone' => '555',
     }] => [{
 	'Model.RealmOwner' => {
-	    display_name => 'dn',
+	    display_name => 'dn Test',
 	},
 	'Model.Phone' => {
 	    phone => '555',
@@ -74,7 +64,7 @@ my($rid);
 	    url => 'http://tlg.com/cal',
 	},
 	'Model.Email' => {
-	    email => 'a@a.a',
+	    email => 'e2@venue-form-test.com',
 	},
 	'Model.Address' => {
 	    street1 => 's1',
