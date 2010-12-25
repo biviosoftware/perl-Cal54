@@ -68,7 +68,10 @@ sub internal_initialize {
         visible => [
 	    $self->field_decl(
 		[map(
-		    $_ =~ /street2|phone/ ? [$_, undef, 'NONE'] : $_,
+		    ($_ =~ /street2|phone/ ? [$_, undef, 'NONE']
+		        : $_ =~ /state/ ? [$_, 'USState']
+			: $_ =~ /zip/ ? [$_, 'USZipCode']
+			: $_),
 		    $_VL->EDITABLE_FIELD_LIST,
 		)],
 		{constraint => 'NOT_NULL'},

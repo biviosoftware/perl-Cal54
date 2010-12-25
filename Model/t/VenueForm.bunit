@@ -70,4 +70,20 @@ my($rid);
 	    street1 => 's1',
 	},
     }],
+    req_state({query => undef}),
+    error_case({
+	'RealmOwner.display_name' => 'VenueForm Test',
+	'Address.street1' => '1709 Venue Street',
+	'Address.city' => 'Boulder',
+	'Address.state' => 'xx',
+	'Address.zip' => '8030',
+	'Address.country' => 'US',
+	'calendar.Website.url' => 'http://venue-form-test.com/events.php',
+	'Website.url' => 'http://venue-form-test.com',
+	'Email.email' => 'contact@venue-form-test.com',
+	'Phone.phone' => undef,
+    }, {
+	'Address.state' => 'NOT_FOUND',
+	'Address.zip' => 'US_ZIP_CODE',
+    }),
 ];
