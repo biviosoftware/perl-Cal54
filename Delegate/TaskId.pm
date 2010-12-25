@@ -15,7 +15,31 @@ sub get_delegate_info {
 		'View.Home->list',
 	    ],
 	},
-#TODO:  Your tasks go here
+	[qw(
+	    VENUE_HOME
+	    501
+	    VENUE
+	    ANYBODY
+	    Action.Error
+	)],
+#TODO: This should be some other perm besides FEATURE_SITE_ADMIN
+	[qw(
+	    VENUE_LIST
+	    502
+	    FORUM
+	    DATA_READ&FEATURE_SITE_ADMIN
+	    Model.VenueList->execute_load_page
+	    View.Venue->list
+        )],
+	[qw(
+	    VENUE_FORM
+	    503
+	    FORUM
+	    DATA_READ&DATA_WRITE&FEATURE_SITE_ADMIN
+	    Model.VenueForm
+	    View.Venue->form
+	    next=VENUE_LIST
+        )],
     ]);
 }
 
