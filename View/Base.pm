@@ -11,10 +11,4 @@ sub VIEW_SHORTCUTS {
     return 'Cal54::ViewShortcuts';
 }
 
-sub internal_xhtml_adorned {
-    my($self) = @_;
-    my(@res) = shift->SUPER::internal_xhtml_adorned(@_);
-    return @res;
-}
-
 1;

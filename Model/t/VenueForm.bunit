@@ -1,0 +1,83 @@
+# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+FormModel();
+req()->set_realm_and_user(qw(site-admin adm));
+my($rid);
+[
+    [{
+	'RealmOwner.display_name' => 'The Laughing Goat Coffeehouse',
+	'Address.street1' => '1709 Pearl Street',
+	'Address.city' => 'Boulder',
+	'Address.state' => 'CO',
+	'Address.zip' => 80302,
+	'Address.country' => 'US',
+	'calendar.Website.url' => 'http://thelaughinggoat.com/events.php',
+	'Website.url' => 'http://thelaughinggoat.com',
+	'Email.email' => 'contact@thelaughinggoat.com',
+	'Phone.phone' => undef,
+	
+    }] => [{
+	'Model.RealmDAG' => {
+	    parent_id => req('auth_id'),
+	},
+	'Model.RealmOwner' => {
+	    realm_id => sub {$rid = req('Model.Venue', 'venue_id')},
+	    display_name => 'The Laughing Goat Coffeehouse',
+	},
+	'Model.Phone' => {
+	    phone => undef,
+	},
+	'Model.Website' => {
+	    url => 'http://thelaughinggoat.com/events.php',
+	},
+	'Model.Email' => {
+	    email => 'contact@thelaughinggoat.com',
+	},
+	'Model.Address' => {
+	    country => 'US',
+	},
+    }],
+    req_state({
+	query => sub {{this => [$rid]}},
+    }),
+    empty_case({
+	'RealmOwner.display_name' => 'The Laughing Goat Coffeehouse',
+	'Address.street1' => '1709 Pearl Street',
+	'Address.city' => 'Boulder',
+	'Address.state' => 'CO',
+	'Address.zip' => 80302,
+	'Address.country' => 'US',
+	'calendar.Website.url' => 'http://thelaughinggoat.com/events.php',
+	'Website.url' => 'http://thelaughinggoat.com',
+	'Email.email' => 'contact@thelaughinggoat.com',
+	'Phone.phone' => undef,
+    }),
+    [{
+	'RealmOwner.display_name' => 'dn',
+	'Address.street1' => 's1',
+	'Address.city' => 'Boulder',
+	'Address.state' => 'CO',
+	'Address.zip' => 80302,
+	'Address.country' => 'US',
+	'calendar.Website.url' => 'http://tlg.com/cal',
+	'Website.url' => 'http://tlg.com',
+	'Email.email' => 'a@a.a',
+	'Phone.phone' => '555',
+    }] => [{
+	'Model.RealmOwner' => {
+	    display_name => 'dn',
+	},
+	'Model.Phone' => {
+	    phone => '555',
+	},
+	'Model.Website' => {
+	    url => 'http://tlg.com/cal',
+	},
+	'Model.Email' => {
+	    email => 'a@a.a',
+	},
+	'Model.Address' => {
+	    street1 => 's1',
+	},
+    }],
+];

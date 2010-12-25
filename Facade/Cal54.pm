@@ -18,6 +18,16 @@ my($_SELF) = __PACKAGE__->new({
     Constant => [
 	[ThreePartPage_want_ForumDropDown => 1],
 	[ThreePartPage_want_dock_left_standard => 1],
+	[robots_txt_allow_all => 0],
+	[my_site_redirect_map => sub {[
+ 	    [qw(site-admin 0 VENUE_LIST)],
+	]}],
+	[xlink_venue_list => sub {
+	     return {
+		 realm => shift->get_value('site_admin_realm_name'),
+		 task_id => 'VENUE_LIST',
+	     };
+	 }],
     ],
     Font => [
 	[c4_home => ['family=Arial, Helvetica, sans-serif', 'medium']],
@@ -29,12 +39,25 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_item_a_hover => []],
 	[c4_copy => ['size=80%', 'center']],
     ],
+    Task => [
+	[VENUE_LIST => '?/venues'],
+	[VENUE_FORM => '?/edit-venue'],
+    ],
     Text => [
 	[site_name => q{bivio Software, Inc.}],
 	[site_copyright => q{bivio Software, Inc.}],
 	[home_page_uri => '/bp'],
-	[xlink => [
-	    xhtml_logo_normal => q{String(' ');},
+	[[qw(title xlink)] => [
+	    VENUE_LIST => 'Venues',
+	    VENUE_FORM => 'Edit Venue',
+	]],
+	['task_menu.title' => [
+	    VENUE_FORM => 'Add Venue',
+	]],
+	[[qw(VenueList VenueForm)] => [
+	    'Website.url' => 'Home Page',
+	    'calendar.Website.url' => 'Calendar Link',
+	    'RealmOwner.display_name' => 'Full Name',
 	]],
     ],
 });

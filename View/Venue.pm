@@ -1,0 +1,37 @@
+# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+package Cal54::View::Venue;
+use strict;
+use Bivio::Base 'View.Base';
+use Bivio::UI::ViewLanguageAUTOLOAD;
+
+our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
+
+sub form {
+    return shift->internal_body(
+	vs_simple_form(VenueForm => [
+	    map("VenueForm.$_", b_use('Model.VenueList')->EDITABLE_FIELD_LIST),
+	]),
+    );
+}
+
+sub list {
+    return shift->internal_put_base_attr(
+	tools => TaskMenu([
+	    'VENUE_FORM',
+	]),
+	body => vs_paged_list(VenueList => [
+	    ['RealmOwner.display_name', {
+		wf_list_link => {
+		    task => 'VENUE_FORM',
+		    query => 'THIS_DETAIL',
+		},
+	    }],
+	    ['calendar.Website.url', {
+		uri => ['calendar.Website.url'],
+	    }],
+	]),
+    );
+}
+
+1;

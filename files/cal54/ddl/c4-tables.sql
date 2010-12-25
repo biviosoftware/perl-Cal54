@@ -11,3 +11,8 @@
 --   It makes it much easier to manage the constraints and indices this way.
 --
 
+CREATE TABLE venue_t (
+  venue_id NUMERIC(18) NOT NULL,
+  CONSTRAINT venue_t1 PRIMARY KEY(venue_id)
+)
+/
