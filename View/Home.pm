@@ -62,7 +62,7 @@ sub _body {
 			VALUE => "Let's go!",
 		    }),
 		])),
-		Link('My Site', 'MY_SITE'),
+		XLink('venue_list'),
 	    ]),
 	}),
 	DIV_c4_list(Join([
