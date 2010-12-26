@@ -49,6 +49,7 @@ sub _body {
 		    Link(
 			Join([
 			    String(['owner.RealmOwner.display_name']),
+			    ', ',
 			    String(['address']),
 			]),
 			['Website.url'],
