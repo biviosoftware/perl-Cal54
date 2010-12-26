@@ -12,6 +12,7 @@ sub get_delegate_info {
 	{
 	    name => 'SITE_ROOT',
 	    items => [
+		'Model.HomeList',
 		'View.Home->list',
 	    ],
 	},
