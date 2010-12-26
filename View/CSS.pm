@@ -41,10 +41,11 @@ div.c4_list {
 .c4_list .item {
   margin-bottom: 2ex;
 }
-.c4_list .item a.c4_go {
+.c4_list .item a {
   Font('c4_item_a');
+}
+.c4_list .item div.line {
   margin-bottom: .2ex;
-  display: block;
 }
 .c4_list .item a:hover {
   Font('c4_item_a_hover');
