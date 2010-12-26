@@ -11,6 +11,7 @@ my($_TDT) = b_use('Type.DateTime');
 my($_DEFAULT_TZ) = b_use('Type.TimeZone')->AMERICA_DENVER;
 my($_IDI) = __PACKAGE__->instance_data_index;
 my($_S) = b_use('Type.String');
+my($_HTML) = b_use('Bivio.HTML');
 
 sub execute {
     return shift->execute_load_page(@_);
@@ -36,12 +37,15 @@ sub internal_initialize {
 	    _exclude_realm_owner($_VL->EDITABLE_FIELD_LIST),
 	    $_VL->LOCATION_EQUIVALENCE_LIST,
 	    $self->field_decl(
-		[qw(
-		    start_end_am_pm
-		    month_day
-		    address
-		    excerpt
-		)],
+		[
+		    qw(
+			start_end_am_pm
+			month_day
+			address
+			excerpt
+		    ),
+		    [qw(map_uri HTTPURI)],
+		],
 		'Text',
 	    ),
 	],
@@ -97,6 +101,24 @@ sub internal_post_load_row {
     $row->{excerpt} = ${$_S->canonicalize_and_excerpt(
 	$row->{'CalendarEvent.description'} || '',
     )};
+    $row->{map_uri} = 'http://maps.google.com/maps?q='
+	. b_debug $_HTML->escape_query(
+	    join(
+		' ',
+		map(
+		    $row->{$_} ? $row->{$_} : (),
+		    qw(
+			owner.RealmOwner.display_name
+			Address.street1
+			Address.street2
+			Address.city
+			Address.state
+			Address.zip
+			Address.country
+		    ),
+		),
+	    ),
+	);
     return 1;
 }
 

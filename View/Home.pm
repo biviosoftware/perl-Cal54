@@ -37,24 +37,27 @@ sub _body {
 	    List(HomeList => [
 		DIV_date(['month_day']),
 		DIV_item(Join([
-		    Link(
-			Join([
-			    String(['start_end_am_pm']),
-			    ', ',
-			    String(['RealmOwner.display_name']),
-			]),
-			Or(['CalendarEvent.url'], ['calendar.Website.url']),
-			'c4_go',
+		    DIV_line(
+			Link(
+			    Join([
+				String(['start_end_am_pm']),
+				', ',
+				String(['RealmOwner.display_name']),
+			    ]),
+			    Or(['CalendarEvent.url'], ['calendar.Website.url']),
+			),
 		    ),
-		    Link(
-			Join([
+		    DIV_line(Join([
+			Link(
 			    String(['owner.RealmOwner.display_name']),
-			    ', ',
+			    ['Website.url'],
+			),
+			String(', '),
+			Link(
 			    String(['address']),
-			]),
-			['Website.url'],
-			'c4_go',
-		    ),
+			    ['map_uri'],
+			),
+		    ])),
 		    DIV_excerpt(String(['excerpt'])),
 		])),
 	    ]),
