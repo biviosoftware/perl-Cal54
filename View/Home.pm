@@ -108,26 +108,4 @@ sub _dummy_form {
     });
 }
 
-sub _dummy_list {
-    return DIV_c4_list(Join([
-	DIV_date('December 13, 2010'),
-	DIV_item(Join([
-	    Link(String(qq{9pm, Jeff Jenkins' Piano Conversations}), '/jj', 'c4_go'),
-	    Link(String(qq{Dazzle Jazz, 930 Lincoln St, Denver, CO 80203, 303.839.5100}), '/dazzlejazz.com', 'c4_go'),
-	    DIV_excerpt(String(q{Think Marian McPartland's piano jazz, only live!  Jeff Jenkins, one of the country's premier pianists, will be bringing in different guests every week to play and converse with.})),
-	])),
-	DIV_item(Join([
-	    Link(String(qq{9pm, Jeff Jenkins' Piano Conversations}), '/', 'c4_go'),
-	    Link(String(qq{Dazzle Jazz, 930 Lincoln St, Denver, CO 80203, 303.839.5100}), '/dazzlejazz.com', 'c4_go'),
-	    DIV_excerpt(String(q{Think Marian McPartland's piano jazz, only live!  Jeff Jenkins, one of the country's premier pianists, will be bringing in different guests every week to play and converse with.})),
-	])),
-	DIV_date('December 14, 2010'),
-	DIV_item(Join([
-	    Link(String(qq{9pm, Jeff Jenkins' Piano Conversations}), '/', 'c4_go'),
-	    Link(String(qq{Dazzle Jazz, 930 Lincoln St, Denver, CO 80203, 303.839.5100}), '/dazzlejazz.com', 'c4_go'),
-	    DIV_excerpt(String(q{Think Marian McPartland's piano jazz, only live!  Jeff Jenkins, one of the country's premier pianists, will be bringing in different guests every week to play and converse with.})),
-	])),
-    ]));
-}
-
 1;
