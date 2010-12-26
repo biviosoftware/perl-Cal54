@@ -28,7 +28,7 @@ sub merge_overrides {
 		ShellUtil => ['Cal54::Util'],
 		TestLanguage => ['Cal54::Test'],
 		XHTMLWidget => ['Cal54::XHTMLWidget'],
-		Type => ['Cal54::Type'],
+#		Type => ['Cal54::Type'],
 		View => ['Cal54::View'],
 	    },
 	}),
