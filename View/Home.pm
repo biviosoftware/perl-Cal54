@@ -9,6 +9,7 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('HTMLFormat.DateTime');
 
 #TODO: Deal with not found URIs.  SITE_ROOT must have uri /*, but we don't want to find any page to be this page.
+#TODO: If there is no event page, then render the description in a little popup window
 
 sub list {
     my($self) = @_;
