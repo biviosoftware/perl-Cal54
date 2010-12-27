@@ -59,7 +59,6 @@ div.c4_list {
 .c4_list div.date {
   Font('c4_date');
   margin-bottom: .7ex;
-  color: #FF3333;
 }
 span.c4_site_name {
   Font('c4_site_name');
