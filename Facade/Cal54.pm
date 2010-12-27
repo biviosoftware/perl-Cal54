@@ -11,9 +11,11 @@ my($_SELF) = __PACKAGE__->new({
     http_host => 'www.cal54.com',
     mail_host => 'cal54.com',
     Color => [
-	[[qw(c4_site_name c4_date)]=> 0xff3333],
+	[[qw(c4_site_name)]=> 0xff3333],
 	[c4_item_a_visited => 0xaa3333],
-	[c4_item_a_hover => 0xff0000],
+	[[qw(c4_item_a c4_item_a_hover)] => 0x3333aa],
+	[[qw(c4_item_a_visited)] => 0x191970],
+	[c4_date => 0xff4500],
     ],
     Constant => [
 	[ThreePartPage_want_ForumDropDown => 1],
@@ -34,9 +36,9 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_date => ['bold']],
 	[c4_site_name => ['family=Times', 'bold']],
 	[c4_excerpt => ['size=80%']],
-	[c4_item_a => ['underline']],
+	[c4_item_a => []],
 	[c4_item_a_visited => []],
-	[c4_item_a_hover => []],
+	[c4_item_a_hover => ['underline']],
 	[c4_copy => ['size=80%', 'center']],
     ],
     Task => [
