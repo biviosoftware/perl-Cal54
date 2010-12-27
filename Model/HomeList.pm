@@ -102,7 +102,7 @@ sub internal_post_load_row {
 	$row->{'CalendarEvent.description'} || '',
     )};
     $row->{map_uri} = 'http://maps.google.com/maps?q='
-	. b_debug $_HTML->escape_query(
+	. $_HTML->escape_query(
 	    join(
 		' ',
 		map(
