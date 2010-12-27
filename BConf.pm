@@ -27,9 +27,9 @@ sub merge_overrides {
 		Model => ['Cal54::Model'],
 		ShellUtil => ['Cal54::Util'],
 		TestLanguage => ['Cal54::Test'],
-		XHTMLWidget => ['Cal54::XHTMLWidget'],
-#		Type => ['Cal54::Type'],
+		Type => ['Cal54::Type'],
 		View => ['Cal54::View'],
+		XHTMLWidget => ['Cal54::XHTMLWidget'],
 	    },
 	}),
 	'Bivio::UI::Facade' => {
