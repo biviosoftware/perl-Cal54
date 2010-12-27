@@ -11,11 +11,9 @@ my($_SELF) = __PACKAGE__->new({
     http_host => 'www.cal54.com',
     mail_host => 'cal54.com',
     Color => [
-	[[qw(c4_site_name)]=> 0xff3333],
-	[c4_item_a_visited => 0xaa3333],
-	[[qw(c4_item_a c4_item_a_hover)] => 0x3333aa],
-	[[qw(c4_item_a_visited)] => 0x191970],
-	[c4_date => 0xff4500],
+	[[qw(c4_site_name c4_site_tag)]=> 0xff3333],
+	[[qw(c4_item_a_visited c4_item_a c4_item_a_hover)] => 0x3333aa],
+	[[qw(c4_date c4_time)] => 0xff7733],
     ],
     Constant => [
 	[ThreePartPage_want_ForumDropDown => 1],
@@ -33,20 +31,25 @@ my($_SELF) = __PACKAGE__->new({
     ],
     Font => [
 	[c4_home => ['family=Arial, Helvetica, sans-serif', 'medium']],
-	[c4_date => ['bold']],
 	[c4_site_name => ['family=Times', 'bold']],
-	[c4_excerpt => ['size=80%']],
+	[c4_excerpt => ['80%']],
 	[c4_item_a => []],
 	[c4_item_a_visited => []],
 	[c4_item_a_hover => ['underline']],
-	[c4_copy => ['size=80%', 'center']],
+	[c4_date => ['bold']],
+	[c4_time => []],
+	[c4_venue => ['90%']],
+	[c4_copy => ['80%', 'center']],
+	[c4_site_tag => ['120%', 'family=Times', 'bold']],
+	[c4_tm => ['60%', 'style=vertical-align: top; line-height: 90%']],
     ],
     Task => [
 	[VENUE_LIST => '?/venues'],
 	[VENUE_FORM => '?/edit-venue'],
     ],
     Text => [
-	[site_name => q{bivio Software, Inc.}],
+	[site_name => q{CAL 54, Inc.}],
+	[c4_site_tag => q{SPAN(q{All Events Fit to Link});SPAN_c4_tm('&trade;');}],
 	[site_copyright => q{bivio Software, Inc.}],
 	[home_page_uri => '/bp'],
 	[[qw(title xlink)] => [
@@ -55,6 +58,9 @@ my($_SELF) = __PACKAGE__->new({
 	]],
 	['task_menu.title' => [
 	    VENUE_FORM => 'Add Venue',
+	]],
+	[Venue => [
+	    scraper_type => 'Scraper',
 	]],
 	[[qw(VenueList VenueForm)] => [
 	    'Website.url' => 'Home Page',

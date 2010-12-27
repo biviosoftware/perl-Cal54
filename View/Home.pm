@@ -34,35 +34,37 @@ sub pre_compile {
 sub _body {
     return Join([
 	_dummy_form(),
-	DIV_c4_list(
+	DIV_c4_list(Join([
+	    DIV_c4_site_tag(vs_text_as_prose('c4_site_tag')),
 	    List(HomeList => [
 		DIV_date(['month_day']),
 		DIV_item(Join([
-		    DIV_line(
+		    DIV_line(Join([
+			SPAN_time(String(['start_end_am_pm'])),
+			' ',
 			Link(
-			    Join([
-				String(['start_end_am_pm']),
-				', ',
-				String(['RealmOwner.display_name']),
-			    ]),
+			    String(['RealmOwner.display_name']),
 			    Or(['CalendarEvent.url'], ['calendar.Website.url']),
+			    'title',
 			),
-		    ),
+		    ])),
 		    DIV_line(Join([
 			Link(
 			    String(['owner.RealmOwner.display_name']),
 			    ['Website.url'],
+			    'venue',
 			),
-			String(', '),
+			' ',
 			Link(
 			    String(['address']),
 			    ['map_uri'],
+			    'address',
 			),
 		    ])),
 		    DIV_excerpt(String(['excerpt'])),
 		])),
 	    ]),
-	),
+	])),
 	DIV_c4_copy(Prose(
 	    "&copy; @{[__PACKAGE__->use('Type.DateTime')->now_as_year]} SPAN_c4_site_name('CAL 54');")),
     ]);

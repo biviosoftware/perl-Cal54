@@ -34,9 +34,13 @@ div.c4_list {
   width: 10em;
   display: block;
 }
-.c4_query div.item {
+.c4_query .item {
   padding-left: 2px;
   margin-bottom: 2ex;
+}
+.c4_list div.date {
+  Font('c4_date');
+  margin-bottom: .5ex;
 }
 .c4_list .item {
   margin-bottom: 2ex;
@@ -44,24 +48,39 @@ div.c4_list {
 .c4_list .item a {
   Font('c4_item_a');
 }
-.c4_list .item div.line {
-  margin-bottom: .2ex;
-}
 .c4_list .item a:hover {
   Font('c4_item_a_hover');
 }
 .c4_list .item a:visited {
   Font('c4_item_a_visited');
 }
+.c4_list .item div.line {
+  margin-bottom: .2ex;
+}
+.c4_list .item span.time {
+  Font('c4_time');
+  margin-right: .2em;
+}
+.c4_list .item .venue {
+  margin-right: .5em;
+}
+.c4_list .item .venue,
+.c4_list .item .address {
+  Font('c4_venue');
+}
 .c4_list .item .excerpt {
   Font('c4_excerpt');
 }
-.c4_list div.date {
-  Font('c4_date');
-  margin-bottom: .7ex;
-}
 span.c4_site_name {
   Font('c4_site_name');
+}
+div.c4_site_tag {
+  Font('c4_site_tag');
+  margin-bottom: 1ex;
+  float: right;
+}
+span.c4_tm {
+  Font('c4_tm');
 }
 div.c4_copy {
   Font('c4_copy');
