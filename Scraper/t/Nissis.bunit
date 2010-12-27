@@ -1,0 +1,21 @@
+# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+Request();
+config({
+    'Bivio::IO::Log' => {
+	directory => my $tmp = 'Nissis.tmp' || tmp_dir(),
+    },
+});
+req()->initialize_fully;
+DateTime()->set_test_now('12/26/2010 1:0:0', req());
+my($now) = DateTime()->now;
+req()->set_realm('site-admin');
+my($vl) = model('VenueList')->load_all;
+$vl->find_row_by({'RealmOwner.display_name', q{Nissi's}}) || b_die();
+[
+    class() => [
+	do_one => [
+	    [$vl, $now] => not_die(),
+	],
+    ],
+];
