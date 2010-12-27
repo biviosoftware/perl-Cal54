@@ -11,6 +11,7 @@ sub EDITABLE_FIELD_LIST {
 	RealmOwner.display_name
 	Website.url
 	calendar.Website.url
+	Venue.scraper_type
 	Email.email
 	Phone.phone
 	Address.street1

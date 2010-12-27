@@ -19,3 +19,10 @@
 -- Non-PRIMARY KEY Constraints
 ----------------------------------------------------------------
 
+--
+-- venue_t
+--
+ALTER TABLE venue_t
+  ADD CONSTRAINT venue_t2
+  CHECK (scraper_type > 0)
+/

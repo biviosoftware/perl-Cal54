@@ -13,6 +13,7 @@
 
 CREATE TABLE venue_t (
   venue_id NUMERIC(18) NOT NULL,
+  scraper_type NUMERIC(3) NOT NULL,
   CONSTRAINT venue_t1 PRIMARY KEY(venue_id)
 )
 /

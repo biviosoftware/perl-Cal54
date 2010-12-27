@@ -35,7 +35,10 @@ sub execute_ok_create {
     $self->internal_put_field(
 	'Venue.venue_id',
         ($self->new_other('Venue')
-	    ->create_realm($self->get_model_properties('RealmOwner'))
+	    ->create_realm(
+		$self->get_model_properties('Venue'),
+		$self->get_model_properties('RealmOwner'),
+	    )
 	)[0]->get('venue_id'),
     );
     return _models(

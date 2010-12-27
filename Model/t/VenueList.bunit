@@ -1,0 +1,14 @@
+# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+ListModel();
+req()->initialize_fully
+    ->set_realm('site-admin');
+ShellUtil_TestData()->reset_all;
+[
+    load_all => [
+        [] => [map(+{}, 1..3)],
+    ],
+    find_row_by => [
+	['RealmOwner.display_name', q{Nissi's}] => sub {[shift->get('object')]},
+    ],
+];

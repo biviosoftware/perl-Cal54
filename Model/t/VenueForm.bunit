@@ -16,8 +16,11 @@ my($rid);
 	'Website.url' => 'http://venue-form-test.com',
 	'Email.email' => 'contact@venue-form-test.com',
 	'Phone.phone' => undef,
-	
+	'Venue.scraper_type' => Scraper()->NISSIS,
     }] => [{
+	'Model.Venue' => {
+	    scraper_type => Scraper()->NISSIS,
+	},
 	'Model.RealmDAG' => {
 	    parent_id => req('auth_id'),
 	},
@@ -53,7 +56,11 @@ my($rid);
 	'Website.url' => 'http://tlg.com',
 	'Email.email' => 'e2@venue-form-test.com',
 	'Phone.phone' => '555',
+	'Venue.scraper_type' => Scraper()->GOOGLE,
     }] => [{
+	'Model.Venue' => {
+	    scraper_type => Scraper()->GOOGLE,
+	},
 	'Model.RealmOwner' => {
 	    display_name => 'dn Test',
 	},
@@ -82,6 +89,7 @@ my($rid);
 	'Website.url' => 'http://venue-form-test.com',
 	'Email.email' => 'contact@venue-form-test.com',
 	'Phone.phone' => undef,
+	'Venue.scraper_type' => Scraper()->GOOGLE,
     }, {
 	'Address.state' => 'NOT_FOUND',
 	'Address.zip' => 'US_ZIP_CODE',

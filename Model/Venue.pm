@@ -7,7 +7,7 @@ use Bivio::Base 'Model.RealmOwnerBase';
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub create_realm {
-    my($self, @rest) = shift->create({})->SUPER::create_realm(@_);
+    my($self, @rest) = shift->create(shift)->SUPER::create_realm(@_);
     $self->new_other('RealmDAG')
 	->create({
 	    parent_id => $self->req('auth_id'),
@@ -28,6 +28,7 @@ sub internal_initialize {
         table_name => 'venue_t',
 	columns => {
 	    venue_id => ['RealmOwner.realm_id', 'PRIMARY_KEY'],
+	    scraper_type => ['Scraper', 'NOT_ZERO_ENUM'],
 	},
     });
 }
