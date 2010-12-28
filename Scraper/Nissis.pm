@@ -26,8 +26,7 @@ sub do_all {
 	    return 1
 		unless $it->get('scraper_type')->eq_nissis;
 	    $_A->reset_warn_counter;
-	    b_warn($it->get_model('RealmOwner'), ': failure')
-		if $self->do_one($it, $date_time);
+	    b_info($self->do_one($it, $date_time));
 	    return 1;
 	},
     );
@@ -54,7 +53,12 @@ sub do_one {
 	    );
 	},
     );
-    return !$fields->{failures} && @{$fields->{events}} ? 1 : 0;
+    return b_debug $venue_list->get_model('RealmOwner')->as_string
+	. ': '
+	. @{$fields->{events}}
+	. ' events and '
+	. $fields->{failures}
+	. ' failures';
 }
 
 sub get_request {
@@ -179,6 +183,7 @@ sub _do_month {
     );
     my($fields) = $self->[$_IDI];
     foreach my $cell (_do_cells($self, $content)) {
+	b_info($cell->[0]);
 	my($mday, $text) = @$cell;
 	my($prev);
 	my($top);
@@ -188,7 +193,7 @@ sub _do_month {
 	    my($start, $end) = $desc ? _do_times($self, \$desc, $year, $mon, $mday) : ();
 	    $desc = _do_desc($self, $desc);
 	    my($title) = _do_desc($self, $item->{title});
-	    return
+	    next
 		unless $desc || $title;
 	    unless ($start) {
 		# my($x) = $prev || ($top ||= {});
@@ -217,7 +222,6 @@ sub _do_time {
 	unless defined($time);
     my($fields) = $self->[$_IDI];
     my($hour, $min) = $time =~ m{(\d+)}g;
-    $min ||= 0;
     $hour += 12
 	unless $hour >= 12;
     return $fields->{tz}->date_time_to_utc(
@@ -228,9 +232,11 @@ sub _do_time {
 sub _do_times {
     my($self, $desc, @date) = @_;
     return map(_do_time($self, @date, $_), $1, $2)
-	if $$desc =~ s{(\d+:\d+)\s*-\s*(\d+:\d+)}{}is;
+	if $$desc =~ s{(\d{1,2}:\d{1,2})\s*-\s*(\d{1,2}:\d{1,2})}{}is;
     return map(_do_time($self, @date, $_), $1)
-	if $$desc =~ m{(\b\d{1,2}(?:\:\d+)?)(?:\s*p\.?m\.\?)?\b}is;
+	if $$desc =~ m{\b(\d{1,2}\:\d{1,2})\b};
+    return map(_do_time($self, @date, $_), "$1:00")
+	if $$desc =~ m{\b(\d{1,2})?:\s*p\.?m\.\?\b}is;
     return;
 }
 
