@@ -15,7 +15,7 @@ $vl->find_row_by({'RealmOwner.display_name', q{Nissi's}}) || b_die();
 [
     class() => [
 	do_one => [
-	    [$vl, $now] => not_die(),
+	    [$vl, $now] => qr{[1-9]\d+ events and 0 failures},
 	],
     ],
 ];
