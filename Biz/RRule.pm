@@ -85,8 +85,6 @@ sub process_rrule {
 	$current = _next_date($proto, $rrule, $current, $vevent->{time_zone});
     }
     return $res;
-
-    
 }
 
 sub _is_valid_rrule {
@@ -106,7 +104,6 @@ sub _is_valid_rrule {
 	b_warn('unsupported wkst: ', $vevent);
 	return 0;
     }
-    
     return 1;
 }
 
