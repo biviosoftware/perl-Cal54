@@ -10,9 +10,20 @@ sub USAGE {
     return <<'EOF';
 usage: bivio TestData [options] command [args..]
 commands
+  enable_calendar_for_adm -- enable feature_calendar for a venue
   init -- initializes test data
-  reset_all - deletes all test venues and events
+  reset_all -- deletes all test venues and events
 EOF
+}
+
+sub enable_calendar_for_adm {
+    my($self) = @_;
+    $self->assert_not_general;
+    $self->req->set_user('adm');
+    $self->new_other('RealmRole')
+	->edit(qw(ADMINISTRATOR +DATA_READ +DATA_WRITE +FEATURE_CALENDAR));
+    $self->new_other('RealmAdmin')->join_user('ADMINISTRATOR');
+    return;
 }
 
 sub init {
