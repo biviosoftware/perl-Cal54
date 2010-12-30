@@ -5,8 +5,8 @@ use strict;
 use Bivio::Base 'Bivio.ShellUtil';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
-my($_MC) = b_use('MIME.Calendar');
 my($_D) = b_use('Type.Date');
+my($_MC) = b_use('MIME.Calendar');
 my($_RR) = b_use('Biz.RRule');
 
 sub USAGE {
@@ -22,16 +22,35 @@ sub import_ics {
     $self->assert_not_general;
     $self->initialize_ui;
     # clear the venue's existing events
+    my($ro) = $self->model('RealmOwner');
     $self->model('CalendarEvent')->do_iterate(sub {
-        shift->cascade_delete;
-	return 1;
+        my($ce) = @_;
+	$ro->unauth_delete({
+	    realm_id => $ce->get('calendar_event_id'),
+	});
+	$ce->unauth_delete({
+	    calendar_event_id => $ce->get('calendar_event_id'),
+	});
+ 	return 1;
     });
-    my($start) = $_D->add_days($_D->local_today, -2);
-    my($end) = $_D->add_months($start, 3);
+    my($start) = $_D->add_days($_D->local_today, -30);
+    my($end) = $_D->add_months($_D->local_today, 3);
 
-    foreach my $vevent (@{$_MC->from_ics($self->read_input)}) {
-	foreach my $v (@{_explode_event($self, $vevent, $start, $end)}) {
-#TODO: skip old events
+    my($ics) = $_MC->from_ics($self->read_input);
+    my($recurrences) = {};
+    
+    foreach my $vevent (reverse(@$ics)) {
+	next if $_D->is_date($vevent->{dtstart});
+
+	foreach my $v (@{_explode_event($self, $vevent, $end)}) {
+	    next if $_D->compare($v->{dtstart}, $start) < 0;
+
+	    if ($v->{'recurrence-id'}) {
+		$recurrences->{_recurrence_id($v, 'recurrence-id')} = 1;
+	    }
+	    elsif ($v->{rrule} && $recurrences->{_recurrence_id($v)}) {
+		next;
+	    }
 	    $self->model('CalendarEvent')->create_from_vevent($v);
 	}
     }
@@ -39,14 +58,20 @@ sub import_ics {
 }
 
 sub _explode_event {
-    my($self, $vevent, $start, $end) = @_;
+    my($self, $vevent, $end) = @_;
     return [$vevent] unless $vevent->{rrule};
     return [
 	map(+{
 	    %$vevent,
 	    %$_,
-	}, @{$_RR->process_rrule($vevent, $start, $end)}),
+	}, @{$_RR->process_rrule($vevent, $end)}),
     ];
+}
+
+sub _recurrence_id {
+    my($vevent, $date_field) = @_;
+    return join('-',
+        map($vevent->{$_}, qw(uid sequence), $date_field || 'dtstart'));
 }
 
 1;
