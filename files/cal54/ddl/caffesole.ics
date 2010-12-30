@@ -26,29 +26,46 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTART:20110213T030000Z
-DTEND:20110213T060000Z
-DTSTAMP:20101224T181522Z
-UID:maijcm3u9ujc25qbnh01jag47s@google.com
-CREATED:20101215T040042Z
-DESCRIPTION:Lisa Bell Trio\n\nThe Lisa Bell Trio\, featuring Lisa Bell on v
- ocals\, Bob Story and Chris Malley on guitar & bass\, perform an eclectic m
- ix of original music and unique renditions of cover tunes. With the release
-  of her third CD Dancing on the Moon Lisa's original music has delighted au
- diences throughout the state\, nationally and internationally.\n\nwww.lisab
- ellmusic.com
-LAST-MODIFIED:20101215T040042Z
+DTSTART:20110313T030000Z
+DTEND:20110313T060000Z
+DTSTAMP:20101229T194539Z
+UID:bnhtl5kngn6idn0int00vtis6o@google.com
+CREATED:20101227T214431Z
+DESCRIPTION:Tom Weiser & Paul Fowler play jazz standards\, originals and im
+ provisations. Their music is sophisticated\, playful and full of lively mel
+ odic and rhythmic conversation. Tom’s warm baritone and engaging scat solos
+  invite the audience into the musical dialog\, while Paul’s stratospheric t
+ enor and pianistic polychromatism provide a playful and sometimes challengi
+ ng counterpoint. When you hear them play together\, you’ll understand why o
+ ne excited audience member said “This is the best jazz I’ve ever heard in B
+ oulder.”
+LAST-MODIFIED:20101228T004046Z
 LOCATION:
-SEQUENCE:0
+SEQUENCE:1
 STATUS:CONFIRMED
-SUMMARY:Lisa Bell Trio
-TRANSP:OPAQUE
+SUMMARY:Tom Weiser & Paul Fowler Jazz Duo
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Denver:20110128T200000
+DTEND;TZID=America/Denver:20110128T230000
+RRULE:FREQ=MONTHLY;BYDAY=4FR
+DTSTAMP:20101229T194539Z
+UID:8jlb2jeatuulhnirhnf0oab7uo@google.com
+CREATED:20101227T230256Z
+DESCRIPTION:
+LAST-MODIFIED:20101228T004046Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Brad Upton Straight Ahead Quartet
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Denver:20110211T200000
 DTEND;TZID=America/Denver:20110211T230000
 RRULE:FREQ=MONTHLY;BYDAY=2FR
-DTSTAMP:20101224T181522Z
+DTSTAMP:20101229T194539Z
 UID:bhftm0j4pigl7husoqpjoeoeck@google.com
 CREATED:00001231T000000Z
 DESCRIPTION:The Brad Upton Quartet: \n\nfeat. Eric Gunnison\, keyboards\, M
@@ -63,7 +80,7 @@ DESCRIPTION:The Brad Upton Quartet: \n\nfeat. Eric Gunnison\, keyboards\, M
  ics poll top ten pick for his c.d.“Dragon”\n\nAdjunct Faculty Naropa Univer
  sity\, Dept. of Music\nFaculty member of ijamjazz camp\, Bonefro\, Italy\nM
  ember B.M.I.\n\nwww.blackorchidmusic.com
-LAST-MODIFIED:20101215T032232Z
+LAST-MODIFIED:20101228T004046Z
 LOCATION:
 SEQUENCE:2
 STATUS:CONFIRMED
@@ -71,9 +88,31 @@ SUMMARY:Brad Upton Quartet
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;TZID=America/Denver:20101108T190000
+DTEND;TZID=America/Denver:20101108T230000
+RRULE:FREQ=WEEKLY;BYDAY=MO
+DTSTAMP:20101229T194539Z
+UID:sinepr2l7q8bb1km5pe4plq11g@google.com
+CREATED:20101108T224020Z
+DESCRIPTION:Monday night jam session at CAFFE SOLE\, in South Boulder:\n\nC
+ affe Sole is a great venue that recently underwent a renovation and is beco
+ ming a home for live music.\n\nPlease come out and play. listen or simply h
+ ang and help us keep this great jam session happening!\n\nBrad Goode       
+         trumpet\nStephen Thurston     piano\nMike Facey                 bas
+ s\nLucas Mellang          drums\n\nNO COVER CHARGE\n\nCaffe Sole\n637R Sout
+ h Broadway\nBoulder\, CO\n(Behind King Soopers)\n\nhttp://www.examiner.com/
+ jazz-in-denver/brad-goode-this-cat-listens-review\n
+LAST-MODIFIED:20101228T004046Z
+LOCATION:Caffe Sole
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Brad Goode Jazz Quartet
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 DTSTART:20101205T030000Z
 DTEND:20101205T060000Z
-DTSTAMP:20101224T181522Z
+DTSTAMP:20101229T194539Z
 UID:cnovv2mq0d58ftdc50gq0qhmlk@google.com
 CREATED:20101116T170610Z
 DESCRIPTION:Tom Weiser & Paul Fowler play jazz standards\, originals and im
@@ -84,7 +123,7 @@ DESCRIPTION:Tom Weiser & Paul Fowler play jazz standards\, originals and im
  ng counterpoint. When you hear them play together\, you’ll understand why o
  ne excited audience member said “This is the best jazz I’ve ever heard in B
  oulder.”
-LAST-MODIFIED:20101213T002456Z
+LAST-MODIFIED:20101228T004045Z
 LOCATION:
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -92,9 +131,30 @@ SUMMARY:Tom Weiser & Paul Fowler Jazz Duo
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+DTSTART:20110116T030000Z
+DTEND:20110116T060000Z
+DTSTAMP:20101229T194539Z
+UID:31ajkbcivj9anbhkja4o8qeoes@google.com
+CREATED:20101227T214413Z
+DESCRIPTION:Tom Weiser & Paul Fowler play jazz standards\, originals and im
+ provisations. Their music is sophisticated\, playful and full of lively mel
+ odic and rhythmic conversation. Tom’s warm baritone and engaging scat solos
+  invite the audience into the musical dialog\, while Paul’s stratospheric t
+ enor and pianistic polychromatism provide a playful and sometimes challengi
+ ng counterpoint. When you hear them play together\, you’ll understand why o
+ ne excited audience member said “This is the best jazz I’ve ever heard in B
+ oulder.”
+LAST-MODIFIED:20101228T004045Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Tom Weiser & Paul Fowler Jazz Duo
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 DTSTART:20101128T010000Z
 DTEND:20101128T040000Z
-DTSTAMP:20101224T181522Z
+DTSTAMP:20101229T194539Z
 UID:cue3c9p29ut1ro8bhub910iqv8@google.com
 CREATED:20101109T220735Z
 DESCRIPTION:The Mighty Twisters:\n\nThe Mighty Twisters is a six piece band
@@ -114,7 +174,7 @@ DESCRIPTION:The Mighty Twisters:\n\nThe Mighty Twisters is a six piece band
  at is on the west side of the Table Mesa Shopping Center\, behind King Soop
  er's and next to Abo's.  \n \nHope to see you there\,\nThe Mighty Twisters\
  n\nno cover
-LAST-MODIFIED:20101213T002456Z
+LAST-MODIFIED:20101228T004045Z
 LOCATION:
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -124,7 +184,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20101212T030000Z
 DTEND:20101212T060000Z
-DTSTAMP:20101224T181522Z
+DTSTAMP:20101229T194539Z
 UID:rcqsj2mq825qbulmg6iqn8uvvc@google.com
 CREATED:20101122T200712Z
 DESCRIPTION:Strangebyrds - Cari Minor & Ray Smith C.D. Release:\n\nSeasons 
@@ -136,7 +196,7 @@ DESCRIPTION:Strangebyrds - Cari Minor & Ray Smith C.D. Release:\n\nSeasons
   our last show of the year as Cari will be heading to Europe for the remain
  der of December and early January. \nWishing you a warm holiday season\,\nC
  ari & Ray\nwww.cariminor.com\nwww.raysmithland.com\nwww.strangebyrds.com
-LAST-MODIFIED:20101213T002456Z
+LAST-MODIFIED:20101228T004045Z
 LOCATION:
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -146,7 +206,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20110102T030000Z
 DTEND:20110102T060000Z
-DTSTAMP:20101224T181522Z
+DTSTAMP:20101229T194539Z
 UID:kajq763e4700ac7bn1mj1dmm2g@google.com
 CREATED:20101208T193903Z
 DESCRIPTION:Stephen Futral's Birthday Party \n\nw/ music by Back To The Woo
@@ -156,7 +216,7 @@ DESCRIPTION:Stephen Futral's Birthday Party \n\nw/ music by Back To The Woo
  t Johnson\, Jimi Hendrix\, The Grateful Dead\, Fats Waller\nSounds Like\nli
  ke thousands of tiny fairies tickling your eardrums\, in a good way\n\nwww.
  myspace.com/backtothewoods
-LAST-MODIFIED:20101213T002456Z
+LAST-MODIFIED:20101228T004045Z
 LOCATION:
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -166,12 +226,12 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20101211T000000Z
 DTEND:20101211T020000Z
-DTSTAMP:20101224T181522Z
+DTSTAMP:20101229T194539Z
 UID:58immhdrr7f2mdpmboclk9b0s0@google.com
 CREATED:20101130T012015Z
 DESCRIPTION:Southern Lights in SOBO:\n\nHoliday celebration. Two for one sp
  ecial on drinks!!
-LAST-MODIFIED:20101213T002456Z
+LAST-MODIFIED:20101228T004045Z
 LOCATION:SOBO”
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -179,9 +239,28 @@ SUMMARY:Southern Lights in SOBO
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
+DTSTART:20110213T030000Z
+DTEND:20110213T060000Z
+DTSTAMP:20101229T194539Z
+UID:maijcm3u9ujc25qbnh01jag47s@google.com
+CREATED:20101215T040042Z
+DESCRIPTION:Lisa Bell Trio\n\nThe Lisa Bell Trio\, featuring Lisa Bell on v
+ ocals\, Bob Story and Chris Malley on guitar & bass\, perform an eclectic m
+ ix of original music and unique renditions of cover tunes. With the release
+  of her third CD Dancing on the Moon Lisa's original music has delighted au
+ diences throughout the state\, nationally and internationally.\n\nwww.lisab
+ ellmusic.com
+LAST-MODIFIED:20101228T004045Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Lisa Bell Trio
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
 DTSTART:20101220T030000Z
 DTEND:20101220T060000Z
-DTSTAMP:20101224T181522Z
+DTSTAMP:20101229T194539Z
 UID:4up7vrmoimkd6j7t7kjvc3fhgc@google.com
 CREATED:20101203T184030Z
 DESCRIPTION:Fairview High School's Jazz Band 1\, Combo A\n\nThe band consis
@@ -190,7 +269,7 @@ DESCRIPTION:Fairview High School's Jazz Band 1\, Combo A\n\nThe band consis
  er (trumpet)\, Ethan Bialick(keyboard/piano) and  Zach Barnhill  (Tenor sax
  ).\nThis combo consistently wins top awards at local and state jazz festiva
  ls.
-LAST-MODIFIED:20101213T002456Z
+LAST-MODIFIED:20101228T004045Z
 LOCATION:
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -198,76 +277,30 @@ SUMMARY:Fairview High School's Jazz Band 1\, Combo A
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Denver:20101108T190000
-DTEND;TZID=America/Denver:20101108T230000
-RRULE:FREQ=WEEKLY;BYDAY=MO
-DTSTAMP:20101224T181522Z
-UID:sinepr2l7q8bb1km5pe4plq11g@google.com
-CREATED:20101108T224020Z
-DESCRIPTION:Monday night jam session at CAFFE SOLE\, in South Boulder:\n\nC
- affe Sole is a great venue that recently underwent a renovation and is beco
- ming a home for live music.\n\nPlease come out and play. listen or simply h
- ang and help us keep this great jam session happening!\n\nBrad Goode       
-         trumpet\nStephen Thurston     piano\nMike Facey                 bas
- s\nLucas Mellang          drums\n\nNO COVER CHARGE\n\nCaffe Sole\n637R Sout
- h Broadway\nBoulder\, CO\n(Behind King Soopers)\n\nhttp://www.examiner.com/
- jazz-in-denver/brad-goode-this-cat-listens-review\n
-LAST-MODIFIED:20101213T002456Z
-LOCATION:Caffe Sole
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:Brad Goode Jazz Quartet
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20110115T030000Z
-DTEND:20110115T060000Z
-DTSTAMP:20101224T181522Z
-UID:q9qufh6u2ejf616ulnjafkgtfo@google.com
-CREATED:20101204T201620Z
-DESCRIPTION:Primal Mates\n\nChris Lee and Colleen O'Brien are a contemporar
- y chamber jazz duo in which vibes\, voice\, cello and percussion come toget
- her to form an inspired original repertoire. What they create is music with
-  vision\; a unique\, sometimes haunting and always mesmerizing journey thro
- ugh an intimate musical landscape. Their music combines the attention to co
- mposition and form of chamber music with the freedom and improvisational in
- terplay of jazz.\n\nThe relaxed and beautiful lyric songs and poetry which 
- weave their way through a Primal Mates set provide a stunning balance of si
- mplicity and highly developed musicality. Lee moves effortlessly between th
- e vibes where he is a sensitive colorist\, and percussion where his composi
- tional approach and drive elegantly frame the music. O'Brien has an allurin
- gly warm and clear voice which she can use with words or as another instrum
- ent where she breaks loose with unpredictable improvisatory forays. Her unu
- sual approach in playing cello like a jazz bass and her spirited cello solo
- s add a satisfying and delightful effect to the duo's sound. Though each mu
- sician contributes a thoroughly unique perspective and influence in the mus
- ic\, the whole sound in Primal Mates is even greater than the sum of it's p
- arts.\n\nLee is active as a composer\, vibraphonist\, drummer and teacher a
- nd has performed with such diverse artists as Joe Henderson\, Lew Tabackin\
- , Mose Allison\, Sheila Jordan\, Jim Pepper\, Gary Peacock\, Glen Moore and
-  Nancy King.\n\nVocalist\, cellist O'Brien has led her own groups as well a
- s performing as a solo artist and in duo and group settings with John Stowe
- ll\, Art Lande and Paul McCandless of the group OREGON. She has performed m
- ost recently at the Festival Internacional de Jazz in San Miguel\, Mexico a
- nd also the Mt. Hood and Westcliffe jazz festivals. Ms. O'Brien was also fe
- atured on the Denver PBS series Artist Profile.\n\nTogether they have activ
- ely pursued their musical vision since l980 and have produced five recordin
- gs. They are Silent Talk (1984) with ECM recording artist Art Lande\; Somet
- hing Forgotten\, Remembered (1989) with Lande\, Paul McCandless and Bill Do
- uglass\; Primal Mates (1990) with Khabu Doug Young and Primal Mates Duo/Tri
- o (1995) also with Young\, and their most recent Songs (2001).\n\nwww.prima
- lmates.com
-LAST-MODIFIED:20101213T002455Z
+DTSTART:20110220T030000Z
+DTEND:20110220T060000Z
+DTSTAMP:20101229T194539Z
+UID:vfj0utgjs5rtdkfqnrknv2f4mc@google.com
+CREATED:20101227T214423Z
+DESCRIPTION:Tom Weiser & Paul Fowler play jazz standards\, originals and im
+ provisations. Their music is sophisticated\, playful and full of lively mel
+ odic and rhythmic conversation. Tom’s warm baritone and engaging scat solos
+  invite the audience into the musical dialog\, while Paul’s stratospheric t
+ enor and pianistic polychromatism provide a playful and sometimes challengi
+ ng counterpoint. When you hear them play together\, you’ll understand why o
+ ne excited audience member said “This is the best jazz I’ve ever heard in B
+ oulder.”
+LAST-MODIFIED:20101228T004044Z
 LOCATION:
-SEQUENCE:0
+SEQUENCE:1
 STATUS:CONFIRMED
-SUMMARY:Primal Mates
-TRANSP:OPAQUE
+SUMMARY:Tom Weiser & Paul Fowler Jazz Duo
+TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20101121T030000Z
 DTEND:20101121T060000Z
-DTSTAMP:20101224T181522Z
+DTSTAMP:20101229T194539Z
 UID:fe02c28nm609c52ormn551lkbg@google.com
 CREATED:20101109T220657Z
 DESCRIPTION:Barton Carroll:\n\nA North Carolina native who now lives in Sea
