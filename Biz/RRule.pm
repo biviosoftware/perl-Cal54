@@ -60,7 +60,7 @@ sub month_parts_for_day {
 }
 
 sub process_rrule {
-    my($proto, $vevent, $begin_date, $end_date) = @_;
+    my($proto, $vevent, $end_date) = @_;
     my($rrule) = {
 	map(lc($_), map(split('=', $_), split(';', $vevent->{rrule}))),
     };
@@ -75,13 +75,10 @@ sub process_rrule {
 	    if $_DT->compare($current, $end_date) > 0;
 	last
 	    if $rrule->{until} && $_DT->compare($current, $rrule->{unti}) > 0;
-
-	if ($_DT->compare($current, $begin_date) >= 0) {
-	    push(@$res, {
-		dtstart => $current,
-		dtend => $_DT->add_seconds($current, $length),
-	    });
-	}
+	push(@$res, {
+	    dtstart => $current,
+	    dtend => $_DT->add_seconds($current, $length),
+	});
 	$current = _next_date($proto, $rrule, $current, $vevent->{time_zone});
     }
     return $res;
@@ -96,12 +93,28 @@ sub _is_valid_rrule {
     }
 
     unless ($rrule->{freq} =~ /^(yearly|monthly|weekly|daily)$/) {
-	b_warn('invalid freq: ', $vevent);
+	b_warn('invalid rrule freq: ', $vevent);
 	return 0;
     }
 
     if ($rrule->{wkst} && $rrule->{wkst} ne 'su') {
-	b_warn('unsupported wkst: ', $vevent);
+	b_warn('unsupported rrule wkst: ', $vevent);
+	return 0;
+    }
+
+    foreach my $field (qw(count interval)) {
+	next unless $rrule->{$field};
+	b_warn('rrule ', $field, ' not yet supported: ', $vevent);
+	return 0;
+    }
+
+    if ($rrule->{'recurrence-id'}) {
+	b_warn('recurrence-id with rrule not supported: ', $vevent);
+	return 0;
+    }
+
+    if ($_DT->is_date($vevent->{dtstart})) {
+	b_warn('skipping date-only rrule: ', $vevent);
 	return 0;
     }
     return 1;
@@ -118,11 +131,6 @@ sub _last_day_index {
 sub _next_date {
     my($proto, $rrule, $date, $tz) = @_;
     $date = $tz->date_time_from_utc($date);
-
-    if ($rrule->{count}) {
-	b_warn("rrule count not yet supported: ", $rrule);
-	return $_DT->get_max;
-    }
 
     if ($rrule->{freq} eq 'weekly' || $rrule->{freq} eq 'monthly') {
 	if ($rrule->{byday}) {
