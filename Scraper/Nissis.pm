@@ -16,6 +16,8 @@ my($_HTML) = b_use('Bivio.HTML');
 my($_S) = b_use('Type.String');
 #TODO: Make a RowTag
 my($_TZ) = b_use('Type.TimeZone')->AMERICA_DENVER;
+my($_CE) = b_use('Model.CalendarEvent');
+my($_T) = b_use('Agent.Task');
 
 sub do_all {
     my($self, $venue_list) = @_;
@@ -39,6 +41,7 @@ sub do_one {
     my($fields) = $self->[$_IDI] = {
 	venue_list => $venue_list,
         log_stamp => $_DT->to_file_name($date_time),
+	date_time => $date_time,
 	log_index => 1,
 	events => [],
 	failures => 0,
@@ -49,7 +52,11 @@ sub do_one {
 	sub {
 	    return _catch(
 		$self,
-		sub {_do($self)},
+		sub {
+		    _do($self);
+		    _update($self);
+		    return;
+		},
 	    );
 	},
     );
@@ -161,7 +168,7 @@ sub _do_desc {
     )};
     $text =~ s/\s+/ /sg;
     return undef
-	unless $text =~ /\S/ && $text !~ /^(?:private\s+party|tba$|closed for)/is;
+	unless $text =~ /\S/ && $text !~ /\b(?:private\s+party|tba|closed for)\b/is;
     return $text;
 }
 
@@ -182,8 +189,8 @@ sub _do_month {
 	$$content =~ m{name="CalendarTitle.*?>([^<]+)}is,
     );
     my($fields) = $self->[$_IDI];
+    my($date_time) = $fields->{date_time};
     foreach my $cell (_do_cells($self, $content)) {
-	b_info($cell->[0]);
 	my($mday, $text) = @$cell;
 	my($prev);
 	my($top);
@@ -195,21 +202,30 @@ sub _do_month {
 	    my($title) = _do_desc($self, $item->{title});
 	    next
 		unless $desc || $title;
+	    ($title, $desc) = ($desc, '')
+		unless $title;
 	    unless ($start) {
 		# my($x) = $prev || ($top ||= {});
 		# $x->{description} .= " $text";
 		# $x->{url} ||= ($item->{links} || [])->[0];
 		next;
 	    }
-	    push(
+  	    push(
 		@{$fields->{events}},
-		b_debug {
-		    'CalendarEvent.dtstart' => $start,
-		    'CalendarEvent.dtend' => $end || $start,
-		    'CalendarEvent.description' => $desc,
-		    'CalendarEvent.url' => ($item->{links} || [])->[0] || $uri,
-		    'RealmOwner.display_name' => $title,
-		},
+		[
+		    {
+			dtstart => $start,
+			dtend => $end || $start,
+			description => $desc,
+			url => ($item->{links} || [])->[0] || $uri,
+			modified_date_time => $date_time,
+#TODO: Do not hardwire
+			time_zone => $_TZ,
+		    },
+		    {
+			display_name => $title,
+		    },
+		],
 	    );
 	}
     }
@@ -273,6 +289,29 @@ sub _log {
     return $file
 	unless defined($content);
     $_F->write($file, $content);
+    return;
+}
+
+sub _update {
+    my($self) = @_;
+    my($ce) = $_CE->new($self->req);
+    my($fields) = $self->[$_IDI];
+    my($date_time) = $fields->{date_time};
+    foreach my $event (@{$fields->{events}}) {
+	unless ($ce->unsafe_load({dtstart => $event->[0]->{dtstart}})) {
+	    $ce->create_realm(@$event);
+	    next;
+	}
+	if ($_DT->is_equal($ce->get('modified_date_time'), $date_time)) {
+	    b_warn($event, ': duplicate dtstart just inserted: ', $ce->get_shallow_copy);
+	    next;
+	}
+	$ce->update($event->[0]);
+	$ce->new_other('RealmOwner')
+	    ->unauth_load_or_die({realm_id => $ce->get('calendar_event_id')})
+	    ->update($event->[1]);
+    }
+    $_T->commit($self->req);
     return;
 }
 
