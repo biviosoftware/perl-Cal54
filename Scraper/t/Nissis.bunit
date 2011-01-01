@@ -1,14 +1,31 @@
 # Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
 # $Id$
 Request();
+# jan 25
+#     feb 24
+#     mar 17
+#     apr 8
+#     may 5
+#     jun 5
+#     jul 6
+#     aug 3
+#     sep 4
+#     oct 10
+#     nov 2010 28
+#     dec 2010 29
+    
 config({
     'Bivio::IO::Log' => {
-	directory => my $tmp = 'Nissis.tmp' || tmp_dir(),
+	directory => my $tmp = 'Nissis.tmp',
     },
 });
-req()->initialize_fully;
-DateTime()->set_test_now('12/26/2010 1:0:0', req());
+# Comment rm_rf for more efficient testing
+#IO_File()->rm_rf(IO_File()->absolute_path($tmp));
 my($now) = DateTime()->now;
+my($prev) = (glob('Nissis.tmp/cal54/Nissis/2*'))[0];
+rename($prev, 'Nissis.tmp/cal54/Nissis/' . DateTime()->to_file_name($now))
+    if $prev;
+req()->initialize_fully;
 req()->set_realm('site-admin');
 my($vl) = model('VenueList')->load_all;
 $vl->find_row_by({'RealmOwner.display_name', q{Nissi's}}) || b_die();
