@@ -39,19 +39,20 @@ sub import_ics {
     my($recurrences) = {};
     
     foreach my $vevent (reverse(@{$_MC->from_ics($self->read_input)})) {
+
+	if ($vevent->{'recurrence-id'}) {
+	    $recurrences->{_recurrence_id($vevent, 'recurrence-id')} = 1;
+	}
 	next if $_D->is_date($vevent->{dtstart});
 	next if ($vevent->{status} || '') eq 'CANCELLED';
 
 	foreach my $v (@{_explode_event($self, $vevent, $end)}) {
 	    next if $_D->compare($v->{dtstart}, $start) < 0;
 
-	    if ($v->{'recurrence-id'}) {
-		$recurrences->{_recurrence_id($v, 'recurrence-id')} = 1;
-	    }
-	    elsif ($v->{rrule} && $recurrences->{_recurrence_id($v)}) {
+	    if ($v->{rrule} && $recurrences->{_recurrence_id($v)}) {
 		next;
 	    }
-	    $self->model('CalendarEvent')->create_from_vevent($v);
+	    $self->model('CalendarEvent')->create_from_vevent($v)
 	}
     }
     return;
