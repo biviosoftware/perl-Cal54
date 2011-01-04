@@ -60,7 +60,7 @@ sub month_parts_for_day {
 }
 
 sub process_rrule {
-    my($proto, $vevent, $end_date) = @_;
+    my($proto, $vevent, $end_date_time) = @_;
     my($rrule) = {
 	map(lc($_), map(split('=', $_), split(';', $vevent->{rrule}))),
     };
@@ -68,20 +68,45 @@ sub process_rrule {
     my($res) = [];
     my($current) = $vevent->{dtstart};
     my($length) = $_DT->diff_seconds($vevent->{dtend}, $current);
+    return [] unless _calculate_rrule_until($proto, $rrule);
+    my($count) = 0;
 
     while (1) {
-#TODO: comparing DT and D...
 	last
-	    if $_DT->compare($current, $end_date) > 0;
+	    if $_DT->compare($current, $end_date_time) > 0;
 	last
-	    if $rrule->{until} && $_DT->compare($current, $rrule->{unti}) > 0;
+	    if $rrule->{until}
+		&& $_DT->compare($current, $rrule->{until}) > 0;
 	push(@$res, {
 	    dtstart => $current,
 	    dtend => $_DT->add_seconds($current, $length),
-	});
+	})
+	    unless _is_excluded_date($proto, $current, $vevent->{exdate});
+	last if $rrule->{count} && ++$count == $rrule->{count};
 	$current = _next_date($proto, $rrule, $current, $vevent->{time_zone});
     }
     return $res;
+}
+
+sub _calculate_rrule_until {
+    my($proto, $rrule) = @_;
+    return 1 unless $rrule->{until};
+    my($dt, $e) = ($rrule->{until} =~ /^\d{8}$/
+        ? $_D
+	: $_DT)->from_literal(uc($rrule->{until}));
+
+    if ($e) {
+	b_warn('invalid until: ', $rrule, ' err:', $e);
+	return 0;
+    }
+    $rrule->{until} = $dt;
+    return 1;
+}
+
+sub _is_excluded_date {
+    my($proto, $date, $exdates) = @_;
+    return 0 unless $exdates;
+    return grep($_ eq $date, @$exdates) ? 1 : 0;
 }
 
 sub _is_valid_rrule {
@@ -102,9 +127,8 @@ sub _is_valid_rrule {
 	return 0;
     }
 
-    foreach my $field (qw(count interval)) {
-	next unless $rrule->{$field};
-	b_warn('rrule ', $field, ' not yet supported: ', $vevent);
+    if ($rrule->{interval}) {
+	b_warn('rrule interval not yet supported: ', $vevent);
 	return 0;
     }
 
