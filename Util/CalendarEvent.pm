@@ -22,6 +22,7 @@ sub import_ics {
     $self->assert_not_general;
     $self->initialize_ui;
     # clear the venue's existing events
+#TODO: reuse calendar_event_id    
     my($ro) = $self->model('RealmOwner');
     $self->model('CalendarEvent')->do_iterate(sub {
         my($ce) = @_;
@@ -33,14 +34,13 @@ sub import_ics {
 	});
  	return 1;
     });
-    my($start) = $_D->add_days($_D->local_today, -30);
+    my($start) = $_D->add_days($_D->local_today, -1);
     my($end) = $_D->add_months($_D->local_today, 3);
-
-    my($ics) = $_MC->from_ics($self->read_input);
     my($recurrences) = {};
     
-    foreach my $vevent (reverse(@$ics)) {
+    foreach my $vevent (reverse(@{$_MC->from_ics($self->read_input)})) {
 	next if $_D->is_date($vevent->{dtstart});
+	next if ($vevent->{status} || '') eq 'CANCELLED';
 
 	foreach my $v (@{_explode_event($self, $vevent, $end)}) {
 	    next if $_D->compare($v->{dtstart}, $start) < 0;
