@@ -55,18 +55,18 @@ my($dt) = sub {
 	],
 	process_rrule => [
 	    [{
-		rrule => 'FREQ=WEEKLY;BYDAY=MO',
+		rrule => 'FREQ=WEEKLY;BYDAY=MO;UNTIL=20101228T020000Z',
 		dtstart => $dt->('11/09/2010 02:00:00 GMT'),
 		dtend => $dt->('11/09/2010 06:00:00 GMT'),
 		time_zone => $_TZ->from_any('America/Denver'),
+		exdate => [
+		    $dt->('11/16/2010 02:00:00 GMT'),
+		    $dt->('12/07/2010 02:00:00 GMT'),
+		],
 	    }, $d->('1/17/2011')] => [[
 		{
 		    dtstart => $dt->('11/09/2010 02:00:00 GMT'),
 		    dtend => $dt->('11/09/2010 06:00:00 GMT'),
-		},
-		{
-		    dtstart => $dt->('11/16/2010 02:00:00 GMT'),
-		    dtend => $dt->('11/16/2010 06:00:00 GMT'),
 		},
 		{
 		    dtstart => $dt->('11/23/2010 02:00:00 GMT'),
@@ -75,10 +75,6 @@ my($dt) = sub {
 		{
 		    dtstart => $dt->('11/30/2010 02:00:00 GMT'),
 		    dtend => $dt->('11/30/2010 06:00:00 GMT'),
-		},
-		{
-		    dtstart => $dt->('12/07/2010 02:00:00 GMT'),
-		    dtend => $dt->('12/07/2010 06:00:00 GMT'),
 		},
 		{
 		    dtstart => $dt->('12/14/2010 02:00:00 GMT'),
@@ -91,14 +87,6 @@ my($dt) = sub {
 		{
 		    dtstart => $dt->('12/28/2010 02:00:00 GMT'),
 		    dtend => $dt->('12/28/2010 06:00:00 GMT'),
-		},
-		{
-		    dtstart => $dt->('01/04/2011 02:00:00 GMT'),
-		    dtend => $dt->('01/04/2011 06:00:00 GMT'),
-		},
-		{
-		    dtstart => $dt->('01/11/2011 02:00:00 GMT'),
-		    dtend => $dt->('01/11/2011 06:00:00 GMT'),
 		},
 	    ]],
 	    [{
@@ -115,6 +103,37 @@ my($dt) = sub {
 	    	    dtstart => $dt->('02/26/2011 03:00:00 GMT'),
 	    	    dtend => $dt->('02/26/2011 06:00:00 GMT'),
 	    	},
+	    ]],
+	    [{
+		rrule => 'FREQ=WEEKLY;BYDAY=MO;COUNT=2',
+		dtstart => $dt->('11/09/2010 02:00:00 GMT'),
+		dtend => $dt->('11/09/2010 06:00:00 GMT'),
+		time_zone => $_TZ->from_any('America/Denver'),
+	    }, $d->('1/17/2011')] => [[
+		{
+		    dtstart => $dt->('11/09/2010 02:00:00 GMT'),
+		    dtend => $dt->('11/09/2010 06:00:00 GMT'),
+		},
+		{
+		    dtstart => $dt->('11/16/2010 02:00:00 GMT'),
+		    dtend => $dt->('11/16/2010 06:00:00 GMT'),
+		},
+	    ]],
+	    [{
+		rrule => 'FREQ=MONTHLY;BYDAY=1TH;WKST=SU;COUNT=2',
+		dtstart => $dt->('11/05/2010 02:00:00 GMT'),
+		dtend => $dt->('11/05/2010 05:00:00 GMT'),
+		time_zone => $_TZ->from_any('America/Denver'),
+	    }, $d->('1/17/2011')] => [[
+		{
+		    dtstart => $dt->('11/05/2010 02:00:00 GMT'),
+		    dtend => $dt->('11/05/2010 05:00:00 GMT'),
+		},
+		{
+		    dtstart => $dt->('12/03/2010 03:00:00 GMT'),
+		    dtend => $dt->('12/03/2010 06:00:00 GMT'),
+		},
+		
 	    ]],
 	],
     ],
