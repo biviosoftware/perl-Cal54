@@ -8,19 +8,21 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_MC) = b_use('MIME.Calendar');
 my($_RR) = b_use('Biz.RRule');
+my($_TZ) = b_use('Type.TimeZone');
 
 sub USAGE {
     return <<'EOF';
 usage: bivio CalendarEvent [options] command [args..]
 commands
-  import_ics -- reads ICS from input and imports into auth_realm
+  import_ics [time_zone] -- reads ICS from input and imports into auth_realm
 EOF
 }
 
 sub import_ics {
-    my($self) = @_;
+    my($self, $time_zone) = @_;
     $self->assert_not_general;
     $self->initialize_ui;
+    my($tz) = $time_zone ? $_TZ->from_any($time_zone) : undef;
     # clear the venue's existing events
 #TODO: reuse calendar_event_id    
     my($ro) = $self->model('RealmOwner');
@@ -45,6 +47,7 @@ sub import_ics {
 	}
 	next if $_D->is_date($vevent->{dtstart});
 	next if ($vevent->{status} || '') eq 'CANCELLED';
+	next unless ($vevent->{class} || 'PUBLIC') eq 'PUBLIC';
 
 	foreach my $v (@{_explode_event($self, $vevent, $end)}) {
 	    next if $_D->compare($v->{dtstart}, $start) < 0;
@@ -52,7 +55,10 @@ sub import_ics {
 	    if ($v->{rrule} && $recurrences->{_recurrence_id($v)}) {
 		next;
 	    }
-	    $self->model('CalendarEvent')->create_from_vevent($v)
+	    my($ce) = $self->model('CalendarEvent')->create_from_vevent($v);
+	    $ce->update({
+		time_zone => $tz,
+	    }) if $tz;
 	}
     }
     return;
