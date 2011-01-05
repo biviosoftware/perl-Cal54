@@ -59,11 +59,11 @@ sub reset_all {
 sub _init_calendar_events {
     my($self) = @_;
 #    wget http://www.google.com/calendar/ical/thelaughinggoat%40gmail.com/public/basic.ics
-    foreach my $venue (qw(caffesole thelaughinggoat)) {
+    foreach my $venue (qw(caffesole thelaughinggoat cu_imig cu_macky)) {
 	$self->req->with_realm($venue => sub {
 	    $self->new_other('CalendarEvent')
 		->put(input => "$venue.ics")
-		->import_ics;
+		->import_ics($venue =~ /^cu_/ ? 'MST' : ());
 	    return;
 	});
     }
@@ -114,6 +114,34 @@ sub _init_venues {
 	    '303.665.2757',
 	    b_use('Type.Scraper')->NISSIS,
 	    'nissis',
+	],
+	[
+	    'CU Macky Auditorium',
+	    '1595 Pleasant St',
+	    'Boulder',
+	    'CO',
+	    80302,
+	    'US',
+	    'http://macky.colorado.edu/events/',
+	    'http://macky.colorado.edu',
+	    'ignore-cu_macky@bivio.biz',
+	    '',
+	    b_use('Type.Scraper')->GOOGLE,
+	    'cu_macky',
+	],
+	[
+	    'CU Imig Music Building',
+	    '1020 18th Street',
+	    'Boulder',
+	    'CO',
+	    80302,
+	    'US',
+	    'http://music.colorado.edu/events/',
+	    'http://music.colorado.edu',
+	    'ignore-cu_imig@bivio.biz',
+	    '',
+	    b_use('Type.Scraper')->GOOGLE,
+	    'cu_imig',
 	],
     ) {
         my($v) = {map(
