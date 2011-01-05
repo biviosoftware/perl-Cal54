@@ -174,6 +174,13 @@ sub _next_date {
 	b_warn("unhandled weekly: ", $rrule, ' ', $date);
 	return $_DT->get_max;
     }
+    elsif ($rrule->{freq} eq 'daily') {
+	unless ($rrule->{until}) {
+	    b_warn("unhandled daily without until: ", $rrule, ' ', $date);
+	    return $_DT->get_max;
+	}
+	return $tz->date_time_to_utc($_DT->add_days($date, 1));
+    }
     b_warn("unhandled rrule: ", $rrule, ' ', $date);
     return $_DT->get_max;
 }
