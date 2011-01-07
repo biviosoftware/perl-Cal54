@@ -5,13 +5,13 @@ use strict;
 use Bivio::Base 'Model.CalendarEventList';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
-my($_HFDT) = b_use('HTMLFormat.DateTime');
-my($_VL) = b_use('Model.VenueList');
-my($_TDT) = b_use('Type.DateTime');
-my($_DEFAULT_TZ) = b_use('Type.TimeZone')->AMERICA_DENVER;
 my($_IDI) = __PACKAGE__->instance_data_index;
-my($_S) = b_use('Type.String');
+my($_DEFAULT_TZ) = b_use('Type.TimeZone')->AMERICA_DENVER;
+my($_DT) = b_use('Type.DateTime');
+my($_HFDT) = b_use('HTMLFormat.DateTime');
 my($_HTML) = b_use('Bivio.HTML');
+my($_S) = b_use('Type.String');
+my($_VL) = b_use('Model.VenueList');
 
 sub execute {
     return shift->execute_load_page(@_);
@@ -76,11 +76,14 @@ sub internal_post_load_row {
 	    unless $start =~ /pm/ xor $end =~ /pm/;
 	$row->{start_end_am_pm} = "$start - $end";
     }
-    $row->{month_day} = $_HFDT->get_widget_value(
-	$row->{dtend_tz},
-	'MONTH_NAME_AND_DAY_NUMBER',
-	1,
-    );
+    $row->{month_day} =
+#TODO: make date format for "day name month day"
+	$_DT->english_day_of_week($row->{dtend_tz})
+	. ' ' . $_HFDT->get_widget_value(
+	    $row->{dtend_tz},
+	    'MONTH_NAME_AND_DAY_NUMBER',
+	    1,
+	);
     if ($row->{month_day} eq $fields->{month_day}) {
 	$row->{month_day} = '';
     }
@@ -127,14 +130,14 @@ sub internal_prepare_statement {
     $self->[$_IDI] = {month_day => ''};
     $self->new_other('TimeZoneList')->load_all;
     my($dt) = $query->unsafe_get('begin_date');
-    $dt = $_DEFAULT_TZ->date_time_to_utc($_TDT->set_beginning_of_day($dt))
+    $dt = $_DEFAULT_TZ->date_time_to_utc($_DT->set_beginning_of_day($dt))
 	if $dt;
-    $dt ||= $_TDT->now;
+    $dt ||= $_DT->now;
     $stmt->where(
 #TODO: Need to deal with recurring events
 #TODO: Need to only show those recurring events that are valid for the day
 	$stmt->GTE('CalendarEvent.dtstart', [$dt]),
-#	$stmt->GTE('CalendarEvent.dtend', [b_debug $_TDT->now]),
+#	$stmt->GTE('CalendarEvent.dtend', [b_debug $_DT->now]),
     );
     # Don't call SUPER, because we want all events
     return;
