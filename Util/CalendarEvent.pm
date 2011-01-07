@@ -7,7 +7,7 @@ use Bivio::Base 'Bivio.ShellUtil';
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_MC) = b_use('MIME.Calendar');
-my($_RR) = b_use('Biz.RRule');
+my($_RR) = b_use('MIME.RRule');
 my($_TZ) = b_use('Type.TimeZone');
 
 sub USAGE {
