@@ -168,7 +168,7 @@ sub _do_desc {
     )};
     $text =~ s/\s+/ /sg;
     return undef
-	unless $text =~ /\S/ && $text !~ /\b(?:private\s+party|tba|closed for)\b/is;
+	unless $text =~ /\S/ && $text !~ /\b(?:private\s+(?:party|event)|tba|closed for)\b/is;
     return $text;
 }
 
@@ -190,24 +190,38 @@ sub _do_month {
     );
     my($fields) = $self->[$_IDI];
     my($date_time) = $fields->{date_time};
+    my($extra) = undef;
+    my($append_extra) = sub {
+	my($prev) = $fields->{events}->[$#{$fields->{events}}];
+	return
+	    unless $prev && $extra;
+b_info($prev);
+b_debug	$prev->[0]->{description}
+	    = _join($prev->[0]->{description}, $extra->{title}, $extra->{desc});
+	$extra = undef;
+    };
     foreach my $cell (_do_cells($self, $content)) {
 	my($mday, $text) = @$cell;
-	my($prev);
-	my($top);
+	$extra = undef;
 	$fields->{last_text} = $text;
 	foreach my $item (_do_cell($self, $text)) {
 	    my($desc) = $item->{desc};
 	    my($start, $end) = $desc ? _do_times($self, \$desc, $year, $mon, $mday) : ();
+	    $end = $_DT->add_seconds($end, 12 * 60 * 60)
+		if $start && $end && $_DT->is_greater_than($start, $end);
 	    $desc = _do_desc($self, $desc);
 	    my($title) = _do_desc($self, $item->{title});
 	    next
 		unless $desc || $title;
 	    ($title, $desc) = ($desc, '')
 		unless $title;
+	    $append_extra->()
+		if $item->{links};
 	    unless ($start) {
-		# my($x) = $prev || ($top ||= {});
-		# $x->{description} .= " $text";
-		# $x->{url} ||= ($item->{links} || [])->[0];
+		$extra ||= {};
+		$extra->{desc} = _join($extra->{desc}, $desc);
+		$extra->{title} = _join($extra->{title}, $title);
+		$extra->{url} ||= ($item->{links} || [])->[0];
 		next;
 	    }
   	    push(
@@ -216,18 +230,20 @@ sub _do_month {
 		    {
 			dtstart => $start,
 			dtend => $end || $start,
-			description => $desc,
-			url => ($item->{links} || [])->[0] || $uri,
+			description => _join($extra->{desc}, $desc),
+			url => ($extra || {})->{url} || ($item->{links} || [])->[0] || $uri,
 			modified_date_time => $date_time,
 #TODO: Do not hardwire
 			time_zone => $_TZ,
 		    },
 		    {
-			display_name => $title,
+			display_name => _join($extra->{title}, $title),
 		    },
 		],
 	    );
+	    $extra = undef;
 	}
+	$append_extra->();
     }
     return;
 }
@@ -270,6 +286,10 @@ sub _get {
 	unless $_IS_TEST && -f $log;
     $self->put(last_uri => $self->abs_uri($uri));
     return $self->read_file($log)
+}
+
+sub _join {
+    return join(' ', grep($_, @_)) || '';
 }
 
 sub _log {
