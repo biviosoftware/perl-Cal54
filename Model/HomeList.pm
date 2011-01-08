@@ -76,9 +76,9 @@ sub internal_post_load_row {
 	    unless $start =~ /pm/ xor $end =~ /pm/;
 	$row->{start_end_am_pm} = "$start - $end";
     }
-    $row->{month_day} =
 #TODO: make date format for "day name month day"
-	$_DT->english_day_of_week($row->{dtend_tz})
+    $row->{month_day}
+	= $_DT->english_day_of_week($row->{dtend_tz})
 	. ' ' . $_HFDT->get_widget_value(
 	    $row->{dtend_tz},
 	    'MONTH_NAME_AND_DAY_NUMBER',
