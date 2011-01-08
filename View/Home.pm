@@ -64,9 +64,9 @@ sub _body {
 		    DIV_excerpt(String(['excerpt'])),
 		])),
 	    ]),
+	    DIV_c4_copy(Prose(
+		"&copy; @{[__PACKAGE__->use('Type.DateTime')->now_as_year]} SPAN_c4_site_name('CAL 54');")),
 	])),
-	DIV_c4_copy(Prose(
-	    "&copy; @{[__PACKAGE__->use('Type.DateTime')->now_as_year]} SPAN_c4_site_name('CAL 54');")),
     ]);
 }
 
