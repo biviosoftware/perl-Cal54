@@ -11,4 +11,8 @@ __PACKAGE__->compile([
     NISSIS => 2,
 ]);
 
+sub as_class {
+    return shift->get_short_desc;
+}
+
 1;
