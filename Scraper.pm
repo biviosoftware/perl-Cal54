@@ -15,6 +15,8 @@ my($_L) = b_use('IO.Log');
 my($_T) = b_use('Agent.Task');
 #TODO: Make a RowTag
 my($_TZ) = b_use('Type.TimeZone')->AMERICA_DENVER;
+my($_CESL) = b_use('Model.CalendarEventScraperList');
+my($_R) = b_use('IO.Ref');
 
 sub c4_scraper_get {
     my($self, $uri) = @_;
@@ -43,31 +45,33 @@ sub do_all {
 
 sub do_one {
     my($proto, $venue_list, $date_time) = @_;
-    my($self) = $proto->new({
-	req => $venue_list->req,
+    my($self) = b_use('Scraper.' . $venue_list->get('Venue.scraper_type')->as_class)
+	->new({
+	    req => $venue_list->req,
 #TODO: Do not hardwire
-	time_zone => $_TZ,
-	venue_list => $venue_list,
-        log_stamp => $_DT->to_file_name($date_time),
-	date_time => $date_time,
-	log_index => 1,
-	events => [],
-	failures => 0,
-	tz => $_TZ,
-    });
+	    time_zone => $_TZ,
+	    venue_list => $venue_list,
+	    log_stamp => $_DT->to_file_name($date_time),
+	    date_time => $date_time,
+	    log_index => 1,
+	    events => [],
+	    failures => 0,
+	    tz => $_TZ,
+	});
     $self->req->with_realm(
 	$venue_list->get('Venue.venue_id'),
 	sub {
 	    return $self->internal_catch(
 		sub {
 		    $self->internal_import;
+		    _log($self, $_R->to_string($self->get('events')), '.pl');
 		    _update($self);
 		    return;
 		},
 	    );
 	},
     );
-    return b_debug $venue_list->get_model('RealmOwner')->as_string
+    return $venue_list->get_model('RealmOwner')->as_string
 	. ': '
 	. @{$self->get('events')}
 	. ' events and '
@@ -131,30 +135,50 @@ sub _log_base {
 
 sub _update {
     my($self) = @_;
-    my($bunit_dir) = _bunit_dir($self);
-    $_F->write("$bunit_dir.out", b_use('IO.Ref')->to_string($self->get('events')))
-	if $bunit_dir;
     my($ce) = $_CE->new($self->req);
     my($date_time) = $self->get('date_time');
+    my($curr) = {@{$_CESL->new($self->req)
+	->map_iterate(
+	    sub {
+		my($copy) = shift->get_shallow_copy;
+		return ($copy->{'CalendarEvent.dtstart'} => $copy);
+	    },
+	    {begin_date => $date_time},
+	),
+    }};
+    my($refresh) = {};
     foreach my $event (@{$self->get('events')}) {
-#TODO: only newer events
+	unless ($_DT->is_greater_than($event->[0]->{dtend}, $date_time)) {
+#TODO: Deal with recurring events -- this should actually do it, no?
+	    next;
+	}
 #TODO: delete newer events which are no longer valid
 #TODO: deal with repeated events
-	unless ($ce->unsafe_load({dtstart => $event->[0]->{dtstart}})) {
+	my($dtstart) = $event->[0]->{dtstart};
+	my($e) = delete($curr->{$dtstart});
+	unless ($e) {
+	    if ($e = $refresh->{$dtstart}) {
+		b_warn($event, ': duplicate dtstart: ', $e);
+		next;
+	    }
 	    $ce->create_realm(@$event);
 	    next;
 	}
-	if ($_DT->is_equal($ce->get('modified_date_time'), $date_time)) {
-	    b_warn($event, ': duplicate dtstart just inserted: ', $ce->get_shallow_copy);
-	    next;
-	}
+	$ce->load_from_properties($e);
 	$ce->update($event->[0]);
+	%$e = %{$ce->get_shallow_copy};
 	$ce->new_other('RealmOwner')
 	    ->unauth_load_or_die({realm_id => $ce->get('calendar_event_id')})
 	    ->update($event->[1]);
     }
+    foreach my $v (values(%$curr)) {
+#TODO: Check recurring events.  If they had already occured in the past, simply update
+#      the dtend to be before $date_time.
+	$ce->load_from_properties($v)
+	    ->cascade_delete;
+    }
     $_T->commit($self->req)
-	unless $bunit_dir;
+	unless _bunit_dir($self);
     return;
 }
 
