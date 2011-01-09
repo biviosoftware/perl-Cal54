@@ -26,6 +26,7 @@ sub merge_overrides {
 		Delegate => ['Cal54::Delegate'],
 		Facade => ['Cal54::Facade'],
 		Model => ['Cal54::Model'],
+		Scraper => ['Cal54::Scraper'],
 		ShellUtil => ['Cal54::Util'],
 		TestLanguage => ['Cal54::Test'],
 		Type => ['Cal54::Type'],
