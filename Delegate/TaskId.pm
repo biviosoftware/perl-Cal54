@@ -12,9 +12,11 @@ sub get_delegate_info {
 	{
 	    name => 'SITE_ROOT',
 	    items => [
+		'Model.HomeQueryForm',
 		'Model.HomeList',
 		'View.Home->list',
 	    ],
+	    next => 'SITE_ROOT',
 	},
 	[qw(
 	    VENUE_HOME
