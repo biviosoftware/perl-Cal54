@@ -2,45 +2,46 @@
 # $Id$
 ListModel();
 req()->initialize_fully;
+my($title_key) = 'title' . random_string();
+my($tag_key) = 'tag' . random_string();
+my($desc_key) = 'desc' . random_string();
+DateTime()->set_test_now('12/12/2050 12:0:0');
+my($date) = DateTime()->now;
+req()->set_realm('nissis');
+model('CalendarEvent')->test_unauth_delete_all({url => 'http://homelist.bunit'});
+model('CalendarEvent')->create_realm(
+    {
+	realm_id => req('auth_id'),
+	dtstart => $date,
+	dtend => DateTime()->add_seconds($date, '7200'),
+	time_zone => TimeZone()->AMERICA_DENVER,
+	location => $tag_key,
+	description => $desc_key,
+	url => 'http://homelist.bunit',
+    },
+    {
+	display_name => $title_key,
+    },
+);
+commit();
 [
     load_page => [
-        [{begin_date => '2/12/2011'}] => [
+        [{begin_date => Date()->add_days(Date()->from_datetime($date), -1)}] => [
 	    {
-		'RealmOwner.display_name' => 'Lisa Bell Trio',
-		'owner.RealmOwner.display_name' => 'Caffe Sole',
-		'CalendarEvent.url' => undef,
-		start_end_am_pm => '8pm - 11',
-		month_day => 'February 12',
+		'RealmOwner.display_name' => $title_key,
+		'owner.RealmOwner.display_name' => q{Nissi's},
+#TODO: Write tests just for time formatting, move outside module
+		start_end_am_pm => '5am - 7',
+		month_day => 'Thursday December 12',
 		'CalendarEvent.time_zone' => 'AMERICA_DENVER',
 	    },
-	    {
-		'RealmOwner.display_name' => 'Opener TBA',
-		month_day => 'February 19',
-	    },
-	    map({'CalendarEvent.time_zone' => 'AMERICA_DENVER'}, 1 .. 11),
 	],
-        [{begin_date => '12/25/2010'}] => [
+        sub {
+	    return [{what => $title_key}];
+	} => [
 	    {
-		'RealmOwner.display_name' => 'Close for Christmas',
-		start_end_am_pm => '7am - 11pm',
-		month_day => 'December 25',
+		'RealmOwner.display_name' => $title_key,
 	    },
-	    map({'CalendarEvent.time_zone' => 'AMERICA_DENVER'}, 1 .. 14),
-	],
-        [{begin_date => '12/10/2010'}] => [
-	    {
-		'RealmOwner.display_name' => 'Southern Lights in SOBO',
-		'owner.RealmOwner.display_name' => qr{caffe}i,
-		start_end_am_pm => '5pm - 7',
-		month_day => 'December 10',
-		'CalendarEvent.time_zone' => 'AMERICA_DENVER',
-	    },
-	    {
-		'RealmOwner.display_name' => 'Ryne Doughty',
-		start_end_am_pm => '8pm - 9',
-		month_day => '',
-	    },
-	    map({'CalendarEvent.time_zone' => 'AMERICA_DENVER'}, 1 .. 13),
 	],
     ],
 ];

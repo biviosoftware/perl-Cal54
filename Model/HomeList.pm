@@ -6,11 +6,12 @@ use Bivio::Base 'Model.CalendarEventList';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_IDI) = __PACKAGE__->instance_data_index;
-my($_DEFAULT_TZ) = b_use('Type.TimeZone')->AMERICA_DENVER;
+my($_DEFAULT_TZ) = b_use('Type.TimeZone')->get_default;
 my($_DT) = b_use('Type.DateTime');
 my($_HFDT) = b_use('HTMLFormat.DateTime');
 my($_HTML) = b_use('Bivio.HTML');
-my($_S) = b_use('Type.String');
+my($_TS) = b_use('Type.String');
+my($_S) = b_use('Bivio.Search');
 my($_VL) = b_use('Model.VenueList');
 
 sub execute {
@@ -23,6 +24,7 @@ sub internal_initialize {
     return $self->merge_initialize_info($info, {
         version => 1,
 	can_iterate => 0,
+	want_page_count => 0,
 	order_by => [
 	    $self->field_decl(
 		delete($info->{order_by}),
@@ -49,6 +51,7 @@ sub internal_initialize {
 		'Text',
 	    ),
 	],
+	other_query_keys => [qw(where what when)],
     });
 }
 
@@ -78,9 +81,10 @@ sub internal_post_load_row {
     }
 #TODO: make date format for "day name month day"
     $row->{month_day}
-	= $_DT->english_day_of_week($row->{dtend_tz})
-	. ' ' . $_HFDT->get_widget_value(
-	    $row->{dtend_tz},
+	= $_DT->english_day_of_week($row->{dtstart_tz})
+	. ' '
+	. $_HFDT->get_widget_value(
+	    $row->{dtstart_tz},
 	    'MONTH_NAME_AND_DAY_NUMBER',
 	    1,
 	);
@@ -101,7 +105,7 @@ sub internal_post_load_row {
 	    ),
 	),
     );
-    $row->{excerpt} = ${$_S->canonicalize_and_excerpt(
+    $row->{excerpt} = ${$_TS->canonicalize_and_excerpt(
 	$row->{'CalendarEvent.description'} || '',
     )};
     $row->{map_uri} = 'http://maps.google.com/maps?q='
@@ -130,16 +134,37 @@ sub internal_prepare_statement {
     $self->[$_IDI] = {month_day => ''};
     $self->new_other('TimeZoneList')->load_all;
     my($dt) = $query->unsafe_get('begin_date');
+    my($now) = $_DT->now;
     $dt = $_DEFAULT_TZ->date_time_to_utc($_DT->set_beginning_of_day($dt))
 	if $dt;
-    $dt ||= $_DT->now;
+    $dt = $_DT->now
+	if !$dt || $_DT->is_greater_than($now, $dt);
     $stmt->where(
 #TODO: Need to deal with recurring events
 #TODO: Need to only show those recurring events that are valid for the day
-	$stmt->GTE('CalendarEvent.dtstart', [$dt]),
-#	$stmt->GTE('CalendarEvent.dtend', [b_debug $_DT->now]),
+#	$stmt->GTE('CalendarEvent.dtstart', [$dt]),
+	$stmt->GTE('CalendarEvent.dtend', [$dt]),
     );
     # Don't call SUPER, because we want all events
+    my($s) = $_TS->from_literal($query->unsafe_get('what'));
+    return
+	unless defined($s);
+    my($rows) = $_S->query({
+	phrase => $s,
+	offset => 0,
+	length => 1000,
+	simple_class => 'CalendarEvent',
+	req => $self->req,
+#TODO: "where" will constrain the realms so we won't want all public, just those venues
+	want_all_public => 1,
+	no_model => 1,
+    });
+    $stmt->where(
+	$stmt->IN(
+	    'CalendarEvent.calendar_event_id',
+	    [map($_->{primary_id}, @$rows)],
+	),
+    );
     return;
 }
 
