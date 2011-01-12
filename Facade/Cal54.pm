@@ -11,7 +11,7 @@ my($_SELF) = __PACKAGE__->new({
     http_host => 'www.cal54.com',
     mail_host => 'cal54.com',
     Color => [
-	[[qw(c4_site_name c4_site_tag)]=> 0xff3333],
+	[[qw(c4_site_name c4_site_tag c4_site_desc)]=> 0xff3333],
 	[[qw(c4_item_a_visited c4_item_a c4_item_a_hover)] => 0x3333aa],
 	[[qw(c4_date c4_time)] => 0xff7733],
     ],
@@ -41,6 +41,7 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_venue => ['90%']],
 	[c4_copy => ['80%', 'center']],
 	[c4_site_tag => ['120%', 'family=Times', 'bold']],
+	[c4_site_desc => ['family=Times', 'bold']],
 	[c4_tm => ['60%', 'style=vertical-align: top; line-height: 90%']],
     ],
     Task => [
@@ -50,6 +51,7 @@ my($_SELF) = __PACKAGE__->new({
     Text => [
 	[site_name => q{CAL 54, Inc.}],
 	[c4_site_tag => q{SPAN(q{All Events Fit to Link});SPAN_c4_tm('&trade;');}],
+	[c4_site_desc => q{SPAN(q{The Web's Calendar});SPAN_c4_tm('&trade;');}],
 	[site_copyright => q{bivio Software, Inc.}],
 	[home_page_uri => '/bp'],
 	[[qw(title xlink)] => [
