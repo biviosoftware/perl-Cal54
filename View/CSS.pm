@@ -19,6 +19,12 @@ form.c4_query {
     q{position: fixed;},
   );
 }
+div.c4_empty_list {
+  height: 12em;
+  vertical-align: top;
+  padding-top: 5em;
+  text-align: center;
+}
 div.c4_list {
   padding-left: 12em;
   width: 40em;
