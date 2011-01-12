@@ -27,6 +27,7 @@ sub merge_overrides {
 		Facade => ['Cal54::Facade'],
 		Model => ['Cal54::Model'],
 		Scraper => ['Cal54::Scraper'],
+		SearchParser => ['Cal54::SearchParser'],
 		ShellUtil => ['Cal54::Util'],
 		TestLanguage => ['Cal54::Test'],
 		Type => ['Cal54::Type'],
@@ -34,6 +35,9 @@ sub merge_overrides {
 		XHTMLWidget => ['Cal54::XHTMLWidget'],
 	    },
 	}),
+	'Bivio::Type::TimeZone' => {
+	    default => 'AMERICA_DENVER',
+	},
 	'Bivio::UI::Facade' => {
 	    default => 'Cal54',
 	    http_suffix => 'www.cal54.com',
