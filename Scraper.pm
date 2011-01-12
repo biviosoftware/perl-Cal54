@@ -14,8 +14,8 @@ my($_FP) = b_use('Type.FilePath');
 my($_L) = b_use('IO.Log');
 my($_T) = b_use('Agent.Task');
 #TODO: Make a RowTag
-my($_TZ) = b_use('Type.TimeZone')->AMERICA_DENVER;
-my($_CESL) = b_use('Model.CalendarEventScraperList');
+my($_TZ) = b_use('Type.TimeZone')->get_default;
+my($_CEFL) = b_use('Model.CalendarEventFilterList');
 my($_R) = b_use('IO.Ref');
 
 sub c4_scraper_get {
@@ -137,7 +137,7 @@ sub _update {
     my($self) = @_;
     my($ce) = $_CE->new($self->req);
     my($date_time) = $self->get('date_time');
-    my($curr) = {@{$_CESL->new($self->req)
+    my($curr) = {@{$_CEFL->new($self->req)
 	->map_iterate(
 	    sub {
 		my($copy) = shift->get_shallow_copy;
@@ -164,11 +164,10 @@ sub _update {
 	    $ce->create_realm(@$event);
 	    next;
 	}
-	$ce->load_from_properties($e);
-	$ce->update($event->[0]);
-	%$e = %{$ce->get_shallow_copy};
+	$ce->load_from_properties($e)
+	    ->update($event->[0]);
 	$ce->new_other('RealmOwner')
-	    ->unauth_load_or_die({realm_id => $ce->get('calendar_event_id')})
+	    ->load_from_properties($e)
 	    ->update($event->[1]);
     }
     foreach my $v (values(%$curr)) {
