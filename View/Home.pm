@@ -33,40 +33,8 @@ sub pre_compile {
 
 sub _body {
     return Join([
-	_dummy_form(),
-	DIV_c4_list(Join([
-	    DIV_c4_site_tag(vs_text_as_prose('c4_site_tag')),
-	    List(HomeList => [
-		DIV_date(['month_day']),
-		DIV_item(Join([
-		    DIV_line(Join([
-			SPAN_time(String(['start_end_am_pm'])),
-			' ',
-			Link(
-			    String(['RealmOwner.display_name']),
-			    Or(['CalendarEvent.url'], ['calendar.Website.url']),
-			    'title',
-			),
-		    ])),
-		    DIV_line(Join([
-			Link(
-			    String(['owner.RealmOwner.display_name']),
-			    ['Website.url'],
-			    'venue',
-			),
-			' ',
-			Link(
-			    String(['address']),
-			    ['map_uri'],
-			    'address',
-			),
-		    ])),
-		    DIV_excerpt(String(['excerpt'])),
-		])),
-	    ]),
-	    DIV_c4_copy(Prose(
-		"&copy; @{[__PACKAGE__->use('Type.DateTime')->now_as_year]} SPAN_c4_site_name('CAL 54');")),
-	])),
+	_form(),
+	_list(),
     ]);
 }
 
@@ -109,6 +77,81 @@ sub _dummy_form {
 	    XLink('venue_list'),
 	]),
     });
+}
+
+sub _form {
+    return Form({
+	form_class => 'HomeQueryForm',
+	form_method => 'get',
+	class => 'c4_query',
+	want_hidden_fields => 0,
+	value => Join([
+	    Image({
+		src => 'logo',
+		alt_text => 'CAL 54',
+		class => 'c4_logo',
+	    }),
+	    DIV_item(Join([
+		SPAN('Where are you?'),
+		Text('where', {is_read_only => 1, size => 50}),
+	    ])),
+	    DIV_item(Join([
+		SPAN('What kind of event?'),
+		Text('what', {size => 50}),
+	    ])),
+	    DIV_item(Join([
+		SPAN('When are you free?'),
+		Text('when', {is_read_only => 1, size => 50}),
+	    ])),
+	    DIV_item(Join([
+		INPUT({
+		    TYPE => 'submit',
+		    VALUE => "Let's go!",
+		}),
+	    ])),
+	    XLink('venue_list'),
+	]),
+    });
+}
+
+sub _list {
+    return DIV_c4_list(Join([
+	DIV_c4_site_tag(vs_text_as_prose('c4_site_tag')),
+	List(HomeList => [
+	    DIV_date(['month_day']),
+	    DIV_item(Join([
+		DIV_line(Join([
+		    SPAN_time(String(['start_end_am_pm'])),
+		    ' ',
+		    Link(
+			String(['RealmOwner.display_name']),
+			Or(['CalendarEvent.url'], ['calendar.Website.url']),
+			'title',
+		    ),
+		])),
+		DIV_line(Join([
+		    Link(
+			String(['owner.RealmOwner.display_name']),
+			['Website.url'],
+			'venue',
+		    ),
+		    ' ',
+		    Link(
+			String(['address']),
+			['map_uri'],
+			'address',
+		    ),
+		])),
+		DIV_excerpt(String(['excerpt'])),
+	    ])),
+	], {
+	    empty_list_widget => DIV_c4_empty_list(
+		q{Your search didn't match any results.  Try a different query.},
+	    ),
+	}),
+	DIV_c4_copy(Prose(
+	    "&copy; @{[__PACKAGE__->use('Type.DateTime')->now_as_year]} SPAN_c4_site_name('CAL 54');")),
+    ]));
 }
 
 1;
