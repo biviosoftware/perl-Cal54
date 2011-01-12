@@ -91,6 +91,7 @@ sub _form {
 		alt_text => 'CAL 54',
 		class => 'c4_logo',
 	    }),
+	    DIV_c4_site_desc(vs_text_as_prose('c4_site_desc')),
 	    DIV_item(Join([
 		SPAN('Where are you?'),
 		Text('where', {is_read_only => 1, size => 50}),

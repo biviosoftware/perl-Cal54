@@ -85,6 +85,11 @@ div.c4_site_tag {
   margin-bottom: 1ex;
   float: right;
 }
+div.c4_site_desc {
+  Font('c4_site_desc');
+  margin-top: .2ex;
+  margin-bottom: 1ex;
+}
 span.c4_tm {
   Font('c4_tm');
 }
