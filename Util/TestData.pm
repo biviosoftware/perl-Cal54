@@ -63,7 +63,7 @@ sub _init_calendar_events {
 	$self->req->with_realm($venue => sub {
 	    $self->new_other('CalendarEvent')
 		->put(input => "$venue.ics")
-		->import_ics($venue =~ /^cu_/ ? 'MST' : ());
+		->import_ics($venue =~ /^cu_/ ? b_use('Type.TimeZone')->get_default : ());
 	    return;
 	});
     }
