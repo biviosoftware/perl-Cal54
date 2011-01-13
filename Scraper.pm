@@ -146,28 +146,22 @@ sub _update {
     }};
     my($refresh) = {};
     foreach my $event (@{$self->get('events')}) {
-#TODO: need to use Type for each field to clean input	
-	unless ($_DT->is_greater_than($event->[0]->{dtend}, $date_time)) {
-#TODO: Deal with recurring events -- this should actually do it, no?
+	unless ($_DT->is_greater_than($event->{dtend}, $date_time)) {
 	    next;
 	}
+	my($dtstart) = $event->{dtstart};
 #TODO: delete newer events which are no longer valid
-#TODO: deal with repeated events
-	my($dtstart) = $event->[0]->{dtstart};
 	my($e) = delete($curr->{$dtstart});
 	unless ($e) {
 	    if ($e = $refresh->{$dtstart}) {
 		b_warn($event, ': duplicate dtstart: ', $e);
 		next;
 	    }
-	    $ce->create_realm(@$event);
+	    $ce->create_from_vevent($event);
 	    next;
 	}
 	$ce->load_from_properties($e)
-	    ->update($event->[0]);
-	$ce->new_other('RealmOwner')
-	    ->load_from_properties($e)
-	    ->update($event->[1]);
+	    ->update_from_vevent($event);
     }
     foreach my $v (values(%$curr)) {
 #TODO: Check recurring events.  If they had already occured in the past, simply update
