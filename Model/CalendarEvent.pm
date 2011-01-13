@@ -9,6 +9,12 @@ my($_DT) = b_use('Type.DateTime');
 my($_S) = b_use('Bivio.Search');
 my($_TS) = b_use('Type.String');
 
+sub cascade_delete {
+    my($self) = @_;
+    $_S->delete_model($self->req, $self);
+    return shift->SUPER::cascade_delete(@_);
+}
+
 sub create {
     my($self) = @_;
     my($res) = shift->SUPER::create(@_);
@@ -16,16 +22,10 @@ sub create {
     return $res;
 }
 
-sub delete {
-    my($self, $query) = @_;
-    $_S->delete_model($self->req, $query ? $query->{calendar_event_id} : $self);
-    return shift->SUPER::delete(@_);
-}
-
-sub delete_all {
-    b_die('not supported');
-    # DOES NOT RETURN
-}
+#sub delete_all {
+#    b_die('not supported');
+#    # DOES NOT RETURN
+#}
 
 sub get_auth_user_id {
     return undef;
