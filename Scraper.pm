@@ -33,10 +33,8 @@ sub do_all {
     $venue_list->do_rows(
 	sub {
 	    my($it) = @_;
-	    return 1
-		unless $it->get('scraper_type')->eq_nissis;
 	    $_A->reset_warn_counter;
-	    b_info($self->do_one($it, $date_time));
+	    $self->do_one($it, $date_time);
 	    return 1;
 	},
     );
