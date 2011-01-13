@@ -18,12 +18,12 @@ sub form {
 sub list {
     return shift->internal_put_base_attr(
 	tools => TaskMenu([
-	    'VENUE_FORM',
+	    'ADM_VENUE_FORM',
 	]),
 	body => vs_paged_list(VenueList => [
 	    ['RealmOwner.display_name', {
 		wf_list_link => {
-		    task => 'VENUE_FORM',
+		    task => 'ADM_VENUE_FORM',
 		    query => 'THIS_DETAIL',
 		},
 	    }],
