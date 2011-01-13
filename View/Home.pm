@@ -38,47 +38,6 @@ sub _body {
     ]);
 }
 
-sub _dummy_form {
-    return FORM_c4_query({
-	value => Join([
-	    Image({
-		src => 'logo',
-		alt_text => 'CAL 54',
-		class => 'c4_logo',
-	    }),
-	    DIV_item(Join([
-		SPAN('Where are you?'),
-		INPUT({
-		    VALUE => 'Boulder',
-		    DISABLED => 1,
-		}),
-	    ])),
-	    DIV_item(Join([
-		SPAN('What kind of event?'),
-		INPUT({
-		    VALUE => 'music',
-		    DISABLED => 1,
-		}),
-	    ])),
-	    DIV_item(Join([
-		SPAN('When are you free?'),
-		INPUT({
-		    VALUE => 'now',
-		    DISABLED => 1,
-		}),
-	    ])),
-	    DIV_item(Join([
-		INPUT({
-		    TYPE => 'submit',
-		    DISABLED => 1,
-		    VALUE => "Let's go!",
-		}),
-	    ])),
-	    XLink('venue_list'),
-	]),
-    });
-}
-
 sub _form {
     return Form({
 	form_class => 'HomeQueryForm',
@@ -110,7 +69,10 @@ sub _form {
 		    VALUE => "Let's go!",
 		}),
 	    ])),
-	    XLink('venue_list'),
+	    DIV_c4_home_admin(Join([
+		XLink('adm_calendar_event_list_form'),
+		XLink('adm_venue_list'),
+	    ])),
 	]),
     });
 }
