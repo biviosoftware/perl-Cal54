@@ -32,7 +32,6 @@ sub init {
     $self->initialize_fully;
     $self->new_other('TestUser')->init;
     _init_venues($self);
-    _init_calendar_events($self);
     return;
 }
 
@@ -52,20 +51,6 @@ sub reset_all {
 		'realm_id',
 		{realm_type => [$type]},
 	    );
-    }
-    return;
-}
-
-sub _init_calendar_events {
-    my($self) = @_;
-#    wget http://www.google.com/calendar/ical/thelaughinggoat%40gmail.com/public/basic.ics
-    foreach my $venue (qw(caffesole thelaughinggoat cu_imig cu_macky)) {
-	$self->req->with_realm($venue => sub {
-	    $self->new_other('CalendarEvent')
-		->put(input => "$venue.ics")
-		->import_ics($venue =~ /^cu_/ ? b_use('Type.TimeZone')->get_default : ());
-	    return;
-	});
     }
     return;
 }
