@@ -21,17 +21,6 @@ sub internal_import {
 	$$html =~ m,www\.google\.com/calendar/embed\?src=(.*?)(\&|"),;
     b_die('failed to parse cal_id: ', $html)
 	unless $cal_id;
-    
-#    get page, then parse out calendar id
-#    src="http://www.google.com/calendar/embed?src=thelaughinggoat%40gmail.com&title=Events%20%40%20The%20Laughing%20Goat&chrome=NAVIGATION&mode=AGENDA&epr=4&bgcolor=%238C4404&height=588"
-
-#     or
-
-#     <iframe src="http://www.google.com/calendar/embed?src=caffesolemusic%40gmail.com&ctz=America/Denver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-	 
-	     
-# http://www.google.com/calendar/ical/thelaughinggoat%40gmail.com/public/basic.ics
-# http://www.google.com/calendar/ical/caffesolemusic%40gmail.com/public/basic.ics    
     return unless _parse_ics($self, $cal_id, $start, $end);
     _add_event_urls($self, $cal_id, $start, $end);
     return;    
