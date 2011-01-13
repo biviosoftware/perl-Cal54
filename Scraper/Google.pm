@@ -35,7 +35,8 @@ sub _add_event_urls {
 	        'ctz=America%2FDenver',
 		'singleevents=true',
 		'start-min=' . $_D->to_xml($start) . 'T00:00:00',
-		'start-max=' . $_D->to_xml($end) . 'T00:00:00',
+		'start-max='
+		    . $_D->to_xml($_D->add_days($end, 1)) . 'T00:00:00',
 		'max-results=1000',
 		'alt=json')));
 
@@ -64,7 +65,7 @@ sub _add_event_urls {
 	}
     }
 
-    foreach my $event (map($_->[0], @{$self->get('events')})) {
+    foreach my $event (@{$self->get('events')}) {
 	my($uid) = delete($event->{uid});
 	$uid =~ s/\@.*$//;
 	$event->{url} = $url_by_id->{$uid . '-'
@@ -106,15 +107,10 @@ sub _parse_ics {
 	foreach my $v (@{_explode_event($self, $vevent, $end)}) {
 	    next if $v->{rrule} && $recurrences->{_recurrence_id($v)};
 	    next if $_DT->compare($v->{dtstart}, $start) < 0;
-	    push(@{$self->get('events')}, [
-		{
-		    map(($_ => $v->{$_}),
-			qw(description dtend dtstart time_zone uid)),
-		},
-		{
-		    display_name => $v->{summary},
-		},
-	    ]);
+	    push(@{$self->get('events')}, {
+		map(($_ => $v->{$_}),
+		    qw(description dtend dtstart time_zone uid summary)),
+	    });
 	}
     }
     return @{$self->get('events')} ? 1 : 0;

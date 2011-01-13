@@ -111,8 +111,8 @@ sub _do_month {
 	my($prev) = $events->[$#$events];
 	return
 	    unless $prev && $extra;
-	$prev->[0]->{description}
-	    = _join($prev->[0]->{description}, $extra->{title}, $extra->{desc});
+	$prev->{description}
+	    = _join($prev->{description}, $extra->{title}, $extra->{desc});
 	$extra = undef;
     };
     foreach my $cell (_do_cells($self, $content)) {
@@ -144,19 +144,15 @@ sub _do_month {
 	    }
   	    push(
 		@$events,
-		[
-		    {
-			dtstart => $start,
-			dtend => $end || $start,
-			description => _join($extra->{desc}, $desc),
-			url => ($extra || {})->{url} || ($item->{links} || [])->[0] || $uri,
-			modified_date_time => $date_time,
-			time_zone => $self->get('time_zone'),
-		    },
-		    {
-			display_name => _join($extra->{title}, $title),
-		    },
-		],
+		{
+		    dtstart => $start,
+		    dtend => $end || $start,
+		    description => _join($extra->{desc}, $desc),
+		    url => ($extra || {})->{url} || ($item->{links} || [])->[0] || $uri,
+		    modified_date_time => $date_time,
+		    time_zone => $self->get('time_zone'),
+		    summary => _join($extra->{title}, $title),
+		},
 	    );
 	    $extra = undef;
 	}
