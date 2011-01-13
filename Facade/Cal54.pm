@@ -20,12 +20,18 @@ my($_SELF) = __PACKAGE__->new({
 	[ThreePartPage_want_dock_left_standard => 1],
 	[robots_txt_allow_all => 0],
 	[my_site_redirect_map => sub {[
- 	    [qw(site-admin 0 VENUE_LIST)],
+ 	    [qw(site-admin 0 ADM_VENUE_LIST)],
 	]}],
-	[xlink_venue_list => sub {
+	[xlink_adm_venue_list => sub {
 	     return {
 		 realm => shift->get_value('site_admin_realm_name'),
-		 task_id => 'VENUE_LIST',
+		 task_id => 'ADM_VENUE_LIST',
+	     };
+	 }],
+	[xlink_adm_calendar_event_list_form => sub {
+	     return {
+		 realm => shift->get_value('site_admin_realm_name'),
+		 task_id => 'ADM_CALENDAR_EVENT_LIST_FORM',
 	     };
 	 }],
     ],
@@ -45,8 +51,9 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_tm => ['60%', 'style=vertical-align: top; line-height: 90%']],
     ],
     Task => [
-	[VENUE_LIST => '?/venues'],
-	[VENUE_FORM => '?/edit-venue'],
+	[ADM_CALENDAR_EVENT_LIST_FORM => '?/events'],
+	[ADM_VENUE_FORM => '?/edit-venue'],
+	[ADM_VENUE_LIST => '?/venues'],
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],
@@ -55,11 +62,12 @@ my($_SELF) = __PACKAGE__->new({
 	[site_copyright => q{bivio Software, Inc.}],
 	[home_page_uri => '/bp'],
 	[[qw(title xlink)] => [
-	    VENUE_LIST => 'Venues',
-	    VENUE_FORM => 'Edit Venue',
+	    ADM_VENUE_LIST => 'Venues',
+	    ADM_CALENDAR_EVENT_LIST_FORM => 'Events',
+	    ADM_VENUE_FORM => 'Edit Venue',
 	]],
 	['task_menu.title' => [
-	    VENUE_FORM => 'Add Venue',
+	    ADM_VENUE_FORM => 'Add Venue',
 	]],
 	[Venue => [
 	    scraper_type => 'Scraper',
@@ -68,6 +76,10 @@ my($_SELF) = __PACKAGE__->new({
 	    'Website.url' => 'Home Page',
 	    'calendar.Website.url' => 'Calendar Link',
 	    'RealmOwner.display_name' => 'Full Name',
+	]],
+	['CalendarEvent.location' => 'Tags'],
+	[[qw(CalendarEventFilterList AdmCalendarEventList AdmCalendarEventListForm)] => [
+	    'RealmOwner.display_name' => 'Title',
 	]],
     ],
 });

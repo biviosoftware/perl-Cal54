@@ -27,7 +27,7 @@ sub get_delegate_info {
 	)],
 #TODO: This should be some other perm besides FEATURE_SITE_ADMIN
 	[qw(
-	    VENUE_LIST
+	    ADM_VENUE_LIST
 	    502
 	    FORUM
 	    DATA_READ&FEATURE_SITE_ADMIN
@@ -35,13 +35,22 @@ sub get_delegate_info {
 	    View.Venue->list
         )],
 	[qw(
-	    VENUE_FORM
+	    ADM_VENUE_FORM
 	    503
 	    FORUM
 	    DATA_READ&DATA_WRITE&FEATURE_SITE_ADMIN
 	    Model.VenueForm
 	    View.Venue->form
-	    next=VENUE_LIST
+	    next=ADM_VENUE_LIST
+        )],
+	[qw(
+	    ADM_CALENDAR_EVENT_LIST_FORM
+	    504
+	    FORUM
+	    DATA_READ&FEATURE_SITE_ADMIN
+	    Model.AdmCalendarEventListForm
+	    View.Calendar->adm_list
+	    next=ADM_CALENDAR_EVENT_LIST_FORM
         )],
     ]);
 }
