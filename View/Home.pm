@@ -69,10 +69,6 @@ sub _form {
 		    VALUE => "Let's go!",
 		}),
 	    ])),
-	    DIV_c4_home_admin(Join([
-		XLink('adm_calendar_event_list_form'),
-		XLink('adm_venue_list'),
-	    ])),
 	]),
     });
 }
