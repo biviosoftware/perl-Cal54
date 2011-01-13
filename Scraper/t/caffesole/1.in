@@ -1,63 +1,46 @@
 [
-  [
-    {
-      'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom’s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul’s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you’ll understand why one excited audience member said “This is the best jazz I’ve ever heard in Boulder.”',
-      'dtend' => '2455654 18000',
-      'dtstart' => '2455654 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=bTg1Zm5pbmdpYmN0b29nMzRwYzNtYzNuajggY2FmZmVzb2xlbXVzaWNAbQ'
-    },
-    {
-      'display_name' => 'Tom Weiser & Paul Fowler Jazz Duo'
-    }
-  ],
-  [
-    {
-      'description' => 'Lisa Bell Trio
+  {
+    'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom’s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul’s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you’ll understand why one excited audience member said “This is the best jazz I’ve ever heard in Boulder.”',
+    'dtend' => '2455654 18000',
+    'dtstart' => '2455654 7200',
+    'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bTg1Zm5pbmdpYmN0b29nMzRwYzNtYzNuajggY2FmZmVzb2xlbXVzaWNAbQ'
+  },
+  {
+    'description' => 'Lisa Bell Trio
 
 The Lisa Bell Trio, featuring Lisa Bell on vocals, Bob Story and Chris Malley on guitar & bass, perform an eclectic mix of original music and unique renditions of cover tunes. With the release of her third CD Dancing on the Moon Lisa\'s original music has delighted audiences throughout the state, nationally and internationally.
 
 www.lisabellmusic.com',
-      'dtend' => '2455640 18000',
-      'dtstart' => '2455640 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=bWFpamNtM3U5dWpjMjVxYm5oMDFqYWc0N3MgY2FmZmVzb2xlbXVzaWNAbQ'
-    },
-    {
-      'display_name' => 'Lisa Bell Trio'
-    }
-  ],
-  [
-    {
-      'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom’s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul’s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you’ll understand why one excited audience member said “This is the best jazz I’ve ever heard in Boulder.”',
-      'dtend' => '2455626 21600',
-      'dtstart' => '2455626 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=Ym5odGw1a25nbjZpZG4waW50MDB2dGlzNm8gY2FmZmVzb2xlbXVzaWNAbQ'
-    },
-    {
-      'display_name' => 'Tom Weiser & Paul Fowler Jazz Duo'
-    }
-  ],
-  [
-    {
-      'description' => 'Josh Quinlan
+    'dtend' => '2455640 18000',
+    'dtstart' => '2455640 7200',
+    'summary' => 'Lisa Bell Trio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bWFpamNtM3U5dWpjMjVxYm5oMDFqYWc0N3MgY2FmZmVzb2xlbXVzaWNAbQ'
+  },
+  {
+    'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom’s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul’s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you’ll understand why one excited audience member said “This is the best jazz I’ve ever heard in Boulder.”',
+    'dtend' => '2455626 21600',
+    'dtstart' => '2455626 10800',
+    'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Ym5odGw1a25nbjZpZG4waW50MDB2dGlzNm8gY2FmZmVzb2xlbXVzaWNAbQ'
+  },
+  {
+    'description' => 'Josh Quinlan
 
 Josh Quinlan is a Colorado jazz saxophonist who has has recently performed at the Telluride Jazz Celebration, the Denver Jazz Festival, the Peru Jazz Festival en Lima and Jazz Aspen Snowmass. He has shared the stage with many jazz greats including Louis Bellson, Natalie Cole, Bob Brookmeyer, Claudio Roditi, Maria Schneider, Brad Goode and more. He is a graduate of the University of Colorado, DePaul University and the Cincinnati Conservatory of Music.
  
 www.joshquinlan.com',
-      'dtend' => '2455611 21600',
-      'dtstart' => '2455611 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=aGEzcXRta290dWN2dTdpZjdxbGRsamVhaDggY2FmZmVzb2xlbXVzaWNAbQ'
-    },
-    {
-      'display_name' => 'Josh Quinlan'
-    }
-  ],
-  [
-    {
-      'description' => 'The Brad Upton Quartet: 
+    'dtend' => '2455611 21600',
+    'dtstart' => '2455611 10800',
+    'summary' => 'Josh Quinlan',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aGEzcXRta290dWN2dTdpZjdxbGRsamVhaDggY2FmZmVzb2xlbXVzaWNAbQ'
+  },
+  {
+    'description' => 'The Brad Upton Quartet: 
 
 feat. Eric Gunnison, keyboards, Mark Simon, bass, Matt Houston, drums
 
@@ -77,18 +60,14 @@ Faculty member of ijamjazz camp, Bonefro, Italy
 Member B.M.I.
 
 www.blackorchidmusic.com',
-      'dtend' => '2455605 21600',
-      'dtstart' => '2455605 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAyMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The Brad Upton Quartet: 
+    'dtend' => '2455605 21600',
+    'dtstart' => '2455605 10800',
+    'summary' => 'Brad Upton Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAyMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The Brad Upton Quartet: 
 
 feat. Eric Gunnison, keyboards, Mark Simon, bass, Matt Houston, drums
 
@@ -108,18 +87,14 @@ Faculty member of ijamjazz camp, Bonefro, Italy
 Member B.M.I.
 
 www.blackorchidmusic.com',
-      'dtend' => '2455633 21600',
-      'dtstart' => '2455633 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAzMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The Brad Upton Quartet: 
+    'dtend' => '2455633 21600',
+    'dtstart' => '2455633 10800',
+    'summary' => 'Brad Upton Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAzMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The Brad Upton Quartet: 
 
 feat. Eric Gunnison, keyboards, Mark Simon, bass, Matt Houston, drums
 
@@ -139,18 +114,14 @@ Faculty member of ijamjazz camp, Bonefro, Italy
 Member B.M.I.
 
 www.blackorchidmusic.com',
-      'dtend' => '2455661 18000',
-      'dtstart' => '2455661 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA0MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The Brad Upton Quartet: 
+    'dtend' => '2455661 18000',
+    'dtstart' => '2455661 7200',
+    'summary' => 'Brad Upton Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA0MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The Brad Upton Quartet: 
 
 feat. Eric Gunnison, keyboards, Mark Simon, bass, Matt Houston, drums
 
@@ -170,18 +141,14 @@ Faculty member of ijamjazz camp, Bonefro, Italy
 Member B.M.I.
 
 www.blackorchidmusic.com',
-      'dtend' => '2455696 18000',
-      'dtstart' => '2455696 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA1MTRUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The Brad Upton Quartet: 
+    'dtend' => '2455696 18000',
+    'dtstart' => '2455696 7200',
+    'summary' => 'Brad Upton Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA1MTRUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The Brad Upton Quartet: 
 
 feat. Eric Gunnison, keyboards, Mark Simon, bass, Matt Houston, drums
 
@@ -201,18 +168,14 @@ Faculty member of ijamjazz camp, Bonefro, Italy
 Member B.M.I.
 
 www.blackorchidmusic.com',
-      'dtend' => '2455724 18000',
-      'dtstart' => '2455724 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA2MTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The Brad Upton Quartet: 
+    'dtend' => '2455724 18000',
+    'dtstart' => '2455724 7200',
+    'summary' => 'Brad Upton Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA2MTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The Brad Upton Quartet: 
 
 feat. Eric Gunnison, keyboards, Mark Simon, bass, Matt Houston, drums
 
@@ -232,268 +195,204 @@ Faculty member of ijamjazz camp, Bonefro, Italy
 Member B.M.I.
 
 www.blackorchidmusic.com',
-      'dtend' => '2455752 18000',
-      'dtstart' => '2455752 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA3MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom’s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul’s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you’ll understand why one excited audience member said “This is the best jazz I’ve ever heard in Boulder.”',
-      'dtend' => '2455598 21600',
-      'dtstart' => '2455598 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=dmZqMHV0Z2pzNXJ0ZGtmcW5ya252MmY0bWMgY2FmZmVzb2xlbXVzaWNAbQ'
-    },
-    {
-      'display_name' => 'Tom Weiser & Paul Fowler Jazz Duo'
-    }
-  ],
-  [
-    {
-      'description' => 'The John Lake Quartet
+    'dtend' => '2455752 18000',
+    'dtstart' => '2455752 7200',
+    'summary' => 'Brad Upton Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA3MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom’s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul’s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you’ll understand why one excited audience member said “This is the best jazz I’ve ever heard in Boulder.”',
+    'dtend' => '2455598 21600',
+    'dtstart' => '2455598 10800',
+    'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=dmZqMHV0Z2pzNXJ0ZGtmcW5ya252MmY0bWMgY2FmZmVzb2xlbXVzaWNAbQ'
+  },
+  {
+    'description' => 'The John Lake Quartet
 
 John Lake is a trumpet player, composer/arranger, and music educator active throughout the Front Range.  John holds a Bachelor of Music from the University of Cincinnati’s College Conservatory of Music in Jazz and Studio Music, and a Master of Music in Jazz Trumpet from the University of Colorado at Boulder.  Additionally, Lake attended the School of Improvised Music Summer Intensive in 2008, as well as the Banff International Workshop for Jazz and Creative Music in 2010, where he studied under trumpeter Dave Douglas.  The John Lake Quartet performs acoustic, straight-ahead bebop and swing in the jazz tradition, following cues from Dizzy Gillespie and Freddie Hubbard to the great small groups of the Oscar Peterson Trio and the Miles Davis Quintet.
 
 www.JohnLakeJazz.com
 www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
-      'dtend' => '2455597 21600',
-      'dtstart' => '2455597 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAyMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'The John Lake Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The John Lake Quartet
+    'dtend' => '2455597 21600',
+    'dtstart' => '2455597 10800',
+    'summary' => 'The John Lake Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAyMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The John Lake Quartet
 
 John Lake is a trumpet player, composer/arranger, and music educator active throughout the Front Range.  John holds a Bachelor of Music from the University of Cincinnati’s College Conservatory of Music in Jazz and Studio Music, and a Master of Music in Jazz Trumpet from the University of Colorado at Boulder.  Additionally, Lake attended the School of Improvised Music Summer Intensive in 2008, as well as the Banff International Workshop for Jazz and Creative Music in 2010, where he studied under trumpeter Dave Douglas.  The John Lake Quartet performs acoustic, straight-ahead bebop and swing in the jazz tradition, following cues from Dizzy Gillespie and Freddie Hubbard to the great small groups of the Oscar Peterson Trio and the Miles Davis Quintet.
 
 www.JohnLakeJazz.com
 www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
-      'dtend' => '2455625 21600',
-      'dtstart' => '2455625 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAzMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'The John Lake Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The John Lake Quartet
+    'dtend' => '2455625 21600',
+    'dtstart' => '2455625 10800',
+    'summary' => 'The John Lake Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAzMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The John Lake Quartet
 
 John Lake is a trumpet player, composer/arranger, and music educator active throughout the Front Range.  John holds a Bachelor of Music from the University of Cincinnati’s College Conservatory of Music in Jazz and Studio Music, and a Master of Music in Jazz Trumpet from the University of Colorado at Boulder.  Additionally, Lake attended the School of Improvised Music Summer Intensive in 2008, as well as the Banff International Workshop for Jazz and Creative Music in 2010, where he studied under trumpeter Dave Douglas.  The John Lake Quartet performs acoustic, straight-ahead bebop and swing in the jazz tradition, following cues from Dizzy Gillespie and Freddie Hubbard to the great small groups of the Oscar Peterson Trio and the Miles Davis Quintet.
 
 www.JohnLakeJazz.com
 www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
-      'dtend' => '2455660 18000',
-      'dtstart' => '2455660 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA0MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'The John Lake Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The John Lake Quartet
+    'dtend' => '2455660 18000',
+    'dtstart' => '2455660 7200',
+    'summary' => 'The John Lake Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA0MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The John Lake Quartet
 
 John Lake is a trumpet player, composer/arranger, and music educator active throughout the Front Range.  John holds a Bachelor of Music from the University of Cincinnati’s College Conservatory of Music in Jazz and Studio Music, and a Master of Music in Jazz Trumpet from the University of Colorado at Boulder.  Additionally, Lake attended the School of Improvised Music Summer Intensive in 2008, as well as the Banff International Workshop for Jazz and Creative Music in 2010, where he studied under trumpeter Dave Douglas.  The John Lake Quartet performs acoustic, straight-ahead bebop and swing in the jazz tradition, following cues from Dizzy Gillespie and Freddie Hubbard to the great small groups of the Oscar Peterson Trio and the Miles Davis Quintet.
 
 www.JohnLakeJazz.com
 www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
-      'dtend' => '2455688 18000',
-      'dtstart' => '2455688 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA1MDZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'The John Lake Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The John Lake Quartet
+    'dtend' => '2455688 18000',
+    'dtstart' => '2455688 7200',
+    'summary' => 'The John Lake Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA1MDZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The John Lake Quartet
 
 John Lake is a trumpet player, composer/arranger, and music educator active throughout the Front Range.  John holds a Bachelor of Music from the University of Cincinnati’s College Conservatory of Music in Jazz and Studio Music, and a Master of Music in Jazz Trumpet from the University of Colorado at Boulder.  Additionally, Lake attended the School of Improvised Music Summer Intensive in 2008, as well as the Banff International Workshop for Jazz and Creative Music in 2010, where he studied under trumpeter Dave Douglas.  The John Lake Quartet performs acoustic, straight-ahead bebop and swing in the jazz tradition, following cues from Dizzy Gillespie and Freddie Hubbard to the great small groups of the Oscar Peterson Trio and the Miles Davis Quintet.
 
 www.JohnLakeJazz.com
 www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
-      'dtend' => '2455716 18000',
-      'dtstart' => '2455716 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA2MDNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'The John Lake Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'The John Lake Quartet
+    'dtend' => '2455716 18000',
+    'dtstart' => '2455716 7200',
+    'summary' => 'The John Lake Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA2MDNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'The John Lake Quartet
 
 John Lake is a trumpet player, composer/arranger, and music educator active throughout the Front Range.  John holds a Bachelor of Music from the University of Cincinnati’s College Conservatory of Music in Jazz and Studio Music, and a Master of Music in Jazz Trumpet from the University of Colorado at Boulder.  Additionally, Lake attended the School of Improvised Music Summer Intensive in 2008, as well as the Banff International Workshop for Jazz and Creative Music in 2010, where he studied under trumpeter Dave Douglas.  The John Lake Quartet performs acoustic, straight-ahead bebop and swing in the jazz tradition, following cues from Dizzy Gillespie and Freddie Hubbard to the great small groups of the Oscar Peterson Trio and the Miles Davis Quintet.
 
 www.JohnLakeJazz.com
 www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
-      'dtend' => '2455751 18000',
-      'dtstart' => '2455751 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA3MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'The John Lake Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Brad Upton & Joe Bonner Quartet
+    'dtend' => '2455751 18000',
+    'dtstart' => '2455751 7200',
+    'summary' => 'The John Lake Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA3MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Brad Upton & Joe Bonner Quartet
 
 Joe Bonner, piano
 Tony Black ,drums
 Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
-      'dtend' => '2455591 21600',
-      'dtstart' => '2455591 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAxMjlUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton & Joe Bonner Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Brad Upton & Joe Bonner Quartet
+    'dtend' => '2455591 21600',
+    'dtstart' => '2455591 10800',
+    'summary' => 'Brad Upton & Joe Bonner Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAxMjlUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Brad Upton & Joe Bonner Quartet
 
 Joe Bonner, piano
 Tony Black ,drums
 Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
-      'dtend' => '2455619 21600',
-      'dtstart' => '2455619 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAyMjZUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton & Joe Bonner Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Brad Upton & Joe Bonner Quartet
+    'dtend' => '2455619 21600',
+    'dtstart' => '2455619 10800',
+    'summary' => 'Brad Upton & Joe Bonner Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAyMjZUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Brad Upton & Joe Bonner Quartet
 
 Joe Bonner, piano
 Tony Black ,drums
 Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
-      'dtend' => '2455647 18000',
-      'dtstart' => '2455647 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAzMjZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton & Joe Bonner Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Brad Upton & Joe Bonner Quartet
+    'dtend' => '2455647 18000',
+    'dtstart' => '2455647 7200',
+    'summary' => 'Brad Upton & Joe Bonner Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAzMjZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Brad Upton & Joe Bonner Quartet
 
 Joe Bonner, piano
 Tony Black ,drums
 Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
-      'dtend' => '2455675 18000',
-      'dtstart' => '2455675 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA0MjNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton & Joe Bonner Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Brad Upton & Joe Bonner Quartet
+    'dtend' => '2455675 18000',
+    'dtstart' => '2455675 7200',
+    'summary' => 'Brad Upton & Joe Bonner Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA0MjNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Brad Upton & Joe Bonner Quartet
 
 Joe Bonner, piano
 Tony Black ,drums
 Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
-      'dtend' => '2455710 18000',
-      'dtstart' => '2455710 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA1MjhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton & Joe Bonner Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Brad Upton & Joe Bonner Quartet
+    'dtend' => '2455710 18000',
+    'dtstart' => '2455710 7200',
+    'summary' => 'Brad Upton & Joe Bonner Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA1MjhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Brad Upton & Joe Bonner Quartet
 
 Joe Bonner, piano
 Tony Black ,drums
 Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
-      'dtend' => '2455738 18000',
-      'dtstart' => '2455738 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA2MjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Upton & Joe Bonner Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Three Squared:
+    'dtend' => '2455738 18000',
+    'dtstart' => '2455738 7200',
+    'summary' => 'Brad Upton & Joe Bonner Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA2MjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Three Squared:
 
 Antwon Owens, Matt King, Jim Disner and Nathan Walter make up the band Three Squared. Heavily influenced by Denver trumpeter/composer great Ron Miles and other modern instrumental artists such as Bill Frisell, Fred Hess and Don Byron, they perpetuate the evolution of American music through composition and performance. As a group or individually they have performed/recorded with or alongside such notables as Stanley Jordan, Lee Konitz, The Bad Plus, The Under Dog Five, Chronophonic, The New York Voices, Ron Miles, Fred Hess, Rene Marie, Keith Oxman, Mark Harris, Shamie Royston, Mark Sabatella, Joe Bonner, and many more. Some venues that have showcased their talents are: Dazzle Jazz Club, Utah Arts Festival, Laughing Goat, The Walnut Room, Dulcinea’s, Zanzibar, Bliss Cafe, Trio’s Enoteca, KGNU Performance Studio, The Soiled Dove Underground, The Oriental Theater, and many other auditoriums, clubs and music festivals.
 
 http://www.myspace.com/thr33squared',
-      'dtend' => '2455584 21600',
-      'dtstart' => '2455584 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=ZjkzYWpsaWszdDFvYzFxYnZkNGxka2I0ajQgY2FmZmVzb2xlbXVzaWNAbQ'
-    },
-    {
-      'display_name' => 'Three Squared "Object" CD Release show'
-    }
-  ],
-  [
-    {
-      'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom’s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul’s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you’ll understand why one excited audience member said “This is the best jazz I’ve ever heard in Boulder.”',
-      'dtend' => '2455577 21600',
-      'dtstart' => '2455577 10800',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=MzFhamtiY2l2ajlhbmJoa2phNG84cWVvZXMgY2FmZmVzb2xlbXVzaWNAbQ'
-    },
-    {
-      'display_name' => 'Tom Weiser & Paul Fowler Jazz Duo'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455584 21600',
+    'dtstart' => '2455584 10800',
+    'summary' => 'Three Squared "Object" CD Release show',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ZjkzYWpsaWszdDFvYzFxYnZkNGxka2I0ajQgY2FmZmVzb2xlbXVzaWNAbQ'
+  },
+  {
+    'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom’s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul’s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you’ll understand why one excited audience member said “This is the best jazz I’ve ever heard in Boulder.”',
+    'dtend' => '2455577 21600',
+    'dtstart' => '2455577 10800',
+    'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MzFhamtiY2l2ajlhbmJoa2phNG84cWVvZXMgY2FmZmVzb2xlbXVzaWNAbQ'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -513,18 +412,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455573 21600',
-      'dtstart' => '2455573 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455573 21600',
+    'dtstart' => '2455573 7200',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -544,18 +439,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455580 21600',
-      'dtstart' => '2455580 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMThUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455580 21600',
+    'dtstart' => '2455580 7200',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMThUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -575,18 +466,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455587 21600',
-      'dtstart' => '2455587 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455587 21600',
+    'dtstart' => '2455587 7200',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -606,18 +493,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455594 21600',
-      'dtstart' => '2455594 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455594 21600',
+    'dtstart' => '2455594 7200',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -637,18 +520,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455601 21600',
-      'dtstart' => '2455601 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455601 21600',
+    'dtstart' => '2455601 7200',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -668,18 +547,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455608 21600',
-      'dtstart' => '2455608 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMTVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455608 21600',
+    'dtstart' => '2455608 7200',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMTVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -699,18 +574,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455615 21600',
-      'dtstart' => '2455615 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMjJUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455615 21600',
+    'dtstart' => '2455615 7200',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMjJUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -730,18 +601,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455622 21600',
-      'dtstart' => '2455622 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455622 21600',
+    'dtstart' => '2455622 7200',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -761,18 +628,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455629 21600',
-      'dtstart' => '2455629 7200',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455629 21600',
+    'dtstart' => '2455629 7200',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -792,18 +655,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455636 18000',
-      'dtstart' => '2455636 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMTVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455636 18000',
+    'dtstart' => '2455636 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMTVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -823,18 +682,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455643 18000',
-      'dtstart' => '2455643 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455643 18000',
+    'dtstart' => '2455643 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -854,18 +709,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455650 18000',
-      'dtstart' => '2455650 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455650 18000',
+    'dtstart' => '2455650 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -885,18 +736,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455657 18000',
-      'dtstart' => '2455657 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455657 18000',
+    'dtstart' => '2455657 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -916,18 +763,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455664 18000',
-      'dtstart' => '2455664 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455664 18000',
+    'dtstart' => '2455664 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -947,18 +790,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455671 18000',
-      'dtstart' => '2455671 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455671 18000',
+    'dtstart' => '2455671 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -978,18 +817,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455678 18000',
-      'dtstart' => '2455678 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MjZUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455678 18000',
+    'dtstart' => '2455678 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MjZUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1009,18 +844,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455685 18000',
-      'dtstart' => '2455685 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MDNUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455685 18000',
+    'dtstart' => '2455685 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MDNUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1040,18 +871,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455692 18000',
-      'dtstart' => '2455692 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTBUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455692 18000',
+    'dtstart' => '2455692 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTBUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1071,18 +898,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455699 18000',
-      'dtstart' => '2455699 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455699 18000',
+    'dtstart' => '2455699 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1102,18 +925,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455706 18000',
-      'dtstart' => '2455706 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MjRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455706 18000',
+    'dtstart' => '2455706 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MjRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1133,18 +952,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455713 18000',
-      'dtstart' => '2455713 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MzFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455713 18000',
+    'dtstart' => '2455713 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MzFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1164,18 +979,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455720 18000',
-      'dtstart' => '2455720 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MDdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455720 18000',
+    'dtstart' => '2455720 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MDdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1195,18 +1006,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455727 18000',
-      'dtstart' => '2455727 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MTRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455727 18000',
+    'dtstart' => '2455727 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MTRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1226,18 +1033,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455734 18000',
-      'dtstart' => '2455734 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455734 18000',
+    'dtstart' => '2455734 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1257,18 +1060,14 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455741 18000',
-      'dtstart' => '2455741 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjhUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ],
-  [
-    {
-      'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
+    'dtend' => '2455741 18000',
+    'dtstart' => '2455741 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjhUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  },
+  {
+    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
 
 Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
 
@@ -1288,13 +1087,10 @@ Boulder, CO
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review
 ',
-      'dtend' => '2455748 18000',
-      'dtstart' => '2455748 3600',
-      'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-      'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA3MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
-    },
-    {
-      'display_name' => 'Brad Goode Jazz Quartet'
-    }
-  ]
+    'dtend' => '2455748 18000',
+    'dtstart' => '2455748 3600',
+    'summary' => 'Brad Goode Jazz Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA3MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+  }
 ]
