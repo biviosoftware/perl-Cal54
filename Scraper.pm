@@ -146,6 +146,7 @@ sub _update {
     }};
     my($refresh) = {};
     foreach my $event (@{$self->get('events')}) {
+#TODO: need to use Type for each field to clean input	
 	unless ($_DT->is_greater_than($event->[0]->{dtend}, $date_time)) {
 #TODO: Deal with recurring events -- this should actually do it, no?
 	    next;
