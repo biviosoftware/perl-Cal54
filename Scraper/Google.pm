@@ -69,11 +69,8 @@ sub _add_event_urls {
 	$uid =~ s/\@.*$//;
 	$event->{url} = $url_by_id->{$uid . '-'
 	    . $_DT->to_string($event->{dtstart})};
-
-	unless ($event->{url}) {
-	    b_warn('missing url for uid: ', $uid, ' ',
-	        $_DT->to_ical($event->{dtstart}));
-	}
+	b_warn('missing url for uid: ', $uid, ' ', $event->{dtstart})
+	    unless $event->{url};
     }
     return;
 }
@@ -87,13 +84,6 @@ sub _explode_event {
 	    %$_,
 	}, @{$_RR->process_rrule($vevent, $end)}),
     ];
-}
-
-sub _local_date {
-    my($self, $event) = @_;
-    return '' unless $event->{time_zone};
-    return $_D->to_file_name($event->{time_zone}
-        ->date_time_from_utc($event->{dtstart}));
 }
 
 sub _parse_ics {
