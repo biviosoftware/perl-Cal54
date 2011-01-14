@@ -3,20 +3,22 @@
 package Cal54::Scraper;
 use strict;
 use Bivio::Base 'HTML.Scraper';
+use XML::Simple ();
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_A) = b_use('IO.Alert');
 my($_C) = b_use('IO.Config');
 my($_CE) = b_use('Model.CalendarEvent');
+my($_CEFL) = b_use('Model.CalendarEventFilterList');
 my($_DT) = b_use('Type.DateTime');
 my($_F) = b_use('IO.File');
 my($_FP) = b_use('Type.FilePath');
+my($_HTML) = b_use('Bivio.HTML');
 my($_L) = b_use('IO.Log');
+my($_R) = b_use('IO.Ref');
 my($_T) = b_use('Agent.Task');
 #TODO: Make a RowTag
 my($_TZ) = b_use('Type.TimeZone')->get_default;
-my($_CEFL) = b_use('Model.CalendarEventFilterList');
-my($_R) = b_use('IO.Ref');
 
 sub c4_scraper_get {
     my($self, $uri) = @_;
@@ -100,6 +102,44 @@ sub internal_catch {
     $self->put(failures => $self->get('failures') + 1);
     return;
 }
+
+sub internal_clean {
+    my($self, $value) = @_;
+    $value = $_HTML->unescape($value);
+    $value =~ s,<.*?>, ,g;
+    return $value;
+}
+
+sub internal_date_time {
+    my($self, $str) = @_;
+    # mm/dd/yyyy hh:mm (a|p)m
+    # yyyy/mm/dd hh:mm (a|p)m
+    my($d, $t) = $str =~ m,^([\d/]+)\s+(.*?)\s*$,;
+    b_die('unparsable date/time: ', $str)
+	unless $t;
+    my($mon, $mday, $year) = split('/', $d);
+    ($mon, $mday, $year) = ($mday, $year, $mon)
+	if length($mon) eq 4;
+    my($hour, $min, $ap) = $t =~ m,^(\d+)\:(\d+) (a|p)m$,i;
+    b_die('unparsable date/time: ', $str)
+	unless $year && $ap;
+    $hour += 12 if lc($ap) eq 'p' && $hour < 12;
+    return $self->get('time_zone')->date_time_to_utc(
+	$_DT->from_parts_or_die(0, $min, $hour, $mday, $mon, $year));
+}
+
+sub internal_parse_xml {
+    my($self, $url) = @_;
+    my($xml, $err) = XML::Simple::xml_in(${$self->c4_scraper_get($url)},
+        NoAttr => 1,
+	SuppressEmpty => undef,
+	KeyAttr => [],
+    );
+    b_die('xml parse error: ', $err) if $err;
+    b_die('no xml data for url: ', $url) unless keys(%$xml);
+    return $xml;
+}
+
 
 sub _bunit_dir {
     my($self) = @_;
