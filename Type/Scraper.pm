@@ -10,6 +10,7 @@ __PACKAGE__->compile([
     GOOGLE => 1,
     NISSIS => 2,
     ACTIVE_DATA => 3,
+    EVANCED => 4,
 ]);
 
 sub as_class {
