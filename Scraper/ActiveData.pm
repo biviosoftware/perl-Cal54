@@ -30,27 +30,27 @@ sub internal_import {
 	       'download=download',
 	       'dlType=XML'
 	));
-    my($res, $err) = XML::Simple::xml_in($$xml);
+    my($res, $err) = XML::Simple::xml_in($$xml,
+        NoAttr => 1,
+	SuppressEmpty => undef);
     b_die('xml parse error: ', $err) if $err;
     b_die('no events: ', $res) unless keys(%$res);
     
-    # download and parse events, see ~/tmp/e.xml
     # iterate events, taking Address1 which match the current venue
     foreach my $event (@{$res->{Event}}) {
-	next unless lc($addr1) eq lc($event->{Address1}->{content} || '');
-	next if lc($event->{Status}->{content} || '') eq 'cancelled';
-	next unless $event->{StartDate}->{content}
-	    && $event->{StartTime}->{content}
-	    && $event->{EndDate}->{content}
-	    && $event->{EndTime}->{content};
+	next unless lc($addr1) eq lc($event->{Address1} || '');
+	next if lc($event->{Status} || '') eq 'cancelled';
+	next unless $event->{StartDate}
+	    && $event->{StartTime}
+	    && $event->{EndDate}
+	    && $event->{EndTime};
 	push(@{$self->get('events')}, {
-	    summary => _clean($self, $event->{EventName}->{content}),
+	    summary => _clean($self, $event->{EventName}),
 	    time_zone => $self->get('time_zone'),
-	    description => _clean($self, $event->{EventDescription}->{content}),
+	    description => _clean($self, $event->{EventDescription}),
 	    dtstart => _date_time($self, $event, 'Start'),
 	    dtend => _date_time($self, $event, 'End'),
 	});
-
 
 	# description combines EventDescription, Location, Building, Room,
 	# ContactName, ContactPhone, ContactEmail,
@@ -94,9 +94,9 @@ sub _clean {
 
 sub _date_time {
     my($self, $event, $type) = @_;
-    my($mon, $mday, $year) = split('/', $event->{$type . 'Date'}->{content});
+    my($mon, $mday, $year) = split('/', $event->{$type . 'Date'});
     my($hour, $min, $ap) =
-	$event->{$type . 'Time'}->{content} =~ m,^(\d+)\:(\d+) (a|p)m$,i;
+	$event->{$type . 'Time'} =~ m,^(\d+)\:(\d+) (a|p)m$,i;
     b_die('unparsable date/time: ', $event)
 	unless $year && $ap;
     $hour += 12 if lc($ap) eq 'p' && $hour < 12;
