@@ -3,18 +3,16 @@
 package Cal54::Scraper::ActiveData;
 use strict;
 use Bivio::Base 'Bivio.Scraper';
-use XML::Simple ();
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
-my($_HTML) = b_use('Bivio::HTML');
 # cache xml to be shared across venues
 my($_XML_BY_URI_KEY) = __PACKAGE__ . 'xml';
 
 sub internal_import {
     my($self) = @_;
-    my($start) = $_D->add_days($_D->local_today, -1);
+    my($start) = $_D->add_days($self->get('date_time'), -1);
     my($end) = $_D->add_months($start, 6);
     my($webhost) = _parse_webhost($self);
     return unless _parse_event_xml($self, $webhost, $start, $end);
@@ -42,7 +40,7 @@ sub _add_event_urls {
     foreach my $item (@{$xml->{channel}->{item}}) {
 	# pubDate has the GMT start time
 	my($title) = _strip_trailing_parens($self,
-            _clean($self, $item->{title}));
+            $self->internal_clean($item->{title}));
 	($links_by_start_time->{$_DT->from_literal_or_die($item->{pubDate})}
 	    ||= {})->{$title} = $item->{link};
     }
@@ -61,23 +59,10 @@ sub _add_event_urls {
     return;
 }
 
-sub _clean {
-    my($self, $value) = @_;
-    $value = $_HTML->unescape($value);
-    $value =~ s,<.*?>, ,g;
-    return $value;
-}
-
 sub _date_time {
     my($self, $event, $type) = @_;
-    my($mon, $mday, $year) = split('/', $event->{$type . 'Date'});
-    my($hour, $min, $ap) =
-	$event->{$type . 'Time'} =~ m,^(\d+)\:(\d+) (a|p)m$,i;
-    b_die('unparsable date/time: ', $event)
-	unless $year && $ap;
-    $hour += 12 if lc($ap) eq 'p' && $hour < 12;
-    return $self->get('time_zone')->date_time_to_utc(
-	$_DT->from_parts_or_die(0, $min, $hour, $mday, $mon, $year));
+    return $self->internal_date_time(
+	$event->{$type . 'Date'} . ' ' . $event->{$type . 'Time'});
 }
 
 sub _parse_event_xml {
@@ -102,9 +87,9 @@ sub _parse_event_xml {
 	next unless $event->{StartDate} && $event->{StartTime}
 	    && $event->{EndDate} && $event->{EndTime};
 	push(@{$self->get('events')}, {
-	    summary => _clean($self, $event->{EventName}),
+	    summary => $self->internal_clean($event->{EventName}),
 	    time_zone => $self->get('time_zone'),
-	    description => _clean($self, $event->{EventDescription}),
+	    description => $self->internal_clean($event->{EventDescription}),
 	    dtstart => _date_time($self, $event, 'Start'),
 	    dtend => _date_time($self, $event, 'End'),
 	});
@@ -132,11 +117,7 @@ sub _parse_xml {
     $self->req->put_unless_exists($_XML_BY_URI_KEY => {});
     return $self->req($_XML_BY_URI_KEY)->{$url}
 	if $self->req($_XML_BY_URI_KEY)->{$url};
-    my($xml, $err) = XML::Simple::xml_in(${$self->c4_scraper_get($url)},
-        NoAttr => 1,
-	SuppressEmpty => undef);
-    b_die('xml parse error: ', $err) if $err;
-    b_die('no xml data for url: ', $url) unless keys(%$xml);
+    my($xml) = $self->internal_parse_xml($url);
     $self->req($_XML_BY_URI_KEY)->{$url} = $xml;
     return $xml;
 }
