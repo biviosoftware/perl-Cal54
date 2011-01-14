@@ -13,7 +13,7 @@ my($_RR) = b_use('MIME.RRule');
 
 sub internal_import {
     my($self) = @_;
-    my($start) = $_D->add_days($_D->local_today, -1);
+    my($start) = $_D->add_days($self->get('date_time'), -1);
     my($end) = $_D->add_months($start, 6);
     my($html) = $self->c4_scraper_get(
 	$self->get('venue_list')->get('calendar.Website.url'));
