@@ -5,6 +5,7 @@ use strict;
 use Bivio::Base 'Bivio.ShellUtil';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
+my($_S) = b_use('Type.Scraper');
 
 sub USAGE {
     return <<'EOF';
@@ -69,7 +70,7 @@ sub _init_venues {
 	    'http://thelaughinggoat.com',
 	    'contact@thelaughinggoat.com',
 	    undef,
-	    b_use('Type.Scraper')->GOOGLE,
+	    $_S->GOOGLE,
 	    'thelaughinggoat',
 	],	
 	[
@@ -83,7 +84,7 @@ sub _init_venues {
 	    'http://www.caffesole.com',
 	    'ashkan@caffesole.com',
 	    '303.499.2985',
-	    b_use('Type.Scraper')->GOOGLE,
+	    $_S->GOOGLE,
 	    'caffesole',
 	],
 	[
@@ -97,7 +98,7 @@ sub _init_venues {
 	    'http://www.nissis.com',
 	    'marc@nissis.com',
 	    '303.665.2757',
-	    b_use('Type.Scraper')->NISSIS,
+	    $_S->NISSIS,
 	    'nissis',
 	],
 	[
@@ -111,7 +112,7 @@ sub _init_venues {
 	    'http://macky.colorado.edu',
 	    'ignore-cu_macky@bivio.biz',
 	    '',
-	    b_use('Type.Scraper')->GOOGLE,
+	    $_S->ACTIVE_DATA,
 	    'cu_macky',
 	],
 	[
@@ -125,7 +126,7 @@ sub _init_venues {
 	    'http://music.colorado.edu',
 	    'ignore-cu_imig@bivio.biz',
 	    '',
-	    b_use('Type.Scraper')->GOOGLE,
+	    $_S->ACTIVE_DATA,
 	    'cu_imig',
 	],
     ) {
