@@ -28,13 +28,13 @@ sub c4_scraper_get {
 }
 
 sub do_all {
-    my($self, $venue_list) = @_;
+    my($proto, $venue_list) = @_;
     my($date_time) = $_DT->now;
     $venue_list->do_rows(
 	sub {
 	    my($it) = @_;
 	    $_A->reset_warn_counter;
-	    $self->do_one($it, $date_time);
+	    $proto->do_one($it, $date_time);
 	    return 1;
 	},
     );
