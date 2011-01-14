@@ -9,10 +9,14 @@ __PACKAGE__->compile([
     UNKNOWN => 0,
     GOOGLE => 1,
     NISSIS => 2,
+    ACTIVE_DATA => 3,
 ]);
 
 sub as_class {
-    return shift->get_short_desc;
+    my($self) = @_;
+    my($res) = shift->get_short_desc;
+    $res =~ s/\s//g;
+    return $res;
 }
 
 1;
