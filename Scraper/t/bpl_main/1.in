@@ -1,0 +1,1162 @@
+[
+  {
+    'description' => 'Time: 4:00pm-5:45pm Enjoy playing board games with other members of the community, or try out Wii games on the big screen.  We have a variety of games to plya, or feel fre to bring a family favorite.  For all ages. Free.  No reservations required.  For more information call 303-441-4390.',
+    'dtend' => '2455577 3600',
+    'dtstart' => '2455576 82800',
+    'summary' => 'Family Game Night',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8199'
+  },
+  {
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'dtend' => '2455577 72000',
+    'dtstart' => '2455577 61200',
+    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8795'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455577 64800',
+    'dtstart' => '2455577 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9333'
+  },
+  {
+    'description' => 'The Jungle Lady performs wildlife education programs focusing mainly on reptiles. See a variety of animals up close and learn cool facts about them in this interactive, fun and safe presentation.     *Note:  Children under age 4 will not be able to touch the animals*   FREE! For children ages 3-12.  Reservations Required - please call 303-441-3120.',
+    'dtend' => '2455577 68400',
+    'dtstart' => '2455577 64800',
+    'summary' => 'The Jungle Lady:  Teaturing Linda Esser',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7896'
+  },
+  {
+    'description' => 'Cold outside? Drop in and join a BPL librarian for some cozy time with your favorite knitting or other sewing projects. We\'ll have some good books on hand to inspire your creativity!',
+    'dtend' => '2455577 79200',
+    'dtstart' => '2455577 72000',
+    'summary' => 'Cozy Knitting Day at BPL',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7831'
+  },
+  {
+    'description' => 'The Jungle Lady performs wildlife education programs focusing mainly on reptiles. See a variety of animals up close and learn cool facts about them in this interactive, fun and safe presentation.     *Note:  Children under age 4 will not be able to touch the animals*   FREE! For children ages 3-12.  Reservations Required -- please call 303-441-4390.',
+    'dtend' => '2455577 82800',
+    'dtstart' => '2455577 79200',
+    'summary' => 'The Jungle Lady: Featuring Linda Esser',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7897'
+  },
+  {
+    'description' => 'Learn to play the ancient and mysterious board game known as Go. Developed 4000 years ago in China, the rules are so simple they can be taught in a few minutes--but it can take a lifetime to master the game. Go boards are provided and take-home sets made of cardboard are available for free.  Ages 5 and up. Cost: Free',
+    'dtend' => '2455579 1800',
+    'dtstart' => '2455578 75600',
+    'summary' => 'Go Club for Kids & Teens',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5599'
+  },
+  {
+    'description' => "Through the eyes of a young singer manipulated by her magnetic and dangerous \x{93}Angel of Music,\x{94} you'll journey into the fantastical world of the 1880s Paris Opera House. Inspired by Gaston Leroux\x{92}s original novel, this tale of seduction and surrender is set against the visually stunning backdrop of Lon Chaney\x{92}s 1925 classic film. Through beautiful vocals, spellbinding narrative and classic screen imagery, Marta Burton and Nick Rossi mesmerize audiences while accessing the story\x{92}s deep and timeless power. READ the Blog: http://denverlibrary.org/content/phantom-crossroads-theatre-singer-marta-burton-brings-little-illumination-five-points ",
+    'dtend' => '2455579 1800',
+    'dtstart' => '2455578 82800',
+    'summary' => 'The Library Concert Series Presents: Phantom of the Opera--Dark Duet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8213'
+  },
+  {
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'dtend' => '2455580 68400',
+    'dtstart' => '2455580 61200',
+    'summary' => 'GED classes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2568'
+  },
+  {
+    'description' => "Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\x{92}s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot\@gmail.com).",
+    'dtend' => '2455580 68400',
+    'dtstart' => '2455580 61200',
+    'summary' => 'Boulder World Affairs Discussion Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7154'
+  },
+  {
+    'description' => 'On the first three Tuesdays of the month, babies (birth-18 months) and their caregivers explore language and books in a fun and intimate setting. Programs include rhymes, songs and books as well as time for free play and informal discussion of early childhood development. Attendance limited to babies up to 18 months of age; no older children please.',
+    'dtend' => '2455580 64800',
+    'dtstart' => '2455580 62100',
+    'summary' => 'Baby Time',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=6511'
+  },
+  {
+    'description' => 'Storytime for Children is at 10:15 a.m. every Tuesday at the Reynolds Branch Library.',
+    'dtend' => '2455580 64800',
+    'dtstart' => '2455580 62100',
+    'summary' => 'Storytime for Children',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8444'
+  },
+  {
+    'description' => 'Enjoy books, songs, and more--all in French--at Marie\'s bi-monthly story time for preschoolers and up!  This event is free and takes place the first and third Tuesday morning of each month from September to December. ',
+    'dtend' => '2455580 64800',
+    'dtstart' => '2455580 62100',
+    'summary' => 'French Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9060'
+  },
+  {
+    'description' => 'MOKOBA! African music and dance ensemble.',
+    'dtend' => '2455580 72000',
+    'dtstart' => '2455580 68400',
+    'summary' => 'The Third Tuesday Lunchtime Concert Series Presents: ',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8212'
+  },
+  {
+    'description' => '1:00 p.m. every Tuesday at Meadows Branch Library, 4800 Baseline Rd.',
+    'dtend' => '2455580 77400',
+    'dtstart' => '2455580 72000',
+    'summary' => 'Conversations in English Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7292'
+  },
+  {
+    'description' => 'Our artist of the month, Bobbi Benson, will be doing an informal talk about her display including her work with altered books.  This is a Pulse Point presentation.  Open to all. No reservation needed.',
+    'dtend' => '2455580 77400',
+    'dtstart' => '2455580 77400',
+    'summary' => 'Altered Books with artist Bobbi Benson',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9436'
+  },
+  {
+    'description' => 'On the first three Wednesdays of the month, toddlers (18-36 months) and their caregivers explore language and books in a fun and intimate setting. Programs include rhymes, songs, and books as well as time for free play and informal discussion of early childhood development. Attendance limited to toddlers from 18-36 months of age; no older children please. ',
+    'dtend' => '2455581 64800',
+    'dtstart' => '2455581 62100',
+    'summary' => 'Toddler Time',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7589'
+  },
+  {
+    'description' => '10:15 a.m. every Wednesday at the Meadows Branch Library, 4800 Baseline Road.',
+    'dtend' => '2455581 65700',
+    'dtstart' => '2455581 62100',
+    'summary' => 'Storytime for children',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8118'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455581 64800',
+    'dtstart' => '2455581 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9067'
+  },
+  {
+    'description' => 'Group meets to discuss variety of literary genres.',
+    'dtend' => '2455581 77400',
+    'dtstart' => '2455581 72000',
+    'summary' => 'Conversations in English Literary Discussions',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8873'
+  },
+  {
+    'description' => 'Socrates Cafe, a philosophical discussion group, meets the first and third Wednesday of each month from 2:00pm to 3:30pm at the Meadows Branch Library.',
+    'dtend' => '2455581 81000',
+    'dtstart' => '2455581 75600',
+    'summary' => 'Socrates Cafe',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8767'
+  },
+  {
+    'description' => 'Boulder Arts Commission\'s monthly meeting for January, 2011.',
+    'dtend' => '2455582 12600',
+    'dtstart' => '2455582 1800',
+    'summary' => 'Boulder Arts Commission Meeting',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8764'
+  },
+  {
+    'description' => 'Annual Community Dance Meetings Scheduled for January.  Come network, learn about local resources, meet new-to-the-area dancers and hear what\'s on the table for 2011.  These free community meetings help bring the dance community together to make connections and share ideas.  Two opportunities are scheduled - same materials will be covered at both, but you never know who you\'ll meet!!  *Wednesday, January 19 from 6:30 -8 p.m. in South Side Pulse Point AND/OR *Friday, January 21 from 12noon - 1:30 p.m. in Boulder Creek Meeting Room, both in the Boulder Public Library, 1001 Arapahoe Avenue, Boulder 80302. (Free parking in the library Arapahoe Ave. lot).  An RSVP to the Dance Bridge is requested, but not mandatory. Come join us!',
+    'dtend' => '2455582 10800',
+    'dtstart' => '2455582 5400',
+    'summary' => 'Annual Community Dance Meetings',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7827'
+  },
+  {
+    'description' => "Nuestras presentaciones de las \"Series sobre las Cortes\" fundadas en septiembre del a\x{f1}o de 2007, son una actividad conjunta del Instituto Judicial de Colorado y la Asociaci\x{f3}n de la Barra de Colorado.  Proveen  informaci\x{f3}n sin tomar partido para extender el conocimiento p\x{fa}blico y el entendimiento de las cortes estatales y federales en Colorado.  Los presentadores se refieren al papel justo e imparcial de las cortes en aplicar y preservar las reglas de la ley; no toman ninguna posici\x{f3}n en relaci\x{f3}n con cualquier caso en la corte, la legislatura, asuntos del voto, o los cambios propuestos en el sistema de la corte.  [This event is one of four lectures on the court system in the USA, this specific lecture is in Spanish. For English please see January 12, April and July 13, and October 12, 2011] ",
+    'dtend' => '2455582 13500',
+    'dtstart' => '2455582 7200',
+    'summary' => 'Las Cortes Estatales de Colorado y Las Cortes Federales',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=6689'
+  },
+  {
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'dtend' => '2455582 68400',
+    'dtstart' => '2455582 61200',
+    'summary' => 'GED classes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2768'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455582 64800',
+    'dtstart' => '2455582 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9371'
+  },
+  {
+    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.  ',
+    'dtend' => '2455582 81000',
+    'dtstart' => '2455582 70200',
+    'summary' => 'BoulderReads! Adult Literacy Tutor Training',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7892'
+  },
+  {
+    'description' => 'this group meet in the Arapahoe Conference Room in January.  All subsequent meetings are held in the Boulder Creek Meeting Room on the 3rd Thursday of each month from 1-3 p.m. UNA/BOULDER LIBRARY DISCUSSION SCHEDULE for  January through February 2011:   January 20 "The implications of the Wiki Leaks revelations on the future of international diplomacy:  Does the truth hurt?  Would you join the diplomatic corps today?"            There will be no resource person for this session.  NOTE:  This session will be held in the Arapahoe Conference Room   February 17  "Educating young people around the world:  What do they need to learn to become future world leaders?" Resource person: Eric Glaustrom founder of the Boulder based NGO, Educate!    ',
+    'dtend' => '2455582 79200',
+    'dtstart' => '2455582 72000',
+    'summary' => 'UN and International Affairs',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7924'
+  },
+  {
+    'description' => 'Meets at 7 p.m. the 1st and 3rd Thursday of each month in the Boulder Creek Meeting Room (except for 4/7,4/21,5/5,9/15/ and 10/6 when they will meet in the Arapahoe Conference Room at the Main Library. Starting January 6, and during most of 2011, the BPL Cosmology discussion group will view and discuss a DVD lecture series from The Teaching Company, "Cosmology: The History and Nature of Our Universe", Taught By Professor Mark Whittle, Ph.D., University of Cambridge and University of Virginia.  This series of 36 half hour lectures covers the physics of the origin and evolution of the universe from the big bang to the present and beyond.  Topics include how the universe started in the big bang, the cosmic microwave background and what can be learned from it, the expansion of the universe, which has been found to be accelerating rather than slowing as previously thought, the "cosmological principle" that the universe is presumed to be roughly the same everywhere on very large scales, the composition of the universe which is only about 4% known, the formation of galaxies, stars, and the chemical elements, and the perhaps surprising outcome of all this that some parts of the universe are inhabitable.  For a full description of the series, with descriptions of each lecture, visit http://www.teach12.com/tgc/courses/course_detail.aspx?cid=1830.  To see books this group has discussed in the past, visit http://www.sackett.net/cosmology.htm.    We will watch each 30 minute lecture and then discuss it, and will attempt to cover two lectures in each meeting.  We will meet in the Boulder Creek Meeting Room on the first floor of the main Boulder Public Library on the first and third Thursdays of each month at 7-9 PM, beginning January 6.  (On 4/7,4/21,5/5,9/15/ and 10/6, we will meet in the Arapahoe Conference Room and will not be able to view DVDs, but will discuss related topics.)  These lectures will start out slowly and move into more advanced topics, but will stay within reach of laymen with a modest backgound in science.  For more information please visit http://www.sackett.net/cosmology.htm Contact:  jeff1.grove@gmail.com 303-581-9017  Expected Schedule (may slip):  January 6 1. The Journey Ahead Cosmology takes the entire universe as its subject, not just its form, structure, and contents, but also how it was born and how it has evolved. You look at the origin of cosmology in creation stories before taking a whirlwind tour of the whole course.  2. Denizens of the Universe This lecture introduces the hierarchy of structures in the universe: from planets to stars, galaxies, galaxy clusters, and larger groupings of galaxies called the cosmic web. Since light travels at a finite speed, looking far away also means looking far back in time.  January 20 3. Overall Cosmic Properties The universe is lumpy at the scale of galaxies and galaxy clusters. But at larger scales it seems to be smooth and similar in all directions. This property of homogeneity and isotropy is called the cosmological principle.  4. The Stuff of the Universe The most familiar constituents of the universe are atomic matter and light. Neutrinos make up another component. But by far the bulk of the universe--96%--is dark energy and dark matter. The relative amounts of these constituents have changed as the universe has expanded.  February 3 5. The Sweep of Cosmic History Take a quick trip through the history of the universe, from the big bang to a conjectured future of ever-accelerating expansion. Eight key stages are in between, including the condensation of atoms, the birth of the first stars, and the formation of galaxies.  6. Measuring Distances Astronomers use a "distance ladder" of overlapping techniques to determine distances in the universe. Triangulation works for nearby stars. For progressively farther objects, observers use pulsating stars, the rotation of galaxies, and a special class of supernova explosions.  February 17 7. Expansion and Age Measurements of the Doppler shift of galaxies in the early 20th century revealed that essentially all were moving away from us. The more distant ones are moving faster, in direct proportion to their distance. This is the famous Hubble Law, which implies an initial "big bang."  8. Distances, Appearances, and Horizons Defining distances in cosmology is tricky, since an object\'s distance continually increases with cosmic expansion. There are three important distances to consider: the emission distance, when the light set out; the current distance, when the light arrives; and the distance the light has traveled.  March 3 9. Dark Matter and Dark Energy--96%! Atomic matter comprises less than 5% of the total cosmic census. This realization came with the discovery of dark matter (23%) in the 1970s and dark energy (73%) in the late 1990s. They are "dark" because they are detectable only by their subtle gravitational effects.  10. Cosmic Geometry--Triangles in the Sky ',
+    'dtend' => '2455583 10800',
+    'dtstart' => '2455583 7200',
+    'summary' => 'Questions on Cosmology Discussion Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8943'
+  },
+  {
+    'description' => "Thursday January 20 What I Love About Boulder | Local Motion Picture Producer | Federico Fellini Birthday 1920 Fellini: A Director's Notebook (Block-Notes di un Regista) Directed by Federico Fellini, with Federico Fellini, Giuliette Masina, Marcello Mastorianni, Professor Genius (Italy\x{a8}D1969).  This film was produced by Peter Goldfarb of Boulder for the NBC Experiment in Television series.  A seminal work in Fellini\x{a1}\x{af}s film canon, it is composed of episodes of his career during the time he was shooting Sytricon.  Included is a visit to the set of an abandoned film project The Voyage of G. Mastorna (it. title), research and casting for Sytricon, a scene cut from the final version of Nights of Cabiria (Le Notte Di Cabiria), journeys with Fellini through Rome and along the Via Appia and a visit to Marcello Mastroianni\x{a1}\x{af}s house.  The final scene is Fellini\x{a1}\x{af}s office at Cinecitt\x{a8}\x{a4} as an incredible assortment of people parade past his desk in hopes of being cast.  In English, Italian and Latin with subtitles.  Music by Nino Rota.  Peter Goldfarb introduces the film and answers questions after the screening.   (55 min.) ",
+    'dtend' => '2455583 14400',
+    'dtstart' => '2455583 9000',
+    'summary' => 'screening of "Fellini: A Director\'s Notebook"',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8570'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455583 64800',
+    'dtstart' => '2455583 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9290'
+  },
+  {
+    'description' => 'Annual Community Dance Meetings Scheduled for January.  Come network, learn about local resources, meet new-to-the-area dancers and hear what\'s on the table for 2011.  These free community meetings help bring the dance community together to make connections and share ideas.  Two opportunities are scheduled - same materials will be covered at both, but you never know who you\'ll meet!!  *Wednesday, January 19 from 6:30 -8 p.m. in South Side Pulse Point AND/OR *Friday, January 21 from 12noon - 1:30 p.m. in Boulder Creek Meeting Room, both in the Boulder Public Library, 1001 Arapahoe Avenue, Boulder 80302. (Free parking in the library Arapahoe Ave. lot).  An RSVP to the Dance Bridge is requested, but not mandatory. Come join us! ',
+    'dtend' => '2455583 73800',
+    'dtstart' => '2455583 68400',
+    'summary' => 'Annual Community Dance Meetings',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7828'
+  },
+  {
+    'description' => 'This daytime group meets on the third Friday of most months from 1-2:30 p.m.  No meetings in July or August.  New members are welcome!                                                                                                                                                     December 17: The Lemon Tree: An Arab, A Jew, and the Heart of the Middle East, by Sandy Tolan        2011: January 21:        Little Bee  by Chris Cleave  February 18:       The Kreutzer Sonata:  A Novel  by Margriet De Moor                              March 18:        Tinkers  by Paul  Harding  April 15:            Sarah\'s Key  by Tatiana de Rosnay  May 20:            The Shallows: What the Internet is Doing                              to our Brains by Nicolas Carr  June  17          Censoring an Iranian Love Story                                By Shahriar Mandanipour   contact: Eleonore Solomon e-mail  eleonoresolomon@comcast.net        2011: January 21:        Little Bee  by Chris Cleave February 18:       The Kreutzer Sonata    by Leo Tolstoy                             March 18:        Tinkers  by Paul  Harding April 15:            Sarah\'s Key  by Tatiana de Rosnay May 20:            The Shallows: What the Internet is Doing                    to our Brains by Nicolas Carr June  17:          Censoring an Iranian Love Story                                By Shahriar Mandanipour    contact: Eleonore Solomon eleonoresolomon@comcast.net  New Members always welcome                                                                  ',
+    'dtend' => '2455583 75600',
+    'dtstart' => '2455583 72000',
+    'summary' => 'Boulder Bookies, Book Discussion Group at Reynolds Branch',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7873'
+  },
+  {
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'dtend' => '2455584 72000',
+    'dtstart' => '2455584 61200',
+    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8796'
+  },
+  {
+    'description' => 'Informal origami workshops. Age 10 and older or experienced younger folders accompanied by an adult. Please bring your own paper if you have it. FREE. This group meets on the 2nd Monday of each month 6:30 - 8:30 p.m. and on the 4th Saturday of the month from 10:15 - noon.',
+    'dtend' => '2455584 68400',
+    'dtstart' => '2455584 62100',
+    'summary' => '"Boulder Folders" Origami drop-in Folding Session ',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7899'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455584 64800',
+    'dtstart' => '2455584 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9334'
+  },
+  {
+    'description' => 'Moonscapes is a group of women committed to exploring the challenges and potential of midlife and beyond.  We share insights, experiences, and resources, to support and create our own best lives.  Program: 2:30-4:30pm.  Informal socializing: 4:30-5:00pm. For more information:www.moonscapes.groupsite.com  ',
+    'dtend' => '2455585 0',
+    'dtstart' => '2455584 77400',
+    'summary' => 'Moonscapes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8752'
+  },
+  {
+    'description' => 'Learn to play the ancient and mysterious board game known as Go. Developed 4000 years ago in China, the rules are so simple they can be taught in a few minutes--but it can take a lifetime to master the game. Go boards are provided and take-home sets made of cardboard are available for free.  Ages 5 and up. Cost: Free',
+    'dtend' => '2455586 1800',
+    'dtstart' => '2455585 75600',
+    'summary' => 'Go Club for Kids & Teens',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5600'
+  },
+  {
+    'description' => 'L\'Esprit de France: "What makes French music so exquisitely French?" Pieces by Couperin, Rameau, Faure, Debussy, Ravel and Poulenc will be featured.',
+    'dtend' => '2455586 1800',
+    'dtstart' => '2455585 82800',
+    'summary' => 'The Library Concert Series Presents: Pianist Lisa Harrington',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8214'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455586 64800',
+    'dtstart' => '2455586 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9137'
+  },
+  {
+    'description' => "Recognizing the need for all Boulder Teens to have a voice, the Boulder Teen Advisory Board (BTAB) exists to provide a forum to represent teens\x{92} interests impartially for the Boulder Public Library and the community.  The goal of BTAB is to serve the needs of Boulder youth by employing a representative process.  	 Teens from different area schools meet monthly to organize teen library events, decide what will be added to the teen library collection and discuss ways to improve the lives of Boulder County teens.    BTAB wiki: http://btab.wetpaint.com/?t=anon Website: http://www.boulderteens.org/calendar.htm Email: howardm\@bouldercolorado.gov  ",
+    'dtend' => '2455587 3600',
+    'dtstart' => '2455586 82800',
+    'summary' => 'Boulder Teen Advisory Board',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5668'
+  },
+  {
+    'description' => 'For people preparing for their USA citizenship test. Class is designed to help with questions, practice interview and other information about the citizenship process.',
+    'dtend' => '2455587 12600',
+    'dtstart' => '2455587 5400',
+    'summary' => 'Citizenship class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8857'
+  },
+  {
+    'description' => '"Adoption: Unique Parenting Challenges", an opportunity to explore the unique questions and challenges adoptive parents face.  Facilitators:  Linda Cain, MSED; Karen Wilding, LCSW.  A FREE Presentation Series.  Sponsored by Boulder Public Library Foundation, Boulder Valley School District, Parent Engagement Network, Centennial Peaks Hospital, Boulder Psychological Services, Daily Camera, and Healthy Youth Alliance',
+    'dtend' => '2455587 12600',
+    'dtstart' => '2455587 7200',
+    'summary' => 'Pathways to Parenting Success',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7425'
+  },
+  {
+    'description' => 'Monday January 24 What I Love About Boulder | Robert Redford C. U. Student The Candidate Directed by Michael Ritchie, featuring Robert Redford, Peter Boyle, Don Porter, Allen Garfield (1972).   A California lawyer fights for the little man.  His charisma and integrity get him noticed by the Democratic Party machine and he is persuaded to run for the Senate against an apparently unassailable incumbent.  He\'s mainly running to bring certain political issues into the open, although he never actually plans to win.  It\'s agreed he can handle it his own way, on his own terms, but once he\'s in the race and his prospects begin to improve, the deal starts to change.  As time goes by, he realizes that whether or not he wins, he might not be able to hold on to his values. This film, shot in only 41 days, is one of the great motion pictures about the world of politics, demonstrating  how an idealistic and inexperienced young man can get trapped by the media. It holds up as well today as it did in 1972.  The film won a Best Writing Oscar and was also nominated for Best Sound.  Look for appearances by Natalie Wood, Groucho Marx, Howard K. Smith, and several real politicians of the day.  (109 min.)  ',
+    'dtend' => '2455587 12600',
+    'dtstart' => '2455587 7200',
+    'summary' => 'screening of "The Candidate"',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8571'
+  },
+  {
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'dtend' => '2455587 68400',
+    'dtstart' => '2455587 61200',
+    'summary' => 'GED classes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2569'
+  },
+  {
+    'description' => "Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\x{92}s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot\@gmail.com).",
+    'dtend' => '2455587 68400',
+    'dtstart' => '2455587 61200',
+    'summary' => 'Boulder World Affairs Discussion Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7155'
+  },
+  {
+    'description' => 'Join Children\'s Library staff member and amateur naturalist Margaret for storytime and a walk along Boulder Creek.  All children must be accompanied by an adult.  Please leave four-footed friends at home. Registration required:  Please call the Children\'s Library at 303-441-3099.',
+    'dtend' => '2455587 66600',
+    'dtstart' => '2455587 62100',
+    'summary' => 'Creekwalk:  Boulder\'s Winter Birds',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8781'
+  },
+  {
+    'description' => 'Storytime for Children is at 10:15 a.m. every Tuesday at the Reynolds Branch Library.',
+    'dtend' => '2455587 64800',
+    'dtstart' => '2455587 62100',
+    'summary' => 'Storytime for Children',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8445'
+  },
+  {
+    'description' => '1:00 p.m. every Tuesday at Meadows Branch Library, 4800 Baseline Rd.',
+    'dtend' => '2455587 77400',
+    'dtstart' => '2455587 72000',
+    'summary' => 'Conversations in English Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7293'
+  },
+  {
+    'description' => 'Tuesday Fiction Writers meets on the second and fourth Tuesdays at 6:30 to provide a supportive and critical environment to share work. Contact information:  tfw_BPL@hotmail.com. This group meets in the Boulder Creek Meeting Room in 2011 (except for the January 25th meeting which will be held at the Meadows Branch Library) ',
+    'dtend' => '2455588 12600',
+    'dtstart' => '2455588 5400',
+    'summary' => 'Tuesday Fiction Writers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7903'
+  },
+  {
+    'description' => 'Tuesday Fiction Writers meets on the second and fourth Tuesdays at 6:30 to provide a supportive and critical environment to share work. Contact information:  tfw_BPL@hotmail.com. This group meets in the Boulder Creek Meeting Room in 2011 (except for the January 25th meeting which will be held at Meadows) ',
+    'dtend' => '2455588 12600',
+    'dtstart' => '2455588 5400',
+    'summary' => 'Tuesday Fiction Writers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9434'
+  },
+  {
+    'description' => "This event kicks off the new, monthly Local Authors Series.   Buzzy Jackson, who lives in Louisville, is the author of \"Shaking the Family Tree: Blue Bloods, Black Sheep, and Other Obsessions of an Accidental Genealogist\" recently published by Simon and Schuster. She will read from the book, answer questions  from the audience and be available to sign her book, which will be for sale at the event.  \"WHO ARE YOU AND WHERE DO YOU COME FROM?\"   As a historian, Buzzy Jackson thought she knew the answers to these simple questions\x{97}that is, until she took a look at her scrawny family tree. With a name like Jackson (the twentieth most common American surname), she knew she must have more relatives and more family history out there, somewhere. Her first visit to the Boulder Genealogy Society brought her more questions than answers . . . but it also gave her a tantalizing peek into the fascinating (and enormous) community of family-tree huggers and after-hours Alex Haleys.   In Shaking the Family Tree, Jackson dives headfirst into her family gene pool: flying cross-country to locate an ancient family graveyard, embarking on a weeklong genealogy Caribbean cruise, and even submitting her DNA for testing to try to find her Jacksons. And in the process of researching her own family lore (Who was Bullwhip Jackson?) she meets legions of other genealogy buffs who are as interesting as they are driven\x{97}from the boy who saved his allowance so he could order his great-grandfather's death certificate to the woman who spends her free time documenting the cemeteries of Colorado ghost towns.   Through Jackson's research she connects with distant relatives, traces her roots back more than 250 years and in the process comes to discover\x{97}genetically, historically, and emotionally\x{97}the true meaning of \"family\" for herself.  ",
+    'dtend' => '2455588 12600',
+    'dtstart' => '2455588 7200',
+    'summary' => '"Shaking the Family Tree" with author Buzzy Jackson',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7901'
+  },
+  {
+    'description' => '10:15 a.m. every Wednesday at the Meadows Branch Library, 4800 Baseline Road.',
+    'dtend' => '2455588 65700',
+    'dtstart' => '2455588 62100',
+    'summary' => 'Storytime for children',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8119'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455588 64800',
+    'dtstart' => '2455588 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9068'
+  },
+  {
+    'description' => 'Join Michael Stanwood (Didgeridoo), Jesse Manno (Oud), Dexter Payne (Clarinet, Sax) and friends, for an hour of beautiful improvised music. ',
+    'dtend' => '2455588 66600',
+    'dtstart' => '2455588 63000',
+    'summary' => 'Morning Music Meditation',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8932'
+  },
+  {
+    'description' => 'Group meets to discuss variety of literary genres.',
+    'dtend' => '2455588 77400',
+    'dtstart' => '2455588 72000',
+    'summary' => 'Conversations in English Literary Discussions',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8874'
+  },
+  {
+    'description' => 'Come learn to fold some spectacular shapes. It\'s easier than it looks! Drop-ins welcome & paper provided. Held on the 4th Wednesday of the month from 1-3:00 pm at the Reynolds Branch Library.  For more information call 303-499-9359 or email boulderfolders@gmail.com',
+    'dtend' => '2455588 79200',
+    'dtstart' => '2455588 72000',
+    'summary' => 'BOULDER FOLDERS at the Reynolds Branch',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8974'
+  },
+  {
+    'description' => 'Sandra Wong and Grant Gordy in Concert at the Reynolds Branch Library. FREE and suitable for all ages; seating is limited so please call 303-441-3120 to reserve seats.  Sandra Wong and Grant Gordy come together in a fabulous duo of Swedish nyclelharpa fiddle and guitar to explore music from all corners of the globe, including their own compositions. Drawing from their roots in Classical Western, Bluegrass, Jazz Scandinavian, Old-time American music and more.',
+    'dtend' => '2455589 10800',
+    'dtstart' => '2455589 7200',
+    'summary' => 'Sandra Wong and Grant Gordy in Concert -- at Reynolds Branch',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7833'
+  },
+  {
+    'description' => "This group, which frequently uses approaches to discussion and selections from the Great Books of the Western World, meets in the Meadows Branch Library, usually on even-date Wednesdays from 7:30 - 8:45 p.m.           Great Books Discussion Group 2011 Reading List:  January 12, 2011 Virginia Hamilton, In the Beginning: Creation Stories from Around the World (176 pages) ( reference: Barbara C. Sproul, Primal Myths ) January 26, 2011 ** Introduction and Rules for the Direction of the Mind* Ren\x{e9} Descartes One week February 02, 2011 ** Katahdin* and Death of a Pine Henry David Thoreau February 16, 2011 ** Man and Nature* George Perkins Marsh ** The Biosphere* Vladimir I. Vernadsky March 02, 2011 Douglas Adams, Mark Carwardine, Last Chance to See (256 pages) March 16, 2011 ** The Climax Concept Frederic E. Clements ** The Ecosystem A. G. Tansley March 30, 2011 Noether's Theorem http://www.sackett.net/Noetherii.pdf (ii = 1,12) One week April 06, 2011 Poetry \x{96} Mary Oliver and Gary Snyder April 20, 2011 ** The Land Ethic and Odyssey Aldo Leopold May 04, 2011 ** The Tragedy of the Commons Garrett Hardin ** The Economics of the Coming Spaceship Earth Kenneth E. Boulding May 18, 2011 Neal Stephenson, Zodiac (320 pages) Three weeks June 08, 2011 Tim Flannery, The Future Eaters : An Ecological History of the Australasian Lands and People (408 pages) June 22, 2011 A Colorado Shakespeare Festival Play July 06, 2011 ** The Closing Circle* Barry Commoner ** The World's Biggest Membrane* Lewis Thomas July 20, 2011 ** Intricacy* Annie Dillard ** The Recognition of Gaia* James E. Lovelock Three weeks August 10, 2011 Anne Bront\x{eb}, The Tenant of Wildfell Hall (496 pages) * Selection is an excerpt from a longer work. ** Selection is from the Great Books Foundation\x{2bc}s Keeping Things Whole: Readings in Environmental Science. Newcomers welcome anytime! For further information see http://home.comcast.net/~BoulderGreatBooks/ (As of: December 13, 2010)",
+    'dtend' => '2455589 13500',
+    'dtstart' => '2455589 9000',
+    'summary' => 'Great Books Discussion Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8140'
+  },
+  {
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'dtend' => '2455589 68400',
+    'dtstart' => '2455589 61200',
+    'summary' => 'GED classes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2769'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455589 64800',
+    'dtstart' => '2455589 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9372'
+  },
+  {
+    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.  ',
+    'dtend' => '2455589 81000',
+    'dtstart' => '2455589 70200',
+    'summary' => 'BoulderReads! Adult Literacy Tutor Training',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7893'
+  },
+  {
+    'description' => "Cosponsored by the library and the Boulder Chapter of the United Nations Association, this group usually meets on the last Thursday of the month in the Boulder Creek Meeting Room from 1-3 p.m. However in January this group meets on the last Thursday of the month from 1:30-3:30 p.m. in the Arapahoe Conference Room. The group reads in current events around a selected geopolitical theme for each month, and talks about the topic in the context of the intermix of political, social, ecological and economic factors within a spatial context. A main reading is identified \x{96} and may include fictional interpretations (novels, films) of world events. 2011: January 27  \"Will there be resource wars over rare-earth metals and other strategic metals?\" NOTE:  This session will be held from 1:30 p.m. to 3:30 p.m. in the Arapahoe Conference Room.  February 24  \"Yemen:  What does its future hold?\"    ",
+    'dtend' => '2455589 81000',
+    'dtstart' => '2455589 73800',
+    'summary' => 'Geopolitics',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8134'
+  },
+  {
+    'description' => "GED testing is available at Boulder Public Library from 3 to 7 p.m. in the BoulderReads! area of the Main Library, 1001 Arapahoe Ave.  Pre-registration is very strongly encouraged, please call 720-561-5826 or visit www.boulderreads.org and click on \x{93}Services.\x{94}  In addition, please bring a photo ID and a printout from your online preregistration at www.GED123.org.",
+    'dtend' => '2455590 7200',
+    'dtstart' => '2455589 79200',
+    'summary' => 'GED Testing',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8593'
+  },
+  {
+    'description' => "Thursday January 27 What I Love About Boulder | John Fante Novelist & Screenwriter Raised in Boulder  6:30pm start Walk on the Wild Side Directed by Edward Dmytryk, with Laurence Harvey, Capucine, Jane Fonda, Anne Baxter, Barbra Stanwyck (1962).  This film is a high melodrama set in sultry, steamy, Depression-era New Orleans.  A handsome Texas dirt farmer hops a freight train and searches New Orleans high and low for his lost sweetheart, unaware that she works in the Doll House, the most notorious and corrupt bordello in the French Quarter.  He is aided in his quest by a runaway juvenile and a Mexican-American caf\x{e9} owner, both of whom admire him and realize the nobility of his quest.  When a young, immoral and thieving temptress gets involved things begin to unravel leading to scandal and tragedy.  Director Edward Dmytryk was one of the \"Hollywood Ten,\" a group of blacklisted film industry professionals, some of which served time in prison during the McCarthy-era \"Red Scare.\"  Joseph MacDonald captures all the heat and steam of New Orleans with his shimmering black and white cinematography.  Elmer Bernstein's musical score is one of his best, and adds the right touch of jazzy glitz to the drama.  Saul Bass, considered one of the best film graphic designers of all time created the famous opening credits in which a sensuous black cat prowls along sidewalks and alleys of the Big Easy.  Based loosely on the 1956 novel by Nelson Algren, with screenplay by John Fante.   (114 min.)   ",
+    'dtend' => '2455590 12600',
+    'dtstart' => '2455590 5400',
+    'summary' => 'screening of "Walk on the Wild Side"',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8572'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455590 64800',
+    'dtstart' => '2455590 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9291'
+  },
+  {
+    'description' => 'Time: 4:00pm-5:45pm Enjoy playing board games with other members of the community, or try out Wii games on the big screen.  We have a variety of games to plya, or feel fre to bring a family favorite.  For all ages. Free.  No reservations required.  For more information call 303-441-4390.',
+    'dtend' => '2455591 3600',
+    'dtstart' => '2455590 82800',
+    'summary' => 'Family Game Night',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8200'
+  },
+  {
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'dtend' => '2455591 72000',
+    'dtstart' => '2455591 61200',
+    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8797'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455591 64800',
+    'dtstart' => '2455591 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9335'
+  },
+  {
+    'description' => 'This performance will kick-off the "Go Green" Make-A-Difference Day activities that will be happening around the main library from noon through 4 p.m.',
+    'dtend' => '2455591 68400',
+    'dtstart' => '2455591 64800',
+    'summary' => '"The Green Scene" with the Play-Ground Theatre Co.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7900'
+  },
+  {
+    'description' => 'Following the Play Ground Theater performance of "The Green Scene" at 11 a.m., CU student volunteers from Colorado Public Research Interest Group will offer a variety of hands-on workshops for parents and kids with ideas for saving energy around the home.',
+    'dtend' => '2455591 81000',
+    'dtstart' => '2455591 68400',
+    'summary' => 'GO GREEN Make a Difference Day with COPRIG',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8607'
+  },
+  {
+    'description' => 'Reynolds Reading Pals is a free program that teams trained Middle and High School student volunteers one-on-one with K-3rd graders once a week for 1 hour of shared reading as well as literacy games and activities.  To apply for the program, contact Debby Ridgell at 303-441-4102 or ridgelld@boulderlibrary.org or stop by the Reynolds Branch Library for more information.',
+    'dtend' => '2455592 1800',
+    'dtstart' => '2455591 84600',
+    'summary' => 'Reynolds Reading Pals',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8225'
+  },
+  {
+    'description' => 'Reynolds Reading Pals is a free program that teams trained Middle and High School student volunteers one-on-one with K-3rd graders once a week for 1 hour of shared reading as well as literacy games and activities.  To apply for the program, contact Debby Ridgell at 303-441-4102 or ridgelld@boulderlibrary.org or stop by the Reynolds Branch Library for more information.',
+    'dtend' => '2455592 1800',
+    'dtstart' => '2455591 84600',
+    'summary' => 'Reynolds Reading Pals',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8235'
+  },
+  {
+    'description' => 'Learn to play the ancient and mysterious board game known as Go. Developed 4000 years ago in China, the rules are so simple they can be taught in a few minutes--but it can take a lifetime to master the game. Go boards are provided and take-home sets made of cardboard are available for free.  Ages 5 and up. Cost: Free',
+    'dtend' => '2455593 1800',
+    'dtstart' => '2455592 75600',
+    'summary' => 'Go Club for Kids & Teens',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5601'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455593 64800',
+    'dtstart' => '2455593 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9138'
+  },
+  {
+    'description' => "Meets at 11:30 a.m. the last Monday of the month January-November (except as noted in the listing) to discuss materials that pertain to the experiences of American western women of various cultures and eras. 2011: January 31:   \x{93}Papa\x{92}s Girl: The Fascinating World of Helen Bonfils\x{94} by Eva Hodges Watt                          led by Betty Thacker   February 28:  \x{93}Just Like Us\x{94} by Helen Thorpe  led by Celeste Landry   March 28:      \x{93}The Woman Behind the New Deal: The Life and Legacy of Frances Perkins\" by Kirsten Downy  led by Elinor McGinn          April 25:        \x{93}The Bassett Women\x{94} by Grace McClure  led by Audrey Ambler  May 23:(Please note: this is the 4th Monday, not the last)                            \x{93}In the Shadow of Los Alamos: Selected writings of Edith Warner\"                            by Patrick Burns  led by Joan Graff  September 26:  \"Dozen on Denver: Stories\" by Rocky Mountain News Editor  led by Rosalie Bargmann  October 31:  \"Poker Bride: the First Chinese in the Wild West\" by Christopher Corbett   led by Cindy Maynard  November 14: (Please note this is the second Monday, not the last) \"Founding Mothers\" by Cokie Roberts   led by Nancy Myers ",
+    'dtend' => '2455593 70200',
+    'dtstart' => '2455593 66600',
+    'summary' => 'Women of the West Monday',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8676'
+  },
+  {
+    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her. ',
+    'dtend' => '2455594 3600',
+    'dtstart' => '2455593 84600',
+    'summary' => 'Reading Buddies',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5455'
+  },
+  {
+    'description' => 'For people preparing for their USA citizenship test. Class is designed to help with questions, practice interview and other information about the citizenship process.',
+    'dtend' => '2455594 12600',
+    'dtstart' => '2455594 5400',
+    'summary' => 'Citizenship class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8858'
+  },
+  {
+    'description' => 'Monday January 31 What I Love About Boulder | Dean Reed C.U. Student Buried in Boulder American Rebel: The Dean Reed Story Directed by Will Roberts (1985).  Dean Reed was an international superstar in much of the world.  His records sold millions and the films in which he starred, wrote, or directed were the biggest box office hits behind the Iron Curtain.  This film by Academy Award winning documentary filmmaker Will Roberts traces his odyssey from his boyhood in Lakewood, Colorado to Hollywood, California, from South America to Helsinki, Finland, from Italy to Russia, and finally to East Berlin, German Democratic Republic.  It explores Reed\'s career as singer, actor, writer, director, and political activist.  His story is told in his own words, music, film clips, and archives from around the world.  Reed died in East Berlin in 1986, and his remains are interned at Green Mountain Cemetery in Boulder.   In Russian, German and Spanish with subtitles.  (93 min.) ',
+    'dtend' => '2455594 12600',
+    'dtstart' => '2455594 7200',
+    'summary' => 'screening of "American Rebel: The Dean Reed Story"',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8573'
+  },
+  {
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'dtend' => '2455594 68400',
+    'dtstart' => '2455594 61200',
+    'summary' => 'GED classes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2570'
+  },
+  {
+    'description' => "Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\x{92}s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot\@gmail.com).",
+    'dtend' => '2455594 68400',
+    'dtstart' => '2455594 61200',
+    'summary' => 'Boulder World Affairs Discussion Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7156'
+  },
+  {
+    'description' => 'On the first three Tuesdays of the month, babies (birth-18 months) and their caregivers explore language and books in a fun and intimate setting. Programs include rhymes, songs and books as well as time for free play and informal discussion of early childhood development. Attendance limited to babies up to 18 months of age; no older children please.',
+    'dtend' => '2455594 64800',
+    'dtstart' => '2455594 62100',
+    'summary' => 'Baby Time',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=6512'
+  },
+  {
+    'description' => 'Storytime for Children is at 10:15 a.m. every Tuesday at the Reynolds Branch Library.',
+    'dtend' => '2455594 64800',
+    'dtstart' => '2455594 62100',
+    'summary' => 'Storytime for Children',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8446'
+  },
+  {
+    'description' => 'Enjoy books, songs, and more--all in French--at Marie\'s bi-monthly story time for preschoolers and up!  This event is free and takes place the first and third Tuesday morning of each month from September to December. ',
+    'dtend' => '2455594 64800',
+    'dtstart' => '2455594 62100',
+    'summary' => 'French Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9061'
+  },
+  {
+    'description' => '1:00 p.m. every Tuesday at Meadows Branch Library, 4800 Baseline Rd.',
+    'dtend' => '2455594 77400',
+    'dtstart' => '2455594 72000',
+    'summary' => 'Conversations in English Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7294'
+  },
+  {
+    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her.  ',
+    'dtend' => '2455595 3600',
+    'dtstart' => '2455594 84600',
+    'summary' => 'Reading Buddies',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5469'
+  },
+  {
+    'description' => 'Reynolds Reading Pals is a free program that teams trained Middle and High School student volunteers one-on-one with K-3rd graders once a week for 1 hour of shared reading as well as literacy games and activities.  To apply for the program, contact Debby Ridgell at 303-441-4102 or ridgelld@boulderlibrary.org or stop by the Reynolds Branch Library for more information.',
+    'dtend' => '2455595 1800',
+    'dtstart' => '2455594 84600',
+    'summary' => 'Reynolds Reading Pals',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8236'
+  },
+  {
+    'description' => 'On the first three Wednesdays of the month, toddlers (18-36 months) and their caregivers explore language and books in a fun and intimate setting. Programs include rhymes, songs, and books as well as time for free play and informal discussion of early childhood development. Attendance limited to toddlers from 18-36 months of age; no older children please. ',
+    'dtend' => '2455595 64800',
+    'dtstart' => '2455595 62100',
+    'summary' => 'Toddler Time',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7590'
+  },
+  {
+    'description' => '10:15 a.m. every Wednesday at the Meadows Branch Library, 4800 Baseline Road.',
+    'dtend' => '2455595 65700',
+    'dtstart' => '2455595 62100',
+    'summary' => 'Storytime for children',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8120'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455595 64800',
+    'dtstart' => '2455595 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9069'
+  },
+  {
+    'description' => 'Group meets to discuss variety of literary genres.',
+    'dtend' => '2455595 77400',
+    'dtstart' => '2455595 72000',
+    'summary' => 'Conversations in English Literary Discussions',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8875'
+  },
+  {
+    'description' => 'Socrates Cafe, a philosophical discussion group, meets the first and third Wednesday of each month from 2:00pm to 3:30pm at the Meadows Branch Library.',
+    'dtend' => '2455595 81000',
+    'dtstart' => '2455595 75600',
+    'summary' => 'Socrates Cafe',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8768'
+  },
+  {
+    'description' => "Boulder Library Commission\x{92}s monthly meeting is typically held at 7:15 p.m. on the first Wednesday of each month at the Main Library, 1001 Arapahoe Ave.  Information:  Tina Walker, 303-441 3106. Current meeting agenda is available at:  http://www.boulderlibrary.org/about/agenda.html .",
+    'dtend' => '2455596 14400',
+    'dtstart' => '2455596 8100',
+    'summary' => 'Library Commission Meeting',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=1135'
+  },
+  {
+    'description' => "This group, which frequently uses approaches to discussion and selections from the Great Books of the Western World, meets in the Meadows Branch Library, usually on even-date Wednesdays from 7:30 - 8:45 p.m.           Great Books Discussion Group 2011 Reading List:  January 12, 2011 Virginia Hamilton, In the Beginning: Creation Stories from Around the World (176 pages) ( reference: Barbara C. Sproul, Primal Myths ) January 26, 2011 ** Introduction and Rules for the Direction of the Mind* Ren\x{e9} Descartes One week February 02, 2011 ** Katahdin* and Death of a Pine Henry David Thoreau February 16, 2011 ** Man and Nature* George Perkins Marsh ** The Biosphere* Vladimir I. Vernadsky March 02, 2011 Douglas Adams, Mark Carwardine, Last Chance to See (256 pages) March 16, 2011 ** The Climax Concept Frederic E. Clements ** The Ecosystem A. G. Tansley March 30, 2011 Noether's Theorem http://www.sackett.net/Noetherii.pdf (ii = 1,12) One week April 06, 2011 Poetry \x{96} Mary Oliver and Gary Snyder April 20, 2011 ** The Land Ethic and Odyssey Aldo Leopold May 04, 2011 ** The Tragedy of the Commons Garrett Hardin ** The Economics of the Coming Spaceship Earth Kenneth E. Boulding May 18, 2011 Neal Stephenson, Zodiac (320 pages) Three weeks June 08, 2011 Tim Flannery, The Future Eaters : An Ecological History of the Australasian Lands and People (408 pages) June 22, 2011 A Colorado Shakespeare Festival Play July 06, 2011 ** The Closing Circle* Barry Commoner ** The World's Biggest Membrane* Lewis Thomas July 20, 2011 ** Intricacy* Annie Dillard ** The Recognition of Gaia* James E. Lovelock Three weeks August 10, 2011 Anne Bront\x{eb}, The Tenant of Wildfell Hall (496 pages) * Selection is an excerpt from a longer work. ** Selection is from the Great Books Foundation\x{2bc}s Keeping Things Whole: Readings in Environmental Science. Newcomers welcome anytime! For further information see http://home.comcast.net/~BoulderGreatBooks/ (As of: December 13, 2010)",
+    'dtend' => '2455596 13500',
+    'dtstart' => '2455596 9000',
+    'summary' => 'Great Books Discussion Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8141'
+  },
+  {
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'dtend' => '2455596 68400',
+    'dtstart' => '2455596 61200',
+    'summary' => 'GED classes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2770'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455596 64800',
+    'dtstart' => '2455596 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9373'
+  },
+  {
+    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.  ',
+    'dtend' => '2455596 81000',
+    'dtstart' => '2455596 70200',
+    'summary' => 'BoulderReads! Adult Literacy Tutor Training',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7894'
+  },
+  {
+    'description' => "This group meets monthly and discusses topics which address race in America. Connecting the Community with Children to Help End Racism  January The New Jim Crow: Mass Incarceration in the Age of Colorblindness by Michelle Alexander Contrary to the rosy picture of race embodied in Barack Obama's political success and Oprah Winfrey's financial success, legal scholar Alexander argues vigorously and persuasively that we have not ended racial caste in America; we have merely redesigned it. Jim Crow and legal racial segregation has been replaced by mass incarceration as a system of social control (More African Americans are under correctional control today... than were enslaved in 1850). Alexander reviews American racial history from the colonies to the Clinton administration, delineating its transformation into the war on drugs. She offers an acute analysis of the effect of this mass incarceration upon former inmates who will be discriminated against, legally, for the rest of their lives, denied employment, housing, education, and public benefits. Most provocatively, she reveals how both the move toward colorblindness and affirmative action may blur our vision of injustice: most Americans know and don't know the truth about mass incarceration\x{97}but her carefully researched, deeply engaging, and thoroughly readable book should change that.  February Life on the Color Line: The True Story of a White Boy who Discovered He was Black by Gregory Howard Williams Gregory Howard Williams and his younger brother, Mike, grew up believing they were white and that their dark-skinned father was of Italian descent. Then their parents\x{92} marriage disintegrated, their mother departed, and their father\x{92}s business ventures sank into a sea of liquor. Pursued by debt and personal demons, \"Tony\" Williams took his two boys to his hometown of Muncie, Indiana, where he was known as \"Buster,\" and where there was no escape from the truth he had hidden for so long. The truth was as plain as the color of Buster\x{92}s family. Gregory and Mike Williams were the sons of a brilliant and charming but troubled man who fled the burden of race until need drove him back to his roots.  Suddenly Gregory and Mike had to straddle two worlds and two heritages \x{96}black and white.  Life on the Color Line is a wonderfully inspiring testament of purpose, perseverance, and human triumph.   March Inheriting the Trade by Thomas Norman DeWolf In the summer of 2001, Katrina Browne led nine distant family members on their own triangular passage as she made a documentary film (Traces of the Trade: A Story from the Deep North) about their DeWolf ancestors, the largest slave-trading dynasty in early America\x{97}who transported 10,000 Africans to America and the Caribbean between 1769 and 1820. DeWolf, one of Browne's cousins, traces the journey in this soul-searching memoir, beginning in Bristol, R.I., the hub of the late\x{96}18th-century trade, and continuing to Ghana, Cuba and back to New England. At each station of the trip, the Family of Ten visits historic sites, and distinguished historians address the group about aspects of the slave trade. DeWolf's account gains immediacy as he reports these presentations and the ensuing group discussions, along with their personal struggles to come to terms with an ignominious family history and his own sharp learning curve. His narrative, however, bogs down toward its conclusion in an irrelevant account of allegations of sexual harassment made against him and a digressive though thought-provoking discussion of reparations for slavery. Nevertheless, DeWolf promotes conversation about truth of the past and its impact on the present.  April Just Like Us: The True Story of Four Mexican Girls Coming of Age in America  by Helen Thorpe By the time Marisela, Yadira, Clara and Elissa\x{97}four girls of Mexican descent from the suburbs of Denver\x{97}entered their freshman year in high school, they were inseparable, but four years later, their fundamental difference threatened to divide them: Clara and Elissa were legal residents, but Marisela and Yadira had begun to suffer the repercussions of their parents' choice to illegally enter the U.S. Journalist Thorpe, married to Denver mayor John Hickenlooper, chronicles the girls' lives over four years, delineating the small but arresting differences that will separate them and shape their futures. She personalizes the ongoing debate over immigration and frames it so compassionately and sensibly that even the staunchest opponents of immigration liberalization might find themselves rethinking their positions.  May White Boy: A Memoir by Mark Naison Growing up in then mostly Jewish and Italian Crown Heights, Brooklyn, in the 1950s and '60s, Mark Naison saw white flight transform his neighborhood make his previously liberal Jewish parents openly racist. Naison grew up worshiping black athletes and musicians; as neighborhood tensions grew, he became more estranged from his parents and found himself",
+    'dtend' => '2455597 7200',
+    'dtstart' => '2455597 1800',
+    'summary' => 'Race In America',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8730'
+  },
+  {
+    'description' => "Thursday February 3 I Love Boulder| John Fante Novelist & Screenwriter Raised in Boulder  6:30 pm start Ask the Dust Directed by Robert Towne, featuring Salma Hayek, Colin Farrell, Donald Sutherland, Idina Menzel (2006).  Set during the Great Depression\x{a8}Dspecifically around the time of the 1933 Long Beach, California earthquake\x{a8}Da fiery and beautiful Mexican caf\x{a8}\x{a6} waitress aspires to one day be above her current standing in society by marrying a wealthy American man.   Her plan is thrown into disarray when she meets an Italian-American, who is a struggling writer who comes to Los Angeles's Bunker Hill neighborhood to begin his writing career.   The film was shot almost entirely in South Africa with the use of stages to portray Los Angeles.  Fante was one of the first writers to portray the tough times faced by many people in Depression-era Los Angeles, and is sighted to have significantly influenced writer Charles Bukowski .  Tom Cruise (with Paula Wagner and Cruise/Wagner Productions) is one of the film's producers.  Based on John Fante's most popular novel, Ask the Dust (first published 1939).  More than sixty years after it was published the book appeared for several weeks on the New York Times' Bestseller's List.  (117 min.)  ",
+    'dtend' => '2455597 12600',
+    'dtstart' => '2455597 5400',
+    'summary' => 'screening of "Ask the Dust"',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9453'
+  },
+  {
+    'description' => 'Meets at 7 p.m. the 1st and 3rd Thursday of each month in the Boulder Creek Meeting Room (except for 4/7,4/21,5/5,9/15/ and 10/6 when they will meet in the Arapahoe Conference Room at the Main Library. Starting January 6, and during most of 2011, the BPL Cosmology discussion group will view and discuss a DVD lecture series from The Teaching Company, "Cosmology: The History and Nature of Our Universe", Taught By Professor Mark Whittle, Ph.D., University of Cambridge and University of Virginia.  This series of 36 half hour lectures covers the physics of the origin and evolution of the universe from the big bang to the present and beyond.  Topics include how the universe started in the big bang, the cosmic microwave background and what can be learned from it, the expansion of the universe, which has been found to be accelerating rather than slowing as previously thought, the "cosmological principle" that the universe is presumed to be roughly the same everywhere on very large scales, the composition of the universe which is only about 4% known, the formation of galaxies, stars, and the chemical elements, and the perhaps surprising outcome of all this that some parts of the universe are inhabitable.  For a full description of the series, with descriptions of each lecture, visit http://www.teach12.com/tgc/courses/course_detail.aspx?cid=1830.  To see books this group has discussed in the past, visit http://www.sackett.net/cosmology.htm.    We will watch each 30 minute lecture and then discuss it, and will attempt to cover two lectures in each meeting.  We will meet in the Boulder Creek Meeting Room on the first floor of the main Boulder Public Library on the first and third Thursdays of each month at 7-9 PM, beginning January 6.  (On 4/7,4/21,5/5,9/15/ and 10/6, we will meet in the Arapahoe Conference Room and will not be able to view DVDs, but will discuss related topics.)  These lectures will start out slowly and move into more advanced topics, but will stay within reach of laymen with a modest backgound in science.  For more information please visit http://www.sackett.net/cosmology.htm Contact:  jeff1.grove@gmail.com 303-581-9017  Expected Schedule (may slip):  January 6 1. The Journey Ahead Cosmology takes the entire universe as its subject, not just its form, structure, and contents, but also how it was born and how it has evolved. You look at the origin of cosmology in creation stories before taking a whirlwind tour of the whole course.  2. Denizens of the Universe This lecture introduces the hierarchy of structures in the universe: from planets to stars, galaxies, galaxy clusters, and larger groupings of galaxies called the cosmic web. Since light travels at a finite speed, looking far away also means looking far back in time.  January 20 3. Overall Cosmic Properties The universe is lumpy at the scale of galaxies and galaxy clusters. But at larger scales it seems to be smooth and similar in all directions. This property of homogeneity and isotropy is called the cosmological principle.  4. The Stuff of the Universe The most familiar constituents of the universe are atomic matter and light. Neutrinos make up another component. But by far the bulk of the universe--96%--is dark energy and dark matter. The relative amounts of these constituents have changed as the universe has expanded.  February 3 5. The Sweep of Cosmic History Take a quick trip through the history of the universe, from the big bang to a conjectured future of ever-accelerating expansion. Eight key stages are in between, including the condensation of atoms, the birth of the first stars, and the formation of galaxies.  6. Measuring Distances Astronomers use a "distance ladder" of overlapping techniques to determine distances in the universe. Triangulation works for nearby stars. For progressively farther objects, observers use pulsating stars, the rotation of galaxies, and a special class of supernova explosions.  February 17 7. Expansion and Age Measurements of the Doppler shift of galaxies in the early 20th century revealed that essentially all were moving away from us. The more distant ones are moving faster, in direct proportion to their distance. This is the famous Hubble Law, which implies an initial "big bang."  8. Distances, Appearances, and Horizons Defining distances in cosmology is tricky, since an object\'s distance continually increases with cosmic expansion. There are three important distances to consider: the emission distance, when the light set out; the current distance, when the light arrives; and the distance the light has traveled.  March 3 9. Dark Matter and Dark Energy--96%! Atomic matter comprises less than 5% of the total cosmic census. This realization came with the discovery of dark matter (23%) in the 1970s and dark energy (73%) in the late 1990s. They are "dark" because they are detectable only by their subtle gravitational effects.  10. Cosmic Geometry--Triangles in the Sky ',
+    'dtend' => '2455597 10800',
+    'dtstart' => '2455597 7200',
+    'summary' => 'Questions on Cosmology Discussion Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8944'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455597 64800',
+    'dtstart' => '2455597 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9292'
+  },
+  {
+    'description' => 'Times are tough for job seekers, but you\'re not alone!  Come for job seeking tips and brush up your resume for FREE 1-1 session with local volunteer career coaches. Bring a draft of your current resume. Boulder Main Library, 1st floor, South Pulse Point 10:30am-12:30. Call 303-441-3194 No registration required. Sponsored by the Colorado Career Development Association, YWCA and Boulder Public library ',
+    'dtend' => '2455597 70200',
+    'dtstart' => '2455597 63000',
+    'summary' => 'Career Checkup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7829'
+  },
+  {
+    'description' => "Boulder Public Library y Boulder Valley School District ofrecen un club de lectura en espa\x{f1}ol. Incluye lecturas premiadas de literatura moderna de Espa\x{f1}a y Latino Am\x{e9}rica, y discusiones cada mes sobre la lectura, tambi\x{e9}n en espa\x{f1}ol. Noticia de un secuestro,Gabriel Garc\x{ed}a M\x{e1}rquez-Colombia Garc\x{ed}a M\x{e1}rquez examina la abducci\x{f3}n del 7 de noviembre, 1990 de conocida periodista Maruja Pach\x{f3}n y su cu\x{f1}ada por narcotraficantes del Cartel de Medell\x{ed}n.",
+    'dtend' => '2455598 2700',
+    'dtstart' => '2455597 82800',
+    'summary' => "Club de lectura de literatura moderna en espa\x{f1}ol",
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7702'
+  },
+  {
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'dtend' => '2455598 72000',
+    'dtstart' => '2455598 61200',
+    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8798'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455598 64800',
+    'dtstart' => '2455598 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9336'
+  },
+  {
+    'description' => 'Classes are held in the Teen Art Gallery.  These classes are patterned after our successful adult Conversations in English class, but focus on youth interests.    Conversations in English classes have received national recognition for helping people new to the U.S. learn English. These informal, friendly groups are led by volunteer, native speakers of American English. Special to the youth program, is a professional writing coach leading class once a month to help students write what they discussed the previous month.  Conversations class: Feb. 5, 12, 19. March 5, 12, 19. Writing class: Feb. 26 and March 26.   Information: Melanie Howard, 303-441-3099, or email: howardm@boulderlibrary.org ',
+    'dtend' => '2455598 68400',
+    'dtstart' => '2455598 64800',
+    'summary' => 'Youth Conversations in English',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9414'
+  },
+  {
+    'description' => 'Cold outside? Drop in and join a BPL librarian for some cozy time with your favorite knitting or other sewing projects. We\'ll have some good books on hand to inspire your creativity!',
+    'dtend' => '2455598 82800',
+    'dtstart' => '2455598 75600',
+    'summary' => 'Cozy Knitting Day at BPL',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7834'
+  },
+  {
+    'description' => "For girls in grades 3-6 and their moms or caregivers.  Focus on In the Year of the Boar and Jackie Robinson by Bette Bao Lord.  It\x{92}s the story of the struggles and triumphs of a Chinese girl who has immigrated to America in 1947.  Enjoy a snack and discussion of Chinese language, culture and customs led by May Lee, a Librarian who is herself an immigrant from China.  Reservations are required.  Please call the Reynolds Branch at 303-441-3120 to reserve your seats, as well as a copy of the book in advance. ",
+    'dtend' => '2455598 81000',
+    'dtstart' => '2455598 75600',
+    'summary' => 'It\'s a Girl Thing: Mother-Daughter Book Club',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8606'
+  },
+  {
+    'description' => 'Reynolds Reading Pals is a free program that teams trained Middle and High School student volunteers one-on-one with K-3rd graders once a week for 1 hour of shared reading as well as literacy games and activities.  To apply for the program, contact Debby Ridgell at 303-441-4102 or ridgelld@boulderlibrary.org or stop by the Reynolds Branch Library for more information.',
+    'dtend' => '2455599 1800',
+    'dtstart' => '2455598 84600',
+    'summary' => 'Reynolds Reading Pals',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8237'
+  },
+  {
+    'description' => 'Learn to play the ancient and mysterious board game known as Go. Developed 4000 years ago in China, the rules are so simple they can be taught in a few minutes--but it can take a lifetime to master the game. Go boards are provided and take-home sets made of cardboard are available for free.  Ages 5 and up. Cost: Free',
+    'dtend' => '2455600 1800',
+    'dtstart' => '2455599 75600',
+    'summary' => 'Go Club for Kids & Teens',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5602'
+  },
+  {
+    'description' => 'The Annual Boulder Bach Festival\'s Kid\'s for Bach',
+    'dtend' => '2455600 2700',
+    'dtstart' => '2455599 82800',
+    'summary' => 'Library Concert Series presents:',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8923'
+  },
+  {
+    'description' => 'The first Monday of every month, join us, usually, in the Canyon Theater for a special storytime full of story songs, musical stories, and more! Our alternant meeting space is the Children\'s Library. ',
+    'dtend' => '2455600 64800',
+    'dtstart' => '2455600 62100',
+    'summary' => 'Musical Storytime with Alice and Melanie',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8577'
+  },
+  {
+    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her. ',
+    'dtend' => '2455601 3600',
+    'dtstart' => '2455600 84600',
+    'summary' => 'Reading Buddies',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5456'
+  },
+  {
+    'description' => 'For people preparing for their USA citizenship test. Class is designed to help with questions, practice interview and other information about the citizenship process.',
+    'dtend' => '2455601 12600',
+    'dtstart' => '2455601 5400',
+    'summary' => 'Citizenship class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8859'
+  },
+  {
+    'description' => "Gibran Love Letters: The Love letters of Khalil Gibran to May Ziadah. Salma H. Al-Kuzbari and Suheir Bushrui (Trans.) This collection of letters, the first ever to appear in English, reveals the eloquence and beauty of Gibran's writing through a lifetime of correspondence with his spiritual love, May Ziadah. Illustrated throughout with Gibran's ink sketches and photographs of his original letters, it presents a moving insight into the writer behind \x{93}The Prophet\x{94}. ",
+    'dtend' => '2455601 12600',
+    'dtstart' => '2455601 7200',
+    'summary' => 'Arabic Literature Discussion Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7760'
+  },
+  {
+    'description' => 'Monday February 7 I Love Boulder| Robert Redford C. U. Student The Hot Rock Directed by Peter Yates, featuring Robert Redford, George Segal, Moses Gunn, Zero Mostel (1972).  In this comic caper film a professional thief just out of is recruited for another job by his brother-in-law.  They meet with  a wealthy ambassador of an African nation who financially backs their attempt  to steal a priceless diamond from a museum that had been stolen from Africa during colonial times.  The professional thief assembles a crack team of cat burglars and hatches an elaborate plan for stealing the gem.  Despite their care and experience, circumstances and plain bad luck keep the gem just out of their reach.   Based on the novel by Donald E. Westlake\'s that introduced his long-running Dortmunder character.  (101 min.) ',
+    'dtend' => '2455601 12600',
+    'dtstart' => '2455601 7200',
+    'summary' => 'screening of "The Hot Rock"',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9454'
+  },
+  {
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'dtend' => '2455601 68400',
+    'dtstart' => '2455601 61200',
+    'summary' => 'GED classes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2571'
+  },
+  {
+    'description' => "Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\x{92}s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot\@gmail.com).",
+    'dtend' => '2455601 68400',
+    'dtstart' => '2455601 61200',
+    'summary' => 'Boulder World Affairs Discussion Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7157'
+  },
+  {
+    'description' => 'On the first three Tuesdays of the month, babies (birth-18 months) and their caregivers explore language and books in a fun and intimate setting. Programs include rhymes, songs and books as well as time for free play and informal discussion of early childhood development. Attendance limited to babies up to 18 months of age; no older children please.',
+    'dtend' => '2455601 64800',
+    'dtstart' => '2455601 62100',
+    'summary' => 'Baby Time',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=6513'
+  },
+  {
+    'description' => 'Storytime for Children is at 10:15 a.m. every Tuesday at the Reynolds Branch Library.',
+    'dtend' => '2455601 64800',
+    'dtstart' => '2455601 62100',
+    'summary' => 'Storytime for Children',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8447'
+  },
+  {
+    'description' => '1:00 p.m. every Tuesday at Meadows Branch Library, 4800 Baseline Rd.',
+    'dtend' => '2455601 77400',
+    'dtstart' => '2455601 72000',
+    'summary' => 'Conversations in English Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7295'
+  },
+  {
+    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her.  ',
+    'dtend' => '2455602 3600',
+    'dtstart' => '2455601 84600',
+    'summary' => 'Reading Buddies',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5470'
+  },
+  {
+    'description' => 'Reynolds Reading Pals is a free program that teams trained Middle and High School student volunteers one-on-one with K-3rd graders once a week for 1 hour of shared reading as well as literacy games and activities.  To apply for the program, contact Debby Ridgell at 303-441-4102 or ridgelld@boulderlibrary.org or stop by the Reynolds Branch Library for more information.',
+    'dtend' => '2455602 1800',
+    'dtstart' => '2455601 84600',
+    'summary' => 'Reynolds Reading Pals',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8238'
+  },
+  {
+    'description' => 'Carol Denker, author of  "Autumn Romance: Stories and Portraits of Love after 50" will talk about the 20 couples whose love she describes in her book. ',
+    'dtend' => '2455602 5400',
+    'dtstart' => '2455602 0',
+    'summary' => 'Autumn Romance',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9367'
+  },
+  {
+    'description' => 'Tuesday Fiction Writers meets on the second and fourth Tuesdays at 6:30 to provide a supportive and critical environment to share work. Contact information:  tfw_BPL@hotmail.com. This group meets in the Boulder Creek Meeting Room in 2011 (except for the January 25th meeting which will be held at Meadows) ',
+    'dtend' => '2455602 12600',
+    'dtstart' => '2455602 5400',
+    'summary' => 'Tuesday Fiction Writers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7904'
+  },
+  {
+    'description' => 'On the first three Wednesdays of the month, toddlers (18-36 months) and their caregivers explore language and books in a fun and intimate setting. Programs include rhymes, songs, and books as well as time for free play and informal discussion of early childhood development. Attendance limited to toddlers from 18-36 months of age; no older children please. ',
+    'dtend' => '2455602 64800',
+    'dtstart' => '2455602 62100',
+    'summary' => 'Toddler Time',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7591'
+  },
+  {
+    'description' => '10:15 a.m. every Wednesday at the Meadows Branch Library, 4800 Baseline Road.',
+    'dtend' => '2455602 65700',
+    'dtstart' => '2455602 62100',
+    'summary' => 'Storytime for children',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8121'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455602 64800',
+    'dtstart' => '2455602 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9070'
+  },
+  {
+    'description' => 'Join Michael Stanwood (Didgeridoo), Jesse Manno (Oud), Dexter Payne (Clarinet, Sax) and friends, for an hour of beautiful improvised music. ',
+    'dtend' => '2455602 66600',
+    'dtstart' => '2455602 63000',
+    'summary' => 'Morning Music Meditation',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8933'
+  },
+  {
+    'description' => 'Group meets to discuss variety of literary genres.',
+    'dtend' => '2455602 77400',
+    'dtstart' => '2455602 72000',
+    'summary' => 'Conversations in English Literary Discussions',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8876'
+  },
+  {
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'dtend' => '2455603 68400',
+    'dtstart' => '2455603 61200',
+    'summary' => 'GED classes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2771'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455603 64800',
+    'dtstart' => '2455603 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9374'
+  },
+  {
+    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.  ',
+    'dtend' => '2455603 81000',
+    'dtstart' => '2455603 70200',
+    'summary' => 'BoulderReads! Adult Literacy Tutor Training',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7895'
+  },
+  {
+    'description' => "GED testing is available at Boulder Public Library from 3 to 7 p.m. in the BoulderReads! area of the Main Library, 1001 Arapahoe Ave.  Pre-registration is very strongly encouraged, please call 720-561-5826 or visit www.boulderreads.org and click on \x{93}Services.\x{94}  In addition, please bring a photo ID and a printout from your online preregistration at www.GED123.org.",
+    'dtend' => '2455604 7200',
+    'dtstart' => '2455603 79200',
+    'summary' => 'GED Testing',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8582'
+  },
+  {
+    'description' => 'Read and discuss the work of contemporary Indian authors who write in English.  These authors use English as their own language in creative ways, which distinguishes them from other South Asian authors, who are typically read in translation:  September 9 : Sea of Poppies by Amitav Ghosh October 14 : One Amazing Thing by Chitra Divakaruni November 18(this group meets on the 3rd Thursday in November due to the library closure on Veteran\'s Day: Freedom at Midnight by Larry Collins and Dominique Lapierre December 9 : The Guide by R.K. Narayan February 10 : Family Matters by Rohinton Mistry March 10 : The Tiger Ladies: A Memoir of Kashmir by Sudha Koul April 14 : The House of Blue Mangoes by David Davidar May 12 : Nine Lives by William Dalrymple ',
+    'dtend' => '2455604 3600',
+    'dtstart' => '2455603 84600',
+    'summary' => 'The Great Indian Novel',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8721'
+  },
+  {
+    'description' => ' Learn how to use library resources, in print and online, to put together a solid business plan. Our business librarians will demonstrate each resource and answer the most common questions about research. This class is a prerequisite to making a one-on-one appointment with a librarian to discuss your unique needs. No reservation required. For more information, contact the reference department.',
+    'dtend' => '2455604 10800',
+    'dtstart' => '2455604 7200',
+    'summary' => 'Business Research 101',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7771'
+  },
+  {
+    'description' => "Thursday February 10 I Love Boulder| Local Filmmakers\x{92} Showcase Odyssey of a Naturalist Directed by Fran Hall (assembled in 1965).  \x{93}A brief look into that tiny world of living things that we seldom pay any attention to!  An immature Lady Bird Beetle or two and some caterpillars who turn into lovely Butterflies!  Or an immature adult Tiger Beetle drilling its hole in the sand!  A look at some hunting ants and carrying their prey back to the home in the sand!  And a close-up look at just how a brightly colored caterpillar becomes a lovely butterfly right in front of your eyes!  A very young Lady Bird Beetle, with a pair of hollow jaws lives in a colony of brightly colored Aphids and never has to look very far for a meal!\x{94}\x{af}F. H.  In his long and vivid life with a camera Hall has lectured with his nature films for the National Audubon Society, and helped the Walt Disney Studios make nature films.  His screenings were characterized by his live narration.  He passed away December 2, 2010.  (90 min.) ",
+    'dtend' => '2455604 12600',
+    'dtstart' => '2455604 7200',
+    'summary' => 'screening of "Odyssey of a Naturalist"',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9455'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455604 64800',
+    'dtstart' => '2455604 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9293'
+  },
+  {
+    'description' => 'Time: 4:00pm-5:45pm Enjoy playing board games with other members of the community, or try out Wii games on the big screen.  We have a variety of games to plya, or feel fre to bring a family favorite.  For all ages. Free.  No reservations required.  For more information call 303-441-4390.',
+    'dtend' => '2455605 3600',
+    'dtstart' => '2455604 82800',
+    'summary' => 'Family Game Night',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8201'
+  },
+  {
+    'description' => 'This group meets on the second Saturday of each month and discusses materials that pertain to the historical and present-day experiences of women in the Western U.S.  In July the group meets on the third Saturday:  December 11: Two in the Far North, by Mardie Murie (we read this about 4 years ago, and it\'s back by popular demand so the "new" folks can enjoy it)  2011: January 8: There\'s This River by Christa Sadler  February 12: Boys and Girls Like You and Me by Aryn Kyle  March 12: The Tom-Walker by Mari Sandoz  April 9: Sapphira and the Slave Girl by Willa Cather  May 14: Half Broke Horses by Jeannette Walls  June 11:  The Telling by Ursula Le Guin      Cost: Free Contact information:  slocummp@gmail.com  ',
+    'dtend' => '2455605 64800',
+    'dtstart' => '2455605 61200',
+    'summary' => 'Women of the West Saturday group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7867'
+  },
+  {
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'dtend' => '2455605 72000',
+    'dtstart' => '2455605 61200',
+    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8799'
+  },
+  {
+    'description' => 'Enjoy books, songs and more at weekly storytimes for all ages.  Children must be accompanied by an adult at all times.',
+    'dtend' => '2455605 64800',
+    'dtstart' => '2455605 62100',
+    'summary' => 'Children\'s Storytime',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9337'
+  },
+  {
+    'description' => 'Classes are held in the Teen Art Gallery.  These classes are patterned after our successful adult Conversations in English class, but focus on youth interests.    Conversations in English classes have received national recognition for helping people new to the U.S. learn English. These informal, friendly groups are led by volunteer, native speakers of American English. Special to the youth program, is a professional writing coach leading class once a month to help students write what they discussed the previous month.  Conversations class: Feb. 5, 12, 19. March 5, 12, 19. Writing class: Feb. 26 and March 26.   Information: Melanie Howard, 303-441-3099, or email: howardm@boulderlibrary.org ',
+    'dtend' => '2455605 68400',
+    'dtstart' => '2455605 64800',
+    'summary' => 'Youth Conversations in English',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9415'
+  },
+  {
+    'description' => 'This Gunstwork production of the classic tale, which features exquisite puppets, expressive masks, and original choreography, ignites the imagination of young and old alike.   This dynamic solo production is a teaching story of the Abanaki, the native people of New England and southern Canada. It depicts the journey of four native New England Abenaki men as they make their way to the island where the great Gluskabe (the protector of the Abenaki) lives and the story of the wishes he bestows on them. One wishes for worldly possessions; the second yearns to be taller than all; another seeks immortality; and the fourth wishes to be a better hunter so that he may provide food for his people.   Four Wishes is for children ages 5 and up and their families.  Gunstwork makes an ancient Native American folk tale relevant for today\'s young minds. It entertains as well as raises important questions about the human forces that determine our choices and where these choices come from: whether from the heart, mind, or perhaps from greed or fear.          ',
+    'dtend' => '2455606 0',
+    'dtstart' => '2455605 82800',
+    'summary' => '"Four Wishes" with Gunstwork\'s Michael Gunst',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9423'
+  },
+  {
+    'description' => 'Reynolds Reading Pals is a free program that teams trained Middle and High School student volunteers one-on-one with K-3rd graders once a week for 1 hour of shared reading as well as literacy games and activities.  To apply for the program, contact Debby Ridgell at 303-441-4102 or ridgelld@boulderlibrary.org or stop by the Reynolds Branch Library for more information.',
+    'dtend' => '2455606 1800',
+    'dtstart' => '2455605 84600',
+    'summary' => 'Reynolds Reading Pals',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8239'
+  }
+]
