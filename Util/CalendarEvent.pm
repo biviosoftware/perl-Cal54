@@ -6,6 +6,7 @@ use Bivio::Base 'Bivio.ShellUtil';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
+my($_S) = b_use('Bivio.Scraper');
 
 sub USAGE {
     return <<'EOF';
@@ -13,6 +14,7 @@ usage: bivio CalendarEvent [options] command [args..]
 commands
   clear_events -- clear all events for a venue
   import_events -- scrape and import events for a venue
+  import_events_for_all_venues -- scrape all venues
 EOF
 }
 
@@ -42,7 +44,14 @@ sub import_events {
         $self->req(qw(auth_realm owner display_name)))
 	|| $self->usage_error('venue not found: ',
             $self->req(qw(auth_realm owner display_name)));
-    b_use('Bivio.Scraper')->do_one($list, $_DT->now);
+    $_S->do_one($list, $_DT->now);
+    return;
+}
+
+sub import_events_for_all_venues {
+    my($self) = @_;
+    $self->initialize_ui;
+    $_S->do_all($self->model('VenueList')->unauth_load_all);
     return;
 }
 
