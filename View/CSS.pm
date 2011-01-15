@@ -46,7 +46,8 @@ div.c4_list {
 }
 .c4_list div.date {
   Font('c4_date');
-  margin-bottom: .5ex;
+  margin-bottom: 1ex;
+  border-bottom: 1px solid;
 }
 .c4_list .item {
   margin-bottom: 2ex;
