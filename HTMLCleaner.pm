@@ -30,6 +30,11 @@ my($_IGNORE_START_TAG) = {
 	p
 	strong
 	a
+	center
+	big
+	h1
+	h2
+	h3
     )),
 };
 my($_END_NEWLINE_TAG) = {
@@ -38,6 +43,9 @@ my($_END_NEWLINE_TAG) = {
 	form
 	div
 	p
+	h1
+	h2
+	h3
     )),
 };
 my($_START_NEWLINE_TAG) = {
