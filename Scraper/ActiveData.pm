@@ -71,7 +71,7 @@ sub _parse_event_xml {
     b_die('venue missing Address.street1')
 	unless $addr1;
     my($xml) = _parse_xml($self, 'http://' . $webhost . '/Eventlist.aspx?'
-        . join('&', 				       
+        . join('&',
 	    'fromdate=' . $_D->to_string($start),
 	    'todate=' . $_D->to_string($end),
 	    'type=public',
@@ -101,13 +101,13 @@ sub _parse_webhost {
     my($self) = @_;
     # first parse calendar for "/eventlistsyndicator.aspx", use that host
     # otherwise look for "EventList.aspx" and use current host
-    my($html) = $self->c4_scraper_get(
-	$self->get('venue_list')->get('calendar.Website.url'));
+    my($url) = $self->get('venue_list')->get('calendar.Website.url');
+    my($html) = $self->c4_scraper_get($url);
     my($host) = $$html =~ m,://(.*?)/(EventListSyndicator|displaymedia).aspx,;
     return $host if $host;
     b_die('unparsed host value')
 	unless $$html =~ /("|')EventList.aspx\?/;
-    $host = $$html =~ m,http://(.*?)/,;
+    ($host) = $url =~ m,http://(.*?)/,;
     return $host || b_die('host not found in calendar website');
 }
 
