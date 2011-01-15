@@ -36,6 +36,7 @@ sub do_all {
 	sub {
 	    my($it) = @_;
 	    $_A->reset_warn_counter;
+	    b_info($it->get('RealmOwner.display_name'));
 	    $proto->do_one($it, $date_time);
 	    return 1;
 	},
@@ -113,6 +114,7 @@ sub internal_clean {
 sub internal_date_time {
     my($self, $str) = @_;
     # mm/dd/yyyy hh:mm (a|p)m
+    # mm/dd/yyyy hh(a|p)m
     # yyyy/mm/dd hh:mm (a|p)m
     my($d, $t) = $str =~ m,^([\d/]+)\s+(.*?)\s*$,;
     b_die('unparsable date/time: ', $str)
@@ -120,9 +122,14 @@ sub internal_date_time {
     my($mon, $mday, $year) = split('/', $d);
     ($mon, $mday, $year) = ($mday, $year, $mon)
 	if length($mon) eq 4;
-    my($hour, $min, $ap) = $t =~ m,^(\d+)\:(\d+) (a|p)m$,i;
-    b_die('unparsable date/time: ', $str)
-	unless $year && $ap;
+    my($hour, $min, $ap) = $t =~ m,^(\d+)\:(\d+)\s*(a|p)m$,i;
+
+    unless ($year && $ap) {
+	($hour, $ap) = $t =~ m,^(\d+)\s*(a|p)m$,i;
+	b_die('unparsable date/time: ', $str)
+	    unless $ap;
+	$min = 0;
+    }
     $hour += 12 if lc($ap) eq 'p' && $hour < 12;
     return $self->get('time_zone')->date_time_to_utc(
 	$_DT->from_parts_or_die(0, $min, $hour, $mday, $mon, $year));
