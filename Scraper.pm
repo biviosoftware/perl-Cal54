@@ -111,6 +111,15 @@ sub internal_clean {
     return $value;
 }
 
+sub internal_compute_year {
+    my($self, $month) = @_;
+    my($current_month, $current_year) =
+	$_DT->get_parts($self->get('date_time'), qw(month year));
+    return $current_year
+	if abs($month - $current_month) < 6;
+    return $current_year + ($month > $current_month ? -1 : 1);
+}
+
 sub internal_date_time {
     my($self, $str) = @_;
     # mm/dd/yyyy hh:mm (a|p)m
