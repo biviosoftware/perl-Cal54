@@ -227,6 +227,20 @@ sub _init_venues {
 	    $_S->WEST_END_TAVERN,
 	    'westend',
 	],
+	[
+	    'Hotel Boulderado',
+	    '2115 Thirteenth St.',
+	    'Boulder',
+	    'CO',
+	    80302,
+	    'US',
+	    'http://www.boulderado.com/musiconthemezz.html',
+	    'http://www.boulderado.com',
+	    'ignore-boulderaro@bivio.biz',
+	    '303.442.4344',
+	    $_S->BOULDERADO,
+	    'boulderado',
+	],
     ) {
         my($v) = {map(
 	    ($_ => shift(@$values)),
