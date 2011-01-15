@@ -9,7 +9,6 @@ my($_M) = b_use('Type.Month');
 my($_MONTHS) = {
     map((lc($_->get_name) => $_), $_M->get_list),
 };
-my($_D) = b_use('Type.Date');
 
 sub internal_import {
     my($self) = @_;
@@ -36,26 +35,24 @@ sub internal_import {
 	    $state = 'DAY';
 	    next;
 	}
-	if ($line eq '') {
-	    if ($state eq 'DESCRIPTION') {
-		push(@{$self->get('events')}, {
-		    summary => $current->{title},
-		    description => $current->{description},
-		    time_zone => $self->get('time_zone'),
-		    dtstart => $current->{dtstart},
-		    dtend => $current->{dtend},
-		});
-		$current = {
-		    month => $current->{month},
-		    description => '',
-		};
-		$state = 'MONTH';
-	    }
-	    next;
-	}
 	if ($state eq 'DAY' && $line) {
 	    _parse_title_and_time($self, $current, $line);
 	    $state = 'DESCRIPTION';
+	    next;
+	}
+	if ($state eq 'DESCRIPTION' && $line eq '') {
+	    push(@{$self->get('events')}, {
+		summary => $current->{title},
+		description => $current->{description},
+		time_zone => $self->get('time_zone'),
+		dtstart => $current->{dtstart},
+		dtend => $current->{dtend},
+	    });
+	    $current = {
+		month => $current->{month},
+		description => '',
+	    };
+	    $state = 'MONTH';
 	    next;
 	}
 	if ($state eq 'DESCRIPTION') {
@@ -66,15 +63,6 @@ sub internal_import {
     return;
 }
 
-sub _compute_year {
-    my($self, $month) = @_;
-    my($current_month, $current_year) =
-	$_D->get_parts($self->get('date_time'), qw(month year));
-    return $current_year
-	if abs($month - $current_month) < 6;
-    return $current_year + ($month > $current_month ? -1 : 1);
-}
-
 sub _parse_title_and_time {
     my($self, $row, $str) = @_;
     my($title, $time, $am) = $str =~ m,^(.*?)\,\s*(\d+)\s*(am|pm)$,i;
@@ -83,7 +71,7 @@ sub _parse_title_and_time {
     $row->{title} = $title;
     $row->{dtstart} = $self->internal_date_time(
 	join('/', $row->{month}, $row->{day},
-	     _compute_year($self, $row->{month}))
+	     $self->internal_compute_year($row->{month}))
 	. ' ' . $time . $am);
     $row->{dtend} = $row->{dtstart};
     return;
