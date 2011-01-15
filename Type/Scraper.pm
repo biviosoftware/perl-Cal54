@@ -11,6 +11,7 @@ __PACKAGE__->compile([
     NISSIS => 2,
     ACTIVE_DATA => 3,
     EVANCED => 4,
+    WEST_END_TAVERN => 5,
 ]);
 
 sub as_class {
