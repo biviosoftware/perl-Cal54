@@ -14,6 +14,7 @@ my($_IGNORE_TAG_UNTIL_END) = {
 	noscript
 	object
 	xml
+	style
     )),
 };
 my($_IGNORE_START_TAG) = {
@@ -27,6 +28,7 @@ my($_IGNORE_START_TAG) = {
 	div
 	span
 	font
+	b
 	p
 	strong
 	a
@@ -35,6 +37,11 @@ my($_IGNORE_START_TAG) = {
 	h1
 	h2
 	h3
+	h4
+	li
+	small
+	tbody
+	em
     )),
 };
 my($_END_NEWLINE_TAG) = {
@@ -46,12 +53,14 @@ my($_END_NEWLINE_TAG) = {
 	h1
 	h2
 	h3
+	li
     )),
 };
 my($_START_NEWLINE_TAG) = {
     map(($_ => 1), qw(
         br
         hr
+	ul
     )),
 };
 
@@ -90,6 +99,8 @@ sub html_parser_end {
     }
     if ($_END_NEWLINE_TAG->{$tag}) {
 	_append($self, "\n");
+	_append($self, "\n")
+	    if $tag eq 'p';
 	return;
     }
     if ($tag eq 'td') {
@@ -125,6 +136,7 @@ sub html_parser_start {
 	_append($self, "\n");
 	return;
     }
+    return unless $tag =~ /^\w+$/;
     b_warn('unhandled tag: ', $tag);
     return;
 }
@@ -132,6 +144,7 @@ sub html_parser_start {
 sub html_parser_text {
     my($self, $text) = @_;
     my($fields) = $self->[$_IDI];
+    return unless $fields->{in_body};
     return if $fields->{wait_for_end_tag};
     _append($self, ${$_S->canonicalize_charset($_HTML->unescape($text))});
     return;
