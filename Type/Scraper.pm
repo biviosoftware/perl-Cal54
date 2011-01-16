@@ -13,6 +13,7 @@ __PACKAGE__->compile([
     EVANCED => 4,
     WEST_END_TAVERN => 5,
     BOULDERADO => 6,
+    CHAUTAUQUA =>7,
 ]);
 
 sub as_class {
