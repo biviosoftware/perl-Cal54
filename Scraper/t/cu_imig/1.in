@@ -1128,6 +1128,14 @@ Stern has served on the faculty of the Cleveland Institute of Music and is now A
     'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=4017&information_id=16360&type=&rss=rss'
   },
   {
+    'description' => 'African and Mariachi Ensembles',
+    'dtend' => '2455662 72000',
+    'dtstart' => '2455662 72000',
+    'summary' => 'World Musics',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=4018&information_id=16362&type=&rss=rss'
+  },
+  {
     'description' => "\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}\x{a0}",
     'dtend' => '2455663 12600',
     'dtstart' => '2455663 5400',
