@@ -12,7 +12,7 @@ my($_MONTHS) = {
 
 sub internal_import {
     my($self) = @_;
-    my($text) = b_use('Bivio.HTMLCleaner')->clean_html(
+    my($text) = b_use('Bivio.HTMLCleaner')->new->clean_html(
 	$self->c4_scraper_get($self->get('venue_list')
             ->get('calendar.Website.url')));
     my($current);

@@ -13,7 +13,7 @@ my($_DT) = b_use('Type.DateTime');
 
 sub internal_import {
     my($self) = @_;
-    my($text) = b_use('Bivio.HTMLCleaner')->clean_html(
+    my($text) = b_use('Bivio.HTMLCleaner')->new->clean_html(
 	$self->c4_scraper_get($self->get('venue_list')
             ->get('calendar.Website.url')));
     my($current) = {
@@ -33,7 +33,7 @@ sub internal_import {
 		    join('/', $month, $day, $year) . ' ' . $time);
 		$current->{dtend} = $current->{dtstart};
 		$current->{description} = '';
-		$state = 'DESCRIPTION';
+		$state = 'NEXT_BLANK_LINE';
 		next;
 	    }
 	    if ($line) {
@@ -42,6 +42,12 @@ sub internal_import {
 	    }
 	    $current->{summary} = '';
 	    next;
+	}
+	if ($state eq 'NEXT_BLANK_LINE') {
+	    if ($line eq '') {
+		$state = 'DESCRIPTION';
+		next;
+	    }
 	}
 	if ($state eq 'DESCRIPTION') {
 	    if ($line eq '') {
@@ -56,7 +62,6 @@ sub internal_import {
 		$state = 'DATE_TIME';
 		next;
 	    }
-	    next if length($line) < 40;
 	    $current->{description} .= $line;
 	    next;
 	}
