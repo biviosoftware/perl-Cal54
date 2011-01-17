@@ -12,7 +12,7 @@ my($_DAYS) = {
 
 sub internal_import {
     my($self) = @_;
-    my($text) = b_use('Bivio.HTMLCleaner')->clean_html(
+    my($text) = b_use('Bivio.HTMLCleaner')->new->clean_html(
 	$self->c4_scraper_get($self->get('venue_list')
             ->get('calendar.Website.url')));
     my($current);
@@ -32,7 +32,7 @@ sub internal_import {
 	    next;
 	}
 	if ($state eq 'DATE' && $line =~ /^(\w*?),/ && $_DAYS->{lc($1)}) {
-	    my($month, $day, $act) = $line =~ m,\,\s*(\w+)\s+(\d+).*?\~(.*)$,;
+	    my($month, $day, $act) = $line =~ m,\,\s*(\w+)\s+(\d+).*?\~\s*(.*)$,;
 	    die($line) unless $act;
 	    $month = $_DT->english_month3_to_int($month);
 	    my($date) = join('/', $month, $day,
