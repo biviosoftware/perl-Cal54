@@ -270,7 +270,7 @@ sub _init_venues {
 	    'cu_cristol',
 	],
 	[
-	    'Duane Physics',
+	    'CU Duane Physics',
 	    '2000 Colorado Av',
 	    'Boulder',
 	    'CO',
@@ -282,6 +282,20 @@ sub _init_venues {
 	    '',
 	    $_S->ACTIVE_DATA,
 	    'cu_duane',
+	],
+	[
+	    'Fox Theatre',
+	    '1135 13th Street',
+	    'Boulder',
+	    'CO',
+	    80304,
+	    'US',
+	    'http://foxtheatre.com/Store/ChooseTicket.aspx',
+	    'http://foxtheatre.com',
+	    'ignore-foxtheatre@colorado.edu',
+	    '',
+	    $_S->FOX_THEATRE,
+	    'foxtheatre',
 	],
     ) {
         my($v) = {map(
