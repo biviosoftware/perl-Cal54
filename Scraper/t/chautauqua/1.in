@@ -28,7 +28,7 @@
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => '$1 online or free tickets available at all three Pharmaca locations with a $10 purchase.  Please contact Pharmaca stores for further details.Stuart Tomc will bring you the science behind fish oil and why it is an essential fatty acid and how it can benefit your heart health, your longevity, blood sugar levels, and balancing hormones and mood.  With over 20 years of experience in the field, Stuart is sure to answer all of your Omega-3 questions, even Fish or Flax?',
+    'description' => 'Stuart Tomc will bring you the science behind fish oil and why it is an essential fatty acid and how it can benefit your heart health, your longevity, blood sugar levels, and balancing hormones and mood.  With over 20 years of experience in the field, Stuart is sure to answer all of your Omega-3 questions, even Fish or Flax?',
     'dtend' => '2455595 7200',
     'dtstart' => '2455595 7200',
     'summary' => ' The Whole Omega 3 Story Has Yet to be Told Presented by Pharmaca Integrative Pharmacy',
@@ -42,14 +42,14 @@
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => '$15 ($12 Chautauqua and Boulder History Museum Members)Enjoy complimentary wine and cheese while you listen to David Barrett, founding principal and studio director of Barrett Studio architects.',
+    'description' => 'Enjoy complimentary wine and cheese while you listen to David Barrett, founding principal and studio director of Barrett Studio architects.',
     'dtend' => '2455602 1800',
     'dtstart' => '2455602 1800',
     'summary' => ' Boulder Conversations with Extraordinary People: David Barrett Presented by the Boulder History Museum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => '$1 online or free tickets available at all three Pharmaca locations with a $10 purchase.  Please contact Pharmaca stores for further details.Dr. Cass, a practicing integrative medicine practitioner and physiologist will pass on her expertise for maintaining your energy and vitality throughout your whole life-cycle: PMS, menopause, energy vs. fatigue, weight gain, and detoxing.',
+    'description' => 'Dr. Cass, a practicing integrative medicine practitioner and physiologist will pass on her expertise for maintaining your energy and vitality throughout your whole life-cycle: PMS, menopause, energy vs. fatigue, weight gain, and detoxing.',
     'dtend' => '2455604 7200',
     'dtstart' => '2455604 7200',
     'summary' => ' Women\'s Health: Maintaining Your Energy and Vitality, PMS Through Menopause Presented by Pharmaca Integrative Pharmacy',
@@ -70,21 +70,21 @@
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => '$15 ($12 Chautauqua and Boulder History Museum Members)Enjoy complimentary wine and cheese while listening to Atmospheric Scientist, Dr. Susan Solomon.  Widely recognized as one of the leaders in the field of atmospheric science, Dr. Solomon is well known for having pioneered the theory explaining why the ozone hole occurs in Antarctica, and obtaining some of the first chemical measurements that helped to establish the chlorofluorocarbons as its cause.   She received the National Medal of Science- the highest scientific honor in the US, andhas also received the Grande Medaille, the highest award of the French Academy of Sciences, the prestigious Blue Planet Prize in Japan as well as the Volvo Environment Prize, and has the  distinction of being the namesale to aglacier in Antarctica, Solomon Glacier. She served as co-chair of the climate science group of the Intergovernmental Panel on Climate Change (IPCC), and provided key leadership to the 2007 comprehensive scientific assessment of climate change for the public and for policymakers. In 2008, the IPCC and Albert Gore, Jr. received the Nobel Peace Prize and Time magazine named Solomon as one of the 100 most influential people in the world.',
+    'description' => 'Enjoy complimentary wine and cheese while listening to Atmospheric Scientist, Dr. Susan Solomon.  Widely recognized as one of the leaders in the field of atmospheric science, Dr. Solomon is well known for having pioneered the theory explaining why the ozone hole occurs in Antarctica, and obtaining some of the first chemical measurements that helped to establish the chlorofluorocarbons as its cause.   She received the National Medal of Science- the highest scientific honor in the US, andhas also received the Grande Medaille, the highest award of the French Academy of Sciences, the prestigious Blue Planet Prize in Japan as well as the Volvo Environment Prize, and has the  distinction of being the namesale to aglacier in Antarctica, Solomon Glacier. She served as co-chair of the climate science group of the Intergovernmental Panel on Climate Change (IPCC), and provided key leadership to the 2007 comprehensive scientific assessment of climate change for the public and for policymakers. In 2008, the IPCC and Albert Gore, Jr. received the Nobel Peace Prize and Time magazine named Solomon as one of the 100 most influential people in the world.',
     'dtend' => '2455617 1800',
     'dtstart' => '2455617 1800',
     'summary' => ' Boulder Conversations with Extraordinary People: Susan Solomon, PhD Presented by the Boulder History Museum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => '$15 ($12 Chautauqua and Boulder History Museum Members)Enjoy complimentary wine and cheese while you listen to Dr. Gene Bolles, Neurosurgeon and Military Consultant.',
+    'description' => 'Enjoy complimentary wine and cheese while you listen to Dr. Gene Bolles, Neurosurgeon and Military Consultant.',
     'dtend' => '2455630 1800',
     'dtstart' => '2455630 1800',
     'summary' => ' Boulder Conversations with Extraordinary People: Dr. Gene Bolles Presented by the Boulder History Museum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => '$1 online or free tickets available at all three Pharmaca locations with a $10 purchase.  Please contact Pharmaca stores for further details.For decades marketers have bombarded women with skin care sales hype. In a sea of products and promises, it can be a daunting task to figure out how to choose the best skin care treatments. Gain the knowledge to navigate your way through the informational clutter in the world of skin care. Learn the most successful strategies to help slow the aging process and attain healthy, glowing skin.',
+    'description' => 'For decades marketers have bombarded women with skin care sales hype. In a sea of products and promises, it can be a daunting task to figure out how to choose the best skin care treatments. Gain the knowledge to navigate your way through the informational clutter in the world of skin care. Learn the most successful strategies to help slow the aging process and attain healthy, glowing skin.',
     'dtend' => '2455632 7200',
     'dtstart' => '2455632 7200',
     'summary' => ' Secrets to Healthy and Beautiful Skin Presented by Pharmaca Integrative Pharmacy',
