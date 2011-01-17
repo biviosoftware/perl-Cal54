@@ -1,0 +1,51 @@
+# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+[
+    sub {
+	return class()->new;
+    } => [
+	clean_html => [
+	    [string_ref('')] => [string_ref("\n")],
+	    [string_ref(<<'EOF')]
+<html><body>
+
+hi there <a>some text</a> and more<br />
+
+<p>    some text with leading space</p>
+
+<span>some more text </span>  <span> with white space</span>
+
+
+<a href="x.html">more text</a>.
+
+table:
+  <table>
+  <tr><td>cell1</td>
+
+  <td>cell2</td>
+  </tr>
+
+<tr><td>cell3</td><td>cell4</td></tr>
+  </table>
+more text    
+</body></html>  
+EOF
+		=> [string_ref(<<'EOF')],
+hi there some text and more
+
+some text with leading space
+
+some more text with white space more text.
+
+table:
+cell1
+cell2
+
+cell3
+cell4
+
+more text
+EOF
+	],
+    ],
+];
