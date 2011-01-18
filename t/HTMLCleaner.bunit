@@ -27,7 +27,7 @@ table:
 
 <tr><td>cell3</td><td>cell4</td></tr>
   </table>
-more text    
+   more text    
 </body></html>  
 EOF
 		=> [string_ref(<<'EOF')],
