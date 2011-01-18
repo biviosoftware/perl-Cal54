@@ -19,7 +19,6 @@ sub internal_import {
     my($state) = 'TIME';
 
     foreach my $line (split("\n", $$text)) {
-	$line =~ s/^\s+|\s+$//g;
 
 	if ($state eq 'TIME'
 		&& $line =~ /music\s+([\d:]+)(a|p)m\-([\d:]+)(a|p)m/i) {
@@ -32,8 +31,9 @@ sub internal_import {
 	    next;
 	}
 	if ($state eq 'DATE' && $line =~ /^(\w*?),/ && $_DAYS->{lc($1)}) {
-	    my($month, $day, $act) = $line =~ m,\,\s*(\w+)\s+(\d+).*?\~\s*(.*)$,;
-	    die($line) unless $act;
+	    my($month, $day, $summary) =
+		$line =~ m,\,\s*(\w+)\s+(\d+).*?\~\s*(.*)$,;
+	    b_die($line) unless $summary;
 	    $month = $_DT->english_month3_to_int($month);
 	    my($date) = join('/', $month, $day,
 	        $self->internal_compute_year($month));
@@ -41,7 +41,7 @@ sub internal_import {
 		$date . ' ' . $current->{start_time});
 	    $current->{dtend} = $self->internal_date_time(
 		$date . ' ' . $current->{end_time});
-	    $current->{summary} = $act;
+	    $current->{summary} = $summary;
 	    $state = 'DESCRIPTION';
 	    next;
 	}
