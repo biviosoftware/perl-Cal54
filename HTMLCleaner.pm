@@ -39,6 +39,7 @@ sub clean_html {
     $parser->{__PACKAGE__} = $self;
     # register text handler, includes whitespace
     $parser->handler(text => \&_parse_text, 'self,text');
+    $parser->unbroken_text(1);
     $parser->ignore_elements(qw(script noscript object style xml));
     {
 	# ignore utf warnings
@@ -46,24 +47,17 @@ sub clean_html {
         $parser->parse($$html);
     }
     $fields->{text} =~ s/( )+$//mg;
+    $fields->{text} =~ s/(\n{3})\n+/$1/g;
     delete($parser->{__PACKAGE__});
     return \($fields->{text} . "\n");
 }
 
 sub get_link_for_text {
     my($self, $text) = @_;
-    my($fields) = $self->[$_IDI];
-    $text =~ s/^\s+|\s+$//g;
-    my($links) = $fields->{links}->{$text};
-
-    unless ($links) {
-	b_warn('no links for text: ', $text);
-	return undef;
-    }
-    if (@$links > 2) {
-	b_warn('multiple links for text: ', $text);
-    }
-    return $links->[0];
+    my($url) = $self->unsafe_get_link_for_text($text);
+    b_die('no links for text: ', $text)
+	unless $url;
+    return $url;
 }
 
 sub html_parser_comment {
@@ -80,11 +74,16 @@ sub html_parser_end {
 	    if $tag eq 'p';
     }
     if ($tag eq 'a') {
-	return unless $fields->{link_text} && $fields->{href};
-	$fields->{link_text} =~ s/^\s+|\s+$//g;
-	push(@{$fields->{links}->{$fields->{link_text}} ||= []},
-	     $fields->{href});
+
+	if ($fields->{link_text} && $fields->{href}) {
+	    $fields->{link_text} =~ s/^\s+|\s+$//g;
+	    push(@{$fields->{links}->{$fields->{link_text}} ||= []},
+		 $fields->{href});
+	}
 	$fields->{href} = $fields->{link_text} = undef;
+    }
+    if ($tag eq 'spam') {
+	$fields->{text} .= ' ';
     }
     return;
 }
@@ -114,10 +113,27 @@ sub new {
     return $self;
 }
 
+sub unsafe_get_link_for_text {
+    my($self, $text) = @_;
+    my($fields) = $self->[$_IDI];
+    $text =~ s/^\s+|\s+$//g;
+    my($links) = $fields->{links}->{$text};
+    return undef unless $links;
+
+    if (@$links > 2) {
+#TODO: remove dups	
+	b_warn('multiple links for text: "', $text, '": ', $links);
+    }
+    return $links->[0];
+}
+
 sub _parse_text {
     my($parser, $text) = @_;
     my($self) = $parser->{__PACKAGE__};
     my($fields) = $self->[$_IDI];
+    $text =~ s/\t+/ /g;
+    $text =~ s/( )+/ /g;
+    $text =~ s/(\n)( )+/$1/g;
     my($leading_white) = $text =~ /^(\s+)/;
     my($trailing_white) = $text =~ /\S(\s+)$/;
     my($value) = join('',
