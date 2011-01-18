@@ -1,200 +1,125 @@
-# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# Copyright (c) 2011 bivio Software Inc.  All Rights Reserved.
 # $Id$
 package Cal54::Scraper::Nissis;
 use strict;
 use Bivio::Base 'Bivio.Scraper';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
-my($_IDI) = __PACKAGE__->instance_data_index;
-my($_DT) = b_use('Type.DateTime');
-my($_HTML) = b_use('Bivio.HTML');
-my($_S) = b_use('Type.String');
-
-sub html_parser_end {
-    my($self, $tag) = @_;
-    return
-	unless $tag eq 'a';
-    my($fields) = $self->[$_IDI];
-    $fields->{in_a} = 0;
-    return;
-}
-
-sub html_parser_start {
-    my($self, $tag, $attr) = @_;
-    my($fields) = $self->[$_IDI];
-    push(@{$fields->{items}}, $fields->{item} = {})
-	if ($attr->{class} || '') eq 'calmainact';
-    if ($tag eq 'a' && $fields->{item}) {
-	push(@{$fields->{item}->{links} ||= []}, $self->abs_uri($attr->{href}));
-	$fields->{in_a} = 1;
-    }
-    return;
-}
-
-sub html_parser_text {
-    my($self, $text) = @_;
-    my($fields) = $self->[$_IDI];
-    $fields->{item}->{desc} .= $text . ' ';
-    $fields->{item}->{title} = $text . ' '
-	if $fields->{in_a} && !$fields->{item}->{title};
-    return;
-}
+my($_D) = b_use('Type.Date');
+my($_M) = b_use('Type.Month');
+my($_MONTHS) = {
+    map((lc($_->get_name) => $_), $_M->get_list),
+};
 
 sub internal_import {
     my($self) = @_;
-    $self->[$_IDI] = {};
-    foreach my $uri (_do_main($self)) {
-	$self->internal_catch(
-	    sub {_do_month($self, $uri, $self->c4_scraper_get($uri))},
-	);
+    my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
+    my($text) = $cleaner->clean_html(
+	$self->c4_scraper_get($self->get('venue_list')
+            ->get('calendar.Website.url')));
+    my($state) = 'CALENDAR';
+
+    foreach my $line (split("\n", $$text)) {
+	if ($line eq 'CALENDAR') {
+	    $state = 'MONTH';
+	    next;
+	}
+	if ($state eq 'MONTH' && $line =~ /^(\w+)\b/) {
+	    _parse_detail($self, $cleaner->get_link_for_text($line))
+		if $_MONTHS->{lc($1)};
+	}
     }
     return;
 }
 
-sub _do_cell {
-    my($self, $text) = @_;
-    my($fields) = $self->[$_IDI];
-    $fields->{items} = [];
-    # Sometimes there are blank links; This will confuse html_parser_start
-    $text =~ s{<a\b^[^>]+>(?:\s+|<br\s*/?>)</a>}{}is;
-    $fields->{in_a} = undef;
-    $fields->{item} = undef;
-    $self->parse_html(\$text);
-    return @{$fields->{items}};
-}
+sub _parse_detail {
+    my($self, $page) = @_;
+    my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
+    my($text) = $cleaner->clean_html(
+	$self->c4_scraper_get(_url($self, $page)));
+    my($current_year) = $_D->get_parts($self->get('date_time'), 'year');
+    my($state) = 'MONTH';
+    my($current);
 
-sub _do_cells {
-    my($self, $content) = @_;
-    return map(
-	$_ =~ m{>\s*(\d+)\s*<.*CalContent}is ? [
-	    $1 + 0,
-	    $_ =~ m{name="CalContent.*?-->(.+?)<!--\s*InstanceEnd}is,
-	] : (),
-	split(m{name="CalNumber}is, $$content),
-    );
-}
+    foreach my $line (split("\n", $$text)) {
+	if ($state eq 'MONTH' && $line =~ /^(\w+) (\d+)\b/) {
+	    my($month, $year) = ($1, $2);
+	    next unless $_MONTHS->{lc($month)}
+		&& $year >= $current_year
+		    && $year <= $current_year + 1;
+	    $current = {
+		month => $_MONTHS->{lc($month)}->as_int,
+		year => $year,
+	    };
+	    $state = 'DAY';
+	    next;
+	}
+	if ($state eq 'NOT_NUMBER_DESCRIPTION') {
+	    if ($line =~ /^\d+$/ || $line =~ /^Gathering Place/) {
+		push(@{$self->get('events')}, {
+		    time_zone => $self->get('time_zone'),
+		    map(($_ => $current->{$_}),
+			qw(summary description dtstart dtend url)),
+		}) if $current->{description} && $current->{summary};
+		$current = {
+		    month => $current->{month},
+		    year => $current->{year},
+		};
+		$state = 'DAY';
+		# fall through
+	    }
+	    elsif ($line) {
+		$current->{description} .= $line . ' ';
 
-sub _do_desc {
-    my($self, $text) = @_;
-    return undef
-	unless $text;
-    $text = ${$_S->canonicalize_newlines(
-	$_S->canonicalize_charset(
-	    $_HTML->unescape($text),
-	),
-    )};
-    $text =~ s/\s+/ /sg;
-    return undef
-	unless $text =~ /\S/ && $text !~ /\b(?:private\s+(?:party|event)|tba|closed for)\b/is;
-    return $text;
-}
-
-sub _do_main {
-    my($self) = @_;
-    return map(
-	$_ =~ /lmcalendar/ ? () : $self->abs_uri($_),
-	${$self->c4_scraper_get($self->get('venue_list')->get('calendar.Website.url'))}
-	    =~ /href="?(lmcal[^"\s]+\.html)/isg,
-    );
-}
-
-sub _do_month {
-    my($self, $uri, $content) = @_;
-    my($year, $mon) = _do_year_mon(
-	$self,
-	$$content =~ m{name="CalendarTitle.*?>([^<]+)}is,
-    );
-    my($date_time) = $self->get('date_time');
-    my($extra) = undef;
-    my($events) = $self->get('events');
-    my($append_extra) = sub {
-	my($prev) = $events->[$#$events];
-	return
-	    unless $prev && $extra;
-	$prev->{description}
-	    = _join($prev->{description}, $extra->{title}, $extra->{desc});
-	$extra = undef;
-    };
-    foreach my $cell (_do_cells($self, $content)) {
-	my($mday, $text) = @$cell;
-	$extra = undef;
-	$self->put(last_text => $text);
-	foreach my $item (_do_cell($self, $text)) {
-	    my($desc) = $item->{desc};
-	    # Clean phone number from desc, because may run into time
-	    $desc =~ s/2757(?=\d)//
-		if $desc;
-	    my($start, $end) = $desc ? _do_times($self, \$desc, $year, $mon, $mday) : ();
-	    $end = $_DT->add_seconds($end, 12 * 60 * 60)
-		if $start && $end && $_DT->is_greater_than($start, $end);
-	    $desc = _do_desc($self, $desc);
-	    my($title) = _do_desc($self, $item->{title});
-	    next
-		unless $desc || $title;
-	    ($title, $desc) = ($desc, '')
-		unless $title;
-	    $append_extra->()
-		if $item->{links};
-	    unless ($start) {
-		$extra ||= {};
-		$extra->{desc} = _join($extra->{desc}, $desc);
-		$extra->{title} = _join($extra->{title}, $title);
-		$extra->{url} ||= ($item->{links} || [])->[0];
+		unless ($current->{summary}) {
+		    my($url) = $cleaner->unsafe_get_link_for_text($line);
+		    if($url && $url !~ m,/,) {
+			$current->{url} = _url($self, $url);
+			$current->{summary} = $line;
+		    }
+		}
+	    }
+	}
+	if ($state eq 'DAY' && $line =~ /^(\d+)$/) {
+	    my($day) = $1;
+	    next unless $day >=1 && $day <= 31;
+	    $current->{date} = join('/',
+	        $current->{month},
+	        $day,
+		$current->{year},
+	    );
+	    $state = 'TIME_PM';
+	    next;
+	}
+	if ($state eq 'TIME_PM') {
+	    next unless $line;
+	    if ($line =~ /^([\d\:]+)\s*\-\s*([\d\:]+)\b$/) {
+		my($start, $end) = ($1, $2);
+		$current->{dtstart} = $self->internal_date_time(
+		    $current->{date} . ' ' . $start . 'PM');
+		$current->{dtend} = $self->internal_date_time(
+		    $current->{date} . ' ' . $end . 'PM');
+		if ($_D->compare($current->{dtstart}, $current->{dtend}) > 0) {
+		    $current->{dtend} = $_D->add_days(
+			$self->internal_date_time(
+			    $current->{date} . ' ' . $end . 'AM'), 1);
+		}
+		$current->{description} = '';
+		$state = 'NOT_NUMBER_DESCRIPTION';
 		next;
 	    }
-  	    push(
-		@$events,
-		{
-		    dtstart => $start,
-		    dtend => $end || $start,
-		    description => _join($extra->{desc}, $desc),
-		    url => ($extra || {})->{url} || ($item->{links} || [])->[0] || $uri,
-		    modified_date_time => $date_time,
-		    time_zone => $self->get('time_zone'),
-		    summary => _join($extra->{title}, $title),
-		},
-	    );
-	    $extra = undef;
+	    $state = 'DAY';
+	    next;
 	}
-	$append_extra->();
     }
     return;
 }
 
-sub _do_time {
-    my($self, $year, $mon, $mday, $time) = @_;
-    return undef
-	unless defined($time);
-    my($hour, $min) = $time =~ m{(\d+)}g;
-    $hour += 12
-	unless $hour >= 12;
-    # Sometimes people typo; this is just a guess.
-    $mday =~ s/^\d(?=\d\d)//s;
-    return $self->get('time_zone')->date_time_to_utc(
-	$_DT->from_parts_or_die(0, $min, $hour, $mday, $mon, $year),
-    );
-}
-
-sub _do_times {
-    my($self, $desc, @date) = @_;
-    return map(_do_time($self, @date, $_), $1, $2)
-	if $$desc =~ s{(\d{1,2}:\d{1,2})\s*-\s*(\d{1,2}:\d{1,2})}{}is;
-    return map(_do_time($self, @date, $_), $1)
-	if $$desc =~ m{\b(\d{1,2}\:\d{1,2})\b};
-    return map(_do_time($self, @date, $_), "$1:00")
-	if $$desc =~ m{\b(\d{1,2})?:\s*p\.?m\.\?\b}is;
-    return;
-}
-
-sub _do_year_mon {
-    my($self, $value) = @_;
-    b_die($value, ': could not find MONTH Year')
-	unless $self->strip_tags_and_whitespace($value) =~ m{([a-z]+)\s+(20\d+)}is;
-    return ($2, $_DT->english_month_to_int(substr($1, 0, 3)));
-}
-
-sub _join {
-    return join(' ', grep($_, @_)) || '';
+sub _url {
+    my($self, $page) = @_;
+    b_die('invalid page: ', $page)
+	if $page =~ m,^/,;
+    return $self->get('venue_list')->get('Website.url') . '/' . $page;
 }
 
 1;
