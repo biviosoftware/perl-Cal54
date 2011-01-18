@@ -10,7 +10,7 @@ submit_form(my $values = {
     name => my $name = "$base Test",
     home => "http://$base.com",
     calendar => "http://$base.com/cal",
-    _radio => 'Google',
+    scraper => 'Google',
     email => "info\@$base.com",
     phone => '555.1212',
     line_1 => '123 Main',
@@ -34,3 +34,4 @@ submit_form($values = {
 follow_link($name);
 verify_form($values);
 
+do_test_backdoor(TestData => 'reset_all');
