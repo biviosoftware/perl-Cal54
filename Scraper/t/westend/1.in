@@ -8,7 +8,7 @@
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => 'Over the last ten years, Kort has honed his skills as a     working musician playing more than 1000 live shows throughout the U.S.     and Europe. Kort writes, plays and sings Americana Music - equal  parts    rock, folk, country, blues and bluegrass, with a healthy dose  of    something fresh. After moving to Colorado in 2003, the music took a     decidedly more country/bluegrass turn and dug deeper into the roots  of    his Scotch-Irish heritage.
+    'description' => 'Over the last ten years, Kort has honed his skills as a working musician playing more than 1000 live shows throughout the U.S. and Europe. Kort writes, plays and sings Americana Music - equal parts rock, folk, country, blues and bluegrass, with a healthy dose of something fresh. After moving to Colorado in 2003, the music took a decidedly more country/bluegrass turn and dug deeper into the roots of his Scotch-Irish heritage.
 ',
     'dtend' => '2455574 3600',
     'dtstart' => '2455574 3600',
@@ -24,7 +24,7 @@
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => 'Jet Edison is quickly coming up  through the ranks in the Colorado music scene as a band to keep your ear  on. With their distinct blend of genre-defying music, they bring  together individual influences from Rock, Funk, Jam, Blues, and Jazz to  create original songs with strong technical musicianship and thought  provoking lyrics.
+    'description' => 'Jet Edison is quickly coming up through the ranks in the Colorado music scene as a band to keep your ear on. With their distinct blend of genre-defying music, they bring together individual influences from Rock, Funk, Jam, Blues, and Jazz to create original songs with strong technical musicianship and thought provoking lyrics.
 ',
     'dtend' => '2455588 3600',
     'dtstart' => '2455588 3600',
@@ -49,7 +49,7 @@ Their unique blend of funk, rock and a hint of world music has them playing to a
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => 'Music is emotion. Music is a story. Music takes you on a  voyage, and that\'s exactly what Connecticut native, and recent Boulder  transplant, guitarist/composer Matt Flaherty conveys in his music. Since  graduating from Western Connecticut State University\'s jazz program,  Matt has been teaching and playing full time. Matt plays out regularly  with his bands, Hot Soup, and The Matt Flaherty Trio and is gaining a  lot of recognition along the way.
+    'description' => 'Music is emotion. Music is a story. Music takes you on a voyage, and that\'s exactly what Connecticut native, and recent Boulder transplant, guitarist/composer Matt Flaherty conveys in his music. Since graduating from Western Connecticut State University\'s jazz program, Matt has been teaching and playing full time. Matt plays out regularly with his bands, Hot Soup, and The Matt Flaherty Trio and is gaining a lot of recognition along the way.
 ',
     'dtend' => '2455609 3600',
     'dtstart' => '2455609 3600',
@@ -57,7 +57,7 @@ Their unique blend of funk, rock and a hint of world music has them playing to a
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => 'Over the last ten years, Kort has honed his skills as a      working musician playing more than 1000 live shows throughout the  U.S.     and Europe. Kort writes, plays and sings Americana Music -  equal  parts    rock, folk, country, blues and bluegrass, with a healthy  dose  of    something fresh. After moving to Colorado in 2003, the  music took a     decidedly more country/bluegrass turn and dug deeper  into the roots  of    his Scotch-Irish heritage.
+    'description' => 'Over the last ten years, Kort has honed his skills as a working musician playing more than 1000 live shows throughout the U.S. and Europe. Kort writes, plays and sings Americana Music - equal parts rock, folk, country, blues and bluegrass, with a healthy dose of something fresh. After moving to Colorado in 2003, the music took a decidedly more country/bluegrass turn and dug deeper into the roots of his Scotch-Irish heritage.
 ',
     'dtend' => '2455616 3600',
     'dtstart' => '2455616 3600',
