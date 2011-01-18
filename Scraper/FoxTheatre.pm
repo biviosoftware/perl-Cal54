@@ -82,7 +82,7 @@ sub _parse_detail {
 	}
 	if ($state eq 'DESCRIPTION') {
 	    last if $line eq '';
-	    $description .= ' ' . $line;
+	    $description .= (length($description) ? ' ' : '') . $line;
 	    next;
 	}
     }
