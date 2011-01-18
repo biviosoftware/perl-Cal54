@@ -1,586 +1,73 @@
 [
   {
-    'description' => 'Available for Private Events Call 303-665-2757 ',
+    'description' => 'COMEDY WORKS Presents TBA ',
     'dtend' => '2455807 12600',
     'dtstart' => '2455807 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COMEDY WORKS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
-  },
-  {
-    'description' => 'THAT EIGHTIES BAND $10/$12  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  NELSON RANGELL  NELSON RANGELL Jazz $10/$12  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455822 18000',
-    'dtstart' => '2455822 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THAT EIGHTIES BAND ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_thateightiesband.html'
-  },
-  {
-    'description' => 'LET\'S DANCE!! ',
-    'dtend' => '2455842 12600',
-    'dtstart' => '2455842 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COMEDY WORKS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
-  },
-  {
-    'description' => 'Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455844 18000',
-    'dtstart' => '2455844 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalsoct.html'
-  },
-  {
-    'description' => 'NO COVER  No reservations needed...just come on in  *Parties of 6 or more - please call 303-665-2757 ',
-    'dtend' => '2455849 12600',
-    'dtstart' => '2455849 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'LIVE KARAOKE with ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbiobratpack.html'
-  },
-  {
-    'description' => 'LET\'S DANCE!!  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455850 18000',
-    'dtstart' => '2455850 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalsoct.html'
-  },
-  {
-    'description' => 'LET\'S DANCE!!  Available for Private Events Call 303-665-2757  LET\'S DANCE!! ',
-    'dtend' => '2455857 18000',
-    'dtstart' => '2455857 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalsoct.html'
-  },
-  {
-    'description' => 'Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455865 18000',
-    'dtstart' => '2455865 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'HALLOWEEN COSTUME PARTY with LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalsoct.html'
-  },
-  {
-    'description' => 'KEVIN DOOLEY & FRIENDS with PARTING GLASS REUNION $5/$7 ',
-    'dtend' => '2455504 14400',
-    'dtstart' => '2455504 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'KEVIN DOOLEY & FRIENDS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_kevindooleyandfriends_000.html'
-  },
-  {
-    'description' => 'NEW ARTIST SHOWCASE with MODERN RHYTHM PROJECT $5/$7  COMEDY WORKS  Presents  COMEDY WORKS  RYAN LOWREY  RYAN LOWREY  SHAWN PRESTON  & SHAWN PRESTON $10/$12 ',
-    'dtend' => '2455505 14400',
-    'dtstart' => '2455505 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'MODERN RHYTHM PROJECT ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_modernrhythmproject.html'
-  },
-  {
-    'description' => 'SOUL SCHOOL $10/$12 LET\'S DANCE!! ',
-    'dtend' => '2455507 18000',
-    'dtstart' => '2455507 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'SOUL SCHOOL ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_soulschool.html'
-  },
-  {
-    'description' => 'UNDER A BLOOD RED SKY A U2 Tribute $15/$17  LET\'S DANCE!! ',
-    'dtend' => '2455508 18000',
-    'dtstart' => '2455508 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'UNDER A BLOOD RED SKY ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_underabloodredsky.html'
-  },
-  {
-    'description' => 'NIGHTTOWN BAND QUARTET  NO COVER  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455509 18000',
-    'dtstart' => '2455509 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NIGHTTOWN BAND ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_nighttownband.html'
-  },
-  {
-    'description' => 'Monarch and Eldorado Student Jazz Concert $10 A portion of the proceeds go to the school\'s music programs ',
-    'dtend' => '2455511 18000',
-    'dtstart' => '2455511 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'Monarch and Eldorado ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_monarchjazzband.html'
-  },
-  {
-    'description' => 'ACOUSTIC FIREFALL $15/$17 ',
-    'dtend' => '2455512 18000',
-    'dtstart' => '2455512 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'ACOUSTIC FIREFALL ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_jockbartley.html'
-  },
-  {
-    'description' => 'LIVE KARAOKE with THE BRAT PACK  NO COVER  No reservations needed...just come on in  *Parties of 6 or more - please call 303-665-2757  THE CHAMPIONS  THE CHAMPIONS 80\'S ARENA ROCK $12/$14 LET\'S DANCE!! ',
-    'dtend' => '2455513 18000',
-    'dtstart' => '2455513 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE BRAT PACK ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbiobratpack.html'
-  },
-  {
-    'description' => 'JONNY BARBER AND THE RHYTHM RAZORS Rockabilly $8/$10  Come Celebrate Jonny\'s Birthday! LET\'S DANCE!! ',
-    'dtend' => '2455515 21600',
-    'dtstart' => '2455515 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'JONNY BARBER ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_rhythmrazors.html'
-  },
-  {
-    'description' => 'NEIL BRIDGE 7 + Big-Band Swing, Jazz Standards $5/$7  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455516 18000',
-    'dtstart' => '2455516 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NEIL BRIDGE 7 + ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_neilbridge7.html'
-  },
-  {
-    'description' => 'FACE All Vocal Rock $15/$20 SOLD OUT! ',
-    'dtend' => '2455518 16200',
-    'dtstart' => '2455518 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'FACE ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_face.html'
-  },
-  {
-    'description' => 'NELSON RANGELL Jazz $10/$12 ',
-    'dtend' => '2455519 18000',
-    'dtstart' => '2455519 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NELSON RANGELL ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
-  },
-  {
-    'description' => 'DELTA SONICS  Harmonica Blues  NO COVER  CHRIS DANIELS AND THE KINGS  Sold Out! Call after 4pm on Friday for last minute availability  CHRIS DANIELS AND THE KINGS Horn based Blues/Swing/Rock $10/$12 LET\'S DANCE!! ',
-    'dtend' => '2455520 18000',
-    'dtstart' => '2455520 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DELTA SONICS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_deltasonics.html'
-  },
-  {
-    'description' => 'Avery Brewing presents THE JURASSICASTORS  Classic Rock $10/$12 LET\'S DANCE!! ',
-    'dtend' => '2455522 21600',
-    'dtstart' => '2455522 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE JURASSICASTORS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_jurrisicastors.html'
-  },
-  {
-    'description' => 'SUITE TI with Ron Ivory Jazz/R&B $5/$7  HOLIDAY WINE TASTING 6 p.m. Promptly  "Learn to pick the perfect wines for your next event"  SUITE TI  SUITE TI Show Only $5  Wine Tasting  Wine Tasting & Show $23  Wine Tasting  Wine Tasting Only $20  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455523 18000',
-    'dtstart' => '2455523 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'SUITE TI ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_suiteti.html'
-  },
-  {
-    'description' => 'NISSI\'S GIVES THANKS TO OUR CUSTOMERS WITH THE HEAVY CATS Blues/Funk/Rock NO COVER ',
-    'dtend' => '2455525 18000',
-    'dtstart' => '2455525 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE HEAVY CATS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_theheavycats.html'
-  },
-  {
-    'description' => 'PHAT DADDY High EnergyR&B/ Hip Hop$ 10/$12 ',
-    'dtend' => '2455526 18000',
-    'dtstart' => '2455526 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'PHAT DADDY ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_phatdaddy.html'
-  },
-  {
-    'description' => '',
-    'dtend' => '2455526 16200',
-    'dtstart' => '2455526 16200',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DRINK, DANCE, & DINE AFTER 9:30 P.M. Free admission after 9:30 p.m. No reservations seating based on availability LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalnov.html'
-  },
-  {
-    'description' => 'MESSAGE IN A BOTTLE $10/$12 ',
-    'dtend' => '2455528 21600',
-    'dtstart' => '2455528 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'MESSAGE IN A BOTTLE ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_messageinabottle.html'
-  },
-  {
-    'description' => '',
-    'dtend' => '2455528 16200',
-    'dtstart' => '2455528 16200',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DRINK, DANCE, & DINE AFTER 9:30 P.M. Free admission after 9:30 p.m. No reservations seating based on availability LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalnov.html'
-  },
-  {
-    'description' => 'ONE ON ONE Motown $12/$14 ',
-    'dtend' => '2455529 21600',
-    'dtstart' => '2455529 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'ONE ON ONE ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/oneonone_lmbio.html'
-  },
-  {
-    'description' => '',
-    'dtend' => '2455529 16200',
-    'dtstart' => '2455529 16200',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DRINK, DANCE, & DINE AFTER 9:30 P.M. Free admission after 9:30 p.m. No reservations seating based on availability LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalnov.html'
-  },
-  {
-    'description' => 'DOTSERO Holiday Concert Jazz $10/$12  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455530 18000',
-    'dtstart' => '2455530 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DOTSERO ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_dotsero.html'
-  },
-  {
-    'description' => 'FACE HOLIDAY CONCERT All Vocal Rock $25/$30  SOLD OUT! ',
-    'dtend' => '2455532 18000',
-    'dtstart' => '2455532 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'FACE ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_face.html'
-  },
-  {
-    'description' => 'DEREK EVILSIZOR A HOLIDAY TRIBUTE TO FRANK SINATRA and other hits $10/$12 ',
-    'dtend' => '2455533 16200',
-    'dtstart' => '2455533 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DEREK EVILSIZOR ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_derekevilsizor.html'
-  },
-  {
-    'description' => 'NEW SENSATION 80\'S ROCK $10/$12 ',
-    'dtend' => '2455535 21600',
-    'dtstart' => '2455535 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NEW SENSATION ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_newsensation.html'
-  },
-  {
-    'description' => '',
-    'dtend' => '2455535 16200',
-    'dtstart' => '2455535 16200',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DRINK, DANCE, & DINE AFTER 9:30 P.M. Free admission after 9:30 p.m. No reservations seating based on availability LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcaldec.html'
-  },
-  {
-    'description' => 'ACOUSTIC EIDOLON Guitar & Cello with special guest MICHAEL MANRING $12/$14 ',
-    'dtend' => '2455537 14400',
-    'dtstart' => '2455537 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'ACOUSTIC EIDOLON ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_acousticeidelon.html'
-  },
-  {
-    'description' => 'COLCANNON A Traditional Celtic Holiday concert $15/$17 ',
-    'dtend' => '2455539 16200',
-    'dtstart' => '2455539 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COLCANNON ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_colcannon.html'
-  },
-  {
-    'description' => 'THE VELVET ELVIS BLUE, BLUE CHRISTMAS SHOW Along with other Elvis Hits $10/$12 ',
-    'dtend' => '2455540 16200',
-    'dtstart' => '2455540 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE VELVET ELVIS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_velvetelvis.html'
-  },
-  {
-    'description' => 'LIVE KARAOKE with THE BRAT PACK $5/$7 ',
-    'dtend' => '2455541 16200',
-    'dtstart' => '2455541 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE BRAT PACK ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbiobratpack.html'
-  },
-  {
-    'description' => 'HOT LUNCH Funk/R&B $10/$12 ',
-    'dtend' => '2455542 21600',
-    'dtstart' => '2455542 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'HOT LUNCH ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_hotlunch.html'
-  },
-  {
-    'description' => '',
-    'dtend' => '2455542 16200',
-    'dtstart' => '2455542 16200',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DRINK, DANCE, & DINE AFTER 9:30 P.M. Free admission after 9:30 p.m. No reservations seating based on availability LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcaldec.html'
-  },
-  {
-    'description' => 'BLUEZHOUSE R&B/Blues $10/$12 ',
-    'dtend' => '2455543 21600',
-    'dtstart' => '2455543 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'BLUEZHOUSE ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_bluezhouse.html'
-  },
-  {
-    'description' => '',
-    'dtend' => '2455543 16200',
-    'dtstart' => '2455543 16200',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DRINK, DANCE, & DINE AFTER 9:30 P.M. Free admission after 9:30 p.m. No reservations seating based on availability LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcaldec.html'
-  },
-  {
-    'description' => 'JOHN ADAMS A Holiday Tribute to John Denver Along With His Other Hits $10/$12  . ',
-    'dtend' => '2455544 16200',
-    'dtstart' => '2455544 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'JOHN ADAMS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_johnadams.html'
-  },
-  {
-    'description' => 'NELSON RANGELL Holiday Concert Along with other Jazz $10/$12 ',
-    'dtend' => '2455547 16200',
-    'dtstart' => '2455547 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NELSON RANGELL ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
-  },
-  {
-    'description' => 'COMEDYWORKS Pesents VIC ALEJANDRO & MARK LEE $10/$12 ',
-    'dtend' => '2455548 16200',
-    'dtstart' => '2455548 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COMEDYWORKS ',
+    'summary' => 'COMEDY WORKS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
     'description' => 'THAT EIGHTIES BAND $10/$12 ',
-    'dtend' => '2455549 21600',
-    'dtstart' => '2455549 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THAT EIGHTIES BAND ',
+    'dtend' => '2455822 18000',
+    'dtstart' => '2455822 5400',
+    'summary' => 'THAT EIGHTIES BAND',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_thateightiesband.html'
   },
   {
-    'description' => '',
-    'dtend' => '2455549 16200',
-    'dtstart' => '2455549 16200',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DRINK, DANCE, & DINE AFTER 9:30 P.M. Free admission after 9:30 p.m. No reservations seating based on availability LET\'S DANCE!! ',
+    'description' => 'NELSON RANGELL Jazz $10/$12 ',
+    'dtend' => '2455834 12600',
+    'dtstart' => '2455834 5400',
+    'summary' => 'NELSON RANGELL',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcaldec.html'
+    'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
   {
-    'description' => 'PETER KATER Holiday Concert $20/$25 ',
-    'dtend' => '2455551 16200',
-    'dtstart' => '2455551 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'PETER KATER ',
+    'description' => 'COMEDY WORKS Presents TBA ',
+    'dtend' => '2455842 12600',
+    'dtstart' => '2455842 5400',
+    'summary' => 'COMEDY WORKS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_peterkater.html'
+    'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'KAREN KARSH Jazz  RESCHEDULED ',
-    'dtend' => '2455552 18000',
-    'dtstart' => '2455552 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'KAREN KARSH ',
+    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER No reservations needed...just come on in *Parties of 6 or more - please call 303-665-2757 ',
+    'dtend' => '2455849 12600',
+    'dtstart' => '2455849 5400',
+    'summary' => 'THE BRAT PACK',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_karenkarsh.html'
+    'url' => 'http://www.nissis.com/lmbiobratpack.html'
   },
   {
-    'description' => '17th AVE ALLSTARS WHITE CHRISTMAS SHOW $10/$12  HAZEL MILLER  Jazz & R&B $12/$14  HAZEL MILLER ',
-    'dtend' => '2455553 18000',
-    'dtstart' => '2455553 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => '17th AVE ALLSTARS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_whitechristmasholidayshow.html'
-  },
-  {
-    'description' => 'ONE ON ONE Motown $12/414 ',
-    'dtend' => '2455555 21600',
-    'dtstart' => '2455555 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'ONE ON ONE ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/oneonone_lmbio.html'
-  },
-  {
-    'description' => '',
-    'dtend' => '2455555 16200',
-    'dtstart' => '2455555 16200',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DRINK, DANCE, & DINE AFTER 9:30 P.M. Free admission after 9:30 p.m. No reservations seating based on availability LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcaldec.html'
-  },
-  {
-    'description' => 'HIT LIST Playing theTop Hits of the last 4 Decades $8/$10  ESCAPE THE FAMILY!!! LET\'S DANCE!! ',
-    'dtend' => '2455558 19800',
-    'dtstart' => '2455558 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'HIT LIST ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_hitlist.html'
-  },
-  {
-    'description' => 'THOM SANROCK QUINTET  NO COVER ',
-    'dtend' => '2455559 16200',
-    'dtstart' => '2455559 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THOM SANROCK ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_thomsandrockquartet.html'
-  },
-  {
-    'description' => 'KATIE HERZIG Acoustic/Pop Special Guest STACY DEE $18/$20 SOLD OUT! Call after 4:30pm on day of show for last minute availability ',
-    'dtend' => '2455560 16200',
-    'dtstart' => '2455560 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'KATIE HERZIG ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_katieherzig.html'
-  },
-  {
-    'description' => 'DIAMONDS ARE FOREVER A Neil Diamond Tribute $8/$10 ',
-    'dtend' => '2455561 19800',
-    'dtstart' => '2455561 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DIAMONDS ARE FOREVER ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_diamondsareforever.html'
-  },
-  {
-    'description' => 'JOHNNY O BAND High Energy Blues $5/$7 ',
-    'dtend' => '2455562 19800',
-    'dtstart' => '2455562 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'JOHNNY O BAND ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_thejohnnyoband.html'
-  },
-  {
-    'description' => 'NEW YEAR\'S CELEBRATION WITH THE VINTAGE ROCK AND SOUL BAND FIRST SEATING SOLD OUT 4-Course Dinner Music by Vintage Rock & Soul  Complimentary glass of champagne $60 per person includes gratuity ',
-    'dtend' => '2455563 14400',
-    'dtstart' => '2455563 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE VINTAGE ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbiovintagerocksoul.html'
-  },
-  {
-    'description' => 'SECOND SEATING  Ring in the New Year Show 10pm Music by Vintage Rock & Soul Appetizer & Dessert Buffet  Champagne Toast  $75 per person includes gratuity ',
-    'dtend' => '2455563 27000',
-    'dtstart' => '2455563 18000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'SECOND SEATING ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_nye.html'
-  },
-  {
-    'description' => 'NEW YEAR\'S DAY WITH  BLUFFETT  BLUFFETT A TRIBUTE TO JIMMY BUFFETT $10/$12 ',
+    'description' => 'Come Celebrate NEW YEAR\'S DAY WITH BLUFFETT A TRIBUTE TO JIMMY BUFFETT $10/$12 ',
     'dtend' => '2455564 21600',
     'dtstart' => '2455564 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'Come Celebrate ',
+    'summary' => 'BLUFFETT',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcaljan.html'
+    'url' => 'http://www.nissis.com/lmbio_bluffett.html'
   },
   {
-    'description' => 'ANNIE BOOTH TRIO Jazz  NO COVER ',
+    'description' => 'ANNIE BOOTH TRIO Jazz NO COVER ',
     'dtend' => '2455565 18000',
     'dtstart' => '2455565 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'ANNIE BOOTH TRIO ',
+    'summary' => 'ANNIE BOOTH TRIO',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_anniebooth.html'
   },
   {
-    'description' => 'FACE All Vocal Rock $15/$17 ',
+    'description' => 'FACE All Vocal Rock $15/$17 SOLD OUT! ',
     'dtend' => '2455567 18000',
     'dtstart' => '2455567 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'FACE ',
+    'summary' => 'FACE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_face.html'
-  },
-  {
-    'description' => 'NEW ARTIST SHOWCASE with BARRY SHAPIRO AND THE FAZZ BAND $5/$7 ',
-    'dtend' => '2455568 18000',
-    'dtstart' => '2455568 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'BARRY SHAPIRO AND THE FAZZ ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_barryshapiroandfazzband.html'
   },
   {
     'description' => 'COMEDY WORKS Presents JEFF HARMS With Opener JAMES KEMPE-MEHL $10/$12 ',
     'dtend' => '2455569 18000',
     'dtstart' => '2455569 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COMEDY WORKS ',
+    'summary' => 'COMEDY WORKS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
@@ -588,8 +75,7 @@
     'description' => 'LADIES SING THE BLUES with MOJO MAMA & TEMPA AND THE TANTRUMS $8/$10 LET\'S DANCE!! ',
     'dtend' => '2455570 21600',
     'dtstart' => '2455570 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'MOJO MAMA ',
+    'summary' => 'MOJO MAMA',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_mojomama.html'
   },
@@ -597,26 +83,23 @@
     'description' => 'MOTHER LODE Classic Rock $8/$10 LET\'S DANCE!! ',
     'dtend' => '2455571 21600',
     'dtstart' => '2455571 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'MOTHER LODE ',
+    'summary' => 'MOTHER LODE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_motherlode.html'
   },
   {
-    'description' => 'ADAM BODINE TRIO Jazz  NO COVER  CLOSED TO PUBLIC  Available for Private Events Call 303-579-9135 ',
+    'description' => 'ADAM BODINE TRIO Jazz NO COVER ',
     'dtend' => '2455572 18000',
     'dtstart' => '2455572 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'ADAM BODINE TRIO ',
+    'summary' => 'ADAM BODINE TRIO',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_adambodinetrio.html'
   },
   {
-    'description' => 'OPEN MIC NIGHT Music Comedy Poetry  PAUL SODERMAN  NO COVER  Hosted By PAUL SODERMAN ',
+    'description' => 'OPEN MIC NIGHT Music Comedy Poetry Hosted By PAUL SODERMAN NO COVER ',
     'dtend' => '2455574 16200',
     'dtstart' => '2455574 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'OPEN MIC NIGHT ',
+    'summary' => 'OPEN MIC NIGHT',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_openmic.html'
   },
@@ -624,8 +107,7 @@
     'description' => 'NEW ARTIST SHOWCASE with NATHAN MCEUEN & TAGE PLANTELL & THE DUSTY RADIO $5/$7 ',
     'dtend' => '2455575 18000',
     'dtstart' => '2455575 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NATHAN MCEUEN ',
+    'summary' => 'NATHAN MCEUEN',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_nathanmceuen.html'
   },
@@ -633,62 +115,79 @@
     'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER ',
     'dtend' => '2455576 18000',
     'dtstart' => '2455576 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE BRAT PACK ',
+    'summary' => 'THE BRAT PACK',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbiobratpack.html'
   },
   {
-    'description' => 'DEJA BLU Variety $10/$12  Celebrating Liz\'s Birthday too!  LET\'S DANCE!! ',
+    'description' => 'DEJA BLU Variety $10/$12 Celebrating Liz\'s Birthday too! LET\'S DANCE!! ',
     'dtend' => '2455577 21600',
     'dtstart' => '2455577 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DEJA BLU ',
+    'summary' => 'DEJA BLU',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_dejablu.html'
   },
   {
-    'description' => 'HOMESLICE BAND R&B Horn Classic Rock $10/$12  LET\'S DANCE!! ',
+    'description' => 'HOMESLICE BAND R&B Horn Classic Rock $10/$12 LET\'S DANCE!! ',
     'dtend' => '2455578 21600',
     'dtstart' => '2455578 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'HOMESLICE BAND ',
+    'summary' => 'HOMESLICE BAND',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_homeslice.html'
   },
   {
-    'description' => 'HOLLY & THE HUSBANDS Jazz  NO COVER  CLOSED TO PUBLIC  Available for Private Events Call 303-579-9135 ',
+    'description' => 'HOLLY & THE HUSBANDS Jazz NO COVER ',
     'dtend' => '2455579 18000',
     'dtstart' => '2455579 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'HOLLY & THE HUSBANDS ',
+    'summary' => 'HOLLY & THE HUSBANDS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_hollyandthehusbands.html'
   },
   {
-    'description' => 'STUDENT SHOWCASE with RABBITHOLE SOUND CONTROL & PLASTIC TACTICS $5  IRONWOOD RAIN  NEW ARTIST SHOWCASE with IRONWOOD RAIN $5/$7  NINA STOREY  NINA STOREY With Opener Katelyn Benton and Comedian Max Goldberg $15/$17 ',
+    'description' => 'STUDENT SHOWCASE with SYMATREE & PLASTIC TACTICS $5 ',
     'dtend' => '2455581 18000',
     'dtstart' => '2455581 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'STUDENT SHOWCASE ',
+    'summary' => 'STUDENT SHOWCASE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_studentshowcase.html'
   },
   {
-    'description' => 'BOOGIE MACHINE The Ultimate Disco Dance Party! $10/$12  LET\'S DANCE!!  THAT EIGHTIES BAND  LET\'S DANCE!!  THAT EIGHTIES BAND $10/$12 ',
-    'dtend' => '2455584 25200',
+    'description' => 'NEW ARTIST SHOWCASE with IRONWOOD RAIN $5/$7 ',
+    'dtend' => '2455582 18000',
+    'dtstart' => '2455582 9000',
+    'summary' => 'IRONWOOD RAIN',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_ironwoodrain.html'
+  },
+  {
+    'description' => 'NINA STOREY With Opener Katelyn Benton and Comedian Max Goldberg $15/$17 ',
+    'dtend' => '2455583 18000',
+    'dtstart' => '2455583 9000',
+    'summary' => 'NINA STOREY',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_ninastorey.com.html'
+  },
+  {
+    'description' => 'BOOGIE MACHINE The Ultimate Disco Dance Party! $10/$12 LET\'S DANCE!! ',
+    'dtend' => '2455584 68400',
     'dtstart' => '2455584 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'BOOGIE MACHINE ',
+    'summary' => 'BOOGIE MACHINE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_boogiemachine.html'
   },
   {
-    'description' => 'WINDFALL Americana/Folk $5/$7  CLOSED TO PUBLIC  Available for Private Events Call 303-665-8115 ',
+    'description' => 'THAT EIGHTIES BAND $10/$12 LET\'S DANCE!! ',
+    'dtend' => '2455585 21600',
+    'dtstart' => '2455585 9000',
+    'summary' => 'THAT EIGHTIES BAND',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_thateightiesband.html'
+  },
+  {
+    'description' => 'WINDFALL Americana/Folk $5/$7 ',
     'dtend' => '2455586 18000',
     'dtstart' => '2455586 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'WINDFALL ',
+    'summary' => 'WINDFALL',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_windfall.html'
   },
@@ -696,44 +195,39 @@
     'description' => 'TOMMY STAUDT BAND $5/$7 ',
     'dtend' => '2455588 18000',
     'dtstart' => '2455588 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'TOMMY STAUDT BAND ',
+    'summary' => 'TOMMY STAUDT BAND',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_tommystaudt.html'
   },
   {
-    'description' => 'PETE WERNICK & FLEXIGRASS NO COVER  HOLD  STRAY DOGS  NO COVER LET\'S DANCE!!  STRAY DOGS R&B ',
-    'dtend' => '2455589 18000',
-    'dtstart' => '2455589 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'PETE WERNICK ',
+    'description' => 'STRAY DOG R&B NO COVER LET\'S DANCE!! ',
+    'dtend' => '2455590 18000',
+    'dtstart' => '2455590 9000',
+    'summary' => 'STRAY DOG',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_petewernick.html'
+    'url' => 'http://www.nissis.com/lmbio_straydogs.html'
   },
   {
-    'description' => 'BLACK WATER A Tribute to The Doobie Brothers and other Classic Rock Legends $10/$12  LET\'S DANCE!! ',
+    'description' => 'BLACK WATER A Tribute to The Doobie Brothers and other Classic Rock Legends $10/$12 LET\'S DANCE!! ',
     'dtend' => '2455591 21600',
     'dtstart' => '2455591 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'BLACK WATER ',
+    'summary' => 'BLACK WATER',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_Blackwater.html'
   },
   {
-    'description' => 'THE TICKET Female Motown R&B Revue $10/$12  LET\'S DANCE!! ',
+    'description' => 'THE TICKET Female Motown R&B Revue $10/$12 LET\'S DANCE!! ',
     'dtend' => '2455592 21600',
     'dtstart' => '2455592 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE TICKET ',
+    'summary' => 'THE TICKET',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_theticket.html'
   },
   {
-    'description' => 'KATE JAWORSKI TRIO Jazz NO COVER  CLOSED TO PUBLIC  Available for Private Events Call 303-665-8115 ',
+    'description' => 'KATE JAWORSKI TRIO Jazz NO COVER ',
     'dtend' => '2455593 18000',
     'dtstart' => '2455593 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'KATE JAWORSKI TRIO ',
+    'summary' => 'KATE JAWORSKI TRIO',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_katejaworskitrio.html'
   },
@@ -741,8 +235,7 @@
     'description' => 'STUDENT SHOWCASE with BASSLINE & WATCH FOR WILDLIFE $5/$7 ',
     'dtend' => '2455595 18000',
     'dtstart' => '2455595 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'STUDENT SHOWCASE ',
+    'summary' => 'STUDENT SHOWCASE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_studentshowcase.html'
   },
@@ -750,62 +243,55 @@
     'description' => 'NEW ARTIST SHOWCASE Featuring UNAUTHORIZED ABSENCE $5/$7 ',
     'dtend' => '2455596 18000',
     'dtstart' => '2455596 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'UNAUTHORIZED ABSENCE ',
+    'summary' => 'UNAUTHORIZED ABSENCE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_unauthorizedabsence.html'
   },
   {
-    'description' => 'COMEDY WORKS Presents CHRIS VOTH $10/$12 ',
+    'description' => 'COMEDY WORKS Presents CHRIS VOTH with opener MATT BACA $10/$12 ',
     'dtend' => '2455597 18000',
     'dtstart' => '2455597 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COMEDY WORKS ',
+    'summary' => 'COMEDY WORKS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'PHAT DADDY High EnergyR&B/ Hip Hop $10/$12  THE JURASSICASTORS  THE JURASSICASTORS Classic Rock $10/$12 LET\'S DANCE!!  CLOSED TO PUBLIC  Available for Private Events Call 303-579-9135 ',
+    'description' => 'PHAT DADDY High EnergyR&B/ Hip Hop $10/$12 ',
     'dtend' => '2455598 21600',
     'dtstart' => '2455598 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'PHAT DADDY ',
+    'summary' => 'PHAT DADDY',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_phatdaddy.html'
   },
   {
-    'description' => 'OPEN MIC NIGHT Music Comedy Poetry  PAUL SODERMAN  NO COVER  Hosted By PAUL SODERMAN ',
+    'description' => 'THE JURASSICASTORS Classic Rock $10/$12 LET\'S DANCE!! ',
+    'dtend' => '2455599 21600',
+    'dtstart' => '2455599 9000',
+    'summary' => 'THE JURASSICASTORS',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_jurrisicastors.html'
+  },
+  {
+    'description' => 'OPEN MIC NIGHT Music Comedy Poetry Hosted By PAUL SODERMAN NO COVER ',
     'dtend' => '2455602 18000',
     'dtstart' => '2455602 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'OPEN MIC NIGHT ',
+    'summary' => 'OPEN MIC NIGHT',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_openmic.html'
   },
   {
-    'description' => 'NEW ARTIST SHOWCASE Featuring SAMMY DEE MORTON BAND "Honorary Louisiana Bluesman" Louisiana/Texas Blues $5/$7 ',
+    'description' => 'FAT WEDNESDAY PARTY Featuring SAMMY DEE MORTON BAND "Honorary Louisiana Bluesman" Louisiana/Texas Blues $5/$7 With New Orleans\' style Mardi Gras Food & Drink Specials! ',
     'dtend' => '2455603 18000',
     'dtstart' => '2455603 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'SAMMY DEE MORTON BAND ',
+    'summary' => 'SAMMY DEE MORTON BAND',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_sammydee.html'
-  },
-  {
-    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER ',
-    'dtend' => '2455604 18000',
-    'dtstart' => '2455604 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE BRAT PACK ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbiobratpack.html'
   },
   {
     'description' => 'THE CHAMPIONS 80\'S Arena Rock $10/$12 ',
     'dtend' => '2455605 21600',
     'dtstart' => '2455605 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE CHAMPIONS ',
+    'summary' => 'THE CHAMPIONS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_thechampions.html'
   },
@@ -813,17 +299,15 @@
     'description' => 'HAZEL MILLER R&B/Soul $15/$17 Food & Drink Specials for Lovers ',
     'dtend' => '2455606 21600',
     'dtstart' => '2455606 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'HAZEL MILLER ',
+    'summary' => 'HAZEL MILLER',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/hazelmiller.html'
   },
   {
-    'description' => 'VALENTINES Dinner & Dancing with INSIDEOUT R&B & Jazz $49 4-Course Dinner $49 per person includes gratuity ',
+    'description' => 'VALENTINES Dinner & Dancing with INSIDEOUT R&B & Jazz $39 4-Course Dinner & Complimentary Champagne Toast Valentine\'s Eve Special $39 per person includes gratuity ',
     'dtend' => '2455607 18000',
     'dtstart' => '2455607 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'INSIDEOUT ',
+    'summary' => 'INSIDEOUT',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_insideout.html'
   },
@@ -831,8 +315,7 @@
     'description' => 'VALENTINES Dinner & Dancing with GEORGE NELSON R&B & Jazz $49 4-Course Dinner $49 per person includes gratuity ',
     'dtend' => '2455608 18000',
     'dtstart' => '2455608 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'GEORGE NELSON ',
+    'summary' => 'GEORGE NELSON',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_georgenelson.html'
   },
@@ -840,71 +323,47 @@
     'description' => 'FACE All Vocal Rock $15/$17 ',
     'dtend' => '2455609 18000',
     'dtstart' => '2455609 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'FACE ',
+    'summary' => 'FACE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_face.html'
   },
   {
-    'description' => 'HOLD ',
-    'dtend' => '2455610 18000',
+    'description' => 'CHOOSING JUNE HOLD ',
+    'dtend' => '2455610 21600',
     'dtstart' => '2455610 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NEW ARTIST SHOWCASE with WILLIE BEAN & THE BLUEGRASS RANGERS $5/$7 ',
+    'summary' => 'CHOOSING JUNE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalfeb.html'
+    'url' => 'http://www.nissis.com/lmbio_choosingjune.html'
   },
   {
-    'description' => 'CATFISH KRAY BLUES BAND Blues  NO COVER ',
-    'dtend' => '2455611 18000',
-    'dtstart' => '2455611 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'CATFISH KRAY ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_catfishkray.html'
-  },
-  {
-    'description' => 'RAISING CAIN Rock/Dance Variety $10/412 ',
+    'description' => 'RAISING CAIN Rock/Dance Variety $10/$12 ',
     'dtend' => '2455612 21600',
     'dtstart' => '2455612 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'RAISING CAIN ',
+    'summary' => 'RAISING CAIN',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_raisingcain.html'
   },
   {
-    'description' => 'HOLD ',
+    'description' => 'Rock N Roll Hall Of Fame\'s RICHIE FURAY Country Rock $20/$22 ',
     'dtend' => '2455613 21600',
     'dtstart' => '2455613 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'RICHIE FURAY ',
+    'summary' => 'RICHIE FURAY',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalfeb.html'
+    'url' => 'http://www.nissis.com/lmbio_richiefuray.html'
   },
   {
-    'description' => 'WADIRUM Modern Folk $10/$12  CLOSED TO PUBLIC  Available for Private Events Call 303-579-9135 ',
+    'description' => 'WADIRUM Modern Folk $10/$12 ',
     'dtend' => '2455614 18000',
     'dtstart' => '2455614 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'WADIRUM ',
+    'summary' => 'WADIRUM',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_wadirum.html'
-  },
-  {
-    'description' => 'STUDENT SHOWCASE with Tayler Bledsoe CD Release $10 Half of the proceeds go to raise money for children in Afghanistan with Sozo International ',
-    'dtend' => '2455616 18000',
-    'dtstart' => '2455616 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'STUDENT SHOWCASE ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_studentshowcase.html'
   },
   {
     'description' => 'NELSON RANGELL Jazz $8/$10 ',
     'dtend' => '2455617 18000',
     'dtstart' => '2455617 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NELSON RANGELL ',
+    'summary' => 'NELSON RANGELL',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
@@ -912,8 +371,7 @@
     'description' => 'NEW ARTIST SHOWCASE with IDLEWHILE Americana/Folk/Rock $5/$7 ',
     'dtend' => '2455618 18000',
     'dtstart' => '2455618 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'IDLEWHILE ',
+    'summary' => 'IDLEWHILE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_idlewhile.html'
   },
@@ -921,8 +379,7 @@
     'description' => 'ONE ON ONE Motown $12/$14 ',
     'dtend' => '2455619 21600',
     'dtstart' => '2455619 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'ONE ON ONE ',
+    'summary' => 'ONE ON ONE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/oneonone_lmbio.html'
   },
@@ -930,53 +387,47 @@
     'description' => 'MESSAGE IN A BOTTLE A Police Tribute $10/$12 ',
     'dtend' => '2455620 21600',
     'dtstart' => '2455620 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'MESSAGE IN A BOTTLE ',
+    'summary' => 'MESSAGE IN A BOTTLE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_messageinabottle.html'
   },
   {
-    'description' => 'DOTSERO Jazz $10/$12  HOLD  CLOSED TO PUBLIC  Available for Private Events Call 303-579-9135 ',
+    'description' => 'DOTSERO Jazz $10/$12 ',
     'dtend' => '2455621 18000',
     'dtstart' => '2455621 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DOTSERO ',
+    'summary' => 'DOTSERO',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_dotsero.html'
   },
   {
-    'description' => '',
-    'dtend' => '2455623 18000',
-    'dtstart' => '2455623 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'KEVIN DOOLEY ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_kevindooleyandfriends_000.html'
-  },
-  {
-    'description' => '',
+    'description' => 'COMEDY WORKS Presents TBA $10/$12 ',
     'dtend' => '2455625 18000',
     'dtstart' => '2455625 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COMEDY WORKS ',
+    'summary' => 'COMEDY WORKS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'NEW SENSATION 80\'S Rock $10/$12  CLOSED TO PUBLIC  Available for Private Events Call 303-665-2757 ',
+    'description' => 'NEW SENSATION 80\'S Rock $10/$12 ',
     'dtend' => '2455626 21600',
     'dtstart' => '2455626 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NEW SENSATION ',
+    'summary' => 'NEW SENSATION',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_newsensation.html'
   },
   {
-    'description' => 'OPEN MIC NIGHT Music Comedy Poetry  PAUL SODERMAN  NO COVER  Hosted By PAUL SODERMAN  THE BRAT PACK  LIVE KARAOKE with THE BRAT PACK NO COVER ',
+    'description' => 'REBECCA FOLSOM Folk Rock $10/$12 ',
+    'dtend' => '2455627 21600',
+    'dtstart' => '2455627 9000',
+    'summary' => 'REBECCA FOLSOM',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_rebeccafolsom.com.html'
+  },
+  {
+    'description' => 'OPEN MIC NIGHT Music Comedy Poetry Hosted By PAUL SODERMAN NO COVER ',
     'dtend' => '2455630 18000',
     'dtstart' => '2455630 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'OPEN MIC NIGHT ',
+    'summary' => 'OPEN MIC NIGHT',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_openmic.html'
   },
@@ -984,53 +435,55 @@
     'description' => 'BLUEZHOUSE With Paul Soderman R&B/Blues $10/$12 ',
     'dtend' => '2455633 21600',
     'dtstart' => '2455633 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'BLUEZHOUSE ',
+    'summary' => 'BLUEZHOUSE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_bluezhouse.html'
   },
   {
-    'description' => 'THE TICKET Female R&B/Motown Revue $10/$12  CLOSED TO PUBLIC  Available for Private Events Call 303-665-2757 ',
+    'description' => 'THE TICKET Female R&B/Motown Revue $10/$12 ',
     'dtend' => '2455634 21600',
     'dtstart' => '2455634 9000',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE TICKET ',
+    'summary' => 'THE TICKET',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_theticket.html'
   },
   {
     'description' => 'COLCANNON A Traditional Celtic Concert $15/$17 ',
-    'dtend' => '2455638 14400',
-    'dtstart' => '2455638 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COLCANNON ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_colcannon.html'
-  },
-  {
-    'description' => 'COLCANNON A Traditional Celtic Concert $15/$17 ',
     'dtend' => '2455639 14400',
     'dtstart' => '2455639 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COLCANNON ',
+    'summary' => 'COLCANNON',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_colcannon.html'
   },
   {
-    'description' => 'THE INDULGERS Celtic Rock $10/$12  HOLD  ANGUS MOHR  ANGUS MOHR Highland Rock & Roll $10/$12  CLOSED TO PUBLIC  Available for Private Events Call 303-665-2757 ',
+    'description' => 'THE INDULGERS Celtic Rock $10/$12 HOLD ',
     'dtend' => '2455640 18000',
     'dtstart' => '2455640 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE INDULGERS ',
+    'summary' => 'THE INDULGERS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_indulgers.html'
   },
   {
-    'description' => 'SOMETHING UNDERGROUND  HOLD ',
+    'description' => 'ANGUS MOHR Highland Rock & Roll $10/$12 ',
+    'dtend' => '2455641 18000',
+    'dtstart' => '2455641 5400',
+    'summary' => 'ANGUS MOHR',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_angusmohr.html'
+  },
+  {
+    'description' => 'SHEL HOLD ',
+    'dtend' => '2455646 18000',
+    'dtstart' => '2455646 5400',
+    'summary' => 'SHEL',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_shel.html'
+  },
+  {
+    'description' => 'SOMETHING UNDERGROUND HOLD ',
     'dtend' => '2455647 14400',
     'dtstart' => '2455647 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'SOMETHING UNDERGROUND ',
+    'summary' => 'SOMETHING UNDERGROUND',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_somethingunderground.html'
   },
@@ -1038,17 +491,15 @@
     'description' => 'THE LONG RUN A Tribute To The Eagles $10/$12 ',
     'dtend' => '2455648 14400',
     'dtstart' => '2455648 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE LONG RUN ',
+    'summary' => 'THE LONG RUN',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_thelongrun.html'
   },
   {
-    'description' => 'DAKOTA BLONDE $8/$10  HOLD  CLOSED TO PUBLIC  Available for Private Events Call 303-665-2757 ',
+    'description' => 'DAKOTA BLONDE $8/$10 HOLD ',
     'dtend' => '2455649 14400',
     'dtstart' => '2455649 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'DAKOTA BLONDE ',
+    'summary' => 'DAKOTA BLONDE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_dakotablonde.html'
   },
@@ -1056,225 +507,160 @@
     'description' => 'FACE All Vocal Rock $15/$17 HOLD ',
     'dtend' => '2455651 14400',
     'dtstart' => '2455651 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'FACE ',
+    'summary' => 'FACE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_face.html'
   },
   {
-    'description' => 'NELSON RANGELL Jazz $10/$12  QDIVA EXPERIENCE  QDIVA EXPERIENCE R&B/Funk $5/$7 ',
+    'description' => 'NELSON RANGELL Jazz $10/$12 ',
     'dtend' => '2455652 14400',
     'dtstart' => '2455652 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NELSON RANGELL ',
+    'summary' => 'NELSON RANGELL',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
   {
-    'description' => 'SOUL SCHOOL R&B Funk&Soul LET\'S DANCE  Available for Private Events Call 303-665-2757 ',
+    'description' => 'QDIVA EXPERIENCE R&B/Funk $5/$7 ',
+    'dtend' => '2455653 14400',
+    'dtstart' => '2455653 5400',
+    'summary' => 'QDIVA EXPERIENCE',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_qdiva.html'
+  },
+  {
+    'description' => 'SOUL SCHOOL R&B Funk&Soul LET\'S DANCE ',
     'dtend' => '2455655 18000',
     'dtstart' => '2455655 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'SOUL SCHOOL ',
+    'summary' => 'SOUL SCHOOL',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_soulschool.html'
   },
   {
-    'description' => '',
-    'dtend' => '2455661 18000',
-    'dtstart' => '2455661 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'LET\'S DANCE ',
+    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER ',
+    'dtend' => '2455667 14400',
+    'dtstart' => '2455667 5400',
+    'summary' => 'THE BRAT PACK',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalapril.html'
-  },
-  {
-    'description' => 'Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455662 18000',
-    'dtstart' => '2455662 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'LET\'S DANCE ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalapril.html'
-  },
-  {
-    'description' => 'Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455668 18000',
-    'dtstart' => '2455668 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'LET\'S DANCE!! ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalapril.html'
+    'url' => 'http://www.nissis.com/lmbiobratpack.html'
   },
   {
     'description' => 'HAZEL MILLER R&B & Jazz $12/$14 LET\'S DANCE ',
     'dtend' => '2455675 18000',
     'dtstart' => '2455675 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'HAZEL MILLER ',
+    'summary' => 'HAZEL MILLER',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/hazelmiller.html'
   },
   {
-    'description' => 'EASTER SUNDAY BRUNCH Reservations Recommended $19.95 $10.95.... 13 and under Under 5.... free Music by  SUNDAY EVENING CLOSED  Available for Private Events Call 303-665-2757  OTIS TAYLOR  HOLD  OTIS TAYLOR  HOLD  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455677 32400',
-    'dtstart' => '2455677 14400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'EASTER SUNDAY ',
+    'description' => 'CELEBRATE CINCO DE MAYO With SOUL SACRIFICE A Tribute To Santana $10/$12 HOLD ',
+    'dtend' => '2455688 14400',
+    'dtstart' => '2455688 5400',
+    'summary' => 'SOUL SACRIFICE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_easterbrunch.html'
+    'url' => 'http://www.nissis.com/lmbio_soulsacrifice.html'
   },
   {
-    'description' => 'THE CHAMPIONS 80\'S Arena Rock $10/$12  HOLD  Congratulations CU Grads! ',
+    'description' => 'THE CHAMPIONS 80\'S Arena Rock $10/$12 HOLD Congratulations CU Grads! ',
     'dtend' => '2455689 18000',
     'dtstart' => '2455689 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE CHAMPIONS ',
+    'summary' => 'THE CHAMPIONS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_thechampions.html'
   },
   {
-    'description' => 'THE TICKET Female R&B/Motown Revue $10/$12  Congratulations CU Grads! ',
+    'description' => 'THE TICKET Female R&B/Motown Revue $10/$12 Congratulations CU Grads! ',
     'dtend' => '2455690 18000',
     'dtstart' => '2455690 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE TICKET ',
+    'summary' => 'THE TICKET',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_theticket.html'
   },
   {
-    'description' => 'Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455691 14400',
-    'dtstart' => '2455691 14400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'MOTHER\'S DAY ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/images/brunchmenu.pdf'
-  },
-  {
-    'description' => 'HOLD ',
-    'dtend' => '2455696 18000',
-    'dtstart' => '2455696 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'REBECCA FOLSOM ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmcalmay.html'
-  },
-  {
-    'description' => 'ZEPPEPHIILIA Pure. Zeppelin. Live $10/$12  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
+    'description' => 'ZEPPEPHIILIA Pure. Zeppelin. Live $10/$12 ',
     'dtend' => '2455697 18000',
     'dtstart' => '2455697 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'ZEPPEPHIILIA ',
+    'summary' => 'ZEPPEPHIILIA',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_zeppaphilia.html'
   },
   {
-    'description' => 'SOUL SCHOOL R&BFunk&Soul $10/$12 LET\'S DANCE  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
+    'description' => 'LORRIE SINGER HOLD ',
+    'dtend' => '2455712 18000',
+    'dtstart' => '2455712 5400',
+    'summary' => 'LORRIE SINGER',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_lorriesinger.html'
+  },
+  {
+    'description' => 'SOUL SCHOOL R&BFunk&Soul $10/$12 LET\'S DANCE ',
     'dtend' => '2455717 18000',
     'dtstart' => '2455717 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'SOUL SCHOOL ',
+    'summary' => 'SOUL SCHOOL',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_soulschool.html'
   },
   {
-    'description' => 'LIVE KARAOKE with "MY BAND" $5  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
+    'description' => 'LIVE KARAOKE with "MY BAND" $5 ',
     'dtend' => '2455723 12600',
     'dtstart' => '2455723 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => '"MY BAND" ',
+    'summary' => '"MY BAND"',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_myband.html'
   },
   {
-    'description' => 'CEILI RAIN Celtic Rock  HOLD  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
+    'description' => 'CEILI RAIN Celtic Rock HOLD ',
     'dtend' => '2455730 12600',
     'dtstart' => '2455730 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'CEILI RAIN ',
+    'summary' => 'CEILI RAIN',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_ceilirain.html'
   },
   {
-    'description' => 'Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455733 12600',
-    'dtstart' => '2455733 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'CELERATE FATHER\'S DAY with ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_thelongrun.html'
-  },
-  {
-    'description' => 'NELSON RANGELL JAZZ $10/$12  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
+    'description' => 'NELSON RANGELL JAZZ $10/$12 ',
     'dtend' => '2455743 12600',
     'dtstart' => '2455743 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NELSON RANGELL ',
+    'summary' => 'NELSON RANGELL',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
   {
-    'description' => 'KEVIN DOOLEY & FRIENDS Music Showcase featuring ',
-    'dtend' => '2455749 12600',
-    'dtstart' => '2455749 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'KEVIN DOOLEY ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_kevindooleyandfriends_000.html'
-  },
-  {
-    'description' => '',
+    'description' => 'COMEDYWORKS presents TBA $10/$12 ',
     'dtend' => '2455751 12600',
     'dtstart' => '2455751 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COMEDYWORKS ',
+    'summary' => 'COMEDYWORKS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'THAT EIGHTIES BAND $10/$12  LET\'S DANCE!  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
+    'description' => 'THAT EIGHTIES BAND $10/$12 LET\'S DANCE! ',
     'dtend' => '2455752 18000',
     'dtstart' => '2455752 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THAT EIGHTIES BAND ',
+    'summary' => 'THAT EIGHTIES BAND',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_thateightiesband.html'
   },
   {
-    'description' => 'LIVE KARAOKE Featuring "MY BAND" $5  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  LET\'S DANCE!!  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
+    'description' => 'LIVE KARAOKE Featuring THE BRAT PACK NO COVER No reservations needed...just come on in *Parties of 6 or more - please call 303-665-2757 ',
     'dtend' => '2455758 12600',
     'dtstart' => '2455758 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => '"MY BAND" ',
+    'summary' => 'THE BRAT PACK',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_myband.html'
+    'url' => 'http://www.nissis.com/lmbiobratpack.html'
   },
   {
-    'description' => 'NELSON RANGELL Jazz $10/$12  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
+    'description' => 'NELSON RANGELL Jazz $10/$12 ',
     'dtend' => '2455771 12600',
     'dtstart' => '2455771 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'NELSON RANGELL ',
+    'summary' => 'NELSON RANGELL',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
   {
-    'description' => 'Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  No reservations needed...just come on in *Parties of 6 or more - please call 303-665-2757 ',
+    'description' => 'COMEDYWORKS presents TBA ',
     'dtend' => '2455779 14400',
     'dtstart' => '2455779 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'COMEDYWORKS ',
+    'summary' => 'COMEDYWORKS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
-  },
-  {
-    'description' => '7:30 - 10;00 THE CHAMPIONS 80\'S ARENA ROCK $10/$12  HOLD  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757  Available for Private Events Call 303-665-2757 ',
-    'dtend' => '2455794 5400',
-    'dtstart' => '2455794 5400',
-    'modified_date_time' => '2455205 43200',
-    'summary' => 'THE CHAMPIONS ',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.nissis.com/lmbio_thechampions.html'
   }
 ]
