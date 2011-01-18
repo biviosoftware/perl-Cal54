@@ -63,7 +63,7 @@
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   },
   {
-    'description' => 'Please join international artists Seth Wulsin, Laleh Mehran and Christopher Coleman for a preview of The Diversity Project  and what they have in store for their exhibition at BMoCA  from June 23 through September 11, 2011.',
+    'description' => 'Please join international artists Seth Wulsin, Laleh Mehran and Christopher Coleman for a preview of The Diversity Project  and what they have in store for their exhibition at BMoCA from June 23 through September 11, 2011.',
     'dtend' => '2455616 3600',
     'dtstart' => '2455616 3600',
     'summary' => ' Meet the Artists: Seth Wulsin, Laleh Mehran and Christopher Coleman In collaboration with the Boulder Museum of Contemporary Art',
