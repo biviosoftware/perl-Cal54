@@ -11,6 +11,12 @@
 --   It makes it much easier to manage the constraints and indices this way.
 --
 
+CREATE TABLE search_words_t (
+  realm_id NUMERIC(18) NOT NULL,
+  value VARCHAR(4000),
+  CONSTRAINT search_words_t1 PRIMARY KEY(realm_id)
+)
+/
 CREATE TABLE venue_t (
   venue_id NUMERIC(18) NOT NULL,
   scraper_type NUMERIC(3) NOT NULL,

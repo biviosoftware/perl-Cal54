@@ -20,6 +20,7 @@ sub EDITABLE_FIELD_LIST {
 	Address.state
 	Address.zip
 	Address.country
+	SearchWords.value
     );
 }
 
@@ -42,6 +43,7 @@ sub PRIMARY_KEY_EQUIVALENCE_LIST {
 	RealmOwner.realm_id
 	calendar.Website.realm_id
 	Website.realm_id
+	SearchWords.realm_id
     );
 }
 

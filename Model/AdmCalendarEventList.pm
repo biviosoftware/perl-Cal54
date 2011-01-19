@@ -13,10 +13,11 @@ sub internal_initialize {
         version => 1,
 	can_iterate => 1,
 	date => 'CalendarEvent.dtend',
-	primary_key => [['CalendarEvent.calendar_event_id', 'RealmOwner.realm_id']],
+	primary_key => [['CalendarEvent.calendar_event_id', 'RealmOwner.realm_id', 'SearchWords.realm_id']],
 	other => [
 	    $self->field_decl_from_property_model('CalendarEvent'),
 	    grep($_ !~ 'realm_id', $self->field_decl_from_property_model('RealmOwner')),
+	    'SearchWords.value',
 	],
 	order_by => [
 	    {

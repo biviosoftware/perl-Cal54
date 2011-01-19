@@ -71,7 +71,7 @@ sub internal_initialize {
         visible => [
 	    $self->field_decl(
 		[map(
-		    ($_ =~ /street2|phone/ ? [$_, undef, 'NONE']
+		    ($_ =~ /street2|phone|SearchWords/ ? [$_, undef, 'NONE']
 		        : $_ =~ /state/ ? [$_, 'USState']
 			: $_ =~ /zip/ ? [$_, 'USZipCode']
 			: $_ =~ /scraper_type/ ? [$_, undef, 'NOT_ZERO_ENUM']
@@ -92,8 +92,7 @@ sub internal_pre_execute {
     foreach my $eq ($_VL->LOCATION_EQUIVALENCE_LIST) {
 	$self->internal_put_field($eq->[0], $eq->[1]->[0]);
     }
-    my(@res) = shift->SUPER::internal_pre_execute(@_);
-    return @res;
+    return shift->SUPER::internal_pre_execute(@_);
 }
 
 sub validate {

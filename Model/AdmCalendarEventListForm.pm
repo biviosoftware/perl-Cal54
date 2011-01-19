@@ -5,6 +5,7 @@ use strict;
 use Bivio::Base 'Biz.ListFormModel';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
+my($_VL) = b_use('Model.VenueList');
 
 sub execute_empty_row {
     my($self) = @_;
@@ -14,7 +15,7 @@ sub execute_empty_row {
 
 sub execute_ok_row {
     my($self) = @_;
-    $self->update_model_properties('CalendarEvent');
+    $self->update_model_properties('SearchWords');
     return;
 }
 
@@ -25,7 +26,13 @@ sub internal_initialize {
 	list_class => 'AdmCalendarEventList',
         visible => [
 	    {
-		name => 'CalendarEvent.location',
+		name => 'SearchWords.value',
+		in_list => 1,
+	    },
+	],
+	other => [
+	    {
+		name => 'SearchWords.realm_id',
 		in_list => 1,
 	    },
 	],

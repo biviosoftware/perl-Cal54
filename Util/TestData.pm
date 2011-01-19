@@ -72,6 +72,7 @@ sub _init_venues {
 	    undef,
 	    $_S->GOOGLE,
 	    'thelaughinggoat',
+	    'coffee food',
 	],	
 	[
 	    'Caffe Sole',
@@ -86,6 +87,7 @@ sub _init_venues {
 	    '303.499.2985',
 	    $_S->GOOGLE,
 	    'caffesole',
+	    'coffee food',
 	],
 	[
 	    q{Nissi's},
@@ -100,6 +102,7 @@ sub _init_venues {
 	    '303.665.2757',
 	    $_S->NISSIS,
 	    'nissis',
+	    'music',
 	],
 	[
 	    'CU Macky Auditorium',
@@ -114,6 +117,7 @@ sub _init_venues {
 	    '',
 	    $_S->ACTIVE_DATA,
 	    'cu_macky',
+	    'cu',
 	],
 	[
 	    'CU Imig Music Building',
@@ -128,6 +132,7 @@ sub _init_venues {
 	    '',
 	    $_S->ACTIVE_DATA,
 	    'cu_imig',
+	    'cu',
 	],
 	[
 	    'Fiske Planetarium and Science Center',
@@ -142,6 +147,7 @@ sub _init_venues {
 	    '303.492.5002',
 	    $_S->ACTIVE_DATA,
 	    'cu_fiske',
+	    'cu',
 	],
 	[
 	    'University Memorial Center',
@@ -156,6 +162,7 @@ sub _init_venues {
 	    '',
 	    $_S->ACTIVE_DATA,
 	    'cu_umc',
+	    'cu umc',
 	],
 	[
 	    'CU Art Museum',
@@ -313,6 +320,7 @@ sub _init_venues {
 		Phone.phone
 		Venue.scraper_type
 		name
+		RowTag.value
 	    ),
 	)};
 	$self->req->with_realm(

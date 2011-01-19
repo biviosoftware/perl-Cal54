@@ -35,11 +35,20 @@ sub get_content {
     my($self) = @_;
 #TODO: Consider adding email address
     return \(
-	($self->get('location') || '')
-	. ' '
-	. $self->new_other('RealmOwner')
-	->unauth_load_or_die({realm_id => $self->get('realm_id')})
-	->get('display_name'),
+	join(
+	    ' ',
+	    $self->get('location') || '',
+	    $self->new_other('RealmOwner')
+	    ->unauth_load_or_die({realm_id => $self->get('realm_id')})
+	    ->get('display_name'),
+	    map(
+		$self->new_other('SearchWords')
+		    ->unauth_load_or_die({realm_id => $self->get('realm_id')})
+		    ->get('value') || '',
+		$self->get('calendar_event_id'),
+		$self->get('realm_id'),
+	    ),
+	),
     );
 }
 

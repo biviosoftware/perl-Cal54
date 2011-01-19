@@ -20,6 +20,19 @@
 ----------------------------------------------------------------
 
 --
+-- search_words_t
+--
+ALTER TABLE search_words_t
+  ADD CONSTRAINT search_words_t2
+  FOREIGN KEY (realm_id)
+  REFERENCES realm_owner_t(realm_id)
+/
+CREATE INDEX search_words_t3 ON search_words_t (
+  realm_id
+)
+/
+
+--
 -- venue_t
 --
 ALTER TABLE venue_t

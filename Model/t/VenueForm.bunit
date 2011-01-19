@@ -40,58 +40,65 @@ my($rid);
 	'Model.Address' => {
 	    country => 'US',
 	},
+	'Model.SearchWords' => {
+	    value => undef,
+	},
     }],
     req_state({
 	query => sub {{this => [$rid]}},
     }),
     empty_case($values),
     [{
-	'RealmOwner.display_name' => 'dn Test',
-	'Address.street1' => 's1',
-	'Address.city' => 'Boulder',
-	'Address.state' => 'CO',
-	'Address.zip' => 80302,
-	'Address.country' => 'US',
-	'calendar.Website.url' => 'http://tlg.com/cal',
-	'Website.url' => 'http://tlg.com',
-	'Email.email' => 'e2@venue-form-test.com',
-	'Phone.phone' => '555',
-	'Venue.scraper_type' => Scraper()->GOOGLE,
+    	'RealmOwner.display_name' => 'dn Test',
+    	'Address.street1' => 's1',
+    	'Address.city' => 'Boulder',
+    	'Address.state' => 'CO',
+    	'Address.zip' => 80302,
+    	'Address.country' => 'US',
+    	'calendar.Website.url' => 'http://tlg.com/cal',
+    	'Website.url' => 'http://tlg.com',
+    	'Email.email' => 'e2@venue-form-test.com',
+    	'Phone.phone' => '555',
+    	'Venue.scraper_type' => Scraper()->GOOGLE,
+	'SearchWords.value' => 'search me',
     }] => [{
-	'Model.Venue' => {
-	    scraper_type => Scraper()->GOOGLE,
-	},
-	'Model.RealmOwner' => {
-	    display_name => 'dn Test',
-	},
-	'Model.Phone' => {
-	    phone => '555',
-	},
-	'Model.Website' => {
-	    url => 'http://tlg.com/cal',
-	},
-	'Model.Email' => {
-	    email => 'e2@venue-form-test.com',
-	},
-	'Model.Address' => {
-	    street1 => 's1',
-	},
+    	'Model.Venue' => {
+    	    scraper_type => Scraper()->GOOGLE,
+    	},
+    	'Model.RealmOwner' => {
+    	    display_name => 'dn Test',
+    	},
+    	'Model.Phone' => {
+    	    phone => '555',
+    	},
+    	'Model.Website' => {
+    	    url => 'http://tlg.com/cal',
+    	},
+    	'Model.Email' => {
+    	    email => 'e2@venue-form-test.com',
+    	},
+    	'Model.Address' => {
+    	    street1 => 's1',
+    	},
+    	'Model.SearchWords' => {
+    	    value => 'search me',
+    	},
     }],
     req_state({query => undef}),
     error_case({
-	'RealmOwner.display_name' => 'VenueForm Test',
-	'Address.street1' => '1709 Venue Street',
-	'Address.city' => 'Boulder',
-	'Address.state' => 'xx',
-	'Address.zip' => '8030',
-	'Address.country' => 'US',
-	'calendar.Website.url' => 'http://venue-form-test.com/events.php',
-	'Website.url' => 'http://venue-form-test.com',
-	'Email.email' => 'contact@venue-form-test.com',
-	'Phone.phone' => undef,
-	'Venue.scraper_type' => Scraper()->GOOGLE,
+    	'RealmOwner.display_name' => 'VenueForm Test',
+    	'Address.street1' => '1709 Venue Street',
+    	'Address.city' => 'Boulder',
+    	'Address.state' => 'xx',
+    	'Address.zip' => '8030',
+    	'Address.country' => 'US',
+    	'calendar.Website.url' => 'http://venue-form-test.com/events.php',
+    	'Website.url' => 'http://venue-form-test.com',
+    	'Email.email' => 'contact@venue-form-test.com',
+    	'Phone.phone' => undef,
+    	'Venue.scraper_type' => Scraper()->GOOGLE,
     }, {
-	'Address.state' => 'NOT_FOUND',
-	'Address.zip' => 'US_ZIP_CODE',
+    	'Address.state' => 'NOT_FOUND',
+    	'Address.zip' => 'US_ZIP_CODE',
     }),
 ];

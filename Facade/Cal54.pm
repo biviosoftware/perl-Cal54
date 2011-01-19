@@ -76,10 +76,14 @@ my($_SELF) = __PACKAGE__->new({
 	    'Website.url' => 'Home Page',
 	    'calendar.Website.url' => 'Calendar Link',
 	    'RealmOwner.display_name' => 'Full Name',
+	    'RowTag.value' => 'Tags',
 	]],
-	['CalendarEvent.location' => 'Tags'],
+	[SearchWords => [
+	    value => 'Search Words',
+	]],
 	[[qw(CalendarEventFilterList AdmCalendarEventList AdmCalendarEventListForm)] => [
 	    'RealmOwner.display_name' => 'Title',
+	    'RowTag.value' => 'Tags',
 	]],
     ],
 });

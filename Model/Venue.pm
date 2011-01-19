@@ -7,7 +7,12 @@ use Bivio::Base 'Model.RealmOwnerBase';
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub create_realm {
-    my($self, @rest) = shift->create(shift)->SUPER::create_realm(@_);
+    my($self, $venue, @rest) = @_;
+    ($self, @rest) = $self->create($venue)->SUPER::create_realm(@rest);
+    $self->new_other('RowTag')->create({
+	%$venue,
+	primary_id => $self->get('venue_id'),
+    });
     $self->new_other('RealmDAG')
 	->create({
 	    parent_id => $self->req('auth_id'),
