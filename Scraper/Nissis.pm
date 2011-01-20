@@ -60,7 +60,7 @@ sub _parse_detail {
 		    time_zone => $self->get('time_zone'),
 		    map(($_ => $current->{$_}),
 			qw(summary description dtstart dtend url)),
-		}) if $current->{description} && $current->{summary};
+		}) if $current->{summary};
 		$current = {
 		    month => $current->{month},
 		    year => $current->{year},
@@ -81,11 +81,10 @@ sub _parse_detail {
 	    }
 	}
 	if ($state eq 'DAY' && $line =~ /^(\d+)$/) {
-	    my($day) = $1;
-	    next unless $day >=1 && $day <= 31;
+	    next unless $line >=1 && $line <= 31;
 	    $current->{date} = join('/',
 	        $current->{month},
-	        $day,
+	        $line,
 		$current->{year},
 	    );
 	    $state = 'TIME_PM';
