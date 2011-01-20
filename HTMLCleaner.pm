@@ -35,6 +35,7 @@ my($_START_NEWLINE_TAG) = {
 sub clean_html {
     my($self, $html) = @_;
     my($fields) = $self->[$_IDI];
+    $fields->{text} = '';
     my($parser) = b_use('Ext.HTMLParser')->new($self);
     $parser->{__PACKAGE__} = $self;
     # register text handler, includes whitespace
@@ -48,6 +49,7 @@ sub clean_html {
     }
     $fields->{text} =~ s/( )+$//mg;
     $fields->{text} =~ s/(\n{3})\n+/$1/g;
+    $fields->{text} =~ s/(\w)\s([,.;]\s)/$1$2/g;
     delete($parser->{__PACKAGE__});
     return \($fields->{text} . "\n");
 }
@@ -82,8 +84,8 @@ sub html_parser_end {
 	}
 	$fields->{href} = $fields->{link_text} = undef;
     }
-    if ($tag eq 'spam') {
-	$fields->{text} .= ' ';
+    if ($tag eq 'span') {
+	_append_text($self, ' ');
     }
     return;
 }
@@ -97,6 +99,9 @@ sub html_parser_start {
     }
     if ($tag eq 'a' && $attrs->{href}) {
 	$fields->{href} = $attrs->{href};
+    }
+    if ($tag eq 'span') {
+	_append_text($self, ' ');
     }
     return;
 }
@@ -122,14 +127,13 @@ sub unsafe_get_link_for_text {
 
     if (@$links > 2) {
 #TODO: remove dups	
-	b_warn('multiple links for text: "', $text, '": ', $links);
+#	b_warn('multiple links for text: "', $text, '": ', $links);
     }
     return $links->[0];
 }
 
-sub _parse_text {
-    my($parser, $text) = @_;
-    my($self) = $parser->{__PACKAGE__};
+sub _append_text {
+    my($self, $text) = @_;
     my($fields) = $self->[$_IDI];
     $text =~ s/\t+/ /g;
     $text =~ s/( )+/ /g;
@@ -148,6 +152,12 @@ sub _parse_text {
     }
     $fields->{text} .= $value;
     return;
+}
+
+sub _parse_text {
+    my($parser, $text) = @_;
+    my($self) = $parser->{__PACKAGE__};
+    _append_text($self, $text);
 }
 
 1;
