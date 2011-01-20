@@ -15,7 +15,6 @@ sub internal_import {
     my($state) = 'EVENTS';
 
     foreach my $line (split("\n", $$text)) {
-	$line =~ s/^\s+|\s+$//g;
 
 	if ($state eq 'EVENTS' && $line eq 'Events') {
 	    $state = 'NEWLINE';

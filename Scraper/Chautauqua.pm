@@ -22,7 +22,6 @@ sub internal_import {
     my($state) = 'DATE_TIME';
 
     foreach my $line (split("\n", $$text)) {
-	$line =~ s/^\s+|\s+$//g;
 
 	if ($state eq 'DATE_TIME') {
 	    my($month, $day, $year, $time) =
