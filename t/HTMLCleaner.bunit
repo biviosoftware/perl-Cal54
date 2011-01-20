@@ -46,6 +46,38 @@ cell4
 
 more text
 EOF
+	    [string_ref(<<'EOF')]
+<FONT FACE="Arial">
+<H3>FLINTSTONE , FRED</H3>
+</FONT>
+<DIR><DIR>
+<TABLE  BORDER=0 CELLPADDING=0>
+<TR>
+<TD ALIGN="LEFT" VALIGN="TOP"><STRONG>Business Address</STRONG></TD>
+<TD>&nbsp;</TD>
+<TD>12 W SLATE QUARRY RD<BR>BRONTOSAURUS 3<BR>BEDROCK, PG 00004</TD>
+</TR>
+<TR>
+<TD><STRONG>Phone Number</STRONG></TD>
+<TD>&nbsp;</TD>
+<TD>(888) 555-1212</TD>
+</TR>
+EOF
+		=> [string_ref(<<'EOF')],
+FLINTSTONE, FRED
+
+Business Address
+
+12 W SLATE QUARRY RD
+BRONTOSAURUS 3
+BEDROCK, PG 00004
+
+Phone Number
+
+(888) 555-1212
+
+
+EOF
 	],
     ],
 ];
