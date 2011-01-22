@@ -66,7 +66,7 @@ sub do_one {
 		sub {
 		    $self->internal_import;
 		    _log($self, $_R->to_string($self->get('events')), '.pl');
-		    _update($self);
+		    $self->internal_update;
 		    return;
 		},
 	    );
@@ -157,6 +157,59 @@ sub internal_parse_xml {
 }
 
 
+sub internal_update {
+    my($self) = @_;
+    my($ce) = $_CE->new($self->req);
+    my($date_time) = $self->get('date_time');
+    my($curr) = {@{$_CEFL->new($self->req)
+	->map_iterate(
+	    sub {
+		my($copy) = shift->get_shallow_copy;
+		return (
+		    "$copy->{'CalendarEvent.dtstart'} $copy->{'RealmOwner.display_name'}" => $copy,
+		);
+	    },
+	    {begin_date => $date_time},
+	),
+    }};
+    my($refresh) = {};
+    my($e);
+    foreach my $event (@{$self->get('events')}) {
+	unless ($_DT->is_greater_than($event->{dtend}, $date_time)) {
+	    next;
+	}
+	my($key) = "$event->{dtstart} $event->{summary}";
+	if ($e = $refresh->{$key}) {
+	    b_warn($event, ': duplicate event: ', $e);
+	    next;
+	}
+	$refresh->{$key} = $event;
+	unless ($e = delete($curr->{$key})) {
+	    $ce->create_from_vevent($event);
+	    next;
+	}
+	$ce->load_from_properties($e)
+	    ->update_from_vevent($event);
+    }
+    my($curr_count) = scalar(keys(%$curr));
+    my($new_count) = scalar(@{$self->get('events')});
+    my($to_delete) = $curr_count / ($new_count + $curr_count || 1);
+    if ($curr_count <= 3 || $to_delete <= .05) {
+	foreach my $v (values(%$curr)) {
+#TODO: Check recurring events.  If they had already occured in the past, simply update
+#      the dtend to be before $date_time.
+	    $ce->load_from_properties($v)
+		->cascade_delete;
+	}
+    }
+    else {
+	b_warn($curr_count, ': attempting to delete more than 5% events, not deleting');
+    }
+    $_T->commit($self->req)
+	unless _bunit_dir($self);
+    return;
+}
+
 sub _bunit_dir {
     my($self) = @_;
     return $_C->is_test && $self->ureq('scraper_bunit');
@@ -185,49 +238,6 @@ sub _log_base {
     my($self, $suffix) = @_;
     $self->put(log_index => 1 + (my $li = $self->get('log_index')));
     return sprintf('%04d', $li) . ($suffix || '.html');
-}
-
-sub _update {
-    my($self) = @_;
-    my($ce) = $_CE->new($self->req);
-    my($date_time) = $self->get('date_time');
-    my($curr) = {@{$_CEFL->new($self->req)
-	->map_iterate(
-	    sub {
-		my($copy) = shift->get_shallow_copy;
-		return ($copy->{'CalendarEvent.dtstart'} => $copy);
-	    },
-	    {begin_date => $date_time},
-	),
-    }};
-    my($refresh) = {};
-    foreach my $event (@{$self->get('events')}) {
-	unless ($_DT->is_greater_than($event->{dtend}, $date_time)) {
-	    next;
-	}
-	my($dtstart) = $event->{dtstart};
-#TODO: delete newer events which are no longer valid
-	my($e) = delete($curr->{$dtstart});
-	unless ($e) {
-	    if ($e = $refresh->{$dtstart}) {
-		b_warn($event, ': duplicate dtstart: ', $e);
-		next;
-	    }
-	    $ce->create_from_vevent($event);
-	    next;
-	}
-	$ce->load_from_properties($e)
-	    ->update_from_vevent($event);
-    }
-    foreach my $v (values(%$curr)) {
-#TODO: Check recurring events.  If they had already occured in the past, simply update
-#      the dtend to be before $date_time.
-	$ce->load_from_properties($v)
-	    ->cascade_delete;
-    }
-    $_T->commit($self->req)
-	unless _bunit_dir($self);
-    return;
 }
 
 1;

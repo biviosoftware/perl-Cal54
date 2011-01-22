@@ -27,6 +27,14 @@ sub create {
 #    # DOES NOT RETURN
 #}
 
+sub create_realm {
+    my($self) = @_;
+    my(@res) = shift->SUPER::create_realm(@_);
+    $self->new_other('SearchWords')
+	->create({realm_id => $self->get('calendar_event_id')});
+    return @res;
+}
+
 sub get_auth_user_id {
     return undef;
 }

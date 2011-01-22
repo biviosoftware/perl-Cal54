@@ -60,6 +60,20 @@ sub _init_venues {
     my($self) = @_;
     foreach my $values (
 	[
+	    'Bunit Test',
+	    '111 main',
+	    'Boulder',
+	    'CO',
+	    80304,
+	    'US',
+	    'http://test.bunit/cal',
+	    'http://test.bunit',
+	    'ignore-bunit@bivio.biz',
+	    '',
+	    $_S->GOOGLE,
+	    'bunit_venue',
+	],
+	[
 	    'The Laughing Goat Coffeehouse',
 	    '1709 Pearl Street',
 	    'Boulder',

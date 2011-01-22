@@ -12,7 +12,6 @@ sub internal_initialize {
     return $self->merge_initialize_info($self->SUPER::internal_initialize, {
         version => 1,
 	can_iterate => 1,
-	date => 'CalendarEvent.dtend',
 	primary_key => [['CalendarEvent.calendar_event_id', 'RealmOwner.realm_id', 'SearchWords.realm_id']],
 	other => [
 	    $self->field_decl_from_property_model('CalendarEvent'),
@@ -30,8 +29,13 @@ sub internal_initialize {
 }
 
 sub internal_prepare_statement {
-    my($self, $stmt) = @_;
-    $stmt->where($stmt->GT('CalendarEvent.dtend', [$_DT->now]));
+    my($self, $stmt, $query) = @_;
+    $stmt->where(
+	$stmt->GT(
+	    'CalendarEvent.dtend',
+	    [$query->unsafe_get('begin_date') || $_DT->now],
+	),
+    );
     return shift->SUPER::internal_prepare_statement(@_);
 }
 
