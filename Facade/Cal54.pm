@@ -57,7 +57,6 @@ my($_SELF) = __PACKAGE__->new({
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],
-	[c4_site_tag => q{SPAN(q{All Events Fit to Link});SPAN_c4_tm('&trade;');}],
 	[c4_site_desc => q{SPAN(q{The Web's Calendar});SPAN_c4_tm('&trade;');}],
 	[site_copyright => q{bivio Software, Inc.}],
 	[home_page_uri => '/bp'],
