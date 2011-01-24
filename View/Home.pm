@@ -75,7 +75,6 @@ sub _form {
 
 sub _list {
     return DIV_c4_list(Join([
-	DIV_c4_site_tag(vs_text_as_prose('c4_site_tag')),
 	List(HomeList => [
 	    DIV_date(['month_day']),
 	    DIV_item(Join([
