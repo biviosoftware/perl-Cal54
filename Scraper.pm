@@ -19,6 +19,7 @@ my($_R) = b_use('IO.Ref');
 my($_T) = b_use('Agent.Task');
 #TODO: Make a RowTag
 my($_TZ) = b_use('Type.TimeZone')->get_default;
+my($_TT) = b_use('Type.Text');
 
 sub c4_scraper_get {
     my($self, $uri) = @_;
@@ -107,7 +108,7 @@ sub internal_catch {
 sub internal_clean {
     my($self, $value) = @_;
     $value = $_HTML->unescape($value);
-    $value =~ s,<.*?>, ,g;
+    $value =~ s{<.*?>}{ }g;
     return $value;
 }
 
@@ -178,7 +179,7 @@ sub internal_update {
 	unless ($_DT->is_greater_than($event->{dtend}, $date_time)) {
 	    next;
 	}
-	my($key) = "$event->{dtstart} $event->{summary}";
+	my($key) = "$event->{dtstart} " . $_TT->from_literal_or_die($event->{summary});
 	if ($e = $refresh->{$key}) {
 	    b_warn($event, ': duplicate event: ', $e);
 	    next;
