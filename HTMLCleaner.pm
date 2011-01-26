@@ -24,7 +24,7 @@ my($_END_NEWLINE_TAG) = {
 };
 my($_START_NEWLINE_TAG) = {
     map(($_ => 1), qw(
-        p			 
+        p
         br
         hr
 	ul
@@ -70,22 +70,26 @@ sub html_parser_end {
     my($self, $tag) = @_;
     my($fields) = $self->[$_IDI];
 
-    if ($_END_NEWLINE_TAG->{$tag}) {
+    if ($_END_NEWLINE_TAG->{$tag} && ! $fields->{href}) {
 	$fields->{text} .= "\n";
 	$fields->{text} .= "\n"
 	    if $tag eq 'p';
+	$fields->{soft_newline} = 0;
     }
     if ($tag eq 'a') {
 
-	if ($fields->{link_text} && $fields->{href}) {
-	    $fields->{link_text} =~ s/^\s+|\s+$//g;
-	    push(@{$fields->{links}->{$fields->{link_text}} ||= []},
-		 $fields->{href});
+	if ($fields->{href} && $fields->{text} !~ /(\n|\})$/s) {
+	    my($index) = scalar(@{$fields->{links}});
+	    push(@{$fields->{links}}, $fields->{href});
+	    $fields->{text} =~ s/\s+$//;
+	    _append_text($self, '{' . $index . '}');
+	    $fields->{soft_newline} = 1;
 	}
-	$fields->{href} = $fields->{link_text} = undef;
+	$fields->{href} = undef;
     }
     if ($tag eq 'span') {
-	_append_text($self, ' ');
+	_append_text($self, ' ')
+	    unless $fields->{soft_newline};
     }
     return;
 }
@@ -94,14 +98,18 @@ sub html_parser_start {
     my($self, $tag, $attrs) = @_;
     my($fields) = $self->[$_IDI];
 
-    if ($_START_NEWLINE_TAG->{$tag}) {
+    if ($_START_NEWLINE_TAG->{$tag} && ! $fields->{href}) {
 	$fields->{text} .= "\n";
+	$fields->{soft_newline} = 0;
     }
     if ($tag eq 'a' && $attrs->{href}) {
 	$fields->{href} = $attrs->{href};
+	$fields->{text} .= "\n"
+	    unless $fields->{text} =~ /\n$/s;
     }
     if ($tag eq 'span') {
-	_append_text($self, ' ');
+	_append_text($self, ' ')
+	    unless $fields->{soft_newline};
     }
     return;
 }
@@ -113,7 +121,7 @@ sub new {
     	wait_for_end_tag => '',
     	table_depth => 0,
     	text => '',
-	links => {},
+	links => [],
     };
     return $self;
 }
@@ -121,25 +129,22 @@ sub new {
 sub unsafe_get_link_for_text {
     my($self, $text) = @_;
     my($fields) = $self->[$_IDI];
-    $text =~ s/^\s+|\s+$//g;
-    my($links) = $fields->{links}->{$text};
-    return undef unless $links;
-
-    if (@$links > 2) {
-#TODO: remove dups	
-#	b_warn('multiple links for text: "', $text, '": ', $links);
-    }
-    return $links->[0];
+    my($index) = $text =~ /.*?\{(\d+)\}/;
+    return undef
+	unless defined($index) && $index < @{$fields->{links}};
+    return $fields->{links}->[$index];
 }
 
 sub _append_text {
     my($self, $text) = @_;
     my($fields) = $self->[$_IDI];
-    $text =~ s/\t+/ /g;
-    $text =~ s/( )+/ /g;
-    $text =~ s/(\n)( )+/$1/g;
+    $text =~ s/\s+/ /g;
     my($leading_white) = $text =~ /^(\s+)/;
     my($trailing_white) = $text =~ /\S(\s+)$/;
+    if ($fields->{soft_newline} && $fields->{text} !~ /\n$/s) {
+	$fields->{text} .= "\n";
+	$fields->{soft_newline} = 0;
+    }
     my($value) = join('',
 	$fields->{text} =~ /\s$/ || $fields->{text} eq ''
 	    ? ''
@@ -147,9 +152,6 @@ sub _append_text {
 	${$_S->canonicalize_charset($_HTML->unescape($text))},
 	$trailing_white ? ' ' : '',
     );
-    if ($fields->{href}) {
-	$fields->{link_text} .= $value;
-    }
     $fields->{text} .= $value;
     return;
 }
