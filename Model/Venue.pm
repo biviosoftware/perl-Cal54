@@ -34,7 +34,11 @@ sub internal_initialize {
 	columns => {
 	    venue_id => ['RealmOwner.realm_id', 'PRIMARY_KEY'],
 	    scraper_type => ['Scraper', 'NOT_ZERO_ENUM'],
+	    scraper_aux => ['Text64K', 'NONE'],
 	},
+	other => [
+	    [qw(venue_id RealmOwner.realm_id)],
+	],
     });
 }
 
