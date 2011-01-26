@@ -16,10 +16,10 @@ my($rid);
 	'Website.url' => 'http://venue-form-test.com',
 	'Email.email' => 'contact@venue-form-test.com',
 	'Phone.phone' => undef,
-	'Venue.scraper_type' => Scraper()->NISSIS,
+	'Venue.scraper_type' => Scraper()->REGEXP,
     }] => [{
 	'Model.Venue' => {
-	    scraper_type => Scraper()->NISSIS,
+	    scraper_type => Scraper()->REGEXP,
 	},
 	'Model.RealmDAG' => {
 	    parent_id => req('auth_id'),
