@@ -62,6 +62,15 @@ sub get_delegate_info {
 	    View.Venue->scraper
 	    next=ADM_VENUE_LIST
         )],
+	[qw(
+	    ADM_SCRAPER_PREVIEW
+	    506
+	    FORUM
+	    DATA_READ&DATA_WRITE&FEATURE_SITE_ADMIN
+	    Action.ScraperPreview
+	    View.Venue->scraper_preview
+	    next=ADM_VENUE_LIST
+        )],
     ]);
 }
 
