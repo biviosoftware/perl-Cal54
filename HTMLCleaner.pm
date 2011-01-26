@@ -4,6 +4,7 @@ package Cal54::HTMLCleaner;
 use strict;
 use Bivio::Base 'Bivio::UNIVERSAL';
 use HTML::Parser ();
+use URI ();
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_IDI) = __PACKAGE__->instance_data_index;
@@ -33,9 +34,13 @@ my($_START_NEWLINE_TAG) = {
 };
 
 sub clean_html {
-    my($self, $html) = @_;
-    my($fields) = $self->[$_IDI];
-    $fields->{text} = '';
+    my($self, $html, $url) = @_;
+    my($fields) = $self->[$_IDI] = {
+    	text => '',
+	links => [],
+	url => $url,
+    };
+    b_die('invalid url: ', $url) unless $url =~ m{\://};
     my($parser) = b_use('Ext.HTMLParser')->new($self);
     $parser->{__PACKAGE__} = $self;
     # register text handler, includes whitespace
@@ -114,25 +119,15 @@ sub html_parser_start {
     return;
 }
 
-sub new {
-    my($self) = shift->SUPER::new(@_);
-    $self->[$_IDI] = {
-    	in_body => 0,
-    	wait_for_end_tag => '',
-    	table_depth => 0,
-    	text => '',
-	links => [],
-    };
-    return $self;
-}
-
 sub unsafe_get_link_for_text {
     my($self, $text) = @_;
     my($fields) = $self->[$_IDI];
     my($index) = $text =~ /.*?\{(\d+)\}/;
     return undef
 	unless defined($index) && $index < @{$fields->{links}};
-    return $fields->{links}->[$index];
+    my($url) = $fields->{links}->[$index];
+    return $url if $url =~ m{\://};
+    return URI->new_abs($url, $fields->{url})->as_string;
 }
 
 sub _append_text {
