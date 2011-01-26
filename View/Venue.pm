@@ -35,4 +35,18 @@ sub list {
     );
 }
 
+sub scraper {
+    return shift->internal_body(
+	vs_simple_form(VenueScraperForm => [
+	    H1(String([['Model.Venue', '->get_model', 'RealmOwner'],
+		       'display_name'])),
+	    'VenueScraperForm.Venue.scraper_type',
+	    ['VenueScraperForm.Venue.scraper_aux', {
+		cols => 80,
+		rows => 25,
+	    }],
+	]),
+    );
+}
+
 1;
