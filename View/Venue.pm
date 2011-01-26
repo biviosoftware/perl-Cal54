@@ -49,4 +49,29 @@ sub scraper {
     );
 }
 
+sub scraper_preview {
+    return shift->internal_body(
+	Simple([sub {
+	    my($source) = @_;
+	    my($values) = [];
+	    my($cleaner) = $source->req(qw(Action.ScraperPreview cleaner));
+
+	    foreach my $line (split("\n",
+	        $source->req(qw(Action.ScraperPreview text)))) {
+		my($uri) = $cleaner->unsafe_get_link_for_text($line);
+		push(@$values,
+		     defined($uri)
+			 ? Link($line, URI({
+			     query => {
+				 x => $uri,
+			     },
+			 }))
+			 : String($line),
+		     BR());
+	    }
+	    return Join($values);
+        }]),
+    );
+}
+
 1;
