@@ -66,6 +66,8 @@ sub do_one {
 	    return $self->internal_catch(
 		sub {
 		    $self->internal_import;
+		    b_die('no events')
+			unless @{$self->get('events')};
 		    _log($self, $_R->to_string($self->get('events')), '.pl');
 		    $self->internal_update;
 		    return;
