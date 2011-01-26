@@ -75,11 +75,16 @@ sub html_parser_end {
     my($self, $tag) = @_;
     my($fields) = $self->[$_IDI];
 
-    if ($_END_NEWLINE_TAG->{$tag} && ! $fields->{href}) {
-	$fields->{text} .= "\n";
-	$fields->{text} .= "\n"
-	    if $tag eq 'p';
-	$fields->{soft_newline} = 0;
+    if ($_END_NEWLINE_TAG->{$tag}) {
+	if ($fields->{href}) {
+	    _append_text($self, ' ')
+	}
+	else {
+	    $fields->{text} .= "\n";
+	    $fields->{text} .= "\n"
+		if $tag eq 'p';
+	    $fields->{soft_newline} = 0;
+	}
     }
     if ($tag eq 'a') {
 
@@ -103,9 +108,14 @@ sub html_parser_start {
     my($self, $tag, $attrs) = @_;
     my($fields) = $self->[$_IDI];
 
-    if ($_START_NEWLINE_TAG->{$tag} && ! $fields->{href}) {
-	$fields->{text} .= "\n";
-	$fields->{soft_newline} = 0;
+    if ($_START_NEWLINE_TAG->{$tag}) {
+	if ($fields->{href}) {
+	    _append_text($self, ' ');
+	}
+	else {
+	    $fields->{text} .= "\n";
+	    $fields->{soft_newline} = 0;
+	}
     }
     if ($tag eq 'a' && $attrs->{href}) {
 	$fields->{href} = $attrs->{href};
