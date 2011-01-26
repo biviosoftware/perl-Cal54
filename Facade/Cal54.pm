@@ -55,6 +55,7 @@ my($_SELF) = __PACKAGE__->new({
 	[ADM_VENUE_FORM => '?/edit-venue'],
 	[ADM_VENUE_LIST => '?/venues'],
 	[ADM_VENUE_SCRAPER_FORM => '?/scraper'],
+	[ADM_SCRAPER_PREVIEW => '?/scraper-preview'],
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],
@@ -66,6 +67,7 @@ my($_SELF) = __PACKAGE__->new({
 	    ADM_CALENDAR_EVENT_LIST_FORM => 'Events',
 	    ADM_VENUE_FORM => 'Edit Venue',
 	    ADM_VENUE_SCRAPER_FORM => 'Scraper Definition',
+	    ADM_SCRAPER_PREVIEW => 'Scraper Preview',
 	]],
 	['task_menu.title' => [
 	    ADM_VENUE_FORM => 'Add Venue',
