@@ -52,6 +52,16 @@ sub get_delegate_info {
 	    View.Calendar->adm_list
 	    next=ADM_CALENDAR_EVENT_LIST_FORM
         )],
+	[qw(
+	    ADM_VENUE_SCRAPER_FORM
+	    505
+	    FORUM
+	    DATA_READ&DATA_WRITE&FEATURE_SITE_ADMIN
+	    Model.Venue->execute_unauth_load_this
+	    Model.VenueScraperForm
+	    View.Venue->scraper
+	    next=ADM_VENUE_LIST
+        )],
     ]);
 }
 
