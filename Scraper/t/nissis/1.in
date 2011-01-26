@@ -1,6 +1,6 @@
 [
   {
-    'description' => 'COMEDY WORKS Presents TBA ',
+    'description' => 'COMEDY WORKS Presents TBA',
     'dtend' => '2455807 12600',
     'dtstart' => '2455807 5400',
     'summary' => 'COMEDY WORKS',
@@ -8,7 +8,7 @@
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'THAT EIGHTIES BAND $10/$12 ',
+    'description' => 'THAT EIGHTIES BAND $10/$12',
     'dtend' => '2455822 18000',
     'dtstart' => '2455822 5400',
     'summary' => 'THAT EIGHTIES BAND',
@@ -16,7 +16,7 @@
     'url' => 'http://www.nissis.com/lmbio_thateightiesband.html'
   },
   {
-    'description' => 'NELSON RANGELL Jazz $10/$12 ',
+    'description' => 'NELSON RANGELL Jazz $10/$12',
     'dtend' => '2455834 12600',
     'dtstart' => '2455834 5400',
     'summary' => 'NELSON RANGELL',
@@ -24,7 +24,7 @@
     'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
   {
-    'description' => 'COMEDY WORKS Presents TBA ',
+    'description' => 'COMEDY WORKS Presents TBA',
     'dtend' => '2455842 12600',
     'dtstart' => '2455842 5400',
     'summary' => 'COMEDY WORKS',
@@ -32,7 +32,7 @@
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER No reservations needed...just come on in *Parties of 6 or more - please call 303-665-2757 ',
+    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER No reservations needed...just come on in *Parties of 6 or more - please call 303-665-2757',
     'dtend' => '2455849 12600',
     'dtstart' => '2455849 5400',
     'summary' => 'THE BRAT PACK',
@@ -40,7 +40,31 @@
     'url' => 'http://www.nissis.com/lmbiobratpack.html'
   },
   {
-    'description' => 'Come Celebrate NEW YEAR\'S DAY WITH BLUFFETT A TRIBUTE TO JIMMY BUFFETT $10/$12 ',
+    'description' => 'COMEDY WORKS Presents TBA',
+    'dtend' => '2455505 14400',
+    'dtstart' => '2455505 5400',
+    'summary' => 'COMEDY WORKS',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
+  },
+  {
+    'description' => '\\',
+    'dtend' => '2455508 14400',
+    'dtstart' => '2455508 5400',
+    'summary' => '\\',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_nighttownband.html'
+  },
+  {
+    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER No reservations needed...just come on in *Parties of 6 or more - please call 303-665-2757',
+    'dtend' => '2455547 16200',
+    'dtstart' => '2455547 9000',
+    'summary' => 'THE BRAT PACK',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbiobratpack.html'
+  },
+  {
+    'description' => 'Come Celebrate NEW YEAR\'S DAY WITH BLUFFETT A TRIBUTE TO JIMMY BUFFETT $10/$12',
     'dtend' => '2455564 21600',
     'dtstart' => '2455564 9000',
     'summary' => 'BLUFFETT',
@@ -48,7 +72,7 @@
     'url' => 'http://www.nissis.com/lmbio_bluffett.html'
   },
   {
-    'description' => 'ANNIE BOOTH TRIO Jazz NO COVER ',
+    'description' => 'ANNIE BOOTH TRIO Jazz NO COVER',
     'dtend' => '2455565 18000',
     'dtstart' => '2455565 9000',
     'summary' => 'ANNIE BOOTH TRIO',
@@ -56,7 +80,7 @@
     'url' => 'http://www.nissis.com/lmbio_anniebooth.html'
   },
   {
-    'description' => 'FACE All Vocal Rock $15/$17 SOLD OUT! ',
+    'description' => 'FACE All Vocal Rock $15/$17 SOLD OUT!',
     'dtend' => '2455567 18000',
     'dtstart' => '2455567 9000',
     'summary' => 'FACE',
@@ -64,7 +88,15 @@
     'url' => 'http://www.nissis.com/lmbio_face.html'
   },
   {
-    'description' => 'COMEDY WORKS Presents JEFF HARMS With Opener JAMES KEMPE-MEHL $10/$12 ',
+    'description' => 'NEW ARTIST SHOWCASE with BARRY SHAPIRO AND THE FAZZ BAND $5/$7',
+    'dtend' => '2455568 18000',
+    'dtstart' => '2455568 9000',
+    'summary' => 'BARRY SHAPIRO AND THE FAZZ',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_barryshapiroandfazzband.html'
+  },
+  {
+    'description' => 'COMEDY WORKS Presents JEFF HARMS With Opener JAMES KEMPE-MEHL $10/$12',
     'dtend' => '2455569 18000',
     'dtstart' => '2455569 9000',
     'summary' => 'COMEDY WORKS',
@@ -72,7 +104,7 @@
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'LADIES SING THE BLUES with MOJO MAMA & TEMPA AND THE TANTRUMS $8/$10 LET\'S DANCE!! ',
+    'description' => 'LADIES SING THE BLUES with MOJO MAMA & TEMPA AND THE TANTRUMS $8/$10 LET\'S DANCE!!',
     'dtend' => '2455570 21600',
     'dtstart' => '2455570 9000',
     'summary' => 'MOJO MAMA',
@@ -80,7 +112,7 @@
     'url' => 'http://www.nissis.com/lmbio_mojomama.html'
   },
   {
-    'description' => 'MOTHER LODE Classic Rock $8/$10 LET\'S DANCE!! ',
+    'description' => 'MOTHER LODE Classic Rock $8/$10 LET\'S DANCE!!',
     'dtend' => '2455571 21600',
     'dtstart' => '2455571 9000',
     'summary' => 'MOTHER LODE',
@@ -88,7 +120,7 @@
     'url' => 'http://www.nissis.com/lmbio_motherlode.html'
   },
   {
-    'description' => 'ADAM BODINE TRIO Jazz NO COVER ',
+    'description' => 'ADAM BODINE TRIO Jazz NO COVER',
     'dtend' => '2455572 18000',
     'dtstart' => '2455572 9000',
     'summary' => 'ADAM BODINE TRIO',
@@ -96,7 +128,7 @@
     'url' => 'http://www.nissis.com/lmbio_adambodinetrio.html'
   },
   {
-    'description' => 'OPEN MIC NIGHT Music Comedy Poetry Hosted By PAUL SODERMAN NO COVER ',
+    'description' => 'OPEN MIC NIGHT Music Comedy Poetry Hosted By PAUL SODERMAN NO COVER',
     'dtend' => '2455574 16200',
     'dtstart' => '2455574 9000',
     'summary' => 'OPEN MIC NIGHT',
@@ -104,7 +136,7 @@
     'url' => 'http://www.nissis.com/lmbio_openmic.html'
   },
   {
-    'description' => 'NEW ARTIST SHOWCASE with NATHAN MCEUEN & TAGE PLANTELL & THE DUSTY RADIO $5/$7 ',
+    'description' => 'NEW ARTIST SHOWCASE with NATHAN MCEUEN & TAGE PLANTELL & THE DUSTY RADIO $5/$7',
     'dtend' => '2455575 18000',
     'dtstart' => '2455575 9000',
     'summary' => 'NATHAN MCEUEN',
@@ -112,7 +144,7 @@
     'url' => 'http://www.nissis.com/lmbio_nathanmceuen.html'
   },
   {
-    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER ',
+    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER',
     'dtend' => '2455576 18000',
     'dtstart' => '2455576 9000',
     'summary' => 'THE BRAT PACK',
@@ -120,7 +152,7 @@
     'url' => 'http://www.nissis.com/lmbiobratpack.html'
   },
   {
-    'description' => 'DEJA BLU Variety $10/$12 Celebrating Liz\'s Birthday too! LET\'S DANCE!! ',
+    'description' => 'DEJA BLU Variety $10/$12 Celebrating Liz\'s Birthday too! LET\'S DANCE!!',
     'dtend' => '2455577 21600',
     'dtstart' => '2455577 9000',
     'summary' => 'DEJA BLU',
@@ -128,7 +160,7 @@
     'url' => 'http://www.nissis.com/lmbio_dejablu.html'
   },
   {
-    'description' => 'HOMESLICE BAND R&B Horn Classic Rock $10/$12 LET\'S DANCE!! ',
+    'description' => 'HOMESLICE BAND R&B Horn Classic Rock $10/$12 LET\'S DANCE!!',
     'dtend' => '2455578 21600',
     'dtstart' => '2455578 9000',
     'summary' => 'HOMESLICE BAND',
@@ -136,7 +168,7 @@
     'url' => 'http://www.nissis.com/lmbio_homeslice.html'
   },
   {
-    'description' => 'HOLLY & THE HUSBANDS Jazz NO COVER ',
+    'description' => 'HOLLY & THE HUSBANDS Jazz NO COVER',
     'dtend' => '2455579 18000',
     'dtstart' => '2455579 9000',
     'summary' => 'HOLLY & THE HUSBANDS',
@@ -144,7 +176,7 @@
     'url' => 'http://www.nissis.com/lmbio_hollyandthehusbands.html'
   },
   {
-    'description' => 'STUDENT SHOWCASE with SYMATREE & PLASTIC TACTICS $5 ',
+    'description' => 'STUDENT SHOWCASE with SYMATREE & PLASTIC TACTICS $5',
     'dtend' => '2455581 18000',
     'dtstart' => '2455581 9000',
     'summary' => 'STUDENT SHOWCASE',
@@ -152,7 +184,7 @@
     'url' => 'http://www.nissis.com/lmbio_studentshowcase.html'
   },
   {
-    'description' => 'NEW ARTIST SHOWCASE with IRONWOOD RAIN $5/$7 ',
+    'description' => 'NEW ARTIST SHOWCASE with IRONWOOD RAIN $5/$7',
     'dtend' => '2455582 18000',
     'dtstart' => '2455582 9000',
     'summary' => 'IRONWOOD RAIN',
@@ -160,7 +192,7 @@
     'url' => 'http://www.nissis.com/lmbio_ironwoodrain.html'
   },
   {
-    'description' => 'NINA STOREY With Opener Katelyn Benton and Comedian Max Goldberg $15/$17 ',
+    'description' => 'NINA STOREY With Opener Katelyn Benton and Comedian Max Goldberg $15/$17',
     'dtend' => '2455583 18000',
     'dtstart' => '2455583 9000',
     'summary' => 'NINA STOREY',
@@ -168,15 +200,15 @@
     'url' => 'http://www.nissis.com/lmbio_ninastorey.com.html'
   },
   {
-    'description' => 'BOOGIE MACHINE The Ultimate Disco Dance Party! $10/$12 LET\'S DANCE!! ',
-    'dtend' => '2455584 68400',
+    'description' => 'BOOGIE MACHINE The Ultimate Disco Dance Party! $10/$12 LET\'S DANCE!!',
+    'dtend' => '2455584 9000',
     'dtstart' => '2455584 9000',
     'summary' => 'BOOGIE MACHINE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.nissis.com/lmbio_boogiemachine.html'
   },
   {
-    'description' => 'THAT EIGHTIES BAND $10/$12 LET\'S DANCE!! ',
+    'description' => 'THAT EIGHTIES BAND $10/$12 LET\'S DANCE!!',
     'dtend' => '2455585 21600',
     'dtstart' => '2455585 9000',
     'summary' => 'THAT EIGHTIES BAND',
@@ -184,7 +216,7 @@
     'url' => 'http://www.nissis.com/lmbio_thateightiesband.html'
   },
   {
-    'description' => 'WINDFALL Americana/Folk $5/$7 ',
+    'description' => 'WINDFALL Americana/Folk $5/$7',
     'dtend' => '2455586 18000',
     'dtstart' => '2455586 9000',
     'summary' => 'WINDFALL',
@@ -192,7 +224,7 @@
     'url' => 'http://www.nissis.com/lmbio_windfall.html'
   },
   {
-    'description' => 'TOMMY STAUDT BAND $5/$7 ',
+    'description' => 'TOMMY STAUDT BAND $5/$7',
     'dtend' => '2455588 18000',
     'dtstart' => '2455588 9000',
     'summary' => 'TOMMY STAUDT BAND',
@@ -200,7 +232,15 @@
     'url' => 'http://www.nissis.com/lmbio_tommystaudt.html'
   },
   {
-    'description' => 'STRAY DOG R&B NO COVER LET\'S DANCE!! ',
+    'description' => 'PETE WERNICK & FLEXIGRASS NO COVER',
+    'dtend' => '2455589 18000',
+    'dtstart' => '2455589 9000',
+    'summary' => 'PETE WERNICK & FLEXIGRASS',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_petewernick.html'
+  },
+  {
+    'description' => 'STRAY DOG R&B NO COVER LET\'S DANCE!!',
     'dtend' => '2455590 18000',
     'dtstart' => '2455590 9000',
     'summary' => 'STRAY DOG',
@@ -208,7 +248,7 @@
     'url' => 'http://www.nissis.com/lmbio_straydogs.html'
   },
   {
-    'description' => 'BLACK WATER A Tribute to The Doobie Brothers and other Classic Rock Legends $10/$12 LET\'S DANCE!! ',
+    'description' => 'BLACK WATER A Tribute to The Doobie Brothers and other Classic Rock Legends $10/$12 LET\'S DANCE!!',
     'dtend' => '2455591 21600',
     'dtstart' => '2455591 9000',
     'summary' => 'BLACK WATER',
@@ -216,7 +256,7 @@
     'url' => 'http://www.nissis.com/lmbio_Blackwater.html'
   },
   {
-    'description' => 'THE TICKET Female Motown R&B Revue $10/$12 LET\'S DANCE!! ',
+    'description' => 'THE TICKET Female Motown R&B Revue $10/$12 LET\'S DANCE!!',
     'dtend' => '2455592 21600',
     'dtstart' => '2455592 9000',
     'summary' => 'THE TICKET',
@@ -224,7 +264,7 @@
     'url' => 'http://www.nissis.com/lmbio_theticket.html'
   },
   {
-    'description' => 'KATE JAWORSKI TRIO Jazz NO COVER ',
+    'description' => 'KATE JAWORSKI TRIO Jazz NO COVER',
     'dtend' => '2455593 18000',
     'dtstart' => '2455593 9000',
     'summary' => 'KATE JAWORSKI TRIO',
@@ -232,7 +272,7 @@
     'url' => 'http://www.nissis.com/lmbio_katejaworskitrio.html'
   },
   {
-    'description' => 'STUDENT SHOWCASE with BASSLINE & WATCH FOR WILDLIFE $5/$7 ',
+    'description' => 'STUDENT SHOWCASE with BASSLINE & WATCH FOR WILDLIFE $5/$7',
     'dtend' => '2455595 18000',
     'dtstart' => '2455595 9000',
     'summary' => 'STUDENT SHOWCASE',
@@ -240,7 +280,7 @@
     'url' => 'http://www.nissis.com/lmbio_studentshowcase.html'
   },
   {
-    'description' => 'NEW ARTIST SHOWCASE Featuring UNAUTHORIZED ABSENCE $5/$7 ',
+    'description' => 'NEW ARTIST SHOWCASE Featuring UNAUTHORIZED ABSENCE $5/$7',
     'dtend' => '2455596 18000',
     'dtstart' => '2455596 9000',
     'summary' => 'UNAUTHORIZED ABSENCE',
@@ -248,7 +288,7 @@
     'url' => 'http://www.nissis.com/lmbio_unauthorizedabsence.html'
   },
   {
-    'description' => 'COMEDY WORKS Presents CHRIS VOTH with opener MATT BACA $10/$12 ',
+    'description' => 'COMEDY WORKS Presents CHRIS VOTH with opener MATT BACA $10/$12',
     'dtend' => '2455597 18000',
     'dtstart' => '2455597 9000',
     'summary' => 'COMEDY WORKS',
@@ -256,7 +296,7 @@
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'PHAT DADDY High EnergyR&B/ Hip Hop $10/$12 ',
+    'description' => 'PHAT DADDY High EnergyR&B/ Hip Hop $10/$12',
     'dtend' => '2455598 21600',
     'dtstart' => '2455598 9000',
     'summary' => 'PHAT DADDY',
@@ -264,7 +304,7 @@
     'url' => 'http://www.nissis.com/lmbio_phatdaddy.html'
   },
   {
-    'description' => 'THE JURASSICASTORS Classic Rock $10/$12 LET\'S DANCE!! ',
+    'description' => 'THE JURASSICASTORS Classic Rock $10/$12 LET\'S DANCE!!',
     'dtend' => '2455599 21600',
     'dtstart' => '2455599 9000',
     'summary' => 'THE JURASSICASTORS',
@@ -272,7 +312,7 @@
     'url' => 'http://www.nissis.com/lmbio_jurrisicastors.html'
   },
   {
-    'description' => 'OPEN MIC NIGHT Music Comedy Poetry Hosted By PAUL SODERMAN NO COVER ',
+    'description' => 'OPEN MIC NIGHT Music Comedy Poetry Hosted By PAUL SODERMAN NO COVER',
     'dtend' => '2455602 18000',
     'dtstart' => '2455602 9000',
     'summary' => 'OPEN MIC NIGHT',
@@ -280,7 +320,7 @@
     'url' => 'http://www.nissis.com/lmbio_openmic.html'
   },
   {
-    'description' => 'FAT WEDNESDAY PARTY Featuring SAMMY DEE MORTON BAND "Honorary Louisiana Bluesman" Louisiana/Texas Blues $5/$7 With New Orleans\' style Mardi Gras Food & Drink Specials! ',
+    'description' => 'FAT WEDNESDAY PARTY Featuring SAMMY DEE MORTON BAND "Honorary Louisiana Bluesman" Louisiana/Texas Blues $5/$7 With New Orleans\' style Mardi Gras Food & Drink Specials!',
     'dtend' => '2455603 18000',
     'dtstart' => '2455603 9000',
     'summary' => 'SAMMY DEE MORTON BAND',
@@ -288,7 +328,7 @@
     'url' => 'http://www.nissis.com/lmbio_sammydee.html'
   },
   {
-    'description' => 'THE CHAMPIONS 80\'S Arena Rock $10/$12 ',
+    'description' => 'THE CHAMPIONS 80\'S Arena Rock $10/$12',
     'dtend' => '2455605 21600',
     'dtstart' => '2455605 9000',
     'summary' => 'THE CHAMPIONS',
@@ -296,7 +336,7 @@
     'url' => 'http://www.nissis.com/lmbio_thechampions.html'
   },
   {
-    'description' => 'HAZEL MILLER R&B/Soul $15/$17 Food & Drink Specials for Lovers ',
+    'description' => 'HAZEL MILLER R&B/Soul $15/$17 Food & Drink Specials for Lovers',
     'dtend' => '2455606 21600',
     'dtstart' => '2455606 9000',
     'summary' => 'HAZEL MILLER',
@@ -304,7 +344,7 @@
     'url' => 'http://www.nissis.com/hazelmiller.html'
   },
   {
-    'description' => 'VALENTINES Dinner & Dancing with INSIDEOUT R&B & Jazz $39 4-Course Dinner & Complimentary Champagne Toast Valentine\'s Eve Special $39 per person includes gratuity ',
+    'description' => 'VALENTINES Dinner & Dancing with INSIDEOUT R&B & Jazz $39 4-Course Dinner & Complimentary Champagne Toast Valentine\'s Eve Special $39 per person includes gratuity',
     'dtend' => '2455607 18000',
     'dtstart' => '2455607 5400',
     'summary' => 'INSIDEOUT',
@@ -312,7 +352,7 @@
     'url' => 'http://www.nissis.com/lmbio_insideout.html'
   },
   {
-    'description' => 'VALENTINES Dinner & Dancing with GEORGE NELSON R&B & Jazz $49 4-Course Dinner $49 per person includes gratuity ',
+    'description' => 'VALENTINES Dinner & Dancing with GEORGE NELSON R&B & Jazz $49 4-Course Dinner $49 per person includes gratuity',
     'dtend' => '2455608 18000',
     'dtstart' => '2455608 5400',
     'summary' => 'GEORGE NELSON',
@@ -320,7 +360,7 @@
     'url' => 'http://www.nissis.com/lmbio_georgenelson.html'
   },
   {
-    'description' => 'FACE All Vocal Rock $15/$17 ',
+    'description' => 'FACE All Vocal Rock $15/$17',
     'dtend' => '2455609 18000',
     'dtstart' => '2455609 9000',
     'summary' => 'FACE',
@@ -328,7 +368,7 @@
     'url' => 'http://www.nissis.com/lmbio_face.html'
   },
   {
-    'description' => 'CHOOSING JUNE HOLD ',
+    'description' => 'CHOOSING JUNE HOLD',
     'dtend' => '2455610 21600',
     'dtstart' => '2455610 9000',
     'summary' => 'CHOOSING JUNE',
@@ -336,7 +376,15 @@
     'url' => 'http://www.nissis.com/lmbio_choosingjune.html'
   },
   {
-    'description' => 'RAISING CAIN Rock/Dance Variety $10/$12 ',
+    'description' => 'CATFISH KRAY BLUES BAND Blues NO COVER',
+    'dtend' => '2455611 18000',
+    'dtstart' => '2455611 9000',
+    'summary' => 'CATFISH KRAY BLUES BAND',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_catfishkray.html'
+  },
+  {
+    'description' => 'RAISING CAIN Rock/Dance Variety $10/$12',
     'dtend' => '2455612 21600',
     'dtstart' => '2455612 9000',
     'summary' => 'RAISING CAIN',
@@ -344,7 +392,7 @@
     'url' => 'http://www.nissis.com/lmbio_raisingcain.html'
   },
   {
-    'description' => 'Rock N Roll Hall Of Fame\'s RICHIE FURAY Country Rock $20/$22 ',
+    'description' => 'Rock N Roll Hall Of Fame\'s RICHIE FURAY Country Rock $20/$22',
     'dtend' => '2455613 21600',
     'dtstart' => '2455613 9000',
     'summary' => 'RICHIE FURAY',
@@ -352,7 +400,7 @@
     'url' => 'http://www.nissis.com/lmbio_richiefuray.html'
   },
   {
-    'description' => 'WADIRUM Modern Folk $10/$12 ',
+    'description' => 'WADIRUM Modern Folk $10/$12',
     'dtend' => '2455614 18000',
     'dtstart' => '2455614 9000',
     'summary' => 'WADIRUM',
@@ -360,7 +408,15 @@
     'url' => 'http://www.nissis.com/lmbio_wadirum.html'
   },
   {
-    'description' => 'NELSON RANGELL Jazz $8/$10 ',
+    'description' => 'CONCERT FOR KABUL with THE TWO OF US CD Release $10 Half of the proceeds go to raise money for children in Afghanistan with Sozo International',
+    'dtend' => '2455616 18000',
+    'dtstart' => '2455616 9000',
+    'summary' => 'CONCERT FOR KABUL',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.clubnissis.com'
+  },
+  {
+    'description' => 'NELSON RANGELL Jazz $8/$10',
     'dtend' => '2455617 18000',
     'dtstart' => '2455617 9000',
     'summary' => 'NELSON RANGELL',
@@ -368,7 +424,7 @@
     'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
   {
-    'description' => 'NEW ARTIST SHOWCASE with IDLEWHILE Americana/Folk/Rock $5/$7 ',
+    'description' => 'NEW ARTIST SHOWCASE with IDLEWHILE Americana/Folk/Rock $5/$7',
     'dtend' => '2455618 18000',
     'dtstart' => '2455618 9000',
     'summary' => 'IDLEWHILE',
@@ -376,7 +432,7 @@
     'url' => 'http://www.nissis.com/lmbio_idlewhile.html'
   },
   {
-    'description' => 'ONE ON ONE Motown $12/$14 ',
+    'description' => 'ONE ON ONE Motown $12/$14',
     'dtend' => '2455619 21600',
     'dtstart' => '2455619 9000',
     'summary' => 'ONE ON ONE',
@@ -384,7 +440,7 @@
     'url' => 'http://www.nissis.com/oneonone_lmbio.html'
   },
   {
-    'description' => 'MESSAGE IN A BOTTLE A Police Tribute $10/$12 ',
+    'description' => 'MESSAGE IN A BOTTLE A Police Tribute $10/$12',
     'dtend' => '2455620 21600',
     'dtstart' => '2455620 9000',
     'summary' => 'MESSAGE IN A BOTTLE',
@@ -392,7 +448,7 @@
     'url' => 'http://www.nissis.com/lmbio_messageinabottle.html'
   },
   {
-    'description' => 'DOTSERO Jazz $10/$12 ',
+    'description' => 'DOTSERO Jazz $10/$12',
     'dtend' => '2455621 18000',
     'dtstart' => '2455621 9000',
     'summary' => 'DOTSERO',
@@ -400,7 +456,15 @@
     'url' => 'http://www.nissis.com/lmbio_dotsero.html'
   },
   {
-    'description' => 'COMEDY WORKS Presents TBA $10/$12 ',
+    'description' => 'KEVIN DOOLEY & FRIENDS with TBA $5/$7',
+    'dtend' => '2455623 18000',
+    'dtstart' => '2455623 9000',
+    'summary' => 'KEVIN DOOLEY & FRIENDS',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_kevindooleyandfriends_000.html'
+  },
+  {
+    'description' => 'COMEDY WORKS Presents TBA $10/$12',
     'dtend' => '2455625 18000',
     'dtstart' => '2455625 9000',
     'summary' => 'COMEDY WORKS',
@@ -408,7 +472,7 @@
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'NEW SENSATION 80\'S Rock $10/$12 ',
+    'description' => 'NEW SENSATION 80\'S Rock $10/$12',
     'dtend' => '2455626 21600',
     'dtstart' => '2455626 9000',
     'summary' => 'NEW SENSATION',
@@ -416,7 +480,7 @@
     'url' => 'http://www.nissis.com/lmbio_newsensation.html'
   },
   {
-    'description' => 'REBECCA FOLSOM Folk Rock $10/$12 ',
+    'description' => 'REBECCA FOLSOM Folk Rock $10/$12',
     'dtend' => '2455627 21600',
     'dtstart' => '2455627 9000',
     'summary' => 'REBECCA FOLSOM',
@@ -424,7 +488,7 @@
     'url' => 'http://www.nissis.com/lmbio_rebeccafolsom.com.html'
   },
   {
-    'description' => 'OPEN MIC NIGHT Music Comedy Poetry Hosted By PAUL SODERMAN NO COVER ',
+    'description' => 'OPEN MIC NIGHT Music Comedy Poetry Hosted By PAUL SODERMAN NO COVER',
     'dtend' => '2455630 18000',
     'dtstart' => '2455630 9000',
     'summary' => 'OPEN MIC NIGHT',
@@ -432,7 +496,7 @@
     'url' => 'http://www.nissis.com/lmbio_openmic.html'
   },
   {
-    'description' => 'BLUEZHOUSE With Paul Soderman R&B/Blues $10/$12 ',
+    'description' => 'BLUEZHOUSE With Paul Soderman R&B/Blues $10/$12',
     'dtend' => '2455633 21600',
     'dtstart' => '2455633 9000',
     'summary' => 'BLUEZHOUSE',
@@ -440,7 +504,7 @@
     'url' => 'http://www.nissis.com/lmbio_bluezhouse.html'
   },
   {
-    'description' => 'THE TICKET Female R&B/Motown Revue $10/$12 ',
+    'description' => 'THE TICKET Female R&B/Motown Revue $10/$12',
     'dtend' => '2455634 21600',
     'dtstart' => '2455634 9000',
     'summary' => 'THE TICKET',
@@ -448,7 +512,15 @@
     'url' => 'http://www.nissis.com/lmbio_theticket.html'
   },
   {
-    'description' => 'COLCANNON A Traditional Celtic Concert $15/$17 ',
+    'description' => 'COLCANNON A Traditional Celtic Concert $15/$17',
+    'dtend' => '2455638 14400',
+    'dtstart' => '2455638 5400',
+    'summary' => 'COLCANNON',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_colcannon.html'
+  },
+  {
+    'description' => 'COLCANNON A Traditional Celtic Concert $15/$17',
     'dtend' => '2455639 14400',
     'dtstart' => '2455639 5400',
     'summary' => 'COLCANNON',
@@ -456,7 +528,7 @@
     'url' => 'http://www.nissis.com/lmbio_colcannon.html'
   },
   {
-    'description' => 'THE INDULGERS Celtic Rock $10/$12 HOLD ',
+    'description' => 'THE INDULGERS Celtic Rock $10/$12 HOLD',
     'dtend' => '2455640 18000',
     'dtstart' => '2455640 5400',
     'summary' => 'THE INDULGERS',
@@ -464,7 +536,7 @@
     'url' => 'http://www.nissis.com/lmbio_indulgers.html'
   },
   {
-    'description' => 'ANGUS MOHR Highland Rock & Roll $10/$12 ',
+    'description' => 'ANGUS MOHR Highland Rock & Roll $10/$12',
     'dtend' => '2455641 18000',
     'dtstart' => '2455641 5400',
     'summary' => 'ANGUS MOHR',
@@ -472,7 +544,7 @@
     'url' => 'http://www.nissis.com/lmbio_angusmohr.html'
   },
   {
-    'description' => 'SHEL HOLD ',
+    'description' => 'SHEL HOLD',
     'dtend' => '2455646 18000',
     'dtstart' => '2455646 5400',
     'summary' => 'SHEL',
@@ -480,7 +552,7 @@
     'url' => 'http://www.nissis.com/lmbio_shel.html'
   },
   {
-    'description' => 'SOMETHING UNDERGROUND HOLD ',
+    'description' => 'SOMETHING UNDERGROUND HOLD',
     'dtend' => '2455647 14400',
     'dtstart' => '2455647 5400',
     'summary' => 'SOMETHING UNDERGROUND',
@@ -488,7 +560,7 @@
     'url' => 'http://www.nissis.com/lmbio_somethingunderground.html'
   },
   {
-    'description' => 'THE LONG RUN A Tribute To The Eagles $10/$12 ',
+    'description' => 'THE LONG RUN A Tribute To The Eagles $10/$12',
     'dtend' => '2455648 14400',
     'dtstart' => '2455648 5400',
     'summary' => 'THE LONG RUN',
@@ -496,7 +568,7 @@
     'url' => 'http://www.nissis.com/lmbio_thelongrun.html'
   },
   {
-    'description' => 'DAKOTA BLONDE $8/$10 HOLD ',
+    'description' => 'DAKOTA BLONDE $8/$10 HOLD',
     'dtend' => '2455649 14400',
     'dtstart' => '2455649 5400',
     'summary' => 'DAKOTA BLONDE',
@@ -504,7 +576,7 @@
     'url' => 'http://www.nissis.com/lmbio_dakotablonde.html'
   },
   {
-    'description' => 'FACE All Vocal Rock $15/$17 HOLD ',
+    'description' => 'FACE All Vocal Rock $15/$17 HOLD',
     'dtend' => '2455651 14400',
     'dtstart' => '2455651 5400',
     'summary' => 'FACE',
@@ -512,7 +584,7 @@
     'url' => 'http://www.nissis.com/lmbio_face.html'
   },
   {
-    'description' => 'NELSON RANGELL Jazz $10/$12 ',
+    'description' => 'NELSON RANGELL Jazz $10/$12',
     'dtend' => '2455652 14400',
     'dtstart' => '2455652 5400',
     'summary' => 'NELSON RANGELL',
@@ -520,7 +592,7 @@
     'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
   {
-    'description' => 'QDIVA EXPERIENCE R&B/Funk $5/$7 ',
+    'description' => 'QDIVA EXPERIENCE R&B/Funk $5/$7',
     'dtend' => '2455653 14400',
     'dtstart' => '2455653 5400',
     'summary' => 'QDIVA EXPERIENCE',
@@ -528,7 +600,7 @@
     'url' => 'http://www.nissis.com/lmbio_qdiva.html'
   },
   {
-    'description' => 'SOUL SCHOOL R&B Funk&Soul LET\'S DANCE ',
+    'description' => 'SOUL SCHOOL R&B Funk&Soul LET\'S DANCE',
     'dtend' => '2455655 18000',
     'dtstart' => '2455655 5400',
     'summary' => 'SOUL SCHOOL',
@@ -536,7 +608,7 @@
     'url' => 'http://www.nissis.com/lmbio_soulschool.html'
   },
   {
-    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER ',
+    'description' => 'LIVE KARAOKE with THE BRAT PACK NO COVER',
     'dtend' => '2455667 14400',
     'dtstart' => '2455667 5400',
     'summary' => 'THE BRAT PACK',
@@ -544,7 +616,7 @@
     'url' => 'http://www.nissis.com/lmbiobratpack.html'
   },
   {
-    'description' => 'HAZEL MILLER R&B & Jazz $12/$14 LET\'S DANCE ',
+    'description' => 'HAZEL MILLER R&B & Jazz $12/$14 LET\'S DANCE',
     'dtend' => '2455675 18000',
     'dtstart' => '2455675 5400',
     'summary' => 'HAZEL MILLER',
@@ -552,7 +624,15 @@
     'url' => 'http://www.nissis.com/hazelmiller.html'
   },
   {
-    'description' => 'CELEBRATE CINCO DE MAYO With SOUL SACRIFICE A Tribute To Santana $10/$12 HOLD ',
+    'description' => 'EASTER SUNDAY BRUNCH Reservations Recommended $19.95 $10.95.... 13 and under Under 5.... free Music by TBA SUNDAY EVENING CLOSED',
+    'dtend' => '2455677 14400',
+    'dtstart' => '2455677 14400',
+    'summary' => 'EASTER SUNDAY BRUNCH',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_easterbrunch.html'
+  },
+  {
+    'description' => 'CELEBRATE CINCO DE MAYO With SOUL SACRIFICE A Tribute To Santana $10/$12 HOLD',
     'dtend' => '2455688 14400',
     'dtstart' => '2455688 5400',
     'summary' => 'SOUL SACRIFICE',
@@ -560,7 +640,7 @@
     'url' => 'http://www.nissis.com/lmbio_soulsacrifice.html'
   },
   {
-    'description' => 'THE CHAMPIONS 80\'S Arena Rock $10/$12 HOLD Congratulations CU Grads! ',
+    'description' => 'THE CHAMPIONS 80\'S Arena Rock $10/$12 HOLD Congratulations CU Grads!',
     'dtend' => '2455689 18000',
     'dtstart' => '2455689 5400',
     'summary' => 'THE CHAMPIONS',
@@ -568,7 +648,7 @@
     'url' => 'http://www.nissis.com/lmbio_thechampions.html'
   },
   {
-    'description' => 'THE TICKET Female R&B/Motown Revue $10/$12 Congratulations CU Grads! ',
+    'description' => 'THE TICKET Female R&B/Motown Revue $10/$12 Congratulations CU Grads!',
     'dtend' => '2455690 18000',
     'dtstart' => '2455690 5400',
     'summary' => 'THE TICKET',
@@ -576,7 +656,7 @@
     'url' => 'http://www.nissis.com/lmbio_theticket.html'
   },
   {
-    'description' => 'ZEPPEPHIILIA Pure. Zeppelin. Live $10/$12 ',
+    'description' => 'ZEPPEPHIILIA Pure. Zeppelin. Live $10/$12',
     'dtend' => '2455697 18000',
     'dtstart' => '2455697 5400',
     'summary' => 'ZEPPEPHIILIA',
@@ -584,7 +664,7 @@
     'url' => 'http://www.nissis.com/lmbio_zeppaphilia.html'
   },
   {
-    'description' => 'LORRIE SINGER HOLD ',
+    'description' => 'LORRIE SINGER HOLD',
     'dtend' => '2455712 18000',
     'dtstart' => '2455712 5400',
     'summary' => 'LORRIE SINGER',
@@ -592,7 +672,7 @@
     'url' => 'http://www.nissis.com/lmbio_lorriesinger.html'
   },
   {
-    'description' => 'SOUL SCHOOL R&BFunk&Soul $10/$12 LET\'S DANCE ',
+    'description' => 'SOUL SCHOOL R&BFunk&Soul $10/$12 LET\'S DANCE',
     'dtend' => '2455717 18000',
     'dtstart' => '2455717 5400',
     'summary' => 'SOUL SCHOOL',
@@ -600,7 +680,7 @@
     'url' => 'http://www.nissis.com/lmbio_soulschool.html'
   },
   {
-    'description' => 'LIVE KARAOKE with "MY BAND" $5 ',
+    'description' => 'LIVE KARAOKE with "MY BAND" $5',
     'dtend' => '2455723 12600',
     'dtstart' => '2455723 5400',
     'summary' => '"MY BAND"',
@@ -608,7 +688,7 @@
     'url' => 'http://www.nissis.com/lmbio_myband.html'
   },
   {
-    'description' => 'CEILI RAIN Celtic Rock HOLD ',
+    'description' => 'CEILI RAIN Celtic Rock HOLD',
     'dtend' => '2455730 12600',
     'dtstart' => '2455730 5400',
     'summary' => 'CEILI RAIN',
@@ -616,7 +696,7 @@
     'url' => 'http://www.nissis.com/lmbio_ceilirain.html'
   },
   {
-    'description' => 'NELSON RANGELL JAZZ $10/$12 ',
+    'description' => 'NELSON RANGELL JAZZ $10/$12',
     'dtend' => '2455743 12600',
     'dtstart' => '2455743 5400',
     'summary' => 'NELSON RANGELL',
@@ -624,7 +704,15 @@
     'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
   {
-    'description' => 'COMEDYWORKS presents TBA $10/$12 ',
+    'description' => 'KEVIN DOOLEY & FRIENDS Music Showcase featuring',
+    'dtend' => '2455749 12600',
+    'dtstart' => '2455749 5400',
+    'summary' => 'KEVIN DOOLEY & FRIENDS',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nissis.com/lmbio_kevindooleyandfriends_000.html'
+  },
+  {
+    'description' => 'COMEDYWORKS presents TBA $10/$12',
     'dtend' => '2455751 12600',
     'dtstart' => '2455751 5400',
     'summary' => 'COMEDYWORKS',
@@ -632,7 +720,7 @@
     'url' => 'http://www.nissis.com/lmbio_comedyworks.html'
   },
   {
-    'description' => 'THAT EIGHTIES BAND $10/$12 LET\'S DANCE! ',
+    'description' => 'THAT EIGHTIES BAND $10/$12 LET\'S DANCE!',
     'dtend' => '2455752 18000',
     'dtstart' => '2455752 5400',
     'summary' => 'THAT EIGHTIES BAND',
@@ -640,7 +728,7 @@
     'url' => 'http://www.nissis.com/lmbio_thateightiesband.html'
   },
   {
-    'description' => 'LIVE KARAOKE Featuring THE BRAT PACK NO COVER No reservations needed...just come on in *Parties of 6 or more - please call 303-665-2757 ',
+    'description' => 'LIVE KARAOKE Featuring THE BRAT PACK NO COVER No reservations needed...just come on in *Parties of 6 or more - please call 303-665-2757',
     'dtend' => '2455758 12600',
     'dtstart' => '2455758 5400',
     'summary' => 'THE BRAT PACK',
@@ -648,7 +736,7 @@
     'url' => 'http://www.nissis.com/lmbiobratpack.html'
   },
   {
-    'description' => 'NELSON RANGELL Jazz $10/$12 ',
+    'description' => 'NELSON RANGELL Jazz $10/$12',
     'dtend' => '2455771 12600',
     'dtstart' => '2455771 5400',
     'summary' => 'NELSON RANGELL',
@@ -656,7 +744,7 @@
     'url' => 'http://www.nissis.com/lmbio_nelsonrangell.html'
   },
   {
-    'description' => 'COMEDYWORKS presents TBA ',
+    'description' => 'COMEDYWORKS presents TBA',
     'dtend' => '2455779 14400',
     'dtstart' => '2455779 5400',
     'summary' => 'COMEDYWORKS',

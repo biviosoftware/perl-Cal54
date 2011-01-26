@@ -1,26 +1,54 @@
 [
   {
-    'description' => 'Words in Flight is a unique and local acoustic band, driven by the original tunes of Drew Brightbill. The influences are as varied as classic rock, indie/alternative rock, folk, pop, jazz, blues, and classical. With these influences, their original music possesses something distinct, catchy, and memorable in each song. Their sound is deepened by female vocal harmonies by Stacy Riley, textured, accomplished keyboard playing by Craig Schwartz, and the talented David James and Paul Christophersen on upright bass and drums, respectively. Words in Flight shows appeal to a broad range of listeners with their diversity. . . Join them for an original music adventure.
-',
+    'description' => 'Words in Flight is a unique and local acoustic band, driven by the original tunes of Drew Brightbill. The influences are as varied as classic rock, indie/alternative rock, folk, pop, jazz, blues, and classical. With these influences, their original music possesses something distinct, catchy, and memorable in each song. Their sound is deepened by female vocal harmonies by Stacy Riley, textured, accomplished keyboard playing by Craig Schwartz, and the talented David James and Paul Christophersen on upright bass and drums, respectively. Words in Flight shows appeal to a broad range of listeners with their diversity. . . Join them for an original music adventure.',
     'dtend' => '2455584 12600',
     'dtstart' => '2455584 1800',
     'summary' => 'Words in Flight',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.myspace.com/wordsinflight'
   },
   {
-    'description' => 'Rocked to sleep as a child to Stevie Wonder, Dechen Hawk\'s music ranges from beautiful ballads to serious backbeat funk. For the past 15 years he has performed locally and nationally and shared billing with such legends as Bruce Hornsby, Leon Russell, R.E.M., Ty Burhoe, Ron Miles, and the Fun Lovin\' Criminals.  A 2009 graduate of Naropa University, he studied with Bill Douglas, Art Lande, and Janet Feder. Music credits for television/film/radio include the Swedish documentary "No Artificial Anything", reality TV\'s "What\'s Your Problem", the indie film "Don Juan\'s Diary", and KGNU radio\'s "Jazz & Beyond". Dechen was a finalist at the 2003 NCSC Songwriter\'s Competition and his newly formed neo-soul/pop-noir project \'Dechen Hawk & A Murder of Prose\' highlights the songwriter\'s talents. Dechen Hawk also has residency, hosting the illustrious monday night open mic at Johnny\'s Cigar Bar. And he\'s the booking manager for the renowned Laughing Goat Artisan Coffee Shop, Bar & Venue.
-',
+    'description' => 'Rocked to sleep as a child to Stevie Wonder, Dechen Hawk\'s music ranges from beautiful ballads to serious backbeat funk. For the past 15 years he has performed locally and nationally and shared billing with such legends as Bruce Hornsby, Leon Russell, R.E.M., Ty Burhoe, Ron Miles, and the Fun Lovin\' Criminals. A 2009 graduate of Naropa University, he studied with Bill Douglas, Art Lande, and Janet Feder. Music credits for television/film/radio include the Swedish documentary "No Artificial Anything", reality TV\'s "What\'s Your Problem", the indie film "Don Juan\'s Diary", and KGNU radio\'s "Jazz & Beyond". Dechen was a finalist at the 2003 NCSC Songwriter\'s Competition and his newly formed neo-soul/pop-noir project \'Dechen Hawk & A Murder of Prose\' highlights the songwriter\'s talents. Dechen Hawk also has residency, hosting the illustrious monday night open mic at Johnny\'s Cigar Bar. And he\'s the booking manager for the renowned Laughing Goat Artisan Coffee Shop, Bar & Venue.',
     'dtend' => '2455585 12600',
     'dtstart' => '2455585 1800',
     'summary' => 'Dechen Hawk',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.dechenhawk.com'
   },
   {
-    'description' => 'A delicious blend of acoustic guitars, mandolin, upright bass and uplifting three-part harmonies, the sound is rich with groove and yet spare enough to let the poetry of the songs shine through shooting straight to the heart.
-',
+    'description' => 'A delicious blend of acoustic guitars, mandolin, upright bass and uplifting three-part harmonies, the sound is rich with groove and yet spare enough to let the poetry of the songs shine through shooting straight to the heart.',
     'dtend' => '2455591 12600',
     'dtstart' => '2455591 1800',
     'summary' => 'Rebecca Folsom Trio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.rebeccafolsom.com'
+  },
+  {
+    'description' => undef,
+    'dtend' => '2455598 12600',
+    'dtstart' => '2455598 1800',
+    'summary' => 'Scott Dale Trio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => undef,
+    'dtend' => '2455599 12600',
+    'dtstart' => '2455599 1800',
+    'summary' => 'Molly Greacen and the Sweet Life Brazilian Jazz Band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => undef,
+    'dtend' => '2455606 12600',
+    'dtstart' => '2455606 1800',
+    'summary' => 'Laurie Dameron Trio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => undef,
+    'dtend' => '2455612 12600',
+    'dtstart' => '2455612 1800',
+    'summary' => 'Scott Martin Trio, featuring Crystal Collins on Vocals',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
   }
 ]
