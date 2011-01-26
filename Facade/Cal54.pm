@@ -54,6 +54,7 @@ my($_SELF) = __PACKAGE__->new({
 	[ADM_CALENDAR_EVENT_LIST_FORM => '?/events'],
 	[ADM_VENUE_FORM => '?/edit-venue'],
 	[ADM_VENUE_LIST => '?/venues'],
+	[ADM_VENUE_SCRAPER_FORM => '?/scraper'],
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],
@@ -64,12 +65,14 @@ my($_SELF) = __PACKAGE__->new({
 	    ADM_VENUE_LIST => 'Venues',
 	    ADM_CALENDAR_EVENT_LIST_FORM => 'Events',
 	    ADM_VENUE_FORM => 'Edit Venue',
+	    ADM_VENUE_SCRAPER_FORM => 'Scraper Definition',
 	]],
 	['task_menu.title' => [
 	    ADM_VENUE_FORM => 'Add Venue',
 	]],
 	[Venue => [
 	    scraper_type => 'Scraper',
+	    scraper_aux => 'Scraper Aux',
 	]],
 	[[qw(VenueList VenueForm)] => [
 	    'Website.url' => 'Home Page',
