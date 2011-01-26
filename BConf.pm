@@ -22,6 +22,7 @@ sub merge_overrides {
                 'Bivio::Type::Location',
 	    ],
 	    maps => {
+		Action => ['Cal54::Action'],
 		Bivio => ['Cal54'],
 		Delegate => ['Cal54::Delegate'],
 		Facade => ['Cal54::Facade'],
