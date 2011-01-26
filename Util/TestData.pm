@@ -114,9 +114,33 @@ sub _init_venues {
 	    'http://www.nissis.com',
 	    'marc@nissis.com',
 	    '303.665.2757',
-	    $_S->NISSIS,
+	    $_S->REGEXP,
 	    'nissis',
 	    'music',
+	    <<'EOF',
+{
+    repeat => [
+	[qr/($month\s*>.*)/, {
+	    fields => ['link'],
+	    follow_link => {
+		global => [
+		    [qr/$month\s+$year/, {
+			fields => ['month', 'year'],
+		    }],
+		],
+		repeat => [
+		    [qr/\n$day\s+$time\s*\-\s*$time\s(.*?)(\n$day\n|\nGathering Place)/s, {
+			fields => ['day', 'start_time_pm', 'end_time_pm',
+			    'description', 'save'],
+			summary_from_description =>
+			    qr/(?:^|\n)([^\n]+\{\d+\})\n/s,
+		    }],
+		],
+	    },
+	}],
+    ],
+}
+EOF
 	],
 	[
 	    'CU Macky Auditorium',
@@ -245,8 +269,18 @@ sub _init_venues {
 	    'http://www.thewestendtavern.com',
 	    'westend@bigredf.com',
 	    '303.444.3535',
-	    $_S->WEST_END_TAVERN,
+	    $_S->REGEXP,
 	    'westend',
+	    undef,
+	    <<'EOF',
+{
+    repeat => [
+        [qr/(?:$month\s+)?$day\s+(.*?)\s*,\s*$time_ap\s+(.*?)\n\n/s, {
+	    fields => ['month', 'day', 'summary', 'start_time', 'description'],
+	}],
+    ],
+}
+EOF
 	],
 	[
 	    'Hotel Boulderado',
@@ -259,8 +293,23 @@ sub _init_venues {
 	    'http://www.boulderado.com',
 	    'ignore-boulderaro@bivio.biz',
 	    '303.442.4344',
-	    $_S->BOULDERADO,
+	    $_S->REGEXP,
 	    'boulderado',
+	    undef,
+	    <<'EOF',
+{
+    global => [
+        [qr/Live Music ${time_ap}\s*\-\s*$time_ap/, {
+            fields => ['start_time', 'end_time'],
+	}],
+    ],
+    repeat => [
+        [qr/\b$day_name,\s*$month\s+$day\s*~\s*$line(?:\((.*?)\))?/, {
+	    fields => ['day_name', 'month', 'day', 'summary', 'description'],
+	}],
+    ],
+}
+EOF
 	],
 	[
 	    'Colorado Chautauqua Association',
@@ -273,8 +322,18 @@ sub _init_venues {
 	    'http://www.chautauqua.com',
 	    'ignore-chautauqua@bivio.biz',
 	    '303.442.3282',
-	    $_S->CHAUTAUQUA,
+	    $_S->REGEXP,
 	    'chautauqua',
+	    undef,
+	    <<'EOF',
+{
+    repeat => [
+	[qr{([^\n]+?\n(?:[^\n]+?\n)?)\w+,\s*$month\s+$day,\s+$year,\s+$time_ap.*?\n\n([^\n]+)\n\n}s, {
+	    fields => [qw(summary month day year start_time description)],
+	}],
+    ],
+}
+EOF
 	],
 	[
 	    'CU Cristol Chemistry & Biochemistry',
@@ -315,8 +374,28 @@ sub _init_venues {
 	    'http://foxtheatre.com',
 	    'ignore-foxtheatre@colorado.edu',
 	    '',
-	    $_S->FOX_THEATRE,
+	    $_S->REGEXP,
 	    'foxtheatre',
+	    undef,
+	    <<'EOF',
+{
+    repeat => [
+	[qr{^$month_day\s+(.*?)\s*$}m, {
+	    fields => [qw(month_day summary)],
+	    follow_link => {
+		global => [
+		    [qr{\bshow\:\s*$time_ap}i, {
+			fields => ['start_time'],
+		    }],
+		    [qr{about this show.*?\n+(.*?)\n}is, {
+			fields => ['description'],
+		    }],
+		],
+	    }
+	}],
+    ],
+}
+EOF
 	],
     ) {
         my($v) = {map(
@@ -335,6 +414,7 @@ sub _init_venues {
 		Venue.scraper_type
 		name
 		RowTag.value
+		Venue.scraper_aux
 	    ),
 	)};
 	$self->req->with_realm(
@@ -343,6 +423,9 @@ sub _init_venues {
 	    sub {
 		$self->model('VenueForm', $v);
 		$self->req('Model.RealmOwner')->update({name => $v->{name}});
+		$self->req('Model.Venue')->update({
+		    scraper_aux => $v->{'Venue.scraper_aux'},
+		});
 		return;
 	    },
 	);
