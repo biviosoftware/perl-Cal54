@@ -129,7 +129,7 @@ sub _month_regexp {
 sub _process_url {
     my($self, $cfg, $url, $current) = @_;
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
-    my($text) = $cleaner->clean_html($self->c4_scraper_get($url));
+    my($text) = $cleaner->clean_html($self->c4_scraper_get($url), $url);
 
     foreach my $info (@{$cfg->{global} || []}) {
 	my($regexp, $args) = @$info;
@@ -153,8 +153,8 @@ sub _process_url {
 		($current->{summary}) = $current->{description} =~
 		    $args->{summary_from_description};
 	    }
-	    $current->{url} ||= _url($self,
-	        $cleaner->unsafe_get_link_for_text($current->{summary}))
+	    $current->{url} ||=
+	        $cleaner->unsafe_get_link_for_text($current->{summary})
 		if $current->{summary};
 	    push(@{$self->get('events')}, {
 		time_zone => $self->get('time_zone'),
@@ -178,16 +178,6 @@ sub _save_text {
 	$str .= '$' . ($i + 1);
     }
     return $str ? eval('"' . $str . '"') : '';
-}
-
-sub _url {
-    my($self, $page) = @_;
-    return undef unless $page;
-    return $page
-	if $page =~ m{\://};
-    $page =~ s{^/}{};
-#TODO: change to stripped calendar url?
-    return $self->get('venue_list')->get('Website.url') . '/' . $page;
 }
 
 1;
