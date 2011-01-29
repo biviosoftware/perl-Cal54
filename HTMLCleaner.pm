@@ -137,6 +137,7 @@ sub unsafe_get_link_for_text {
 	unless defined($index) && $index < @{$fields->{links}};
     my($url) = $fields->{links}->[$index];
     return $url if $url =~ m{\://};
+    return undef if $url =~ /javascript/;
     return URI->new_abs($url, $fields->{url})->as_string;
 }
 
