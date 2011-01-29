@@ -23,8 +23,12 @@ sub clear_events {
     $self->are_you_sure('Clear events for '
         . $self->req(qw(auth_realm owner name)) . '?');
     my($ro) = $self->model('RealmOwner');
+    my($sw) = $self->model('SearchWords');
     $self->model('CalendarEvent')->do_iterate(sub {
         my($ce) = @_;
+	$sw->unauth_delete({
+	    realm_id => $ce->get('calendar_event_id'),
+	});
 	$ro->unauth_delete({
 	    realm_id => $ce->get('calendar_event_id'),
 	});
