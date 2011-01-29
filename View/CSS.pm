@@ -97,6 +97,9 @@ span.c4_tm {
 div.c4_copy {
   Font('c4_copy');
 }
+div.c4_scraper {
+  width: 50em;
+}
 EOF
 }
 
