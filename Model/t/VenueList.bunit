@@ -6,7 +6,7 @@ req()->initialize_fully
 ShellUtil_TestData()->reset_all;
 [
     load_all => [
-        [] => [map(+{}, 1..17)],
+        [] => undef,
     ],
     find_row_by => [
 	['RealmOwner.display_name', q{Nissi's}] => sub {[shift->get('object')]},
