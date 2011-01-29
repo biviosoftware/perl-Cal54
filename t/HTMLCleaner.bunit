@@ -49,7 +49,9 @@ hi there <a>some text</a> and more<br />
 space</span>
 
 
-<a href="x.html">more text</a>. abc <a href="y.html">foo</a> x
+<a href="x.html">more text</a>. abc <a href="http://x.com/y.html">foo</a> x
+
+<a href="bogus:">blah</a>
 
 table:
   <table>
@@ -72,7 +74,9 @@ some more text with white space
 more text{0}
 . abc
 foo{1}
-x table:
+x
+blah{2}
+table:
 cell1
 cell2
 
@@ -89,6 +93,7 @@ EOF
 	],
 	unsafe_get_link_for_text => [
 	    'cell1' => undef,
+	    'blah{2}' => undef,
 	],
     ],
 ];
