@@ -18,7 +18,7 @@ sub internal_import {
     my($html) = $self->c4_scraper_get(
 	$self->get('venue_list')->get('calendar.Website.url'));
     my($cal_id) =
-	$$html =~ m,www\.google\.com/calendar/embed\?src=(.*?)(\&|"),;
+	$$html =~ m{www\.google\.com/calendar/embed\?[^"]*?src=(.*?)(\&|")};
     b_die('failed to parse cal_id: ', $html)
 	unless $cal_id;
     return unless _parse_ics($self, $cal_id, $start, $end);
@@ -108,8 +108,9 @@ sub _parse_ics {
 	    next if $v->{rrule} && $recurrences->{_recurrence_id($v)};
 	    next if $_DT->compare($v->{dtstart}, $start) < 0;
 	    push(@{$self->get('events')}, {
-		map(($_ => $v->{$_}),
-		    qw(description dtend dtstart time_zone uid summary)),
+		map(($_ => $v->{$_}), qw(dtend dtstart time_zone uid)),
+		summary => $self->internal_clean($v->{summary}),
+		description => $self->internal_clean($v->{description}),
 	    });
 	}
     }
