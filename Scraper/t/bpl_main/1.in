@@ -8,10 +8,10 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8199'
   },
   {
-    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library.',
     'dtend' => '2455577 72000',
     'dtstart' => '2455577 61200',
-    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'summary' => 'BoulderReads! Student Walk-in Hours',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8795'
   },
@@ -56,7 +56,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=5599'
   },
   {
-    'description' => "Through the eyes of a young singer manipulated by her magnetic and dangerous \x{93}Angel of Music,\x{94} you'll journey into the fantastical world of the 1880s Paris Opera House. Inspired by Gaston Leroux\x{92}s original novel, this tale of seduction and surrender is set against the visually stunning backdrop of Lon Chaney\x{92}s 1925 classic film. Through beautiful vocals, spellbinding narrative and classic screen imagery, Marta Burton and Nick Rossi mesmerize audiences while accessing the story\x{92}s deep and timeless power. READ the Blog: http://denverlibrary.org/content/phantom-crossroads-theatre-singer-marta-burton-brings-little-illumination-five-points ",
+    'description' => 'Through the eyes of a young singer manipulated by her magnetic and dangerous "Angel of Music," you\'ll journey into the fantastical world of the 1880s Paris Opera House. Inspired by Gaston Leroux\'s original novel, this tale of seduction and surrender is set against the visually stunning backdrop of Lon Chaney\'s 1925 classic film. Through beautiful vocals, spellbinding narrative and classic screen imagery, Marta Burton and Nick Rossi mesmerize audiences while accessing the story\'s deep and timeless power. READ the Blog: http://denverlibrary.org/content/phantom-crossroads-theatre-singer-marta-burton-brings-little-illumination-five-points ',
     'dtend' => '2455579 1800',
     'dtstart' => '2455578 82800',
     'summary' => 'The Library Concert Series Presents: Phantom of the Opera--Dark Duet',
@@ -64,7 +64,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8213'
   },
   {
-    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826.',
     'dtend' => '2455580 68400',
     'dtstart' => '2455580 61200',
     'summary' => 'GED classes',
@@ -72,7 +72,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2568'
   },
   {
-    'description' => "Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\x{92}s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot\@gmail.com).",
+    'description' => 'Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\'s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot@gmail.com).',
     'dtend' => '2455580 68400',
     'dtstart' => '2455580 61200',
     'summary' => 'Boulder World Affairs Discussion Group',
@@ -107,7 +107,7 @@
     'description' => 'MOKOBA! African music and dance ensemble.',
     'dtend' => '2455580 72000',
     'dtstart' => '2455580 68400',
-    'summary' => 'The Third Tuesday Lunchtime Concert Series Presents: ',
+    'summary' => 'The Third Tuesday Lunchtime Concert Series Presents:',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8212'
   },
@@ -184,7 +184,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7827'
   },
   {
-    'description' => "Nuestras presentaciones de las \"Series sobre las Cortes\" fundadas en septiembre del a\x{f1}o de 2007, son una actividad conjunta del Instituto Judicial de Colorado y la Asociaci\x{f3}n de la Barra de Colorado.  Proveen  informaci\x{f3}n sin tomar partido para extender el conocimiento p\x{fa}blico y el entendimiento de las cortes estatales y federales en Colorado.  Los presentadores se refieren al papel justo e imparcial de las cortes en aplicar y preservar las reglas de la ley; no toman ninguna posici\x{f3}n en relaci\x{f3}n con cualquier caso en la corte, la legislatura, asuntos del voto, o los cambios propuestos en el sistema de la corte.  [This event is one of four lectures on the court system in the USA, this specific lecture is in Spanish. For English please see January 12, April and July 13, and October 12, 2011] ",
+    'description' => 'Nuestras presentaciones de las "Series sobre las Cortes" fundadas en septiembre del aÃ±o de 2007, son una actividad conjunta del Instituto Judicial de Colorado y la Asociacion de la Barra de Colorado.  Proveen  informacion sin tomar partido para extender el conocimiento publico y el entendimiento de las cortes estatales y federales en Colorado.  Los presentadores se refieren al papel justo e imparcial de las cortes en aplicar y preservar las reglas de la ley; no toman ninguna posicion en relacion con cualquier caso en la corte, la legislatura, asuntos del voto, o los cambios propuestos en el sistema de la corte.  [This event is one of four lectures on the court system in the USA, this specific lecture is in Spanish. For English please see January 12, April and July 13, and October 12, 2011]',
     'dtend' => '2455582 13500',
     'dtstart' => '2455582 7200',
     'summary' => 'Las Cortes Estatales de Colorado y Las Cortes Federales',
@@ -192,7 +192,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=6689'
   },
   {
-    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826.',
     'dtend' => '2455582 68400',
     'dtstart' => '2455582 61200',
     'summary' => 'GED classes',
@@ -208,7 +208,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9371'
   },
   {
-    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.  ',
+    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.',
     'dtend' => '2455582 81000',
     'dtstart' => '2455582 70200',
     'summary' => 'BoulderReads! Adult Literacy Tutor Training',
@@ -232,7 +232,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8943'
   },
   {
-    'description' => "Thursday January 20 What I Love About Boulder | Local Motion Picture Producer | Federico Fellini Birthday 1920 Fellini: A Director's Notebook (Block-Notes di un Regista) Directed by Federico Fellini, with Federico Fellini, Giuliette Masina, Marcello Mastorianni, Professor Genius (Italy\x{a8}D1969).  This film was produced by Peter Goldfarb of Boulder for the NBC Experiment in Television series.  A seminal work in Fellini\x{a1}\x{af}s film canon, it is composed of episodes of his career during the time he was shooting Sytricon.  Included is a visit to the set of an abandoned film project The Voyage of G. Mastorna (it. title), research and casting for Sytricon, a scene cut from the final version of Nights of Cabiria (Le Notte Di Cabiria), journeys with Fellini through Rome and along the Via Appia and a visit to Marcello Mastroianni\x{a1}\x{af}s house.  The final scene is Fellini\x{a1}\x{af}s office at Cinecitt\x{a8}\x{a4} as an incredible assortment of people parade past his desk in hopes of being cast.  In English, Italian and Latin with subtitles.  Music by Nino Rota.  Peter Goldfarb introduces the film and answers questions after the screening.   (55 min.) ",
+    'description' => 'Thursday January 20 What I Love About Boulder | Local Motion Picture Producer | Federico Fellini Birthday 1920 Fellini: A Director\'s Notebook (Block-Notes di un Regista) Directed by Federico Fellini, with Federico Fellini, Giuliette Masina, Marcello Mastorianni, Professor Genius (Italy¨D1969).  This film was produced by Peter Goldfarb of Boulder for the NBC Experiment in Television series.  A seminal work in Fellini¡¯s film canon, it is composed of episodes of his career during the time he was shooting Sytricon.  Included is a visit to the set of an abandoned film project The Voyage of G. Mastorna (it. title), research and casting for Sytricon, a scene cut from the final version of Nights of Cabiria (Le Notte Di Cabiria), journeys with Fellini through Rome and along the Via Appia and a visit to Marcello Mastroianni¡¯s house.  The final scene is Fellini¡¯s office at Cinecitt¨¤ as an incredible assortment of people parade past his desk in hopes of being cast.  In English, Italian and Latin with subtitles.  Music by Nino Rota.  Peter Goldfarb introduces the film and answers questions after the screening.   (55 min.) ',
     'dtend' => '2455583 14400',
     'dtstart' => '2455583 9000',
     'summary' => 'screening of "Fellini: A Director\'s Notebook"',
@@ -264,10 +264,10 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7873'
   },
   {
-    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library.',
     'dtend' => '2455584 72000',
     'dtstart' => '2455584 61200',
-    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'summary' => 'BoulderReads! Student Walk-in Hours',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8796'
   },
@@ -275,7 +275,7 @@
     'description' => 'Informal origami workshops. Age 10 and older or experienced younger folders accompanied by an adult. Please bring your own paper if you have it. FREE. This group meets on the 2nd Monday of each month 6:30 - 8:30 p.m. and on the 4th Saturday of the month from 10:15 - noon.',
     'dtend' => '2455584 68400',
     'dtstart' => '2455584 62100',
-    'summary' => '"Boulder Folders" Origami drop-in Folding Session ',
+    'summary' => '"Boulder Folders" Origami drop-in Folding Session',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7899'
   },
@@ -288,7 +288,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9334'
   },
   {
-    'description' => 'Moonscapes is a group of women committed to exploring the challenges and potential of midlife and beyond.  We share insights, experiences, and resources, to support and create our own best lives.  Program: 2:30-4:30pm.  Informal socializing: 4:30-5:00pm. For more information:www.moonscapes.groupsite.com  ',
+    'description' => 'Moonscapes is a group of women committed to exploring the challenges and potential of midlife and beyond.  We share insights, experiences, and resources, to support and create our own best lives.  Program: 2:30-4:30pm.  Informal socializing: 4:30-5:00pm. For more information:www.moonscapes.groupsite.com',
     'dtend' => '2455585 0',
     'dtstart' => '2455584 77400',
     'summary' => 'Moonscapes',
@@ -320,7 +320,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9137'
   },
   {
-    'description' => "Recognizing the need for all Boulder Teens to have a voice, the Boulder Teen Advisory Board (BTAB) exists to provide a forum to represent teens\x{92} interests impartially for the Boulder Public Library and the community.  The goal of BTAB is to serve the needs of Boulder youth by employing a representative process.  	 Teens from different area schools meet monthly to organize teen library events, decide what will be added to the teen library collection and discuss ways to improve the lives of Boulder County teens.    BTAB wiki: http://btab.wetpaint.com/?t=anon Website: http://www.boulderteens.org/calendar.htm Email: howardm\@bouldercolorado.gov  ",
+    'description' => 'Recognizing the need for all Boulder Teens to have a voice, the Boulder Teen Advisory Board (BTAB) exists to provide a forum to represent teens\' interests impartially for the Boulder Public Library and the community.  The goal of BTAB is to serve the needs of Boulder youth by employing a representative process.   Teens from different area schools meet monthly to organize teen library events, decide what will be added to the teen library collection and discuss ways to improve the lives of Boulder County teens.    BTAB wiki: http://btab.wetpaint.com/?t=anon Website: http://www.boulderteens.org/calendar.htm Email: howardm@bouldercolorado.gov  ',
     'dtend' => '2455587 3600',
     'dtstart' => '2455586 82800',
     'summary' => 'Boulder Teen Advisory Board',
@@ -352,7 +352,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8571'
   },
   {
-    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826.',
     'dtend' => '2455587 68400',
     'dtstart' => '2455587 61200',
     'summary' => 'GED classes',
@@ -360,7 +360,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2569'
   },
   {
-    'description' => "Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\x{92}s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot\@gmail.com).",
+    'description' => 'Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\'s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot@gmail.com).',
     'dtend' => '2455587 68400',
     'dtstart' => '2455587 61200',
     'summary' => 'Boulder World Affairs Discussion Group',
@@ -408,7 +408,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9434'
   },
   {
-    'description' => "This event kicks off the new, monthly Local Authors Series.   Buzzy Jackson, who lives in Louisville, is the author of \"Shaking the Family Tree: Blue Bloods, Black Sheep, and Other Obsessions of an Accidental Genealogist\" recently published by Simon and Schuster. She will read from the book, answer questions  from the audience and be available to sign her book, which will be for sale at the event.  \"WHO ARE YOU AND WHERE DO YOU COME FROM?\"   As a historian, Buzzy Jackson thought she knew the answers to these simple questions\x{97}that is, until she took a look at her scrawny family tree. With a name like Jackson (the twentieth most common American surname), she knew she must have more relatives and more family history out there, somewhere. Her first visit to the Boulder Genealogy Society brought her more questions than answers . . . but it also gave her a tantalizing peek into the fascinating (and enormous) community of family-tree huggers and after-hours Alex Haleys.   In Shaking the Family Tree, Jackson dives headfirst into her family gene pool: flying cross-country to locate an ancient family graveyard, embarking on a weeklong genealogy Caribbean cruise, and even submitting her DNA for testing to try to find her Jacksons. And in the process of researching her own family lore (Who was Bullwhip Jackson?) she meets legions of other genealogy buffs who are as interesting as they are driven\x{97}from the boy who saved his allowance so he could order his great-grandfather's death certificate to the woman who spends her free time documenting the cemeteries of Colorado ghost towns.   Through Jackson's research she connects with distant relatives, traces her roots back more than 250 years and in the process comes to discover\x{97}genetically, historically, and emotionally\x{97}the true meaning of \"family\" for herself.  ",
+    'description' => 'This event kicks off the new, monthly Local Authors Series.   Buzzy Jackson, who lives in Louisville, is the author of "Shaking the Family Tree: Blue Bloods, Black Sheep, and Other Obsessions of an Accidental Genealogist" recently published by Simon and Schuster. She will read from the book, answer questions  from the audience and be available to sign her book, which will be for sale at the event.  "WHO ARE YOU AND WHERE DO YOU COME FROM?"   As a historian, Buzzy Jackson thought she knew the answers to these simple questions--that is, until she took a look at her scrawny family tree. With a name like Jackson (the twentieth most common American surname), she knew she must have more relatives and more family history out there, somewhere. Her first visit to the Boulder Genealogy Society brought her more questions than answers . . . but it also gave her a tantalizing peek into the fascinating (and enormous) community of family-tree huggers and after-hours Alex Haleys.   In Shaking the Family Tree, Jackson dives headfirst into her family gene pool: flying cross-country to locate an ancient family graveyard, embarking on a weeklong genealogy Caribbean cruise, and even submitting her DNA for testing to try to find her Jacksons. And in the process of researching her own family lore (Who was Bullwhip Jackson?) she meets legions of other genealogy buffs who are as interesting as they are driven--from the boy who saved his allowance so he could order his great-grandfather\'s death certificate to the woman who spends her free time documenting the cemeteries of Colorado ghost towns.   Through Jackson\'s research she connects with distant relatives, traces her roots back more than 250 years and in the process comes to discover--genetically, historically, and emotionally--the true meaning of "family" for herself.  ',
     'dtend' => '2455588 12600',
     'dtstart' => '2455588 7200',
     'summary' => '"Shaking the Family Tree" with author Buzzy Jackson',
@@ -432,7 +432,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9068'
   },
   {
-    'description' => 'Join Michael Stanwood (Didgeridoo), Jesse Manno (Oud), Dexter Payne (Clarinet, Sax) and friends, for an hour of beautiful improvised music. ',
+    'description' => 'Join Michael Stanwood (Didgeridoo), Jesse Manno (Oud), Dexter Payne (Clarinet, Sax) and friends, for an hour of beautiful improvised music.',
     'dtend' => '2455588 66600',
     'dtstart' => '2455588 63000',
     'summary' => 'Morning Music Meditation',
@@ -464,7 +464,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7833'
   },
   {
-    'description' => "This group, which frequently uses approaches to discussion and selections from the Great Books of the Western World, meets in the Meadows Branch Library, usually on even-date Wednesdays from 7:30 - 8:45 p.m.           Great Books Discussion Group 2011 Reading List:  January 12, 2011 Virginia Hamilton, In the Beginning: Creation Stories from Around the World (176 pages) ( reference: Barbara C. Sproul, Primal Myths ) January 26, 2011 ** Introduction and Rules for the Direction of the Mind* Ren\x{e9} Descartes One week February 02, 2011 ** Katahdin* and Death of a Pine Henry David Thoreau February 16, 2011 ** Man and Nature* George Perkins Marsh ** The Biosphere* Vladimir I. Vernadsky March 02, 2011 Douglas Adams, Mark Carwardine, Last Chance to See (256 pages) March 16, 2011 ** The Climax Concept Frederic E. Clements ** The Ecosystem A. G. Tansley March 30, 2011 Noether's Theorem http://www.sackett.net/Noetherii.pdf (ii = 1,12) One week April 06, 2011 Poetry \x{96} Mary Oliver and Gary Snyder April 20, 2011 ** The Land Ethic and Odyssey Aldo Leopold May 04, 2011 ** The Tragedy of the Commons Garrett Hardin ** The Economics of the Coming Spaceship Earth Kenneth E. Boulding May 18, 2011 Neal Stephenson, Zodiac (320 pages) Three weeks June 08, 2011 Tim Flannery, The Future Eaters : An Ecological History of the Australasian Lands and People (408 pages) June 22, 2011 A Colorado Shakespeare Festival Play July 06, 2011 ** The Closing Circle* Barry Commoner ** The World's Biggest Membrane* Lewis Thomas July 20, 2011 ** Intricacy* Annie Dillard ** The Recognition of Gaia* James E. Lovelock Three weeks August 10, 2011 Anne Bront\x{eb}, The Tenant of Wildfell Hall (496 pages) * Selection is an excerpt from a longer work. ** Selection is from the Great Books Foundation\x{2bc}s Keeping Things Whole: Readings in Environmental Science. Newcomers welcome anytime! For further information see http://home.comcast.net/~BoulderGreatBooks/ (As of: December 13, 2010)",
+    'description' => 'This group, which frequently uses approaches to discussion and selections from the Great Books of the Western World, meets in the Meadows Branch Library, usually on even-date Wednesdays from 7:30 - 8:45 p.m.           Great Books Discussion Group 2011 Reading List:  January 12, 2011 Virginia Hamilton, In the Beginning: Creation Stories from Around the World (176 pages) ( reference: Barbara C. Sproul, Primal Myths ) January 26, 2011 ** Introduction and Rules for the Direction of the Mind* Rene Descartes One week February 02, 2011 ** Katahdin* and Death of a Pine Henry David Thoreau February 16, 2011 ** Man and Nature* George Perkins Marsh ** The Biosphere* Vladimir I. Vernadsky March 02, 2011 Douglas Adams, Mark Carwardine, Last Chance to See (256 pages) March 16, 2011 ** The Climax Concept Frederic E. Clements ** The Ecosystem A. G. Tansley March 30, 2011 Noether\'s Theorem http://www.sackett.net/Noetherii.pdf (ii = 1,12) One week April 06, 2011 Poetry Â– Mary Oliver and Gary Snyder April 20, 2011 ** The Land Ethic and Odyssey Aldo Leopold May 04, 2011 ** The Tragedy of the Commons Garrett Hardin ** The Economics of the Coming Spaceship Earth Kenneth E. Boulding May 18, 2011 Neal Stephenson, Zodiac (320 pages) Three weeks June 08, 2011 Tim Flannery, The Future Eaters : An Ecological History of the Australasian Lands and People (408 pages) June 22, 2011 A Colorado Shakespeare Festival Play July 06, 2011 ** The Closing Circle* Barry Commoner ** The World\'s Biggest Membrane* Lewis Thomas July 20, 2011 ** Intricacy* Annie Dillard ** The Recognition of Gaia* James E. Lovelock Three weeks August 10, 2011 Anne Bronte, The Tenant of Wildfell Hall (496 pages) * Selection is an excerpt from a longer work. ** Selection is from the Great Books FoundationÊ¼s Keeping Things Whole: Readings in Environmental Science. Newcomers welcome anytime! For further information see http://home.comcast.net/~BoulderGreatBooks/ (As of: December 13, 2010)',
     'dtend' => '2455589 13500',
     'dtstart' => '2455589 9000',
     'summary' => 'Great Books Discussion Group',
@@ -472,7 +472,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8140'
   },
   {
-    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826.',
     'dtend' => '2455589 68400',
     'dtstart' => '2455589 61200',
     'summary' => 'GED classes',
@@ -488,7 +488,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9372'
   },
   {
-    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.  ',
+    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.',
     'dtend' => '2455589 81000',
     'dtstart' => '2455589 70200',
     'summary' => 'BoulderReads! Adult Literacy Tutor Training',
@@ -496,7 +496,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7893'
   },
   {
-    'description' => "Cosponsored by the library and the Boulder Chapter of the United Nations Association, this group usually meets on the last Thursday of the month in the Boulder Creek Meeting Room from 1-3 p.m. However in January this group meets on the last Thursday of the month from 1:30-3:30 p.m. in the Arapahoe Conference Room. The group reads in current events around a selected geopolitical theme for each month, and talks about the topic in the context of the intermix of political, social, ecological and economic factors within a spatial context. A main reading is identified \x{96} and may include fictional interpretations (novels, films) of world events. 2011: January 27  \"Will there be resource wars over rare-earth metals and other strategic metals?\" NOTE:  This session will be held from 1:30 p.m. to 3:30 p.m. in the Arapahoe Conference Room.  February 24  \"Yemen:  What does its future hold?\"    ",
+    'description' => 'Cosponsored by the library and the Boulder Chapter of the United Nations Association, this group usually meets on the last Thursday of the month in the Boulder Creek Meeting Room from 1-3 p.m. However in January this group meets on the last Thursday of the month from 1:30-3:30 p.m. in the Arapahoe Conference Room. The group reads in current events around a selected geopolitical theme for each month, and talks about the topic in the context of the intermix of political, social, ecological and economic factors within a spatial context. A main reading is identified - and may include fictional interpretations (novels, films) of world events. 2011: January 27  "Will there be resource wars over rare-earth metals and other strategic metals?" NOTE:  This session will be held from 1:30 p.m. to 3:30 p.m. in the Arapahoe Conference Room.  February 24  "Yemen:  What does its future hold?"    ',
     'dtend' => '2455589 81000',
     'dtstart' => '2455589 73800',
     'summary' => 'Geopolitics',
@@ -504,7 +504,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8134'
   },
   {
-    'description' => "GED testing is available at Boulder Public Library from 3 to 7 p.m. in the BoulderReads! area of the Main Library, 1001 Arapahoe Ave.  Pre-registration is very strongly encouraged, please call 720-561-5826 or visit www.boulderreads.org and click on \x{93}Services.\x{94}  In addition, please bring a photo ID and a printout from your online preregistration at www.GED123.org.",
+    'description' => 'GED testing is available at Boulder Public Library from 3 to 7 p.m. in the BoulderReads! area of the Main Library, 1001 Arapahoe Ave.  Pre-registration is very strongly encouraged, please call 720-561-5826 or visit www.boulderreads.org and click on "Services."  In addition, please bring a photo ID and a printout from your online preregistration at www.GED123.org.',
     'dtend' => '2455590 7200',
     'dtstart' => '2455589 79200',
     'summary' => 'GED Testing',
@@ -512,7 +512,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8593'
   },
   {
-    'description' => "Thursday January 27 What I Love About Boulder | John Fante Novelist & Screenwriter Raised in Boulder  6:30pm start Walk on the Wild Side Directed by Edward Dmytryk, with Laurence Harvey, Capucine, Jane Fonda, Anne Baxter, Barbra Stanwyck (1962).  This film is a high melodrama set in sultry, steamy, Depression-era New Orleans.  A handsome Texas dirt farmer hops a freight train and searches New Orleans high and low for his lost sweetheart, unaware that she works in the Doll House, the most notorious and corrupt bordello in the French Quarter.  He is aided in his quest by a runaway juvenile and a Mexican-American caf\x{e9} owner, both of whom admire him and realize the nobility of his quest.  When a young, immoral and thieving temptress gets involved things begin to unravel leading to scandal and tragedy.  Director Edward Dmytryk was one of the \"Hollywood Ten,\" a group of blacklisted film industry professionals, some of which served time in prison during the McCarthy-era \"Red Scare.\"  Joseph MacDonald captures all the heat and steam of New Orleans with his shimmering black and white cinematography.  Elmer Bernstein's musical score is one of his best, and adds the right touch of jazzy glitz to the drama.  Saul Bass, considered one of the best film graphic designers of all time created the famous opening credits in which a sensuous black cat prowls along sidewalks and alleys of the Big Easy.  Based loosely on the 1956 novel by Nelson Algren, with screenplay by John Fante.   (114 min.)   ",
+    'description' => 'Thursday January 27 What I Love About Boulder | John Fante Novelist & Screenwriter Raised in Boulder  6:30pm start Walk on the Wild Side Directed by Edward Dmytryk, with Laurence Harvey, Capucine, Jane Fonda, Anne Baxter, Barbra Stanwyck (1962).  This film is a high melodrama set in sultry, steamy, Depression-era New Orleans.  A handsome Texas dirt farmer hops a freight train and searches New Orleans high and low for his lost sweetheart, unaware that she works in the Doll House, the most notorious and corrupt bordello in the French Quarter.  He is aided in his quest by a runaway juvenile and a Mexican-American cafe owner, both of whom admire him and realize the nobility of his quest.  When a young, immoral and thieving temptress gets involved things begin to unravel leading to scandal and tragedy.  Director Edward Dmytryk was one of the "Hollywood Ten," a group of blacklisted film industry professionals, some of which served time in prison during the McCarthy-era "Red Scare."  Joseph MacDonald captures all the heat and steam of New Orleans with his shimmering black and white cinematography.  Elmer Bernstein\'s musical score is one of his best, and adds the right touch of jazzy glitz to the drama.  Saul Bass, considered one of the best film graphic designers of all time created the famous opening credits in which a sensuous black cat prowls along sidewalks and alleys of the Big Easy.  Based loosely on the 1956 novel by Nelson Algren, with screenplay by John Fante.   (114 min.)   ',
     'dtend' => '2455590 12600',
     'dtstart' => '2455590 5400',
     'summary' => 'screening of "Walk on the Wild Side"',
@@ -536,10 +536,10 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8200'
   },
   {
-    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library.',
     'dtend' => '2455591 72000',
     'dtstart' => '2455591 61200',
-    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'summary' => 'BoulderReads! Student Walk-in Hours',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8797'
   },
@@ -600,7 +600,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9138'
   },
   {
-    'description' => "Meets at 11:30 a.m. the last Monday of the month January-November (except as noted in the listing) to discuss materials that pertain to the experiences of American western women of various cultures and eras. 2011: January 31:   \x{93}Papa\x{92}s Girl: The Fascinating World of Helen Bonfils\x{94} by Eva Hodges Watt                          led by Betty Thacker   February 28:  \x{93}Just Like Us\x{94} by Helen Thorpe  led by Celeste Landry   March 28:      \x{93}The Woman Behind the New Deal: The Life and Legacy of Frances Perkins\" by Kirsten Downy  led by Elinor McGinn          April 25:        \x{93}The Bassett Women\x{94} by Grace McClure  led by Audrey Ambler  May 23:(Please note: this is the 4th Monday, not the last)                            \x{93}In the Shadow of Los Alamos: Selected writings of Edith Warner\"                            by Patrick Burns  led by Joan Graff  September 26:  \"Dozen on Denver: Stories\" by Rocky Mountain News Editor  led by Rosalie Bargmann  October 31:  \"Poker Bride: the First Chinese in the Wild West\" by Christopher Corbett   led by Cindy Maynard  November 14: (Please note this is the second Monday, not the last) \"Founding Mothers\" by Cokie Roberts   led by Nancy Myers ",
+    'description' => 'Meets at 11:30 a.m. the last Monday of the month January-November (except as noted in the listing) to discuss materials that pertain to the experiences of American western women of various cultures and eras. 2011: January 31:   "Papa\'s Girl: The Fascinating World of Helen Bonfils" by Eva Hodges Watt                          led by Betty Thacker   February 28:  "Just Like Us" by Helen Thorpe  led by Celeste Landry   March 28:      "The Woman Behind the New Deal: The Life and Legacy of Frances Perkins" by Kirsten Downy  led by Elinor McGinn          April 25:        "The Bassett Women" by Grace McClure  led by Audrey Ambler  May 23:(Please note: this is the 4th Monday, not the last)                            "In the Shadow of Los Alamos: Selected writings of Edith Warner"                            by Patrick Burns  led by Joan Graff  September 26:  "Dozen on Denver: Stories" by Rocky Mountain News Editor  led by Rosalie Bargmann  October 31:  "Poker Bride: the First Chinese in the Wild West" by Christopher Corbett   led by Cindy Maynard  November 14: (Please note this is the second Monday, not the last) "Founding Mothers" by Cokie Roberts   led by Nancy Myers ',
     'dtend' => '2455593 70200',
     'dtstart' => '2455593 66600',
     'summary' => 'Women of the West Monday',
@@ -608,7 +608,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8676'
   },
   {
-    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her. ',
+    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her.',
     'dtend' => '2455594 3600',
     'dtstart' => '2455593 84600',
     'summary' => 'Reading Buddies',
@@ -632,7 +632,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8573'
   },
   {
-    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826.',
     'dtend' => '2455594 68400',
     'dtstart' => '2455594 61200',
     'summary' => 'GED classes',
@@ -640,7 +640,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2570'
   },
   {
-    'description' => "Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\x{92}s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot\@gmail.com).",
+    'description' => 'Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\'s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot@gmail.com).',
     'dtend' => '2455594 68400',
     'dtstart' => '2455594 61200',
     'summary' => 'Boulder World Affairs Discussion Group',
@@ -680,7 +680,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7294'
   },
   {
-    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her.  ',
+    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her.',
     'dtend' => '2455595 3600',
     'dtstart' => '2455594 84600',
     'summary' => 'Reading Buddies',
@@ -736,7 +736,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8768'
   },
   {
-    'description' => "Boulder Library Commission\x{92}s monthly meeting is typically held at 7:15 p.m. on the first Wednesday of each month at the Main Library, 1001 Arapahoe Ave.  Information:  Tina Walker, 303-441 3106. Current meeting agenda is available at:  http://www.boulderlibrary.org/about/agenda.html .",
+    'description' => 'Boulder Library Commission\'s monthly meeting is typically held at 7:15 p.m. on the first Wednesday of each month at the Main Library, 1001 Arapahoe Ave.  Information:  Tina Walker, 303-441 3106. Current meeting agenda is available at:  http://www.boulderlibrary.org/about/agenda.html .',
     'dtend' => '2455596 14400',
     'dtstart' => '2455596 8100',
     'summary' => 'Library Commission Meeting',
@@ -744,7 +744,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=1135'
   },
   {
-    'description' => "This group, which frequently uses approaches to discussion and selections from the Great Books of the Western World, meets in the Meadows Branch Library, usually on even-date Wednesdays from 7:30 - 8:45 p.m.           Great Books Discussion Group 2011 Reading List:  January 12, 2011 Virginia Hamilton, In the Beginning: Creation Stories from Around the World (176 pages) ( reference: Barbara C. Sproul, Primal Myths ) January 26, 2011 ** Introduction and Rules for the Direction of the Mind* Ren\x{e9} Descartes One week February 02, 2011 ** Katahdin* and Death of a Pine Henry David Thoreau February 16, 2011 ** Man and Nature* George Perkins Marsh ** The Biosphere* Vladimir I. Vernadsky March 02, 2011 Douglas Adams, Mark Carwardine, Last Chance to See (256 pages) March 16, 2011 ** The Climax Concept Frederic E. Clements ** The Ecosystem A. G. Tansley March 30, 2011 Noether's Theorem http://www.sackett.net/Noetherii.pdf (ii = 1,12) One week April 06, 2011 Poetry \x{96} Mary Oliver and Gary Snyder April 20, 2011 ** The Land Ethic and Odyssey Aldo Leopold May 04, 2011 ** The Tragedy of the Commons Garrett Hardin ** The Economics of the Coming Spaceship Earth Kenneth E. Boulding May 18, 2011 Neal Stephenson, Zodiac (320 pages) Three weeks June 08, 2011 Tim Flannery, The Future Eaters : An Ecological History of the Australasian Lands and People (408 pages) June 22, 2011 A Colorado Shakespeare Festival Play July 06, 2011 ** The Closing Circle* Barry Commoner ** The World's Biggest Membrane* Lewis Thomas July 20, 2011 ** Intricacy* Annie Dillard ** The Recognition of Gaia* James E. Lovelock Three weeks August 10, 2011 Anne Bront\x{eb}, The Tenant of Wildfell Hall (496 pages) * Selection is an excerpt from a longer work. ** Selection is from the Great Books Foundation\x{2bc}s Keeping Things Whole: Readings in Environmental Science. Newcomers welcome anytime! For further information see http://home.comcast.net/~BoulderGreatBooks/ (As of: December 13, 2010)",
+    'description' => 'This group, which frequently uses approaches to discussion and selections from the Great Books of the Western World, meets in the Meadows Branch Library, usually on even-date Wednesdays from 7:30 - 8:45 p.m.           Great Books Discussion Group 2011 Reading List:  January 12, 2011 Virginia Hamilton, In the Beginning: Creation Stories from Around the World (176 pages) ( reference: Barbara C. Sproul, Primal Myths ) January 26, 2011 ** Introduction and Rules for the Direction of the Mind* Rene Descartes One week February 02, 2011 ** Katahdin* and Death of a Pine Henry David Thoreau February 16, 2011 ** Man and Nature* George Perkins Marsh ** The Biosphere* Vladimir I. Vernadsky March 02, 2011 Douglas Adams, Mark Carwardine, Last Chance to See (256 pages) March 16, 2011 ** The Climax Concept Frederic E. Clements ** The Ecosystem A. G. Tansley March 30, 2011 Noether\'s Theorem http://www.sackett.net/Noetherii.pdf (ii = 1,12) One week April 06, 2011 Poetry Â– Mary Oliver and Gary Snyder April 20, 2011 ** The Land Ethic and Odyssey Aldo Leopold May 04, 2011 ** The Tragedy of the Commons Garrett Hardin ** The Economics of the Coming Spaceship Earth Kenneth E. Boulding May 18, 2011 Neal Stephenson, Zodiac (320 pages) Three weeks June 08, 2011 Tim Flannery, The Future Eaters : An Ecological History of the Australasian Lands and People (408 pages) June 22, 2011 A Colorado Shakespeare Festival Play July 06, 2011 ** The Closing Circle* Barry Commoner ** The World\'s Biggest Membrane* Lewis Thomas July 20, 2011 ** Intricacy* Annie Dillard ** The Recognition of Gaia* James E. Lovelock Three weeks August 10, 2011 Anne Bronte, The Tenant of Wildfell Hall (496 pages) * Selection is an excerpt from a longer work. ** Selection is from the Great Books FoundationÊ¼s Keeping Things Whole: Readings in Environmental Science. Newcomers welcome anytime! For further information see http://home.comcast.net/~BoulderGreatBooks/ (As of: December 13, 2010)',
     'dtend' => '2455596 13500',
     'dtstart' => '2455596 9000',
     'summary' => 'Great Books Discussion Group',
@@ -752,7 +752,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8141'
   },
   {
-    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826.',
     'dtend' => '2455596 68400',
     'dtstart' => '2455596 61200',
     'summary' => 'GED classes',
@@ -768,7 +768,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9373'
   },
   {
-    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.  ',
+    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.',
     'dtend' => '2455596 81000',
     'dtstart' => '2455596 70200',
     'summary' => 'BoulderReads! Adult Literacy Tutor Training',
@@ -776,7 +776,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7894'
   },
   {
-    'description' => "This group meets monthly and discusses topics which address race in America. Connecting the Community with Children to Help End Racism  January The New Jim Crow: Mass Incarceration in the Age of Colorblindness by Michelle Alexander Contrary to the rosy picture of race embodied in Barack Obama's political success and Oprah Winfrey's financial success, legal scholar Alexander argues vigorously and persuasively that we have not ended racial caste in America; we have merely redesigned it. Jim Crow and legal racial segregation has been replaced by mass incarceration as a system of social control (More African Americans are under correctional control today... than were enslaved in 1850). Alexander reviews American racial history from the colonies to the Clinton administration, delineating its transformation into the war on drugs. She offers an acute analysis of the effect of this mass incarceration upon former inmates who will be discriminated against, legally, for the rest of their lives, denied employment, housing, education, and public benefits. Most provocatively, she reveals how both the move toward colorblindness and affirmative action may blur our vision of injustice: most Americans know and don't know the truth about mass incarceration\x{97}but her carefully researched, deeply engaging, and thoroughly readable book should change that.  February Life on the Color Line: The True Story of a White Boy who Discovered He was Black by Gregory Howard Williams Gregory Howard Williams and his younger brother, Mike, grew up believing they were white and that their dark-skinned father was of Italian descent. Then their parents\x{92} marriage disintegrated, their mother departed, and their father\x{92}s business ventures sank into a sea of liquor. Pursued by debt and personal demons, \"Tony\" Williams took his two boys to his hometown of Muncie, Indiana, where he was known as \"Buster,\" and where there was no escape from the truth he had hidden for so long. The truth was as plain as the color of Buster\x{92}s family. Gregory and Mike Williams were the sons of a brilliant and charming but troubled man who fled the burden of race until need drove him back to his roots.  Suddenly Gregory and Mike had to straddle two worlds and two heritages \x{96}black and white.  Life on the Color Line is a wonderfully inspiring testament of purpose, perseverance, and human triumph.   March Inheriting the Trade by Thomas Norman DeWolf In the summer of 2001, Katrina Browne led nine distant family members on their own triangular passage as she made a documentary film (Traces of the Trade: A Story from the Deep North) about their DeWolf ancestors, the largest slave-trading dynasty in early America\x{97}who transported 10,000 Africans to America and the Caribbean between 1769 and 1820. DeWolf, one of Browne's cousins, traces the journey in this soul-searching memoir, beginning in Bristol, R.I., the hub of the late\x{96}18th-century trade, and continuing to Ghana, Cuba and back to New England. At each station of the trip, the Family of Ten visits historic sites, and distinguished historians address the group about aspects of the slave trade. DeWolf's account gains immediacy as he reports these presentations and the ensuing group discussions, along with their personal struggles to come to terms with an ignominious family history and his own sharp learning curve. His narrative, however, bogs down toward its conclusion in an irrelevant account of allegations of sexual harassment made against him and a digressive though thought-provoking discussion of reparations for slavery. Nevertheless, DeWolf promotes conversation about truth of the past and its impact on the present.  April Just Like Us: The True Story of Four Mexican Girls Coming of Age in America  by Helen Thorpe By the time Marisela, Yadira, Clara and Elissa\x{97}four girls of Mexican descent from the suburbs of Denver\x{97}entered their freshman year in high school, they were inseparable, but four years later, their fundamental difference threatened to divide them: Clara and Elissa were legal residents, but Marisela and Yadira had begun to suffer the repercussions of their parents' choice to illegally enter the U.S. Journalist Thorpe, married to Denver mayor John Hickenlooper, chronicles the girls' lives over four years, delineating the small but arresting differences that will separate them and shape their futures. She personalizes the ongoing debate over immigration and frames it so compassionately and sensibly that even the staunchest opponents of immigration liberalization might find themselves rethinking their positions.  May White Boy: A Memoir by Mark Naison Growing up in then mostly Jewish and Italian Crown Heights, Brooklyn, in the 1950s and '60s, Mark Naison saw white flight transform his neighborhood make his previously liberal Jewish parents openly racist. Naison grew up worshiping black athletes and musicians; as neighborhood tensions grew, he became more estranged from his parents and found himself",
+    'description' => 'This group meets monthly and discusses topics which address race in America. Connecting the Community with Children to Help End Racism  January The New Jim Crow: Mass Incarceration in the Age of Colorblindness by Michelle Alexander Contrary to the rosy picture of race embodied in Barack Obama\'s political success and Oprah Winfrey\'s financial success, legal scholar Alexander argues vigorously and persuasively that we have not ended racial caste in America; we have merely redesigned it. Jim Crow and legal racial segregation has been replaced by mass incarceration as a system of social control (More African Americans are under correctional control today... than were enslaved in 1850). Alexander reviews American racial history from the colonies to the Clinton administration, delineating its transformation into the war on drugs. She offers an acute analysis of the effect of this mass incarceration upon former inmates who will be discriminated against, legally, for the rest of their lives, denied employment, housing, education, and public benefits. Most provocatively, she reveals how both the move toward colorblindness and affirmative action may blur our vision of injustice: most Americans know and don\'t know the truth about mass incarceration--but her carefully researched, deeply engaging, and thoroughly readable book should change that.  February Life on the Color Line: The True Story of a White Boy who Discovered He was Black by Gregory Howard Williams Gregory Howard Williams and his younger brother, Mike, grew up believing they were white and that their dark-skinned father was of Italian descent. Then their parents\' marriage disintegrated, their mother departed, and their father\'s business ventures sank into a sea of liquor. Pursued by debt and personal demons, "Tony" Williams took his two boys to his hometown of Muncie, Indiana, where he was known as "Buster," and where there was no escape from the truth he had hidden for so long. The truth was as plain as the color of Buster\'s family. Gregory and Mike Williams were the sons of a brilliant and charming but troubled man who fled the burden of race until need drove him back to his roots.  Suddenly Gregory and Mike had to straddle two worlds and two heritages -black and white.  Life on the Color Line is a wonderfully inspiring testament of purpose, perseverance, and human triumph.   March Inheriting the Trade by Thomas Norman DeWolf In the summer of 2001, Katrina Browne led nine distant family members on their own triangular passage as she made a documentary film (Traces of the Trade: A Story from the Deep North) about their DeWolf ancestors, the largest slave-trading dynasty in early America--who transported 10,000 Africans to America and the Caribbean between 1769 and 1820. DeWolf, one of Browne\'s cousins, traces the journey in this soul-searching memoir, beginning in Bristol, R.I., the hub of the late-18th-century trade, and continuing to Ghana, Cuba and back to New England. At each station of the trip, the Family of Ten visits historic sites, and distinguished historians address the group about aspects of the slave trade. DeWolf\'s account gains immediacy as he reports these presentations and the ensuing group discussions, along with their personal struggles to come to terms with an ignominious family history and his own sharp learning curve. His narrative, however, bogs down toward its conclusion in an irrelevant account of allegations of sexual harassment made against him and a digressive though thought-provoking discussion of reparations for slavery. Nevertheless, DeWolf promotes conversation about truth of the past and its impact on the present.  April Just Like Us: The True Story of Four Mexican Girls Coming of Age in America  by Helen Thorpe By the time Marisela, Yadira, Clara and Elissa--four girls of Mexican descent from the suburbs of Denver--entered their freshman year in high school, they were inseparable, but four years later, their fundamental difference threatened to divide them: Clara and Elissa were legal residents, but Marisela and Yadira had begun to suffer the repercussions of their parents\' choice to illegally enter the U.S. Journalist Thorpe, married to Denver mayor John Hickenlooper, chronicles the girls\' lives over four years, delineating the small but arresting differences that will separate them and shape their futures. She personalizes the ongoing debate over immigration and frames it so compassionately and sensibly that even the staunchest opponents of immigration liberalization might find themselves rethinking their positions.  May White Boy: A Memoir by Mark Naison Growing up in then mostly Jewish and Italian Crown Heights, Brooklyn, in the 1950s and \'60s, Mark Naison saw white flight transform his neighborhood make his previously liberal Jewish parents openly racist. Naison grew up worshiping black athletes and musicians; as neighborhood tensions grew, he became more estranged from his parents and found himself',
     'dtend' => '2455597 7200',
     'dtstart' => '2455597 1800',
     'summary' => 'Race In America',
@@ -784,7 +784,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8730'
   },
   {
-    'description' => "Thursday February 3 I Love Boulder| John Fante Novelist & Screenwriter Raised in Boulder  6:30 pm start Ask the Dust Directed by Robert Towne, featuring Salma Hayek, Colin Farrell, Donald Sutherland, Idina Menzel (2006).  Set during the Great Depression\x{a8}Dspecifically around the time of the 1933 Long Beach, California earthquake\x{a8}Da fiery and beautiful Mexican caf\x{a8}\x{a6} waitress aspires to one day be above her current standing in society by marrying a wealthy American man.   Her plan is thrown into disarray when she meets an Italian-American, who is a struggling writer who comes to Los Angeles's Bunker Hill neighborhood to begin his writing career.   The film was shot almost entirely in South Africa with the use of stages to portray Los Angeles.  Fante was one of the first writers to portray the tough times faced by many people in Depression-era Los Angeles, and is sighted to have significantly influenced writer Charles Bukowski .  Tom Cruise (with Paula Wagner and Cruise/Wagner Productions) is one of the film's producers.  Based on John Fante's most popular novel, Ask the Dust (first published 1939).  More than sixty years after it was published the book appeared for several weeks on the New York Times' Bestseller's List.  (117 min.)  ",
+    'description' => 'Thursday February 3 I Love Boulder| John Fante Novelist & Screenwriter Raised in Boulder  6:30 pm start Ask the Dust Directed by Robert Towne, featuring Salma Hayek, Colin Farrell, Donald Sutherland, Idina Menzel (2006).  Set during the Great Depression¨Dspecifically around the time of the 1933 Long Beach, California earthquake¨Da fiery and beautiful Mexican caf¨¦ waitress aspires to one day be above her current standing in society by marrying a wealthy American man.   Her plan is thrown into disarray when she meets an Italian-American, who is a struggling writer who comes to Los Angeles\'s Bunker Hill neighborhood to begin his writing career.   The film was shot almost entirely in South Africa with the use of stages to portray Los Angeles.  Fante was one of the first writers to portray the tough times faced by many people in Depression-era Los Angeles, and is sighted to have significantly influenced writer Charles Bukowski .  Tom Cruise (with Paula Wagner and Cruise/Wagner Productions) is one of the film\'s producers.  Based on John Fante\'s most popular novel, Ask the Dust (first published 1939).  More than sixty years after it was published the book appeared for several weeks on the New York Times\' Bestseller\'s List.  (117 min.)  ',
     'dtend' => '2455597 12600',
     'dtstart' => '2455597 5400',
     'summary' => 'screening of "Ask the Dust"',
@@ -816,18 +816,18 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7829'
   },
   {
-    'description' => "Boulder Public Library y Boulder Valley School District ofrecen un club de lectura en espa\x{f1}ol. Incluye lecturas premiadas de literatura moderna de Espa\x{f1}a y Latino Am\x{e9}rica, y discusiones cada mes sobre la lectura, tambi\x{e9}n en espa\x{f1}ol. Noticia de un secuestro,Gabriel Garc\x{ed}a M\x{e1}rquez-Colombia Garc\x{ed}a M\x{e1}rquez examina la abducci\x{f3}n del 7 de noviembre, 1990 de conocida periodista Maruja Pach\x{f3}n y su cu\x{f1}ada por narcotraficantes del Cartel de Medell\x{ed}n.",
+    'description' => 'Boulder Public Library y Boulder Valley School District ofrecen un club de lectura en espaÃ±ol. Incluye lecturas premiadas de literatura moderna de EspaÃ±a y Latino America, y discusiones cada mes sobre la lectura, tambien en espaÃ±ol. Noticia de un secuestro,Gabriel Garcia Marquez-Colombia Garcia Marquez examina la abduccion del 7 de noviembre, 1990 de conocida periodista Maruja Pachon y su cuÃ±ada por narcotraficantes del Cartel de Medellin.',
     'dtend' => '2455598 2700',
     'dtstart' => '2455597 82800',
-    'summary' => "Club de lectura de literatura moderna en espa\x{f1}ol",
+    'summary' => 'Club de lectura de literatura moderna en español',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7702'
   },
   {
-    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library.',
     'dtend' => '2455598 72000',
     'dtstart' => '2455598 61200',
-    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'summary' => 'BoulderReads! Student Walk-in Hours',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8798'
   },
@@ -856,7 +856,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7834'
   },
   {
-    'description' => "For girls in grades 3-6 and their moms or caregivers.  Focus on In the Year of the Boar and Jackie Robinson by Bette Bao Lord.  It\x{92}s the story of the struggles and triumphs of a Chinese girl who has immigrated to America in 1947.  Enjoy a snack and discussion of Chinese language, culture and customs led by May Lee, a Librarian who is herself an immigrant from China.  Reservations are required.  Please call the Reynolds Branch at 303-441-3120 to reserve your seats, as well as a copy of the book in advance. ",
+    'description' => 'For girls in grades 3-6 and their moms or caregivers.  Focus on In the Year of the Boar and Jackie Robinson by Bette Bao Lord.  It\'s the story of the struggles and triumphs of a Chinese girl who has immigrated to America in 1947.  Enjoy a snack and discussion of Chinese language, culture and customs led by May Lee, a Librarian who is herself an immigrant from China.  Reservations are required.  Please call the Reynolds Branch at 303-441-3120 to reserve your seats, as well as a copy of the book in advance. ',
     'dtend' => '2455598 81000',
     'dtstart' => '2455598 75600',
     'summary' => 'It\'s a Girl Thing: Mother-Daughter Book Club',
@@ -888,7 +888,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8923'
   },
   {
-    'description' => 'The first Monday of every month, join us, usually, in the Canyon Theater for a special storytime full of story songs, musical stories, and more! Our alternant meeting space is the Children\'s Library. ',
+    'description' => 'The first Monday of every month, join us, usually, in the Canyon Theater for a special storytime full of story songs, musical stories, and more! Our alternant meeting space is the Children\'s Library.',
     'dtend' => '2455600 64800',
     'dtstart' => '2455600 62100',
     'summary' => 'Musical Storytime with Alice and Melanie',
@@ -896,7 +896,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8577'
   },
   {
-    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her. ',
+    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her.',
     'dtend' => '2455601 3600',
     'dtstart' => '2455600 84600',
     'summary' => 'Reading Buddies',
@@ -912,7 +912,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8859'
   },
   {
-    'description' => "Gibran Love Letters: The Love letters of Khalil Gibran to May Ziadah. Salma H. Al-Kuzbari and Suheir Bushrui (Trans.) This collection of letters, the first ever to appear in English, reveals the eloquence and beauty of Gibran's writing through a lifetime of correspondence with his spiritual love, May Ziadah. Illustrated throughout with Gibran's ink sketches and photographs of his original letters, it presents a moving insight into the writer behind \x{93}The Prophet\x{94}. ",
+    'description' => 'Gibran Love Letters: The Love letters of Khalil Gibran to May Ziadah. Salma H. Al-Kuzbari and Suheir Bushrui (Trans.) This collection of letters, the first ever to appear in English, reveals the eloquence and beauty of Gibran\'s writing through a lifetime of correspondence with his spiritual love, May Ziadah. Illustrated throughout with Gibran\'s ink sketches and photographs of his original letters, it presents a moving insight into the writer behind "The Prophet". ',
     'dtend' => '2455601 12600',
     'dtstart' => '2455601 7200',
     'summary' => 'Arabic Literature Discussion Group',
@@ -928,7 +928,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9454'
   },
   {
-    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826.',
     'dtend' => '2455601 68400',
     'dtstart' => '2455601 61200',
     'summary' => 'GED classes',
@@ -936,7 +936,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=2571'
   },
   {
-    'description' => "Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\x{92}s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot\@gmail.com).",
+    'description' => 'Meets every Tuesday, from 10 a.m. to noon at the Meadows Branch Library, 4800 Baseline Rd.  Visit the group\'s Web site for the current book for discussion:  http://boulder-wadg.org. (Art Smoot, art.smoot@gmail.com).',
     'dtend' => '2455601 68400',
     'dtstart' => '2455601 61200',
     'summary' => 'Boulder World Affairs Discussion Group',
@@ -968,7 +968,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7295'
   },
   {
-    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her.  ',
+    'description' => 'Sponsored by the Boulder Library Foundation, Reading Buddies is a program of BoulderReads! for children ages first grade through 14 years old who struggle with reading.  The children are each matched one-to-one to their own big buddy who will meet with them weekly for 13 weeks.  The big buddies are all CU students who receive college service learning credit for the time they spend working with their little buddies, and are trained by BoulderReads! to read aloud to their little buddies and help them identify their own tastes in reading.  This great program is made possible by a grant from the Boulder Public Library Foundation, as well as by in-kind donations from the University of Colorado and CU students.   The Reading Buddies program has a fall session (which starts in early September) and a spring session (which starts in late January).  We generally have a waiting list, so to enroll your child you must contact BoulderReads! by calling or sending an e-mail with the following information: Your name, phone number and e-mail address, your child\'s name and age, and whether you prefer a Monday night slot or a Tuesday night slot. Your child does not have a slot unless you have been told by the Reading Buddies coordinator that we have an opening for him or her.',
     'dtend' => '2455602 3600',
     'dtstart' => '2455601 84600',
     'summary' => 'Reading Buddies',
@@ -984,7 +984,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8238'
   },
   {
-    'description' => 'Carol Denker, author of  "Autumn Romance: Stories and Portraits of Love after 50" will talk about the 20 couples whose love she describes in her book. ',
+    'description' => 'Carol Denker, author of  "Autumn Romance: Stories and Portraits of Love after 50" will talk about the 20 couples whose love she describes in her book.',
     'dtend' => '2455602 5400',
     'dtstart' => '2455602 0',
     'summary' => 'Autumn Romance',
@@ -1024,7 +1024,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9070'
   },
   {
-    'description' => 'Join Michael Stanwood (Didgeridoo), Jesse Manno (Oud), Dexter Payne (Clarinet, Sax) and friends, for an hour of beautiful improvised music. ',
+    'description' => 'Join Michael Stanwood (Didgeridoo), Jesse Manno (Oud), Dexter Payne (Clarinet, Sax) and friends, for an hour of beautiful improvised music.',
     'dtend' => '2455602 66600',
     'dtstart' => '2455602 63000',
     'summary' => 'Morning Music Meditation',
@@ -1040,7 +1040,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8876'
   },
   {
-    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826. ',
+    'description' => 'Small classes are provided for adults who do not have a high school diploma and would therefore like to earn a GED (General Educational Development) diploma.  The class meets Tuesday and Thursday mornings from 10 a.m. to noon in the BoulderReads! computer lab and features one teacher and four volunteers (all are retired teachers).  Preregistration is  required; call 720-561-5826.',
     'dtend' => '2455603 68400',
     'dtstart' => '2455603 61200',
     'summary' => 'GED classes',
@@ -1056,7 +1056,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9374'
   },
   {
-    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.  ',
+    'description' => 'BoulderReads! trains volunteers to tutor adults who would like to improve their reading and writing skills. This five-session training is for volunteers who have been accepted to be adult literacy tutors. Potential tutors must apply and be interviewed prior to attending the training and must be willing to tutor twice a week for 1 1/2 hours each time, as well as to submit monthly reports.  We ask for a six-month commitment from volunteers.',
     'dtend' => '2455603 81000',
     'dtstart' => '2455603 70200',
     'summary' => 'BoulderReads! Adult Literacy Tutor Training',
@@ -1064,7 +1064,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7895'
   },
   {
-    'description' => "GED testing is available at Boulder Public Library from 3 to 7 p.m. in the BoulderReads! area of the Main Library, 1001 Arapahoe Ave.  Pre-registration is very strongly encouraged, please call 720-561-5826 or visit www.boulderreads.org and click on \x{93}Services.\x{94}  In addition, please bring a photo ID and a printout from your online preregistration at www.GED123.org.",
+    'description' => 'GED testing is available at Boulder Public Library from 3 to 7 p.m. in the BoulderReads! area of the Main Library, 1001 Arapahoe Ave.  Pre-registration is very strongly encouraged, please call 720-561-5826 or visit www.boulderreads.org and click on "Services."  In addition, please bring a photo ID and a printout from your online preregistration at www.GED123.org.',
     'dtend' => '2455604 7200',
     'dtstart' => '2455603 79200',
     'summary' => 'GED Testing',
@@ -1072,7 +1072,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8582'
   },
   {
-    'description' => 'Read and discuss the work of contemporary Indian authors who write in English.  These authors use English as their own language in creative ways, which distinguishes them from other South Asian authors, who are typically read in translation:  September 9 : Sea of Poppies by Amitav Ghosh October 14 : One Amazing Thing by Chitra Divakaruni November 18(this group meets on the 3rd Thursday in November due to the library closure on Veteran\'s Day: Freedom at Midnight by Larry Collins and Dominique Lapierre December 9 : The Guide by R.K. Narayan February 10 : Family Matters by Rohinton Mistry March 10 : The Tiger Ladies: A Memoir of Kashmir by Sudha Koul April 14 : The House of Blue Mangoes by David Davidar May 12 : Nine Lives by William Dalrymple ',
+    'description' => 'Read and discuss the work of contemporary Indian authors who write in English.  These authors use English as their own language in creative ways, which distinguishes them from other South Asian authors, who are typically read in translation:  September 9 : Sea of Poppies by Amitav Ghosh October 14 : One Amazing Thing by Chitra Divakaruni November 18(this group meets on the 3rd Thursday in November due to the library closure on Veteran\'s Day: Freedom at Midnight by Larry Collins and Dominique Lapierre December 9 : The Guide by R.K. Narayan February 10 : Family Matters by Rohinton Mistry March 10 : The Tiger Ladies: A Memoir of Kashmir by Sudha Koul April 14 : The House of Blue Mangoes by David Davidar May 12 : Nine Lives by William Dalrymple',
     'dtend' => '2455604 3600',
     'dtstart' => '2455603 84600',
     'summary' => 'The Great Indian Novel',
@@ -1080,7 +1080,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8721'
   },
   {
-    'description' => ' Learn how to use library resources, in print and online, to put together a solid business plan. Our business librarians will demonstrate each resource and answer the most common questions about research. This class is a prerequisite to making a one-on-one appointment with a librarian to discuss your unique needs. No reservation required. For more information, contact the reference department.',
+    'description' => 'Learn how to use library resources, in print and online, to put together a solid business plan. Our business librarians will demonstrate each resource and answer the most common questions about research. This class is a prerequisite to making a one-on-one appointment with a librarian to discuss your unique needs. No reservation required. For more information, contact the reference department.',
     'dtend' => '2455604 10800',
     'dtstart' => '2455604 7200',
     'summary' => 'Business Research 101',
@@ -1088,7 +1088,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7771'
   },
   {
-    'description' => "Thursday February 10 I Love Boulder| Local Filmmakers\x{92} Showcase Odyssey of a Naturalist Directed by Fran Hall (assembled in 1965).  \x{93}A brief look into that tiny world of living things that we seldom pay any attention to!  An immature Lady Bird Beetle or two and some caterpillars who turn into lovely Butterflies!  Or an immature adult Tiger Beetle drilling its hole in the sand!  A look at some hunting ants and carrying their prey back to the home in the sand!  And a close-up look at just how a brightly colored caterpillar becomes a lovely butterfly right in front of your eyes!  A very young Lady Bird Beetle, with a pair of hollow jaws lives in a colony of brightly colored Aphids and never has to look very far for a meal!\x{94}\x{af}F. H.  In his long and vivid life with a camera Hall has lectured with his nature films for the National Audubon Society, and helped the Walt Disney Studios make nature films.  His screenings were characterized by his live narration.  He passed away December 2, 2010.  (90 min.) ",
+    'description' => 'Thursday February 10 I Love Boulder| Local Filmmakers\' Showcase Odyssey of a Naturalist Directed by Fran Hall (assembled in 1965).  "A brief look into that tiny world of living things that we seldom pay any attention to!  An immature Lady Bird Beetle or two and some caterpillars who turn into lovely Butterflies!  Or an immature adult Tiger Beetle drilling its hole in the sand!  A look at some hunting ants and carrying their prey back to the home in the sand!  And a close-up look at just how a brightly colored caterpillar becomes a lovely butterfly right in front of your eyes!  A very young Lady Bird Beetle, with a pair of hollow jaws lives in a colony of brightly colored Aphids and never has to look very far for a meal!"¯F. H.  In his long and vivid life with a camera Hall has lectured with his nature films for the National Audubon Society, and helped the Walt Disney Studios make nature films.  His screenings were characterized by his live narration.  He passed away December 2, 2010.  (90 min.) ',
     'dtend' => '2455604 12600',
     'dtstart' => '2455604 7200',
     'summary' => 'screening of "Odyssey of a Naturalist"',
@@ -1120,10 +1120,10 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7867'
   },
   {
-    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library. ',
+    'description' => 'BoulderReads! student coordinator Eleanor Ryman will be available to speak to potential students who are interested in the BoulderReads! Adult Literacy Program.  Students may also call Eleanor to make an appointment at (303) 441-4092.    The BoulderReads! Offices are located upstairs in the north building of the Main branch of the Boulder Public Library.',
     'dtend' => '2455605 72000',
     'dtstart' => '2455605 61200',
-    'summary' => 'BoulderReads! Student Walk-in Hours ',
+    'summary' => 'BoulderReads! Student Walk-in Hours',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8799'
   },
@@ -1158,5 +1158,13 @@
     'summary' => 'Reynolds Reading Pals',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=8239'
+  },
+  {
+    'description' => 'Pianist NINA TICHMAN performs Schubert, Chopin, Debussy, Heucke, and Rachmaninov. This performance is a benefit for the Boulder Library Foundation. Donations to the Foundation will be gratefully recieved at the door.      *Â“AwesomeÂ” and Â“thrillingÂ” are two of the adjectives used to describe Nina TichmanÂ´s performances of Claude Debussy. In New York City, Frankfurt and other cities in Europe and the United States she held audiences spellbound with her traversal of the complete works in three evenings and her CDs with this repertoire have been called **"because of her exquisite touch - the most beautiful recording of the complete works".   Following her debut at the age of seventeen performing BeethovenÂ´s Â“EmperorÂ” Concerto Nina Tichman appeared in major venues including Carnegie Hall, the Cologne Philharmonie, the  Berlin Konzerthaus and the Salzburg Festspielhaus. She has worked with prominent conductors such as Moshe Atzmon, Leon Barzin, Aaron Copland, Dmitri Kitaenko and Louis Langree, appearing with the Bamberger Sinfoniker, the Symphony Orchestras of the Bayerische, Hessische and Norddeutsche radio stations, the Baltimore und St. Louis Symphonies.   Concert tours throughout North America, Asia, and Europe with appearances at major festivals such as Marlboro, Tanglewood, International Musicians Seminar at Prussia Cove, Styriarte, Frankfurt Feste, Rheingau Musikfestival, have established her as ***Â“one of the leading pianists of her generationÂ”  She is at home in repertoire ranging from Frescobaldi to composers writing today, many of whom have entrusted her with world premieres of their compositions. Her discography includes music by Bartok, Beethoven, Copland (Complete Works for Piano), Chopin, Corigliano, Faure, V.D. Kirchner, Mendelssohn, Penderecki, und Reger.  American born, Nina Tichman has been based in Europe since winning the prestigious Â“BusoniÂ” Competition. Other awards include the Mendelssohn Prize of Berlin, First Prize of the Casagrande Competition in Italy and the Prize of the Organization of American States.   In 2001 she founded the Xyrion Trio with Ida Bieler and Maria Kliegel, an ensemble that has been praised for its vital, emotional and dramatic musicmaking and whose recording of the complete Beethoven Piano Trios has been praised for its ****Â“flawless ensemble, subtle phrasing, and great rhythmic energyÂ”   Nina Tichman is a graduate of The Juilliard School, where she was awarded the Eduard-Steuermann-Prize for outstanding musical achievement. In 1993 she was appointed Professor of Piano at the Hochschule fur Musik in Cologne and she has led master classes at the Mozarteum in Salzburg, as well as at Amherst College and Princeton University   ',
+    'dtend' => '2455628 2700',
+    'dtstart' => '2455627 82800',
+    'summary' => 'The Library Concert Series Presents:',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=9488'
   }
 ]
