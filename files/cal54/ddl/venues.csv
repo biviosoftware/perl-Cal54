@@ -1,0 +1,109 @@
+Address.city,Address.country,Address.location,Address.state,Address.street1,Address.street2,Address.zip,Email.email,Email.location,Phone.location,Phone.phone,RealmDAG.parent_id,RealmDAG.realm_dag_type,RealmOwner.display_name,RealmOwner.name,SearchWords.value,Venue.scraper_aux,Venue.scraper_type,Venue.venue_id,Website.location,Website.url,calendar.Website.location,calendar.Website.url
+Boulder,US,Home,CO,5763 Arapahoe Ave. #E,,80303,ignore-avery@bivio.biz,Home,Home,303.440.4324,500004,Parent Is Authorized Access,Avery Brewing,avery,,,Google,2400021,Home,http://www.averybrewing.com,Calendar,http://www.averybrewing.com/calendar.html
+Boulder,US,Home,CO,3595 Table Mesa Drive,,80305,ignore-bpl_reynolds@bivio.biz,Home,Home,303.441.3120,500004,Parent Is Authorized Access,Boulder Public Library - George Reynolds Branch,bpl_reynolds,,,Evanced,1100021,Home,http://www.boulderlibrary.org/locations/grb.html,Calendar,http://events.boulderlibrary.org?lib=2
+Boulder,US,Home,CO,1001 Arapahoe Avenue,,80302,ignore-bpl_main@bivio.biz,Home,Home,303.441.3100,500004,Parent Is Authorized Access,Boulder Public Library - Main Branch,bpl_main,,,Evanced,1000021,Home,http://www.boulderlibrary.org,Calendar,http://events.boulderlibrary.org?lib=0
+Boulder,US,Home,CO,4800 Baseline Road,,80303,ignore-bpl_meadows@bivio.biz,Home,Home,303.441.4390,500004,Parent Is Authorized Access,Boulder Public Library - Meadows Branch,bpl_meadows,,,Evanced,1200021,Home,http://www.boulderlibrary.org/locations/meadows.html,Calendar,http://events.boulderlibrary.org?lib=3
+Boulder,US,Home,CO,637R South Broadway,,80305,ashkan@caffesole.com,Home,Home,303.499.2985,500004,Parent Is Authorized Access,Caffe Sole,caffesole,,,Google,300021,Home,http://www.caffesole.com,Calendar,http://www.caffesole.com/events.html
+Boulder,US,Home,CO,900 Baseline Road,,80302,ignore-chautauqua@bivio.biz,Home,Home,303.442.3282,500004,Parent Is Authorized Access,Colorado Chautauqua Association,chautauqua,,"{
+  repeat => [
+    [qr{((?:[^\n]+\n)+)\w+,\s*$month\s+$day,\s+$year,\s+$time_ap.*?\n\n((?:[^\n]+\n)+)\n}s, {
+      fields => [qw(summary month day year start_time description)],
+    }],
+  ],
+}
+",RegExp,1500021,Home,http://www.chautauqua.com,Calendar,http://www.chautauqua.com/upcoming_events.php
+Boulder,US,Home,CO,1085 18th Street,,80309,ignore-cu_art@bivio.biz,Home,Home,,500004,Parent Is Authorized Access,CU Art Museum,cu_art,,,Active Data,900021,Home,http://cuartmuseum.colorado.edu/,Calendar,http://events.colorado.edu/EventList.aspx?view=Summary
+Boulder,US,Home,CO,1606 Central Campus Mall,,80302,ignore-cu_cristol@colorado.edu,Home,Home,,500004,Parent Is Authorized Access,CU Cristol Chemistry & Biochemistry,cu_cristol,,,Active Data,1600021,Home,http://events.colorado.edu,Calendar,http://events.colorado.edu/EventList.aspx?view=Summary
+Boulder,US,Home,CO,2000 Colorado Av,,80302,ignore-cu_duane@colorado.edu,Home,Home,,500004,Parent Is Authorized Access,CU Duane Physics,cu_duane,,,Active Data,1700021,Home,http://events.colorado.edu,Calendar,http://events.colorado.edu/EventList.aspx?view=Summary
+Boulder,US,Home,CO,1020 18th Street,,80302,ignore-cu_imig@bivio.biz,Home,Home,,500004,Parent Is Authorized Access,CU Imig Music Building,cu_imig,,,Active Data,600021,Home,http://music.colorado.edu,Calendar,http://music.colorado.edu/events/
+Boulder,US,Home,CO,1595 Pleasant St,,80302,ignore-cu_macky@bivio.biz,Home,Home,,500004,Parent Is Authorized Access,CU Macky Auditorium,cu_macky,,,Active Data,500021,Home,http://macky.colorado.edu,Calendar,http://macky.colorado.edu/events/
+Boulder,US,Home,CO,408 UCB,,80309,fiske@colorado.edu,Home,Home,303.492.5002,500004,Parent Is Authorized Access,Fiske Planetarium and Science Center,cu_fiske,,,Active Data,700021,Home,http://fiske.colorado.edu,Calendar,http://fiske.colorado.edu/events/index.php
+Boulder,US,Home,CO,1135 13th Street,,80304,ignore-foxtheatre@colorado.edu,Home,Home,,500004,Parent Is Authorized Access,Fox Theatre,foxtheatre,,"{
+    repeat => [
+	[qr{^$month_day\s+(.*?)\s*$}m, {
+	    fields => [qw(month_day summary)],
+	    follow_link => {
+		global => [
+		    [qr{\bshow\:\s*$time_ap}i, {
+			fields => ['start_time'],
+		    }],
+		    [qr{about this show.*?\n+(.*?)\n}is, {
+			fields => ['description'],
+		    }],
+		],
+	    }
+	}],
+    ],
+}
+",RegExp,1800021,Home,http://foxtheatre.com,Calendar,http://foxtheatre.com/Store/ChooseTicket.aspx
+Boulder,US,Home,CO,2115 Thirteenth St.,,80302,ignore-boulderaro@bivio.biz,Home,Home,303.442.4344,500004,Parent Is Authorized Access,Hotel Boulderado,boulderado,,"{
+    global => [
+        [qr/Live Music ${time_ap}\s*\-\s*$time_ap/, {
+            fields => ['start_time', 'end_time'],
+ }],
+    ],
+    repeat => [
+        [qr/\b$day_name,\s*$month\s+$day\s*~\s*$line(?:\((.*?)\))?/, {
+     fields => ['day_name', 'month', 'day', 'summary', 'description'],
+ }],
+    ],
+}
+",RegExp,1400021,Home,http://www.boulderado.com,Calendar,http://www.boulderado.com/musiconthemezz.html
+Lafayette,US,Home,CO,2675 North Park Drive,,80326,marc@nissis.com,Home,Home,303.665.2757,500004,Parent Is Authorized Access,Nissi's,nissis,,"{
+    repeat => [
+	[qr/($month\s*>.*)/, {
+	    fields => ['link'],
+	    follow_link => {
+		global => [
+		    [qr/$month\s+$year/, {
+			fields => ['month', 'year'],
+		    }],
+		],
+		repeat => [
+		    [qr/\n$day\s+$time\s*\-\s*$time\s(.*?)(\n$day\n|\nGathering Place)/s, {
+			fields => ['day', 'start_time_pm', 'end_time_pm',
+			    'description', 'save'],
+			summary_from_description =>
+			    qr/(?:^|\n)([^\n]+\{\d+\})\n/s,
+		    }],
+		],
+	    },
+	}],
+    ],
+}
+",RegExp,400021,Home,http://www.nissis.com,Calendar,http://www.nissis.com/lmcalendar.html
+Boulder,US,Home,CO,"5290 Arapahoe Ave., Ste I",,80303,feedback@rocknsoulcafe.com,Home,Home,,500004,Parent Is Authorized Access,Rock N Soul Cafe,rockandsoul,,"{
+  pager => {
+    link => qr/\n(>>\{\d})\n/s,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/$time_ap\s*\-\s*\nCLOSED/s => {
+      fields => [],
+    }],
+    [qr/$time_ap\s*\-\s*\n$line/s => {
+      fields => [qw(start_time summary)],
+      follow_link => {
+        global => [
+          [qr/$month $day, $year/ => {
+              fields => [qw(month day year)],
+          }],
+          [qr/description\: (.*?)\n\n/is => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+",RegExp,2500021,Home,http://www.rocknsoulcafe.com,Calendar,http://www.rocknsoulcafe.com/calendar/
+Boulder,US,Home,CO,1709 Pearl Street,,80302,contact@thelaughinggoat.com,Home,Home,,500004,Parent Is Authorized Access,The Laughing Goat Coffeehouse,thelaughinggoat,,,Google,200021,Home,http://thelaughinggoat.com,Calendar,http://thelaughinggoat.com/events.php
+Boulder,US,Home,CO,926 Pearl Street,,80302,westend@bigredf.com,Home,Home,303.444.3535,500004,Parent Is Authorized Access,The West End Tavern,westend,,"{
+    repeat => [
+        [qr/(?:$month\s+)?$day\s+(.*?)\s*,\s*$time_ap\s+(.*?)\n\n/s, {
+	    fields => ['month', 'day', 'summary', 'start_time', 'description'],
+	}],
+    ],
+}
+",RegExp,1300021,Home,http://www.thewestendtavern.com,Calendar,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx
+Boulder,US,Home,CO,1669 Euclid Av,,80302,ignore-cu_umc@bivio.biz,Home,Home,,500004,Parent Is Authorized Access,University Memorial Center,cu_umc,,,Active Data,800021,Home,http://umc.colorado.edu/,Calendar,http://umc.colorado.edu/eventlist.html
