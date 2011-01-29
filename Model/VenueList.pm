@@ -54,6 +54,7 @@ sub internal_initialize {
         primary_key => [[$self->PRIMARY_KEY_EQUIVALENCE_LIST, 'RealmDAG.child_id']],
 	order_by => ['RealmOwner.display_name'],
 	other => [
+	    'Venue.scraper_aux',
 	    $self->EDITABLE_FIELD_LIST,
 	    $self->LOCATION_EQUIVALENCE_LIST,
 	    ['RealmDAG.realm_dag_type', [b_use('Type.RealmDAG')->PARENT_IS_AUTHORIZED_ACCESS]],
