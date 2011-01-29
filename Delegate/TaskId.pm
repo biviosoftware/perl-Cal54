@@ -53,10 +53,11 @@ sub get_delegate_info {
 	    next=ADM_CALENDAR_EVENT_LIST_FORM
         )],
 	[qw(
-	    ADM_VENUE_SCRAPER_FORM
+	    ADM_VENUE_SCRAPER
 	    505
 	    FORUM
-	    DATA_READ&DATA_WRITE&FEATURE_SITE_ADMIN
+	    DATA_READ&FEATURE_SITE_ADMIN&TEST_TRANSIENT
+	    Action.AssertClient
 	    Model.Venue->execute_unauth_load_this
 	    Model.VenueScraperForm
 	    View.Venue->scraper
@@ -66,7 +67,8 @@ sub get_delegate_info {
 	    ADM_SCRAPER_PREVIEW
 	    506
 	    FORUM
-	    DATA_READ&DATA_WRITE&FEATURE_SITE_ADMIN
+	    DATA_READ&FEATURE_SITE_ADMIN&TEST_TRANSIENT
+	    Action.AssertClient
 	    Action.ScraperPreview
 	    View.Venue->scraper_preview
 	    next=ADM_VENUE_LIST
