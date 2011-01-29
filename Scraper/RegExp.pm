@@ -144,10 +144,10 @@ sub _process_url {
 	    _add_field_values($self, $args->{fields}, $current);
 
 	    if ($args->{follow_link}) {
-		_process_url($self, $args->{follow_link},
-		    $cleaner->get_link_for_text(
-			$current->{link} || $current->{summary}),
-		    $current);
+		my($url) = $cleaner->unsafe_get_link_for_text(
+		    $current->{link} || $current->{summary});
+		_process_url($self, $args->{follow_link}, $url, $current)
+		    if $url;
 	    }
 	    if ($args->{summary_from_description} && $current->{description}) {
 		($current->{summary}) = $current->{description} =~
