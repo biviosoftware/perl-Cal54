@@ -16,6 +16,7 @@ my($_FP) = b_use('Type.FilePath');
 my($_HTML) = b_use('Bivio.HTML');
 my($_L) = b_use('IO.Log');
 my($_R) = b_use('IO.Ref');
+my($_S) = b_use('Type.String');
 my($_T) = b_use('Agent.Task');
 #TODO: Make a RowTag
 my($_TZ) = b_use('Type.TimeZone')->get_default;
@@ -24,8 +25,11 @@ my($_TT) = b_use('Type.Text');
 sub c4_scraper_get {
     my($self, $uri) = @_;
     my($log) = _log($self);
-    return $self->extract_content($self->http_get($uri, $log))
-	unless my $d = _bunit_dir($self);
+    my($d);
+    unless ($d = _bunit_dir($self)) {
+	sleep(1);
+	return $self->extract_content($self->http_get($uri, $log));
+    }
     $self->put(last_uri => $self->abs_uri($uri));
     return $self->read_file($_FP->join($d, $_FP->get_tail($log)));
 }
@@ -38,7 +42,7 @@ sub do_all {
 	    my($it) = @_;
 	    $_A->reset_warn_counter;
 	    b_info($it->get('RealmOwner.display_name'));
-	    $proto->do_one($it, $date_time);
+	    $_T->commit($proto->do_one($it, $date_time)->req);
 	    return 1;
 	},
     );
@@ -75,12 +79,7 @@ sub do_one {
 	    );
 	},
     );
-    return $venue_list->get_model('RealmOwner')->as_string
-	. ': '
-	. @{$self->get('events')}
-	. ' events and '
-	. $self->get('failures')
-	. ' failures';
+    return $self;
 }
 
 sub get_request {
@@ -104,13 +103,14 @@ sub internal_catch {
 	'.err',
     );
     $self->put(failures => $self->get('failures') + 1);
+    $self->put(die => $die);
     return;
 }
 
 sub internal_clean {
     my($self, $value) = @_;
-    $value = $_HTML->unescape($value);
-    $value =~ s{<.*?>}{ }g;
+    $value = ${$_S->canonicalize_charset($_HTML->unescape($value))},
+    $value =~ s{<.*?>}{ }sg;
     return $value;
 }
 
@@ -208,8 +208,6 @@ sub internal_update {
     else {
 	b_warn($curr_count, ': attempting to delete more than 5% events, not deleting');
     }
-    $_T->commit($self->req)
-	unless _bunit_dir($self);
     return;
 }
 
