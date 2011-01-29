@@ -112,7 +112,7 @@ sub _eval_regexp {
     my($day_name) = _day_name_regexp();
     my($month) = _month_regexp();
     my($month_day) = qr{\b([0,1]?[0-9]/[0-3]?[0-9])\b};
-    my($day) = qr/\b([1-3]?[0-9])(?:st|nd|rd|th)?\b/i;
+    my($day) = qr/\b([0-3]?[0-9])(?:st|nd|rd|th)?\b/i;
     my($line) = qr/(.*?)\n/;
     my($description) = qr/(.*?)\n\n/;
     my($res) = eval($$cfg);
@@ -131,7 +131,7 @@ sub _process_url {
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
     my($text) = $cleaner->clean_html($self->c4_scraper_get($url), $url);
 
-    foreach my $info (@{$cfg->{global} || []}) {
+    foreach my $info (@{$cfg->{once} || $cfg->{global} || []}) {
 	my($regexp, $args) = @$info;
 	_add_field_values($self, $args->{fields}, $current)
 	    if $$text =~ /$regexp/;
@@ -165,6 +165,13 @@ sub _process_url {
 	    delete($current->{link});
 	    delete($current->{url});
 	}
+    }
+
+    if ($cfg->{pager} && --$cfg->{pager}->{page_count} > 0) {
+	my($regexp) = $cfg->{pager}->{link};
+	my($link) = $$text =~ /$regexp/;
+	_process_url($self, $cfg, $cleaner->get_link_for_text($link), {})
+	    if $link;
     }
     return;
 }
