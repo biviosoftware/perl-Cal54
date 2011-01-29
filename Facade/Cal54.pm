@@ -54,7 +54,7 @@ my($_SELF) = __PACKAGE__->new({
 	[ADM_CALENDAR_EVENT_LIST_FORM => '?/events'],
 	[ADM_VENUE_FORM => '?/edit-venue'],
 	[ADM_VENUE_LIST => '?/venues'],
-	[ADM_VENUE_SCRAPER_FORM => '?/scraper'],
+	[ADM_VENUE_SCRAPER => '?/scraper'],
 	[ADM_SCRAPER_PREVIEW => '?/scraper-preview'],
     ],
     Text => [
@@ -66,7 +66,7 @@ my($_SELF) = __PACKAGE__->new({
 	    ADM_VENUE_LIST => 'Venues',
 	    ADM_CALENDAR_EVENT_LIST_FORM => 'Events',
 	    ADM_VENUE_FORM => 'Edit Venue',
-	    ADM_VENUE_SCRAPER_FORM => 'Scraper Definition',
+	    ADM_VENUE_SCRAPER => 'Scraper Definition',
 	    ADM_SCRAPER_PREVIEW => 'Scraper Preview',
 	]],
 	['task_menu.title' => [
@@ -81,6 +81,14 @@ my($_SELF) = __PACKAGE__->new({
 	    'calendar.Website.url' => 'Calendar Link',
 	    'RealmOwner.display_name' => 'Full Name',
 	    'RowTag.value' => 'Tags',
+	    'Venue.scraper_type.desc' => q{
+                If(['Model.VenueForm', '->is_edit'],
+                    Link(vs_text('title.ADM_VENUE_SCRAPER'), URI({
+                        task_id => 'ADM_VENUE_SCRAPER',
+                        query => ['Model.Venue', '->format_query_for_this'],
+                    })),
+                );
+            }
 	]],
 	[SearchWords => [
 	    value => 'Search Words',
@@ -88,6 +96,9 @@ my($_SELF) = __PACKAGE__->new({
 	[[qw(CalendarEventFilterList AdmCalendarEventList AdmCalendarEventListForm)] => [
 	    'RealmOwner.display_name' => 'Title',
 	    'RowTag.value' => 'Tags',
+	]],
+	[VenueScraperForm => [
+	    test_scraper_button => 'Run Scraper',
 	]],
     ],
 });
