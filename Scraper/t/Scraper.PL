@@ -17,7 +17,21 @@ sub {
     my($case) = 1;
     return [
 	class() => [
-	    do_one => [
+	    {
+		method => 'do_one',
+		compute_return => sub {
+		    my(undef, $actual) = @_;
+		    my($scraper) = @$actual;
+		    return [
+			$scraper->get('venue_list')
+			    ->get_model('RealmOwner')->as_string
+			    . ': '
+			    . @{$scraper->get('events')}
+			    . ' events and '
+			    . $scraper->get('failures')
+			    . ' failures'];
+		},
+	    } => [
 		map({
 		    my($events, $test_now) = @$_;
 		    map({
