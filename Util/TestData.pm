@@ -47,15 +47,14 @@ sub init_venues {
 
 	    foreach my $v (@{$self->new_other('CSV')
 	        ->parse_records($_F->read('venues.csv'))}) {
-		my($ro) = $self->model('RealmOwner');
 		delete($v->{'Venue.venue_id'});
-
-		if ($ro->unauth_load({
-		    name => $v->{'RealmOwner.name'},
-		})) {
-		    $self->req->put(query => $ro->format_query_for_this);
-		    $v->{'Venue.venue_id'} = $ro->get('realm_id'),
-		}
+		my($ro) = $self->model('RealmOwner');
+		$self->req->put(query =>
+		    $ro->unauth_load({
+			name => $v->{'RealmOwner.name'},
+		    })
+			? $ro->format_query_for_this
+			: undef);
 		$v->{'Venue.scraper_type'} =
 		    $_S->from_any($v->{'Venue.scraper_type'});
 		$self->model('VenueForm', $v);
