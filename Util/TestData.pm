@@ -47,24 +47,26 @@ sub init_venues {
 
 	    foreach my $v (@{$self->new_other('CSV')
 	        ->parse_records($_F->read('venues.csv'))}) {
-		delete($v->{'Venue.venue_id'});
 		my($ro) = $self->model('RealmOwner');
+		delete($v->{'Venue.venue_id'});
 
 		if ($ro->unauth_load({
 		    name => $v->{'RealmOwner.name'},
 		})) {
 		    $self->req->put(query => $ro->format_query_for_this);
+		    $v->{'Venue.venue_id'} = $ro->get('realm_id'),
 		}
-		my($scraper) = $v->{'Venue.scraper_type'};
-		next unless $scraper;
-		$v->{'Venue.scraper_type'} = $_S->from_any($scraper);
+		$v->{'Venue.scraper_type'} =
+		    $_S->from_any($v->{'Venue.scraper_type'});
 		$self->model('VenueForm', $v);
-		$self->req('Model.RealmOwner')->update({
+		my($venue) = $self->req('Model.Venue');
+		$venue->get_model('RealmOwner')->update({
 		    name => $v->{'RealmOwner.name'},
 		});
-		$self->req('Model.Venue')->update({
+		$venue->update({
 		    scraper_aux => $v->{'Venue.scraper_aux'},
 		});
+		$self->req->clear_nondurable_state;
 	    }
 	});
     return;
