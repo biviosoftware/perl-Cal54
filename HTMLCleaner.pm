@@ -122,9 +122,13 @@ sub html_parser_start {
 	$fields->{text} .= "\n"
 	    unless $fields->{text} =~ /\n$/s;
     }
-    if ($tag eq 'span') {
+    elsif ($tag eq 'span') {
 	_append_text($self, ' ')
 	    unless $fields->{soft_newline};
+    }
+    elsif ($tag eq 'img') {
+	_append_text($self, $attrs->{alt})
+	    if $attrs->{alt};
     }
     return;
 }
