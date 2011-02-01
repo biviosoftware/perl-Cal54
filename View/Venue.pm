@@ -10,7 +10,13 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 sub form {
     return shift->internal_body(
 	vs_simple_form(VenueForm => [
-	    map("VenueForm.$_", b_use('Model.VenueList')->EDITABLE_FIELD_LIST),
+	    map(
+		$_ eq 'Venue.scraper_type'
+		    ? ["VenueForm.$_", {
+			wf_want_select => 1,
+		    }]
+		    : "VenueForm.$_",
+		b_use('Model.VenueList')->EDITABLE_FIELD_LIST),
 	]),
     );
 }
