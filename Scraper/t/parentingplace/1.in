@@ -1,0 +1,1895 @@
+[
+  {
+    'description' => '',
+    'dtend' => '2455810 82800',
+    'dtstart' => '2455810 50400',
+    'summary' => 'PARENTING PLACE CLOSED.  No groups or classes will be held.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => undef
+  },
+  {
+    'description' => '',
+    'dtend' => '2455747 82800',
+    'dtstart' => '2455747 50400',
+    'summary' => 'PARENTING PLACE CLOSED.  No groups or classes will be held.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NW5nMXV1dWYyZmg3cDRlc25kcm1qMzd1c3MgNmVkczIwY3FqNDB1NDc5bWNjMnY3NzY1bTBAZw'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 6/20-6/24/2011',
+    'dtend' => '2455733 82800',
+    'dtstart' => '2455733 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will be held.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Zzc2cDcxc3RtMDR1ZmRxbGo2ZGZzaGhoOW9fMjAxMTA2MjBUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 6/20-6/24/2011',
+    'dtend' => '2455734 82800',
+    'dtstart' => '2455734 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will be held.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Zzc2cDcxc3RtMDR1ZmRxbGo2ZGZzaGhoOW9fMjAxMTA2MjFUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 6/20-6/24/2011',
+    'dtend' => '2455735 82800',
+    'dtstart' => '2455735 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will be held.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Zzc2cDcxc3RtMDR1ZmRxbGo2ZGZzaGhoOW9fMjAxMTA2MjJUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 6/20-6/24/2011',
+    'dtend' => '2455736 82800',
+    'dtstart' => '2455736 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will be held.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Zzc2cDcxc3RtMDR1ZmRxbGo2ZGZzaGhoOW9fMjAxMTA2MjNUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 6/20-6/24/2011',
+    'dtend' => '2455737 82800',
+    'dtstart' => '2455737 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will be held.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Zzc2cDcxc3RtMDR1ZmRxbGo2ZGZzaGhoOW9fMjAxMTA2MjRUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455712 82800',
+    'dtstart' => '2455712 50400',
+    'summary' => 'PARENTING PLACE CLOSED.  No groups or classes will be held.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OWxoaXU5NHA0dmdibmw2MTZjaGRza2g3NW8gNmVkczIwY3FqNDB1NDc5bWNjMnY3NzY1bTBAZw'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455670 61200',
+    'dtstart' => '2455670 55800',
+    'summary' => 'Mandarin Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bG5sNXA3bGJpZmllYmFkbGhjZTRoYWZzazAgNmVkczIwY3FqNDB1NDc5bWNjMnY3NzY1bTBAZw'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 3/21-25/2011',
+    'dtend' => '2455642 82800',
+    'dtstart' => '2455642 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will meet this week.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MDkxOXVwZ3Jua245MDFiMjQ4dmduOGJubGdfMjAxMTAzMjFUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 3/21-25/2011',
+    'dtend' => '2455643 82800',
+    'dtstart' => '2455643 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will meet this week.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MDkxOXVwZ3Jua245MDFiMjQ4dmduOGJubGdfMjAxMTAzMjJUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 3/21-25/2011',
+    'dtend' => '2455644 82800',
+    'dtstart' => '2455644 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will meet this week.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MDkxOXVwZ3Jua245MDFiMjQ4dmduOGJubGdfMjAxMTAzMjNUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 3/21-25/2011',
+    'dtend' => '2455645 82800',
+    'dtstart' => '2455645 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will meet this week.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MDkxOXVwZ3Jua245MDFiMjQ4dmduOGJubGdfMjAxMTAzMjRUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Staff will be in Administrative Retreat during the week of 3/21-25/2011',
+    'dtend' => '2455646 82800',
+    'dtstart' => '2455646 50400',
+    'summary' => 'OPEN PLAY AND DROP-IN SERVICES ONLY. No groups or classes will meet this week.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MDkxOXVwZ3Jua245MDFiMjQ4dmduOGJubGdfMjAxMTAzMjVUMTQwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455628 64800',
+    'dtstart' => '2455628 59400',
+    'summary' => 'Mandarin Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MnVnbmdnbDg5ZjVxaXBlajA1N3I0bHRmdW8gNmVkczIwY3FqNDB1NDc5bWNjMnY3NzY1bTBAZw'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455614 64800',
+    'dtstart' => '2455614 59400',
+    'summary' => 'Mandarin Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aXZwczNxNnJxZjMwb2ZibG82bTQ4MGZ0bW8gNmVkczIwY3FqNDB1NDc5bWNjMnY3NzY1bTBAZw'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455603 66600',
+    'dtstart' => '2455603 57600',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTAyMTBUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455610 66600',
+    'dtstart' => '2455610 57600',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTAyMTdUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455617 66600',
+    'dtstart' => '2455617 57600',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTAyMjRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455624 66600',
+    'dtstart' => '2455624 57600',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTAzMDNUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455631 66600',
+    'dtstart' => '2455631 57600',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTAzMTBUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455638 63000',
+    'dtstart' => '2455638 54000',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTAzMTdUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455652 63000',
+    'dtstart' => '2455652 54000',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTAzMzFUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455659 63000',
+    'dtstart' => '2455659 54000',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTA0MDdUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455666 63000',
+    'dtstart' => '2455666 54000',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTA0MTRUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455673 63000',
+    'dtstart' => '2455673 54000',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTA0MjFUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455680 63000',
+    'dtstart' => '2455680 54000',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTA0MjhUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455687 63000',
+    'dtstart' => '2455687 54000',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTA1MDVUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455694 63000',
+    'dtstart' => '2455694 54000',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTA1MTJUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Registration required. Call 303-449-0177.',
+    'dtend' => '2455701 63000',
+    'dtstart' => '2455701 54000',
+    'summary' => 'Incredible Years Parenting Class',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bjFjcGpkcGx0bmt2cW4zNWZjOG41NmVrdWNfMjAxMTA1MTlUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Co-sponsored by Cathy Busha, Co-Director of Out Boulder, and Louise Haimowitz, Director of Clinical Services at Parenting Place. This group is for lesbian, gay, bisexual, or transgender parents with children ages 0-12, as well as parents-to-be and those contemplating parenthood. Meets once a month.
+Contact Louise for further information and location. 303-449-0177 x17, louise@myparentingplace.org.',
+    'dtend' => '2455592 82800',
+    'dtstart' => '2455592 75600',
+    'summary' => 'LGBT Family Gathering',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bWE1dTFrYmU1dDZxbGZwMjVxYmRyNTEwcXNfMjAxMTAxMzBUMjEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Co-sponsored by Cathy Busha, Co-Director of Out Boulder, and Louise Haimowitz, Director of Clinical Services at Parenting Place. This group is for lesbian, gay, bisexual, or transgender parents with children ages 0-12, as well as parents-to-be and those contemplating parenthood. Meets once a month.
+Contact Louise for further information and location. 303-449-0177 x17, louise@myparentingplace.org.',
+    'dtend' => '2455620 82800',
+    'dtstart' => '2455620 75600',
+    'summary' => 'LGBT Family Gathering',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bWE1dTFrYmU1dDZxbGZwMjVxYmRyNTEwcXNfMjAxMTAyMjdUMjEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
+    'dtend' => '2455597 72000',
+    'dtstart' => '2455597 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
+    'dtend' => '2455604 72000',
+    'dtstart' => '2455604 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
+    'dtend' => '2455611 72000',
+    'dtstart' => '2455611 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMThUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
+    'dtend' => '2455618 72000',
+    'dtstart' => '2455618 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMjVUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
+    'dtend' => '2455625 72000',
+    'dtstart' => '2455625 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAzMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
+    'dtend' => '2455632 72000',
+    'dtstart' => '2455632 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAzMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
+    'dtend' => '2455639 68400',
+    'dtstart' => '2455639 63000',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAzMThUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Who:
+Mothers and fathers with their adopted children, as well as those
+awaiting adoptions. Families involved with domestic, foreign, foster-adopt
+and kinship adoptions are welcome to attend.
+
+Why:
+The goal of the Adoption Support Group is to provide a setting where
+families with shared experiences can gather and receive support, education, and a
+sense of  community.  Subjects to be addressed will include helping a child
+adjust to his/her new environment,  strengthening the parent-child bond,
+incorporating the child\'s history, and how and when to address adoption questions.
+
+Facilitation:
+Louise Haimowitz is a licensed clinical social worker with over
+25 years of experience working with families, developing effective
+parenting skills and healthy  parent-child attachments.',
+    'dtend' => '2455597 61200',
+    'dtstart' => '2455597 55800',
+    'summary' => 'Adoption Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMDRUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Who:
+Mothers and fathers with their adopted children, as well as those
+awaiting adoptions. Families involved with domestic, foreign, foster-adopt
+and kinship adoptions are welcome to attend.
+
+Why:
+The goal of the Adoption Support Group is to provide a setting where
+families with shared experiences can gather and receive support, education, and a
+sense of  community.  Subjects to be addressed will include helping a child
+adjust to his/her new environment,  strengthening the parent-child bond,
+incorporating the child\'s history, and how and when to address adoption questions.
+
+Facilitation:
+Louise Haimowitz is a licensed clinical social worker with over
+25 years of experience working with families, developing effective
+parenting skills and healthy  parent-child attachments.',
+    'dtend' => '2455604 61200',
+    'dtstart' => '2455604 55800',
+    'summary' => 'Adoption Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMTFUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Who:
+Mothers and fathers with their adopted children, as well as those
+awaiting adoptions. Families involved with domestic, foreign, foster-adopt
+and kinship adoptions are welcome to attend.
+
+Why:
+The goal of the Adoption Support Group is to provide a setting where
+families with shared experiences can gather and receive support, education, and a
+sense of  community.  Subjects to be addressed will include helping a child
+adjust to his/her new environment,  strengthening the parent-child bond,
+incorporating the child\'s history, and how and when to address adoption questions.
+
+Facilitation:
+Louise Haimowitz is a licensed clinical social worker with over
+25 years of experience working with families, developing effective
+parenting skills and healthy  parent-child attachments.',
+    'dtend' => '2455611 61200',
+    'dtstart' => '2455611 55800',
+    'summary' => 'Adoption Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMThUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Who:
+Mothers and fathers with their adopted children, as well as those
+awaiting adoptions. Families involved with domestic, foreign, foster-adopt
+and kinship adoptions are welcome to attend.
+
+Why:
+The goal of the Adoption Support Group is to provide a setting where
+families with shared experiences can gather and receive support, education, and a
+sense of  community.  Subjects to be addressed will include helping a child
+adjust to his/her new environment,  strengthening the parent-child bond,
+incorporating the child\'s history, and how and when to address adoption questions.
+
+Facilitation:
+Louise Haimowitz is a licensed clinical social worker with over
+25 years of experience working with families, developing effective
+parenting skills and healthy  parent-child attachments.',
+    'dtend' => '2455618 61200',
+    'dtstart' => '2455618 55800',
+    'summary' => 'Adoption Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMjVUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Who:
+Mothers and fathers with their adopted children, as well as those
+awaiting adoptions. Families involved with domestic, foreign, foster-adopt
+and kinship adoptions are welcome to attend.
+
+Why:
+The goal of the Adoption Support Group is to provide a setting where
+families with shared experiences can gather and receive support, education, and a
+sense of  community.  Subjects to be addressed will include helping a child
+adjust to his/her new environment,  strengthening the parent-child bond,
+incorporating the child\'s history, and how and when to address adoption questions.
+
+Facilitation:
+Louise Haimowitz is a licensed clinical social worker with over
+25 years of experience working with families, developing effective
+parenting skills and healthy  parent-child attachments.',
+    'dtend' => '2455625 61200',
+    'dtstart' => '2455625 55800',
+    'summary' => 'Adoption Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAzMDRUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Who:
+Mothers and fathers with their adopted children, as well as those
+awaiting adoptions. Families involved with domestic, foreign, foster-adopt
+and kinship adoptions are welcome to attend.
+
+Why:
+The goal of the Adoption Support Group is to provide a setting where
+families with shared experiences can gather and receive support, education, and a
+sense of  community.  Subjects to be addressed will include helping a child
+adjust to his/her new environment,  strengthening the parent-child bond,
+incorporating the child\'s history, and how and when to address adoption questions.
+
+Facilitation:
+Louise Haimowitz is a licensed clinical social worker with over
+25 years of experience working with families, developing effective
+parenting skills and healthy  parent-child attachments.',
+    'dtend' => '2455632 61200',
+    'dtstart' => '2455632 55800',
+    'summary' => 'Adoption Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAzMTFUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Who:
+Mothers and fathers with their adopted children, as well as those
+awaiting adoptions. Families involved with domestic, foreign, foster-adopt
+and kinship adoptions are welcome to attend.
+
+Why:
+The goal of the Adoption Support Group is to provide a setting where
+families with shared experiences can gather and receive support, education, and a
+sense of  community.  Subjects to be addressed will include helping a child
+adjust to his/her new environment,  strengthening the parent-child bond,
+incorporating the child\'s history, and how and when to address adoption questions.
+
+Facilitation:
+Louise Haimowitz is a licensed clinical social worker with over
+25 years of experience working with families, developing effective
+parenting skills and healthy  parent-child attachments.',
+    'dtend' => '2455639 57600',
+    'dtstart' => '2455639 52200',
+    'summary' => 'Adoption Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAzMThUMTQzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455597 61200',
+    'dtstart' => '2455597 54900',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTAyMDRUMTUxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455604 61200',
+    'dtstart' => '2455604 54900',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTAyMTFUMTUxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455611 61200',
+    'dtstart' => '2455611 54900',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTAyMThUMTUxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455618 61200',
+    'dtstart' => '2455618 54900',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTAyMjVUMTUxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455625 61200',
+    'dtstart' => '2455625 54900',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTAzMDRUMTUxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455632 61200',
+    'dtstart' => '2455632 54900',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTAzMTFUMTUxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455639 57600',
+    'dtstart' => '2455639 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTAzMThUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455646 57600',
+    'dtstart' => '2455646 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTAzMjVUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455653 57600',
+    'dtstart' => '2455653 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA0MDFUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455660 57600',
+    'dtstart' => '2455660 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA0MDhUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455667 57600',
+    'dtstart' => '2455667 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA0MTVUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455674 57600',
+    'dtstart' => '2455674 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA0MjJUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455681 57600',
+    'dtstart' => '2455681 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA0MjlUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455688 57600',
+    'dtstart' => '2455688 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA1MDZUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455695 57600',
+    'dtstart' => '2455695 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA1MTNUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455702 57600',
+    'dtstart' => '2455702 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA1MjBUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455709 57600',
+    'dtstart' => '2455709 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA1MjdUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455716 57600',
+    'dtstart' => '2455716 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA2MDNUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455723 57600',
+    'dtstart' => '2455723 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA2MTBUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455730 57600',
+    'dtstart' => '2455730 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA2MTdUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455737 57600',
+    'dtstart' => '2455737 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA2MjRUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455744 57600',
+    'dtstart' => '2455744 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA3MDFUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455751 57600',
+    'dtstart' => '2455751 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA3MDhUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455758 57600',
+    'dtstart' => '2455758 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA3MTVUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455765 57600',
+    'dtstart' => '2455765 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA3MjJUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Martes en Longmont 9-11 y 11:30-1.  Llama a Patricia 303-449-0177 Miercoles en Boulder 10-.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455772 57600',
+    'dtstart' => '2455772 51300',
+    'summary' => 'Grupo de Padres Latinos - Lafayette',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NHMwbXNwYWs1aDVqa2hybHJlYW5jcnM4a2NfMjAxMTA3MjlUMTQxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children.  Japanese fluency recommended. Contact Michiko 303-442-3699. Also on 2nd Monday of each month, 9:00-11:00am.',
+    'dtend' => '2455617 82800',
+    'dtstart' => '2455617 75600',
+    'summary' => 'Japanese Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MnRrc2cydjdyNDhvM2NlczR0bjNsMGRkNGdfMjAxMTAyMjRUMjEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455596 61200',
+    'dtstart' => '2455596 57600',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YXZpMmcyOWI2Z292MmZlYWZudXM0a2xqdWNfMjAxMTAyMDNUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455603 61200',
+    'dtstart' => '2455603 57600',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YXZpMmcyOWI2Z292MmZlYWZudXM0a2xqdWNfMjAxMTAyMTBUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455610 61200',
+    'dtstart' => '2455610 57600',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YXZpMmcyOWI2Z292MmZlYWZudXM0a2xqdWNfMjAxMTAyMTdUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455617 61200',
+    'dtstart' => '2455617 57600',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YXZpMmcyOWI2Z292MmZlYWZudXM0a2xqdWNfMjAxMTAyMjRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455624 61200',
+    'dtstart' => '2455624 57600',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YXZpMmcyOWI2Z292MmZlYWZudXM0a2xqdWNfMjAxMTAzMDNUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455631 61200',
+    'dtstart' => '2455631 57600',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YXZpMmcyOWI2Z292MmZlYWZudXM0a2xqdWNfMjAxMTAzMTBUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455638 57600',
+    'dtstart' => '2455638 54000',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=YXZpMmcyOWI2Z292MmZlYWZudXM0a2xqdWNfMjAxMTAzMTdUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455593 73800',
+    'dtstart' => '2455593 70200',
+    'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAxMzFUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455600 73800',
+    'dtstart' => '2455600 70200',
+    'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMDdUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455607 73800',
+    'dtstart' => '2455607 70200',
+    'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMTRUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455614 73800',
+    'dtstart' => '2455614 70200',
+    'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMjFUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455621 73800',
+    'dtstart' => '2455621 70200',
+    'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMjhUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455628 73800',
+    'dtstart' => '2455628 70200',
+    'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAzMDdUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
+    'dtend' => '2455635 70200',
+    'dtstart' => '2455635 66600',
+    'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAzMTRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
+    'dtend' => '2455607 64800',
+    'dtstart' => '2455607 57600',
+    'summary' => 'Japanese Playgroup (2nd Monday)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTAyMTRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
+    'dtend' => '2455635 61200',
+    'dtstart' => '2455635 54000',
+    'summary' => 'Japanese Playgroup (2nd Monday)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTAzMTRUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
+    'dtend' => '2455663 61200',
+    'dtstart' => '2455663 54000',
+    'summary' => 'Japanese Playgroup (2nd Monday)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA0MTFUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
+    'dtend' => '2455691 61200',
+    'dtstart' => '2455691 54000',
+    'summary' => 'Japanese Playgroup (2nd Monday)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA1MDlUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
+    'dtend' => '2455726 61200',
+    'dtstart' => '2455726 54000',
+    'summary' => 'Japanese Playgroup (2nd Monday)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA2MTNUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
+    'dtend' => '2455754 61200',
+    'dtstart' => '2455754 54000',
+    'summary' => 'Japanese Playgroup (2nd Monday)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA3MTFUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'To register, contact Sheryl Schwabe at 303-520-6803 or sschwabe@comcast.net',
+    'dtend' => '2455598 70200',
+    'dtstart' => '2455598 61200',
+    'summary' => 'Love and Logic Class - for Parenting Place families',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bTdhNmJ1anZpNmJrdms2OWlzZDFqMW5jaGNfMjAxMTAyMDVUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
+    'dtend' => '2455597 72000',
+    'dtstart' => '2455597 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
+    'dtend' => '2455604 72000',
+    'dtstart' => '2455604 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
+    'dtend' => '2455611 72000',
+    'dtstart' => '2455611 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMThUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
+    'dtend' => '2455618 72000',
+    'dtstart' => '2455618 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMjVUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
+    'dtend' => '2455625 72000',
+    'dtstart' => '2455625 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAzMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
+    'dtend' => '2455632 72000',
+    'dtstart' => '2455632 66600',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAzMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
+    'dtend' => '2455639 68400',
+    'dtstart' => '2455639 63000',
+    'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAzMThUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'dtend' => '2455596 68400',
+    'dtstart' => '2455596 63000',
+    'summary' => 'Parents with Infants (newborn-9 months) Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMDNUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'dtend' => '2455603 68400',
+    'dtstart' => '2455603 63000',
+    'summary' => 'Parents with Infants (newborn-9 months) Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMTBUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'dtend' => '2455610 68400',
+    'dtstart' => '2455610 63000',
+    'summary' => 'Parents with Infants (newborn-9 months) Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMTdUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'dtend' => '2455617 68400',
+    'dtstart' => '2455617 63000',
+    'summary' => 'Parents with Infants (newborn-9 months) Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMjRUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'dtend' => '2455624 68400',
+    'dtstart' => '2455624 63000',
+    'summary' => 'Parents with Infants (newborn-9 months) Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAzMDNUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'dtend' => '2455631 68400',
+    'dtstart' => '2455631 63000',
+    'summary' => 'Parents with Infants (newborn-9 months) Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAzMTBUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'dtend' => '2455638 64800',
+    'dtstart' => '2455638 59400',
+    'summary' => 'Parents with Infants (newborn-9 months) Support Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAzMTdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
+    'dtend' => '2455596 64800',
+    'dtstart' => '2455596 59400',
+    'summary' => 'Russian Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMDNUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
+    'dtend' => '2455603 64800',
+    'dtstart' => '2455603 59400',
+    'summary' => 'Russian Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMTBUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
+    'dtend' => '2455610 64800',
+    'dtstart' => '2455610 59400',
+    'summary' => 'Russian Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMTdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
+    'dtend' => '2455617 64800',
+    'dtstart' => '2455617 59400',
+    'summary' => 'Russian Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMjRUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
+    'dtend' => '2455624 64800',
+    'dtstart' => '2455624 59400',
+    'summary' => 'Russian Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAzMDNUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
+    'dtend' => '2455631 64800',
+    'dtstart' => '2455631 59400',
+    'summary' => 'Russian Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAzMTBUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
+    'dtend' => '2455638 61200',
+    'dtstart' => '2455638 55800',
+    'summary' => 'Russian Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAzMTdUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455595 70200',
+    'dtstart' => '2455595 66600',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMDJUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455602 70200',
+    'dtstart' => '2455602 66600',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMDlUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455609 70200',
+    'dtstart' => '2455609 66600',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMTZUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455616 70200',
+    'dtstart' => '2455616 66600',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMjNUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455623 70200',
+    'dtstart' => '2455623 66600',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAzMDJUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455630 70200',
+    'dtstart' => '2455630 66600',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAzMDlUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455637 66600',
+    'dtstart' => '2455637 63000',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAzMTZUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455595 66600',
+    'dtstart' => '2455595 63000',
+    'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMDJUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455602 66600',
+    'dtstart' => '2455602 63000',
+    'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMDlUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455609 66600',
+    'dtstart' => '2455609 63000',
+    'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMTZUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455616 66600',
+    'dtstart' => '2455616 63000',
+    'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMjNUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455623 66600',
+    'dtstart' => '2455623 63000',
+    'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAzMDJUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455630 66600',
+    'dtstart' => '2455630 63000',
+    'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAzMDlUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455637 63000',
+    'dtstart' => '2455637 59400',
+    'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAzMTZUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455594 68400',
+    'dtstart' => '2455594 64800',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=azU0MHIwcTQ0aXVtZXE0cW9scm0wcjkxNDBfMjAxMTAyMDFUMTgwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455601 68400',
+    'dtstart' => '2455601 64800',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=azU0MHIwcTQ0aXVtZXE0cW9scm0wcjkxNDBfMjAxMTAyMDhUMTgwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455608 68400',
+    'dtstart' => '2455608 64800',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=azU0MHIwcTQ0aXVtZXE0cW9scm0wcjkxNDBfMjAxMTAyMTVUMTgwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455615 68400',
+    'dtstart' => '2455615 64800',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=azU0MHIwcTQ0aXVtZXE0cW9scm0wcjkxNDBfMjAxMTAyMjJUMTgwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455622 68400',
+    'dtstart' => '2455622 64800',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=azU0MHIwcTQ0aXVtZXE0cW9scm0wcjkxNDBfMjAxMTAzMDFUMTgwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455629 68400',
+    'dtstart' => '2455629 64800',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=azU0MHIwcTQ0aXVtZXE0cW9scm0wcjkxNDBfMjAxMTAzMDhUMTgwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => '',
+    'dtend' => '2455636 64800',
+    'dtstart' => '2455636 61200',
+    'summary' => 'Clase de Ingles (ESL)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=azU0MHIwcTQ0aXVtZXE0cW9scm0wcjkxNDBfMjAxMTAzMTVUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455594 64800',
+    'dtstart' => '2455594 61200',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 2-5 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=czY5cTQxa2ZrZGZuMTdic3RkZzd1OWdkaThfMjAxMTAyMDFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455601 64800',
+    'dtstart' => '2455601 61200',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 2-5 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=czY5cTQxa2ZrZGZuMTdic3RkZzd1OWdkaThfMjAxMTAyMDhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455608 64800',
+    'dtstart' => '2455608 61200',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 2-5 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=czY5cTQxa2ZrZGZuMTdic3RkZzd1OWdkaThfMjAxMTAyMTVUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455615 64800',
+    'dtstart' => '2455615 61200',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 2-5 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=czY5cTQxa2ZrZGZuMTdic3RkZzd1OWdkaThfMjAxMTAyMjJUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455622 64800',
+    'dtstart' => '2455622 61200',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 2-5 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=czY5cTQxa2ZrZGZuMTdic3RkZzd1OWdkaThfMjAxMTAzMDFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455629 64800',
+    'dtstart' => '2455629 61200',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 2-5 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=czY5cTQxa2ZrZGZuMTdic3RkZzd1OWdkaThfMjAxMTAzMDhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles.  Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'dtend' => '2455636 61200',
+    'dtstart' => '2455636 57600',
+    'summary' => 'Longmont Grupo de Padres Latinos con ninos 2-5 anos',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=czY5cTQxa2ZrZGZuMTdic3RkZzd1OWdkaThfMjAxMTAzMTVUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
+    'dtend' => '2455594 66600',
+    'dtstart' => '2455594 61200',
+    'summary' => 'Parents with Preschoolers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMDFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
+    'dtend' => '2455601 66600',
+    'dtstart' => '2455601 61200',
+    'summary' => 'Parents with Preschoolers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMDhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
+    'dtend' => '2455608 66600',
+    'dtstart' => '2455608 61200',
+    'summary' => 'Parents with Preschoolers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMTVUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
+    'dtend' => '2455615 66600',
+    'dtstart' => '2455615 61200',
+    'summary' => 'Parents with Preschoolers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMjJUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
+    'dtend' => '2455622 66600',
+    'dtstart' => '2455622 61200',
+    'summary' => 'Parents with Preschoolers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAzMDFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
+    'dtend' => '2455629 66600',
+    'dtstart' => '2455629 61200',
+    'summary' => 'Parents with Preschoolers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAzMDhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
+    'dtend' => '2455636 63000',
+    'dtstart' => '2455636 57600',
+    'summary' => 'Parents with Preschoolers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAzMTVUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'This group is for transitioning babies and their parents to come together and explore the world of becoming a toddler.  Group for children between 10 months and 2.5 years.',
+    'dtend' => '2455594 63900',
+    'dtstart' => '2455594 60300',
+    'summary' => 'Broomfield Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aTA3ZXMyc2ZldmFocmYydnNhZGs1NGFuYjhfMjAxMTAyMDFUMTY0NTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'This group is for transitioning babies and their parents to come together and explore the world of becoming a toddler.  Group for children between 10 months and 2.5 years.',
+    'dtend' => '2455601 63900',
+    'dtstart' => '2455601 60300',
+    'summary' => 'Broomfield Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aTA3ZXMyc2ZldmFocmYydnNhZGs1NGFuYjhfMjAxMTAyMDhUMTY0NTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'This group is for transitioning babies and their parents to come together and explore the world of becoming a toddler.  Group for children between 10 months and 2.5 years.',
+    'dtend' => '2455608 63900',
+    'dtstart' => '2455608 60300',
+    'summary' => 'Broomfield Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aTA3ZXMyc2ZldmFocmYydnNhZGs1NGFuYjhfMjAxMTAyMTVUMTY0NTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'This group is for transitioning babies and their parents to come together and explore the world of becoming a toddler.  Group for children between 10 months and 2.5 years.',
+    'dtend' => '2455615 63900',
+    'dtstart' => '2455615 60300',
+    'summary' => 'Broomfield Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aTA3ZXMyc2ZldmFocmYydnNhZGs1NGFuYjhfMjAxMTAyMjJUMTY0NTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'This group is for transitioning babies and their parents to come together and explore the world of becoming a toddler.  Group for children between 10 months and 2.5 years.',
+    'dtend' => '2455622 63900',
+    'dtstart' => '2455622 60300',
+    'summary' => 'Broomfield Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aTA3ZXMyc2ZldmFocmYydnNhZGs1NGFuYjhfMjAxMTAzMDFUMTY0NTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'This group is for transitioning babies and their parents to come together and explore the world of becoming a toddler.  Group for children between 10 months and 2.5 years.',
+    'dtend' => '2455629 63900',
+    'dtstart' => '2455629 60300',
+    'summary' => 'Broomfield Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aTA3ZXMyc2ZldmFocmYydnNhZGs1NGFuYjhfMjAxMTAzMDhUMTY0NTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'This group is for transitioning babies and their parents to come together and explore the world of becoming a toddler.  Group for children between 10 months and 2.5 years.',
+    'dtend' => '2455636 60300',
+    'dtstart' => '2455636 56700',
+    'summary' => 'Broomfield Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=aTA3ZXMyc2ZldmFocmYydnNhZGs1NGFuYjhfMjAxMTAzMTVUMTU0NTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'dtend' => '2455594 63000',
+    'dtstart' => '2455594 57600',
+    'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMDFUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'dtend' => '2455601 63000',
+    'dtstart' => '2455601 57600',
+    'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMDhUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'dtend' => '2455608 63000',
+    'dtstart' => '2455608 57600',
+    'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMTVUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'dtend' => '2455615 63000',
+    'dtstart' => '2455615 57600',
+    'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMjJUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'dtend' => '2455622 63000',
+    'dtstart' => '2455622 57600',
+    'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAzMDFUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'dtend' => '2455629 63000',
+    'dtstart' => '2455629 57600',
+    'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAzMDhUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'dtend' => '2455636 59400',
+    'dtstart' => '2455636 54000',
+    'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAzMTVUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Mondays. Email reminders are sent the day of group. To get added to the email list, contact Sue, 303-449-0177x0, sue@myparentingplace.org.',
+    'dtend' => '2455601 10800',
+    'dtstart' => '2455601 3600',
+    'summary' => 'Dads & Kids Playgroup (1st & 3rd Mondays)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=a3NxbThpaDBrYWZtaHBrOXFiaXNjbDRjcDhfMjAxMTAyMDhUMDEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Mondays. Email reminders are sent the day of group. To get added to the email list, contact Sue, 303-449-0177x0, sue@myparentingplace.org.',
+    'dtend' => '2455629 10800',
+    'dtstart' => '2455629 3600',
+    'summary' => 'Dads & Kids Playgroup (1st & 3rd Mondays)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=a3NxbThpaDBrYWZtaHBrOXFiaXNjbDRjcDhfMjAxMTAzMDhUMDEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'dtend' => '2455593 66600',
+    'dtstart' => '2455593 61200',
+    'summary' => 'French Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAxMzFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'dtend' => '2455600 66600',
+    'dtstart' => '2455600 61200',
+    'summary' => 'French Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'dtend' => '2455607 66600',
+    'dtstart' => '2455607 61200',
+    'summary' => 'French Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMTRUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'dtend' => '2455614 66600',
+    'dtstart' => '2455614 61200',
+    'summary' => 'French Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMjFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'dtend' => '2455621 66600',
+    'dtstart' => '2455621 61200',
+    'summary' => 'French Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMjhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'dtend' => '2455628 66600',
+    'dtstart' => '2455628 61200',
+    'summary' => 'French Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAzMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'dtend' => '2455635 63000',
+    'dtstart' => '2455635 57600',
+    'summary' => 'French Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAzMTRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Zumba with Maya Vigil
+A Latin-Based Fitness Class
+
+Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
+Everyone Welcome! No Registration Required.
+Please wear tennis shoes and bring water!',
+    'dtend' => '2455593 64800',
+    'dtstart' => '2455593 61200',
+    'summary' => 'Zumba w/ Maya Vigil',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAxMzFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Zumba with Maya Vigil
+A Latin-Based Fitness Class
+
+Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
+Everyone Welcome! No Registration Required.
+Please wear tennis shoes and bring water!',
+    'dtend' => '2455600 64800',
+    'dtstart' => '2455600 61200',
+    'summary' => 'Zumba w/ Maya Vigil',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Zumba with Maya Vigil
+A Latin-Based Fitness Class
+
+Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
+Everyone Welcome! No Registration Required.
+Please wear tennis shoes and bring water!',
+    'dtend' => '2455607 64800',
+    'dtstart' => '2455607 61200',
+    'summary' => 'Zumba w/ Maya Vigil',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMTRUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Zumba with Maya Vigil
+A Latin-Based Fitness Class
+
+Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
+Everyone Welcome! No Registration Required.
+Please wear tennis shoes and bring water!',
+    'dtend' => '2455614 64800',
+    'dtstart' => '2455614 61200',
+    'summary' => 'Zumba w/ Maya Vigil',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMjFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Zumba with Maya Vigil
+A Latin-Based Fitness Class
+
+Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
+Everyone Welcome! No Registration Required.
+Please wear tennis shoes and bring water!',
+    'dtend' => '2455621 64800',
+    'dtstart' => '2455621 61200',
+    'summary' => 'Zumba w/ Maya Vigil',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMjhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Zumba with Maya Vigil
+A Latin-Based Fitness Class
+
+Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
+Everyone Welcome! No Registration Required.
+Please wear tennis shoes and bring water!',
+    'dtend' => '2455628 64800',
+    'dtstart' => '2455628 61200',
+    'summary' => 'Zumba w/ Maya Vigil',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAzMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Zumba with Maya Vigil
+A Latin-Based Fitness Class
+
+Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
+Everyone Welcome! No Registration Required.
+Please wear tennis shoes and bring water!',
+    'dtend' => '2455635 61200',
+    'dtstart' => '2455635 57600',
+    'summary' => 'Zumba w/ Maya Vigil',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAzMTRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
+    'dtend' => '2455593 64800',
+    'dtstart' => '2455593 59400',
+    'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAxMzFUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
+    'dtend' => '2455600 64800',
+    'dtstart' => '2455600 59400',
+    'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMDdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
+    'dtend' => '2455607 64800',
+    'dtstart' => '2455607 59400',
+    'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMTRUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
+    'dtend' => '2455614 64800',
+    'dtstart' => '2455614 59400',
+    'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMjFUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
+    'dtend' => '2455621 64800',
+    'dtstart' => '2455621 59400',
+    'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMjhUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
+    'dtend' => '2455628 64800',
+    'dtstart' => '2455628 59400',
+    'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAzMDdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
+    'dtend' => '2455635 61200',
+    'dtstart' => '2455635 55800',
+    'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAzMTRUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
+CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'dtend' => '2455595 9000',
+    'dtstart' => '2455595 1800',
+    'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMDJUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
+CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'dtend' => '2455602 9000',
+    'dtstart' => '2455602 1800',
+    'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMDlUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
+CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'dtend' => '2455609 9000',
+    'dtstart' => '2455609 1800',
+    'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMTZUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
+CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'dtend' => '2455616 9000',
+    'dtstart' => '2455616 1800',
+    'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMjNUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
+CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'dtend' => '2455623 9000',
+    'dtstart' => '2455623 1800',
+    'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAzMDJUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
+CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'dtend' => '2455630 9000',
+    'dtstart' => '2455630 1800',
+    'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAzMDlUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
+CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'dtend' => '2455637 5400',
+    'dtstart' => '2455636 84600',
+    'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAzMTVUMjMzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
+    'dtend' => '2455593 82800',
+    'dtstart' => '2455593 77400',
+    'summary' => 'After Nappers Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAxMzFUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
+    'dtend' => '2455600 82800',
+    'dtstart' => '2455600 77400',
+    'summary' => 'After Nappers Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMDdUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
+    'dtend' => '2455607 82800',
+    'dtstart' => '2455607 77400',
+    'summary' => 'After Nappers Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMTRUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
+    'dtend' => '2455614 82800',
+    'dtstart' => '2455614 77400',
+    'summary' => 'After Nappers Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMjFUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
+    'dtend' => '2455621 82800',
+    'dtstart' => '2455621 77400',
+    'summary' => 'After Nappers Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMjhUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
+    'dtend' => '2455628 82800',
+    'dtstart' => '2455628 77400',
+    'summary' => 'After Nappers Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAzMDdUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
+    'dtend' => '2455635 79200',
+    'dtstart' => '2455635 73800',
+    'summary' => 'After Nappers Toddler Circle',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAzMTRUMjAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A weekend group for moms with children ages 0-5 to get together at Parenting Place.  The group meets the 1st and 3rd Sunday of the month from 11am-12:30pm.  Contact Jane for more information jane@boulderparenting.org or call Parenting Place at 303.449.0177.',
+    'dtend' => '2455613 70200',
+    'dtstart' => '2455613 64800',
+    'summary' => 'Working Moms Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NWNydWN1cTE5N3Q0ZGJldmk5MTZtMzYwNjhfMjAxMTAyMjBUMTgwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A weekend group for moms with children ages 0-5 to get together at Parenting Place.  The group meets the 1st and 3rd Sunday of the month from 11am-12:30pm.  Contact Jane for more information jane@boulderparenting.org or call Parenting Place at 303.449.0177.',
+    'dtend' => '2455641 66600',
+    'dtstart' => '2455641 61200',
+    'summary' => 'Working Moms Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NWNydWN1cTE5N3Q0ZGJldmk5MTZtMzYwNjhfMjAxMTAzMjBUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A weekend group for moms with children ages 0-5 to get together at Parenting Place.  The group meets the 1st and 3rd Sunday of the month from 11am-12:30pm.  Contact Jane for more information jane@boulderparenting.org or call Parenting Place at 303.449.0177.',
+    'dtend' => '2455669 66600',
+    'dtstart' => '2455669 61200',
+    'summary' => 'Working Moms Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NWNydWN1cTE5N3Q0ZGJldmk5MTZtMzYwNjhfMjAxMTA0MTdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A weekend group for moms with children ages 0-5 to get together at Parenting Place.  The group meets the 1st and 3rd Sunday of the month from 11am-12:30pm.  Contact Jane for more information jane@boulderparenting.org or call Parenting Place at 303.449.0177.',
+    'dtend' => '2455697 66600',
+    'dtstart' => '2455697 61200',
+    'summary' => 'Working Moms Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NWNydWN1cTE5N3Q0ZGJldmk5MTZtMzYwNjhfMjAxMTA1MTVUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A weekend group for moms with children ages 0-5 to get together at Parenting Place.  The group meets the 1st and 3rd Sunday of the month from 11am-12:30pm.  Contact Jane for more information jane@boulderparenting.org or call Parenting Place at 303.449.0177.',
+    'dtend' => '2455732 66600',
+    'dtstart' => '2455732 61200',
+    'summary' => 'Working Moms Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NWNydWN1cTE5N3Q0ZGJldmk5MTZtMzYwNjhfMjAxMTA2MTlUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'A weekend group for moms with children ages 0-5 to get together at Parenting Place.  The group meets the 1st and 3rd Sunday of the month from 11am-12:30pm.  Contact Jane for more information jane@boulderparenting.org or call Parenting Place at 303.449.0177.',
+    'dtend' => '2455760 66600',
+    'dtstart' => '2455760 61200',
+    'summary' => 'Working Moms Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=NWNydWN1cTE5N3Q0ZGJldmk5MTZtMzYwNjhfMjAxMTA3MTdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
+    'dtend' => '2455615 10800',
+    'dtstart' => '2455615 3600',
+    'summary' => 'Dads & Kids Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTAyMjJUMDEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
+    'dtend' => '2455671 7200',
+    'dtstart' => '2455671 0',
+    'summary' => 'Dads & Kids Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTA0MTlUMDAwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
+    'dtend' => '2455699 7200',
+    'dtstart' => '2455699 0',
+    'summary' => 'Dads & Kids Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTA1MTdUMDAwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
+    'dtend' => '2455762 7200',
+    'dtstart' => '2455762 0',
+    'summary' => 'Dads & Kids Playgroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTA3MTlUMDAwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For parents with newborns to babies who are crawling.  An opportunity to meet other new parents, offer each other support and gain parenting information.  Thursdays 10:30am-12pm at Parenting Place, Tuesdays 11:15 to 12:30 at the Brunner House in Broomfield.',
+    'dtend' => '2455594 70200',
+    'dtstart' => '2455594 65700',
+    'summary' => 'Broomfield Infant Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=anRlZGxzc3I3Y25pdWxudW9xYTA1dmVqdGdfMjAxMTAyMDFUMTgxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For parents with newborns to babies who are crawling.  An opportunity to meet other new parents, offer each other support and gain parenting information.  Thursdays 10:30am-12pm at Parenting Place, Tuesdays 11:15 to 12:30 at the Brunner House in Broomfield.',
+    'dtend' => '2455601 70200',
+    'dtstart' => '2455601 65700',
+    'summary' => 'Broomfield Infant Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=anRlZGxzc3I3Y25pdWxudW9xYTA1dmVqdGdfMjAxMTAyMDhUMTgxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For parents with newborns to babies who are crawling.  An opportunity to meet other new parents, offer each other support and gain parenting information.  Thursdays 10:30am-12pm at Parenting Place, Tuesdays 11:15 to 12:30 at the Brunner House in Broomfield.',
+    'dtend' => '2455608 70200',
+    'dtstart' => '2455608 65700',
+    'summary' => 'Broomfield Infant Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=anRlZGxzc3I3Y25pdWxudW9xYTA1dmVqdGdfMjAxMTAyMTVUMTgxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For parents with newborns to babies who are crawling.  An opportunity to meet other new parents, offer each other support and gain parenting information.  Thursdays 10:30am-12pm at Parenting Place, Tuesdays 11:15 to 12:30 at the Brunner House in Broomfield.',
+    'dtend' => '2455615 70200',
+    'dtstart' => '2455615 65700',
+    'summary' => 'Broomfield Infant Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=anRlZGxzc3I3Y25pdWxudW9xYTA1dmVqdGdfMjAxMTAyMjJUMTgxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For parents with newborns to babies who are crawling.  An opportunity to meet other new parents, offer each other support and gain parenting information.  Thursdays 10:30am-12pm at Parenting Place, Tuesdays 11:15 to 12:30 at the Brunner House in Broomfield.',
+    'dtend' => '2455622 70200',
+    'dtstart' => '2455622 65700',
+    'summary' => 'Broomfield Infant Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=anRlZGxzc3I3Y25pdWxudW9xYTA1dmVqdGdfMjAxMTAzMDFUMTgxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For parents with newborns to babies who are crawling.  An opportunity to meet other new parents, offer each other support and gain parenting information.  Thursdays 10:30am-12pm at Parenting Place, Tuesdays 11:15 to 12:30 at the Brunner House in Broomfield.',
+    'dtend' => '2455629 70200',
+    'dtstart' => '2455629 65700',
+    'summary' => 'Broomfield Infant Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=anRlZGxzc3I3Y25pdWxudW9xYTA1dmVqdGdfMjAxMTAzMDhUMTgxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  },
+  {
+    'description' => 'For parents with newborns to babies who are crawling.  An opportunity to meet other new parents, offer each other support and gain parenting information.  Thursdays 10:30am-12pm at Parenting Place, Tuesdays 11:15 to 12:30 at the Brunner House in Broomfield.',
+    'dtend' => '2455636 66600',
+    'dtstart' => '2455636 62100',
+    'summary' => 'Broomfield Infant Group',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'https://www.google.com/calendar/event?eid=anRlZGxzc3I3Y25pdWxudW9xYTA1dmVqdGdfMjAxMTAzMTVUMTcxNTAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+  }
+]
