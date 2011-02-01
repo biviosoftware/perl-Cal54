@@ -75,7 +75,7 @@ sub _date {
     unless ($time =~ /(a|p)m$/i) {
 	b_die('time missing a/pm: ', $time)
 	    unless $current->{$type . '_time_pm'};
-	my($hour) = $time =~ /^(\d+)\:/;
+	my($hour) = $time =~ /^(\d+)/;
 	return undef unless $hour && $hour > 3 && $hour < 12;
 	$time .= 'pm';
     }
@@ -108,7 +108,7 @@ sub _eval_regexp {
     my($self, $cfg) = @_;
     my($year) = qr/\b(20[1-2][0-9])\b/;
     my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)m)\b/i;
-    my($time) = qr/\b([0,1]?[0-9]\:[0-5][0-9])\b/i;
+    my($time) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?)\b/i;
     my($day_name) = _day_name_regexp();
     my($month) = _month_regexp();
     my($month_day) = qr{\b([0,1]?[0-9]/[0-3]?[0-9])\b};
@@ -146,8 +146,11 @@ sub _process_url {
 	    if ($args->{follow_link}) {
 		my($url) = $cleaner->unsafe_get_link_for_text(
 		    $current->{link} || $current->{summary});
-		_process_url($self, $args->{follow_link}, $url, $current)
-		    if $url;
+
+		if ($url) {
+		    _process_url($self, $args->{follow_link}, $url, $current);
+		    $current->{url} ||= $url;
+		}
 	    }
 	    if ($args->{summary_from_description} && $current->{description}) {
 		($current->{summary}) = $current->{description} =~
