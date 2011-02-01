@@ -41,7 +41,6 @@ sub do_all {
 	sub {
 	    my($it) = @_;
 	    $_A->reset_warn_counter;
-	    b_info($it->get('RealmOwner.display_name'));
 	    $_T->commit($proto->do_one($it, $date_time)->req);
 	    return 1;
 	},
@@ -79,6 +78,14 @@ sub do_one {
 	    );
 	},
     );
+    b_info($venue_list->get('RealmOwner.display_name'),
+	   ', ', scalar(@{$self->get('events')}), ' events',
+	   $self->get('add_count')
+	       ? (', ', $self->get('add_count'), ' new')
+	       : (),
+	   $self->get('delete_count')
+	       ? (', ', $self->get('delete_count'), ' deleted')
+	       : ());
     return $self;
 }
 
@@ -175,6 +182,7 @@ sub internal_update {
 	    {begin_date => $date_time},
 	),
     }};
+    my($add_count) = 0;
     my($refresh) = {};
     my($e);
     foreach my $event (@{$self->get('events')}) {
@@ -189,6 +197,7 @@ sub internal_update {
 	$refresh->{$key} = $event;
 	unless ($e = delete($curr->{$key})) {
 	    $ce->create_from_vevent($event);
+	    $add_count++;
 	    next;
 	}
 	$ce->load_from_properties($e)
@@ -197,17 +206,23 @@ sub internal_update {
     my($curr_count) = scalar(keys(%$curr));
     my($new_count) = scalar(@{$self->get('events')});
     my($to_delete) = $curr_count / ($new_count + $curr_count || 1);
+    my($delete_count) = 0;
     if ($curr_count <= 3 || $to_delete <= .05) {
 	foreach my $v (values(%$curr)) {
 #TODO: Check recurring events.  If they had already occured in the past, simply update
 #      the dtend to be before $date_time.
 	    $ce->load_from_properties($v)
 		->cascade_delete;
+	    $delete_count++;
 	}
     }
     else {
 	b_warn($curr_count, ': attempting to delete more than 5% events, not deleting');
     }
+    $self->put(
+	add_count => $add_count,
+	delete_count => $delete_count,
+    );
     return;
 }
 
