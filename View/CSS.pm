@@ -83,11 +83,6 @@ span.c4_site_name {
 }
 div.c4_site_tag {
   Font('c4_site_tag');
-  margin-bottom: 1ex;
-  float: right;
-}
-div.c4_site_desc {
-  Font('c4_site_desc');
   margin-top: .2ex;
   margin-bottom: 1ex;
 }
@@ -96,6 +91,14 @@ span.c4_tm {
 }
 div.c4_copy {
   Font('c4_copy');
+}
+form.c4_events a.item {
+  display: block;
+  Font('c4_events_item');
+}
+form.c4_events input.c4_search_words {
+  margin-bottom: .5ex;
+  width: 50em;
 }
 div.c4_scraper {
   width: 50em;
