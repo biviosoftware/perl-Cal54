@@ -80,10 +80,10 @@ sub do_one {
     );
     b_info($venue_list->get('RealmOwner.display_name'),
 	   ', ', scalar(@{$self->get('events')}), ' events',
-	   $self->get('add_count')
+	   $self->unsafe_get('add_count')
 	       ? (', ', $self->get('add_count'), ' new')
 	       : (),
-	   $self->get('delete_count')
+	   $self->unsafe_get('delete_count')
 	       ? (', ', $self->get('delete_count'), ' deleted')
 	       : ());
     return $self;
