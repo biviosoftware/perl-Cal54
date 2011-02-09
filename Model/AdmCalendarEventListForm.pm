@@ -15,7 +15,9 @@ sub execute_empty_row {
 
 sub execute_ok_row {
     my($self) = @_;
-    $self->update_model_properties('SearchWords');
+#TODO: use update_model_properties
+    $self->get_list_model->get_model('SearchWords')
+	->update({value => $self->get('SearchWords.value')});
     return;
 }
 
@@ -41,8 +43,8 @@ sub internal_initialize {
 
 sub internal_initialize_list {
     my($self) = @_;
-    return $self->new_other($self->get_list_class)
-	->load_page
+    my($lm) = $self->new_other($self->get_list_class);
+    return $lm->load_page($lm->parse_query_from_request);
 }
 
 1;
