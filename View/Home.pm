@@ -56,12 +56,12 @@ sub _form {
 		Text('where', {is_read_only => 1, size => 50}),
 	    ])),
 	    DIV_item(Join([
-		SPAN('What kind of event?'),
-		Text('what', {size => 50}),
-	    ])),
-	    DIV_item(Join([
 		SPAN('When are you free?'),
 		Text('when', {is_read_only => 1, size => 50}),
+	    ])),
+	    DIV_item(Join([
+		SPAN('What kind of event?'),
+		Text('what', {size => 50}),
 	    ])),
 	    DIV_item(Join([
 		INPUT({
