@@ -51,7 +51,7 @@ sub get_content {
 	    ->get('display_name'),
 	    map(
 		$self->new_other('SearchWords')
-		    ->unauth_load_or_die({realm_id => $self->get('realm_id')})
+		    ->unauth_load_or_die({realm_id => $_})
 		    ->get('value') || '',
 		$self->get('calendar_event_id'),
 		$self->get('realm_id'),
