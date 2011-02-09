@@ -8,25 +8,36 @@ use Bivio::UI::ViewLanguageAUTOLOAD;
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub adm_list {
-    vs_put_pager('AdmCalendarEventList');
+    vs_put_pager('AdmCalendarEventListForm');
     return shift->internal_body(
-	vs_list_form(
-	    'AdmCalendarEventListForm',
-	    [
-		'CalendarEvent.dtstart',
-		['RealmOwner.display_name', {
-		    wf_list_link => {
-			href => URI({
-			    uri => [['->get_list_model'], 'CalendarEvent.url'],
-			}),
-		    },
-		}],
-		'AdmCalendarEventListForm.CalendarEvent.location',
-	    ],
-	    {
-		class => 'paged_list',
-	    },
-	),
+	Form({
+	    form_class => 'AdmCalendarEventListForm',
+	    class => 'c4_events paged_list',
+	    value => Join([
+		StandardSubmit(),
+		List(
+		    'AdmCalendarEventListForm',
+		    [
+			Link(
+			    Join([
+				DateTime([['->get_list_model'], 'CalendarEvent.dtstart']),
+				Simple(' '),
+				String([['->get_list_model'], 'RealmOwner.display_name']),
+			    ]),
+			    URI({
+				uri => [['->get_list_model'], 'CalendarEvent.url'],
+			    }),
+			    'item',
+			),
+			Text(
+			    'SearchWords.value',
+			    {size => 1, class => 'c4_search_words'},
+			),
+		    ],
+		),
+		StandardSubmit(),
+	    ]),
+	}),
     );
 }
 
