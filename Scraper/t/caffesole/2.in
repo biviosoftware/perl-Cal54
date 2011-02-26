@@ -13,6 +13,7 @@ Reign Lee is a singer/songwriter with an edge. Weaving effortlessly between rock
 www.reignlee.com',
     'dtend' => '2455677 16200',
     'dtstart' => '2455677 7200',
+    'location' => '',
     'summary' => 'Melissa Cox & Reign Lee',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dThtN2c0ODJyNzY0Z2cwZzRiZzZkcXUwMGdfMjAxMTA0MjQgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -32,6 +33,7 @@ The domination of pop culture amongst the masses has created a subterranean, "se
 zackdupontmusic.com',
     'dtend' => '2455669 12600',
     'dtstart' => '2455669 9000',
+    'location' => '',
     'summary' => 'Zachary duPont',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTA0MTUgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -40,6 +42,7 @@ zackdupontmusic.com',
     'description' => '',
     'dtend' => '2455661 10800',
     'dtstart' => '2455661 7200',
+    'location' => '',
     'summary' => 'Naropa Afropop Ensemble',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTA0MDggdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -56,6 +59,7 @@ http://www.myspace.com/GOODING
 $5 cover',
     'dtend' => '2455659 16200',
     'dtstart' => '2455659 7200',
+    'location' => '',
     'summary' => 'Gooding',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTA0MDYgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -68,6 +72,7 @@ Mark Growden is a singer, composer, songwriter and multi-instrumentalist based i
 http://markgrowden.org/',
     'dtend' => '2455653 16200',
     'dtstart' => '2455653 10800',
+    'location' => '',
     'summary' => 'Mark Growden',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAzMzEgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -78,6 +83,7 @@ http://markgrowden.org/',
 Jah Spirits is a newly formed band with original reggae tunes by Kelly Poindexter www.myspace.com/KellyPoindexter  and a mix of traditional reggae vibes and world music flavors. Dance your way to Brazil, then to West Africa and back again for some spicy reggae tunes with rich harmonies and unstoppable/driving rhythms. Band Members include Kelly Poindexter and Rachel Scott on vocals. Daniel Ondaro www.myspace.com/DanielOndaro - guitar and vocals Brendon Hayden on Keys, Sebastian Idee on drums, Sean McGrath on bass, Jake O\'Neal-rhythm guitar and Adjei Abankwah playing percussion.',
     'dtend' => '2455648 16200',
     'dtstart' => '2455648 7200',
+    'location' => '',
     'summary' => 'Jah Spirits',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAzMjYgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -90,6 +96,7 @@ New York City folk-rockers Aunt Martha came together in late 2008 and have been 
 www.myspace.com/auntmarthaband',
     'dtend' => '2455647 16200',
     'dtstart' => '2455647 10800',
+    'location' => '',
     'summary' => 'Aunt Martha',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAzMjUgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -102,6 +109,7 @@ Before Lindsay Meredith knew much about anything, one thing she knew was that sh
 www.myspace.com/lindsaymeredithmusic',
     'dtend' => '2455646 10800',
     'dtstart' => '2455646 7200',
+    'location' => '',
     'summary' => 'Lindsay Meredith',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAzMjQgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -115,6 +123,7 @@ www.myspace.com/WillieAugust
 WillieAugust.tripod.com',
     'dtend' => '2455642 13500',
     'dtstart' => '2455642 10800',
+    'location' => '',
     'summary' => 'Ben Siems',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dThtN2c0ODJyNzY0Z2cwZzRiZzZkcXUwMGdfMjAxMTAzMjAgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -134,6 +143,7 @@ http://www.youtube.com/watch?v=B5YNFfVtmlg
 http://www.youtube.com/watch?v=_mX3yn8PIJI',
     'dtend' => '2455633 19800',
     'dtstart' => '2455633 14400',
+    'location' => '',
     'summary' => 'Cowgirl Radio',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAzMTEgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -147,6 +157,7 @@ http://brandonhagenmusic.bandcamp.com
 http://www.myspace.com/sunlightcool',
     'dtend' => '2455632 19800',
     'dtstart' => '2455632 16200',
+    'location' => '',
     'summary' => 'Brandon Hagen',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAzMTAgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -159,6 +170,7 @@ The Longest Day of the Year was grown out of the independent mid-west music scen
 www.reverbnation.com/thelongestdayoftheyear',
     'dtend' => '2455632 16200',
     'dtstart' => '2455632 12600',
+    'location' => '',
     'summary' => 'The Longest Day of the Year',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAzMTAgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -171,6 +183,7 @@ Pete Kartsounes is an award winning songwriter who has established himself as a 
 http://petekmusic.com',
     'dtend' => '2455631 19800',
     'dtstart' => '2455631 10800',
+    'location' => '',
     'summary' => 'Pete Kartsounes',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAzMDIgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -185,6 +198,7 @@ http://petekmusic.com',
 www.dannyshafer.com',
     'dtend' => '2455628 19800',
     'dtstart' => '2455628 10800',
+    'location' => '',
     'summary' => 'Danny Shafer',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cDRxdDA4MHR1aG12bGRocDBjM3UxZWhvazhfMjAxMTAzMDYgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -199,6 +213,7 @@ myspace.com/radicalknittingcircle
 $5 Cover',
     'dtend' => '2455627 19800',
     'dtstart' => '2455627 12600',
+    'location' => '',
     'summary' => 'Radical Knitting Circle',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=MThnMDMwdDYybXZ1ajk0azQxYjgyY2YzMHNfMjAxMTAzMDZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -211,6 +226,7 @@ $5 Cover',
 www.toddclouser.com',
     'dtend' => '2455626 19800',
     'dtstart' => '2455626 14400',
+    'location' => '',
     'summary' => 'Todd Clouser\'s A Love Electric',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAzMDQgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -223,6 +239,7 @@ BaoBao Festival entertains, educates and builds community in the Boulder / Denve
 www.baobaofest.org',
     'dtend' => '2455624 21600',
     'dtstart' => '2455624 10800',
+    'location' => '',
     'summary' => 'BaoBao Festival',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAzMDIgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -235,6 +252,7 @@ Antwon Owens, Matt King, Jim Disner and Nathan Walter make up the band Three Squ
 http://www.myspace.com/thr33squared',
     'dtend' => '2455621 19800',
     'dtstart' => '2455621 10800',
+    'location' => '',
     'summary' => 'Three Squared',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAyMjcgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -245,6 +263,7 @@ http://www.myspace.com/thr33squared',
 Jah Spirits is a newly formed band with original reggae tunes by Kelly Poindexter www.myspace.com/KellyPoindexter  and a mix of traditional reggae vibes and world music flavors. Dance your way to Brazil, then to West Africa and back again for some spicy reggae tunes with rich harmonies and unstoppable/driving rhythms. Band Members include Kelly Poindexter and Rachel Scott on vocals. Daniel Ondaro www.myspace.com/DanielOndaro - guitar and vocals Brendon Hayden on Keys, Sebastian Idee on drums, Sean McGrath on bass, Jake O\'Neal-rhythm guitar and Adjei Abankwah playing percussion.',
     'dtend' => '2455620 19800',
     'dtstart' => '2455620 10800',
+    'location' => '',
     'summary' => 'Jah Spirit',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAyMTcgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -259,6 +278,7 @@ The musical presentation stresses good times and off color arrangements to creat
 http://www.myspace.com/signelz',
     'dtend' => '2455619 19800',
     'dtstart' => '2455619 14400',
+    'location' => '',
     'summary' => 'Signel-Z',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAyMjUgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -267,6 +287,7 @@ http://www.myspace.com/signelz',
     'description' => '',
     'dtend' => '2455619 14400',
     'dtstart' => '2455619 10800',
+    'location' => '',
     'summary' => 'Opener TBA',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTAyMTggdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -279,6 +300,7 @@ Singer songwriter Steven Michael Hoffman grew up on the East Coast during the in
 www.myspace.com/organicrootsband',
     'dtend' => '2455618 19800',
     'dtstart' => '2455618 14400',
+    'location' => '',
     'summary' => 'Steve Hoffman and the Organic Roots',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAyMjQgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -292,6 +314,7 @@ http://www.jamilynnmusic.com
 http://www.myspace.com/jamlyn',
     'dtend' => '2455617 14400',
     'dtstart' => '2455617 10800',
+    'location' => '',
     'summary' => 'Jami Lynn',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAyMjMgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -306,6 +329,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455615 21600',
     'dtstart' => '2455615 10800',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents: Jack Collom & Reed Bye Laughing Goat 5 year anniversary',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMjJUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -321,6 +345,7 @@ In his hometown of Kpalime, Koffi was active with the Zota Cultural Group, a non
 www.koffi.us',
     'dtend' => '2455613 18000',
     'dtstart' => '2455613 10800',
+    'location' => '',
     'summary' => 'Koffi Toudji',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAyMTkgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -333,6 +358,7 @@ The New Madrid is the moniker of Rhode Island-born singer/songwriter Marc Perrea
 www.last.fm/music/The+New+Madrid',
     'dtend' => '2455612 14400',
     'dtstart' => '2455612 10800',
+    'location' => '',
     'summary' => 'Marc Perreault',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTAyMjUgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -345,6 +371,7 @@ Jarrad is a singer/songwriter whose style includes elements of Blues, R&B, Pop, 
 www.reverbnation.com/jarradmenard',
     'dtend' => '2455611 19800',
     'dtstart' => '2455611 10800',
+    'location' => '',
     'summary' => 'Jarrad Menard',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bm9ucmw0dDZmaDF0cDh1bGprbmc0czFlOTQgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -358,6 +385,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455608 21600',
     'dtstart' => '2455608 10800',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents Saint Valentine\'s Day Open Poetry Readng',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMTVUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -383,6 +411,7 @@ New York, but just as valid."
 http://www.dustinedge.com',
     'dtend' => '2455606 14400',
     'dtstart' => '2455606 10800',
+    'location' => '',
     'summary' => 'Dustin Edge',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAyMjYgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -395,6 +424,7 @@ Mythica takes listeners on a sonic rollercoaster ride! Influenced by Celtic and 
 www.MythicaMusic.com',
     'dtend' => '2455605 19800',
     'dtstart' => '2455605 14400',
+    'location' => '',
     'summary' => 'Mythica',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAyMTEgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -414,6 +444,7 @@ http://www.youtube.com/watch?v=B5YNFfVtmlg
 http://www.youtube.com/watch?v=_mX3yn8PIJI',
     'dtend' => '2455605 14400',
     'dtstart' => '2455605 10800',
+    'location' => '',
     'summary' => 'Cowgirl Radio',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bGVtdGRpNnAxYWltajFic2RzY3JxYzZxN3MgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -426,6 +457,7 @@ Before Lindsay Meredith knew much about anything, one thing she knew was that sh
 www.myspace.com/lindsaymeredithmusic',
     'dtend' => '2455604 14400',
     'dtstart' => '2455604 10800',
+    'location' => '',
     'summary' => 'Lindsay Meredith',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAyMTAgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -445,6 +477,7 @@ first timers, Dastardly is band that asserted itself as notable early in the gam
 www.dastardlytheband.com',
     'dtend' => '2455603 19800',
     'dtstart' => '2455603 14400',
+    'location' => '',
     'summary' => 'Jared Bartman & Dastardly',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAyMDkgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -459,6 +492,7 @@ Influences: Greg Brown, John Prine, Woody Guthrie, Mississippi John Hurt, Johnny
 www.myspace.com/rynedoughtymusic',
     'dtend' => '2455603 14400',
     'dtstart' => '2455603 10800',
+    'location' => '',
     'summary' => 'Ryne Doughty',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAyMDkgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -472,6 +506,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455601 21600',
     'dtstart' => '2455601 10800',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents Tim Z. Hernandez & extra special guests',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMDhUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -485,6 +520,7 @@ Logo Ligi has grown over the years from the support of inspired individuals that
 www.logoligi.com',
     'dtend' => '2455600 19800',
     'dtstart' => '2455600 10800',
+    'location' => '',
     'summary' => 'Logo Ligi African Dance Ensemble',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAyMDYgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -497,6 +533,7 @@ Pete Kartsounes is an award winning songwriter who has established himself as a 
 http://petekmusic.com',
     'dtend' => '2455599 19800',
     'dtstart' => '2455599 10800',
+    'location' => '',
     'summary' => 'Pete Kartsounes TRIO',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAyMDUgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -509,6 +546,7 @@ http://petekmusic.com',
 www.mawuemensah.com',
     'dtend' => '2455598 18000',
     'dtstart' => '2455598 10800',
+    'location' => '',
     'summary' => 'Mawue Mensah CD release party',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAyMDQgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -521,6 +559,7 @@ Danny Meyer was born in Colorado and began playing the saxophone at the age of 1
 www.Danny-Meyer.com',
     'dtend' => '2455596 19800',
     'dtstart' => '2455596 10800',
+    'location' => '',
     'summary' => 'Danny Meyer Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAyMDIgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -533,6 +572,7 @@ Most of us players should be humbled by Cahalen Morrison, the 24 year-old guitar
 www.cahalen.com',
     'dtend' => '2455593 19800',
     'dtstart' => '2455593 14400',
+    'location' => '',
     'summary' => 'Cahalen Morrison & Eli West',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dThtN2c0ODJyNzY0Z2cwZzRiZzZkcXUwMGdfMjAxMTAxMzAgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -545,6 +585,7 @@ Born in Akron, Ohio, Davis spent his childhood listening to records from his fat
 www.davisjonesmusic.com',
     'dtend' => '2455593 14400',
     'dtstart' => '2455593 11700',
+    'location' => '',
     'summary' => 'Davis Jones',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAxMzAgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -557,6 +598,7 @@ Max was raised in the US and South America, and has a passion for crafting infec
 www.MaxNealon.com',
     'dtend' => '2455592 19800',
     'dtstart' => '2455592 14400',
+    'location' => '',
     'summary' => 'Maximiliano Nealon (with special guest Jerry Hunter)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAxMjkgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -569,6 +611,7 @@ Im Jeff Lambert, i\'m 21, and i\'m an acoustic Singer Songwriter. I am currently
 www.myspace.com/jlamb12',
     'dtend' => '2455592 14400',
     'dtstart' => '2455592 10800',
+    'location' => '',
     'summary' => 'Jeff Lambert and J.C. McKim',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAxMjkgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -583,6 +626,7 @@ www.myspace.com/jlamb12',
 www.dannyshafer.com',
     'dtend' => '2455591 19800',
     'dtstart' => '2455591 10800',
+    'location' => '',
     'summary' => 'Danny Shafer',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAxMjggdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -593,6 +637,7 @@ www.dannyshafer.com',
 www.hammerandstring.com',
     'dtend' => '2455590 19800',
     'dtstart' => '2455590 12600',
+    'location' => '',
     'summary' => 'Erik Deutsch',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAxMjcgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -603,6 +648,7 @@ www.hammerandstring.com',
 Fully immersed in the celtic music traditions of Ireland, Scotland and Nova Scotia, both Andrew Forbes and Mason Brown have been playing solo for many years. Finally capable of playing with classic accompaniment on the Scottish border pipes (a smaller and quieter version of the highland bagpipe), the two have collaborated their multi-instrumental talent to produce a traditionally modern sound that both enchants and rocks. Local to Boulder, CO, Andrew is acclaimed for his melodic virtuosity and improvisational ability, and Mason is a master of the guitar and fiddle. Joined by special guests.',
     'dtend' => '2455589 19800',
     'dtstart' => '2455589 10800',
+    'location' => '',
     'summary' => 'Greybeard',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAxMjYgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -615,6 +661,7 @@ Kristi Stice is a dynamic songwriter with a wide variety of musical influences a
 www.krististice.com',
     'dtend' => '2455586 14400',
     'dtstart' => '2455586 11700',
+    'location' => '',
     'summary' => 'Kristi Stice',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAxMjMgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -665,6 +712,7 @@ prepare to record their first record around the spring of 2011.
 -----',
     'dtend' => '2455585 19800',
     'dtstart' => '2455585 10800',
+    'location' => '',
     'summary' => 'Chris Webb, & Travel | By | Skylark',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAxMjIgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -677,6 +725,7 @@ Rocked to sleep as a child to Stevie Wonder, Dechen Hawk's music ranges from bea
 www.dechenhawk.com",
     'dtend' => '2455584 19800',
     'dtstart' => '2455584 14400',
+    'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTAxMjJUMDQzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -689,6 +738,7 @@ www.dechenhawk.com",
 www.thekeyofjoy.com',
     'dtend' => '2455584 14400',
     'dtstart' => '2455584 10800',
+    'location' => '',
     'summary' => 'The Key of Joy',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTAxMjEgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -701,6 +751,7 @@ Boarding its vessel of acoustic ivory, Story and Clark has set out on a voyage i
 www.myspace.com/storyclark',
     'dtend' => '2455583 14400',
     'dtstart' => '2455583 10800',
+    'location' => '',
     'summary' => 'Story and Clark',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAxMjAgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -713,6 +764,7 @@ Singer/songwriter Philip Gibbs is a native of Austin TX, but has ancestral roots
 www.myspace.com/philipgibbs',
     'dtend' => '2455582 14400',
     'dtstart' => '2455582 10800',
+    'location' => '',
     'summary' => 'Philip Gibbs',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAxMTkgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -726,6 +778,7 @@ www.facebook.com/pages/Shane-Dooley-music/220770597917
 www.myspace.com/solnceveraostrova',
     'dtend' => '2455579 19800',
     'dtstart' => '2455579 12600',
+    'location' => '',
     'summary' => 'Against My Own Hand',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAxMTYgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -738,6 +791,7 @@ Singer/songwriters Giselle Collazo (guitars, keys) and Steven Phoenix (guitars),
 www.myspace.com/idlewhileband',
     'dtend' => '2455578 19800',
     'dtstart' => '2455578 14400',
+    'location' => '',
     'summary' => 'Idlewhile',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAxMTUgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -748,6 +802,7 @@ www.myspace.com/idlewhileband',
 Heartfelt, soulful music from a beautiful woman. And it\'s her 21st Birthday celebration!',
     'dtend' => '2455578 14400',
     'dtstart' => '2455578 10800',
+    'location' => '',
     'summary' => 'Emily Bedal',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAxMTUgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -767,6 +822,7 @@ www.MySpace.com/MountainTrance
 www.MountainTrance.net',
     'dtend' => '2455577 19800',
     'dtstart' => '2455577 10800',
+    'location' => '',
     'summary' => 'Mountain Trance Medicine Band',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAxMTQgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -781,6 +837,7 @@ When just the two of them, The Twinberries bring a unique sound to their shows t
 The Twinberries play all sorts of jazz music and also write some originals.',
     'dtend' => '2455577 7200',
     'dtstart' => '2455577 0',
+    'location' => '',
     'summary' => 'The Twinberries (happy hour show)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cDcxcnU5ZHNpdWhwaWhoYXRrMnVjcHFjZTQgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -797,6 +854,7 @@ www.OnTheSly.org
 $3 cover',
     'dtend' => '2455576 19800',
     'dtstart' => '2455576 10800',
+    'location' => '',
     'summary' => 'On the Sly of Buffalo, NY featuring members of the SAAKUMU Dance Troupe of Ghana, West Africa',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAxMTMgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -809,6 +867,7 @@ Steve Waitt is an emerging New York artist who has attracted the attention of th
 www.stevewaitt.com',
     'dtend' => '2455575 19800',
     'dtstart' => '2455575 14400',
+    'location' => '',
     'summary' => 'Steve Waitt',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAxMTIgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -832,6 +891,7 @@ www.reverbnation.com/kristinamurray
 www.myspace.com/kristinamurray',
     'dtend' => '2455575 14400',
     'dtstart' => '2455575 10800',
+    'location' => '',
     'summary' => 'Kristina Murray & Jamie Davis',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAxMTIgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -852,6 +912,7 @@ You can view more of Krystle\'s artwork at www.krystleyez.com and on her faceboo
 http://www.facebook.com/event.php?eid=175682979133203',
     'dtend' => '2455574 14400',
     'dtstart' => '2455574 3600',
+    'location' => '',
     'summary' => 'Eyes of Infinity ~ A Collection of Work by Krystleyez',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=anVyMHZ0YmRocGt2cnA3am9wc21yZnVuZjAgdGhlbGF1Z2hpbmdnb2F0QG0'
@@ -866,6 +927,7 @@ www.gingaband.com
 $5 cover',
     'dtend' => '2455597 21600',
     'dtstart' => '2455597 10800',
+    'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTAyMDRUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -880,6 +942,7 @@ www.gingaband.com
 $5 cover',
     'dtend' => '2455625 21600',
     'dtstart' => '2455625 10800',
+    'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTAzMDRUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -894,6 +957,7 @@ www.gingaband.com
 $5 cover',
     'dtend' => '2455660 18000',
     'dtstart' => '2455660 7200',
+    'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA0MDhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -908,6 +972,7 @@ www.gingaband.com
 $5 cover',
     'dtend' => '2455688 18000',
     'dtstart' => '2455688 7200',
+    'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA1MDZUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -922,6 +987,7 @@ www.gingaband.com
 $5 cover',
     'dtend' => '2455716 18000',
     'dtstart' => '2455716 7200',
+    'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA2MDNUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -936,6 +1002,7 @@ www.gingaband.com
 $5 cover',
     'dtend' => '2455751 18000',
     'dtstart' => '2455751 7200',
+    'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA3MDhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -950,6 +1017,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455574 19800',
     'dtstart' => '2455574 12600',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMTJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -964,6 +1032,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455581 19800',
     'dtstart' => '2455581 12600',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMTlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -978,6 +1047,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455588 19800',
     'dtstart' => '2455588 12600',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMjZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -992,6 +1062,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455595 19800',
     'dtstart' => '2455595 12600',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMDJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1006,6 +1077,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455602 19800',
     'dtstart' => '2455602 12600',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMDlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1020,6 +1092,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455609 19800',
     'dtstart' => '2455609 12600',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMTZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1034,6 +1107,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455616 19800',
     'dtstart' => '2455616 12600',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMjNUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1048,6 +1122,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455623 19800',
     'dtstart' => '2455623 12600',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMDJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1062,6 +1137,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455630 19800',
     'dtstart' => '2455630 12600',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMDlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1076,6 +1152,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455637 16200',
     'dtstart' => '2455637 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMTZUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1090,6 +1167,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455644 16200',
     'dtstart' => '2455644 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMjNUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1104,6 +1182,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455651 16200',
     'dtstart' => '2455651 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMzBUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1118,6 +1197,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455658 16200',
     'dtstart' => '2455658 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MDZUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1132,6 +1212,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455665 16200',
     'dtstart' => '2455665 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MTNUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1146,6 +1227,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455672 16200',
     'dtstart' => '2455672 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MjBUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1160,6 +1242,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455679 16200',
     'dtstart' => '2455679 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MjdUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1174,6 +1257,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455686 16200',
     'dtstart' => '2455686 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MDRUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1188,6 +1272,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455693 16200',
     'dtstart' => '2455693 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MTFUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1202,6 +1287,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455700 16200',
     'dtstart' => '2455700 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MThUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1216,6 +1302,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455707 16200',
     'dtstart' => '2455707 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MjVUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1230,6 +1317,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455714 16200',
     'dtstart' => '2455714 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MDFUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1244,6 +1332,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455721 16200',
     'dtstart' => '2455721 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MDhUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1258,6 +1347,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455728 16200',
     'dtstart' => '2455728 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MTVUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1272,6 +1362,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455735 16200',
     'dtstart' => '2455735 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MjJUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1286,6 +1377,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455742 16200',
     'dtstart' => '2455742 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MjlUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1300,6 +1392,7 @@ www.supercollidermusic.com
 $5 cover',
     'dtend' => '2455749 16200',
     'dtstart' => '2455749 9000',
+    'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA3MDZUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1312,6 +1405,7 @@ Rocked to sleep as a child to Stevie Wonder, Dechen Hawk's music ranges from bea
 www.dechenhawk.com",
     'dtend' => '2455612 19800',
     'dtstart' => '2455612 16200',
+    'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTAyMTlUMDQzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1324,6 +1418,7 @@ Rocked to sleep as a child to Stevie Wonder, Dechen Hawk's music ranges from bea
 www.dechenhawk.com",
     'dtend' => '2455640 16200',
     'dtstart' => '2455640 12600',
+    'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTAzMTlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1336,6 +1431,7 @@ Rocked to sleep as a child to Stevie Wonder, Dechen Hawk's music ranges from bea
 www.dechenhawk.com",
     'dtend' => '2455668 16200',
     'dtstart' => '2455668 12600',
+    'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTA0MTZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1348,6 +1444,7 @@ Rocked to sleep as a child to Stevie Wonder, Dechen Hawk's music ranges from bea
 www.dechenhawk.com",
     'dtend' => '2455703 16200',
     'dtstart' => '2455703 12600',
+    'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTA1MjFUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1360,6 +1457,7 @@ Rocked to sleep as a child to Stevie Wonder, Dechen Hawk's music ranges from bea
 www.dechenhawk.com",
     'dtend' => '2455731 16200',
     'dtstart' => '2455731 12600',
+    'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTA2MThUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1382,6 +1480,7 @@ Currently, we\'ve started working on creating songs for our third album, and are
 http://www.myspace.com/wadirum',
     'dtend' => '2455634 19800',
     'dtstart' => '2455634 12600',
+    'location' => '',
     'summary' => 'Wadirum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWJobmtjdTduaTAxazA4OGEzMTB1NXBzbDRfMjAxMTAzMTNUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1404,6 +1503,7 @@ Currently, we\'ve started working on creating songs for our third album, and are
 http://www.myspace.com/wadirum',
     'dtend' => '2455697 16200',
     'dtstart' => '2455697 9000',
+    'location' => '',
     'summary' => 'Wadirum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWJobmtjdTduaTAxazA4OGEzMTB1NXBzbDRfMjAxMTA1MTVUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1426,6 +1526,7 @@ Currently, we\'ve started working on creating songs for our third album, and are
 http://www.myspace.com/wadirum',
     'dtend' => '2455753 16200',
     'dtstart' => '2455753 9000',
+    'location' => '',
     'summary' => 'Wadirum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZWJobmtjdTduaTAxazA4OGEzMTB1NXBzbDRfMjAxMTA3MTBUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1439,6 +1540,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455580 21600',
     'dtstart' => '2455580 10800',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAxMThUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1452,6 +1554,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455587 21600',
     'dtstart' => '2455587 10800',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAxMjVUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1465,6 +1568,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455594 21600',
     'dtstart' => '2455594 10800',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMDFUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1478,6 +1582,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455622 21600',
     'dtstart' => '2455622 10800',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMDFUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1491,6 +1596,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455629 21600',
     'dtstart' => '2455629 10800',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMDhUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1504,6 +1610,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455636 18000',
     'dtstart' => '2455636 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMTVUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1517,6 +1624,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455643 18000',
     'dtstart' => '2455643 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMjJUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1530,6 +1638,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455650 18000',
     'dtstart' => '2455650 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMjlUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1543,6 +1652,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455657 18000',
     'dtstart' => '2455657 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MDVUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1556,6 +1666,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455664 18000',
     'dtstart' => '2455664 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MTJUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1569,6 +1680,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455671 18000',
     'dtstart' => '2455671 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MTlUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1582,6 +1694,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455678 18000',
     'dtstart' => '2455678 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MjZUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1595,6 +1708,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455685 18000',
     'dtstart' => '2455685 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MDNUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1608,6 +1722,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455692 18000',
     'dtstart' => '2455692 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MTBUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1621,6 +1736,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455699 18000',
     'dtstart' => '2455699 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MTdUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1634,6 +1750,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455706 18000',
     'dtstart' => '2455706 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MjRUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1647,6 +1764,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455713 18000',
     'dtstart' => '2455713 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MzFUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1660,6 +1778,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455720 18000',
     'dtstart' => '2455720 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MDdUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1673,6 +1792,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455727 18000',
     'dtstart' => '2455727 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MTRUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1686,6 +1806,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455734 18000',
     'dtstart' => '2455734 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MjFUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1699,6 +1820,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455741 18000',
     'dtstart' => '2455741 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MjhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
@@ -1712,6 +1834,7 @@ The series was hosted for many years by the famous Penny Lane Cafe. In the intro
 The series currently takes place in the new Laughing Goat Coffeehouse, which has strong ties to the original Penny Lane. Amiri Baraka, Miguel Algarin, Lewis MacAdams, and other poets read there during last year\'s Summer Writing Program. The Laughing Goat is surely a Boulder literary institution in the making.',
     'dtend' => '2455748 18000',
     'dtstart' => '2455748 7200',
+    'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA3MDVUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'

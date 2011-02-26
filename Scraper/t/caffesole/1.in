@@ -3,6 +3,7 @@
     'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom\'s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul\'s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you\'ll understand why one excited audience member said "This is the best jazz I\'ve ever heard in Boulder."',
     'dtend' => '2455654 18000',
     'dtstart' => '2455654 7200',
+    'location' => '',
     'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bTg1Zm5pbmdpYmN0b29nMzRwYzNtYzNuajggY2FmZmVzb2xlbXVzaWNAbQ'
@@ -15,6 +16,7 @@ The Lisa Bell Trio, featuring Lisa Bell on vocals, Bob Story and Chris Malley on
 www.lisabellmusic.com',
     'dtend' => '2455640 18000',
     'dtstart' => '2455640 7200',
+    'location' => '',
     'summary' => 'Lisa Bell Trio',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=bWFpamNtM3U5dWpjMjVxYm5oMDFqYWc0N3MgY2FmZmVzb2xlbXVzaWNAbQ'
@@ -23,6 +25,7 @@ www.lisabellmusic.com',
     'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom\'s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul\'s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you\'ll understand why one excited audience member said "This is the best jazz I\'ve ever heard in Boulder."',
     'dtend' => '2455626 21600',
     'dtstart' => '2455626 10800',
+    'location' => '',
     'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=Ym5odGw1a25nbjZpZG4waW50MDB2dGlzNm8gY2FmZmVzb2xlbXVzaWNAbQ'
@@ -35,6 +38,7 @@ Josh Quinlan is a Colorado jazz saxophonist who has has recently performed at th
 www.joshquinlan.com',
     'dtend' => '2455611 21600',
     'dtstart' => '2455611 10800',
+    'location' => '',
     'summary' => 'Josh Quinlan',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=aGEzcXRta290dWN2dTdpZjdxbGRsamVhaDggY2FmZmVzb2xlbXVzaWNAbQ'
@@ -62,6 +66,7 @@ Member B.M.I.
 www.blackorchidmusic.com',
     'dtend' => '2455605 21600',
     'dtstart' => '2455605 10800',
+    'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAyMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -89,6 +94,7 @@ Member B.M.I.
 www.blackorchidmusic.com',
     'dtend' => '2455633 21600',
     'dtstart' => '2455633 10800',
+    'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAzMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -116,6 +122,7 @@ Member B.M.I.
 www.blackorchidmusic.com',
     'dtend' => '2455661 18000',
     'dtstart' => '2455661 7200',
+    'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA0MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -143,6 +150,7 @@ Member B.M.I.
 www.blackorchidmusic.com',
     'dtend' => '2455696 18000',
     'dtstart' => '2455696 7200',
+    'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA1MTRUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -170,6 +178,7 @@ Member B.M.I.
 www.blackorchidmusic.com',
     'dtend' => '2455724 18000',
     'dtstart' => '2455724 7200',
+    'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA2MTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -197,6 +206,7 @@ Member B.M.I.
 www.blackorchidmusic.com',
     'dtend' => '2455752 18000',
     'dtstart' => '2455752 7200',
+    'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA3MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -205,6 +215,7 @@ www.blackorchidmusic.com',
     'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom\'s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul\'s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you\'ll understand why one excited audience member said "This is the best jazz I\'ve ever heard in Boulder."',
     'dtend' => '2455598 21600',
     'dtstart' => '2455598 10800',
+    'location' => '',
     'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=dmZqMHV0Z2pzNXJ0ZGtmcW5ya252MmY0bWMgY2FmZmVzb2xlbXVzaWNAbQ'
@@ -219,6 +230,7 @@ www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
     'dtend' => '2455597 21600',
     'dtstart' => '2455597 10800',
+    'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAyMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -233,6 +245,7 @@ www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
     'dtend' => '2455625 21600',
     'dtstart' => '2455625 10800',
+    'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAzMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -247,6 +260,7 @@ www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
     'dtend' => '2455660 18000',
     'dtstart' => '2455660 7200',
+    'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA0MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -261,6 +275,7 @@ www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
     'dtend' => '2455688 18000',
     'dtstart' => '2455688 7200',
+    'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA1MDZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -275,6 +290,7 @@ www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
     'dtend' => '2455716 18000',
     'dtstart' => '2455716 7200',
+    'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA2MDNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -289,6 +305,7 @@ www.FaceBook.com/JohnLakeJazz
 www.MySpace.com/JohnLakeJazz',
     'dtend' => '2455751 18000',
     'dtstart' => '2455751 7200',
+    'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA3MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -302,6 +319,7 @@ Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
     'dtend' => '2455591 21600',
     'dtstart' => '2455591 10800',
+    'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAxMjlUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -315,6 +333,7 @@ Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
     'dtend' => '2455619 21600',
     'dtstart' => '2455619 10800',
+    'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAyMjZUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -328,6 +347,7 @@ Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
     'dtend' => '2455647 18000',
     'dtstart' => '2455647 7200',
+    'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAzMjZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -341,6 +361,7 @@ Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
     'dtend' => '2455675 18000',
     'dtstart' => '2455675 7200',
+    'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA0MjNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -354,6 +375,7 @@ Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
     'dtend' => '2455710 18000',
     'dtstart' => '2455710 7200',
+    'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA1MjhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -367,6 +389,7 @@ Mark Diamond, bass
 Brad Upton, trumpet/flugelhorn',
     'dtend' => '2455738 18000',
     'dtstart' => '2455738 7200',
+    'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA2MjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -379,6 +402,7 @@ Antwon Owens, Matt King, Jim Disner and Nathan Walter make up the band Three Squ
 http://www.myspace.com/thr33squared',
     'dtend' => '2455584 21600',
     'dtstart' => '2455584 10800',
+    'location' => '',
     'summary' => 'Three Squared "Object" CD Release show',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=ZjkzYWpsaWszdDFvYzFxYnZkNGxka2I0ajQgY2FmZmVzb2xlbXVzaWNAbQ'
@@ -387,6 +411,7 @@ http://www.myspace.com/thr33squared',
     'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom\'s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul\'s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you\'ll understand why one excited audience member said "This is the best jazz I\'ve ever heard in Boulder."',
     'dtend' => '2455577 21600',
     'dtstart' => '2455577 10800',
+    'location' => '',
     'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=MzFhamtiY2l2ajlhbmJoa2phNG84cWVvZXMgY2FmZmVzb2xlbXVzaWNAbQ'
@@ -413,6 +438,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455573 21600',
     'dtstart' => '2455573 7200',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -439,6 +465,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455580 21600',
     'dtstart' => '2455580 7200',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMThUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -465,6 +492,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455587 21600',
     'dtstart' => '2455587 7200',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -491,6 +519,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455594 21600',
     'dtstart' => '2455594 7200',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -517,6 +546,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455601 21600',
     'dtstart' => '2455601 7200',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -543,6 +573,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455608 21600',
     'dtstart' => '2455608 7200',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMTVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -569,6 +600,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455615 21600',
     'dtstart' => '2455615 7200',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMjJUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -595,6 +627,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455622 21600',
     'dtstart' => '2455622 7200',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -621,6 +654,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455629 21600',
     'dtstart' => '2455629 7200',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -647,6 +681,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455636 18000',
     'dtstart' => '2455636 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMTVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -673,6 +708,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455643 18000',
     'dtstart' => '2455643 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -699,6 +735,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455650 18000',
     'dtstart' => '2455650 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -725,6 +762,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455657 18000',
     'dtstart' => '2455657 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -751,6 +789,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455664 18000',
     'dtstart' => '2455664 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -777,6 +816,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455671 18000',
     'dtstart' => '2455671 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -803,6 +843,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455678 18000',
     'dtstart' => '2455678 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MjZUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -829,6 +870,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455685 18000',
     'dtstart' => '2455685 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MDNUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -855,6 +897,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455692 18000',
     'dtstart' => '2455692 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTBUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -881,6 +924,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455699 18000',
     'dtstart' => '2455699 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -907,6 +951,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455706 18000',
     'dtstart' => '2455706 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MjRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -933,6 +978,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455713 18000',
     'dtstart' => '2455713 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MzFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -959,6 +1005,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455720 18000',
     'dtstart' => '2455720 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MDdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -985,6 +1032,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455727 18000',
     'dtstart' => '2455727 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MTRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -1011,6 +1059,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455734 18000',
     'dtstart' => '2455734 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -1037,6 +1086,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455741 18000',
     'dtstart' => '2455741 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjhUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
@@ -1063,6 +1113,7 @@ Boulder, CO
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455748 18000',
     'dtstart' => '2455748 3600',
+    'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA3MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
