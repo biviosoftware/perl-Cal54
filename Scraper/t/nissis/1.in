@@ -344,7 +344,7 @@
     'url' => 'http://www.nissis.com/hazelmiller.html'
   },
   {
-    'description' => 'VALENTINES Dinner & Dancing with INSIDEOUT R&B & Jazz $39 4-Course Dinner & Complimentary Champagne Toast Valentine\'s Eve Special $39 per person includes gratuity',
+    'description' => 'VALENTINES Dinner & Dancing with INSIDEOUT R&B & Jazz $39',
     'dtend' => '2455607 18000',
     'dtstart' => '2455607 5400',
     'summary' => 'INSIDEOUT',
@@ -352,7 +352,7 @@
     'url' => 'http://www.nissis.com/lmbio_insideout.html'
   },
   {
-    'description' => 'VALENTINES Dinner & Dancing with GEORGE NELSON R&B & Jazz $49 4-Course Dinner $49 per person includes gratuity',
+    'description' => 'VALENTINES Dinner & Dancing with GEORGE NELSON R&B & Jazz $49',
     'dtend' => '2455608 18000',
     'dtstart' => '2455608 5400',
     'summary' => 'GEORGE NELSON',
