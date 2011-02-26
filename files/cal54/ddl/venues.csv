@@ -89,6 +89,7 @@ Boulder,US,Home,CO,2032 14th Street,,80302,ignore-bouldertheater@bivio.biz,Home,
   ],
 }
 ",RegExp,1100021,Home,http://www.bouldertheater.com/,Calendar,http://www.bouldertheater.com/
+Boulder,US,Home,CO,111 main,,80304,ignore-bunit@bivio.biz,Home,Home,,500004,Parent Is Authorized Access,Bunit Test,bunit_venue,,,Google,3100021,Home,http://test.bunit/,Calendar,http://test.bunit/cal
 Boulder,US,Home,CO,637R South Broadway,,80305,ashkan@caffesole.com,Home,Home,303.499.2985,500004,Parent Is Authorized Access,Caffe Sole,caffesole,,,Google,1200021,Home,http://www.caffesole.com,Calendar,http://www.caffesole.com/events.html
 Boulder,US,Home,CO,900 Baseline Road,,80302,ignore-chautauqua@bivio.biz,Home,Home,303.442.3282,500004,Parent Is Authorized Access,Colorado Chautauqua Association,chautauqua,,"{
   repeat => [
