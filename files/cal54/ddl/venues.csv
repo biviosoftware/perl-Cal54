@@ -69,7 +69,12 @@ Boulder,US,Home,CO,800 28th Street,,80303,talk-to-us@boulderoutlook.com,Home,Hom
 }
 ",RegExp,700021,Home,http://www.boulderoutlook.com/,Calendar,http://www.boulderoutlook.com/musiccalendar.html
 Boulder,US,Home,CO,3595 Table Mesa Drive,,80305,ignore-bpl_reynolds@bivio.biz,Home,Home,303.441.3120,500004,Parent Is Authorized Access,Boulder Public Library - George Reynolds Branch,bpl_reynolds,,,Evanced,800021,Home,http://www.boulderlibrary.org/locations/grb.html,Calendar,http://events.boulderlibrary.org?lib=2
-Boulder,US,Home,CO,1001 Arapahoe Avenue,,80302,ignore-bpl_main@bivio.biz,Home,Home,303.441.3100,500004,Parent Is Authorized Access,Boulder Public Library - Main Branch,bpl_main,,,Evanced,900021,Home,http://www.boulderlibrary.org,Calendar,http://events.boulderlibrary.org?lib=0
+Boulder,US,Home,CO,1001 Arapahoe Avenue,,80302,ignore-bpl_main@bivio.biz,Home,Home,303.441.3100,500004,Parent Is Authorized Access,Boulder Public Library - Main Branch,bpl_main,,"{
+  reject_event => {
+    summary => qr/canceled/i,
+  },
+}
+",Evanced,900021,Home,http://www.boulderlibrary.org,Calendar,http://events.boulderlibrary.org?lib=0
 Boulder,US,Home,CO,4800 Baseline Road,,80303,ignore-bpl_meadows@bivio.biz,Home,Home,303.441.4390,500004,Parent Is Authorized Access,Boulder Public Library - Meadows Branch,bpl_meadows,,,Evanced,1000021,Home,http://www.boulderlibrary.org/locations/meadows.html,Calendar,http://events.boulderlibrary.org?lib=3
 Boulder,US,Home,CO,2032 14th Street,,80302,ignore-bouldertheater@bivio.biz,Home,Home,303.786.7030,500004,Parent Is Authorized Access,Boulder Theater,bouldertheatre,,"{
   repeat => [
