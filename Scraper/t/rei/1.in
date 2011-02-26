@@ -1,0 +1,132 @@
+[
+  {
+    'description' => '
+Years of experience have made Dennis Doyle with the National Ski Patrol an expert in avalanche awareness and mountain travel. Join us to learn how to recognize and avoid avalanche conditions.
+
+
+Session Info
+Date
+3/4/2011
+
+Time
+6:30 - 8:00 PM MST
+
+Location
+Boulder REI
+
+Price
+Free
+
+
+',
+    'dtend' => '2455626 10800',
+    'dtstart' => '2455626 5400',
+    'summary' => 'Avalanche Awareness',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.rei.com/event/18929/session/23399?cm_mmc=rss-_-stores-_-events-_-Avalanche Awareness'
+  },
+  {
+    'description' => '
+Join us at a Fire Education Series in Boulder the first Monday evening of every month. For March, view the documentary "Fire Wars" covering the history of America\'s frontline war on wildfires and Q&A.
+
+
+Session Info
+Date
+3/7/2011
+
+Time
+6:30 - 8:00 PM MST
+
+Location
+Boulder REI
+
+Price
+Free
+
+
+',
+    'dtend' => '2455629 10800',
+    'dtstart' => '2455629 5400',
+    'summary' => '"Fire Wars" and discussion to follow with Doug Stephen',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.rei.com/event/18930/session/23401?cm_mmc=rss-_-stores-_-events-_-"Fire Wars" and discussion to follow with Doug Stephen'
+  },
+  {
+    'description' => '
+This class is aimed at the newcomer to map and compass. No experience necessary!
+
+
+Session Info
+Date
+3/8/2011
+
+Time
+6:30 - 8:00 PM MST
+
+Location
+Boulder REI
+
+Price
+Free
+
+
+',
+    'dtend' => '2455630 10800',
+    'dtstart' => '2455630 5400',
+    'summary' => 'Map & Compass Basics',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.rei.com/event/226/session/23402?cm_mmc=rss-_-stores-_-events-_-Map & Compass Basics'
+  },
+  {
+    'description' => '
+The Colorado Breeding Bird Atlas project charts breeding distribution of birds within every part of Colorado. Lynn Wickersham will give updates on the trends so far.
+
+
+Session Info
+Date
+3/9/2011
+
+Time
+6:30 - 8:00 PM MST
+
+Location
+Boulder REI
+
+Price
+Free
+
+
+',
+    'dtend' => '2455631 10800',
+    'dtstart' => '2455631 5400',
+    'summary' => 'Colorado Breeding Bird Atlas II Results',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.rei.com/event/18967/session/23374?cm_mmc=rss-_-stores-_-events-_-Colorado Breeding Bird Atlas II Results'
+  },
+  {
+    'description' => '
+Dr. Morrow will discuss the evolution of interactions among sedentary plants which need to have pollen moved to another plant and the bribes they offer to animals to move pollen to the right places.
+
+
+Session Info
+Date
+3/10/2011
+
+Time
+6:30 - 8:00 PM MST
+
+Location
+Boulder REI
+
+Price
+Free
+
+
+',
+    'dtend' => '2455632 10800',
+    'dtstart' => '2455632 5400',
+    'summary' => 'CONPS: Sex and the Single Flower',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.rei.com/event/18970/session/23377?cm_mmc=rss-_-stores-_-events-_-CONPS: Sex and the Single Flower'
+  }
+]
