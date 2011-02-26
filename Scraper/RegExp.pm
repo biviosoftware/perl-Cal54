@@ -16,13 +16,29 @@ my($_DAY_NAMES) = [
     map((lc($_), lc(substr($_, 0, 3))), $_DT->english_day_of_week_list),
 ];
 
+sub eval_scraper_aux {
+    my($self) = @_;
+    my($aux) = $self->get('venue_list')->get_model('Venue')
+	->get('scraper_aux') || b_die('venue missing scraper_aux');
+    my($year) = qr/\b(20[1-2][0-9])\b/;
+    my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)m)\b/i;
+    my($time) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?)\b/i;
+    my($day_name) = _day_name_regexp();
+    my($month) = _month_regexp();
+    my($month_day) = qr{\b([0,1]?[0-9]/[0-3]?[0-9])\b};
+    my($day) = qr/\b([0-3]?[0-9])(?:st|nd|rd|th)?\b/i;
+    my($line) = qr/(.*?)\n/;
+    my($description) = qr/(.*?)\n\n/;
+    my($res) = eval($aux);
+    b_die('eval failed: ', $@)
+	if $@;
+    return $res;
+}
+
 sub internal_import {
     my($self) = @_;
     my($venue) = $self->get('venue_list')->get_model('Venue');
-    b_die('venue missing scraper_aux: ', $venue)
-	unless $venue->get('scraper_aux');
-#TODO: parse scraper_aux before evaling to prevent malicious code
-    _process_url($self, _eval_regexp($self, \($venue->get('scraper_aux'))),
+    _process_url($self, $self->eval_scraper_aux,
         $self->get('venue_list')->get('calendar.Website.url'), {});
     return;
 }
@@ -73,7 +89,7 @@ sub _date {
     return undef unless $time;
 
     unless ($time =~ /(a|p)m$/i) {
-	b_die('time missing a/pm: ', $time)
+	b_die('time missing a/pm: ', $time, ' ', $current)
 	    unless $current->{$type . '_time_pm'};
 	my($hour) = $time =~ /^(\d+)/;
 	return undef unless $hour && $hour > 3 && $hour < 12;
@@ -89,7 +105,7 @@ sub _date {
 	($month, $current->{day}) = split('/', $current->{month_day});
     }
     else {
-	b_die('missing "month" or "month_day"');
+	b_die('missing "month" or "month_day": ', $current);
     }
     my($date) = join('/',
         $month,
@@ -102,23 +118,6 @@ sub _date {
 sub _day_name_regexp {
     my($regexp) = join('|', @$_DAY_NAMES);
     return qr/\b(${regexp})\b/i;
-}
-
-sub _eval_regexp {
-    my($self, $cfg) = @_;
-    my($year) = qr/\b(20[1-2][0-9])\b/;
-    my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)m)\b/i;
-    my($time) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?)\b/i;
-    my($day_name) = _day_name_regexp();
-    my($month) = _month_regexp();
-    my($month_day) = qr{\b([0,1]?[0-9]/[0-3]?[0-9])\b};
-    my($day) = qr/\b([0-3]?[0-9])(?:st|nd|rd|th)?\b/i;
-    my($line) = qr/(.*?)\n/;
-    my($description) = qr/(.*?)\n\n/;
-    my($res) = eval($$cfg);
-    b_die('eval failed: ', $@)
-	if $@;
-    return $res;
 }
 
 sub _month_regexp {
@@ -139,8 +138,16 @@ sub _process_url {
 
     foreach my $info (@{$cfg->{repeat} || []}) {
 	my($regexp, $args) = @$info;
+	my($size) = length($$text);
 
 	while ($$text =~ s/$regexp/_save_text($self, $args->{fields})/e) {
+
+	    if (length($$text) == $size) {
+		b_warn('no text change on repeat');
+		last;
+	    }
+	    $size = length($$text);
+
 	    _add_field_values($self, $args->{fields}, $current);
 
 	    if ($args->{follow_link}) {
