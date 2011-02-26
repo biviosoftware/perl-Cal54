@@ -2,14 +2,12 @@
 # $Id$
 package Cal54::Scraper::Google;
 use strict;
-use Bivio::Base 'Bivio.Scraper';
+use Bivio::Base 'Scraper.ICalendar';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
 my($_JSON) = b_use('MIME.JSON');
-my($_MC) = b_use('MIME.Calendar');
-my($_RR) = b_use('MIME.RRule');
 
 sub internal_import {
     my($self) = @_;
@@ -21,7 +19,9 @@ sub internal_import {
 	$$html =~ m{www\.google\.com/calendar/embed\?[^"]*?src=(.*?)(\&|")};
     b_die('failed to parse cal_id: ', $html)
 	unless $cal_id;
-    return unless _parse_ics($self, $cal_id, $start, $end);
+    return unless $self->parse_ics($self->c4_scraper_get(
+	'http://www.google.com/calendar/ical/' . $cal_id
+	    . '/public/basic.ics'), $start, $end);
     _add_event_urls($self, $cal_id, $start, $end);
     return;    
 }
@@ -74,53 +74,6 @@ sub _add_event_urls {
 	    unless $event->{url};
     }
     return;
-}
-
-sub _explode_event {
-    my($self, $vevent, $end) = @_;
-    return [$vevent] unless $vevent->{rrule};
-    return [
-	map(+{
-	    %$vevent,
-	    %$_,
-	}, @{$_RR->process_rrule($vevent, $end)}),
-    ];
-}
-
-sub _parse_ics {
-    my($self, $cal_id, $start, $end) = @_;
-    my($recurrences) = {};
-
-    foreach my $vevent (reverse(
-	@{$_MC->from_ics($self->c4_scraper_get(
-	    'http://www.google.com/calendar/ical/' . $cal_id
-		. '/public/basic.ics'
-	    ))})) {
-
-	if ($vevent->{'recurrence-id'}) {
-	    $recurrences->{_recurrence_id($vevent, 'recurrence-id')} = 1;
-	}
-	next if $_D->is_date($vevent->{dtstart});
-	next if ($vevent->{status} || '') eq 'CANCELLED';
-	next unless ($vevent->{class} || 'PUBLIC') eq 'PUBLIC';
-
-	foreach my $v (@{_explode_event($self, $vevent, $end)}) {
-	    next if $v->{rrule} && $recurrences->{_recurrence_id($v)};
-	    next if $_DT->compare($v->{dtstart}, $start) < 0;
-	    push(@{$self->get('events')}, {
-		map(($_ => $v->{$_}), qw(dtend dtstart time_zone uid)),
-		summary => $self->internal_clean($v->{summary}),
-		description => $self->internal_clean($v->{description}),
-	    });
-	}
-    }
-    return @{$self->get('events')} ? 1 : 0;
-}
-
-sub _recurrence_id {
-    my($vevent, $date_field) = @_;
-    return join('-',
-        map($vevent->{$_}, qw(uid sequence), $date_field || 'dtstart'));
 }
 
 1;
