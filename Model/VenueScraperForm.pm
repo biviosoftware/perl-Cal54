@@ -47,7 +47,6 @@ sub execute_other {
 	    $event->{$f} =~ s/\s+GMT$//;
 	}
     }
-    b_use('Agent.Task')->rollback;
     $self->internal_stay_on_page;
     return;
 }
