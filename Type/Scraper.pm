@@ -8,8 +8,10 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 __PACKAGE__->compile([
     UNKNOWN => 0,
     GOOGLE => 1,
+    ICALENDAR => [2, 'ICalendar'],
     ACTIVE_DATA => 3,
     EVANCED => 4,
+    RSS => [5, 'RSS'],
     REGEXP => [10, 'RegExp'],
 ]);
 
