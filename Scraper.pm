@@ -1,4 +1,4 @@
-# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# Copyright (c) 2010-2011 bivio Software, Inc.  All Rights Reserved.
 # $Id$
 package Cal54::Scraper;
 use strict;
@@ -71,6 +71,7 @@ sub do_one {
 		    $self->internal_import;
 		    b_die('no events')
 			unless @{$self->get('events')};
+		    _filter_events($self);
 		    _log($self, $_R->to_string($self->get('events')), '.pl');
 		    $self->internal_update;
 		    return;
@@ -87,6 +88,17 @@ sub do_one {
 	       ? (', ', $self->get('delete_count'), ' deleted')
 	       : ());
     return $self;
+}
+
+sub eval_scraper_aux {
+    my($self) = @_;
+    my($aux) = $self->get('venue_list')->get_model('Venue')
+	->get('scraper_aux');
+    return {} unless $aux;
+    my($res) = eval($aux);
+    b_die('eval failed: ', $@)
+	if $@;
+    return $res;
 }
 
 sub get_request {
@@ -166,7 +178,6 @@ sub internal_parse_xml {
     return $xml;
 }
 
-
 sub internal_update {
     my($self) = @_;
     my($ce) = $_CE->new($self->req);
@@ -185,6 +196,7 @@ sub internal_update {
     my($add_count) = 0;
     my($refresh) = {};
     my($e);
+    
     foreach my $event (@{$self->get('events')}) {
 	unless ($_DT->is_greater_than($event->{dtend}, $date_time)) {
 	    next;
@@ -194,6 +206,7 @@ sub internal_update {
 	    b_warn($event, ': duplicate event: ', $e);
 	    next;
 	}
+	delete($event->{location});
 	$refresh->{$key} = $event;
 	unless ($e = delete($curr->{$key})) {
 	    $ce->create_from_vevent($event);
@@ -207,7 +220,7 @@ sub internal_update {
     my($new_count) = scalar(@{$self->get('events')});
     my($to_delete) = $curr_count / ($new_count + $curr_count || 1);
     my($delete_count) = 0;
-    if ($curr_count <= 3 || $to_delete <= .05) {
+    if ($curr_count <= 3 || $to_delete <= .20) {
 	foreach my $v (values(%$curr)) {
 #TODO: Check recurring events.  If they had already occured in the past, simply update
 #      the dtend to be before $date_time.
@@ -229,6 +242,34 @@ sub internal_update {
 sub _bunit_dir {
     my($self) = @_;
     return $_C->is_test && $self->ureq('scraper_bunit');
+}
+
+sub _filter_event {
+    my($self, $type, $event, $aux) = @_;
+    my($rule) = $aux->{$type . '_event'};
+
+    unless ($rule) {
+	return $type eq 'accept' ? 1 : 0;
+    }
+
+    foreach my $f (keys(%$rule)) {
+	return 1 if ($event->{$f} || '') =~ $rule->{$f};
+    }
+    return 0;
+}
+
+sub _filter_events {
+    my($self) = @_;
+    my($aux) = $self->eval_scraper_aux;
+    my($events) = [];
+
+    foreach my $event (@{$self->get('events')}) {
+	next unless _filter_event($self, 'accept', $event, $aux);
+	next if _filter_event($self, 'reject', $event, $aux);
+	push(@$events, $event);
+    }
+    $self->put(events => $events);
+    return;
 }
 
 sub _log {
