@@ -17,18 +17,17 @@ my($_DAY_NAMES) = [
 ];
 
 sub eval_scraper_aux {
-    my($self) = @_;
-    my($aux) = $self->get('venue_list')->get_model('Venue')
+    my($self, $aux) = @_;
+    $aux ||= $self->get('venue_list')->get_model('Venue')
 	->get('scraper_aux') || b_die('venue missing scraper_aux');
     my($year) = qr/\b(20[1-2][0-9])\b/;
-    my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)m)\b/i;
+    my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)\.?m\.?)\b/i;
     my($time) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?)\b/i;
     my($day_name) = _day_name_regexp();
     my($month) = _month_regexp();
     my($month_day) = qr{\b([0,1]?[0-9]/[0-3]?[0-9])\b};
     my($day) = qr/\b([0-3]?[0-9])(?:st|nd|rd|th)?\b/i;
-    my($line) = qr/(.*?)\n/;
-    my($description) = qr/(.*?)\n\n/;
+    my($line) = qr/([^\n]+)\n/;
     my($res) = eval($aux);
     b_die('eval failed: ', $@)
 	if $@;
@@ -37,10 +36,15 @@ sub eval_scraper_aux {
 
 sub internal_import {
     my($self) = @_;
-    my($venue) = $self->get('venue_list')->get_model('Venue');
     _process_url($self, $self->eval_scraper_aux,
         $self->get('venue_list')->get('calendar.Website.url'), {});
     return;
+}
+
+sub month_as_int {
+    my($self, $name) = @_;
+    return $_MONTHS->{lc($name)}
+	|| b_die('invalid month value: ', $name);
 }
 
 sub _add_field_values {
@@ -88,7 +92,7 @@ sub _date {
     my($time) = $current->{$type . '_time'} || $current->{$type . '_time_pm'};
     return undef unless $time;
 
-    unless ($time =~ /(a|p)m$/i) {
+    unless ($time =~ /(a|p)\.?m\.?$/i) {
 	b_die('time missing a/pm: ', $time, ' ', $current)
 	    unless $current->{$type . '_time_pm'};
 	my($hour) = $time =~ /^(\d+)/;
@@ -98,8 +102,7 @@ sub _date {
     my($month);
 
     if ($current->{month}) {
-	$month = $_MONTHS->{lc($current->{month})}
-	    || b_die('invalid month value: ', $current->{month});
+	$month = $self->month_as_int($current->{month});
     }
     elsif ($current->{month_day}) {
 	($month, $current->{day}) = split('/', $current->{month_day});
@@ -163,9 +166,16 @@ sub _process_url {
 		($current->{summary}) = $current->{description} =~
 		    $args->{summary_from_description};
 	    }
-	    $current->{url} ||=
-	        $cleaner->unsafe_get_link_for_text($current->{summary})
-		if $current->{summary};
+	    if ($current->{url}) {
+		$current->{url} = $cleaner->get_link_for_text(
+		    $current->{url})
+		    if $current->{url} =~ /\{/;
+	    }
+	    else {
+		$current->{url} =
+		    $cleaner->unsafe_get_link_for_text($current->{summary})
+		    if $current->{summary};
+	    }
 	    push(@{$self->get('events')}, {
 		time_zone => $self->get('time_zone'),
 		%{_collect_data($self, $current)},
