@@ -1,0 +1,395 @@
+[
+  {
+    'description' => 'Genre: American Songbook',
+    'dtend' => '2455620 18000',
+    'dtstart' => '2455620 7200',
+    'summary' => 'The Robinson Quintet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Rating: PG-13
+
+
+Run Time: 113 Minutes',
+    'dtend' => '2455621 19800',
+    'dtstart' => '2455621 9000',
+    'summary' => 'Dirty Dancing',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Happy Hour: 4pm - 7pm
+
+
+Band: Irish Band
+
+
+Dancers: Celtic Dancers from 6:30pm - 9:30pm
+
+
+Food Specials
+
+
+Entree Plate of Traditional Irish Food :: $9.99 :: 5pm - 10p
+Three Course Dinner (offered in Jill\'s Restaurant only), includes:
+Appetizer (choice)
+Irish Steel Cut Oatmeal Soup :: smoked chicken, mushrooms
+Dubliner Cheese Pie :: bacon, leeks, tomato
+
+Entree (choice)
+Irish Stew :: braised Fox Fire Farms lamb, root vegetables
+Corned Beef Brisket :: colcannon, braised cabbage
+
+Dessert
+Sticky Pudding :: Guiness ice cream',
+    'dtend' => '2455639 12600',
+    'dtstart' => '2455638 81000',
+    'summary' => 'St Patricks Day',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/Blues',
+    'dtend' => '2455624 16200',
+    'dtstart' => '2455624 5400',
+    'summary' => 'George Nelson',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/Reggae',
+    'dtend' => '2455625 16200',
+    'dtstart' => '2455625 5400',
+    'summary' => 'Jubal and Monica',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Blues',
+    'dtend' => '2455626 18000',
+    'dtstart' => '2455626 7200',
+    'summary' => 'Jack Hadley Band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Modern Jazz',
+    'dtend' => '2455627 18000',
+    'dtstart' => '2455627 7200',
+    'summary' => 'Adam Bodine Trio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Rating: PG
+
+
+Run Time: 107 minutes',
+    'dtend' => undef,
+    'dtstart' => '2455628 9000',
+    'summary' => 'Footloose',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Jazz Piano',
+    'dtend' => '2455631 16200',
+    'dtstart' => '2455631 5400',
+    'summary' => 'Bonnie Lowdermilk',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: American/Acoustic',
+    'dtend' => '2455632 16200',
+    'dtstart' => '2455632 5400',
+    'summary' => 'Ash Ganley Duo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: American Songbook',
+    'dtend' => '2455634 18000',
+    'dtstart' => '2455634 7200',
+    'summary' => 'The Robinson Quintet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Rating: PG
+
+
+Run Time: 110 minutes',
+    'dtend' => undef,
+    'dtstart' => '2455635 5400',
+    'summary' => 'Grease',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Blues',
+    'dtend' => '2455638 12600',
+    'dtstart' => '2455638 1800',
+    'summary' => 'Jack Hadley Trio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Salsa',
+    'dtend' => '2455640 14400',
+    'dtstart' => '2455640 3600',
+    'summary' => 'Quemandita',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/Pop',
+    'dtend' => '2455641 14400',
+    'dtstart' => '2455641 3600',
+    'summary' => 'Mestizo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Rating: PG-13
+
+
+Run Time: 113 Minutes',
+    'dtend' => undef,
+    'dtstart' => '2455642 5400',
+    'summary' => 'Chicago',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Blues Mafia',
+    'dtend' => '2455645 12600',
+    'dtstart' => '2455645 1800',
+    'summary' => 'The Boulder',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Folk/Americana',
+    'dtend' => '2455646 12600',
+    'dtstart' => '2455646 1800',
+    'summary' => 'Magnolia Row',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Afro-Pop/Reggae',
+    'dtend' => '2455647 14400',
+    'dtstart' => '2455647 3600',
+    'summary' => 'Salasee and the Fafa Family',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: American Songbook',
+    'dtend' => '2455648 14400',
+    'dtstart' => '2455648 3600',
+    'summary' => 'The Robinson Quintet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Rating: PG-13
+
+
+Run Time: 94 Minutes',
+    'dtend' => undef,
+    'dtstart' => '2455649 5400',
+    'summary' => 'Little Shop of Horrors',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/Pop',
+    'dtend' => '2455652 12600',
+    'dtstart' => '2455652 1800',
+    'summary' => 'Mestizo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Soul/Pop-Noir',
+    'dtend' => '2455653 12600',
+    'dtstart' => '2455653 1800',
+    'summary' => 'Dechen Hawk',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Reggae',
+    'dtend' => '2455654 14400',
+    'dtstart' => '2455654 3600',
+    'summary' => 'Jubal and the Rude Boys',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Tango',
+    'dtend' => '2455655 14400',
+    'dtstart' => '2455655 3600',
+    'summary' => 'Trio Con Brio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Rating: PG-13
+
+
+Run Time: 94 Minutes',
+    'dtend' => undef,
+    'dtstart' => '2455656 5400',
+    'summary' => 'Anchorman',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/Pop',
+    'dtend' => '2455658 14400',
+    'dtstart' => '2455658 3600',
+    'summary' => 'Metizo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/Pop',
+    'dtend' => '2455659 12600',
+    'dtstart' => '2455659 1800',
+    'summary' => 'Wendy Woo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Jazz/Blues/Swing',
+    'dtend' => '2455660 12600',
+    'dtstart' => '2455660 1800',
+    'summary' => 'Pete Karsounes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Samba',
+    'dtend' => '2455661 14400',
+    'dtstart' => '2455661 3600',
+    'summary' => 'Sambadende',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Rock/Blues Jam',
+    'dtend' => '2455662 14400',
+    'dtstart' => '2455662 3600',
+    'summary' => 'Heavy Cats',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Rating: PG-13
+
+
+Run Time: 97 Minutes',
+    'dtend' => undef,
+    'dtstart' => '2455663 5400',
+    'summary' => 'Tommy Boy',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Blues',
+    'dtend' => '2455665 12600',
+    'dtstart' => '2455665 1800',
+    'summary' => 'Jack Hadley Trio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Jazz Fusion',
+    'dtend' => '2455666 12600',
+    'dtstart' => '2455666 1800',
+    'summary' => 'Thom Sandrock',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Vintage Jazz',
+    'dtend' => '2455667 12600',
+    'dtstart' => '2455667 1800',
+    'summary' => 'Prohibition Six',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: American Songbook',
+    'dtend' => '2455669 14400',
+    'dtstart' => '2455669 3600',
+    'summary' => 'The Robinson Quintet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Rating: PG
+
+
+Run Time: 87 Minutes',
+    'dtend' => undef,
+    'dtstart' => '2455670 5400',
+    'summary' => 'Airplane',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/Pop-Rock',
+    'dtend' => '2455672 12600',
+    'dtstart' => '2455672 1800',
+    'summary' => 'Megan Burtt',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Blues',
+    'dtend' => '2455673 12600',
+    'dtstart' => '2455673 1800',
+    'summary' => 'George Nelson Band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/Reggae',
+    'dtend' => '2455674 12600',
+    'dtstart' => '2455674 1800',
+    'summary' => 'Jubal and Monica',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Rock/Pop/Soul',
+    'dtend' => '2455675 14400',
+    'dtstart' => '2455675 3600',
+    'summary' => 'Raising Cain',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/Pop',
+    'dtend' => '2455676 14400',
+    'dtstart' => '2455676 3600',
+    'summary' => 'Mestizo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Rating: PG-13
+
+
+Run Time: 102 Minutes',
+    'dtend' => undef,
+    'dtstart' => '2455677 5400',
+    'summary' => 'Ferris Buellers Day Off',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Acoustic/World Music',
+    'dtend' => '2455679 12600',
+    'dtstart' => '2455679 1800',
+    'summary' => 'Jonny Jyemo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Blues',
+    'dtend' => '2455680 12600',
+    'dtstart' => '2455680 1800',
+    'summary' => 'Kort McCumber',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Tango',
+    'dtend' => '2455681 14400',
+    'dtstart' => '2455681 3600',
+    'summary' => 'Trio Con Brio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Afro-beat/Funk/Fusion',
+    'dtend' => '2455682 14400',
+    'dtstart' => '2455682 3600',
+    'summary' => 'Paa Kow\'s By all Means Band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: American Songbook',
+    'dtend' => '2455683 14400',
+    'dtstart' => '2455683 3600',
+    'summary' => 'The Robinson Quintet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  },
+  {
+    'description' => 'Genre: Jazz/Funk/Reggae',
+    'dtend' => '2455633 18000',
+    'dtstart' => '2455633 7200',
+    'summary' => 'The Dream Doctors',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
+  }
+]

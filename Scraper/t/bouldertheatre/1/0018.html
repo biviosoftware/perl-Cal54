@@ -1,0 +1,519 @@
+HTTP/1.1 200 OK
+Connection: close
+Date: Sun, 27 Feb 2011 17:46:08 GMT
+Server: Apache/2.2.17 (FreeBSD) mod_ssl/2.2.17 OpenSSL/0.9.8k DAV/2 PHP/5.3.3 with Suhosin-Patch Phusion_Passenger/3.0.2
+Content-Type: text/html
+Content-Type: text/html; charset=iso-8859-1
+Client-Date: Sun, 27 Feb 2011 17:46:10 GMT
+Client-Peer: 209.169.7.132:80
+Client-Response-Num: 1
+Client-Transfer-Encoding: chunked
+Link: <bouldertheater.css>; rel="stylesheet"; type="text/css"
+Title: Boulder Theater
+X-Powered-By: PHP/5.3.3
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Boulder Theater</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="javascript">
+i=0;
+days = new Array(42);
+months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+curMonth = 0;
+curYear = 2004;
+curHighlight = -1;
+
+function initCalendar() {
+	today = new Date();
+curMonth = 3;
+curYear = 2011;
+	setupCalendar();
+	//highlightCell(10);
+}
+function incMonth() {
+	if (curMonth == 11) {
+		curMonth = 0;
+		curYear++;
+	} else {
+		curMonth++;
+	}
+	setupCalendar();
+}
+function decMonth() {
+	if (curMonth == 0) {
+		curMonth = 11;
+		curYear--;
+	} else {
+		curMonth--;
+	}
+	setupCalendar();
+}
+function setupCalendar() {
+	myDate = new Date();
+	myDate.setMonth(curMonth);
+	myDate.setDate(1);
+	myDate.setYear(curYear);
+	firstDay = myDate.getDay();
+
+	document.getElementById('calHeader').innerHTML = "<b>"+months[curMonth]+" "+curYear+"</b>";
+	
+	for (j=0; j<42; j++) {
+		if ((j >= firstDay) && (myDate.getMonth() == curMonth)) {
+			days[j] = myDate.getDate();
+			document.getElementById('cell_'+(j)).innerHTML = "<table width='100%' cellpadding='0' cellspacing='0' border='0' class='calText'><tr><td align='center'><a onclick='exit=false;' href='event_detail.php?m="+(myDate.getMonth()+1)+"&d="+myDate.getDate()+"&y="+myDate.getFullYear()+"' onClick='highlightCell("+j+")'>"+myDate.getDate()+"</a></td></tr></table>";
+			if (myDate.getDate() == 1) { highlightCell(j); }
+			myDate.setDate(myDate.getDate()+1);
+		} else {
+			days[j] = "&nbsp";
+			document.getElementById('cell_'+(j)).innerHTML = "<table width='100%' cellpadding='0' cellspacing='0' border='0' class='calText'><tr><td align='center'>&nbsp</td></tr></table>";
+		}
+		
+	}
+}
+
+function highlightCell(cellId) {
+
+	if (cellId != curHighlight) { 
+		if (curHighlight >= 0) { document.getElementById('cell_'+curHighlight).innerHTML = "<table width='100%' cellpadding='0' cellspacing='0' border='0' class='calText'><tr><td align='center'><a onclick='exit=false;' href='javascript:;' onClick='highlightCell("+curHighlight+")'>"+days[curHighlight]+"</a></td></tr></table>";  }
+		curHighlight = cellId;
+		document.getElementById('cell_'+curHighlight).innerHTML = "<table width='100%' cellpadding='0' cellspacing='0' border='0' class='calHighlighted'><tr><td align='center'><a onclick='exit=false;' href='javascript:;' onClick='highlightCell("+curHighlight+")'>"+days[curHighlight]+"</a></td></tr></table>"; 
+	}
+}
+</script>
+
+	<script type="text/javascript" src="http://widget.iggli.com/widgets/invite-core.2.1.iggli"></script>
+
+<style type="text/css">
+<!--
+.calBorder {  background-color: #CCCCCC}
+.calText {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #003333; background-color: #FFFFFF}
+.calHighlighted {  background-color: #CCCCCC; color: #003333; text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px}
+-->
+</style>
+<link href="bouldertheater.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="swfobject.js"></script>
+
+
+
+</head>
+
+<body bgcolor="#000000" class="body" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="initCalendar()">
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="770" height="175" colspan="8" valign="bottom"><div id="flashcontent">
+  </div>
+
+<script type="text/javascript">
+   var so = new SWFObject("../flash/firstfile3.swf", "mymovie", "780", "165", "6", "#000000");
+   so.write("flashcontent");
+</script>
+
+    </div></td>
+  </tr>
+  <tr>
+    <td colspan="8" valign="top" bgcolor="#FFFFFF">
+      <table width="780" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+          <td width="190" valign="top" background="images/bgtable2.gif">          <table width="183" height="168%" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="173" height="362" valign="top"><div style = "width:195px;height:600px;overflow: auto;"><html>
+<head>
+<link href="bouldertheater2.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+body {
+	background-color: #000000;
+	scrollbar-face-color: #012D74; 
+	scrollbar-shadow-color: #011FC2; 
+	scrollbar-highlight-color: #133197; 
+	scrollbar-3dlight-color: #1B3AD6; 
+	scrollbar-darkshadow-color: #333333; 
+	scrollbar-track-color: #000000; 
+	scrollbar-arrow-color: #69D9FF;
+}
+-->
+</style>
+  
+</head>
+<body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+<table height="100%"  width="100%">
+<tr>
+    <td valign="top"> 
+      <br>
+      <p class="textsmallwhite">
+<b><span class="textnext" style='color:RED'>NEXT: </span><a onclick="exit=false;" class="textnext" href="event_detail.php?id=1404" target='_top'>02/28 Joshua Radin</a></b><br><br><table width=100%><tr><td valign=top class="textsmallwhite" nowrap><b>03/01</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1417" target='_top'>Banff Mountain Film Festival World Tour</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/02</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1418" target='_top'>Banff Mountain Film Festival World Tour</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/04</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1407" target='_top'>Medeski Martin & Wood</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/05</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1447" target='_top'>Bao Bao Festival</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/09</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1408" target='_top'>Randy Newman</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/10</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1434" target='_top'>Fashion Under The Flatirons</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/11</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1456" target='_top'>The Mexico Experience Premiere & Benefit</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/12</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1431" target='_top'>Stanley Clarke Band & Victor Wooten Band</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/16</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1413" target='_top'>Acoustic Africa</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/19</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1458" target='_top'>Broken Social Scene</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/21</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1409" target='_top'>The Saw Doctors</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/24</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1425" target='_top'>The Pink Floyd Experience</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/25</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1452" target='_top'>John Prine</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/26</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1410" target='_top'>Orla Fallon</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>03/31</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1459" target='_top'>The Portal:  A Cosmic Rock Odyssey</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/01</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1455" target='_top'>Wanda Jackson</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/02</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1464" target='_top'>2011 NPC MAN SPORTS</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/02</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1463" target='_top'>2011 NPC MAN SPORTS</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/08</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1444" target='_top'>Beats Antique</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/09</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1432" target='_top'>Sweet Honey In The Rock</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/13</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1424" target='_top'>Madeleine Peyroux</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/14</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1426" target='_top'>Dark Star Orchestra</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/15</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1427" target='_top'>Dark Star Orchestra</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/16</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1462" target='_top'>Dark Dark Dark</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/16</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1451" target='_top'>MiM0SA</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/22</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1457" target='_top'>Microbreweries For The Environment</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>04/23</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1446" target='_top'>Shpongle Presents:  The Shpongletron Experience</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>05/09</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1460" target='_top'>Femi Kuti</a></td></tr><tr><td valign=top class="textsmallwhite" nowrap><b>06/04</b></td><td><a onclick="exit=false;" class="textsmallwhite" href="event_detail.php?id=1461" target='_top'>Iron & Wine</a></td></tr></table></p>    </td>
+  </tr>
+</table>
+</body>
+</html></div>
+
+              </td>
+            </tr>
+          </table></td>
+          <td width="554" valign="top" bgcolor="#FFFFFF" class="textnext" align="center">
+            <table width="540" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="550" height="16" colspan="2" valign="top" class="h1">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="178" colspan="2" valign="top" align="center" class="content">
+                                    <table width="100%" border="0" align="left" cellpadding="6" cellspacing="0" bgcolor="#FFFFFF">
+
+
+
+
+                    <tr><td>
+
+<script type="text/javascript">
+				//<![CDATA[
+				//look and feel configuration
+				var invite_widget_version="2.1";
+				var invite_widget_skin="social_networks";
+				var invite_widget_networks="email, facebook, twitter, myspace, bebo, linkedin, friendfeed";
+				//required parameters
+				var invite_partner_id="4";//contact iggli to get your partner id
+		        var invite_title="Westword, KGNU and Twist & Shout Present Wanda Jackson";
+		        var invite_location="2032 14th Street, Boulder, CO 80302";
+		        var invite_date="04/01/2011"; // mm/dd/yyyy
+		        //optional parameters
+		        var invite_event_url="http://www.bouldertheater.com/event_detail.php?id=1455";
+		        var invite_artist="Wanda Jackson";
+		        var invite_venue="The Boulder Theater";
+		        var invite_venue_url="http://www.bouldertheater.com/";
+		        var invite_start_time="8:30 PM"; // 12 hour clock with am/pm
+		        var invite_end_time="";
+		        var invite_show_time="8:30 PM"; // 12 hour clock with am/pm or TBD
+		        var invite_door_time=""; // 12 hour clock with am/pm or TBD
+		        var invite_image_url="http://www.bouldertheater.com/images/events/1297099427l.jpg";
+		        var invite_seating="Standing Room & Seated Balcony";
+		        var invite_audience="All Ages";
+		        var invite_tickets_required="true";
+		        
+		         var invite_tickets_url="http://bouldertheater.frontgatesolutions.com/choose.php?a=1&lid=52071&eid=59802";		        var invite_tickets_general_admission="false";
+		        var invite_tickets_reserved="false";
+		        
+		        var invite_tickets_min_price=""; // xxx.xx us dollar format without symbol
+                var invite_tickets_max_price=""; // xxx.xx us dollar format without symbol
+		        //var invite_tickets_presale_date="11/04/2008"; // mm/dd/yyyy
+		        //var invite_tickets_presale_code="zeppelin"; // if code required, any string works here.
+		        //var invite_tickets_onsale_date="11/15/2008"; // mm/dd/yyyy
+		        var invite_tickets_availability="onSale"; // comingSoon, preSale, onSale, boxOfficeOnly, soldOut, ended
+		        var invite_audio_sample_url="";
+						  
+		        
+			    //]]>
+			</script>
+			
+
+
+                    </td>
+                    </tr>
+                    <tr>
+                      <td width="378" valign="top" align="left"><span class="textsmall">
+                                                <strong>Westword, KGNU and Twist & Shout Present</strong></span><br>
+                          
+                        <span class="h1">
+                          WANDA JACKSON                        </span><span class="next"><font color="#000000"><br>
+                          </font></span>
+                                                    <span class="h2">
+                          w/ guests                          </span><br>
+                                                    <span class="next"> </span><span class="textsmall"> <br><br>
+When Wanda Jackson, the justly crowned Queen of Rockabilly, recorded “Let’s Have A Party,” a tune she made into a hit of her own in 1958 even after one-time boyfriend Elvis Presley had released a version of it, her delivery of the chorus wasn’t so much a suggestion as a command. As the title – and, more importantly, the contents -- of her latest album, The Party Ain’t Over, indicates, this feisty septuagenarian artist is as galvanizing as ever. Jackson was recently inducted into the Rock and Roll Hall of Fame, honored with a long-time-coming, Early Influence accolade for her pivotal role in the evolution of popular music, especially where female artists were concerned. As a teenager in the mid-50s, the diminutive Jackson was the first woman to perform unadulterated rock and roll – and she one-upped the boys defining this new genre, Presley included, with her exhilaratingly forthright approach. The young Jackson, an Oklahoma native, came across as both gritty and glamorous; a playfully suggestive growl to her voice matched the daring, handmade outfits she wore, short skirts and fringed dresses that have inspired would-be bad girls for decades to come. A tireless touring artist for more than 50 years, Jackson continues to win over new, young fans, including guitarist-vocalist-White Stripes founder Jack White.
+<br><br>
+On this debut for Third Man/Nonesuch Records, produced and arranged by White at his Nashville studio, the spirited Jackson proves that brash rock and roll attitude need not have an age limit. Her trademark growl remains intact on rockers like “Rip It Up” and “Nervous Breakdown;” she opens the set with an echo-laden sneer on a rollicking version of “Shakin’ All Over” and ends it ten songs later with a plaintive take on Jimmie Rodgers’ “Yodel #6,” along the way gamely tackling country, gospel, densely worded Bob Dylan, and a little bit of Tin Pan Alley. Jackson and White are a remarkably simpatico pairing; their collaboration came together quickly, serendipitously. One of Jackson’s colleagues had originally approached White about doing a duet with Jackson for a proposed “Wanda and Friends” disc, but White demurred. Instead, he offered something better, inviting Jackson to cut a single with him for his Third Man label, and that swiftly led this kindred spirits to put together an entire album.
+<br><br>
+Jackson admits, “I was scared at first because I didn’t know what this young rock star was going to expect of me or ask me to do. I kind of had shaky feet, deciding whether I wanted to do this or not. Of course I knew about him, I have to admit, from the album he did with Loretta Lynn and how successful that was. That certainly got my attention when he said he was interested in doing one with me. So we began sending material to each other; he sent me the things he thought I should do or he wanted me to do, and I sent him some ideas of things I had put aside for recording at a future date. When I finally got to Nashville, he put me at ease immediately. He’s just so laid back and such a cool guy that I found myself wanting to please him, I wanted to do it his way. My husband (Jackson’s manager of 40 years) and I told him, you do this. If you want a suggestion from me, feel free to ask. Otherwise, you make the decisions. That gave him a lot of freedom and I wanted him to have that freedom. And I think that’s what made it so good as an album. As I began singing these songs and listening to the playbacks he made, I realized he wasn’t wanting to change my style of singing at all. He just wanted me to have new, fresher material. And I said, hey I could do this. I can sing like Wanda Jackson. He just wanted more of Wanda than I was used to putting out. And apparently it worked.”
+<br><br>
+White and Jackson came up with inspired and wide-ranging song choices that reflect Jackson’s long history with country, gospel, and even the big-band music she remembers from her childhood as well as with rock and roll: Harlan Howard’s woozy lament “Busted”; the Andrew Sisters’ kitschy tropical travelogue, “Rum and Coca Cola”, a fitting companion to her own “Fujiyama Mama”; Dylan’s rockabilly fever dream, “Thunder On The Mountain”. They also recorded a cover of contemporary bad-girl Amy Winehouse’s “You Know That I’m No Good,” which White first released as a single in 2009, paired with “Shakin All Over.” The Winehouse song suits her, Jackson says, but she’s careful to draw the line between life and art: “On the one hand, I’m good, on the other hand, I’m bad. That seems to be the image this new generation of fans that I have has given me. It’s like the title of the documentary about my life that recently came out: The Sweet Lady With the Nasty Voice. Maybe that says that I become a different person, a different persona, when I sing those songs. I have a good reputation, always have had, and respect from everyone as a lady, and that pleases me very much. But the young girls think I’m this hard gal that gets her way and storms in. It’s just because of the material I’ve sung and the way I’ve sung it. And that’s okay. That’s cute.”
+<br><br>
+White himself backs Jackson on lead guitar, cutting loose with solos that are as ferocious and fun as Jackson’s vocals; in fact, the entire band that White assembled – including pedal steel, a horn section and backing vocals from singers Ashley Monroe and Karen Elson –is similarly uninhibited, matching Jackson’s and White’s intensity and, just as often, their humor. Though the work is carefully arranged, the resulting tracks feel like one unforgettable after-hours session, with everyone in thrall to the woman at the heart of these tunes. The first song White suggested they cut was “Rip It Up,” one Jackson knows very well from her rockabilly days. As she explains, “It shocked me that he wanted me to do that but that was the first one I recorded. He loves that song and I do too. But I think he did that to put me at ease, let me do something that I’m real familiar with and real comfortable with, and he didn’t have to direct me or any of that. I just reared back and sang it. That got me loosened up and made me comfortable.” Not that White simply wanted to make things easy. On the sultry “You Know I’m No Good,” says Jackson, “We’d get through one take and he’d say, ‘Oh Wanda that was great.’ And I said, ‘Whew, I made it.’ Then he said, ‘Now let’s do one more and let’s push a little more.’ I was getting physically kind of tired and probably kind of got angry but he got the take he wanted. It’s funny how you can come up with what your producers want in the strangest ways.” A little bit of their repartee can be detected at the top of the track, just as the analog tape gets rolling.
+
+The Party Ain’t Over is about stepping out, not summing up, but it does touch on important aspects of Jackson’s life and ever-evolving career. “Teach Me Tonight,” a country-inflected interpretation of the DeCastro Sisters’ hit, partly fulfills Jackson’s desire to cut a 40s-style big-band disc. “Like A Baby,” recorded live in the studio with the whole band, allowed Jackson to revive an obscure, bluesy number from her old buddy Elvis. The Jimmie Rodgers tune is the first song she ever learned as a child; her father taught her the chords on the guitar, she figured out how to sing along while she played, and, like any aspiring vocal star of the era, she taught herself how to yodel, a skill she has clearly maintained over the ensuing decades.
+<br><br>
+Jackson remains too busy to look back – her legend looms especially large now in Europe and Japan, where she is always in demand as a concert performer – but she does allow herself a moment to reflect: “I can’t think of anyone who could be any luckier or any happier than me. I think it’s a blessing from the Lord. I had wonderful parents who gave up so much so that I could have my dreams come true. I was an only child so I had all the love and attention that anyone could ask for. My mother made my stage clothes and a lot of my street clothes too. Dad traveled with me and drove me to all those early dates so I didn’t have to be alone. You couldn’t ask for more, to make your living doing what you love to do, to sing and travel and entertain people all your life. I can’t think of any life that could be better than that.”
+<br><br>
+And, as she notes, the party ain’t over.                          <br>
+                          <br>
+                          <div style="float:left;padding-top:8px;">
+                                                    <a onclick="exit=false;" href="http://bouldertheater.frontgatesolutions.com/choose.php?a=1&lid=52071&eid=59802"><img src="images/buy.gif" width="64" height="24" border="0"></a>
+						  							
+                        						  </div>
+ 							<div style="float:left;margin-left:10px;">
+ 								<script type="text/javascript" src="http://widget.iggli.com/widgets/invite-widget.2.1.iggli"></script>
+ 								<noscript><a href="http://iggli.com/litevite-start.iggli" title="Invite Your Friends">Invite Your Friends</a></noscript>
+			 			  	</div>
+ 						
+			 			</span>
+ 						
+ 						
+ 						
+						&nbsp;&nbsp;&nbsp;<span></span>
+ 						
+ 						</td>
+                      <td rowspan="2" valign="top" align="center"><span class="textsmall" style="background-color: #FFFFFF"><img src="/images/events/1297099427l.jpg" border="2">
+                        <br>
+                        <br>
+                        <br>
+                        </span>
+                        <table width="155" border="0" cellspacing="0" cellpadding="0" class="calText">
+                          <tr align="center" valign="middle">
+                            <td class="calBorder" rowspan="17" width="1"></td>
+                            <td colspan="13" class="calBorder"></td>
+                            <td rowspan="17" class="calBorder" width="1"></td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td colspan="13" class="calText">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="calText">
+                                <tr align="center" valign="middle">
+                                  <td width="20" align="left"><a onclick="exit=false;" href="javascript:;" onClick="decMonth()"><img src="images/prev.gif" border="0"></a></td>
+                                  <td id="calHeader">mon/year</td>
+                                  <td width="20" align="right"><a onclick="exit=false;" href="javascript:;" onClick="incMonth()"><img src="images/next.gif" border="0"></a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td colspan="13" class="calBorder"></td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calText" width="21">S</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" width="21">M</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" width="21">T</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" width="21">W</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" width="21">T</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" width="21">F</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" width="21">S</td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calBorder" colspan="13"></td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calText" id="cell_0">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_1">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_2">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_3">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_4">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_5">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_6">&nbsp;</td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calBorder" colspan="13"></td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calText" id="cell_7">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_8">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_9">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_10">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_11">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_12">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_13">&nbsp;</td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calBorder" colspan="13"></td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calText" id="cell_14">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_15">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_16">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_17">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_18">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_19">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_20">&nbsp;</td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calBorder" colspan="13"></td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calText" id="cell_21">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_22">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_23">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_24">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_25">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_26">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_27">&nbsp;</td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calBorder" colspan="13"></td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calText" id="cell_28">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_29">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_30">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_31">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_32">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_33">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_34">&nbsp;</td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calBorder" colspan="13"></td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calText" id="cell_35">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_36">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_37">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_38">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_39">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_40">&nbsp;</td>
+                            <td class="calBorder" width="1"></td>
+                            <td class="calText" id="cell_41">&nbsp;</td>
+                          </tr>
+                          <tr align="center" valign="middle">
+                            <td class="calBorder" colspan="13"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="378" valign="top" align="left" class="content">
+<!--                        <p><b>Main&nbsp;Event:</b>&nbsp;
+                                                  </p>
+                                                <p><b>Special&nbsp;Guests:&nbsp;</b>
+                          w/ guests                        </p>
+                        -->
+                        <p><b>Date/Time:&nbsp;</b>
+                          April 1, 2011, 8:30 pm                                                  </p>
+
+                        
+                                                <p><b>Audience:</b>&nbsp;
+                          All Ages                        </p>
+                                                                        <p><b>Seating:</b>&nbsp;
+                          Standing Room & Seated Balcony                        </p>
+                                                                        <p><b>Ticket&nbsp;Availability:</b>&nbsp;
+                          Yes                        </p>
+                                                                        <p><b>On&nbsp;Sale&nbsp;Date/Time:</b>&nbsp;
+				February 11, 2011                        </p>
+
+
+                                                <p><b>Internet On Sale Time:</b>&nbsp;
+			10:00 am                        </p>
+			
+                                                <p><b>Box Office On Sale Time:</b>&nbsp;
+                        	3:00 pm                        </p>
+			
+
+
+                                                                                                                                                <p><b>Day&nbsp;of&nbsp;Show:&nbsp;</b>
+                          $28.25                        </p>
+                                                                                                <p><b>In&nbsp;Advance:&nbsp;</b>
+                          $25.75                        </p>
+                                                                        <p><b>Other:&nbsp;</b> + $2.00 for under 21                        </p>
+                                                                                                    <br>
+                          <a onclick="exit=false;" href="http://www.wandajackson.com/main.html" target="_new">http://www.wandajackson.com/main.html                          </a>
+                                                                                                                                                                                    <p align="center">(ticket prices are all inclusive) </p>
+                      </td>
+                    </tr>
+
+                    <tr align="center" valign="top">
+                      <td colspan="2" class="content">&nbsp; </td>
+                    </tr>
+                  </table>
+                                  </td>
+              </tr>
+              <tr>
+                <td colspan="2" valign="top">&nbsp; </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="8"bgcolor="#000000"><br>
+      <style type="text/css">
+<!--
+body {
+	background-image: url();
+}
+-->
+</style>
+      <table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="5" background="images/footer-bg.jpg">
+        <tr valign="top">
+          <td height="19"><div align="center"><a href="geninfo.php" class="textsmallwhite">General Info</a></div></td>
+          <td><div align="center"><a href="boxoffice.php" class="textsmallwhite">Box Office Info </a></div></td>
+          <td> <div align="center"><a href="handicap.php" class="textsmallwhite">Handicap Accessability </a></div></td>
+          <td><div align="center"><a href="hotels.php" class="textsmallwhite">Hotels/Restaurants</a></div></td>
+          <td><div align="center"><a href="news.php" class="textsmallwhite">News &amp; Opportunities </a></div></td>
+          <td><div align="center"><a href="capacity.php" class="textsmallwhite">Seating Chart </a></div></td>
+          <td><div align="center"><a href="directions.php" class="textsmallwhite">Directions/Map</a></div></td>
+          <td><div align="center"><a href="history.php" class="textsmallwhite">History</a></div></td>
+        </tr>
+        <tr valign="top">
+          <td height="38" ><div align="center"><a href="http://bouldertheater.frontgatesolutions.com/" class="textsmallwhite">Buy Tickets <br>
+    (Boulder Theater) </a></div></td>
+          <td><div align="center"><a href="http://btticketing.frontgatesolutions.com/" class="textsmallwhite">Buy Tickets <br>
+    (Other Events) </a></div></td>
+          <td><div align="center"><a href="rentalinfo.php" class="textsmallwhite">Rental Information</a> </div></td>
+          <td><div align="center"><a href="production.php" class="textsmallwhite">Production Information </a></div></td>
+          <td><div align="center"><a href="equipment.php" class="textsmallwhite">Equipment List</a></div></td>
+          <td><div align="center"><a href="faq.php" class="textsmallwhite">FAQ's</a></div></td>
+          <td><div align="center"><a href="contact.php" class="textsmallwhite">Contact</a></div></td>
+          <td><div align="center"><a href="index.php" class="textsmallwhite">Home</a></div></td>
+        </tr>
+        <tr valign="top">
+          <td colspan="8" class="textsmallwhite"><div align="center">
+            <p>&copy; 2008 Boulder Theater. All Right Reserved. </p>
+            <p>2032 14th Street | Boulder, CO | 303.786.7030 </p>
+          </div></td>
+        </tr>
+</table>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-15217992-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</td>
+  </tr>
+</table>
+</body>
+</html>
