@@ -13,11 +13,20 @@ body.c4_home {
   Font('c4_home');
   margin: 2ex 1em;
 }
+body.c4_home_mobile {
+  Font('c4_home');
+  margin: 2ex 1em;
+  min-width: 0;
+}
 form.c4_query {
   If(
     ['!', 'Type.UserAgent', '->is_msie_6_or_before'],
     q{position: fixed;},
   );
+}
+form.mobile {
+  display: block;
+  position: relative;
 }
 div.c4_empty_list {
   height: 12em;
@@ -27,11 +36,54 @@ div.c4_empty_list {
 }
 div.c4_list {
   padding-left: 12em;
-  width: 40em;
   If(
     ['Type.UserAgent', '->is_msie_6_or_before'],
     q{position: absolute; top: 2ex; left: 1em;},
   );
+}
+div.mobile {
+  padding-left: 0;
+}
+div.mobile_head {
+  text-align: center;
+  vertical-align: top;
+}
+div.mobile_head .item {
+  margin-top: 1ex;
+  margin-bottom: 0;
+}
+div.mobile_head input {
+  width: 100%;
+}
+#c4_inputs {
+  If(
+    [qw(->req query)],
+    q{display: none;},
+    q{display: block;},
+  );
+}
+div.arrow {
+  color: #FF3333;
+  font-size: 250%;
+}
+div.logo_group {
+  display: inline;
+  If(
+    [qw(->req query)],
+    q{cursor: pointer;}
+  );
+}
+.toggle {
+  If(
+    [qw(->req query)],
+    q{cursor: pointer;}
+  );
+}
+.decrease_font_size {
+  float: left;
+}
+.increase_font_size {
+  float: right;
 }
 .c4_query img.c4_logo {
   margin-bottom: .5ex;
