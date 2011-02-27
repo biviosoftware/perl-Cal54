@@ -16,7 +16,6 @@ sub internal_import {
 	$self->get('venue_list')->get('calendar.Website.url'));
     my($ical_url) = $$html =~ m{"(http[^"]+/ical/[^"]+)"};
     b_die('no ical ref') unless $ical_url;
-    b_info($ical_url);
     $self->parse_ics($self->c4_scraper_get($ical_url));
     return;    
 }
