@@ -147,6 +147,7 @@ sub internal_date_time {
     # mm/dd/yyyy hh:mm (a|p)m
     # mm/dd/yyyy hh(a|p)m
     # yyyy/mm/dd hh:mm (a|p)m
+    $str =~ s/(a|p)\.(m)\./$1$2/i;
     my($d, $t) = $str =~ m,^([\d/]+)\s+(.*?)\s*$,;
     b_die('unparsable date/time: ', $str)
 	unless $t;
@@ -198,6 +199,7 @@ sub internal_update {
     my($e);
     
     foreach my $event (@{$self->get('events')}) {
+	$event->{dtend} ||= $event->{dtstart};
 	unless ($_DT->is_greater_than($event->{dtend}, $date_time)) {
 	    next;
 	}
@@ -220,7 +222,7 @@ sub internal_update {
     my($new_count) = scalar(@{$self->get('events')});
     my($to_delete) = $curr_count / ($new_count + $curr_count || 1);
     my($delete_count) = 0;
-    if ($curr_count <= 3 || $to_delete <= .20) {
+    if ($curr_count <= 3 || $to_delete <= .10) {
 	foreach my $v (values(%$curr)) {
 #TODO: Check recurring events.  If they had already occured in the past, simply update
 #      the dtend to be before $date_time.
@@ -230,7 +232,7 @@ sub internal_update {
 	}
     }
     else {
-	b_warn($curr_count, ': attempting to delete more than 5% events, not deleting');
+	b_warn($curr_count, ': attempting to delete more than 10% events, not deleting');
     }
     $self->put(
 	add_count => $add_count,
