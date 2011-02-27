@@ -12,6 +12,7 @@ __PACKAGE__->compile([
     ACTIVE_DATA => 3,
     EVANCED => 4,
     RSS => [5, 'RSS'],
+    FULL_CALENDAR => [6],
     REGEXP => [10, 'RegExp'],
 ]);
 
