@@ -73,6 +73,16 @@ sub get_delegate_info {
 	    View.Venue->scraper_preview
 	    next=ADM_VENUE_LIST
         )],
+	[qw(
+	    SITE_ROOT_MOBILE
+	    507
+	    GENERAL
+	    ANYBODY
+	    Model.MobileQueryForm
+	    Model.HomeList
+	    View.Home->list_mobile
+	    next=SITE_ROOT_MOBILE
+        )],
     ]);
 }
 

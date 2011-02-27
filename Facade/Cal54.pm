@@ -55,6 +55,7 @@ my($_SELF) = __PACKAGE__->new({
 	[ADM_VENUE_LIST => '?/venues'],
 	[ADM_VENUE_SCRAPER => '?/scraper'],
 	[ADM_SCRAPER_PREVIEW => '?/scraper-preview'],
+ 	[SITE_ROOT_MOBILE => 'mobile'],
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],
