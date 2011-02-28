@@ -20,6 +20,7 @@ sub eval_scraper_aux {
     my($self, $aux) = @_;
     $aux ||= $self->get('venue_list')->get_model('Venue')
 	->get('scraper_aux') || b_die('venue missing scraper_aux');
+    my($date) = qr{\b(\d+/\d+/\d{4})\b};
     my($year) = qr/\b(20[1-2][0-9])\b/;
     my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)\.?m\.?)\b/i;
     my($time) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?)\b/i;
@@ -32,6 +33,35 @@ sub eval_scraper_aux {
     b_die('eval failed: ', $@)
 	if $@;
     return $res;
+}
+
+sub extract_once_fields {
+    my($self, $cfg, $text, $current) = @_;
+
+    foreach my $info (@{$cfg->{once} || $cfg->{global} || []}) {
+	my($regexp, $args) = @$info;
+	_add_field_values($self, $args->{fields}, $current)
+	    if $$text =~ /$regexp/;
+    }
+    return;
+}
+
+sub internal_collect_data {
+    my($self, $current) = @_;
+
+    foreach my $v (values(%$current)) {
+	next unless $v;
+	$v =~ s/\{\d+\}//g;
+    }
+    my($rec) = {
+	summary => _clean($current->{summary}),
+	description => _clean($current->{description}),
+	$current->{url} ? (url => $current->{url}) : (),
+	dtstart => _date($self, 'start', $current),
+	dtend => _date($self, 'end', $current),
+    };
+    $rec->{dtend} ||= $rec->{dtstart};
+    return $rec;
 }
 
 sub internal_import {
@@ -68,24 +98,6 @@ sub _clean {
     return $str;
 }
 
-sub _collect_data {
-    my($self, $current) = @_;
-
-    foreach my $v (values(%$current)) {
-	next unless $v;
-	$v =~ s/\{\d+\}//g;
-    }
-    my($rec) = {
-	summary => _clean($current->{summary}),
-	description => _clean($current->{description}),
-	$current->{url} ? (url => $current->{url}) : (),
-	dtstart => _date($self, 'start', $current),
-	dtend => _date($self, 'end', $current),
-    };
-    $rec->{dtend} ||= $rec->{dtstart};
-    return $rec;
-}
-
 sub _date {
     my($self, $type, $current) = @_;
     # month, day, year, start_time, end_time, start_time_pm, end_time_pm
@@ -101,7 +113,9 @@ sub _date {
     }
     my($month);
 
-    if ($current->{month}) {
+    if ($current->{date}) {
+    }
+    elsif ($current->{month}) {
 	$month = $self->month_as_int($current->{month});
     }
     elsif ($current->{month_day}) {
@@ -110,7 +124,7 @@ sub _date {
     else {
 	b_die('missing "month" or "month_day": ', $current);
     }
-    my($date) = join('/',
+    my($date) = $current->{date} || join('/',
         $month,
 	$current->{day},
 	$current->{year} || $self->internal_compute_year($month),
@@ -132,12 +146,7 @@ sub _process_url {
     my($self, $cfg, $url, $current) = @_;
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
     my($text) = $cleaner->clean_html($self->c4_scraper_get($url), $url);
-
-    foreach my $info (@{$cfg->{once} || $cfg->{global} || []}) {
-	my($regexp, $args) = @$info;
-	_add_field_values($self, $args->{fields}, $current)
-	    if $$text =~ /$regexp/;
-    }
+    $self->extract_once_fields($cfg, $text, $current);
 
     foreach my $info (@{$cfg->{repeat} || []}) {
 	my($regexp, $args) = @$info;
@@ -178,7 +187,7 @@ sub _process_url {
 	    }
 	    push(@{$self->get('events')}, {
 		time_zone => $self->get('time_zone'),
-		%{_collect_data($self, $current)},
+		%{$self->internal_collect_data($current)},
 	    }) if $current->{summary};
 	    delete($current->{summary});
 	    delete($current->{description});
