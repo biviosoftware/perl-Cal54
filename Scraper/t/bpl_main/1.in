@@ -184,7 +184,7 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7827'
   },
   {
-    'description' => 'Nuestras presentaciones de las "Series sobre las Cortes" fundadas en septiembre del año de 2007, son una actividad conjunta del Instituto Judicial de Colorado y la Asociacion de la Barra de Colorado.  Proveen  informacion sin tomar partido para extender el conocimiento publico y el entendimiento de las cortes estatales y federales en Colorado.  Los presentadores se refieren al papel justo e imparcial de las cortes en aplicar y preservar las reglas de la ley; no toman ninguna posicion en relacion con cualquier caso en la corte, la legislatura, asuntos del voto, o los cambios propuestos en el sistema de la corte.  [This event is one of four lectures on the court system in the USA, this specific lecture is in Spanish. For English please see January 12, April and July 13, and October 12, 2011]',
+    'description' => 'Nuestras presentaciones de las "Series sobre las Cortes" fundadas en septiembre del ano de 2007, son una actividad conjunta del Instituto Judicial de Colorado y la Asociacion de la Barra de Colorado.  Proveen  informacion sin tomar partido para extender el conocimiento publico y el entendimiento de las cortes estatales y federales en Colorado.  Los presentadores se refieren al papel justo e imparcial de las cortes en aplicar y preservar las reglas de la ley; no toman ninguna posicion en relacion con cualquier caso en la corte, la legislatura, asuntos del voto, o los cambios propuestos en el sistema de la corte.  [This event is one of four lectures on the court system in the USA, this specific lecture is in Spanish. For English please see January 12, April and July 13, and October 12, 2011]',
     'dtend' => '2455582 13500',
     'dtstart' => '2455582 7200',
     'summary' => 'Las Cortes Estatales de Colorado y Las Cortes Federales',
@@ -816,10 +816,10 @@
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7829'
   },
   {
-    'description' => 'Boulder Public Library y Boulder Valley School District ofrecen un club de lectura en español. Incluye lecturas premiadas de literatura moderna de España y Latino America, y discusiones cada mes sobre la lectura, tambien en español. Noticia de un secuestro,Gabriel Garcia Marquez-Colombia Garcia Marquez examina la abduccion del 7 de noviembre, 1990 de conocida periodista Maruja Pachon y su cuñada por narcotraficantes del Cartel de Medellin.',
+    'description' => 'Boulder Public Library y Boulder Valley School District ofrecen un club de lectura en espanol. Incluye lecturas premiadas de literatura moderna de Espana y Latino America, y discusiones cada mes sobre la lectura, tambien en espanol. Noticia de un secuestro,Gabriel Garcia Marquez-Colombia Garcia Marquez examina la abduccion del 7 de noviembre, 1990 de conocida periodista Maruja Pachon y su cunada por narcotraficantes del Cartel de Medellin.',
     'dtend' => '2455598 2700',
     'dtstart' => '2455597 82800',
-    'summary' => 'Club de lectura de literatura moderna en espa�ol',
+    'summary' => 'Club de lectura de literatura moderna en espanol',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.boulderlibrary.org/eventsignup.asp?ID=7702'
   },
