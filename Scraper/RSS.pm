@@ -2,7 +2,7 @@
 # $Id$
 package Cal54::Scraper::RSS;
 use strict;
-use Bivio::Base 'Bivio.Scraper';
+use Bivio::Base 'Scraper.RegExp';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
@@ -16,33 +16,20 @@ sub internal_import {
 	$item->{description} = ${$cleaner->clean_html(
 	    \($item->{description}),
 	    $item->{link},
-	)};
-	my($date) = _extract_date($self, $item->{description});
-	my($start, $end, $ap) =
-	    _extract_start_end($self, $item->{description});
-	next unless $date && $ap;
-	push(@{$self->get('events')}, {
+	)} if $item->{description} =~ /\<.*\>/;
+	my($current) = {
 	    summary => $item->{title},
-	    description => $item->{description},
-	    dtstart => $self->internal_date_time("$date $start$ap"),
-	    dtend => $self->internal_date_time("$date $end$ap"),
-	    time_zone => $self->get('time_zone'),
 	    url => $item->{link},
+	};
+	$self->extract_once_fields($self->eval_scraper_aux,
+            \($item->{description}), $current);
+	push(@{$self->get('events')}, {
+	    %{$self->internal_collect_data($current)},
+	    time_zone => $self->get('time_zone'),
+	    location => $current->{location},
 	});
     }
     return;
-}
-
-sub _extract_date {
-    my($self, $str) = @_;
-    $str =~ m{(\d+/\d+/\d{4})};
-    return $1;
-}
-
-sub _extract_start_end {
-    my($self, $str) = @_;
-    my($start, $end, $ap) = $str =~ /([\d:]+)\s*\-\s*([\d:]+)\s*((?:a|p)m)/i;
-    return ($start, $end, $ap);
 }
 
 1;
