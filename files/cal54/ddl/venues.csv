@@ -60,6 +60,14 @@ Boulder,US,Home,CO,2027 13th Street,,80302,music@boulderdrafthouse.com,Home,Home
   },
 }
 ",Google,600021,Home,http://www.boulderdrafthouse.com,Calendar,http://www.boulderdrafthouse.com/BD_Calendar.html
+Boulder,US,Home,CO,1750 13th Street,,80302,info@bmoca.org,Home,Home,303.443.2122,500004,Parent Is Authorized Access,Boulder Museum of Contemporary Art,bmoca,,"{
+  once => [
+    [qr/$month\s+$day,\s+$year\; $time_ap(?: to $time_ap)?[.;]\s*\](.*)/is => {
+      fields => [qw(month day year start_time end_time description)],
+    }],
+  ],
+}
+",RSS,3400021,Home,http://www.bmoca.org/,Calendar,http://www.bmoca.org/feed/
 Boulder,US,Home,CO,800 28th Street,,80303,talk-to-us@boulderoutlook.com,Home,Home,303.443.3322,500004,Parent Is Authorized Access,Boulder Outlook Hotel,boulderoutlook,,"{
   repeat => [
     [qr/(?:$month (\d{4}).*?)?(\n$day\n)((?:[^\n]{3,}|\n)+?)\n$time\s*\-\s*$time_ap/s => {
@@ -123,7 +131,7 @@ Boulder,US,Home,CO,1135 13th Street,,80304,ignore-foxtheatre@colorado.edu,Home,H
  [qr{^$month_day\s+(.*?)\s*$}m, {
      fields => [qw(month_day summary)],
      follow_link => {
-  global => [
+  once => [
       [qr{\bshow\:\s*$time_ap}i, {
    fields => ['start_time'],
       }],
@@ -137,7 +145,7 @@ Boulder,US,Home,CO,1135 13th Street,,80304,ignore-foxtheatre@colorado.edu,Home,H
 }
 ",RegExp,2100021,Home,http://foxtheatre.com,Calendar,http://foxtheatre.com/Store/ChooseTicket.aspx
 Boulder,US,Home,CO,2115 Thirteenth St.,,80302,ignore-boulderaro@bivio.biz,Home,Home,303.442.4344,500004,Parent Is Authorized Access,Hotel Boulderado,boulderado,,"{
-    global => [
+    once => [
         [qr/Live Music ${time_ap}\s*\-\s*$time_ap/, {
             fields => ['start_time', 'end_time'],
  }],
@@ -154,7 +162,7 @@ Lafayette,US,Home,CO,2675 North Park Drive,,80326,marc@nissis.com,Home,Home,303.
     [qr/($month\s*>.*)/, {
       fields => ['link'],
       follow_link => {
-        global => [
+        once => [
           [qr/$month\s+$year/, {
             fields => [qw(month year)],
           }],
@@ -180,11 +188,16 @@ Boulder,US,Home,CO,1235 Pine Street,,80302,info@boulderparenting.org,Home,Home,3
 }
 ",Google,2400021,Home,http://www.boulderparenting.org/,Calendar,http://www.boulderparenting.org/calendar.html
 Boulder,US,Home,CO,1789 28th St,,80301,ignore-rei@bivio.biz,Home,Home,303.583.9970,500004,Parent Is Authorized Access,REI Boulder,rei,,"{
-    accept_event => {
-      description => qr/Location\s+Boulder REI/is,
-    },
+  accept_event => {
+    location => qr/Boulder REI/is,
+  },
+  once => [
+    [qr/(.*?)Session Info.*?$date.*?$time\s*\-\s*$time_ap.*Location(.*?)Price/is, {
+        fields => [qw(description date start_time_pm end_time location)],
+    }],
+  ],
 }
-",RSS,2500021,Home,http://www.rei.com/stores/44,Calendar,http://www.rei.com/storesrss/44
+",RSS,2600021,Home,http://www.rei.com/stores/44,Calendar,http://www.rei.com/storesrss/44
 Boulder,US,Home,CO,"5290 Arapahoe Ave., Ste I",,80303,feedback@rocknsoulcafe.com,Home,Home,,500004,Parent Is Authorized Access,Rock N Soul Cafe,rockandsoul,,"{
   pager => {
     link => qr/\n(>>\{\d})\n/s,
@@ -197,7 +210,7 @@ Boulder,US,Home,CO,"5290 Arapahoe Ave., Ste I",,80303,feedback@rocknsoulcafe.com
     [qr/$time_ap\s*\-\s*\n$line/s => {
       fields => [qw(start_time summary)],
       follow_link => {
-        global => [
+        once => [
           [qr/$month $day, $year/ => {
               fields => [qw(month day year)],
           }],
