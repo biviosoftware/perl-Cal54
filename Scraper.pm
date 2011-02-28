@@ -92,12 +92,15 @@ sub do_one {
 
 sub eval_scraper_aux {
     my($self) = @_;
+    return $self->get('scraper_aux')
+	if $self->unsafe_get('scraper_aux');
     my($aux) = $self->get('venue_list')->get_model('Venue')
 	->get('scraper_aux');
     return {} unless $aux;
     my($res) = eval($aux);
     b_die('eval failed: ', $@)
 	if $@;
+    $self->put(scraper_aux => $res);
     return $res;
 }
 
