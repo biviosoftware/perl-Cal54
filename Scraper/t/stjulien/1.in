@@ -79,7 +79,7 @@ Sticky Pudding :: Guiness ice cream',
 
 
 Run Time: 107 minutes',
-    'dtend' => undef,
+    'dtend' => '2455628 9000',
     'dtstart' => '2455628 9000',
     'summary' => 'Footloose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
@@ -110,7 +110,7 @@ Run Time: 107 minutes',
 
 
 Run Time: 110 minutes',
-    'dtend' => undef,
+    'dtend' => '2455635 5400',
     'dtstart' => '2455635 5400',
     'summary' => 'Grease',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
@@ -141,7 +141,7 @@ Run Time: 110 minutes',
 
 
 Run Time: 113 Minutes',
-    'dtend' => undef,
+    'dtend' => '2455642 5400',
     'dtstart' => '2455642 5400',
     'summary' => 'Chicago',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
@@ -179,7 +179,7 @@ Run Time: 113 Minutes',
 
 
 Run Time: 94 Minutes',
-    'dtend' => undef,
+    'dtend' => '2455649 5400',
     'dtstart' => '2455649 5400',
     'summary' => 'Little Shop of Horrors',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
@@ -217,7 +217,7 @@ Run Time: 94 Minutes',
 
 
 Run Time: 94 Minutes',
-    'dtend' => undef,
+    'dtend' => '2455656 5400',
     'dtstart' => '2455656 5400',
     'summary' => 'Anchorman',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
@@ -262,7 +262,7 @@ Run Time: 94 Minutes',
 
 
 Run Time: 97 Minutes',
-    'dtend' => undef,
+    'dtend' => '2455663 5400',
     'dtstart' => '2455663 5400',
     'summary' => 'Tommy Boy',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
@@ -300,7 +300,7 @@ Run Time: 97 Minutes',
 
 
 Run Time: 87 Minutes',
-    'dtend' => undef,
+    'dtend' => '2455670 5400',
     'dtstart' => '2455670 5400',
     'summary' => 'Airplane',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
@@ -345,7 +345,7 @@ Run Time: 87 Minutes',
 
 
 Run Time: 102 Minutes',
-    'dtend' => undef,
+    'dtend' => '2455677 5400',
     'dtstart' => '2455677 5400',
     'summary' => 'Ferris Buellers Day Off',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' )
