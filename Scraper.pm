@@ -202,7 +202,6 @@ sub internal_update {
     my($e);
     
     foreach my $event (@{$self->get('events')}) {
-	$event->{dtend} ||= $event->{dtstart};
 	unless ($_DT->is_greater_than($event->{dtend}, $date_time)) {
 	    next;
 	}
@@ -269,6 +268,8 @@ sub _filter_events {
     my($events) = [];
 
     foreach my $event (@{$self->get('events')}) {
+	$event->{dtend} ||= $event->{dtstart};
+	$event->{time_zone} ||= $self->get('time_zone');
 	next unless _filter_event($self, 'accept', $event, $aux);
 	next if _filter_event($self, 'reject', $event, $aux);
 	push(@$events, $event);
