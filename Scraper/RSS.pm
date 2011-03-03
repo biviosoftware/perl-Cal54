@@ -25,7 +25,6 @@ sub internal_import {
             \($item->{description}), $current);
 	push(@{$self->get('events')}, {
 	    %{$self->internal_collect_data($current)},
-	    time_zone => $self->get('time_zone'),
 	    location => $current->{location},
 	});
     }

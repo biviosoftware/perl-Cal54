@@ -35,7 +35,6 @@ sub internal_import {
 	push(@{$self->get('events')}, {
 	    summary => $self->internal_clean($event->{title}),
 	    description => $self->internal_clean($event->{description}),
-	    time_zone => $self->get('time_zone'),
 	    dtstart => $self->internal_date_time(
 		$event->{date1} . ' ' . $event->{time}),
 	    dtend => $self->internal_date_time(

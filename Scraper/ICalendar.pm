@@ -42,7 +42,6 @@ sub parse_ics {
 		map(($_ => $v->{$_}), qw(dtend dtstart uid url location)),
 		summary => $self->internal_clean($v->{summary}),
 		description => $self->internal_clean($v->{description}),
-		time_zone => $self->get('time_zone'),
 	    });
 	}
     }

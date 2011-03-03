@@ -54,7 +54,6 @@ sub _add_event {
     push(@{$self->get('events')}, {
 	summary => $self->internal_clean($summary),
 	description => $self->internal_clean($desc),
-	time_zone => $self->get('time_zone'),
 	dtstart => $self->internal_date_time($date . ' ' . $start),
 	dtend => $end
 	    ? $self->internal_date_time($date . ' ' . $end)

@@ -60,7 +60,6 @@ sub internal_collect_data {
 	dtstart => _date($self, 'start', $current),
 	dtend => _date($self, 'end', $current),
     };
-    $rec->{dtend} ||= $rec->{dtstart};
     return $rec;
 }
 
@@ -185,10 +184,9 @@ sub _process_url {
 		    $cleaner->unsafe_get_link_for_text($current->{summary})
 		    if $current->{summary};
 	    }
-	    push(@{$self->get('events')}, {
-		time_zone => $self->get('time_zone'),
-		%{$self->internal_collect_data($current)},
-	    }) if $current->{summary};
+	    push(@{$self->get('events')}, 
+		$self->internal_collect_data($current))
+		if $current->{summary};
 	    delete($current->{summary});
 	    delete($current->{description});
 	    delete($current->{link});

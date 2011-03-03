@@ -88,12 +88,11 @@ sub _parse_event_xml {
 	    && $event->{EndDate};
 	push(@{$self->get('events')}, {
 	    summary => $self->internal_clean($event->{EventName}),
-	    time_zone => $self->get('time_zone'),
 	    description => $self->internal_clean($event->{EventDescription}),
 	    dtstart => _date_time($self, $event, 'Start'),
 	    dtend => $event->{EndTime}
 		? _date_time($self, $event, 'End')
-		: _date_time($self, $event, 'Start'),
+		: undef,
 	});
     }
     return @{$self->get('events')} ? 1 : 0;
