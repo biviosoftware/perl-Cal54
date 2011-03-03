@@ -46,6 +46,7 @@ sub get_content {
 	join(
 	    ' ',
 	    $self->get('location') || '',
+	    $self->get('description') || '',
 	    $self->new_other('RealmOwner')
 	    ->unauth_load_or_die({realm_id => $self->get('realm_id')})
 	    ->get('display_name'),
