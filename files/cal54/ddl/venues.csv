@@ -60,6 +60,16 @@ Boulder,US,Home,CO,2027 13th Street,,80302,music@boulderdrafthouse.com,Home,Home
   },
 }
 ",Google,600021,Home,http://www.boulderdrafthouse.com,Calendar,http://www.boulderdrafthouse.com/BD_Calendar.html
+Boulder,US,Home,CO,3800 Kalmia Ave,,80303,ignore-jcc@bivio.biz,Home,Home,303.998.1900,500004,Parent Is Authorized Access,Boulder JCC,v3600021,,"{
+  reject_event => {
+    description => qr/(type\s*=\s*class)|(^$)/i,
+    summary => qr/\bPAL\b/i,
+  },
+  accept_entry => {
+    location => qr/3800\s+Kalmia/i,
+  },
+},
+",Google,3600021,Home,http://boulderjcc.org/,Calendar,http://boulderjcc.org/Calendar/Home.aspx
 Boulder,US,Home,CO,1750 13th Street,,80302,info@bmoca.org,Home,Home,303.443.2122,500004,Parent Is Authorized Access,Boulder Museum of Contemporary Art,bmoca,,"{
   once => [
     [qr/$month\s+$day,\s+$year\; $time_ap(?: to $time_ap)?[.;]\s*\](.*)/is => {
@@ -157,6 +167,12 @@ Boulder,US,Home,CO,2115 Thirteenth St.,,80302,ignore-boulderaro@bivio.biz,Home,H
     ],
 }
 ",RegExp,2200021,Home,http://www.boulderado.com,Calendar,http://www.boulderado.com/musiconthemezz.html
+Boulder,US,Home,CO,1801 13th Street,,80302,info@johnnyscigars.com,Home,Home,303.449.0884,500004,Parent Is Authorized Access,Johnny's Cigar Bar,v3900021,,"{
+  reject_event => {
+    summary => qr/happy\s+hour/i,
+  },
+}
+",Google,3900021,Home,http://www.johnnyscigars.com/,Calendar,http://www.johnnyscigars.com/calendar/
 Lafayette,US,Home,CO,2675 North Park Drive,,80326,marc@nissis.com,Home,Home,303.665.2757,500004,Parent Is Authorized Access,Nissi's,nissis,,"{
   repeat => [
     [qr/($month\s*>.*)/, {
@@ -246,11 +262,11 @@ Boulder,US,Home,CO,1801 13th Street,,80302,info@theribhouse.com,Home,Home,303.44
 }
 ",RegExp,3400021,Home,http://www.theribhouse.com,Calendar,http://www.theribhouse.com/center-stage
 Boulder,US,Home,CO,926 Pearl Street,,80302,westend@bigredf.com,Home,Home,303.444.3535,500004,Parent Is Authorized Access,The West End Tavern,westend,,"{
-    repeat => [
-        [qr/(?:$month\s+)?$day\s+(.*?)\s*,\s*$time_ap\s+(.*?)\n\n/s, {
-     fields => ['month', 'day', 'summary', 'start_time', 'description'],
- }],
-    ],
+  repeat => [
+    [qr/(?:$month\s+)?$day\s+(.*?)\s*,\s*$time_ap(.*?)\n($month|$day|926 pearl)/is, {
+      fields => [qw(month day summary start_time description save)],
+    }],
+  ],
 }
-",RegExp,2800021,Home,http://www.thewestendtavern.com,Calendar,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx
+",RegExp,3200021,Home,http://www.thewestendtavern.com,Calendar,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx
 Boulder,US,Home,CO,1669 Euclid Av,,80302,ignore-cu_umc@bivio.biz,Home,Home,,500004,Parent Is Authorized Access,University Memorial Center,cu_umc,,,Active Data,2900021,Home,http://umc.colorado.edu/,Calendar,http://umc.colorado.edu/eventlist.html
