@@ -60,9 +60,6 @@ sub internal_post_load_row {
     return 0
 	unless shift->SUPER::internal_post_load_row(@_);
     my($fields) = $self->[$_IDI];
-# b_info $row->{'RealmOwner.display_name'};
-# b_info $row->{'CalendarEvent.dtstart'};
-# b_info $row->{'CalendarEvent.dtend'};
     my($start, $end) = map(
 	{
 	    my($x) = $_HFDT->get_widget_value($row->{$_}, 'HOUR_MINUTE_AM_PM_LC', 1);
@@ -79,7 +76,6 @@ sub internal_post_load_row {
 	    unless $start =~ /pm/ xor $end =~ /pm/;
 	$row->{start_end_am_pm} = "$start - $end";
     }
-#TODO: make date format for "day name month day"
     $row->{month_day}
 	= $_DT->english_day_of_week($row->{dtstart_tz})
 	. ' '
@@ -131,6 +127,8 @@ sub internal_post_load_row {
 
 sub internal_prepare_statement {
     my($self, $stmt, $query) = @_;
+    $self->new_other('PopularList')->load_all;
+    $self->new_other('WhenList')->load_all;
     $self->[$_IDI] = {month_day => ''};
     $self->new_other('TimeZoneList')->load_all;
     my($dt) = $query->unsafe_get('begin_date');
