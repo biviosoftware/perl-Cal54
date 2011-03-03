@@ -46,15 +46,26 @@ sub list_mobile {
     return;
 }
 
+
 sub pre_compile {
     return;
 }
 
 sub _body {
-    return Join([
-	_form(),
-	_list(),
-    ]);
+    return Grid(
+	[
+	    [
+		_logo()->put(cell_class => 'c4_left'),
+		_form()->put(cell_class => 'c4_right'),
+	    ],
+	    [
+		_sidebar()
+		    ->put(cell_class => 'c4_left c4_list'),
+		_list()->put(cell_class => 'c4_right c4_list'),
+	    ],
+	],
+	{class => 'c4_grid'},
+    );
 }
 
 sub _body_mobile {
@@ -71,30 +82,13 @@ sub _form {
 	class => 'c4_query',
 	want_hidden_fields => 0,
 	value => Join([
-	    Image({
-		src => 'logo',
-		alt_text => 'CAL 54',
-		class => 'c4_logo',
+	    Hidden('when'),
+	    Text('what', {class => 'c4_what', size => 50}),
+	    INPUT({
+		TYPE => 'submit',
+		VALUE => 'Search',
+		class => 'submit',
 	    }),
-	    DIV_c4_site_tag(vs_text_as_prose('c4_site_tag')),
-	    DIV_item(Join([
-		SPAN('Where are you?'),
-		Text('where', {is_read_only => 1, size => 50}),
-	    ])),
-	    DIV_item(Join([
-		SPAN('When are you free?'),
-		Text('when', {is_read_only => 1, size => 50}),
-	    ])),
-	    DIV_item(Join([
-		SPAN('What kind of event?'),
-		Text('what', {size => 50}),
-	    ])),
-	    DIV_item(Join([
-		INPUT({
-		    TYPE => 'submit',
-		    VALUE => "Let's go!",
-		}),
-	    ])),
 	]),
     });
 }
@@ -170,7 +164,7 @@ sub _form_mobile {
 }
 
 sub _list {
-    return DIV_c4_list(Join([
+    return Join([
 	List(HomeList => [
 	    DIV_date(['month_day']),
 	    DIV_item(Join([
@@ -202,10 +196,11 @@ sub _list {
 	    empty_list_widget => DIV_c4_empty_list(
 		q{Your search didn't match any results.  Try a different query.},
 	    ),
+	    class => 'c4_list',
 	}),
 	DIV_c4_copy(Prose(
-	    "&copy; @{[__PACKAGE__->use('Type.DateTime')->now_as_year]} SPAN_c4_site_name('CAL 54');")),
-    ]));
+	    "&copy; @{[__PACKAGE__->use('Type.DateTime')->now_as_year]} SPAN_c4_site_name('CAL 54&trade;'); Boulder's Calendar&trade;")),
+    ]);
 }
 
 sub _list_mobile {
@@ -251,6 +246,39 @@ sub _list_mobile {
 		  }
 	      ),
 	  )
+}
+
+sub _logo {
+    return Image({
+    	src => 'logo',
+    	alt_text => 'CAL 54',
+    	class => 'c4_logo',
+    });
+}
+
+sub _sidebar {
+    return Join([
+	DIV_c4_sidebar_title(String('When')),
+	DIV_c4_sidebar_list(List(
+	    'WhenList',
+	    [Link(
+		['item'],
+		URI({
+		    query => ['->search_query'],
+		}),
+	    )],
+	)),
+	DIV_c4_sidebar_title(String('Popular Searches')),
+	DIV_c4_sidebar_list(List(
+	    'PopularList',
+	    [Link(
+		['item'],
+		URI({
+		    query => ['->search_query'],
+		}),
+	    )],
+	)),
+    ]);
 }
 
 1;
