@@ -128,13 +128,16 @@ Boulder,US,Home,CO,2000 Colorado Av,,80302,ignore-cu_duane@colorado.edu,Home,Hom
 Boulder,US,Home,CO,1020 18th Street,,80302,ignore-cu_imig@bivio.biz,Home,Home,,500004,Parent Is Authorized Access,CU Imig Music Building,cu_imig,,,Active Data,1700021,Home,http://music.colorado.edu,Calendar,http://music.colorado.edu/events/
 Boulder,US,Home,CO,1595 Pleasant St,,80302,ignore-cu_macky@bivio.biz,Home,Home,,500004,Parent Is Authorized Access,CU Macky Auditorium,cu_macky,,,Active Data,1800021,Home,http://macky.colorado.edu,Calendar,http://macky.colorado.edu/events/
 Boulder,US,Home,CO,946 Pearl Street,,80304,ralphreutimann@me.com,Home,Home,303.447.0475,500004,Parent Is Authorized Access,Cuvee,cuvee,,"{
+  reject_event => {
+    summary => qr/^\s*$/,
+  },
   repeat => [
     [qr/(Live Music $month\:\n).*?\n\w+\s+$day\s*\w+,([^\n]+?)\($time\s*\-\s*$time_ap\.?\)\n/si => {
       fields => [qw(save month day summary start_time_pm end_time)],
     }],
   ],
 }
-",RegExp,1900021,Home,http://www.chezcuvee.com,Calendar,http://www.chezcuvee.com/ChezCuvee/Live_Music.html
+",RegExp,2100021,Home,http://www.chezcuvee.com,Calendar,http://www.chezcuvee.com/ChezCuvee/Live_Music.html
 Boulder,US,Home,CO,408 UCB,,80309,fiske@colorado.edu,Home,Home,303.492.5002,500004,Parent Is Authorized Access,Fiske Planetarium and Science Center,cu_fiske,,,Active Data,2000021,Home,http://fiske.colorado.edu,Calendar,http://fiske.colorado.edu/events/index.php
 Boulder,US,Home,CO,1135 13th Street,,80304,ignore-foxtheatre@colorado.edu,Home,Home,,500004,Parent Is Authorized Access,Fox Theatre,foxtheatre,,"{
     repeat => [
@@ -270,3 +273,9 @@ Boulder,US,Home,CO,926 Pearl Street,,80302,westend@bigredf.com,Home,Home,303.444
 }
 ",RegExp,3200021,Home,http://www.thewestendtavern.com,Calendar,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx
 Boulder,US,Home,CO,1669 Euclid Av,,80302,ignore-cu_umc@bivio.biz,Home,Home,,500004,Parent Is Authorized Access,University Memorial Center,cu_umc,,,Active Data,2900021,Home,http://umc.colorado.edu/,Calendar,http://umc.colorado.edu/eventlist.html
+Lafayette,US,Home,CO,110 North Harrison,,80026,ignore-wow@bivio.biz,Home,Home,303.604.2424,500004,Parent Is Authorized Access,WOW Children's Museum,v4000021,,"{
+    accept_event => {
+      location => qr/Lafayette/i,
+    },
+}
+",Google,4000021,Home,http://www.wowmuseum.com/,Calendar,http://www.wowmuseum.com/calendar.html
