@@ -176,6 +176,17 @@ Boulder,US,Home,CO,1801 13th Street,,80302,info@johnnyscigars.com,Home,Home,303.
   },
 }
 ",Google,3900021,Home,http://www.johnnyscigars.com/,Calendar,http://www.johnnyscigars.com/calendar/
+Boulder,US,Home,CO,1535 Pearl Street,,80302,ignore-mountainsun@bivio.biz,Home,Home,303.546.0886,500004,Parent Is Authorized Access,Mountain Sun Brewery,mountainsun,,"{
+  accept_event => {
+    location => qr/mountain/i,
+  },
+  once => [
+    [qr/(.*)\@(.*)/ => {
+      fields => [qw(summary location)],
+    }],
+  ],
+}
+",Bos Dates,3900021,Home,http://www.mountainsunpub.com/,Calendar,http://www.mountainsunpub.com/BosDatesLite200/calendar.php
 Lafayette,US,Home,CO,2675 North Park Drive,,80326,marc@nissis.com,Home,Home,303.665.2757,500004,Parent Is Authorized Access,Nissi's,nissis,,"{
   repeat => [
     [qr/($month\s*>.*)/, {
@@ -242,6 +253,17 @@ Boulder,US,Home,CO,"5290 Arapahoe Ave., Ste I",,80303,feedback@rocknsoulcafe.com
   ],
 }
 ",RegExp,2600021,Home,http://www.rocknsoulcafe.com,Calendar,http://www.rocknsoulcafe.com/calendar/
+Boulder,US,Home,CO,627 South Broadway,,80305,ignore-southernsun@bivio.biz,Home,Home,303.543.0886,500004,Parent Is Authorized Access,Southern Sun Brewery,southernsun,,"{
+  accept_event => {
+    location => qr/southern/i,
+  },
+  once => [
+    [qr/(.*)\@(.*)/ => {
+      fields => [qw(summary location)],
+    }],
+  ],
+}
+",Bos Dates,4000021,Home,http://www.mountainsunpub.com/,Calendar,http://www.mountainsunpub.com/BosDatesLite200/calendar.php
 Boulder,US,Home,CO,900 Walnut Street,,80302,ignore-stjulien@bivio.biz,Home,Home,720.406.9696,500004,Parent Is Authorized Access,St Julien,stjulien,,,Full Calendar,3300021,Home,http://www.stjulien.com/,Calendar,http://www.stjulien.com/events-entertainment
 Boulder,US,Home,CO,1709 Pearl Street,,80302,contact@thelaughinggoat.com,Home,Home,,500004,Parent Is Authorized Access,The Laughing Goat Coffeehouse,thelaughinggoat,,,Google,2700021,Home,http://thelaughinggoat.com,Calendar,http://thelaughinggoat.com/events.php
 Boulder,US,Home,CO,1801 13th Street,,80302,info@theribhouse.com,Home,Home,303.442.7427,500004,Parent Is Authorized Access,The Rib House - Boulder,ribhouse,,"{
