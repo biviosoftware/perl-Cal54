@@ -1,0 +1,189 @@
+HTTP/1.1 200 OK
+Connection: close
+Date: Fri, 04 Mar 2011 00:10:45 GMT
+Pragma: no-cache
+Server: Apache/2.0.52 (Unix) mod_ssl/2.0.52 OpenSSL/0.9.7a PHP/5.2.1
+Content-Type: text/html; charset=ISO-8859-1
+Content-Type: text/html; charset=iso-8859-1
+Client-Date: Fri, 04 Mar 2011 00:16:48 GMT
+Client-Peer: 65.183.81.69:80
+Client-Response-Num: 1
+Client-Transfer-Encoding: chunked
+Title: BosDates Lite Calendar System
+X-Meta-Author: BosDev http://www.bosdev.com
+X-Meta-Description: The BosDates Lite calendar system is used to display events for your website visitors
+X-Meta-Generator: BosDates Lite 2.0 by BosDev
+X-Meta-Keywords: event,calendar
+X-Powered-By: PHP/5.2.1
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <head>
+  <title>BosDates Lite Calendar System</title>
+  <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <meta name="description" content="The BosDates Lite calendar system is used to display events for your website visitors">
+  <meta name="keywords" content="event,calendar">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="BosDates Lite 2.0 by BosDev">
+  <meta name="author" content="BosDev http://www.bosdev.com">
+ </head>
+
+<style>
+.calendar_nav_area { background-color:#1F85EB; }
+.calendar_areaheader { background-color:#1F1FEB; }
+.calendar_header { background-color:#CCCCCC; font-family: Verdana,Tahoma,Arial; font-size:10pt; color:#000000; font-weight: bolder; }
+.calendar_background { background-color:#1F1FEB; }
+.calendar_cell { background-color:#FFFFFF; }
+.calendar_cell_today { background-color:#94C5F5; }
+.calendar_cell_empty { background-color:#1F1FEB; }
+.calendar_holiday { font-family: Verdana, Tahoma, Arial; font-size:11pt; color:#1F1FEB; font-weight: bold; }
+.calendar_days { font-family: Verdana, Tahoma, Arial; font-size:11pt; color:#000000; font-weight: bold; }
+.calendar_title_link { font-family: Verdana, Tahoma, Arial; font-size:11pt; color:#FFFFFF; font-weight: bold; text-decoration: none; }
+.calendar_title_link:hover { font-family: Verdana, Tahoma, Arial; font-size:11pt; color:#94C5F5; font-weight: bold; text-decoration: none; }
+.nav_mode_on { background-color:#1F1FEB; }
+.nav_mode_off { background-color:#5AA5F0; }
+.date_chooser_input { background-color:#A4D2FF; font-family: Verdana, Tahoma, Arial; font-size:8pt; color:#000000; }
+.date_chooser_button { background-color:#A4D2FF; font-family: Verdana, Tahoma, Arial; font-size:7pt; color:#000000; }
+.calendar_selector_input { background-color:#A4D2FF; font-family: Verdana, Tahoma, Arial; font-size:8pt; color:#000000; }
+.calendar_selector_button { background-color:#A4D2FF; font-family: Verdana, Tahoma, Arial; font-size:7pt; color:#000000; }
+.calendar_menu_text { font-family: Verdana,Tahoma,Arial; font-size:10pt; color:#000000; font-weight: bold; }
+.calendar_menu_link { font-family: Verdana,Tahoma,Arial; font-size:10pt; color:#000000; font-weight: bold; text-decoration:none; }
+.calendar_menu_link:hover { font-family: Verdana,Tahoma,Arial; font-size:10pt; color:#A4D2FF; font-weight: bold; text-decoration:none; }
+.minical_cell { background-color:#DDDDDD; }
+.minical_cell_event { background-color:#A4D2FF; }
+.minical_cell_text { background-color:#FFFFFF; font-family: Verdana,Tahoma,Arial; font-size:8pt; color:#000000; }
+.minical_cell_link { font-family: Verdana,Tahoma,Arial; font-size:8pt; color:#000000; text-decoration:none; }
+.minical_cell_link:hover { font-family: Verdana,Tahoma,Arial; font-size:8pt; color:#000000; text-decoration:none; }
+.minical_cell_header { background-color:#CCCCCC; font-family: Verdana,Tahoma,Arial; font-size:8pt; color:#000000; font-weight: bolder; }
+.minical_month_link { font-family: Verdana,Tahoma,Arial; font-size:8pt; color:#FFFFFF; font-weight:bolder; text-decoration:none; }
+.minical_month_link:hover { font-family: Verdana,Tahoma,Arial; font-size:8pt; color:#FFFFFF; font-weight:bolder; text-decoration:none; }
+.minical_background { background-color:#000000; }
+.event_title { font-family: Verdana,Tahoma,Arial; font-size:12pt; color:#000000; font-weight:bold; }
+.event_text { font-family: Verdana,Tahoma,Arial; font-size:10pt; color:#000000; }
+.event_link { font-family: Verdana,Tahoma,Arial; font-size:10pt; color:#000000; }
+.event_link:hover { font-family: Verdana,Tahoma,Arial; font-size:10pt; color:#A4D2FF; }
+</style>
+
+
+<body style="background-color:#FFFFFF; margin-bottom:0px; margin-left:0px; margin-right:0px; margin-top:0px; margin-width:0px; margin-height:0px; padding:0px; padding-left:0px; padding-bottom:0px; padding-right:0px; padding-top:0px;">
+<div align="center">
+
+<script language="javascript">
+function popUp(URL,w,h) {
+	winl = (screen.width - w) / 2;
+	wint = (screen.height - h) / 2;
+	day = new Date();
+	id = day.getTime();
+	eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width="+w+",height="+h+",top="+wint+",left="+winl+"');");
+	}
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="calendar_nav_area">
+ <tr>
+  <td colspan="3"></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td>
+
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="calendar_nav_area">
+    <tr>
+     <td width="50%" valign="bottom"><table width="250" border="0" cellspacing="0" cellpadding="0"><tr><td width="50" class="nav_mode_off" onMouseOver="this.className='nav_mode_on'" onMouseOut="this.className='nav_mode_off'"><a href="calendar.php?type=day&day=1&month=06&year=2011"><img src="skins/day.gif" width="50" height="20" border="0"></a></td><td width="50" class="nav_mode_off" onMouseOver="this.className='nav_mode_on'" onMouseOut="this.className='nav_mode_off'"><a href="calendar.php?type=week&day=1&month=06&year=2011"><img src="skins/week.gif" width="50" height="20" border="0"></a></td><td width="50" class="nav_mode_off" onMouseOver="this.className='nav_mode_on'" onMouseOut="this.className='nav_mode_off'"><a href="calendar.php?type=2week&day=1&month=06&year=2011"><img src="skins/2week.gif" width="50" height="20" border="0"></a></td><td width="50" class="nav_mode_on"><a href="calendar.php?type=month&day=1&month=06&year=2011"><img src="skins/month.gif" width="50" height="20" border="0"></a></td><td width="50" class="nav_mode_off" onMouseOver="this.className='nav_mode_on'" onMouseOut="this.className='nav_mode_off'"><a href="calendar.php?type=year&day=1&month=06&year=2011"><img src="skins/year.gif" width="50" height="20" border="0"></a></td></tr></table></td>
+     <td width="50%" align="right"><br><table border="0" cellspacing="0" cellpadding="1"><form method="post" action="calendar.php" onReset="javascript:location.href='calendar.php?type=month';"><tr><td><span class="calendar_menu_text"><a class="calendar_menu_link" href="calendar_search.php">search</a> | <a class="calendar_menu_link" href="admin/index.php">admin</a>&nbsp;<input type="hidden" name="type" value="month"><select class="date_chooser_input" name="month"><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6" selected>Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select class="date_chooser_input" name="day"><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select><select class="date_chooser_input" name="year"><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011" selected>2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option></select><input class="date_chooser_button" type="submit" value="Go"><input class="date_chooser_button" type="reset" value="Today"></td></tr></form></table></td>
+    </tr>
+   </table>
+
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="calendar_areaheader">
+    <tr>
+     <td align="left"><table width="119" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a class="minical_month_link" href="calendar.php?type=month&calendar=&day=1&month=05&year=2011">May 2011</a><table class="minical_background" width="119" border="0" cellspacing="1" cellpadding="0"><tr><td width="17" align="center" class="minical_cell_header">S</td><td width="17" align="center" class="minical_cell_header">M</td><td width="17" align="center" class="minical_cell_header">T</td><td width="17" align="center" class="minical_cell_header">W</td><td width="17" align="center" class="minical_cell_header">T</td><td width="17" align="center" class="minical_cell_header">F</td><td width="17" align="center" class="minical_cell_header">S</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">1</td><td width="17" align="right" valign="top" class="minical_cell_text">2</td><td width="17" align="right" valign="top" class="minical_cell_text">3</td><td width="17" align="right" valign="top" class="minical_cell_text">4</td><td width="17" align="right" valign="top" class="minical_cell_text">5</td><td width="17" align="right" valign="top" class="minical_cell_text">6</td><td width="17" align="right" valign="top" class="minical_cell_text">7</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">8</td><td width="17" align="right" valign="top" class="minical_cell_text">9</td><td width="17" align="right" valign="top" class="minical_cell_text">10</td><td width="17" align="right" valign="top" class="minical_cell_text">11</td><td width="17" align="right" valign="top" class="minical_cell_text">12</td><td width="17" align="right" valign="top" class="minical_cell_text">13</td><td width="17" align="right" valign="top" class="minical_cell_text">14</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">15</td><td width="17" align="right" valign="top" class="minical_cell_text">16</td><td width="17" align="right" valign="top" class="minical_cell_text">17</td><td width="17" align="right" valign="top" class="minical_cell_text">18</td><td width="17" align="right" valign="top" class="minical_cell_text">19</td><td width="17" align="right" valign="top" class="minical_cell_text">20</td><td width="17" align="right" valign="top" class="minical_cell_text">21</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">22</td><td width="17" align="right" valign="top" class="minical_cell_text">23</td><td width="17" align="right" valign="top" class="minical_cell_text">24</td><td width="17" align="right" valign="top" class="minical_cell_text">25</td><td width="17" align="right" valign="top" class="minical_cell_text">26</td><td width="17" align="right" valign="top" class="minical_cell_text">27</td><td width="17" align="right" valign="top" class="minical_cell_text">28</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">29</td><td width="17" align="right" valign="top" class="minical_cell_text">30</td><td width="17" align="right" valign="top" class="minical_cell_text">31</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td></tr></table></td></tr></table></td>
+     <td align="center"><span class="calendar_title_link">Mountain Sun, Southern Sun Vine Street Pub Calendar of Events</span><br><br><a class="calendar_title_link" href="calendar.php?type=month&day=1&month=05&year=2011">&lt;&lt;</a> <span class="calendar_title_link">June 2011</span> <a class="calendar_title_link" href="calendar.php?type=month&day=1&month=07&year=2011">&gt;&gt;</a></td>
+     <td align="right"><table width="119" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a class="minical_month_link" href="calendar.php?type=month&calendar=&day=1&month=07&year=2011">July 2011</a><table class="minical_background" width="119" border="0" cellspacing="1" cellpadding="0"><tr><td width="17" align="center" class="minical_cell_header">S</td><td width="17" align="center" class="minical_cell_header">M</td><td width="17" align="center" class="minical_cell_header">T</td><td width="17" align="center" class="minical_cell_header">W</td><td width="17" align="center" class="minical_cell_header">T</td><td width="17" align="center" class="minical_cell_header">F</td><td width="17" align="center" class="minical_cell_header">S</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell_text">1</td><td width="17" align="right" valign="top" class="minical_cell_text">2</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">3</td><td width="17" align="right" valign="top" class="minical_cell_text">4</td><td width="17" align="right" valign="top" class="minical_cell_text">5</td><td width="17" align="right" valign="top" class="minical_cell_text">6</td><td width="17" align="right" valign="top" class="minical_cell_text">7</td><td width="17" align="right" valign="top" class="minical_cell_text">8</td><td width="17" align="right" valign="top" class="minical_cell_text">9</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">10</td><td width="17" align="right" valign="top" class="minical_cell_text">11</td><td width="17" align="right" valign="top" class="minical_cell_text">12</td><td width="17" align="right" valign="top" class="minical_cell_text">13</td><td width="17" align="right" valign="top" class="minical_cell_text">14</td><td width="17" align="right" valign="top" class="minical_cell_text">15</td><td width="17" align="right" valign="top" class="minical_cell_text">16</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">17</td><td width="17" align="right" valign="top" class="minical_cell_text">18</td><td width="17" align="right" valign="top" class="minical_cell_text">19</td><td width="17" align="right" valign="top" class="minical_cell_text">20</td><td width="17" align="right" valign="top" class="minical_cell_text">21</td><td width="17" align="right" valign="top" class="minical_cell_text">22</td><td width="17" align="right" valign="top" class="minical_cell_text">23</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">24</td><td width="17" align="right" valign="top" class="minical_cell_text">25</td><td width="17" align="right" valign="top" class="minical_cell_text">26</td><td width="17" align="right" valign="top" class="minical_cell_text">27</td><td width="17" align="right" valign="top" class="minical_cell_text">28</td><td width="17" align="right" valign="top" class="minical_cell_text">29</td><td width="17" align="right" valign="top" class="minical_cell_text">30</td></tr> <tr><td width="17" align="right" valign="top" class="minical_cell_text">31</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td><td width="17" align="right" valign="top" class="minical_cell">&nbsp;</td></tr></table></td></tr></table></td>
+    </tr>
+   </table>
+
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td class="calendar_background">
+      <table width="100%" border="0" cellspacing="1" cellpadding="1" class="calendar_background">
+       <tr>
+        <td width="12.5%" align="center" class="calendar_header">Sunday</td>
+        <td width="12.5%" align="center" class="calendar_header">Monday</td>
+        <td width="12.5%" align="center" class="calendar_header">Tuesday</td>
+        <td width="12.5%" align="center" class="calendar_header">Wednesday</td>
+        <td width="12.5%" align="center" class="calendar_header">Thursday</td>
+        <td width="12.5%" align="center" class="calendar_header">Friday</td>
+        <td width="12.5%" align="center" class="calendar_header">Saturday</td>
+       </tr>
+       <tr>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_today"><span class="calendar_days">1</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">2</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">3</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">4</span><br></td>
+       </tr>
+       <tr>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">5</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">6</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">7</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">8</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">9</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">10</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">11</span><br></td>
+       </tr>
+       <tr>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">12</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">13</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">14</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">15</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">16</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">17</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">18</span><br></td>
+       </tr>
+       <tr>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">19</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">20</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">21</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">22</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">23</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">24</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">25</span><br></td>
+       </tr>
+       <tr>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">26</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">27</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">28</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">29</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell"><span class="calendar_days">30</span><br></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+       </tr>
+       <tr>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+        <td height="100" width="12.5%" align="right" valign="top" class="calendar_cell_empty"></td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+
+  </td>
+  <td></td>
+ </tr>
+ <tr>
+  <td colspan="3"></td>
+ </tr>
+</table>
+
+
+  </div>
+  <br><br>
+  <div style="font-family:Verdana, Tahoma; font-size:7pt; color:#000000;" align="center">Powered by BosDates Lite v2.0 by <a style="font-family:Verdana, Tahoma; font-size:7pt; color:#000000;" href="http://www.bosdev.com" target="_blank">BosDev</a> Copyright 2002-2004. All Rights Reserved</div><br><br>
+ </body>
+</html>
