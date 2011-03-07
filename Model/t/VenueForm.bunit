@@ -7,6 +7,7 @@ my($rid);
 [
     [$values = {
 	'RealmOwner.display_name' => 'VenueForm Test',
+	'RealmOwner.name' => 'venueformtest',
 	'Address.street1' => '1709 Venue Street',
 	'Address.city' => 'Boulder',
 	'Address.state' => 'CO',
@@ -16,11 +17,7 @@ my($rid);
 	'Website.url' => 'http://venue-form-test.com',
 	'Email.email' => 'contact@venue-form-test.com',
 	'Phone.phone' => undef,
-	'Venue.scraper_type' => Scraper()->REGEXP,
     }] => [{
-	'Model.Venue' => {
-	    scraper_type => Scraper()->REGEXP,
-	},
 	'Model.RealmDAG' => {
 	    parent_id => req('auth_id'),
 	},
@@ -45,11 +42,12 @@ my($rid);
 	},
     }],
     req_state({
-	query => sub {{this => [$rid]}},
+    	query => sub {{this => [$rid]}},
     }),
     empty_case($values),
     [{
     	'RealmOwner.display_name' => 'dn Test',
+    	'RealmOwner.name' => 'dntest',
     	'Address.street1' => 's1',
     	'Address.city' => 'Boulder',
     	'Address.state' => 'CO',
@@ -59,12 +57,8 @@ my($rid);
     	'Website.url' => 'http://tlg.com',
     	'Email.email' => 'e2@venue-form-test.com',
     	'Phone.phone' => '555',
-    	'Venue.scraper_type' => Scraper()->GOOGLE,
-	'SearchWords.value' => 'search me',
+    	'SearchWords.value' => 'search me',
     }] => [{
-    	'Model.Venue' => {
-    	    scraper_type => Scraper()->GOOGLE,
-    	},
     	'Model.RealmOwner' => {
     	    display_name => 'dn Test',
     	},
@@ -87,6 +81,7 @@ my($rid);
     req_state({query => undef}),
     error_case({
     	'RealmOwner.display_name' => 'VenueForm Test',
+    	'RealmOwner.display_name' => 'enueformtest',
     	'Address.street1' => '1709 Venue Street',
     	'Address.city' => 'Boulder',
     	'Address.state' => 'xx',
@@ -96,7 +91,6 @@ my($rid);
     	'Website.url' => 'http://venue-form-test.com',
     	'Email.email' => 'contact@venue-form-test.com',
     	'Phone.phone' => undef,
-    	'Venue.scraper_type' => Scraper()->GOOGLE,
     }, {
     	'Address.state' => 'NOT_FOUND',
     	'Address.zip' => 'US_ZIP_CODE',
