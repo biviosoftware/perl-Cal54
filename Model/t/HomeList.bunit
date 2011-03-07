@@ -8,8 +8,14 @@ my($desc_key) = 'desc' . random_string();
 DateTime()->set_test_now('12/12/2050 12:0:0');
 my($date) = DateTime()->now;
 req()->set_realm('nissis');
-model('CalendarEvent')->test_unauth_delete_all({url => 'http://homelist.bunit'});
-model('CalendarEvent')->create_realm(
+model('CalendarEvent')->do_iterate(sub {
+    my($ce) = @_;
+    $ce->cascade_delete;
+    return 1;
+}, 'unauth_iterate_start', {
+    url => 'http://homelist.bunit',
+});
+my($ce) = model('CalendarEvent')->create_realm(
     {
 	realm_id => req('auth_id'),
 	dtstart => $date,
@@ -23,6 +29,10 @@ model('CalendarEvent')->create_realm(
 	display_name => $title_key,
     },
 );
+model('VenueEvent')->create({
+    venue_id => req('auth_id'),
+    calendar_event_id => $ce->get('calendar_event_id'),
+});
 commit();
 [
     load_page => [
