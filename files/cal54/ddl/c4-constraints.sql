@@ -20,6 +20,19 @@
 ----------------------------------------------------------------
 
 --
+-- scraper_t
+--
+ALTER TABLE scraper_t
+  ADD CONSTRAINT scraper_t2
+  FOREIGN KEY (default_venue_id)
+  REFERENCES venue_t(venue_id)
+/
+CREATE INDEX scraper_t3 ON scraper_t (
+  default_venue_id
+)
+/
+
+--
 -- search_words_t
 --
 ALTER TABLE search_words_t
@@ -33,9 +46,23 @@ CREATE INDEX search_words_t3 ON search_words_t (
 /
 
 --
--- venue_t
+-- venue_event_t
 --
-ALTER TABLE venue_t
-  ADD CONSTRAINT venue_t2
-  CHECK (scraper_type > 0)
+ALTER TABLE venue_event_t
+  ADD CONSTRAINT venue_event_t2
+  FOREIGN KEY (venue_id)
+  REFERENCES venue_t(venue_id)
+/
+CREATE INDEX venue_event_t3 ON venue_event_t (
+  venue_id
+)
+/
+ALTER TABLE venue_event_t
+  ADD CONSTRAINT venue_event_t4
+  FOREIGN KEY (calendar_event_id)
+  REFERENCES calendar_event_t(calendar_event_id)
+/
+CREATE INDEX venue_event_t5 ON venue_event_t (
+  calendar_event_id
+)
 /
