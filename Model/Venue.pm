@@ -33,9 +33,8 @@ sub internal_initialize {
         table_name => 'venue_t',
 	columns => {
 	    venue_id => ['RealmOwner.realm_id', 'PRIMARY_KEY'],
-	    scraper_type => ['Scraper', 'NOT_ZERO_ENUM'],
-	    scraper_aux => ['Text64K', 'NONE'],
 	},
+	auth_id => 'venue_id',
 	other => [
 	    [qw(venue_id RealmOwner.realm_id)],
 	],
