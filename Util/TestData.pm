@@ -35,40 +35,48 @@ sub init {
     $self->initialize_fully;
     $self->new_other('TestUser')->init;
     $self->init_venues;
+    $self->init_scrapers;
+    return;
+}
+
+sub init_scrapers {
+    my($self) = @_;
+    my($list) = $self->model('ScraperList')->load_all;
+    _iterate_csv($self, 'scrapers.csv', sub {
+        my($v) = @_;
+	delete($v->{'Scraper.scraper_id'});
+	$v->{'Scraper.scraper_type'} =
+	    $_S->from_any($v->{'Scraper.scraper_type'});
+	$v->{'Scraper.default_venue_id'} = $v->{'RealmOwner.name'}
+	    ? $self->unauth_model('RealmOwner', {
+		name => $v->{'RealmOwner.name'},
+	    })->get('realm_id')
+	    : undef;
+	$self->req->put(query =>
+	    $list->find_row_by('RealmOwner.name', $v->{'RealmOwner.name'})
+		? $list->format_query('THIS_DETAIL')
+		: undef);
+	$self->model('ScraperForm', $v);
+	$self->req->clear_nondurable_state;
+    });
     return;
 }
 
 sub init_venues {
     my($self) = @_;
-    $self->initialize_ui;
-    $self->req->with_realm(
-	b_use('FacadeComponent.Constant')
-	    ->get_value('site_admin_realm_name', $self->req),
-	sub {
-
-	    foreach my $v (@{$self->new_other('CSV')
-	        ->parse_records($_F->read('venues.csv'))}) {
-		delete($v->{'Venue.venue_id'});
-		my($ro) = $self->model('RealmOwner');
-		$self->req->put(query =>
-		    $ro->unauth_load({
-			name => $v->{'RealmOwner.name'},
-		    })
-			? $ro->format_query_for_this
-			: undef);
-		$v->{'Venue.scraper_type'} =
-		    $_S->from_any($v->{'Venue.scraper_type'});
-		$self->model('VenueForm', $v);
-		my($venue) = $self->req('Model.Venue');
-		$venue->get_model('RealmOwner')->update({
-		    name => $v->{'RealmOwner.name'},
-		});
-		$venue->update({
-		    scraper_aux => $v->{'Venue.scraper_aux'},
-		});
-		$self->req->clear_nondurable_state;
-	    }
-	});
+    _iterate_csv($self, 'venues.csv', sub {
+	my($v) = @_;	     
+        delete($v->{'Venue.venue_id'});
+	my($ro) = $self->model('RealmOwner');
+	$self->req->put(query =>
+	    $ro->unauth_load({
+		name => $v->{'RealmOwner.name'},
+	    })
+		? $ro->format_query_for_this
+		: undef);
+	$self->model('VenueForm', $v);
+	$self->req->clear_nondurable_state;
+    });
     return;
 }
 
@@ -89,6 +97,21 @@ sub reset_all {
 		{realm_type => [$type]},
 	    );
     }
+    return;
+}
+
+sub _iterate_csv {
+    my($self, $csv_file, $op) = @_;
+    $self->initialize_ui;
+    $self->req->with_realm(
+	b_use('FacadeComponent.Constant')
+	    ->get_value('site_admin_realm_name', $self->req),
+	sub {
+	    foreach my $v (@{$self->new_other('CSV')
+	        ->parse_records($_F->read($csv_file))}) {
+		$op->($v);
+	    }
+	});
     return;
 }
 
