@@ -21,11 +21,18 @@ my($_SELF) = __PACKAGE__->new({
 	[robots_txt_allow_all => 0],
 	[my_site_redirect_map => sub {[
  	    [qw(site-admin 0 ADM_VENUE_LIST)],
+ 	    [qw(site-admin 0 ADM_SCRAPER_LIST)],
 	]}],
 	[xlink_adm_venue_list => sub {
 	     return {
 		 realm => shift->get_value('site_admin_realm_name'),
 		 task_id => 'ADM_VENUE_LIST',
+	     };
+	 }],
+	[xlink_adm_scraper_list => sub {
+	     return {
+		 realm => shift->get_value('site_admin_realm_name'),
+		 task_id => 'ADM_SCRAPER_LIST',
 	     };
 	 }],
 	[xlink_adm_calendar_event_list_form => sub {
@@ -57,9 +64,10 @@ my($_SELF) = __PACKAGE__->new({
 	[ADM_CALENDAR_EVENT_LIST_FORM => '?/events'],
 	[ADM_VENUE_FORM => '?/edit-venue'],
 	[ADM_VENUE_LIST => '?/venues'],
-	[ADM_VENUE_SCRAPER => '?/scraper'],
+	[ADM_SCRAPER_FORM => '?/scraper'],
 	[ADM_SCRAPER_PREVIEW => '?/scraper-preview'],
  	[SITE_ROOT_MOBILE => 'mobile'],
+	[ADM_SCRAPER_LIST => '?/scrapers'],
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],
@@ -70,29 +78,27 @@ my($_SELF) = __PACKAGE__->new({
 	    ADM_VENUE_LIST => 'Venues',
 	    ADM_CALENDAR_EVENT_LIST_FORM => 'Events',
 	    ADM_VENUE_FORM => 'Edit Venue',
-	    ADM_VENUE_SCRAPER => 'Scraper Definition',
+	    ADM_SCRAPER_FORM => 'Add Scraper',
 	    ADM_SCRAPER_PREVIEW => 'Scraper Preview',
+	    ADM_SCRAPER_LIST => 'Scrapers',
 	]],
 	['task_menu.title' => [
 	    ADM_VENUE_FORM => 'Add Venue',
 	]],
-	[Venue => [
-	    scraper_type => 'Scraper',
+	[Scraper => [
+	    scraper_type => 'Type',
 	    scraper_aux => 'Scraper Aux',
+	    default_venue_id => 'Default Venue',
+	]],
+	[ScraperList => [
+	    'RealmOwner.display_name' => 'Default Venue',
 	]],
 	[[qw(VenueList VenueForm)] => [
 	    'Website.url' => 'Home Page',
 	    'calendar.Website.url' => 'Calendar Link',
+	    'RealmOwner.name' => 'Scraper Tag',
 	    'RealmOwner.display_name' => 'Full Name',
 	    'RowTag.value' => 'Tags',
-	    'Venue.scraper_type.desc' => q{
-                If(['Model.VenueForm', '->is_edit'],
-                    Link(vs_text('title.ADM_VENUE_SCRAPER'), URI({
-                        task_id => 'ADM_VENUE_SCRAPER',
-                        query => ['Model.Venue', '->format_query_for_this'],
-                    })),
-                );
-            }
 	]],
 	[SearchWords => [
 	    value => 'Search Words',
@@ -101,7 +107,7 @@ my($_SELF) = __PACKAGE__->new({
 	    'RealmOwner.display_name' => 'Title',
 	    'RowTag.value' => 'Tags',
 	]],
-	[VenueScraperForm => [
+	[ScraperForm => [
 	    test_scraper_button => 'Run Scraper',
 	]],
     ],
