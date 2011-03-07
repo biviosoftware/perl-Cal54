@@ -43,7 +43,7 @@ sub clear_events {
 sub import_events {
     my($self) = @_;
     $self->initialize_ui;
-    my($list) = $self->model('VenueList')->unauth_load_all;
+    my($list) = $self->model('ScraperList')->unauth_load_all;
     $list->find_row_by('RealmOwner.display_name',
         $self->req(qw(auth_realm owner display_name)))
 	|| $self->usage_error('venue not found: ',
@@ -55,7 +55,7 @@ sub import_events {
 sub import_events_for_all_venues {
     my($self) = @_;
     $self->initialize_ui;
-    $_S->do_all($self->model('VenueList')->unauth_load_all);
+    $_S->do_all($self->model('ScraperList')->unauth_load_all);
     return;
 }
 
