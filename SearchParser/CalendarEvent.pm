@@ -45,11 +45,11 @@ sub handle_new_text {
 
 sub realms_for_rebuild_db {
     my($self, $req) = @_;
-    return $_M->new($req, 'Venue')
+    return $_M->new($req, 'Scraper')
 	->map_iterate(
-	    sub {shift->get('venue_id')},
+	    sub {shift->get('scraper_id')},
 	    'unauth_iterate_start',
-	    'venue_id',
+	    'scraper_id',
 	); 
 }
 
