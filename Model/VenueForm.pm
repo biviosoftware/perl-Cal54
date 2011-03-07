@@ -74,7 +74,6 @@ sub internal_initialize {
 		    ($_ =~ /street2|phone|SearchWords/ ? [$_, undef, 'NONE']
 		        : $_ =~ /state/ ? [$_, 'USState']
 			: $_ =~ /zip/ ? [$_, 'USZipCode']
-			: $_ =~ /scraper_type/ ? [$_, undef, 'NOT_ZERO_ENUM']
 			: $_),
 		    $_VL->EDITABLE_FIELD_LIST,
 		)],
