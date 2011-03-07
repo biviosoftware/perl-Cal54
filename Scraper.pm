@@ -19,8 +19,9 @@ my($_R) = b_use('IO.Ref');
 my($_S) = b_use('Type.String');
 my($_T) = b_use('Agent.Task');
 #TODO: Make a RowTag
-my($_TZ) = b_use('Type.TimeZone')->get_default;
 my($_TT) = b_use('Type.Text');
+my($_TZ) = b_use('Type.TimeZone')->get_default;
+my($_VE) = b_use('Model.VenueEvent');
 
 sub c4_scraper_get {
     my($self, $uri) = @_;
@@ -35,9 +36,9 @@ sub c4_scraper_get {
 }
 
 sub do_all {
-    my($proto, $venue_list) = @_;
+    my($proto, $scraper_list) = @_;
     my($date_time) = $_DT->now;
-    $venue_list->do_rows(
+    $scraper_list->do_rows(
 	sub {
 	    my($it) = @_;
 	    $_A->reset_warn_counter;
@@ -49,22 +50,21 @@ sub do_all {
 }
 
 sub do_one {
-    my($proto, $venue_list, $date_time) = @_;
-    my($self) = b_use('Scraper.' . $venue_list->get('Venue.scraper_type')->as_class)
-	->new({
-	    req => $venue_list->req,
+    my($proto, $scraper_list, $date_time) = @_;
+    my($self) = $scraper_list->get_scraper_class->new({
+	req => $scraper_list->req,
 #TODO: Do not hardwire
-	    time_zone => $_TZ,
-	    venue_list => $venue_list,
-	    log_stamp => $_DT->to_file_name($date_time),
-	    date_time => $date_time,
-	    log_index => 1,
-	    events => [],
-	    failures => 0,
-	    tz => $_TZ,
-	});
+	time_zone => $_TZ,
+	scraper_list => $scraper_list,
+	log_stamp => $_DT->to_file_name($date_time),
+	date_time => $date_time,
+	log_index => 1,
+	events => [],
+	failures => 0,
+	tz => $_TZ,
+    });
     $self->req->with_realm(
-	$venue_list->get('Venue.venue_id'),
+	$scraper_list->get('Scraper.scraper_id'),
 	sub {
 	    return $self->internal_catch(
 		sub {
@@ -79,7 +79,7 @@ sub do_one {
 	    );
 	},
     );
-    b_info($venue_list->get('RealmOwner.display_name'),
+    b_info($scraper_list->get('Website.url'),
 	   ', ', scalar(@{$self->get('events')}), ' events',
 	   $self->unsafe_get('add_count')
 	       ? (', ', $self->get('add_count'), ' new')
@@ -94,8 +94,7 @@ sub eval_scraper_aux {
     my($self) = @_;
     return $self->get('scraper_aux')
 	if $self->unsafe_get('scraper_aux');
-    my($aux) = $self->get('venue_list')->get_model('Venue')
-	->get('scraper_aux');
+    my($aux) = $self->get('scraper_list')->get('Scraper.scraper_aux');
     return {} unless $aux;
     my($res) = eval($aux);
     b_die('eval failed: ', $@)
@@ -210,15 +209,15 @@ sub internal_update {
 	    b_warn($event, ': duplicate event: ', $e);
 	    next;
 	}
-	delete($event->{location});
 	$refresh->{$key} = $event;
 	unless ($e = delete($curr->{$key})) {
 	    $ce->create_from_vevent($event);
+	    _link_event_to_venue($self, $ce);
 	    $add_count++;
 	    next;
 	}
-	$ce->load_from_properties($e)
-	    ->update_from_vevent($event);
+	$ce->load_from_properties($e)->update_from_vevent($event);
+	_link_event_to_venue($self, $ce);
     }
     my($curr_count) = scalar(keys(%$curr));
     my($new_count) = scalar(@{$self->get('events')});
@@ -226,10 +225,7 @@ sub internal_update {
     my($delete_count) = 0;
     if ($curr_count <= 3 || $to_delete <= .10) {
 	foreach my $v (values(%$curr)) {
-#TODO: Check recurring events.  If they had already occured in the past, simply update
-#      the dtend to be before $date_time.
-	    $ce->load_from_properties($v)
-		->cascade_delete;
+	    $ce->load_from_properties($v)->cascade_delete;
 	    $delete_count++;
 	}
     }
@@ -278,13 +274,23 @@ sub _filter_events {
     return;
 }
 
+sub _link_event_to_venue {
+    my($self, $ce) = @_;
+    $_VE->new($self->req)->unauth_create_or_update({
+	venue_id =>
+	    $self->get('scraper_list')->get('Scraper.default_venue_id'),
+	calendar_event_id => $ce->get('calendar_event_id'),
+    });
+    return;
+}
+
 sub _log {
     my($self, $content, $suffix) = @_;
     my($file) = $_L->file_name(
 	$_FP->join(
 	    $self->simple_package_name,
 	    $self->get('log_stamp'),
-	    $self->get('venue_list')->get('Venue.venue_id'),
+	    $self->get('scraper_list')->get('Scraper.scraper_id'),
 	    _log_base($self, $suffix),
 	),
 	$self->req,
