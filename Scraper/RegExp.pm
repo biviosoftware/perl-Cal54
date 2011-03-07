@@ -18,8 +18,8 @@ my($_DAY_NAMES) = [
 
 sub eval_scraper_aux {
     my($self, $aux) = @_;
-    $aux ||= $self->get('venue_list')->get_model('Venue')
-	->get('scraper_aux') || b_die('venue missing scraper_aux');
+    $aux ||= $self->get('scraper_list')->get('Scraper.scraper_aux')
+	|| b_die('scraper missing scraper_aux');
     my($date) = qr{\b(\d+/\d+/\d{4})\b};
     my($year) = qr/\b(20[1-2][0-9])\b/;
     my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)\.?m\.?)\b/i;
@@ -66,7 +66,7 @@ sub internal_collect_data {
 sub internal_import {
     my($self) = @_;
     _process_url($self, $self->eval_scraper_aux,
-        $self->get('venue_list')->get('calendar.Website.url'), {});
+        $self->get('scraper_list')->get('Website.url'), {});
     return;
 }
 

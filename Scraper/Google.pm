@@ -14,7 +14,7 @@ sub internal_import {
     my($start) = $_D->add_days($self->get('date_time'), -1);
     my($end) = $_D->add_months($start, 6);
     my($html) = $self->c4_scraper_get(
-	$self->get('venue_list')->get('calendar.Website.url'));
+	$self->get('scraper_list')->get('Website.url'));
     my($cal_id) =
 	$$html =~ m{www\.google\.com/calendar/embed\?[^"]*?src=(.*?)(\&|")};
     b_die('failed to parse cal_id: ', $html)

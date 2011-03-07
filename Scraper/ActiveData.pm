@@ -67,7 +67,9 @@ sub _date_time {
 
 sub _parse_event_xml {
     my($self, $webhost, $start, $end) = @_;
-    my($addr1) = $self->get('venue_list')->get('Address.street1');
+    my($addr1) = b_use('Model.Address')->new($self->req)->unauth_load_or_die({
+	realm_id => $self->get('scraper_list')->get('Scraper.default_venue_id'),
+    })->get('street1');
     b_die('venue missing Address.street1')
 	unless $addr1;
     my($xml) = _parse_xml($self, 'http://' . $webhost . '/Eventlist.aspx?'
@@ -102,7 +104,7 @@ sub _parse_webhost {
     my($self) = @_;
     # first parse calendar for "/eventlistsyndicator.aspx", use that host
     # otherwise look for "EventList.aspx" and use current host
-    my($url) = $self->get('venue_list')->get('calendar.Website.url');
+    my($url) = $self->get('scraper_list')->get('Website.url');
     my($html) = $self->c4_scraper_get($url);
     my($host) = $$html =~ m,://(.*?)/(EventListSyndicator|displaymedia).aspx,;
     return $host if $host;

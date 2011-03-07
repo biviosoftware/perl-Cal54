@@ -13,7 +13,7 @@ my($_RR) = b_use('MIME.RRule');
 sub internal_import {
     my($self) = @_;
     my($html) = $self->c4_scraper_get(
-	$self->get('venue_list')->get('calendar.Website.url'));
+	$self->get('scraper_list')->get('Website.url'));
     my($ical_url) = $$html =~ m{"(http[^"]+/ical/[^"]+)"};
     b_die('no ical ref') unless $ical_url;
     $self->parse_ics($self->c4_scraper_get($ical_url));

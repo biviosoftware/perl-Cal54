@@ -13,9 +13,9 @@ sub internal_import {
     my($self) = @_;
     my($start) = $_D->add_days($self->get('date_time'), -1);
     my($end) = $_D->add_months($start, 3);
-    my($url) = $self->get('venue_list')->get('Website.url');
-    $url .= '/'
-	unless $url =~ m{/$};
+    my($url) = $self->get('scraper_list')->get('Website.url');
+    $url =~ s{(//.*?)/.*$}{$1};
+    $url .= '/';
     my($json) = $self->c4_scraper_get($url
         . 'layout/set/popup/content/view/events/(category)/0'
 	. '?'

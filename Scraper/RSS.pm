@@ -9,7 +9,7 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 sub internal_import {
     my($self) = @_;
     my($xml) = $self->internal_parse_xml(
-	$self->get('venue_list')->get('calendar.Website.url'));
+	$self->get('scraper_list')->get('Website.url'));
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
 
     foreach my $item (@{$xml->{channel}->{item}}) {

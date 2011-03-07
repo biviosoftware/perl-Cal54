@@ -8,7 +8,7 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub internal_import {
     my($self) = @_;
-    my($url) = $self->get('venue_list')->get('calendar.Website.url');
+    my($url) = $self->get('scraper_list')->get('Website.url');
     my($event_url) = $url;
     $event_url =~ s{/calendar.php$}{/event.php?event=}
 	|| b_die('failed to parse url: ', $url);
