@@ -10,7 +10,7 @@ submit_form(my $values = {
     name => my $name = "$base Test",
     home => "http://$base.com",
     calendar => "http://$base.com/cal",
-    scraper => 'Google',
+    tag => lc('v' . $base),
     email => "info\@$base.com",
     phone => '555.1212',
     line_1 => '123 Main',
@@ -22,6 +22,7 @@ follow_link($name);
 verify_form($values);
 submit_form($values = {
     name => $name = "new $base Test",
+    tag => lc('v' . $base),
     home => "http://new-$base.com",
     calendar => "http://new-$base.com/cal",
     email => "info\@new-$base.com",
