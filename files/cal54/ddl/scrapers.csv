@@ -1,0 +1,303 @@
+RealmOwner.name,Scraper.scraper_type,Website.url,Scraper.scraper_aux
+firstbankcenter,RegExp,http://1stbankcenter.com/events/,"{
+  pager => {
+    link => qr/(Next >>\{\d+\})/i,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/(All Dates\n+)(?:[^\n]+[^}]\n)*([^\n]+\})\n(?:[^\n]+\n)*?$month $day, $year, $time_ap\n.*?\n\n/s => {
+      fields => [qw(save summary month day year start_time)],
+      follow_link => {
+        once => [
+          [qr/Ticket Prices[^\n]+\n+.*?(?:(?:\n|[^\n]+\}\n))+(?:[^\n]+\}\n)+\n(.*?)\n{3}/si => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+avery,Google,http://www.averybrewing.com/index.php?option=com_googlecalendar&Itemid=70,
+barnesandnoble,RegExp,http://store-locator.barnesandnoble.com/store/2333,"{
+  pager => {
+    link => qr/\n(next\{\d+\})/is,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/(about this event.*)$/mi => {
+      fields => ['link'],
+      follow_link => {
+        once => [
+          [qr/Event Icon\n+$line(.*?)\n\w+\s+$month\s+$day,\s+$year\s+$time_ap/s => {
+            fields => [qw(summary description month day year start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+borders,RegExp,http://www.borders.com/online/store/StoreDetailView_407,"{
+  repeat => [
+    [qr/(events at this store\n)\n+$line.*?$month $day, $year $time_ap/is => {
+      fields => [qw(save summary month day year start_time)],
+      follow_link => {
+        once => [
+          [qr/detailed event information.*?\n\w+, \w{2} \d{5}.*?\n+($line+?)\n/is => {
+              fields => ['description'],
+          }],
+        ],
+      },
+    }],
+  ]
+}
+"
+boulderbookstore,ICalendar,http://boulderbookstore.indiebound.com/event,
+boulderdrafthouse,Google,http://www.boulderdrafthouse.com/BD_Calendar.html,"{
+  accept_event => {
+    summary => qr/\bdance\b/i,
+  },
+}
+"
+jcc,Google,http://boulderjcc.org/Calendar/Home.aspx,"{
+  reject_event => {
+    description => qr/(type\s*=\s*class)|(^$)/i,
+    summary => qr/\bPAL\b/i,
+  },
+  accept_entry => {
+    location => qr/3800\s+Kalmia/i,
+  },
+},
+"
+bmoca,RSS,http://www.bmoca.org/feed/,"{
+  once => [
+    [qr/$month\s+$day,\s+$year\; $time_ap(?: to $time_ap)?[.;]\s*\](.*)/is => {
+      fields => [qw(month day year start_time end_time description)],
+    }],
+  ],
+}
+"
+boulderoutlook,RegExp,http://www.boulderoutlook.com/musiccalendar.html,"{
+  repeat => [
+    [qr/(?:$month (\d{4}).*?)?(\n$day\n)((?:[^\n]{3,}|\n)+?)\n$time\s*\-\s*$time_ap/s => {
+      fields => [qw(month year save day summary start_time_pm end_time)],
+    }],
+  ],
+}
+"
+bpl_reynolds,Evanced,http://events.boulderlibrary.org?lib=2,
+bpl_main,Evanced,http://events.boulderlibrary.org?lib=0,"{
+  reject_event => {
+    summary => qr/canceled/i,
+  },
+}
+"
+bpl_meadows,Evanced,http://events.boulderlibrary.org?lib=3,
+bouldertheatre,RegExp,http://www.bouldertheater.com/,"{
+  repeat => [
+    [qr/\n$month_day(?:\n| )$line/s => {
+      fields => [qw(month_day summary)],
+      follow_link => {
+        once => [
+          [qr/^Date\/Time: $month $day, $year, $time_ap/im => {
+            fields => [qw(month day year start_time)],
+          }],
+          [qr/\n\d+\/\d+\n[^\n]+\n{3,}(.*?)\nmon\/year/s => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+bunit_venue,Google,http://test.bunit/cal,
+caffesole,Google,http://www.caffesole.com/events.html,
+chautauqua,RegExp,http://www.chautauqua.com/upcoming_events.php,"{
+  repeat => [
+    [qr{((?:[^\n]+\n)+)\w+,\s*$month\s+$day,\s+$year,\s+$time_ap.*?\n\n((?:[^\n]+\n)+)\n}s, {
+      fields => [qw(summary month day year start_time description)],
+    }],
+  ],
+}
+"
+cu_art,Active Data,http://events.colorado.edu/EventList.aspx?view=Summary,
+cu_cristol,Active Data,http://events.colorado.edu/EventList.aspx?view=Summary,
+cu_duane,Active Data,http://events.colorado.edu/EventList.aspx?view=Summary,
+cu_imig,Active Data,http://music.colorado.edu/events/,
+cu_macky,Active Data,http://macky.colorado.edu/events/,
+cuvee,RegExp,http://www.chezcuvee.com/ChezCuvee/Live_Music.html,"{
+  reject_event => {
+    summary => qr/^\s*$/,
+  },
+  repeat => [
+    [qr/(Live Music $month\:\n).*?\n\w+\s+$day\s*\w+,([^\n]+?)\($time\s*\-\s*$time_ap\.?\)\n/si => {
+      fields => [qw(save month day summary start_time_pm end_time)],
+    }],
+  ],
+}
+"
+cu_fiske,Active Data,http://fiske.colorado.edu/events/index.php,
+foxtheatre,RegExp,http://foxtheatre.com/Store/ChooseTicket.aspx,"{
+    repeat => [
+ [qr{^$month_day\s+(.*?)\s*$}m, {
+     fields => [qw(month_day summary)],
+     follow_link => {
+  once => [
+      [qr{\bshow\:\s*$time_ap}i, {
+   fields => ['start_time'],
+      }],
+      [qr{about this show.*?\n+(.*?)\n}is, {
+   fields => ['description'],
+      }],
+  ],
+     }
+ }],
+    ],
+}
+"
+boulderado,RegExp,http://www.boulderado.com/musiconthemezz.html,"{
+    once => [
+        [qr/Live Music ${time_ap}\s*\-\s*$time_ap/, {
+            fields => ['start_time', 'end_time'],
+ }],
+    ],
+    repeat => [
+        [qr/\b$day_name,\s*$month\s+$day\s*~\s*$line(?:\((.*?)\))?/, {
+     fields => ['day_name', 'month', 'day', 'summary', 'description'],
+ }],
+    ],
+}
+"
+cigar,Google,http://www.johnnyscigars.com/calendar/,"{
+  reject_event => {
+    summary => qr/happy\s+hour/i,
+  },
+}
+"
+mountainsun,Bos Dates,http://www.mountainsunpub.com/BosDatesLite200/calendar.php,"{
+  accept_event => {
+    location => qr/mountain/i,
+  },
+  once => [
+    [qr/(.*)\@(.*)/ => {
+      fields => [qw(summary location)],
+    }],
+  ],
+}
+"
+nissis,RegExp,http://www.nissis.com/lmcalendar.html,"{
+  repeat => [
+    [qr/($month\s*>.*)/, {
+      fields => ['link'],
+      follow_link => {
+        once => [
+          [qr/$month\s+$year/, {
+            fields => [qw(month year)],
+          }],
+        ],
+        repeat => [
+          [qr/(\n$day\s+)$time\s*\-\s*$time\s(.*?)(\n$time|\n$day\n|\nGathering Place)/s, {
+            fields => [qw(save day start_time_pm end_time_pm description save)],
+            summary_from_description => qr/(?:^|\n)([^\n]+\{\d+\})\n/s,
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+parentingplace,Google,http://www.boulderparenting.org/calendar.html,"{
+    accept_event => {
+        location => qr/boulder/i,
+    },
+    reject_event => {
+      summary => qr/no groups or classes/i,
+    },
+}
+"
+rei,RSS,http://www.rei.com/storesrss/44,"{
+  accept_event => {
+    location => qr/Boulder REI/is,
+  },
+  once => [
+    [qr/(.*?)Session Info.*?$date.*?$time\s*\-\s*$time_ap.*Location(.*?)Price/is, {
+        fields => [qw(description date start_time_pm end_time location)],
+    }],
+  ],
+}
+"
+rockandsoul,RegExp,http://www.rocknsoulcafe.com/calendar/,"{
+  pager => {
+    link => qr/\n(>>\{\d})\n/s,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/$time_ap\s*\-\s*\nCLOSED/s => {
+      fields => [],
+    }],
+    [qr/$time_ap\s*\-\s*\n$line/s => {
+      fields => [qw(start_time summary)],
+      follow_link => {
+        once => [
+          [qr/$month $day, $year/ => {
+              fields => [qw(month day year)],
+          }],
+          [qr/description\: (.*?)\n\n/is => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+southernsun,Bos Dates,http://www.mountainsunpub.com/BosDatesLite200/calendar.php,"{
+  accept_event => {
+    location => qr/southern/i,
+  },
+  once => [
+    [qr/(.*)\@(.*)/ => {
+      fields => [qw(summary location)],
+    }],
+  ],
+}
+"
+stjulien,Full Calendar,http://www.stjulien.com/events-entertainment,
+thelaughinggoat,Google,http://thelaughinggoat.com/events.php,
+ribhouse,RegExp,http://www.theribhouse.com/center-stage,"{
+  repeat => [
+    [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_ap\s*\-\s*$time_ap\n+([^\n]+\})/s => {
+      fields => [qw(summary month day year start_time end_time url)],
+    }],
+    [qr/\n([^\n]+)\n+$day_name\s+$month\s+$day\s+$time\s*\-\s*$time_ap\n+([^\n]+\})/s => {
+      fields => [qw(summary day_name month day start_time_pm end_time url)],
+    }],
+    [qr/\n([^\n]+)\n+$month\s+$day,?\s*$year\n+([^\n]+\})/s => {
+      fields => [qw(summary month day year url)],
+    }],
+    [qr/\n([^\n]+)\n+$time\s*\-\s*$time_ap\s*$month\s+$day,\s*$year\n+([^\n]+\})/s => {
+      fields => [qw(summary start_time_pm end_time month day year url)],
+    }],
+    [qr/\n([^\n]+)\n+$day_name\s+$month\s+$day\n+([^\n]+\})/s => {
+      fields => [qw(summary day_name month day url)],
+    }],
+  ],
+}
+"
+westend,RegExp,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx,"{
+  repeat => [
+    [qr/(?:$month\s+)?$day\s+(.*?)\s*,\s*$time_ap(.*?)\n($month|$day|926 pearl)/is, {
+      fields => [qw(month day summary start_time description save)],
+    }],
+  ],
+}
+"
+cu_umc,Active Data,http://umc.colorado.edu/eventlist.html,
+wow,Google,http://www.wowmuseum.com/calendar.html,"{
+    accept_event => {
+      location => qr/Lafayette/i,
+    },
+}
+"
