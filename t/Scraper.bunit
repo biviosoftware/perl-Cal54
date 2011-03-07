@@ -11,6 +11,8 @@ my($now) = Date('1/15/2011');
 	    ->new({
 		date_time => $now,
 		req => req(),
+		scraper_list => model('ScraperList')->load_all
+		    ->set_cursor_or_die(0),
 	    });
     } => [
 	{
