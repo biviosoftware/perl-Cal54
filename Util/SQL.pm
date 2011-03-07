@@ -24,13 +24,4 @@ sub initialize_test_data {
     return @res;
 }
 
-sub internal_upgrade_db_scraper_aux {
-    my($self) = @_;
-    $self->run(<<'EOF');
-ALTER TABLE venue_t ADD COLUMN scraper_aux Text64K
-/
-EOF
-    return;
-}
-
 1;
