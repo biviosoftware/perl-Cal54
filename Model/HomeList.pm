@@ -32,11 +32,12 @@ sub internal_initialize {
 	    ),
 	],
 	other => [
-	    [
-		qw(CalendarEvent.realm_id),
-		_exclude_realm_owner($_VL->PRIMARY_KEY_EQUIVALENCE_LIST),
-	    ],
+	    [qw(CalendarEvent.calendar_event_id VenueEvent.calendar_event_id)],
+	    [qw(Venue.venue_id VenueEvent.venue_id)],
+	    [_exclude_realm_owner($_VL->PRIMARY_KEY_EQUIVALENCE_LIST)],
 	    _exclude_realm_owner($_VL->EDITABLE_FIELD_LIST),
+	    [qw(Venue.venue_id venue.RealmOwner.realm_id)],
+	    'venue.RealmOwner.display_name',
 	    $_VL->LOCATION_EQUIVALENCE_LIST,
 	    $self->field_decl(
 		[
