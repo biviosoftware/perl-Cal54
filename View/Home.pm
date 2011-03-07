@@ -179,7 +179,7 @@ sub _list {
 		])),
 		DIV_line(Join([
 		    Link(
-			String(['owner.RealmOwner.display_name']),
+			String(['venue.RealmOwner.display_name']),
 			['Website.url'],
 			'venue',
 		    ),
