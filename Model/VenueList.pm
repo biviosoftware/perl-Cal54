@@ -9,9 +9,9 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 sub EDITABLE_FIELD_LIST {
     return qw(
 	RealmOwner.display_name
+	RealmOwner.name
 	Website.url
 	calendar.Website.url
-	Venue.scraper_type
 	Email.email
 	Phone.phone
 	Address.street1
@@ -54,7 +54,6 @@ sub internal_initialize {
         primary_key => [[$self->PRIMARY_KEY_EQUIVALENCE_LIST, 'RealmDAG.child_id']],
 	order_by => ['RealmOwner.display_name'],
 	other => [
-	    'Venue.scraper_aux',
 	    'RealmOwner.name',
 	    $self->EDITABLE_FIELD_LIST,
 	    $self->LOCATION_EQUIVALENCE_LIST,
