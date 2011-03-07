@@ -12,6 +12,7 @@ sub TASK_MENU_LIST {
 	shift->SUPER::TASK_MENU_LIST(@_),
 	'adm_venue_list',
 	'adm_calendar_event_list_form',
+	'adm_scraper_list',
     );
 }
 
