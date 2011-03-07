@@ -53,15 +53,15 @@ sub get_delegate_info {
 	    next=ADM_CALENDAR_EVENT_LIST_FORM
         )],
 	[qw(
-	    ADM_VENUE_SCRAPER
+	    ADM_SCRAPER_FORM
 	    505
 	    FORUM
 	    DATA_READ&FEATURE_SITE_ADMIN&TEST_TRANSIENT
 	    Action.AssertClient
-	    Model.Venue->execute_unauth_load_this
-	    Model.VenueScraperForm
-	    View.Venue->scraper
-	    next=ADM_VENUE_LIST
+	    Model.ScraperForm
+	    Model.VenueList->execute_load_all
+	    View.Scraper->form
+	    next=ADM_SCRAPER_LIST
         )],
 	[qw(
 	    ADM_SCRAPER_PREVIEW
@@ -70,8 +70,7 @@ sub get_delegate_info {
 	    DATA_READ&FEATURE_SITE_ADMIN&TEST_TRANSIENT
 	    Action.AssertClient
 	    Action.ScraperPreview
-	    View.Venue->scraper_preview
-	    next=ADM_VENUE_LIST
+	    View.Scraper->preview
         )],
 	[qw(
 	    SITE_ROOT_MOBILE
@@ -83,6 +82,21 @@ sub get_delegate_info {
 	    View.Home->list_mobile
 	    next=SITE_ROOT_MOBILE
         )],
+	[qw(
+	    ADM_SCRAPER_LIST
+	    508
+	    FORUM
+	    DATA_READ&FEATURE_SITE_ADMIN
+	    Model.ScraperList->execute_load_page
+	    View.Scraper->list
+        )],
+	[qw(
+	    SCRAPER_HOME
+	    509
+	    VENUE
+	    ANYBODY
+	    Action.Error
+	)],
     ]);
 }
 
