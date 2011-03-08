@@ -65,7 +65,10 @@ sub list {
 		    task => 'ADM_SCRAPER_FORM',
 		    query => 'THIS_DETAIL',
 		},
-	    }], qw(RealmOwner.display_name Scraper.scraper_type)),
+	    }], qw(
+	        default_venue.RealmOwner.display_name
+		Scraper.scraper_type
+	    )),
 	    'Website.url',
 	]),
     );
