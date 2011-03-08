@@ -1,5 +1,5 @@
-RealmOwner.name,Scraper.scraper_type,Website.url,Scraper.scraper_aux
-firstbankcenter,RegExp,http://1stbankcenter.com/events/,"{
+Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_type,Website.location,Website.url,default_venue.RealmOwner.display_name,default_venue.RealmOwner.name,default_venue.RealmOwner.realm_id,scraper.RealmOwner.name
+100021,"{
   pager => {
     link => qr/(Next >>\{\d+\})/i,
     page_count => 3,
@@ -17,9 +17,9 @@ firstbankcenter,RegExp,http://1stbankcenter.com/events/,"{
     }],
   ],
 }
-"
-avery,Google,http://www.averybrewing.com/index.php?option=com_googlecalendar&Itemid=70,
-barnesandnoble,RegExp,http://store-locator.barnesandnoble.com/store/2333,"{
+",100022,RegExp,Home,http://1stbankcenter.com/events/,1STBANK Center,firstbankcenter,100021,s100022
+200021,,200022,Google,Home,http://www.averybrewing.com/index.php?option=com_googlecalendar&Itemid=70,Avery Brewing,avery,200021,s200022
+300021,"{
   pager => {
     link => qr/\n(next\{\d+\})/is,
     page_count => 3,
@@ -37,8 +37,8 @@ barnesandnoble,RegExp,http://store-locator.barnesandnoble.com/store/2333,"{
     }],
   ],
 }
-"
-borders,RegExp,http://www.borders.com/online/store/StoreDetailView_407,"{
+",300022,RegExp,Home,http://store-locator.barnesandnoble.com/store/2333,Barnes & Noble,barnesandnoble,300021,s300022
+400021,"{
   repeat => [
     [qr/(events at this store\n)\n+$line.*?$month $day, $year $time_ap/is => {
       fields => [qw(save summary month day year start_time)],
@@ -52,15 +52,15 @@ borders,RegExp,http://www.borders.com/online/store/StoreDetailView_407,"{
     }],
   ]
 }
-"
-boulderbookstore,ICalendar,http://boulderbookstore.indiebound.com/event,
-boulderdrafthouse,Google,http://www.boulderdrafthouse.com/BD_Calendar.html,"{
+",400022,RegExp,Home,http://www.borders.com/online/store/StoreDetailView_407,Borders,borders,400021,s400022
+500021,,500022,ICalendar,Home,http://boulderbookstore.indiebound.com/event,Boulder Book Store,boulderbookstore,500021,s500022
+600021,"{
   accept_event => {
     summary => qr/\bdance\b/i,
   },
 }
-"
-jcc,Google,http://boulderjcc.org/Calendar/Home.aspx,"{
+",600022,Google,Home,http://www.boulderdrafthouse.com/BD_Calendar.html,Boulder Draft House,boulderdrafthouse,600021,s600022
+700021,"{
   reject_event => {
     description => qr/(type\s*=\s*class)|(^$)/i,
     summary => qr/\bPAL\b/i,
@@ -69,32 +69,32 @@ jcc,Google,http://boulderjcc.org/Calendar/Home.aspx,"{
     location => qr/3800\s+Kalmia/i,
   },
 },
-"
-bmoca,RSS,http://www.bmoca.org/feed/,"{
+",700022,Google,Home,http://boulderjcc.org/Calendar/Home.aspx,Boulder JCC,jcc,700021,s700022
+800021,"{
   once => [
     [qr/$month\s+$day,\s+$year\; $time_ap(?: to $time_ap)?[.;]\s*\](.*)/is => {
       fields => [qw(month day year start_time end_time description)],
     }],
   ],
 }
-"
-boulderoutlook,RegExp,http://www.boulderoutlook.com/musiccalendar.html,"{
+",800022,RSS,Home,http://www.bmoca.org/feed/,Boulder Museum of Contemporary Art,bmoca,800021,s800022
+900021,"{
   repeat => [
     [qr/(?:$month (\d{4}).*?)?(\n$day\n)((?:[^\n]{3,}|\n)+?)\n$time\s*\-\s*$time_ap/s => {
       fields => [qw(month year save day summary start_time_pm end_time)],
     }],
   ],
 }
-"
-bpl_reynolds,Evanced,http://events.boulderlibrary.org?lib=2,
-bpl_main,Evanced,http://events.boulderlibrary.org?lib=0,"{
+",900022,RegExp,Home,http://www.boulderoutlook.com/musiccalendar.html,Boulder Outlook Hotel,boulderoutlook,900021,s900022
+1000021,,1000022,Evanced,Home,http://events.boulderlibrary.org?lib=2,Boulder Public Library - George Reynolds Branch,bpl_reynolds,1000021,s1000022
+1100021,"{
   reject_event => {
     summary => qr/canceled/i,
   },
 }
-"
-bpl_meadows,Evanced,http://events.boulderlibrary.org?lib=3,
-bouldertheatre,RegExp,http://www.bouldertheater.com/,"{
+",1100022,Evanced,Home,http://events.boulderlibrary.org?lib=0,Boulder Public Library - Main Branch,bpl_main,1100021,s1100022
+1200021,,1200022,Evanced,Home,http://events.boulderlibrary.org?lib=3,Boulder Public Library - Meadows Branch,bpl_meadows,1200021,s1200022
+1300021,"{
   repeat => [
     [qr/\n$month_day(?:\n| )$line/s => {
       fields => [qw(month_day summary)],
@@ -111,23 +111,18 @@ bouldertheatre,RegExp,http://www.bouldertheater.com/,"{
     }],
   ],
 }
-"
-bunit_venue,Google,http://test.bunit/cal,
-caffesole,Google,http://www.caffesole.com/events.html,
-chautauqua,RegExp,http://www.chautauqua.com/upcoming_events.php,"{
+",1300022,RegExp,Home,http://www.bouldertheater.com/,Boulder Theater,bouldertheatre,1300021,s1300022
+1400021,,1400022,Google,Home,http://test.bunit/cal,Bunit Venue,bunit_venue,1400021,s1400022
+1500021,,1500022,Google,Home,http://www.caffesole.com/events.html,Caffe Sole,caffesole,1500021,s1500022
+1600021,"{
   repeat => [
     [qr{((?:[^\n]+\n)+)\w+,\s*$month\s+$day,\s+$year,\s+$time_ap.*?\n\n((?:[^\n]+\n)+)\n}s, {
       fields => [qw(summary month day year start_time description)],
     }],
   ],
 }
-"
-cu_art,Active Data,http://events.colorado.edu/EventList.aspx?view=Summary,
-cu_cristol,Active Data,http://events.colorado.edu/EventList.aspx?view=Summary,
-cu_duane,Active Data,http://events.colorado.edu/EventList.aspx?view=Summary,
-cu_imig,Active Data,http://music.colorado.edu/events/,
-cu_macky,Active Data,http://macky.colorado.edu/events/,
-cuvee,RegExp,http://www.chezcuvee.com/ChezCuvee/Live_Music.html,"{
+",1600022,RegExp,Home,http://www.chautauqua.com/upcoming_events.php,Colorado Chautauqua Association,chautauqua,1600021,s1600022
+2200021,"{
   reject_event => {
     summary => qr/^\s*$/,
   },
@@ -137,9 +132,8 @@ cuvee,RegExp,http://www.chezcuvee.com/ChezCuvee/Live_Music.html,"{
     }],
   ],
 }
-"
-cu_fiske,Active Data,http://fiske.colorado.edu/events/index.php,
-foxtheatre,RegExp,http://foxtheatre.com/Store/ChooseTicket.aspx,"{
+",2200022,RegExp,Home,http://www.chezcuvee.com/ChezCuvee/Live_Music.html,Cuvee,cuvee,2200021,s2200022
+2400021,"{
     repeat => [
  [qr{^$month_day\s+(.*?)\s*$}m, {
      fields => [qw(month_day summary)],
@@ -156,8 +150,8 @@ foxtheatre,RegExp,http://foxtheatre.com/Store/ChooseTicket.aspx,"{
  }],
     ],
 }
-"
-boulderado,RegExp,http://www.boulderado.com/musiconthemezz.html,"{
+",2400022,RegExp,Home,http://foxtheatre.com/Store/ChooseTicket.aspx,Fox Theatre,foxtheatre,2400021,s2400022
+2500021,"{
     once => [
         [qr/Live Music ${time_ap}\s*\-\s*$time_ap/, {
             fields => ['start_time', 'end_time'],
@@ -169,25 +163,14 @@ boulderado,RegExp,http://www.boulderado.com/musiconthemezz.html,"{
  }],
     ],
 }
-"
-cigar,Google,http://www.johnnyscigars.com/calendar/,"{
+",2500022,RegExp,Home,http://www.boulderado.com/musiconthemezz.html,Hotel Boulderado,boulderado,2500021,s2500022
+2600021,"{
   reject_event => {
     summary => qr/happy\s+hour/i,
   },
 }
-"
-mountainsun,Bos Dates,http://www.mountainsunpub.com/BosDatesLite200/calendar.php,"{
-  accept_event => {
-    location => qr/mountain/i,
-  },
-  once => [
-    [qr/(.*)\@(.*)/ => {
-      fields => [qw(summary location)],
-    }],
-  ],
-}
-"
-nissis,RegExp,http://www.nissis.com/lmcalendar.html,"{
+",2600022,Google,Home,http://www.johnnyscigars.com/calendar/,Johnny's Cigar Bar,cigar,2600021,s2600022
+2800021,"{
   repeat => [
     [qr/($month\s*>.*)/, {
       fields => ['link'],
@@ -207,8 +190,8 @@ nissis,RegExp,http://www.nissis.com/lmcalendar.html,"{
     }],
   ],
 }
-"
-parentingplace,Google,http://www.boulderparenting.org/calendar.html,"{
+",2800022,RegExp,Home,http://www.nissis.com/lmcalendar.html,Nissi's,nissis,2800021,s2800022
+2900021,"{
     accept_event => {
         location => qr/boulder/i,
     },
@@ -216,8 +199,8 @@ parentingplace,Google,http://www.boulderparenting.org/calendar.html,"{
       summary => qr/no groups or classes/i,
     },
 }
-"
-rei,RSS,http://www.rei.com/storesrss/44,"{
+",2900022,Google,Home,http://www.boulderparenting.org/calendar.html,Parenting Place,parentingplace,2900021,s2900022
+3000021,"{
   accept_event => {
     location => qr/Boulder REI/is,
   },
@@ -227,8 +210,8 @@ rei,RSS,http://www.rei.com/storesrss/44,"{
     }],
   ],
 }
-"
-rockandsoul,RegExp,http://www.rocknsoulcafe.com/calendar/,"{
+",3000022,RSS,Home,http://www.rei.com/storesrss/44,REI Boulder,rei,3000021,s3000022
+3100021,"{
   pager => {
     link => qr/\n(>>\{\d})\n/s,
     page_count => 3,
@@ -252,21 +235,10 @@ rockandsoul,RegExp,http://www.rocknsoulcafe.com/calendar/,"{
     }],
   ],
 }
-"
-southernsun,Bos Dates,http://www.mountainsunpub.com/BosDatesLite200/calendar.php,"{
-  accept_event => {
-    location => qr/southern/i,
-  },
-  once => [
-    [qr/(.*)\@(.*)/ => {
-      fields => [qw(summary location)],
-    }],
-  ],
-}
-"
-stjulien,Full Calendar,http://www.stjulien.com/events-entertainment,
-thelaughinggoat,Google,http://thelaughinggoat.com/events.php,
-ribhouse,RegExp,http://www.theribhouse.com/center-stage,"{
+",3100022,RegExp,Home,http://www.rocknsoulcafe.com/calendar/,Rock N Soul Cafe,rockandsoul,3100021,s3100022
+3300021,,3300022,Full Calendar,Home,http://www.stjulien.com/events-entertainment,St Julien,stjulien,3300021,s3300022
+3400021,,3400022,Google,Home,http://thelaughinggoat.com/events.php,The Laughing Goat Coffeehouse,thelaughinggoat,3400021,s3400022
+3500021,"{
   repeat => [
     [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_ap\s*\-\s*$time_ap\n+([^\n]+\})/s => {
       fields => [qw(summary month day year start_time end_time url)],
@@ -285,19 +257,42 @@ ribhouse,RegExp,http://www.theribhouse.com/center-stage,"{
     }],
   ],
 }
-"
-westend,RegExp,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx,"{
+",3500022,RegExp,Home,http://www.theribhouse.com/center-stage,The Rib House - Boulder,ribhouse,3500021,s3500022
+3600021,"{
   repeat => [
     [qr/(?:$month\s+)?$day\s+(.*?)\s*,\s*$time_ap(.*?)\n($month|$day|926 pearl)/is, {
       fields => [qw(month day summary start_time description save)],
     }],
   ],
 }
-"
-cu_umc,Active Data,http://umc.colorado.edu/eventlist.html,
-wow,Google,http://www.wowmuseum.com/calendar.html,"{
+",3600022,RegExp,Home,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx,The West End Tavern,westend,3600021,s3600022
+3800021,"{
     accept_event => {
       location => qr/Lafayette/i,
     },
 }
-"
+",3800022,Google,Home,http://www.wowmuseum.com/calendar.html,WOW Children's Museum,wow,3800021,s3800022
+,"{
+  location_to_venue => {
+    qr/1085 18th Street/i => 'cu_art',
+    qr/1606 Central Campus Mall/i => 'cu_cristol',
+    qr/2000 Colorado Av/i => 'cu_duane',
+    qr/1020 18th Street/i => 'cu_imig',
+    qr/1595 Pleasant St/i => 'cu_macky',
+    qr/408 UCB/i => 'cu_fiske',
+    qr/1669 Euclid Av/i => 'cu_umc',
+  },
+}
+",1700022,Active Data,Home,http://events.colorado.edu/EventList.aspx?view=Summary,,,,cu_scraper
+,"{
+  location_to_venue => {
+    qr/mountain/i => 'mountainsun',
+    qr/southern/i => 'southernsun',
+  },
+  once => [
+    [qr/(.*)\@(.*)/ => {
+      fields => [qw(summary location)],
+    }],
+  ],
+}
+",2700022,Bos Dates,Home,http://www.mountainsunpub.com/BosDatesLite200/calendar.php,,,,mountainsunpub_scraper
