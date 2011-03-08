@@ -7,8 +7,6 @@ use Bivio::Base 'Bivio.Scraper';
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
-# cache xml to be shared across venues
-my($_XML_BY_URI_KEY) = __PACKAGE__ . 'xml';
 
 sub internal_import {
     my($self) = @_;
@@ -22,7 +20,8 @@ sub internal_import {
 
 sub _add_event_urls {
     my($self, $webhost, $start, $end) = @_;
-    my($xml) = _parse_xml($self, 'http://' . $webhost . '/RSSSyndicator.aspx?'
+    my($xml) = $self->internal_parse_xml(
+	'http://' . $webhost . '/RSSSyndicator.aspx?'
 	. join('&',
 	    'category=',
 	    'location=',
@@ -67,12 +66,8 @@ sub _date_time {
 
 sub _parse_event_xml {
     my($self, $webhost, $start, $end) = @_;
-    my($addr1) = b_use('Model.Address')->new($self->req)->unauth_load_or_die({
-	realm_id => $self->get('scraper_list')->get('Scraper.default_venue_id'),
-    })->get('street1');
-    b_die('venue missing Address.street1')
-	unless $addr1;
-    my($xml) = _parse_xml($self, 'http://' . $webhost . '/Eventlist.aspx?'
+    my($xml) = $self->internal_parse_xml(
+	'http://' . $webhost . '/Eventlist.aspx?'
         . join('&',
 	    'fromdate=' . $_D->to_string($start),
 	    'todate=' . $_D->to_string($end),
@@ -83,12 +78,13 @@ sub _parse_event_xml {
 
     # iterate events, taking Address1 which match the current venue
     foreach my $event (@{$xml->{Event}}) {
-	next unless lc($addr1) eq lc($event->{Address1} || '');
+#TODO: change to accept_event config?
 	next if lc($event->{Status} || '') eq 'cancelled';
 	next if ($event->{ExternalField1} || '') =~ /students|alumni/i;
 	next unless $event->{StartDate} && $event->{StartTime}
 	    && $event->{EndDate};
 	push(@{$self->get('events')}, {
+	    location => $event->{Address1},
 	    summary => $self->internal_clean($event->{EventName}),
 	    description => $self->internal_clean($event->{EventDescription}),
 	    dtstart => _date_time($self, $event, 'Start'),
@@ -112,17 +108,6 @@ sub _parse_webhost {
 	unless $$html =~ /("|')EventList.aspx\?/;
     ($host) = $url =~ m,http://(.*?)/,;
     return $host || b_die('host not found in calendar website');
-}
-
-sub _parse_xml {
-    my($self, $url) = @_;
-    # many venues can share the same xml ActiveData source, cache by url
-    $self->req->put_unless_exists($_XML_BY_URI_KEY => {});
-    return $self->req($_XML_BY_URI_KEY)->{$url}
-	if $self->req($_XML_BY_URI_KEY)->{$url};
-    my($xml) = $self->internal_parse_xml($url);
-    $self->req($_XML_BY_URI_KEY)->{$url} = $xml;
-    return $xml;
 }
 
 sub _strip_trailing_parens {
