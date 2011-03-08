@@ -13,7 +13,9 @@ sub {
     DateTime()->set_test_now($test_now);
     my($dir) = IO_File()->absolute_path($realm);
     my($sl) = model('ScraperList')->load_all;
-    $sl->find_row_by({'RealmOwner.name', $realm}) || b_die();
+    $sl->find_row_by({'default_venue.RealmOwner.name', $realm})
+	|| $sl->find_row_by({'scraper.RealmOwner.name', $realm})
+	|| b_die();
     my($case) = 1;
     return [
 	class() => [
@@ -23,13 +25,10 @@ sub {
 		    my(undef, $actual) = @_;
 		    my($scraper) = @$actual;
 		    return [
-			$scraper->get('scraper_list')
-			    ->get_model('RealmOwner')->as_string
-			    . ': '
-			    . @{$scraper->get('events')}
-			    . ' events and '
-			    . $scraper->get('failures')
-			    . ' failures'];
+			@{$scraper->get('events')}
+			. ' events and '
+			. $scraper->get('failures')
+			. ' failures'];
 		},
 	    } => [
 		map({
