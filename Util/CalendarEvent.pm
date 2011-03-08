@@ -24,6 +24,8 @@ sub clear_events {
         . $self->req(qw(auth_realm owner name)) . '?');
     my($ro) = $self->model('RealmOwner');
     my($sw) = $self->model('SearchWords');
+    my($ve) = $self->model('VenueEvent');
+    my($count) = 0;
     $self->model('CalendarEvent')->do_iterate(sub {
         my($ce) = @_;
 	$sw->unauth_delete({
@@ -32,22 +34,30 @@ sub clear_events {
 	$ro->unauth_delete({
 	    realm_id => $ce->get('calendar_event_id'),
 	});
+	$ve->unauth_delete({
+	    calendar_event_id => $ce->get('calendar_event_id'),
+	});
 	$ce->unauth_delete({
 	    calendar_event_id => $ce->get('calendar_event_id'),
 	});
+	$count++;
  	return 1;
     });
-    return;
+    return 'deleted ' . $count . ' events';
 }
 
 sub import_events {
     my($self) = @_;
     $self->initialize_ui;
     my($list) = $self->model('ScraperList')->unauth_load_all;
-    $list->find_row_by('RealmOwner.display_name',
-        $self->req(qw(auth_realm owner display_name)))
-	|| $self->usage_error('venue not found: ',
-            $self->req(qw(auth_realm owner display_name)));
+
+    # find scraper by scraper_id or venue name
+    unless ($list->find_row_by('Scraper.scraper_id', $self->req('auth_id'))) {
+	$list->find_row_by('RealmOwner.display_name',
+            $self->req(qw(auth_realm owner display_name)))
+	        || $self->usage_error('venue not found: ',
+		    $self->req(qw(auth_realm owner display_name)));
+    }
     $_S->do_one($list, $_DT->now);
     return;
 }
