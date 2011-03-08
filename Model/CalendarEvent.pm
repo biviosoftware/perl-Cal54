@@ -48,7 +48,6 @@ sub get_content {
     return \(
 	join(
 	    ' ',
-	    $self->get('location') || '',
 	    $self->get('description') || '',
 	    $owner->get('display_name'),
 	    map(
