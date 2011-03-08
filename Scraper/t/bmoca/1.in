@@ -6,7 +6,8 @@
     'location' => undef,
     'summary' => 'THE DIVERSITY PROJECT: INTRODUCTORY ARTIST TALKS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/the-diversity-project-introductory-artist-talks-2/'
+    'url' => 'http://www.bmoca.org/2011/02/the-diversity-project-introductory-artist-talks-2/',
+    'venue' => 'bmoca'
   },
   {
     'description' => 'Celebrate the opening of our Spring 2011 Exhibitions with Brazilian artist Henrique Oliveira and Colorado artist Jessica Moon Bernstein.',
@@ -15,7 +16,8 @@
     'location' => undef,
     'summary' => 'SPRING EXHIBITION OPENING RECEPTION: HENRIQUE OLIVEIRA & JESSICA MOON BERNSTEIN',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/opening-reception-henrique-oliveira-jessica-moon-bernstein-2/'
+    'url' => 'http://www.bmoca.org/2011/02/opening-reception-henrique-oliveira-jessica-moon-bernstein-2/',
+    'venue' => 'bmoca'
   },
   {
     'description' => 'Henrique Oliveira reflects on his life, work, and contemporary Brazilian culture during a conversation with acclaimed Brazilian poet and author Adriana Lisboa.',
@@ -24,7 +26,8 @@
     'location' => undef,
     'summary' => 'HENRIQUE OLIVEIRA ARTIST TALK',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/henrique-oliveira-artist-talk-2/'
+    'url' => 'http://www.bmoca.org/2011/02/henrique-oliveira-artist-talk-2/',
+    'venue' => 'bmoca'
   },
   {
     'description' => "Receive insiders\x{2019} treatment with BMoCA at three fine art venues in Denver. Experi\x{ad}ence some of the city\x{2019}s best art on these carefully curated, expertly guided tours through private collections, galleries and museums. Tour followed by drinks and conversation at a distinct eatery in Denver.",
@@ -33,7 +36,8 @@
     'location' => undef,
     'summary' => 'DENVER ART TOUR',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/denver-art-tour-2/'
+    'url' => 'http://www.bmoca.org/2011/02/denver-art-tour-2/',
+    'venue' => 'bmoca'
   },
   {
     'description' => 'Explore performance art at BMoCA during this experiential workshop through exercises involving body, gesture, voice, language, sound, and silence.',
@@ -42,7 +46,8 @@
     'location' => undef,
     'summary' => 'PERFORMANCE WORKSHOP WITH FRANCES CHARTERIS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/performance-workshop-with-frances-charteris/'
+    'url' => 'http://www.bmoca.org/2011/02/performance-workshop-with-frances-charteris/',
+    'venue' => 'bmoca'
   },
   {
     'description' => "Bring your best art for this one-night exhibition. Great food, DJ, dancing, and a Bob Ross inspired paint-off! Presented by The Studio Project, BMoCA\x{2019}s Youth Art Advisory Internship.",
@@ -51,7 +56,8 @@
     'location' => undef,
     'summary' => 'TEEN OPEN WALL',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/teen-open-wall/'
+    'url' => 'http://www.bmoca.org/2011/02/teen-open-wall/',
+    'venue' => 'bmoca'
   },
   {
     'description' => undef,
@@ -60,7 +66,8 @@
     'location' => undef,
     'summary' => 'YOUNG ARTISTS AT WORK: SPRING BREAK',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/young-artists-at-work-spring-break/'
+    'url' => 'http://www.bmoca.org/2011/02/young-artists-at-work-spring-break/',
+    'venue' => 'bmoca'
   },
   {
     'description' => undef,
@@ -69,7 +76,8 @@
     'location' => undef,
     'summary' => 'YOUNG ARTISTS AT WORK: BRAZILIAN FOLK ARTS',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/young-artists-at-work-brazilian-folk-arts/'
+    'url' => 'http://www.bmoca.org/2011/02/young-artists-at-work-brazilian-folk-arts/',
+    'venue' => 'bmoca'
   },
   {
     'description' => "Consider the concept of scent as art and experience Henrique Oliveira\x{2019}s exhibi\x{ad}tion in a whole new way with acclaimed perfumer Dawn Spencer Hurwitz as she interprets his installation and paintings through a series of custom blended scents.",
@@ -78,7 +86,8 @@
     'location' => undef,
     'summary' => 'SENSE BMOCA WITH DAWN SPENCER HURWITZ',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/sense-bmoca-with-dawn-spencer-hurwitz-2/'
+    'url' => 'http://www.bmoca.org/2011/02/sense-bmoca-with-dawn-spencer-hurwitz-2/',
+    'venue' => 'bmoca'
   },
   {
     'description' => "Did you know that BMoCA\x{2019}s recent renovations incorporated sustainable building practices? Architect Mike Moore (Tres Birds) explores recent developments in environmentally-conscious architecture, both here and abroad.",
@@ -87,7 +96,8 @@
     'location' => undef,
     'summary' => 'GREEN BUILDING: INNOVATIVE ARCHITECTURE',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/green-building-innovative-architecture/'
+    'url' => 'http://www.bmoca.org/2011/02/green-building-innovative-architecture/',
+    'venue' => 'bmoca'
   },
   {
     'description' => 'Jessica Moon Bernstein discusses her creative process and the environmental issues that inform her work in which recycled materials play a central role.',
@@ -96,7 +106,8 @@
     'location' => undef,
     'summary' => 'JESSICA MOON BERNSTEIN ARTIST TALK',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/jessica-moon-bernstein-artist-talk/'
+    'url' => 'http://www.bmoca.org/2011/02/jessica-moon-bernstein-artist-talk/',
+    'venue' => 'bmoca'
   },
   {
     'description' => undef,
@@ -105,7 +116,8 @@
     'location' => undef,
     'summary' => 'COMMUNIKEY FESTIVAL CLOSING PARTY',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/communikey-festival-closing-party/'
+    'url' => 'http://www.bmoca.org/2011/02/communikey-festival-closing-party/',
+    'venue' => 'bmoca'
   },
   {
     'description' => "Make your own reusable tote or bike panniers from recycled materials with exhibiting artist Jessica Moon Bernstein. Also, collect tips on how to make your studio greener or incorporate recycled materials in your work at our free interac\x{ad}tive Earth Day Art Booths from 11am \x{2013} 2pm.",
@@ -114,7 +126,8 @@
     'location' => undef,
     'summary' => 'EARTH DAY AT BMOCA',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/earth-day-at-bmoca-2/'
+    'url' => 'http://www.bmoca.org/2011/02/earth-day-at-bmoca-2/',
+    'venue' => 'bmoca'
   },
   {
     'description' => "OVER YOUR CITIES GRASS WILL GROW by Sophie Fiennes bears witness to German artist Anselm Kiefer\x{2019}s alchemical creative processes and renders as a film journey the personal universe he has built at his hill studio estate in the South of France. PLASTIC BAG by Ramin Bahrani traces the epic, existential journey of a plastic bag. Voice by Werner Herzog and music by Kjartan Sveinsson of Sigur R\x{f3}s.",
@@ -123,7 +136,8 @@
     'location' => undef,
     'summary' => 'FILMS: OVER YOUR CITIES GRASS WILL GROW & PLASTIC BAG',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/films-over-your-cities-grass-will-grow-plastic-bag/'
+    'url' => 'http://www.bmoca.org/2011/02/films-over-your-cities-grass-will-grow-plastic-bag/',
+    'venue' => 'bmoca'
   },
   {
     'description' => "Join us for a celebration of children at El D\x{ed}a del Ni\x{f1}o. For this traditional Mexican holiday, The Mexican Cultural Center and the Consulate General of Mexico in collaboration with BMoCA will present workshops, storytelling, dancing perfor\x{ad}mances, and authentic food while children and parents alike learn about the history of Mexico.",
@@ -132,7 +146,8 @@
     'location' => undef,
     'summary' => "CELEBRATION OF EL D\x{cd}A DEL NI\x{d1}O [THE DAY OF CHILDREN]",
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/celebration-of-el-dia-del-nino-the-day-of-children/'
+    'url' => 'http://www.bmoca.org/2011/02/celebration-of-el-dia-del-nino-the-day-of-children/',
+    'venue' => 'bmoca'
   },
   {
     'description' => 'Learn this classic Brazilian dance and Samba the night away at our upcoming Carnival-inspired closing celebration on June 4th. One-hour lesson followed by an open dance session from 8 - 10pm.',
@@ -141,7 +156,8 @@
     'location' => undef,
     'summary' => 'SAMBA',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/samba-2/'
+    'url' => 'http://www.bmoca.org/2011/02/samba-2/',
+    'venue' => 'bmoca'
   },
   {
     'description' => 'Experience a dynamic selection of performance art at this experimental showcase featuring work by local artists exploring various forms.',
@@ -150,7 +166,8 @@
     'location' => undef,
     'summary' => '[WORKING TITLE]',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/working-title-2/'
+    'url' => 'http://www.bmoca.org/2011/02/working-title-2/',
+    'venue' => 'bmoca'
   },
   {
     'description' => "WASTE LAND by Lucy Walker follows renowned artist Vik Mu\x{f1}iz as he journeys from Brooklyn to his native Brazil and the world's largest garbage dump, Jardim Gramacho, where he collaborates with an eclectic band of \"catadores\" - or self-designated pickers of recyclable materials. PLASTIC BAG, by critically acclaimed filmmaker Ramin Bahrani, traces the epic, existential journey of a plastic bag searching for its maker.",
@@ -159,6 +176,7 @@
     'location' => undef,
     'summary' => "FILMS: WASTE LAND WITH VIK MU\x{d1}IZ & PLASTIC BAG",
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/films-waste-land-with-vik-muniz-plastic-bag/'
+    'url' => 'http://www.bmoca.org/2011/02/films-waste-land-with-vik-muniz-plastic-bag/',
+    'venue' => 'bmoca'
   }
 ]

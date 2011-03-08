@@ -9,7 +9,8 @@ Boulder REI
 ',
     'summary' => 'Avalanche Awareness',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.rei.com/event/18929/session/23399?cm_mmc=rss-_-stores-_-events-_-Avalanche Awareness'
+    'url' => 'http://www.rei.com/event/18929/session/23399?cm_mmc=rss-_-stores-_-events-_-Avalanche Awareness',
+    'venue' => 'rei'
   },
   {
     'description' => 'Join us at a Fire Education Series in Boulder the first Monday evening of every month. For March, view the documentary "Fire Wars" covering the history of America\'s frontline war on wildfires and Q&A.',
@@ -21,7 +22,8 @@ Boulder REI
 ',
     'summary' => '"Fire Wars" and discussion to follow with Doug Stephen',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.rei.com/event/18930/session/23401?cm_mmc=rss-_-stores-_-events-_-"Fire Wars" and discussion to follow with Doug Stephen'
+    'url' => 'http://www.rei.com/event/18930/session/23401?cm_mmc=rss-_-stores-_-events-_-"Fire Wars" and discussion to follow with Doug Stephen',
+    'venue' => 'rei'
   },
   {
     'description' => 'This class is aimed at the newcomer to map and compass. No experience necessary!',
@@ -33,7 +35,8 @@ Boulder REI
 ',
     'summary' => 'Map & Compass Basics',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.rei.com/event/226/session/23402?cm_mmc=rss-_-stores-_-events-_-Map & Compass Basics'
+    'url' => 'http://www.rei.com/event/226/session/23402?cm_mmc=rss-_-stores-_-events-_-Map & Compass Basics',
+    'venue' => 'rei'
   },
   {
     'description' => 'The Colorado Breeding Bird Atlas project charts breeding distribution of birds within every part of Colorado. Lynn Wickersham will give updates on the trends so far.',
@@ -45,7 +48,8 @@ Boulder REI
 ',
     'summary' => 'Colorado Breeding Bird Atlas II Results',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.rei.com/event/18967/session/23374?cm_mmc=rss-_-stores-_-events-_-Colorado Breeding Bird Atlas II Results'
+    'url' => 'http://www.rei.com/event/18967/session/23374?cm_mmc=rss-_-stores-_-events-_-Colorado Breeding Bird Atlas II Results',
+    'venue' => 'rei'
   },
   {
     'description' => 'Dr. Morrow will discuss the evolution of interactions among sedentary plants which need to have pollen moved to another plant and the bribes they offer to animals to move pollen to the right places.',
@@ -57,6 +61,7 @@ Boulder REI
 ',
     'summary' => 'CONPS: Sex and the Single Flower',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.rei.com/event/18970/session/23377?cm_mmc=rss-_-stores-_-events-_-CONPS: Sex and the Single Flower'
+    'url' => 'http://www.rei.com/event/18970/session/23377?cm_mmc=rss-_-stores-_-events-_-CONPS: Sex and the Single Flower',
+    'venue' => 'rei'
   }
 ]

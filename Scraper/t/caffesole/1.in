@@ -6,7 +6,8 @@
     'location' => '',
     'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bTg1Zm5pbmdpYmN0b29nMzRwYzNtYzNuajggY2FmZmVzb2xlbXVzaWNAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=bTg1Zm5pbmdpYmN0b29nMzRwYzNtYzNuajggY2FmZmVzb2xlbXVzaWNAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Lisa Bell Trio
@@ -19,7 +20,8 @@ www.lisabellmusic.com',
     'location' => '',
     'summary' => 'Lisa Bell Trio',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bWFpamNtM3U5dWpjMjVxYm5oMDFqYWc0N3MgY2FmZmVzb2xlbXVzaWNAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=bWFpamNtM3U5dWpjMjVxYm5oMDFqYWc0N3MgY2FmZmVzb2xlbXVzaWNAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom\'s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul\'s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you\'ll understand why one excited audience member said "This is the best jazz I\'ve ever heard in Boulder."',
@@ -28,7 +30,8 @@ www.lisabellmusic.com',
     'location' => '',
     'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=Ym5odGw1a25nbjZpZG4waW50MDB2dGlzNm8gY2FmZmVzb2xlbXVzaWNAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=Ym5odGw1a25nbjZpZG4waW50MDB2dGlzNm8gY2FmZmVzb2xlbXVzaWNAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Josh Quinlan
@@ -41,7 +44,8 @@ www.joshquinlan.com',
     'location' => '',
     'summary' => 'Josh Quinlan',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aGEzcXRta290dWN2dTdpZjdxbGRsamVhaDggY2FmZmVzb2xlbXVzaWNAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aGEzcXRta290dWN2dTdpZjdxbGRsamVhaDggY2FmZmVzb2xlbXVzaWNAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The Brad Upton Quartet:
@@ -69,7 +73,8 @@ www.blackorchidmusic.com',
     'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAyMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAyMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The Brad Upton Quartet:
@@ -97,7 +102,8 @@ www.blackorchidmusic.com',
     'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAzMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTAzMTJUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The Brad Upton Quartet:
@@ -125,7 +131,8 @@ www.blackorchidmusic.com',
     'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA0MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA0MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The Brad Upton Quartet:
@@ -153,7 +160,8 @@ www.blackorchidmusic.com',
     'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA1MTRUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA1MTRUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The Brad Upton Quartet:
@@ -181,7 +189,8 @@ www.blackorchidmusic.com',
     'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA2MTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA2MTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The Brad Upton Quartet:
@@ -209,7 +218,8 @@ www.blackorchidmusic.com',
     'location' => '',
     'summary' => 'Brad Upton Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA3MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=YmhmdG0wajRwaWdsN2h1c29xcGpvZW9lY2tfMjAxMTA3MDlUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom\'s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul\'s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you\'ll understand why one excited audience member said "This is the best jazz I\'ve ever heard in Boulder."',
@@ -218,7 +228,8 @@ www.blackorchidmusic.com',
     'location' => '',
     'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmZqMHV0Z2pzNXJ0ZGtmcW5ya252MmY0bWMgY2FmZmVzb2xlbXVzaWNAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmZqMHV0Z2pzNXJ0ZGtmcW5ya252MmY0bWMgY2FmZmVzb2xlbXVzaWNAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The John Lake Quartet
@@ -233,7 +244,8 @@ www.MySpace.com/JohnLakeJazz',
     'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAyMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAyMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The John Lake Quartet
@@ -248,7 +260,8 @@ www.MySpace.com/JohnLakeJazz',
     'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAzMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTAzMDRUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The John Lake Quartet
@@ -263,7 +276,8 @@ www.MySpace.com/JohnLakeJazz',
     'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA0MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA0MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The John Lake Quartet
@@ -278,7 +292,8 @@ www.MySpace.com/JohnLakeJazz',
     'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA1MDZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA1MDZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The John Lake Quartet
@@ -293,7 +308,8 @@ www.MySpace.com/JohnLakeJazz',
     'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA2MDNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA2MDNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The John Lake Quartet
@@ -308,7 +324,8 @@ www.MySpace.com/JohnLakeJazz',
     'location' => '',
     'summary' => 'The John Lake Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA3MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=cXQzMWFyczZ0bG0zZmdxdGtkdDh1OWdxaG9fMjAxMTA3MDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Brad Upton & Joe Bonner Quartet
@@ -322,7 +339,8 @@ Brad Upton, trumpet/flugelhorn',
     'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAxMjlUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAxMjlUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Brad Upton & Joe Bonner Quartet
@@ -336,7 +354,8 @@ Brad Upton, trumpet/flugelhorn',
     'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAyMjZUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAyMjZUMDMwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Brad Upton & Joe Bonner Quartet
@@ -350,7 +369,8 @@ Brad Upton, trumpet/flugelhorn',
     'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAzMjZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTAzMjZUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Brad Upton & Joe Bonner Quartet
@@ -364,7 +384,8 @@ Brad Upton, trumpet/flugelhorn',
     'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA0MjNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA0MjNUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Brad Upton & Joe Bonner Quartet
@@ -378,7 +399,8 @@ Brad Upton, trumpet/flugelhorn',
     'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA1MjhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA1MjhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Brad Upton & Joe Bonner Quartet
@@ -392,7 +414,8 @@ Brad Upton, trumpet/flugelhorn',
     'location' => '',
     'summary' => 'Brad Upton & Joe Bonner Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA2MjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=OGpsYjJqZWF0dXVsaG5pcmhuZjBvYWI3dW9fMjAxMTA2MjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Three Squared:
@@ -405,7 +428,8 @@ http://www.myspace.com/thr33squared',
     'location' => '',
     'summary' => 'Three Squared "Object" CD Release show',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZjkzYWpsaWszdDFvYzFxYnZkNGxka2I0ajQgY2FmZmVzb2xlbXVzaWNAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=ZjkzYWpsaWszdDFvYzFxYnZkNGxka2I0ajQgY2FmZmVzb2xlbXVzaWNAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Tom Weiser & Paul Fowler play jazz standards, originals and improvisations. Their music is sophisticated, playful and full of lively melodic and rhythmic conversation. Tom\'s warm baritone and engaging scat solos invite the audience into the musical dialog, while Paul\'s stratospheric tenor and pianistic polychromatism provide a playful and sometimes challenging counterpoint. When you hear them play together, you\'ll understand why one excited audience member said "This is the best jazz I\'ve ever heard in Boulder."',
@@ -414,7 +438,8 @@ http://www.myspace.com/thr33squared',
     'location' => '',
     'summary' => 'Tom Weiser & Paul Fowler Jazz Duo',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MzFhamtiY2l2ajlhbmJoa2phNG84cWVvZXMgY2FmZmVzb2xlbXVzaWNAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=MzFhamtiY2l2ajlhbmJoa2phNG84cWVvZXMgY2FmZmVzb2xlbXVzaWNAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -441,7 +466,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -468,7 +494,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMThUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMThUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -495,7 +522,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMjVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -522,7 +550,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -549,7 +578,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -576,7 +606,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMTVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMTVUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -603,7 +634,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMjJUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAyMjJUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -630,7 +662,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -657,7 +690,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMDhUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -684,7 +718,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMTVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMTVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -711,7 +746,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -738,7 +774,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAzMjlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -765,7 +802,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -792,7 +830,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTJUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -819,7 +858,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MTlUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -846,7 +886,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MjZUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA0MjZUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -873,7 +914,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MDNUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MDNUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -900,7 +942,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTBUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTBUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -927,7 +970,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MTdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -954,7 +998,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MjRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MjRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -981,7 +1026,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MzFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA1MzFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -1008,7 +1054,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MDdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MDdUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -1035,7 +1082,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MTRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MTRUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -1062,7 +1110,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjFUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -1089,7 +1138,8 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjhUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA2MjhUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
@@ -1116,6 +1166,7 @@ http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'location' => 'Caffe Sole',
     'summary' => 'Brad Goode Jazz Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA3MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt'
+    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTA3MDVUMDEwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
+    'venue' => 'caffesole'
   }
 ]

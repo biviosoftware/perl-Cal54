@@ -7,7 +7,8 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'location' => 'Boulder or Longmont - location changes.',
     'summary' => 'LGBT Family Gathering',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bWE1dTFrYmU1dDZxbGZwMjVxYmRyNTEwcXNfMjAxMTAxMzBUMjEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bWE1dTFrYmU1dDZxbGZwMjVxYmRyNTEwcXNfMjAxMTAxMzBUMjEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Co-sponsored by Cathy Busha, Co-Director of Out Boulder, and Louise Haimowitz, Director of Clinical Services at Parenting Place. This group is for lesbian, gay, bisexual, or transgender parents with children ages 0-12, as well as parents-to-be and those contemplating parenthood. Meets once a month.
@@ -17,7 +18,8 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'location' => 'Boulder or Longmont - location changes.',
     'summary' => 'LGBT Family Gathering',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bWE1dTFrYmU1dDZxbGZwMjVxYmRyNTEwcXNfMjAxMTAyMjdUMjEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bWE1dTFrYmU1dDZxbGZwMjVxYmRyNTEwcXNfMjAxMTAyMjdUMjEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
@@ -26,7 +28,8 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'location' => 'Parenting Place. 1235 Pine St, Boulder 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
@@ -35,7 +38,8 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'location' => 'Parenting Place. 1235 Pine St, Boulder 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
@@ -44,7 +48,8 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'location' => 'Parenting Place. 1235 Pine St, Boulder 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMThUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMThUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
@@ -53,7 +58,8 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'location' => 'Parenting Place. 1235 Pine St, Boulder 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMjVUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAyMjVUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
@@ -62,7 +68,8 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'location' => 'Parenting Place. 1235 Pine St, Boulder 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAzMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAzMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
@@ -71,7 +78,8 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'location' => 'Parenting Place. 1235 Pine St, Boulder 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAzMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAzMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Weekly lunch hour support group for single moms of children ages 0-5. Emotional support and the camaraderie of other single mothers will be provided, along with guest speakers on topics relevant to single parenting and self-care. Child care will be provided. Please register your child by contacting Louise at louise@myparentingplace.org, 303-449-0177 x17..',
@@ -80,7 +88,8 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'location' => 'Parenting Place. 1235 Pine St, Boulder 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAzMThUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=c3Zvc3RhcTFiZGl2aHRzMGhkNzYycjU2dmtfMjAxMTAzMThUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Who:
@@ -104,7 +113,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder CO 80302',
     'summary' => 'Adoption Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMDRUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMDRUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Who:
@@ -128,7 +138,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder CO 80302',
     'summary' => 'Adoption Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMTFUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMTFUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Who:
@@ -152,7 +163,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder CO 80302',
     'summary' => 'Adoption Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMThUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMThUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Who:
@@ -176,7 +188,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder CO 80302',
     'summary' => 'Adoption Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMjVUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAyMjVUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Who:
@@ -200,7 +213,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder CO 80302',
     'summary' => 'Adoption Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAzMDRUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAzMDRUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Who:
@@ -224,7 +238,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder CO 80302',
     'summary' => 'Adoption Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAzMTFUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAzMTFUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Who:
@@ -248,7 +263,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder CO 80302',
     'summary' => 'Adoption Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAzMThUMTQzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=aDM3dmhnOGdjZzhwZmozaTFiNTlsYzhoM29fMjAxMTAzMThUMTQzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children.  Japanese fluency recommended. Contact Michiko 303-442-3699. Also on 2nd Monday of each month, 9:00-11:00am.',
@@ -257,7 +273,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Boulder',
     'summary' => 'Japanese Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MnRrc2cydjdyNDhvM2NlczR0bjNsMGRkNGdfMjAxMTAyMjRUMjEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MnRrc2cydjdyNDhvM2NlczR0bjNsMGRkNGdfMjAxMTAyMjRUMjEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
@@ -266,7 +283,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAxMzFUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAxMzFUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
@@ -275,7 +293,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMDdUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMDdUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
@@ -284,7 +303,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMTRUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMTRUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
@@ -293,7 +313,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMjFUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMjFUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
@@ -302,7 +323,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMjhUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAyMjhUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
@@ -311,7 +333,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAzMDdUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAzMDdUMTkzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.',
@@ -320,7 +343,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 0-2 anos',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAzMTRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NTBjZXNobnNydWNycG9qNDhwYm8zdWNucThfMjAxMTAzMTRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
@@ -329,7 +353,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Japanese Playgroup (2nd Monday)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTAyMTRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTAyMTRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
@@ -338,7 +363,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Japanese Playgroup (2nd Monday)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTAzMTRUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTAzMTRUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
@@ -347,7 +373,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Japanese Playgroup (2nd Monday)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA0MTFUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA0MTFUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
@@ -356,7 +383,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Japanese Playgroup (2nd Monday)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA1MDlUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA1MDlUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
@@ -365,7 +393,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Japanese Playgroup (2nd Monday)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA2MTNUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA2MTNUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency is recommended.',
@@ -374,7 +403,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Japanese Playgroup (2nd Monday)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA3MTFUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bm1vc2MzcGY2dTMyaXF0bDkwYmhiNzhzcW9fMjAxMTA3MTFUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'To register, contact Sheryl Schwabe at 303-520-6803 or sschwabe@comcast.net',
@@ -383,7 +413,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place - Boulder Offices',
     'summary' => 'Love and Logic Class - for Parenting Place families',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bTdhNmJ1anZpNmJrdms2OWlzZDFqMW5jaGNfMjAxMTAyMDVUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bTdhNmJ1anZpNmJrdms2OWlzZDFqMW5jaGNfMjAxMTAyMDVUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
@@ -392,7 +423,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
@@ -401,7 +433,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
@@ -410,7 +443,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMThUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMThUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
@@ -419,7 +453,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMjVUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAyMjVUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
@@ -428,7 +463,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAzMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAzMDRUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
@@ -437,7 +473,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAzMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAzMTFUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children age 0-5. Child care provided, while mothers receive emotional support and the camaraderie of other mothers. Includes Children\'s Learning Activity and occasional guest speakers.',
@@ -446,7 +483,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Lunch Hour Single Moms Support Group with Children\'s Learning Activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAzMThUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MmlrNGI4djNkM3RrMTZmcW02MTJndm9ibThfMjAxMTAzMThUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
@@ -455,7 +493,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
     'summary' => 'Parents with Infants (newborn-9 months) Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMDNUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMDNUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
@@ -464,7 +503,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
     'summary' => 'Parents with Infants (newborn-9 months) Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMTBUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMTBUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
@@ -473,7 +513,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
     'summary' => 'Parents with Infants (newborn-9 months) Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMTdUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMTdUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
@@ -482,7 +523,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
     'summary' => 'Parents with Infants (newborn-9 months) Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMjRUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAyMjRUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
@@ -491,7 +533,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
     'summary' => 'Parents with Infants (newborn-9 months) Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAzMDNUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAzMDNUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
@@ -500,7 +543,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
     'summary' => 'Parents with Infants (newborn-9 months) Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAzMTBUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAzMTBUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
@@ -509,7 +553,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
     'summary' => 'Parents with Infants (newborn-9 months) Support Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAzMTdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MzY0dWk5bjJ0cDVoampvNWFwZTh0aGkyamtfMjAxMTAzMTdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
@@ -518,7 +563,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Russian Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMDNUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMDNUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
@@ -527,7 +573,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Russian Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMTBUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMTBUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
@@ -536,7 +583,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Russian Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMTdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMTdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
@@ -545,7 +593,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Russian Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMjRUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAyMjRUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
@@ -554,7 +603,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Russian Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAzMDNUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAzMDNUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
@@ -563,7 +613,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Russian Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAzMTBUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAzMTBUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Russian language and culture with their children. Russian fluency is recommended.',
@@ -572,7 +623,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Russian Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAzMTdUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=cTQxazFlMTNnNzE4MGZ1dWJrc2NldTJnZDhfMjAxMTAzMTdUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => '',
@@ -581,7 +633,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Clase de Ingles (ESL)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMDJUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMDJUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => '',
@@ -590,7 +643,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Clase de Ingles (ESL)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMDlUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMDlUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => '',
@@ -599,7 +653,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Clase de Ingles (ESL)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMTZUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMTZUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => '',
@@ -608,7 +663,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Clase de Ingles (ESL)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMjNUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAyMjNUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => '',
@@ -617,7 +673,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Clase de Ingles (ESL)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAzMDJUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAzMDJUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => '',
@@ -626,7 +683,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Clase de Ingles (ESL)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAzMDlUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAzMDlUMTgzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => '',
@@ -635,7 +693,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Clase de Ingles (ESL)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAzMTZUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ODJsc2ZxYzMzM2RqN2dwbTdlb29yYm04djBfMjAxMTAzMTZUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
@@ -644,7 +703,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMDJUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMDJUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
@@ -653,7 +713,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMDlUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMDlUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
@@ -662,7 +723,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMTZUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMTZUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
@@ -671,7 +733,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMjNUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAyMjNUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
@@ -680,7 +743,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAzMDJUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAzMDJUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
@@ -689,7 +753,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAzMDlUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAzMDlUMTczMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
@@ -698,7 +763,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
     'summary' => 'Grupo de Padres Latinos con ninos 2-5 anos, with children\'s learning activity',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAzMTZUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=M3I2ZHNnNnQxbnBpdTlwazdtYmc1Zm5ucDhfMjAxMTAzMTZUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
@@ -707,7 +773,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Parents with Preschoolers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMDFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMDFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
@@ -716,7 +783,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Parents with Preschoolers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMDhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMDhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
@@ -725,7 +793,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Parents with Preschoolers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMTVUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMTVUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
@@ -734,7 +803,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Parents with Preschoolers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMjJUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAyMjJUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
@@ -743,7 +813,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Parents with Preschoolers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAzMDFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAzMDFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
@@ -752,7 +823,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Parents with Preschoolers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAzMDhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAzMDhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children ages 2-5 , which will include a structured learning activity followed by an opportunity for parents to share parenting struggles and advice, while children play.',
@@ -761,7 +833,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Parents with Preschoolers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAzMTVUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHJ0OWZ2N3Byczc3ZnZsa2ZtaGx1ODYwbThfMjAxMTAzMTVUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
@@ -770,7 +843,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO',
     'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMDFUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMDFUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
@@ -779,7 +853,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO',
     'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMDhUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMDhUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
@@ -788,7 +863,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO',
     'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMTVUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMTVUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
@@ -797,7 +873,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO',
     'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMjJUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAyMjJUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
@@ -806,7 +883,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO',
     'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAzMDFUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAzMDFUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
@@ -815,7 +893,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO',
     'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAzMDhUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAzMDhUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
@@ -824,7 +903,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, CO',
     'summary' => 'German Playgroup - 1st & 3rd Tuesday of Month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAzMTVUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=OHNrMWdsY2VoYXUwZTY0dnRrOTZrNmN1ZXNfMjAxMTAzMTVUMTUwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Mondays. Email reminders are sent the day of group. To get added to the email list, contact Sue, 303-449-0177x0, sue@myparentingplace.org.',
@@ -833,7 +913,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Dads & Kids Playgroup (1st & 3rd Mondays)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=a3NxbThpaDBrYWZtaHBrOXFiaXNjbDRjcDhfMjAxMTAyMDhUMDEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=a3NxbThpaDBrYWZtaHBrOXFiaXNjbDRjcDhfMjAxMTAyMDhUMDEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Mondays. Email reminders are sent the day of group. To get added to the email list, contact Sue, 303-449-0177x0, sue@myparentingplace.org.',
@@ -842,7 +923,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Dads & Kids Playgroup (1st & 3rd Mondays)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=a3NxbThpaDBrYWZtaHBrOXFiaXNjbDRjcDhfMjAxMTAzMDhUMDEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=a3NxbThpaDBrYWZtaHBrOXFiaXNjbDRjcDhfMjAxMTAzMDhUMDEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
@@ -851,7 +933,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
     'summary' => 'French Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAxMzFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAxMzFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
@@ -860,7 +943,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
     'summary' => 'French Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
@@ -869,7 +953,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
     'summary' => 'French Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMTRUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMTRUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
@@ -878,7 +963,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
     'summary' => 'French Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMjFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMjFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
@@ -887,7 +973,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
     'summary' => 'French Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMjhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAyMjhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
@@ -896,7 +983,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
     'summary' => 'French Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAzMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAzMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
@@ -905,7 +993,8 @@ parenting skills and healthy  parent-child attachments.',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
     'summary' => 'French Group',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAzMTRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=bDB1OTJucG1wY2JpMmg5b2MzYjBhNmxiZm9fMjAxMTAzMTRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Zumba with Maya Vigil
@@ -919,7 +1008,8 @@ Please wear tennis shoes and bring water!',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Zumba w/ Maya Vigil',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAxMzFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAxMzFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Zumba with Maya Vigil
@@ -933,7 +1023,8 @@ Please wear tennis shoes and bring water!',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Zumba w/ Maya Vigil',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Zumba with Maya Vigil
@@ -947,7 +1038,8 @@ Please wear tennis shoes and bring water!',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Zumba w/ Maya Vigil',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMTRUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMTRUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Zumba with Maya Vigil
@@ -961,7 +1053,8 @@ Please wear tennis shoes and bring water!',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Zumba w/ Maya Vigil',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMjFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMjFUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Zumba with Maya Vigil
@@ -975,7 +1068,8 @@ Please wear tennis shoes and bring water!',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Zumba w/ Maya Vigil',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMjhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAyMjhUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Zumba with Maya Vigil
@@ -989,7 +1083,8 @@ Please wear tennis shoes and bring water!',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Zumba w/ Maya Vigil',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAzMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAzMDdUMTcwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Zumba with Maya Vigil
@@ -1003,7 +1098,8 @@ Please wear tennis shoes and bring water!',
     'location' => '1235 Pine Street, Boulder, CO 80302',
     'summary' => 'Zumba w/ Maya Vigil',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAzMTRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmFlaTh2aTdiM3FrcnBzbjlnMWF1YTNxdG9fMjAxMTAzMTRUMTYwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
@@ -1012,7 +1108,8 @@ Please wear tennis shoes and bring water!',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAxMzFUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAxMzFUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
@@ -1021,7 +1118,8 @@ Please wear tennis shoes and bring water!',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMDdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMDdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
@@ -1030,7 +1128,8 @@ Please wear tennis shoes and bring water!',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMTRUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMTRUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
@@ -1039,7 +1138,8 @@ Please wear tennis shoes and bring water!',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMjFUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMjFUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
@@ -1048,7 +1148,8 @@ Please wear tennis shoes and bring water!',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMjhUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAyMjhUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
@@ -1057,7 +1158,8 @@ Please wear tennis shoes and bring water!',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAzMDdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAzMDdUMTYzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A playgroups for parents who want to share their Mandarin language and culture with their children. Mandarin fluency is recommended.',
@@ -1066,7 +1168,8 @@ Please wear tennis shoes and bring water!',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'Mandarin Playgroup - meets every Monday except 2nd Monday of month',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAzMTRUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=NzBrdWNoMHN1YW1mYWFpZGVrbG12OHUzMWdfMjAxMTAzMTRUMTUzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
@@ -1076,7 +1179,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Boulder',
     'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMDJUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMDJUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
@@ -1086,7 +1190,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Boulder',
     'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMDlUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMDlUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
@@ -1096,7 +1201,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Boulder',
     'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMTZUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMTZUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
@@ -1106,7 +1212,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Boulder',
     'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMjNUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAyMjNUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
@@ -1116,7 +1223,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Boulder',
     'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAzMDJUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAzMDJUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
@@ -1126,7 +1234,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Boulder',
     'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAzMDlUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAzMDlUMDAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
@@ -1136,7 +1245,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Boulder',
     'summary' => 'Single Moms Group with Children\'s Activity - WAIT LIST',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAzMTVUMjMzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=MWdvOXVxcnR2NDFnMGFkMGcwbTh2ZHAyMDRfMjAxMTAzMTVUMjMzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
@@ -1145,7 +1255,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'After Nappers Toddler Circle',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAxMzFUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAxMzFUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
@@ -1154,7 +1265,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'After Nappers Toddler Circle',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMDdUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMDdUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
@@ -1163,7 +1275,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'After Nappers Toddler Circle',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMTRUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMTRUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
@@ -1172,7 +1285,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'After Nappers Toddler Circle',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMjFUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMjFUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
@@ -1181,7 +1295,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'After Nappers Toddler Circle',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMjhUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAyMjhUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
@@ -1190,7 +1305,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'After Nappers Toddler Circle',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAzMDdUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAzMDdUMjEzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'A group for parents with children 10-24 months. While children play, parents will have the opportunity to feel the camaraderie of others, while discussing challenges and offering suggestions to one another on raising a toddler. The group begins later in the afternoon for families to visit after nap time.',
@@ -1199,7 +1315,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => 'Parenting Place, 1235 Pine St, Boulder, CO 80302',
     'summary' => 'After Nappers Toddler Circle',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAzMTRUMjAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=Z3U0c2Z0MmtpbmZkaG1ka2Qwdm40OWxoaWdfMjAxMTAzMTRUMjAzMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
@@ -1208,7 +1325,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Dads & Kids Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTAyMjJUMDEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTAyMjJUMDEwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
@@ -1217,7 +1335,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Dads & Kids Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTA0MTlUMDAwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTA0MTlUMDAwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
@@ -1226,7 +1345,8 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Dads & Kids Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTA1MTdUMDAwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTA1MTdUMDAwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   },
   {
     'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
@@ -1235,6 +1355,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'location' => '1235 Pine Street, Boulder, 80302',
     'summary' => 'Dads & Kids Playgroup',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTA3MTlUMDAwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn'
+    'url' => 'https://www.google.com/calendar/event?eid=b3NtOW4zbm5tNmN0MzB2aG41M2lqZXVvbmNfMjAxMTA3MTlUMDAwMDAwWiA2ZWRzMjBjcWo0MHU0NzltY2Mydjc3NjVtMEBn',
+    'venue' => 'parentingplace'
   }
 ]

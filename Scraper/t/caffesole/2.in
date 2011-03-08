@@ -16,7 +16,8 @@ www.reignlee.com',
     'location' => '',
     'summary' => 'Melissa Cox & Reign Lee',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dThtN2c0ODJyNzY0Z2cwZzRiZzZkcXUwMGdfMjAxMTA0MjQgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=dThtN2c0ODJyNzY0Z2cwZzRiZzZkcXUwMGdfMjAxMTA0MjQgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Zachary duPont
@@ -36,7 +37,8 @@ zackdupontmusic.com',
     'location' => '',
     'summary' => 'Zachary duPont',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTA0MTUgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTA0MTUgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => '',
@@ -45,7 +47,8 @@ zackdupontmusic.com',
     'location' => '',
     'summary' => 'Naropa Afropop Ensemble',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTA0MDggdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTA0MDggdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Gooding:
@@ -62,7 +65,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Gooding',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTA0MDYgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTA0MDYgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Mark Growden:
@@ -75,7 +79,8 @@ http://markgrowden.org/',
     'location' => '',
     'summary' => 'Mark Growden',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAzMzEgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAzMzEgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Jah Spirits:
@@ -86,7 +91,8 @@ Jah Spirits is a newly formed band with original reggae tunes by Kelly Poindexte
     'location' => '',
     'summary' => 'Jah Spirits',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAzMjYgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAzMjYgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Aunt Martha
@@ -99,7 +105,8 @@ www.myspace.com/auntmarthaband',
     'location' => '',
     'summary' => 'Aunt Martha',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAzMjUgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAzMjUgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Lindsay Meredith:
@@ -112,7 +119,8 @@ www.myspace.com/lindsaymeredithmusic',
     'location' => '',
     'summary' => 'Lindsay Meredith',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAzMjQgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAzMjQgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Ben Siems
@@ -126,7 +134,8 @@ WillieAugust.tripod.com',
     'location' => '',
     'summary' => 'Ben Siems',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dThtN2c0ODJyNzY0Z2cwZzRiZzZkcXUwMGdfMjAxMTAzMjAgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=dThtN2c0ODJyNzY0Z2cwZzRiZzZkcXUwMGdfMjAxMTAzMjAgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Cowgirl Radio:
@@ -146,7 +155,8 @@ http://www.youtube.com/watch?v=_mX3yn8PIJI',
     'location' => '',
     'summary' => 'Cowgirl Radio',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAzMTEgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAzMTEgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Brandon Hagen
@@ -160,7 +170,8 @@ http://www.myspace.com/sunlightcool',
     'location' => '',
     'summary' => 'Brandon Hagen',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAzMTAgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAzMTAgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The Longest Day of the Year:
@@ -173,7 +184,8 @@ www.reverbnation.com/thelongestdayoftheyear',
     'location' => '',
     'summary' => 'The Longest Day of the Year',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAzMTAgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAzMTAgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Pete Kartsounes:
@@ -186,7 +198,8 @@ http://petekmusic.com',
     'location' => '',
     'summary' => 'Pete Kartsounes',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAzMDIgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAzMDIgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Danny Shafer:
@@ -201,7 +214,8 @@ www.dannyshafer.com',
     'location' => '',
     'summary' => 'Danny Shafer',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cDRxdDA4MHR1aG12bGRocDBjM3UxZWhvazhfMjAxMTAzMDYgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cDRxdDA4MHR1aG12bGRocDBjM3UxZWhvazhfMjAxMTAzMDYgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Radical Knitting Circle:
@@ -216,7 +230,8 @@ $5 Cover',
     'location' => '',
     'summary' => 'Radical Knitting Circle',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MThnMDMwdDYybXZ1ajk0azQxYjgyY2YzMHNfMjAxMTAzMDZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=MThnMDMwdDYybXZ1ajk0azQxYjgyY2YzMHNfMjAxMTAzMDZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Todd Clouser\'s A Love Electric
@@ -229,7 +244,8 @@ www.toddclouser.com',
     'location' => '',
     'summary' => 'Todd Clouser\'s A Love Electric',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAzMDQgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAzMDQgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'BaoBao Festival:
@@ -242,7 +258,8 @@ www.baobaofest.org',
     'location' => '',
     'summary' => 'BaoBao Festival',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAzMDIgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAzMDIgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Three Squared:
@@ -255,7 +272,8 @@ http://www.myspace.com/thr33squared',
     'location' => '',
     'summary' => 'Three Squared',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAyMjcgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAyMjcgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Jah Spirits:
@@ -266,7 +284,8 @@ Jah Spirits is a newly formed band with original reggae tunes by Kelly Poindexte
     'location' => '',
     'summary' => 'Jah Spirit',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAyMTcgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAyMTcgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Signel-Z:
@@ -281,7 +300,8 @@ http://www.myspace.com/signelz',
     'location' => '',
     'summary' => 'Signel-Z',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAyMjUgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAyMjUgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => '',
@@ -290,7 +310,8 @@ http://www.myspace.com/signelz',
     'location' => '',
     'summary' => 'Opener TBA',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTAyMTggdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTAyMTggdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Steve Hoffman and the Organic Roots:
@@ -303,7 +324,8 @@ www.myspace.com/organicrootsband',
     'location' => '',
     'summary' => 'Steve Hoffman and the Organic Roots',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAyMjQgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAyMjQgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Jami Lynn
@@ -317,7 +339,8 @@ http://www.myspace.com/jamlyn',
     'location' => '',
     'summary' => 'Jami Lynn',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAyMjMgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAyMjMgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents: Jack Collom & Reed Bye
@@ -332,7 +355,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents: Jack Collom & Reed Bye Laughing Goat 5 year anniversary',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMjJUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMjJUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Koffi Toudji:
@@ -348,7 +372,8 @@ www.koffi.us',
     'location' => '',
     'summary' => 'Koffi Toudji',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAyMTkgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAyMTkgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Marc Perreault:
@@ -361,7 +386,8 @@ www.last.fm/music/The+New+Madrid',
     'location' => '',
     'summary' => 'Marc Perreault',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTAyMjUgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTAyMjUgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Jarrad Menard Quartet:
@@ -374,7 +400,8 @@ www.reverbnation.com/jarradmenard',
     'location' => '',
     'summary' => 'Jarrad Menard',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bm9ucmw0dDZmaDF0cDh1bGprbmc0czFlOTQgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bm9ucmw0dDZmaDF0cDh1bGprbmc0czFlOTQgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents Saint Valentine\'s Day Open Poetry Readng:
@@ -388,7 +415,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents Saint Valentine\'s Day Open Poetry Readng',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMTVUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMTVUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Dustin Edge
@@ -414,7 +442,8 @@ http://www.dustinedge.com',
     'location' => '',
     'summary' => 'Dustin Edge',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAyMjYgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAyMjYgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Mythica:
@@ -427,7 +456,8 @@ www.MythicaMusic.com',
     'location' => '',
     'summary' => 'Mythica',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAyMTEgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAyMTEgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Cowgirl Radio:
@@ -447,7 +477,8 @@ http://www.youtube.com/watch?v=_mX3yn8PIJI',
     'location' => '',
     'summary' => 'Cowgirl Radio',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bGVtdGRpNnAxYWltajFic2RzY3JxYzZxN3MgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bGVtdGRpNnAxYWltajFic2RzY3JxYzZxN3MgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Lindsay Meredith:
@@ -460,7 +491,8 @@ www.myspace.com/lindsaymeredithmusic',
     'location' => '',
     'summary' => 'Lindsay Meredith',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAyMTAgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAyMTAgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Jared Bartman:
@@ -480,7 +512,8 @@ www.dastardlytheband.com',
     'location' => '',
     'summary' => 'Jared Bartman & Dastardly',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAyMDkgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAyMDkgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Ryne Doughty:
@@ -495,7 +528,8 @@ www.myspace.com/rynedoughtymusic',
     'location' => '',
     'summary' => 'Ryne Doughty',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAyMDkgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAyMDkgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents Tim Z. Hernandez & extra special guests:
@@ -509,7 +543,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents Tim Z. Hernandez & extra special guests',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMDhUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMDhUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Logo Ligi African Dance:
@@ -523,7 +558,8 @@ www.logoligi.com',
     'location' => '',
     'summary' => 'Logo Ligi African Dance Ensemble',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAyMDYgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAyMDYgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Pete Kartsounes:
@@ -536,7 +572,8 @@ http://petekmusic.com',
     'location' => '',
     'summary' => 'Pete Kartsounes TRIO',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAyMDUgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAyMDUgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Mawue Mensah CD release party
@@ -549,7 +586,8 @@ www.mawuemensah.com',
     'location' => '',
     'summary' => 'Mawue Mensah CD release party',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAyMDQgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAyMDQgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Danny Meyer Quartet:
@@ -562,7 +600,8 @@ www.Danny-Meyer.com',
     'location' => '',
     'summary' => 'Danny Meyer Quartet',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAyMDIgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAyMDIgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Cahalen Morrison:
@@ -575,7 +614,8 @@ www.cahalen.com',
     'location' => '',
     'summary' => 'Cahalen Morrison & Eli West',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dThtN2c0ODJyNzY0Z2cwZzRiZzZkcXUwMGdfMjAxMTAxMzAgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=dThtN2c0ODJyNzY0Z2cwZzRiZzZkcXUwMGdfMjAxMTAxMzAgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Davis Jones:
@@ -588,7 +628,8 @@ www.davisjonesmusic.com',
     'location' => '',
     'summary' => 'Davis Jones',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAxMzAgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAxMzAgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Maximiliano Nealon (with special guest Jerry Hunter):
@@ -601,7 +642,8 @@ www.MaxNealon.com',
     'location' => '',
     'summary' => 'Maximiliano Nealon (with special guest Jerry Hunter)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAxMjkgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAxMjkgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Jeff Lambert and J.C. McKim:
@@ -614,7 +656,8 @@ www.myspace.com/jlamb12',
     'location' => '',
     'summary' => 'Jeff Lambert and J.C. McKim',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAxMjkgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAxMjkgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Danny Shafer:
@@ -629,7 +672,8 @@ www.dannyshafer.com',
     'location' => '',
     'summary' => 'Danny Shafer',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAxMjggdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAxMjggdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Erik Deutsch:
@@ -640,7 +684,8 @@ www.hammerandstring.com',
     'location' => '',
     'summary' => 'Erik Deutsch',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAxMjcgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAxMjcgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Greybeard
@@ -651,7 +696,8 @@ Fully immersed in the celtic music traditions of Ireland, Scotland and Nova Scot
     'location' => '',
     'summary' => 'Greybeard',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAxMjYgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAxMjYgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Kristi Stice:
@@ -664,7 +710,8 @@ www.krististice.com',
     'location' => '',
     'summary' => 'Kristi Stice',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAxMjMgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAxMjMgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Chris Webb:
@@ -715,7 +762,8 @@ prepare to record their first record around the spring of 2011.
     'location' => '',
     'summary' => 'Chris Webb, & Travel | By | Skylark',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAxMjIgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAxMjIgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => "Dechen Hawk & A Murder of Prose:
@@ -728,7 +776,8 @@ www.dechenhawk.com",
     'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTAxMjJUMDQzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTAxMjJUMDQzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The Key of Joy
@@ -741,7 +790,8 @@ www.thekeyofjoy.com',
     'location' => '',
     'summary' => 'The Key of Joy',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTAxMjEgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cW9uM3FubXV1aHM4MTBobzZxaDhnNjdwbjhfMjAxMTAxMjEgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Story and Clark:
@@ -754,7 +804,8 @@ www.myspace.com/storyclark',
     'location' => '',
     'summary' => 'Story and Clark',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAxMjAgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWRibWQxaXZoZzJoZmhxYzB2YTZlbmp2Z29fMjAxMTAxMjAgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Philip Gibbs:
@@ -767,7 +818,8 @@ www.myspace.com/philipgibbs',
     'location' => '',
     'summary' => 'Philip Gibbs',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAxMTkgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAxMTkgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Against My Own Hand
@@ -781,7 +833,8 @@ www.myspace.com/solnceveraostrova',
     'location' => '',
     'summary' => 'Against My Own Hand',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAxMTYgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=dGgxdG9ydjc5OGtrMGJmcDJpanVhcGtzdGdfMjAxMTAxMTYgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Idlewhile:
@@ -794,7 +847,8 @@ www.myspace.com/idlewhileband',
     'location' => '',
     'summary' => 'Idlewhile',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAxMTUgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cXAxY2FuMjQwbGRucnVtamE0YjZuMDZicmdfMjAxMTAxMTUgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Emily Bedal:
@@ -805,7 +859,8 @@ Heartfelt, soulful music from a beautiful woman. And it\'s her 21st Birthday cel
     'location' => '',
     'summary' => 'Emily Bedal',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAxMTUgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZmlndTR2YTIwZTBmMHEwdTNmdW9tdmE2OGdfMjAxMTAxMTUgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Mountain Trance Medicine Band:
@@ -825,7 +880,8 @@ www.MountainTrance.net',
     'location' => '',
     'summary' => 'Mountain Trance Medicine Band',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAxMTQgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=bmUxNWs0Z2diOW5xM3YyYzl1cmNjZmUxY2dfMjAxMTAxMTQgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'The Twinberries (happy hour show):
@@ -840,7 +896,8 @@ The Twinberries play all sorts of jazz music and also write some originals.',
     'location' => '',
     'summary' => 'The Twinberries (happy hour show)',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=cDcxcnU5ZHNpdWhwaWhoYXRrMnVjcHFjZTQgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=cDcxcnU5ZHNpdWhwaWhoYXRrMnVjcHFjZTQgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'On the Sly of Buffalo, NY featuring members of the SAAKUMU Dance Troupe of Ghana, West Africa
@@ -857,7 +914,8 @@ $3 cover',
     'location' => '',
     'summary' => 'On the Sly of Buffalo, NY featuring members of the SAAKUMU Dance Troupe of Ghana, West Africa',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAxMTMgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YTRpMXAzb2Fnc2VybW5mMWhsNTgwZ2JvOTBfMjAxMTAxMTMgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Steve Waitt:
@@ -870,7 +928,8 @@ www.stevewaitt.com',
     'location' => '',
     'summary' => 'Steve Waitt',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAxMTIgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=YnFqNGU5Y2lzYjBnYmFvajA4NzE4OGRrYWtfMjAxMTAxMTIgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Kristina Murray & Jamie Davis
@@ -894,7 +953,8 @@ www.myspace.com/kristinamurray',
     'location' => '',
     'summary' => 'Kristina Murray & Jamie Davis',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAxMTIgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWwzNWNtcmloaGUxNGhsZGYzaHIzMG1zYjRfMjAxMTAxMTIgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Eyes of Infinity ~ A Collection of Work by Krystleyez
@@ -915,7 +975,8 @@ http://www.facebook.com/event.php?eid=175682979133203',
     'location' => '',
     'summary' => 'Eyes of Infinity ~ A Collection of Work by Krystleyez',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=anVyMHZ0YmRocGt2cnA3am9wc21yZnVuZjAgdGhlbGF1Z2hpbmdnb2F0QG0'
+    'url' => 'https://www.google.com/calendar/event?eid=anVyMHZ0YmRocGt2cnA3am9wc21yZnVuZjAgdGhlbGF1Z2hpbmdnb2F0QG0',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Ginga:
@@ -930,7 +991,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTAyMDRUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTAyMDRUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Ginga:
@@ -945,7 +1007,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTAzMDRUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTAzMDRUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Ginga:
@@ -960,7 +1023,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA0MDhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA0MDhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Ginga:
@@ -975,7 +1039,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA1MDZUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA1MDZUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Ginga:
@@ -990,7 +1055,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA2MDNUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA2MDNUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Ginga:
@@ -1005,7 +1071,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA3MDhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA3MDhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1020,7 +1087,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMTJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMTJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1035,7 +1103,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMTlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMTlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1050,7 +1119,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMjZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMjZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1065,7 +1135,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMDJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMDJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1080,7 +1151,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMDlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMDlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1095,7 +1167,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMTZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMTZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1110,7 +1183,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMjNUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAyMjNUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1125,7 +1199,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMDJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMDJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1140,7 +1215,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMDlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMDlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1155,7 +1231,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMTZUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMTZUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1170,7 +1247,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMjNUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMjNUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1185,7 +1263,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMzBUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAzMzBUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1200,7 +1279,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MDZUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MDZUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1215,7 +1295,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MTNUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MTNUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1230,7 +1311,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MjBUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MjBUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1245,7 +1327,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MjdUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA0MjdUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1260,7 +1343,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MDRUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MDRUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1275,7 +1359,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MTFUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MTFUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1290,7 +1375,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MThUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MThUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1305,7 +1391,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MjVUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA1MjVUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1320,7 +1407,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MDFUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MDFUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1335,7 +1423,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MDhUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MDhUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1350,7 +1439,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MTVUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MTVUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1365,7 +1455,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MjJUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MjJUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1380,7 +1471,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MjlUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA2MjlUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'Supercollider:
@@ -1395,7 +1487,8 @@ $5 cover',
     'location' => '',
     'summary' => 'Jazz Night w/ Supercollider',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA3MDZUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTA3MDZUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => "Dechen Hawk & A Murder of Prose:
@@ -1408,7 +1501,8 @@ www.dechenhawk.com",
     'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTAyMTlUMDQzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTAyMTlUMDQzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => "Dechen Hawk & A Murder of Prose:
@@ -1421,7 +1515,8 @@ www.dechenhawk.com",
     'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTAzMTlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTAzMTlUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => "Dechen Hawk & A Murder of Prose:
@@ -1434,7 +1529,8 @@ www.dechenhawk.com",
     'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTA0MTZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTA0MTZUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => "Dechen Hawk & A Murder of Prose:
@@ -1447,7 +1543,8 @@ www.dechenhawk.com",
     'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTA1MjFUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTA1MjFUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => "Dechen Hawk & A Murder of Prose:
@@ -1460,7 +1557,8 @@ www.dechenhawk.com",
     'location' => '',
     'summary' => 'Dechen Hawk & A Murder of Prose',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTA2MThUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=MmR1djR1bTcyaWdkb2hnajZhM250amNydnNfMjAxMTA2MThUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'WadiRum:
@@ -1483,7 +1581,8 @@ http://www.myspace.com/wadirum',
     'location' => '',
     'summary' => 'Wadirum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWJobmtjdTduaTAxazA4OGEzMTB1NXBzbDRfMjAxMTAzMTNUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWJobmtjdTduaTAxazA4OGEzMTB1NXBzbDRfMjAxMTAzMTNUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'WadiRum:
@@ -1506,7 +1605,8 @@ http://www.myspace.com/wadirum',
     'location' => '',
     'summary' => 'Wadirum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWJobmtjdTduaTAxazA4OGEzMTB1NXBzbDRfMjAxMTA1MTVUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWJobmtjdTduaTAxazA4OGEzMTB1NXBzbDRfMjAxMTA1MTVUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => 'WadiRum:
@@ -1529,7 +1629,8 @@ http://www.myspace.com/wadirum',
     'location' => '',
     'summary' => 'Wadirum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=ZWJobmtjdTduaTAxazA4OGEzMTB1NXBzbDRfMjAxMTA3MTBUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=ZWJobmtjdTduaTAxazA4OGEzMTB1NXBzbDRfMjAxMTA3MTBUMDIzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1543,7 +1644,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAxMThUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAxMThUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1557,7 +1659,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAxMjVUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAxMjVUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1571,7 +1674,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMDFUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAyMDFUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1585,7 +1689,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMDFUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMDFUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1599,7 +1704,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMDhUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMDhUMDMwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1613,7 +1719,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMTVUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMTVUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1627,7 +1734,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMjJUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMjJUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1641,7 +1749,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMjlUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTAzMjlUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1655,7 +1764,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MDVUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MDVUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1669,7 +1779,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MTJUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MTJUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1683,7 +1794,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MTlUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MTlUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1697,7 +1809,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MjZUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA0MjZUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1711,7 +1824,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MDNUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MDNUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1725,7 +1839,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MTBUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MTBUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1739,7 +1854,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MTdUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MTdUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1753,7 +1869,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MjRUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MjRUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1767,7 +1884,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MzFUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA1MzFUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1781,7 +1899,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MDdUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MDdUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1795,7 +1914,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MTRUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MTRUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1809,7 +1929,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MjFUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MjFUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1823,7 +1944,8 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MjhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA2MjhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   },
   {
     'description' => '\'\'So, You\'re a Poet,\'\' presents an open poetry reading:
@@ -1837,6 +1959,7 @@ The series currently takes place in the new Laughing Goat Coffeehouse, which has
     'location' => '',
     'summary' => '"So, You\'re a Poet," presents an open poetry reading',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA3MDVUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ'
+    'url' => 'https://www.google.com/calendar/event?eid=aTh1ZHVrdm1maWFsNmRmNjBsbW9zb2I1azBfMjAxMTA3MDVUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
+    'venue' => 'caffesole'
   }
 ]
