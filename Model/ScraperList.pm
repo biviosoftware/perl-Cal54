@@ -16,15 +16,17 @@ sub internal_initialize {
     return $self->merge_initialize_info($self->SUPER::internal_initialize, {
         version => 1,
 	primary_key => [
-	    [qw(Scraper.scraper_id Website.realm_id)],
+	    [qw(Scraper.scraper_id Website.realm_id
+		scraper.RealmOwner.realm_id)],
 	],
 	other => [qw(
 	    Scraper.scraper_aux
 	    Scraper.default_venue_id
+	    scraper.RealmOwner.name
 	)],
 	order_by => [qw(
-	    RealmOwner.display_name
-	    RealmOwner.name
+	    default_venue.RealmOwner.display_name
+	    default_venue.RealmOwner.name
 	    Website.url
 	    Scraper.scraper_type
 	)],
@@ -34,8 +36,8 @@ sub internal_initialize {
 sub internal_prepare_statement {
     my($self, $stmt) = @_;
     $stmt->from(
-	$stmt->LEFT_JOIN_ON(qw(Scraper RealmOwner), [
-	    [qw(Scraper.default_venue_id RealmOwner.realm_id)],
+	$stmt->LEFT_JOIN_ON(qw(Scraper default_venue.RealmOwner), [
+	    [qw(Scraper.default_venue_id default_venue.RealmOwner.realm_id)],
 	]),
     );
     return;
