@@ -16,6 +16,8 @@ my($_FP) = b_use('Type.FilePath');
 my($_HTML) = b_use('Bivio.HTML');
 my($_L) = b_use('IO.Log');
 my($_R) = b_use('IO.Ref');
+my($_RO) = b_use('Model.RealmOwner');
+my($_RT) = b_use('Auth.RealmType');
 my($_S) = b_use('Type.String');
 my($_T) = b_use('Agent.Task');
 #TODO: Make a RowTag
@@ -92,8 +94,6 @@ sub do_one {
 
 sub eval_scraper_aux {
     my($self) = @_;
-    return $self->get('scraper_aux')
-	if $self->unsafe_get('scraper_aux');
     my($aux) = $self->get('scraper_list')->get('Scraper.scraper_aux');
     return {} unless $aux;
     my($res) = eval($aux);
@@ -105,6 +105,15 @@ sub eval_scraper_aux {
 
 sub get_request {
     return shift->get('req');
+}
+
+sub get_scraper_aux {
+    my($self) = @_;
+    return $self->get('scraper_aux')
+	if $self->unsafe_get('scraper_aux');
+    my($res) = $self->eval_scraper_aux;
+    $self->put(scraper_aux => $res);
+    return $res
 }
 
 sub internal_catch {
@@ -212,12 +221,12 @@ sub internal_update {
 	$refresh->{$key} = $event;
 	unless ($e = delete($curr->{$key})) {
 	    $ce->create_from_vevent($event);
-	    _link_event_to_venue($self, $ce);
+	    _link_event_to_venue($self, $ce, $event);
 	    $add_count++;
 	    next;
 	}
 	$ce->load_from_properties($e)->update_from_vevent($event);
-	_link_event_to_venue($self, $ce);
+	_link_event_to_venue($self, $ce, $event);
     }
     my($curr_count) = scalar(keys(%$curr));
     my($new_count) = scalar(@{$self->get('events')});
@@ -260,7 +269,7 @@ sub _filter_event {
 
 sub _filter_events {
     my($self) = @_;
-    my($aux) = $self->eval_scraper_aux;
+    my($aux) = $self->get_scraper_aux;
     my($events) = [];
 
     foreach my $event (@{$self->get('events')}) {
@@ -268,6 +277,8 @@ sub _filter_events {
 	$event->{time_zone} ||= $self->get('time_zone');
 	next unless _filter_event($self, 'accept', $event, $aux);
 	next if _filter_event($self, 'reject', $event, $aux);
+	$event->{venue} = _venue_name_for_event($self, $event);
+	next unless $event->{venue};
 	push(@$events, $event);
     }
     $self->put(events => $events);
@@ -275,11 +286,10 @@ sub _filter_events {
 }
 
 sub _link_event_to_venue {
-    my($self, $ce) = @_;
+    my($self, $ce, $event) = @_;
     $_VE->new($self->req)->unauth_create_or_update({
-	venue_id =>
-	    $self->get('scraper_list')->get('Scraper.default_venue_id'),
 	calendar_event_id => $ce->get('calendar_event_id'),
+	venue_id => _venue_id_from_name($self, $event->{venue}),
     });
     return;
 }
@@ -307,6 +317,33 @@ sub _log_base {
     my($self, $suffix) = @_;
     $self->put(log_index => 1 + (my $li = $self->get('log_index')));
     return sprintf('%04d', $li) . ($suffix || '.html');
+}
+
+sub _venue_id_from_name {
+    my($self, $name) = @_;
+    my($names) = $self->get_if_defined_else_put('venue_ids', {});
+    return $names->{$name}
+	||= $_RO->new($self->req)->unauth_load_or_die({
+	    name => $name,
+	    realm_type => $_RT->VENUE,
+	})->get('realm_id');
+}
+
+sub _venue_name_for_event {
+    my($self, $event) = @_;
+    my($aux) = $self->get_scraper_aux;
+    my($venue_name);
+
+    if ($aux->{location_to_venue} && $event->{location}) {
+
+	foreach my $regexp (keys(%{$aux->{location_to_venue}})) {
+	    next unless ($event->{location} || '') =~ $regexp;
+	    $venue_name = $aux->{location_to_venue}->{$regexp};
+	    last;
+	}
+    }
+    return $venue_name
+	|| $self->get('scraper_list')->get('default_venue.RealmOwner.name');
 }
 
 1;
