@@ -21,12 +21,12 @@ sub internal_import {
 	    summary => $item->{title},
 	    url => $item->{link},
 	};
-	$self->extract_once_fields($self->eval_scraper_aux,
+	$self->extract_once_fields($self->get_scraper_aux,
             \($item->{description}), $current);
 	push(@{$self->get('events')}, {
 	    %{$self->internal_collect_data($current)},
 	    location => $current->{location},
-	});
+	}) if $current->{summary};
     }
     return;
 }

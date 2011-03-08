@@ -46,11 +46,11 @@ sub _add_event {
 	    }],
 	],
     }'), $text, $current);
-    $self->extract_once_fields($self->eval_scraper_aux, $text, $current);
+    $self->extract_once_fields($self->get_scraper_aux, $text, $current);
     push(@{$self->get('events')}, {
 	%{$self->internal_collect_data($current)},
 	location => $current->{location},
-    });
+    }) if $current->{summary};
     return;
 }
 
