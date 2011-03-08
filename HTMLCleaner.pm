@@ -59,6 +59,13 @@ sub clean_html {
     return \($fields->{text} . "\n");
 }
 
+sub clean_text {
+    my($proto, $text) = @_;
+    # clean order is important because unescape() will mangle utf-8
+    return $_S->canonicalize_charset(
+	$_HTML->unescape(${$_S->canonicalize_charset($text)}));
+}
+
 sub get_link_for_text {
     my($self, $text) = @_;
     my($url) = $self->unsafe_get_link_for_text($text);
@@ -159,7 +166,7 @@ sub _append_text {
 	$fields->{text} =~ /\s$/ || $fields->{text} eq ''
 	    ? ''
 	    : ($leading_white ? ' ' : ''),
-	${$_S->canonicalize_charset($_HTML->unescape($text))},
+	${$self->clean_text(\$text)},
 	$trailing_white ? ' ' : '',
     );
     $fields->{text} .= $value;
