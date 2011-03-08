@@ -91,7 +91,7 @@ my($_SELF) = __PACKAGE__->new({
 	    default_venue_id => 'Default Venue',
 	]],
 	[ScraperList => [
-	    'RealmOwner.display_name' => 'Default Venue',
+	    'default_venue.RealmOwner.display_name' => 'Default Venue',
 	]],
 	[[qw(VenueList VenueForm)] => [
 	    'Website.url' => 'Home Page',
