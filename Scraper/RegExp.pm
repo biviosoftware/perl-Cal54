@@ -22,7 +22,7 @@ sub eval_scraper_aux {
 	|| b_die('scraper missing scraper_aux');
     my($date) = qr{\b(\d+/\d+/\d{4})\b};
     my($year) = qr/\b(20[1-2][0-9])\b/;
-    my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)\.?m\.?)\b/i;
+    my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)\.?m\.?)/i;
     my($time) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?)\b/i;
     my($day_name) = _day_name_regexp();
     my($month) = _month_regexp();
@@ -46,6 +46,28 @@ sub extract_once_fields {
     return;
 }
 
+sub extract_repeat_fields {
+    my($self, $cfg, $text, $current, $op) = @_;
+    my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
+
+    foreach my $info (@{$cfg->{repeat} || []}) {
+	my($regexp, $args) = @$info;
+	my($size) = length($$text);
+
+	while ($$text =~ s/$regexp/_save_text($self, $args->{fields})/e) {
+
+	    if (length($$text) == $size) {
+		b_warn('no text change on repeat');
+		last;
+	    }
+	    $size = length($$text);
+	    _add_field_values($self, $args->{fields}, $current);
+	    $op->($self, $args, $current);
+	}
+    }
+    return;
+}
+
 sub internal_collect_data {
     my($self, $current) = @_;
 
@@ -59,6 +81,7 @@ sub internal_collect_data {
 	$current->{url} ? (url => $current->{url}) : (),
 	dtstart => _date($self, 'start', $current),
 	dtend => _date($self, 'end', $current),
+	location => $current->{location},
     };
     return $rec;
 }
@@ -146,53 +169,42 @@ sub _process_url {
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
     my($text) = $cleaner->clean_html($self->c4_scraper_get($url), $url);
     $self->extract_once_fields($cfg, $text, $current);
+    $self->extract_repeat_fields($cfg, $text, $current, sub {
+        my($self, $args, $current) = @_;
 
-    foreach my $info (@{$cfg->{repeat} || []}) {
-	my($regexp, $args) = @$info;
-	my($size) = length($$text);
+	if ($args->{follow_link}) {
+	    my($url) = $cleaner->unsafe_get_link_for_text(
+		$current->{link} || $current->{summary});
 
-	while ($$text =~ s/$regexp/_save_text($self, $args->{fields})/e) {
-
-	    if (length($$text) == $size) {
-		b_warn('no text change on repeat');
-		last;
+	    if ($url) {
+		_process_url($self, $args->{follow_link}, $url, $current);
+		$current->{url} ||= $url;
 	    }
-	    $size = length($$text);
-
-	    _add_field_values($self, $args->{fields}, $current);
-
-	    if ($args->{follow_link}) {
-		my($url) = $cleaner->unsafe_get_link_for_text(
-		    $current->{link} || $current->{summary});
-
-		if ($url) {
-		    _process_url($self, $args->{follow_link}, $url, $current);
-		    $current->{url} ||= $url;
-		}
-	    }
-	    if ($args->{summary_from_description} && $current->{description}) {
-		($current->{summary}) = $current->{description} =~
-		    $args->{summary_from_description};
-	    }
-	    if ($current->{url}) {
-		$current->{url} = $cleaner->get_link_for_text(
-		    $current->{url})
-		    if $current->{url} =~ /\{/;
-	    }
-	    else {
-		$current->{url} =
-		    $cleaner->unsafe_get_link_for_text($current->{summary})
-		    if $current->{summary};
-	    }
-	    push(@{$self->get('events')}, 
-		$self->internal_collect_data($current))
-		if $current->{summary};
-	    delete($current->{summary});
-	    delete($current->{description});
-	    delete($current->{link});
-	    delete($current->{url});
 	}
-    }
+	if ($args->{summary_from_description} && $current->{description}) {
+	    ($current->{summary}) = $current->{description} =~
+		$args->{summary_from_description};
+	}
+	if ($current->{url}) {
+	    $current->{url} = $cleaner->get_link_for_text(
+		$current->{url})
+		if $current->{url} =~ /\{/;
+	}
+	else {
+	    $current->{url} =
+		$cleaner->unsafe_get_link_for_text($current->{summary})
+		    if $current->{summary};
+	}
+	push(@{$self->get('events')}, 
+	     $self->internal_collect_data($current))
+	    if $current->{summary};
+	delete($current->{summary});
+	delete($current->{description});
+	delete($current->{link});
+	delete($current->{url});
+	delete($current->{location});
+	return;
+    });				     
 
     if ($cfg->{pager} && --$cfg->{pager}->{page_count} > 0) {
 	my($regexp) = $cfg->{pager}->{link};
