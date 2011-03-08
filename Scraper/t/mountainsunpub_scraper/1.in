@@ -1,0 +1,82 @@
+[
+  {
+    'description' => 'The Congress, initially formed by guitarist Scott Lane and vocalist/guitarist Jonathan Meadows, blends feel-good American music and authentic Southern R&B to produce a fresh Rock sound in an industry of puzzling sub-genres. The group\'s sound is carried by the true strength of Meadows\' tenor voice, which glides over a decidedly modern groove with a nod to the vintage Virginia traditions that seep from their lyrics. Meadows and Lane have both toured extensively throughout the east coast but were drawn to Denver due to it\'s proximity to the Rocky Mountains and it\'s burgeoning music scene.',
+    'dtend' => '2455628 18000',
+    'dtstart' => '2455628 18000',
+    'location' => ' Mountain Sun',
+    'summary' => 'The Congress',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.mountainsunpub.com/BosDatesLite200/event.php?event=826',
+    'venue' => 'mountainsun'
+  },
+  {
+    'description' => 'Emerging from a long tradition of gypsy circus troubadours come the solar- powered travelers: carriers of a new musical light; Taarka. This merry band is the culmination of the new millennial, sonic adventures of David Tiller (mandolin, tenor guitar, vocals), Enion Pelta-Tiller (five string violin, vocals), Daniel Plane (cello, vocals), Troy Robey (bass, vocals), and Dale Largent (percussion) - a virtuosic cadre of performers who have roamed the freeways and backroads of the new and old acoustic caravan trail in search of a revolutionary ancient sound for modern times.',
+    'dtend' => '2455629 18000',
+    'dtstart' => '2455629 18000',
+    'location' => ' Southern Sun',
+    'summary' => 'TAARKA',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.mountainsunpub.com/BosDatesLite200/event.php?event=828',
+    'venue' => 'southernsun'
+  },
+  {
+    'description' => '"The great thing about Spring Creek is that when they take the stage, not only does the audience know they are going to hear great music, but they know that the respect for the bluegrass soul factor is alive and well in this band." Sally Van Meter, Record producer & Grammy winning musician',
+    'dtend' => '2455635 14400',
+    'dtstart' => '2455635 14400',
+    'location' => ' Mountain Sun',
+    'summary' => 'Spring Creek Bluegrass',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.mountainsunpub.com/BosDatesLite200/event.php?event=836',
+    'venue' => 'mountainsun'
+  },
+  {
+    'description' => 'An incredibly talented multi-instrumentalist, dedicated performer, prolific songwriter, gifted and expressive vocalist, Kort McCumber has wandered beyond good and into the elusive land of great. More than a decade into his musical pilgrimage, he continues to define, and redefine, his sound, his persona, his love for music and his unwavering commitment to bringing good music, "no make that great" music, to listeners throughout the United States, Europe and Australia. And, as with any true pilgrimage, it\'s not merely about defining and redefining, but more about discovering and rediscovering the person behind the persona.',
+    'dtend' => '2455636 14400',
+    'dtstart' => '2455636 14400',
+    'location' => ' Southern Sun',
+    'summary' => 'Kort McCumber',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.mountainsunpub.com/BosDatesLite200/event.php?event=830',
+    'venue' => 'southernsun'
+  },
+  {
+    'description' => 'THUNK is an original Americana Rock band from Boulder, Colorado. Weaving three-part vocal harmonies into energetic rock and roll jams one moment, dropping into captivating, atmospheric Americana ballads the next; THUNK draws the audience in with charisma and fun.',
+    'dtend' => '2455642 14400',
+    'dtstart' => '2455642 14400',
+    'location' => ' Mountain Sun',
+    'summary' => 'THUNK',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.mountainsunpub.com/BosDatesLite200/event.php?event=831',
+    'venue' => 'mountainsun'
+  },
+  {
+    'description' => 'Selah Dubb is plunging into a 2010 with heavy momentum and a focused mission. This funky right and tight trio has dramatically stepped up the pace now that they have officially relocated to the Carolina coast. Wrapping up their 2009 tour on the most high vibes while distributing over 6,000 copies of their 2009 release Vibe Up!, the rock steady crew has locked down solid support from friends and fans across the Carolinas making waves for the ultimate breakout in 2010. Selah Dubb has locally revived the surf reggae movement with their "Sublime meets Bob Marley" sound clash, best described as high-energy roots reggae.',
+    'dtend' => '2455643 14400',
+    'dtstart' => '2455643 14400',
+    'location' => ' Southern Sun',
+    'summary' => 'Selah Dubb',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.mountainsunpub.com/BosDatesLite200/event.php?event=834',
+    'venue' => 'southernsun'
+  },
+  {
+    'description' => 'Magnolia Row blends the songwriting of old with a variety of rhythms using exotic hybrid bluegrass instruments. The band has become a fixture in the Boulder/Denver club scene and has featured some of the finest musicians that the area has to offer. Magnolia Row\'s members are all veteran performers with many combined years of experience.',
+    'dtend' => '2455649 14400',
+    'dtstart' => '2455649 14400',
+    'location' => ' Mountain Sun',
+    'summary' => 'Magnolia Row',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.mountainsunpub.com/BosDatesLite200/event.php?event=833',
+    'venue' => 'mountainsun'
+  },
+  {
+    'description' => 'City City is multifaceted. It feeds on diversity. It also feeds on pizza. Did we mention pizza? Because that\'s pretty important. The formally trained band members have a passion for travel, non-profit work, and educational involvement. They also leap out of burning buildings with armfuls of puppies and small children on a regular basis.',
+    'dtend' => '2455650 14400',
+    'dtstart' => '2455650 14400',
+    'location' => ' Southern Sun',
+    'summary' => 'City City',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.mountainsunpub.com/BosDatesLite200/event.php?event=835',
+    'venue' => 'southernsun'
+  }
+]
