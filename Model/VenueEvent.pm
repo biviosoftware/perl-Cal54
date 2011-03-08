@@ -12,8 +12,8 @@ sub internal_initialize {
         version => 1,
 	table_name => 'venue_event_t',
         columns => {
-	    venue_id => ['Venue.venue_id', 'PRIMARY_KEY'],
 	    calendar_event_id => ['CalendarEvent.calendar_event_id', 'PRIMARY_KEY'],
+	    venue_id => ['Venue.venue_id', 'NOT_NULL'],
 	},
 	auth_id => 'calendar_event_id',
 	other => [
