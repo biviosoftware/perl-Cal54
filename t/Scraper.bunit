@@ -29,6 +29,7 @@ my($now) = Date('1/15/2011');
 			    time_zone => TimeZone()->AMERICA_DENVER,
 			    url => 'http://bunit.test/' . random_string(),
 			    description => random_string(),
+			    venue => 'boulderado',
 			},
 			@$params,
 		    )],
