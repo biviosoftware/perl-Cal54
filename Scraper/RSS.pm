@@ -23,11 +23,28 @@ sub internal_import {
 	};
 	$self->extract_once_fields($self->get_scraper_aux,
             \($item->{description}), $current);
-	push(@{$self->get('events')}, {
-	    %{$self->internal_collect_data($current)},
-	    location => $current->{location},
-	}) if $current->{summary};
+
+	if ($self->get_scraper_aux->{repeat}) {
+	    $self->extract_repeat_fields($self->get_scraper_aux,
+	        \($item->{description}), $current, sub {
+		    my($self, $args, $current) = @_;
+		    _add_event($self, $current);
+		    return;
+	        });
+		
+	}
+	else {
+	    _add_event($self, $current);
+	}
     }
+    return;
+}
+
+sub _add_event {
+    my($self, $current) = @_;
+    push(@{$self->get('events')}, {
+	%{$self->internal_collect_data($current)},
+    }) if $current->{summary};
     return;
 }
 
