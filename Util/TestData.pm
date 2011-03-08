@@ -45,18 +45,25 @@ sub init_scrapers {
     _iterate_csv($self, 'scrapers.csv', sub {
         my($v) = @_;
 	delete($v->{'Scraper.scraper_id'});
+	delete($v->{'Website.location'});
 	$v->{'Scraper.scraper_type'} =
 	    $_S->from_any($v->{'Scraper.scraper_type'});
-	$v->{'Scraper.default_venue_id'} = $v->{'RealmOwner.name'}
+	$v->{'Scraper.default_venue_id'} =
+	    $v->{'default_venue.RealmOwner.name'}
 	    ? $self->unauth_model('RealmOwner', {
-		name => $v->{'RealmOwner.name'},
+		name => $v->{'default_venue.RealmOwner.name'},
 	    })->get('realm_id')
 	    : undef;
 	$self->req->put(query =>
-	    $list->find_row_by('RealmOwner.name', $v->{'RealmOwner.name'})
+	    $list->find_row_by('Website.url', $v->{'Website.url'})
 		? $list->format_query('THIS_DETAIL')
 		: undef);
 	$self->model('ScraperForm', $v);
+	$self->unauth_model('RealmOwner', {
+	    realm_id => $self->req(qw(Model.Scraper scraper_id)),
+	})->update({
+	    name => $v->{'scraper.RealmOwner.name'},
+	}) if $v->{'scraper.RealmOwner.name'} =~ /\_/;
 	$self->req->clear_nondurable_state;
     });
     return;
