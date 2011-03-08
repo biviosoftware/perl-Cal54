@@ -31,8 +31,8 @@ CREATE TABLE venue_t (
 )
 /
 CREATE TABLE venue_event_t (
-  venue_id NUMERIC(18) NOT NULL,
   calendar_event_id NUMERIC(18) NOT NULL,
-  CONSTRAINT venue_event_t1 PRIMARY KEY(venue_id, calendar_event_id)
+  venue_id NUMERIC(18) NOT NULL,
+  CONSTRAINT venue_event_t1 PRIMARY KEY(calendar_event_id)
 )
 /
