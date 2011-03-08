@@ -65,7 +65,7 @@ sub internal_collect_data {
 
 sub internal_import {
     my($self) = @_;
-    _process_url($self, $self->eval_scraper_aux,
+    _process_url($self, $self->get_scraper_aux,
         $self->get('scraper_list')->get('Website.url'), {});
     return;
 }
