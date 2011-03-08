@@ -13,12 +13,11 @@ my($_CEFL) = b_use('Model.CalendarEventFilterList');
 my($_DT) = b_use('Type.DateTime');
 my($_F) = b_use('IO.File');
 my($_FP) = b_use('Type.FilePath');
-my($_HTML) = b_use('Bivio.HTML');
+my($_HC) = b_use('Bivio.HTMLCleaner');
 my($_L) = b_use('IO.Log');
 my($_R) = b_use('IO.Ref');
 my($_RO) = b_use('Model.RealmOwner');
 my($_RT) = b_use('Auth.RealmType');
-my($_S) = b_use('Type.String');
 my($_T) = b_use('Agent.Task');
 #TODO: Make a RowTag
 my($_TT) = b_use('Type.Text');
@@ -139,7 +138,7 @@ sub internal_catch {
 
 sub internal_clean {
     my($self, $value) = @_;
-    $value = ${$_S->canonicalize_charset($_HTML->unescape($value))},
+    $value = ${$_HC->clean_text(\$value)};
     $value =~ s{<.*?>}{ }sg;
     return $value;
 }
