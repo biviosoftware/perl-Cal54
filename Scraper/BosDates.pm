@@ -49,7 +49,6 @@ sub _add_event {
     $self->extract_once_fields($self->get_scraper_aux, $text, $current);
     push(@{$self->get('events')}, {
 	%{$self->internal_collect_data($current)},
-	location => $current->{location},
     }) if $current->{summary};
     return;
 }
