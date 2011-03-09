@@ -127,7 +127,7 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     summary => qr/^\s*$/,
   },
   repeat => [
-    [qr/(Live Music $month\:\n).*?\n\w+\s+$day\s*\w+,([^\n]+?)\($time\s*\-\s*$time_ap\.?\)\n/si => {
+    [qr/(Live Music $month\:\n).*?\n\w+\s+$day\s*\w+,([^\n]+?)\($time\s*\-\s*$time_ap\)\n/si => {
       fields => [qw(save month day summary start_time_pm end_time)],
     }],
   ],
