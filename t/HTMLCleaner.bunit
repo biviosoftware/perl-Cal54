@@ -63,6 +63,7 @@ table:
 <tr><td>cell3</td><td>cell4</td></tr>
   </table>
    more text    
+Bach’s at St. John&#8217;s
 </body></html>  
 EOF
 		=> [string_ref(<<'EOF')],
@@ -83,7 +84,7 @@ cell2
 cell3
 cell4
 
-more text
+more text Bach's at St. John's
 EOF
 	],
 	get_link_for_text => [
