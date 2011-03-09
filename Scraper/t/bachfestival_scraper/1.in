@@ -1,17 +1,7 @@
 [
   {
-    'description' => 'An engaging and informative symposium is scheduled for March 6, 2011, with Charley Samson, classical music radio host for KVOD Colorado Spotlight, as moderator.',
-    'dtend' => '2455627 84600',
-    'dtstart' => undef,
-    'location' => ' Atonement Lutheran Church, 685 Inca Pkwy, Boulder',
-    'summary' => 'Symposium: Bach and Sons: Legacy or Liability?',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://boulderbachfestival.org/index.php/site/calendar_details/135/',
-    'venue' => 'atonementluthern'
-  },
-  {
     'description' => 'Bach\'s magnificent Mass in B minor, considered one of the finest major choral works in Western music, at St. John\'s Cathedral. Robert Spillman, former music director and now interim music director for the Boulder Bach Festival, will conduct the performance. Timothy J. Krueger will prepare the festival chorus.',
-    'dtend' => '2455632 84600',
+    'dtend' => '2455633 9000',
     'dtstart' => '2455633 9000',
     'location' => ' St. John\'s Cathedral, 1350 Washington Street, Denver --Mass in B minor',
     'summary' => 'B Minor Mass in Denver',
@@ -21,7 +11,7 @@
   },
   {
     'description' => 'Bach\'s magnificent Mass in B minor is considered one of the finest major choral works in Western music. Robert Spillman, former music director and now interim music director for the Boulder Bach Festival, will conduct the performance. Timothy J. Krueger will prepare the festival chorus.',
-    'dtend' => '2455633 84600',
+    'dtend' => '2455634 9000',
     'dtstart' => '2455634 9000',
     'location' => ' First United Methodist Church, 1421 Spruce Street, Boulder --Mass in B minor',
     'summary' => 'B Minor Mass in Boulder',
