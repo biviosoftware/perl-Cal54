@@ -309,16 +309,6 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     qr/St. John's Cathedral/i => 'stjohns',
   },
   repeat => [
-    [qr/$month $day, $year, (\d+)\-$time_ap\n+([^\n]+?\})/is => {
-      fields => [qw(month day year start_time_pm end_time summary)],
-      follow_link => {
-          once => [
-            [qr/press release\{\d+\}\n+(.*)?where:(.*?)\n/is => {
-              fields => [qw(description location)],
-            }],
-          ],
-      },
-    }],
     [qr/$month $day, $year, $time_ap\n+([^\n]+?\})/is => {
       fields => [qw(month day year start_time_pm summary)],
       follow_link => {
@@ -328,7 +318,8 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
             }],
           ],
       },
-    }],  ],
+    }],
+  ],
 }
 ",3300022,RegExp,Home,http://www.boulderbachfestival.org/index.php/site/calendar/,,,,bachfestival_scraper
 ,"{
