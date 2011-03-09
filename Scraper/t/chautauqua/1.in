@@ -3,6 +3,7 @@
     'description' => 'Pete & Joan Wernick team with fellow musical couple, The Winstons, for a special Valentine\'s Concert and Sing-Along. The Wernicks are carrying forth a Valentine\'s tradition they began over ten years ago, now a highlight annual event. This year, they invite Boulder-based married duo, Cheryl & Andy Winston, to share the close-up stage of the stylishly quaint Community House. The duos perform music ranging from bluegrass to folk and pop. Pete says, "Count on a lot of harmony singing. Cheryl and Andy have such a pure blend. We\'ll each perform separate sets, then play all together including a sing-along of Valentine songs, with lyric sheets for the audience."',
     'dtend' => '2455606 10800',
     'dtstart' => '2455606 10800',
+    'location' => undef,
     'summary' => 'A Valentine\'s Concert & Sing-Along with Pete & Joan Wernick and The Winstons',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -11,6 +12,7 @@
     'description' => 'The first concert in the Colorado Music Festival\'s 2011 Chamber Music Series will feature members of the CMF summer orchestra performing Brahms\' Piano Trio in c-minor, Op 101; Piano Quintet in a minor, Op 38 (1898) by Arthur Foote (1853-1937) and the Copland Sonata for Violin and Piano. Sunho Km and Karen Galvin, violins; Borys Smolaga, viola; Guy Fishman, cello; Vivienne Spy, piano.',
     'dtend' => '2455620 75600',
     'dtstart' => '2455620 75600',
+    'location' => undef,
     'summary' => 'CMF Chamber Music Concert: Brahms, Foote, and Copland Part of Colorado Music Festival Chamber Music Series',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -19,6 +21,7 @@
     'description' => 'This "only at Chautauqua" experience features live musical accompaniment by Hank Troy on piano.',
     'dtend' => '2455610 9000',
     'dtstart' => '2455610 9000',
+    'location' => undef,
     'summary' => 'Son of the Sheik Starring Rudolph Valentino',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -27,6 +30,7 @@
     'description' => 'Anyone who longs for some good old-fashioned, sentimental and charming love stories of days gone by will love "True Heart Susie," written and produced by the father of film, D.W. Griffith. "True Heart Susie," which Griffith also directed, shows his deep, sensitive and compassionate film telling the story of a simple country girl\'s unwavering love for her childhood sweetheart. The simple essence of the story is about true love, and that the girls who use "paint and powder" are only temporary flirtations or mistakes men make, but true hearts like Susie\'s remain faithful and wait for their one and only true love. Along with superb acting by screen legend Lillian Gish whose face and demeanor suit innocent girl roles so well, Griffith brings out many delicate details and touching moments in the film, making it one of his best ever films.',
     'dtend' => '2455638 5400',
     'dtstart' => '2455638 5400',
+    'location' => undef,
     'summary' => 'True Heart Susie Starring Lillian Gish',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -35,6 +39,7 @@
     'description' => 'Stuart Tomc will bring you the science behind fish oil and why it is an essential fatty acid and how it can benefit your heart health, your longevity, blood sugar levels, and balancing hormones and mood. With over 20 years of experience in the field, Stuart is sure to answer all of your Omega-3 questions, even Fish or Flax?',
     'dtend' => '2455595 7200',
     'dtstart' => '2455595 7200',
+    'location' => undef,
     'summary' => 'The Whole Omega 3 Story Has Yet to be Told Presented by Pharmaca Integrative Pharmacy',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -43,6 +48,7 @@
     'description' => 'Did you know that Bald Eagles are bullies and steal food from other birds? Or that a Peregrine Falcon has been clocked at over 240 mph? Please join Jeff Birek, biologist for the Rocky Mountain Bird Observatory, as he introduces you to the exciting world of raptors. In this photo-rich presentation, he will discuss the physiology, classification and ecology of birds of prey with a focus on how to find and learn about raptors on your own.',
     'dtend' => '2455596 7200',
     'dtstart' => '2455596 7200',
+    'location' => undef,
     'summary' => 'Feathers and Talons: An introduction to the ecology of Colorado birds of prey Presented by Rocky Mountain Bird Observatory',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -51,6 +57,7 @@
     'description' => 'Enjoy complimentary wine and cheese while you listen to David Barrett, founding principal and studio director of Barrett Studio architects.',
     'dtend' => '2455602 1800',
     'dtstart' => '2455602 1800',
+    'location' => undef,
     'summary' => 'Boulder Conversations with Extraordinary People: David Barrett Presented by the Boulder History Museum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -59,6 +66,7 @@
     'description' => 'Dr. Cass, a practicing integrative medicine practitioner and physiologist will pass on her expertise for maintaining your energy and vitality throughout your whole life-cycle: PMS, menopause, energy vs. fatigue, weight gain, and detoxing.',
     'dtend' => '2455604 7200',
     'dtstart' => '2455604 7200',
+    'location' => undef,
     'summary' => 'Women\'s Health: Maintaining Your Energy and Vitality, PMS Through Menopause Presented by Pharmaca Integrative Pharmacy',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -67,6 +75,7 @@
     'description' => 'Most everyone knows that a hawk with a brick-red tail is a Red-tailed Hawk. But did you know that they don\'t get that red tail until they have been out of the nest for eight months? Jeff Birek, biologist for the Rocky Mountain Bird Observatory, will teach you how to find and identify the 16 most common birds of prey found in Colorado. Jeff has worked with birds of prey in seven U.S. states and Mexico.',
     'dtend' => '2455609 7200',
     'dtstart' => '2455609 7200',
+    'location' => undef,
     'summary' => 'Beyond the Red-tailed Hawk: An introduction to the identification of Colorado birds of prey Presented by Rocky Mountain Bird Observatory',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -75,6 +84,7 @@
     'description' => 'Please join international artists Seth Wulsin, Laleh Mehran and Christopher Coleman for a preview of The Diversity Project and what they have in store for their exhibition at BMoCA from June 23 through September 11, 2011.',
     'dtend' => '2455616 3600',
     'dtstart' => '2455616 3600',
+    'location' => undef,
     'summary' => 'Meet the Artists: Seth Wulsin, Laleh Mehran and Christopher Coleman In collaboration with the Boulder Museum of Contemporary Art',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -83,6 +93,7 @@
     'description' => 'Enjoy complimentary wine and cheese while listening to Atmospheric Scientist, Dr. Susan Solomon. Widely recognized as one of the leaders in the field of atmospheric science, Dr. Solomon is well known for having pioneered the theory explaining why the ozone hole occurs in Antarctica, and obtaining some of the first chemical measurements that helped to establish the chlorofluorocarbons as its cause. She received the National Medal of Science- the highest scientific honor in the US, andhas also received the Grande Medaille, the highest award of the French Academy of Sciences, the prestigious Blue Planet Prize in Japan as well as the Volvo Environment Prize, and has the distinction of being the namesale to aglacier in Antarctica, Solomon Glacier. She served as co-chair of the climate science group of the Intergovernmental Panel on Climate Change (IPCC), and provided key leadership to the 2007 comprehensive scientific assessment of climate change for the public and for policymakers. In 2008, the IPCC and Albert Gore, Jr. received the Nobel Peace Prize and Time magazine named Solomon as one of the 100 most influential people in the world.',
     'dtend' => '2455617 1800',
     'dtstart' => '2455617 1800',
+    'location' => undef,
     'summary' => 'Boulder Conversations with Extraordinary People: Susan Solomon, PhD Presented by the Boulder History Museum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -91,6 +102,7 @@
     'description' => 'Enjoy complimentary wine and cheese while you listen to Dr. Gene Bolles, Neurosurgeon and Military Consultant.',
     'dtend' => '2455630 1800',
     'dtstart' => '2455630 1800',
+    'location' => undef,
     'summary' => 'Boulder Conversations with Extraordinary People: Dr. Gene Bolles Presented by the Boulder History Museum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -99,6 +111,7 @@
     'description' => 'For decades marketers have bombarded women with skin care sales hype. In a sea of products and promises, it can be a daunting task to figure out how to choose the best skin care treatments. Gain the knowledge to navigate your way through the informational clutter in the world of skin care. Learn the most successful strategies to help slow the aging process and attain healthy, glowing skin.',
     'dtend' => '2455632 7200',
     'dtstart' => '2455632 7200',
+    'location' => undef,
     'summary' => 'Secrets to Healthy and Beautiful Skin Presented by Pharmaca Integrative Pharmacy',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -107,6 +120,7 @@
     'description' => 'Dinosaurs are coming to the Chautauqua Community House! Come see the Hankla Collection of dinosaurs and fossils from the Lance formation in Eastern Wyoming. You will have an opportunity to be eye to eye with a T-Rex and to build a life sized Duckbill dinosaur. Make a soap cast of a T-Rex tooth or a duckbill vertebrate to take home. Let your imagination and creativity run wild as you view the 30 foot track way from real dinosaurs of 65 million years ago. This pop-up museum will give you a chance to mingle with dinosaurs and real Paleontologists from the University of Colorado, Boulder.',
     'dtend' => '2455591 57600',
     'dtstart' => '2455591 57600',
+    'location' => undef,
     'summary' => 'Paleo-Explorers Dinosaur Festival Presented by CU Science Discovery',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -115,6 +129,7 @@
     'description' => 'Dinosaurs are coming to the Chautauqua Community House! Come see the Hankla Collection of dinosaurs and fossils from the Lance formation in Eastern Wyoming. You will have an opportunity to be eye to eye with a T-Rex and to build a life sized Duckbill dinosaur. Make a soap cast of a T-Rex tooth or a duckbill vertebrate to take home. Let your imagination and creativity run wild as you view the 30 foot track way from real dinosaurs of 65 million years ago. This pop-up museum will give you a chance to mingle with dinosaurs and real Paleontologists from the University of Colorado, Boulder.',
     'dtend' => '2455592 57600',
     'dtstart' => '2455592 57600',
+    'location' => undef,
     'summary' => 'Paleo-Explorers Dinosaur Festival Presented by CU Science Discovery',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -123,6 +138,7 @@
     'description' => 'Happy President\'s Day to all lovers of nature and rock n\' roll! Join local science educators Mark Wesson, Jeff Kagan and Paige Doughty for a nature-themed children\'s concert complete with educational kid\'s music, scientific skits/stories, and plenty of audience participation. You might recognize the performers from the summer "Meadow Music" concerts on Monday evenings. Now, they reunite in the name of science for an hour-long concert of live acoustic (and a little electric!) music and plenty of kid "edu-tainment." Suitable for little folks ages 3 to 9 and adults who love the great outdoors.',
     'dtend' => '2455613 64800',
     'dtstart' => '2455613 64800',
+    'location' => undef,
     'summary' => 'Mad Scientist Rock',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
@@ -131,6 +147,7 @@
     'description' => 'Happy President\'s Day to all lovers of nature and rock n\' roll! Join local science educators Mark Wesson, Jeff Kagan and Paige Doughty for a nature-themed children\'s concert complete with educational kid\'s music, scientific skits/stories, and plenty of audience participation. You might recognize the performers from the summer "Meadow Music" concerts on Monday evenings. Now, they reunite in the name of science for an hour-long concert of live acoustic (and a little electric!) music and plenty of kid "edu-tainment." Suitable for little folks ages 3 to 9 and adults who love the great outdoors.',
     'dtend' => '2455613 75600',
     'dtstart' => '2455613 75600',
+    'location' => undef,
     'summary' => 'Mad Scientist Rock',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'chautauqua'
