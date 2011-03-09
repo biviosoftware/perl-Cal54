@@ -30,6 +30,8 @@ sub c4_scraper_get {
     my($d);
     unless ($d = _bunit_dir($self)) {
 	sleep(1);
+	# ignore utf warnings
+	local($SIG{__WARN__}) = sub {};
 	return $self->extract_content($self->http_get($uri, $log));
     }
     $self->put(last_uri => $self->abs_uri($uri));
