@@ -497,7 +497,7 @@ www.myspace.com/lindsaymeredithmusic',
   {
     'description' => 'Jared Bartman:
 
-There is an old photograph of Jared Bartman, age two, standing in shorts, a blazer and a bow-tie, wildly strumming a child-sized plastic guitar. In the years that followed, Jared\'s musical repertoire grew to include piano, accordion, and mandolin. Primarily inﬂuenced by gypsy-tinged bands like Beirut and Devotchka, Jared merges genres to create a sound that is all his own, combining Eastern European folk with classical arrangements and occasionally returning to his more blues- based roots. His versatility is best noted by his ability to create songs that vary from darkly dramatic to fast-paced fusions of accordion and middle-eastern melody. Today, his live shows span from solo performances to large ensembles, with percussionist Aaron Kavelman using everything from bundt cake pans ﬁlled with water to hollowed out World War II bombshells to recreate the vivid sonic pictures captured in their studio recordings. Sharing the stage with artists like John Vanderslice, Richard Buckner and Southeast Engine has allowed Jared to perform for audiences that value a richer, raw sound accompanied by lyrical poeticism. He is currently supporting his latest release, Jersey Shore, with shows throughout the Midwest and East Coast. A series of 7-inch records will see a limited vinyl release early next year.
+There is an old photograph of Jared Bartman, age two, standing in shorts, a blazer and a bow-tie, wildly strumming a child-sized plastic guitar. In the years that followed, Jared\'s musical repertoire grew to include piano, accordion, and mandolin. Primarily influenced by gypsy-tinged bands like Beirut and Devotchka, Jared merges genres to create a sound that is all his own, combining Eastern European folk with classical arrangements and occasionally returning to his more blues- based roots. His versatility is best noted by his ability to create songs that vary from darkly dramatic to fast-paced fusions of accordion and middle-eastern melody. Today, his live shows span from solo performances to large ensembles, with percussionist Aaron Kavelman using everything from bundt cake pans filled with water to hollowed out World War II bombshells to recreate the vivid sonic pictures captured in their studio recordings. Sharing the stage with artists like John Vanderslice, Richard Buckner and Southeast Engine has allowed Jared to perform for audiences that value a richer, raw sound accompanied by lyrical poeticism. He is currently supporting his latest release, Jersey Shore, with shows throughout the Midwest and East Coast. A series of 7-inch records will see a limited vinyl release early next year.
 
 www.JaredBartman.com
 
@@ -957,19 +957,19 @@ www.myspace.com/kristinamurray',
     'venue' => 'caffesole'
   },
   {
-    'description' => 'Eyes of Infinity ~ A Collection of Work by Krystleyez
+    'description' => "Eyes of Infinity ~ A Collection of Work by Krystleyez
 
-Please join us for the opening reception of "Eyes of Infinity," an exhibition of sacred heArtworks by Krystle Marie Smith. Paving pathways to awakening, Krystle\'s work provides portals into the fractalling and luminous nature of Being. Her paintings are symphonies of color and form that serenade the viewer with harmonious rhythms of the Cosmos.
+Please join us for the opening reception of \"Eyes of Infinity,\" an exhibition of sacred heArtworks by Krystle Marie Smith. Paving pathways to awakening, Krystle's work provides portals into the fractalling and luminous nature of Being. Her paintings are symphonies of color and form that serenade the viewer with harmonious rhythms of the Cosmos.
 
 Honored to unveil these breath-giving visions, we invite you to gather with us on 1-11-11 as we activate conscious commUnity through art, music, and collaboration.
 
 We will embark upon the evening by recognizing the sacred heArtbeat that unifies us all through a tribal drum and rhythm circle. We encourage all musicians to bring their instruments to harmonize in this collective expression starting at 5:55. *Supercollider will be blessing us with their jazzy flavors 8:30-10:45 p.m., and the evening will culminate with a very special set by MIRAJA (Raja of Future Simple Project!)
 
-You can view more of Krystle\'s artwork at www.krystleyez.com and on her facebook page "Visionary Artwork of Krystleyez"
+You can view more of Krystle's artwork at www.krystleyez.com and on her facebook page \"Visionary Artwork of Krystleyez\"
 
-~* ♥ *~
+~* \x{2665} *~
 
-http://www.facebook.com/event.php?eid=175682979133203',
+http://www.facebook.com/event.php?eid=175682979133203",
     'dtend' => '2455574 14400',
     'dtstart' => '2455574 3600',
     'location' => '',
