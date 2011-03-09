@@ -38,21 +38,6 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
   ],
 }
 ",300022,RegExp,Home,http://store-locator.barnesandnoble.com/store/2333,Barnes & Noble,barnesandnoble,300021,s300022
-400021,"{
-  repeat => [
-    [qr/(events at this store\n)\n+$line.*?$month $day, $year $time_ap/is => {
-      fields => [qw(save summary month day year start_time)],
-      follow_link => {
-        once => [
-          [qr/detailed event information.*?\n\w+, \w{2} \d{5}.*?\n+($line+?)\n/is => {
-              fields => ['description'],
-          }],
-        ],
-      },
-    }],
-  ]
-}
-",400022,RegExp,Home,http://www.borders.com/online/store/StoreDetailView_407,Borders,borders,400021,s400022
 500021,,500022,ICalendar,Home,http://boulderbookstore.indiebound.com/event,Boulder Book Store,boulderbookstore,500021,s500022
 600021,"{
   accept_event => {
@@ -240,20 +225,11 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 3400021,,3400022,Google,Home,http://thelaughinggoat.com/events.php,The Laughing Goat Coffeehouse,thelaughinggoat,3400021,s3400022
 3500021,"{
   repeat => [
-    [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_ap\s*\-\s*$time_ap\n+([^\n]+\})/s => {
-      fields => [qw(summary month day year start_time end_time url)],
+    [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time\s*\-\s*$time_ap\n+([^\n]+\})/s => {
+      fields => [qw(summary month day year start_time_pm end_time url)],
     }],
     [qr/\n([^\n]+)\n+$day_name\s+$month\s+$day\s+$time\s*\-\s*$time_ap\n+([^\n]+\})/s => {
       fields => [qw(summary day_name month day start_time_pm end_time url)],
-    }],
-    [qr/\n([^\n]+)\n+$month\s+$day,?\s*$year\n+([^\n]+\})/s => {
-      fields => [qw(summary month day year url)],
-    }],
-    [qr/\n([^\n]+)\n+$time\s*\-\s*$time_ap\s*$month\s+$day,\s*$year\n+([^\n]+\})/s => {
-      fields => [qw(summary start_time_pm end_time month day year url)],
-    }],
-    [qr/\n([^\n]+)\n+$day_name\s+$month\s+$day\n+([^\n]+\})/s => {
-      fields => [qw(summary day_name month day url)],
     }],
   ],
 }
