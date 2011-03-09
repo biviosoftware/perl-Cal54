@@ -1,0 +1,72 @@
+[
+  {
+    'description' => "Join the Boulder Symphony as we embark on our first journey of exploration and discovery from post-Enlightenment Vienna to England and America. Beethoven\x{2019}s First Symphony was the inception to a symphonic era that not even Mozart could have imagined. And beginning his own symphonic path, Chip Michael proves anything is possible by chasing rabbits with drums while Joseph Haydn continues to delight audiences with surprise after surprise after surprise. The Boulder Symphony is joined by the Longmont Youth Symphony as it sets its sails and shares the love of great music in Boulder for the very first time. * Ludwig van Beethoven: Symphony no. 1 * Franz Joseph Haydn: Symphony no. 90 * Wolfgang Amadeus Mozart: Symphony no. 32 * American Premiere of Chip Michael's \x{2018}You Can\x{2019}t Catch Rabbits with Drums\x{2019} from his First Symphony",
+    'dtend' => '2455473 5400',
+    'dtstart' => '2455473 5400',
+    'location' => 'First Presbyterian Church, Boulder, CO',
+    'summary' => 'Humble Beginnings & Surprise Endings',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://bouldersymphony.org/2010/07/humble-beginnings/',
+    'venue' => 'firstpresbyterian'
+  },
+  {
+    'description' => "Life presents us with many trials and tribulations, and all adventures have their own seemingly insurmountable obstacles. In the wake of Beethoven's genius, even Johannes Brahms questioned his ability to create symphonic masterpieces. His First Symphony took more than 20 years to complete, and throughout he pays tribute to the master before him. Brahms also had a soft spot in his heart for Franz Schubert. Schubert\x{2019}s Second Mass went on a sordid journey of its own. It was in fact stolen for some time and attributed to Robert Fuehrer, a mischievous Czech composer. Well after Schubert\x{2019}s death the work was resurrected by the composer's brother Ferdinand and reconstructed into the masterpiece the Boulder Symphony will present in collaboration with the Cantabile Singers. * World Premiere of Chip Michael's 'Exchanging Glances' * Franz Schubert: Mass no. 2 * Johannes Brahms: Symphony no. 1",
+    'dtend' => '2455515 9000',
+    'dtstart' => '2455515 9000',
+    'location' => 'Mountain View United Methodist Church Boulder',
+    'summary' => 'Blood, Sweat & Tears: Creative Journeys',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://bouldersymphony.org/2010/07/schubert-and-brahms/',
+    'venue' => 'mountainview'
+  },
+  {
+    'description' => 'As the Boulder Symphony continues to journey to the farthest reaches of creation, we are collecting precious gems of classical music that are based in folk elements. Both Mozart and Nikolai Rimsky-Korsakov traveled extensively, and absorbed musical elements of all their journeys. The Turkish Violin concerto will be performed by Gregory Walker, who will explore all the possibilities of creation, as Mozart would have done through improvised cadenzas. Rimsky-Korsakov, when he wrote Capriccio Espagnol, which will feature the exceptional solo talents of members of the Boulder Symphony, summed up Spanish life almost as well as Emmanuel Chabrier. For Finlandia Jean Sibelius took a simple folk song of his native land, and by rallying the independence movement against Russia, composed the unofficial national anthem of Finland. *Please note this concert is indeed at First United Methodist Church, and NOT at First Presbyterian Church, as was previously published on some flyers. * Wolfgang Amadeus Mozart: Violin Concerto no. 5 (Turkish) * Ralph Vaughan Williams: English Folk Song Suite * Nikolai Rimsky-Korsakov: Cappricio Espagnol * Jean Sibelius: Finlandia * Holiday Sing-alongs!',
+    'dtend' => '2455549 9000',
+    'dtstart' => '2455549 9000',
+    'location' => 'First United Methodist Church, Boulder',
+    'summary' => 'European Sojourn: Infusing Folk with Classical',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://bouldersymphony.org/2010/07/folk-songs-of-europe/',
+    'venue' => 'firstunited'
+  },
+  {
+    'description' => 'Join the Boulder Symphony as we take a journey through time discovering the various Viennese Schools. All the masters on our program assimilated creative elements that came before them and redirected the course of music from the classical to 20th century eras. Also joined on the program are two young winners of the Colorado State Music Teachers Association concerto competition charting the waters of their own musical paths. * Franz Joseph Haydn Harpsichord Concerto, 3rd movement * Wolfgang Amadeus Mozart Piano Concerto No. 21, 3rd movement * Ludwig van Beethoven Piano Concert No. 1, 1st movement * Richard Strauss Serenade for Winds * Arnold Schoenberg Chamber Symphony no. 1',
+    'dtend' => '2455578 9000',
+    'dtstart' => '2455578 9000',
+    'location' => 'Mountain View Methodist Church, Boulder',
+    'summary' => 'Generations: Discovering the Schools of Vienna',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://bouldersymphony.org/2010/07/schools-of-vienna/',
+    'venue' => 'mountainview'
+  },
+  {
+    'description' => 'Perhaps the most famous and beloved piece of music on the planet is the Ninth Symphony of Beethoven, who composed a path to Enlightenment for the rest of the world to follow. The universal concepts of love, brotherhood, cooperation, and peace that Beethoven created for humanity in 1824 are also present in the young and upcoming composer Ozie Cargile\'s world premiere work, which brings the joyful journey home to our community. * Song for Humanity, World Premiere work by Ozie Cargile II * Ludwig van Beethoven: "Choral" Symphony no. 9 Beth McDowell Baldwin, soprano Sarah Barber, mezzo soprano Jason Baldwin, tenor Thomas Erik Angerhoffer, bass',
+    'dtend' => '2455634 9000',
+    'dtstart' => '2455634 9000',
+    'location' => 'the First Presbyterian Church in Boulder',
+    'summary' => 'Symphonic Shamans: Paving Paths of Joy',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://bouldersymphony.org/2010/07/symphonic-shamans/',
+    'venue' => 'firstpresbyterian'
+  },
+  {
+    'description' => 'Perhaps the most famous and beloved piece of music on the planet is the Ninth Symphony of Beethoven, who composed a path to Enlightenment for the rest of the world to follow. The universal concepts of love, brotherhood, cooperation, and peace that Beethoven created for humanity in 1824 are also present in the young and upcoming composer Ozie Cargile\'s world premiere work, which brings the joyful journey home to our community. * Song for Humanity, World Premiere work by Ozie Cargile II * Ludwig van Beethoven: "Choral" Symphony no. 9 Beth McDowell Baldwin, soprano Sarah Barber, mezzo soprano Jason Baldwin, tenor Thomas Erik Angerhoffer, bass',
+    'dtend' => '2455634 72000',
+    'dtstart' => '2455634 72000',
+    'location' => 'the First Presbyterian Church in Boulder',
+    'summary' => 'Symphonic Shamans: Paving Paths of Joy',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://bouldersymphony.org/2010/07/symphonic-shamans/',
+    'venue' => 'firstpresbyterian'
+  },
+  {
+    'description' => "The season of the Boulder Symphony comes to a climactic and not to be missed finale as we explore well beyond the boundaries of \"classical music.\" Journeying from Russia to Latin America all the way literally into the heart of India, we explore the meaning of music and the place it holds in all different cultures, and how all music has a power and utopian form that can unite those from all walks of life. The Boulder Symphony's world premiere of Song of the Untouchable at the Kenneth King Center will be featured as the finale of Chuck Fryberger\x{2019}s internationally-released 2011 documentary, Song of the Untouchable, and our audience will be featured through participation and improvisation in an evening of thrills, story telling and spiritual uplifting. * Gregory T.S. Walker: Song of the Untouchable for Electric Violin (World Premiere) * Colin Thurmond: Concierto de Pampas for Guitar &#038; Percussion (World Premiere) * Arturo Marquez: Danzon no. 2 * Nikolai Rimsky-Korsakov: Scheherazade",
+    'dtend' => '2455683 72000',
+    'dtstart' => '2455683 72000',
+    'location' => 'First Presbyterian Church, Boulder',
+    'summary' => 'Transcending Cultural Compasses',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://bouldersymphony.org/2010/07/transcending-cultural-compasses/',
+    'venue' => 'firstpresbyterian'
+  }
+]
