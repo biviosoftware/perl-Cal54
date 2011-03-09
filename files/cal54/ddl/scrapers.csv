@@ -274,6 +274,24 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 ",3800022,Google,Home,http://www.wowmuseum.com/calendar.html,WOW Children's Museum,wow,3800021,s3800022
 ,"{
   location_to_venue => {
+    qr/first presbyterian/i => 'firstpresbyterian',
+    qr/mountain view/i => 'mountainview',
+    qr/first united/i => 'firstunited',
+  },
+  once => [
+    [qr/\n\n(.*)/is => {
+      fields => [qw(description)],
+    }],
+  ],
+  repeat => [
+    [qr/$month\s+$day,?\s+$year\s+at\s+$time_ap(.*?\sat\s+([a-z].*?)\n)/is => {
+      fields => [qw(month day year start_time save location)],
+    }],
+  ],
+}
+",3200022,RSS,Home,http://bouldersymphony.org/category/20102011-season/feed/,,,,bouldersymphony_scraper
+,"{
+  location_to_venue => {
     qr/1085 18th Street/i => 'cu_art',
     qr/1606 Central Campus Mall/i => 'cu_cristol',
     qr/2000 Colorado Av/i => 'cu_duane',
@@ -284,6 +302,35 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
   },
 }
 ",1700022,Active Data,Home,http://events.colorado.edu/EventList.aspx?view=Summary,,,,cu_scraper
+,"{
+  location_to_venue => {
+    qr/Atonement Lutheran/i => 'atonementluthern',
+    qr/First United Methodist/i => 'firstunited',
+    qr/St. John's Cathedral/i => 'stjohns',
+  },
+  repeat => [
+    [qr/$month $day, $year, (\d+)\-$time_ap\n+([^\n]+?\})/is => {
+      fields => [qw(month day year start_time_pm end_time summary)],
+      follow_link => {
+          once => [
+            [qr/press release\{\d+\}\n+(.*)?where:(.*?)\n/is => {
+              fields => [qw(description location)],
+            }],
+          ],
+      },
+    }],
+    [qr/$month $day, $year, $time_ap\n+([^\n]+?\})/is => {
+      fields => [qw(month day year start_time_pm summary)],
+      follow_link => {
+          once => [
+            [qr/press release\{\d+\}\n+(.*)?where:(.*?)\n/is => {
+              fields => [qw(description location)],
+            }],
+          ],
+      },
+    }],  ],
+}
+",3300022,RegExp,Home,http://www.boulderbachfestival.org/index.php/site/calendar/,,,,bachfestival_scraper
 ,"{
   location_to_venue => {
     qr/mountain/i => 'mountainsun',
