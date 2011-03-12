@@ -112,7 +112,7 @@ sub internal_post_load_row {
 		map(
 		    $row->{$_} ? $row->{$_} : (),
 		    qw(
-			owner.RealmOwner.display_name
+			venue.RealmOwner.display_name
 			Address.street1
 			Address.street2
 			Address.city
