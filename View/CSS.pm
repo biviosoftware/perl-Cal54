@@ -296,7 +296,7 @@ span.c4_logo_tag {
   text-transform: uppercase;
 }
 table.c4_grid .c4_right {
-  text-align: right;
+!  text-align: right;
 }
 .c4_query .c4_what {
   width: 25em;
@@ -357,7 +357,7 @@ ABTest(
             color: #303030;
         }
     },
-    q{
+    Prose(q{
 	body.c4_home {
 	    margin: 0;
 	}
@@ -403,9 +403,11 @@ ABTest(
 	div.c4_list .item .venue:hover,
 	div.c4_list .item .address:hover,
 	div.c4_list .item a.title,
-	div.c4_list .item a:hover,
-	div.c4_list .item a:visited {
+	div.c4_list .item a:hover {
             color: #2200C1;
+        }
+	div.c4_list .item a:visited {
+            color: #551A8B;
         }
         div.c4_query input.submit {
             background-position: center bottom;
@@ -430,16 +432,6 @@ ABTest(
             font: 18px;
             vertical-align: top;
         }
-        div.c4_list div.date,
-        div.c4_list .item span.time {
-            color: #303030;
-        }
-        div.c4_list .item span.time {
-            font-weight: normal;
-        }
-	.c4_list .item a.title {
-	    text-decoration: none;
-	}
 	.c4_list .item .venue,
 	.c4_list .item .address {
 	    font-size: 80%;
@@ -497,9 +489,16 @@ ABTest(
         .c4_pager td.c4_day_disabled {
             color: #888888;
         }
+        span.c4_x5_pager a.c4_x5_weekend {
+            color: #cccccc;
+            font-weight: bold;
+        }
+        td.c4_right div.c4_query {
+            padding-left: .8em;
+        }
         span.c4_x5_pager {
             padding-top: .6ex;
-            padding-left: .8em;
+            padding-bottom: .5ex;
             display: block;
             color: white;
             width: 100%;
@@ -532,15 +531,14 @@ ABTest(
             margin-left: .5em;
         }
         div.x5_list {
-            padding-top: 13ex;
+            If<(>
+                ['!', [qw(->req Type.UserAgent)], '->is_msie_6_or_before'],
+                'padding-top: 13ex;',
+            <)>;
             width: 50em;
             margin: auto;
         }
-        a.c4_x5_weekend {
-            color: #CCCCCC;
-            font-weight: bold;
-        }
-    },
+    }),
 );
 ABTest(
     x4 => q{
@@ -548,13 +546,18 @@ ABTest(
 	    text-decoration: underline;
 	}
     },
-    x5 => q{
+    x5 => Prose(q{
         form.c4_form {
             background-color: white;
-            position: fixed;
-            top: 0;
+            If<(>
+                ['!', [qw(->req Type.UserAgent)], '->is_msie_6_or_before'],
+                'position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;',
+            <)>;
             width: 100%;
-            padding-bottom: 3ex;
+            padding-bottom: 2.5ex;
         }
         table.c4_grid {
             width: 50em;
@@ -565,15 +568,9 @@ ABTest(
 	    padding-top: 13ex;
 	    float: right;
 	}
-    },
+    }),
 );
 EOF
 }
 
 1;
-
-# Now  Mar [grey]Apr 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ... 30 May Jun
-
-# Clicking moves to that month with a query (not javascript)
-
-# Keep CAL 54 bar sticky.

@@ -223,8 +223,6 @@ sub _list {
 	    DIV_date(['month_day']),
 	    DIV_item(Join([
 		DIV_line(Join([
-		    SPAN_time(String(['start_end_am_pm'])),
-		    ' ',
 		    Link(
 			String(['RealmOwner.display_name']),
 			Or(['CalendarEvent.url'], ['calendar.Website.url']),
@@ -249,7 +247,9 @@ sub _list {
 			DIV_excerpt(String(['excerpt'])),
 		    ]),
 		    Join([
-			DIV_excerpt(String(['excerpt'])),
+			SPAN_time(String(['start_end_am_pm'])),
+			' ',
+			SPAN_excerpt(String(['excerpt'])),
 			DIV_line(Join([
 			    Link(
 				String(['venue.RealmOwner.display_name']),
@@ -511,13 +511,16 @@ sub _x5_pager {
     my($when) = ($_D->from_literal($source->ureq(qw(query when))))[0]
 	|| $now;
     my($start) = $_D->set_beginning_of_week($when);
+    my($prev) = $_D->add_days($start, -21);
+    $prev = $now
+	if $_D->is_less_than($prev, $now);
     my($first) = 1;
     return SPAN_c4_x5_pager(
 	Join([
 	    $_D->is_less_than($start, $now) ? ()
 		: Link(
 		    '<<',
-		    _when_uri($_D->add_days($start, -21)),
+		    _when_uri($prev),
 		    'c4_x5_prev',
 		),
 	    map(
