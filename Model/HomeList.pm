@@ -13,6 +13,11 @@ my($_HTML) = b_use('Bivio.HTML');
 my($_TS) = b_use('Type.String');
 my($_S) = b_use('Bivio.Search');
 my($_VL) = b_use('Model.VenueList');
+my($_D) = b_use('Type.Date');
+
+sub PAGE_SIZE {
+    return 50;
+}
 
 sub execute {
     return shift->execute_load_page(@_);
@@ -132,7 +137,10 @@ sub internal_prepare_statement {
     $self->new_other('WhenList')->load_all;
     $self->[$_IDI] = {month_day => ''};
     $self->new_other('TimeZoneList')->load_all;
-    my($dt) = $query->unsafe_get('begin_date');
+    my($dt) = $query->unsafe_get('begin_date')
+	|| $query->unsafe_get('when');
+#TODO: When is less than now
+    $dt = ($_D->from_literal($dt))[0];
     my($now) = $_DT->now;
     $dt = $_DEFAULT_TZ->date_time_to_utc($_DT->set_beginning_of_day($dt))
 	if $dt;
@@ -145,13 +153,17 @@ sub internal_prepare_statement {
 	$stmt->GTE('CalendarEvent.dtend', [$dt]),
     );
     # Don't call SUPER, because we want all events
-    my($s) = $_TS->from_literal($query->unsafe_get('what'));
+    my($s) = ($_TS->from_literal($query->unsafe_get('what')))[0];
     return
 	unless defined($s);
+    my($when) = $s =~ s{(\d+/\d+(?:/\d+)?)}{}g ? $1 : undef;
+    $s =~ s/^\s+|\s+$//;
+    return
+	unless length($s);
     my($rows) = $_S->query({
 	phrase => $s,
 	offset => 0,
-	length => 1000,
+	length => 2000,
 	simple_class => 'CalendarEvent',
 	req => $self->req,
 #TODO: "where" will constrain the realms so we won't want all public, just those venues
