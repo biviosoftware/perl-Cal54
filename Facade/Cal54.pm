@@ -2,7 +2,7 @@
 # $Id$
 package Cal54::Facade::Cal54;
 use strict;
-use Bivio::Base 'Bivio::UI::FacadeBase';
+use Bivio::Base 'UI.FacadeBase';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
@@ -11,9 +11,12 @@ my($_SELF) = __PACKAGE__->new({
     http_host => 'www.cal54.com',
     mail_host => 'cal54.com',
     Color => [
-	[[qw(c4_site_name c4_site_tag c4_right_title)]=> 0xee3333],
-	[[qw(c4_item_a_visited c4_item_a c4_item_a_hover c4_sidebar_list)] => 0x3333aa],
-	[[qw(c4_date c4_time)] => 0xff7733],
+	[[qw(c4_site_name c4_site_tag c4_right_title)]=> 0x0],
+	[[qw(c4_item_a_visited c4_item_a c4_item_a_hover c4_sidebar_list)] => 0x0],
+
+	[[qw(c4_date c4_time c4_cal c4_cal_border c4_cal_day_hover c4_cal_today c4_cal_today_hover c4_cal_month)] => 0x0],
+	[[qw(c4_cal_disabled c4_cal_disabled_border)] => 0x080808],
+	[[qw(c4_cal_day)] => 0x0],
     ],
     Constant => [
 	[ThreePartPage_want_ForumDropDown => 1],
@@ -55,10 +58,14 @@ my($_SELF) = __PACKAGE__->new({
 	[[qw(c4_date c4_time)] => ['bold']],
 	[c4_events_item => []],
 	[c4_sidebar_title => 'bold'],
-	[c4_venue => ['90%']],
+	[c4_venue => []],
 	[c4_copy => ['80%', 'center']],
 	[c4_site_tag => ['family=Times', 'bold']],
 	[c4_tm => ['60%', 'style=vertical-align: top; line-height: 90%']],
+	[[qw(c4_cal c4_cal_disabled)] => ['80%']],
+	[[qw(c4_cal_day c4_cal_day_hover)] => ['80%', 'bold']],
+	[[qw(c4_cal_today c4_cal_today_hover)] => ['80%', 'bold', 'underline']],
+	[[qw(c4_cal_month)] => ['90%', 'bold']],
     ],
     Task => [
 	[ADM_CALENDAR_EVENT_LIST_FORM => '?/events'],
