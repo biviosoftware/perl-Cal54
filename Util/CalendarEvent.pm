@@ -53,7 +53,7 @@ sub import_events {
 
     # find scraper by scraper_id or venue name
     unless ($list->find_row_by('Scraper.scraper_id', $self->req('auth_id'))) {
-	$list->find_row_by('RealmOwner.display_name',
+	$list->find_row_by('default_venue.RealmOwner.display_name',
             $self->req(qw(auth_realm owner display_name)))
 	        || $self->usage_error('venue not found: ',
 		    $self->req(qw(auth_realm owner display_name)));
