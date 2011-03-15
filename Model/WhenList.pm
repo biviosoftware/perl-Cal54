@@ -26,8 +26,6 @@ sub internal_load_rows {
 	qw(
 	    Today
 	    Tomorrow
-	    Friday
-	    Saturday
 	),
     )];
 }
