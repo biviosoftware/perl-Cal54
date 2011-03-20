@@ -14,7 +14,7 @@ my($_SELF) = __PACKAGE__->new({
 	[[qw(c4_site_name c4_site_tag c4_query_what)]=> 0x0],
 	[[qw(c4_item_a c4_item_a_hover)] => 0x2200C1],
         [c4_item_a_visited => 0x551A8B],
-	[[qw(c4_date c4_time c4_query_submit_background)] => 0x0088ce],
+	[[qw(c4_date c4_time c4_query_submit_background c4_query_background)] => 0x0088ce],
 	[[qw(c4_query_submit c4_pager c4_pager_a c4_pager_selected_border)] => 0xffffff],
 	[[qw(c4_query_submit_border c4_pager_weekend)] => 0xcccccc],
     ],

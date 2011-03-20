@@ -60,7 +60,7 @@ sub _form {
 		VALUE => 'Search',
 		class => 'submit',
 	    }),
-	    [\&_pager],
+	    [\&_pager, 0],
 	]),
     );
 }
@@ -101,6 +101,10 @@ sub _list {
 		q{Your search didn't match any results.  Try a different query.},
 	    ),
 	})),
+	DIV(
+	    [\&_pager, 1],
+	    {class => 'c4_query c4_bottom_pager'},
+	),
 	DIV_c4_copy(Prose(
 	    "&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL 54&trade;'); Boulder's Calendar&trade;")),
     ]);
@@ -141,12 +145,13 @@ sub _when_uri {
 }
 
 sub _pager {
-    my($source) = @_;
+    my($source, $is_bottom) = @_;
     my($now) = $_D->local_today;
     my($when) = ($_D->from_literal($source->ureq(qw(query when))))[0]
 	|| $now;
     my($start) = $_D->set_beginning_of_week($when);
-    my($prev) = $_D->add_days($start, -21);
+    my($weeks) = 3 + $is_bottom * 2;
+    my($prev) = $_D->add_days($start, -3 * 7);
     $prev = $now
 	if $_D->is_less_than($prev, $now);
     my($first) = 1;
@@ -162,7 +167,7 @@ sub _pager {
 		{
 		    my($week) = $_;
 		    (
-			$first ? () : SPAN_c4_spacer(''),
+			$first ? () : SPAN_c4_week_spacer(''),
 			map(
 			    {
 				my($d) = $_D->add_days($start, $week * 7 + $_);
@@ -174,7 +179,7 @@ sub _pager {
 				my($month) = [];
 				if ($first || $day == 1) {
 				    $month = [
-					$first ? () : SPAN_c4_spacer(''),
+					$first ? () : SPAN_c4_month_spacer(''),
 					SPAN_c4_month(
 					    $_D->english_month3($_D->get_parts($d, 'month')),
 					),
@@ -198,11 +203,11 @@ sub _pager {
 			),
 		    );
 		}
-		0 .. 2,
+		0 .. ($weeks - 1),
 	    ),
 	    Link(
 		'>>',
-		_when_uri($_D->add_days($start, +21)),
+		_when_uri($_D->add_days($start, 3 * $weeks)),
 		'c4_next',
 	    ),
 	]),

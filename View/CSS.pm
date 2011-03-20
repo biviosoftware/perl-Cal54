@@ -74,6 +74,7 @@ table.c4_grid td.c4_right {
 } 
 div.c4_query {
   padding: 0 0 0 .8em;
+  Color('c4_query-background');
 }
 .c4_query .c4_what {
   Font('c4_query_what');
@@ -121,7 +122,10 @@ span.c4_pager {
 .c4_pager .c4_prev {
   padding-right: 1em;
 }
-.c4_pager .c4_spacer,
+.c4_pager .c4_week_spacer {
+  padding-left: .7em;
+}
+.c4_pager .c4_month_spacer,
 .c4_pager .c4_next {
   padding-left: 1em;
 }
@@ -140,7 +144,8 @@ div.c4_list {
     ['!', [qw(->req Type.UserAgent)], '->is_msie_6_or_before'],
     'padding-top: 13ex;',
   );
-  width: 50em;
+  width: 49.5em;
+  padding-left: .5em;
   margin: auto;
 }
 .c4_list div.date {
@@ -186,6 +191,14 @@ div.c4_empty_list {
   padding-top: 5em;
   text-align: center;
 }
+body.c4_home div.c4_bottom_pager {
+  width: 50em;
+  margin: auto;
+  padding: 0;
+}
+div.c4_bottom_pager .c4_pager {
+  text-align: center;
+}
 span.c4_site_name {
   Font('c4_site_name');
 }
@@ -193,6 +206,7 @@ div.c4_copy {
   Font('c4_copy');
 }
 div.c4_copy {
+  margin-top: 2ex;
   margin-bottom: 4ex;
 }
 EOF
