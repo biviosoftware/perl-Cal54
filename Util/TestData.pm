@@ -14,6 +14,7 @@ usage: bivio TestData [options] command [args..]
 commands
   enable_calendar_for_adm -- enable feature_calendar for a venue
   init -- initializes test data
+  init_scrapers -- create/update scrapers from scrapers.csv
   init_venues -- create/update venues from venues.csv
   reset_all -- deletes all test venues and events
 EOF
