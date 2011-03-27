@@ -1,0 +1,202 @@
+[
+  {
+    'description' => 'David Taylor Dance Theatre, Colorado\'s original contemporary ballet company, presents "The Edge", a performance of cutting edge choreography. This program features the world premiere of "Big Skies" by Gregory Dawson from Alonzo King\'s Lines Ballet of San Francisco. Mr. Dawson is one of the hottest new choreographic talents and his work has been described as provocative and innovative. It features an original score by Zakir Hussain, commissioned specifically for "Big Skies". Zakir Hussain is today appreciated both in the field of percussion and in the music world at large as an international phenomenon. A classical tabla... [Read more]',
+    'dtend' => '2455648 72000',
+    'dtstart' => '2455648 72000',
+    'location' => undef,
+    'summary' => 'David Taylor Dance Theatre: The Edge',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52080&eid=59809',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'BINGO! The Musical, a regional premiere, is a splashy, zippy, and outrageously funny new musical. Come meet a colorful group of die-hard Bingo players: Vern, Honey, and Patsy, whose lives are thrown into a tizzy when a young stranger blows through their bingo hall during a terrible storm and makes them confront their past. While laughing through the show, the audience also plays three games of bingo for real prizes--that\'s three lucky winners at every performance! Ages 15+. [Read more]',
+    'dtend' => '2455648 72000',
+    'dtstart' => '2455648 72000',
+    'location' => undef,
+    'summary' => 'Woof! Theatre Productions: BINGO! The Musical- 3/27',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=51583&eid=59460',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'BINGO! The Musical, a regional premiere, is a splashy, zippy, and outrageously funny new musical. Come meet a colorful group of die-hard Bingo players: Vern, Honey, and Patsy, whose lives are thrown into a tizzy when a young stranger blows through their bingo hall during a terrible storm and makes them confront their past. While laughing through the show, the audience also plays three games of bingo for real prizes--that\'s three lucky winners at every performance! Ages 15+. [Read more]',
+    'dtend' => '2455653 5400',
+    'dtstart' => '2455653 5400',
+    'location' => undef,
+    'summary' => 'Woof! Theatre Productions: BINGO! The Musical- 3/31',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=51583&eid=59461',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'BINGO! The Musical, a regional premiere, is a splashy, zippy, and outrageously funny new musical. Come meet a colorful group of die-hard Bingo players: Vern, Honey, and Patsy, whose lives are thrown into a tizzy when a young stranger blows through their bingo hall during a terrible storm and makes them confront their past. While laughing through the show, the audience also plays three games of bingo for real prizes--that\'s three lucky winners at every performance! Ages 15+. [Read more]',
+    'dtend' => '2455654 5400',
+    'dtstart' => '2455654 5400',
+    'location' => undef,
+    'summary' => 'Woof! Theatre Productions: BINGO! The Musical- 4/01',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=51583&eid=59463',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'My brakes cost me $500, the kids tracked mud all over the carpet, the telemarketers won\'t stop calling, my work is piled to the ceiling, my friend lost her job, and I wish I could be whisked away to Jamaica for a tropical vacation. I need to laugh. Humor Me!',
+    'dtend' => '2455654 7200',
+    'dtstart' => '2455654 7200',
+    'location' => undef,
+    'summary' => 'Helander Dance Theater: Humor Me!- 4/01',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52616&eid=60402',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'BINGO! The Musical, a regional premiere, is a splashy, zippy, and outrageously funny new musical. Come meet a colorful group of die-hard Bingo players: Vern, Honey, and Patsy, whose lives are thrown into a tizzy when a young stranger blows through their bingo hall during a terrible storm and makes them confront their past. While laughing through the show, the audience also plays three games of bingo for real prizes--that\'s three lucky winners at every performance! Ages 15+. [Read more]',
+    'dtend' => '2455655 5400',
+    'dtstart' => '2455655 5400',
+    'location' => undef,
+    'summary' => 'Woof! Theatre Productions: BINGO! The Musical- 4/02',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=51583&eid=59464',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'My brakes cost me $500, the kids tracked mud all over the carpet, the telemarketers won\'t stop calling, my work is piled to the ceiling, my friend lost her job, and I wish I could be whisked away to Jamaica for a tropical vacation. I need to laugh. Humor Me!',
+    'dtend' => '2455655 7200',
+    'dtstart' => '2455655 7200',
+    'location' => undef,
+    'summary' => 'Helander Dance Theater: Humor Me!- 4/02',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52800&eid=60595',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'Playback Theatre West is improvisational, "comicathartic" theatre based on using the audience\'s stories to entertain, enrich and enlighten. An audience member shares a story or experience from their life and the actors "play it back" capturing the essence of their experience. The result is improvisational theatre that is not only entertaining, but also moving and powerful. PG13 show. [Read more]',
+    'dtend' => '2455655 7200',
+    'dtstart' => '2455655 7200',
+    'location' => undef,
+    'summary' => 'Playback Theatre West: A Night of Improvisational Theatre',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52888&eid=60693',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'My brakes cost me $500, the kids tracked mud all over the carpet, the telemarketers won\'t stop calling, my work is piled to the ceiling, my friend lost her job, and I wish I could be whisked away to Jamaica for a tropical vacation. I need to laugh. Humor Me!',
+    'dtend' => '2455656 3600',
+    'dtstart' => '2455656 3600',
+    'location' => undef,
+    'summary' => 'Helander Dance Theater: Humor Me!- 4/03',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52802&eid=60597',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455674 5400',
+    'dtstart' => '2455674 5400',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=60680',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455675 5400',
+    'dtstart' => '2455675 5400',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61014',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455676 5400',
+    'dtstart' => '2455676 5400',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61018',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'Latin Guitar Journey with guitarist Alfredo Muro features solos, duets, trios, quartets, quintets & The Boulder Guitar Society Ensemble in a dynamic and varied program of music from Latin America.',
+    'dtend' => '2455676 5400',
+    'dtstart' => '2455676 5400',
+    'location' => undef,
+    'summary' => 'Boulder Guitar Society: Latin Guitar Journey with Alfredo Muro',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=53056&eid=60864',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455676 79200',
+    'dtstart' => '2455676 79200',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61019',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455681 5400',
+    'dtstart' => '2455681 5400',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61021',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455682 5400',
+    'dtstart' => '2455682 5400',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61023',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455683 5400',
+    'dtstart' => '2455683 5400',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61024',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455683 79200',
+    'dtstart' => '2455683 79200',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61026',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455688 5400',
+    'dtstart' => '2455688 5400',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61030',
+    'venue' => 'dairycenter'
+  },
+  {
+    'description' => 'On one hot July night in 1961, the staff of the Cafe du Grand Boeuf awaits the imminent arrival of Victor, the Cafe\'s owner and sole patron. But when Monsieur returns from the bullfights in Madrid, he brings with him news that sends his adoring staff into a race to save their jobs...and their master\'s life. A "comic tragedy in seven courses" celebrating the joys of food, wine, love and life. [Read more]',
+    'dtend' => '2455689 5400',
+    'dtstart' => '2455689 5400',
+    'location' => undef,
+    'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61033',
+    'venue' => 'dairycenter'
+  }
+]
