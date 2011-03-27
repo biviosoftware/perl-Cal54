@@ -19,8 +19,16 @@ sub list {
     view_main(
 	Page3({
 	    style => RealmCSS(),
-	    body_class => 'c4_home',
-	    head => Title(['CAL 54']),
+	    body_class => IfMobile(
+		'c4_mobile c4_home',
+		'c4_home',
+	    ),
+	    head => Join([
+		Title(['CAL 54']),
+		IfMobile(
+		    '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />',
+		),
+	    ]),
 	    body => _body(),
 	    xhtml => 1,
 	}),
@@ -39,12 +47,20 @@ sub _body {
 	    class => 'c4_form',
 	    form_method => 'get',
 	    want_hidden_fields => 0,
-	    value => Grid([[
-		_logo()->put(cell_class => 'c4_left'),
-		_form()->put(cell_class => 'c4_right'),
-	    ]], {
-		class => 'c4_grid',
-	    }),
+	    value => IfMobile(
+		DIV_c4_mobile_header(
+		    Join([
+			_logo(),
+			_form(),
+		    ]),
+		),
+		Grid([[
+		    _logo()->put(cell_class => 'c4_left'),
+		    _form()->put(cell_class => 'c4_right'),
+		]], {
+		    class => 'c4_grid',
+		}),
+	    ),
 	}),
 	_list(),
     ]);
@@ -102,9 +118,10 @@ sub _list {
 	    ),
 	})),
 	DIV(
-	    [\&_pager, 1],
+	    [\&_pager, 1,],
 	    {class => 'c4_query c4_bottom_pager'},
 	),
+	MobileToggler(),
 	DIV_c4_copy(Prose(
 	    "&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL 54&trade;'); Boulder's Calendar&trade;")),
     ]);
@@ -146,11 +163,13 @@ sub _when_uri {
 
 sub _pager {
     my($source, $is_bottom) = @_;
+    my($mobile) = 0;
+    IfMobile(1)->initialize_and_render($source, \$mobile);
     my($now) = $_D->local_today;
     my($when) = ($_D->from_literal($source->ureq(qw(query when))))[0]
 	|| $now;
     my($start) = $_D->set_beginning_of_week($when);
-    my($weeks) = 3 + $is_bottom * 2;
+    my($weeks) = $mobile ? 2 : 3 + $is_bottom * 2;
     my($prev) = $_D->add_days($start, -3 * 7);
     $prev = $now
 	if $_D->is_less_than($prev, $now);

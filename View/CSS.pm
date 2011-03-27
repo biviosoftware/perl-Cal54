@@ -10,7 +10,7 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 sub internal_site_css {
     return shift->SUPER::internal_site_css(@_) . <<'EOF';
 div.c4_scraper {
-  width: 50em;
+   width: 50em;
 }
 body.c4_home {
   Font('c4_home');
@@ -19,21 +19,14 @@ body.c4_home {
 form.c4_form {
   margin: auto;
   background-color: white;
-  If(
-      ['!', [qw(->req Type.UserAgent)], '->is_msie_6_or_before'],
-      'position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;',
-  );
-  width: 100%;
+  CSS('c4_form');
+!  width: 100%;
   padding-bottom: 2.5ex;
 }
 table.c4_grid {
   background-color: #0088ce;
-  width: 50em;
   height: 10ex;
-  margin: auto;
+  CSS('c4_grid');
 }
 table.c4_grid td {
   vertical-align: top;
@@ -52,40 +45,38 @@ span.c4_logo_text {
 span.c4_logo_name,
 span.c4_logo_tag {
   color: #ffffff;
-  font-weight: bold;
 }
 span.c4_logo_name {
+  Font('c4_logo_name');
+}
+td.c4_left span.c4_logo_name {
   display: block;
-  text-transform: uppercase;
   margin-bottom: .2ex;
   margin-right: -.2ex;
-  font-size: 48px;
 }
 span.c4_logo_tag {
+  Font('c4_logo_tag');
+}
+td.c4_left span.c4_logo_tag {
   margin-top: -1.5ex;
   display: block;
   text-align: right;
-  font-size: 80%;
-  text-transform: uppercase;
 }
 table.c4_grid td.c4_right {
   padding-right: 1.5em;
   padding-top: 20px;
 } 
 div.c4_query {
-  padding: 0 0 0 .8em;
+  padding: 0;
   Color('c4_query-background');
 }
 .c4_query .c4_what {
   Font('c4_query_what');
+  CSS('c4_query_what');
   vertical-align: top;
-  width: 25em;
   height: 26px;
   padding: 2px 0;
   margin: 0;
-}
-.c4_query .c4_when {
-  width: 5em;
 }
 .c4_query input.submit {
   vertical-align: top;
@@ -108,7 +99,7 @@ span.c4_pager {
   padding-top: .6ex;
   padding-bottom: .5ex;
   display: block;
-  width: 100%;
+!  width: 100%;
   Font('c4_pager');
 }
 .c4_pager .c4_month,
@@ -140,13 +131,7 @@ span.c4_pager {
   margin-left: .5em;
 }
 div.c4_list {
-  If(
-    ['!', [qw(->req Type.UserAgent)], '->is_msie_6_or_before'],
-    'padding-top: 13ex;',
-  );
-  width: 49.5em;
-  padding-left: .5em;
-  margin: auto;
+  CSS('c4_list');
 }
 .c4_list div.date {
   Font('c4_date');
@@ -189,14 +174,15 @@ div.c4_empty_list {
   height: 12em;
   vertical-align: top;
   padding-top: 5em;
-  text-align: center;
 }
 body.c4_home div.c4_bottom_pager {
-  width: 50em;
-  margin: auto;
+  CSS('c4_home_bottom_pager');
   padding: 0;
 }
-div.c4_bottom_pager .c4_pager {
+div.c4_mobile_toggler,
+div.c4_empty_list,
+div.c4_bottom_pager .c4_pager,
+div.c4_copy {
   text-align: center;
 }
 span.c4_site_name {
@@ -208,6 +194,65 @@ div.c4_copy {
 div.c4_copy {
   margin-top: 2ex;
   margin-bottom: 4ex;
+}
+body.c4_mobile span.c4_logo_text {
+  margin-top: 0;
+  margin-bottom: .5ex;
+}
+div.c4_mobile_header {
+  padding-top: .5ex;
+}
+div.c4_mobile_header span.c4_logo_tag {
+  margin-left: 1em;
+}
+div.b_mobile_toggler {
+   margin-top: 1ex;
+}
+body.c4_mobile .c4_query input.submit {
+  vertical-align: auto;
+  background: none;
+  border: none;
+  Font('c4_query_submit');
+  Color('c4_query_submit-background');
+  padding: 0;
+  margin: auto;
+  margin-left: .5ex;
+  height: auto;
+  width: auto;
+}
+body.c4_mobile .c4_pager a.c4_prev {
+  padding-left: 0;
+}
+body.c4_mobile .c4_pager .c4_prev {
+  padding-right: .5em;
+}
+body.c4_mobile .c4_pager .c4_week_spacer,
+body.c4_mobile .c4_pager .c4_month_spacer,
+body.c4_mobile .c4_pager .c4_next {
+  padding-left: .5em;
+}
+div.c4_mobile_header,
+body.c4_mobile div.c4_list,
+body.c4_mobile div.c4_copy,
+body.c4_mobile div.c4_bottom_pager .c4_pager,
+body.c4_mobile div.b_mobile_toggler {
+  text-align: left;
+  padding-left: .5em;
+!  width: auto;
+}
+div.c4_mobile_header {
+  background-color: #0088ce;
+!  width: 100%;
+}
+body.c4_mobile div.c4_list {
+  width: 22em;
+}
+body.c4_mobile {
+  font-size: 120%;
+  width: 22em;
+}
+body.c4_mobile .c4_list .item span.time {
+  display: block;
 }
 EOF
 }

@@ -12,11 +12,13 @@ my($_SELF) = __PACKAGE__->new({
     mail_host => 'cal54.com',
     Color => [
 	[[qw(c4_site_name c4_site_tag c4_query_what)]=> 0x0],
-	[[qw(c4_item_a c4_item_a_hover)] => 0x2200C1],
+	[[qw(c4_item_a c4_item_a_hover b_mobile_toggler_a)] => 0x2200C1],
         [c4_item_a_visited => 0x551A8B],
 	[[qw(c4_date c4_time c4_query_submit_background c4_query_background)] => 0x0088ce],
-	[[qw(c4_query_submit c4_pager c4_pager_a c4_pager_selected_border)] => 0xffffff],
-	[[qw(c4_query_submit_border c4_pager_weekend)] => 0xcccccc],
+	[[qw(c4_pager c4_pager_selected_border)] => 0xffffff],
+	[[qw(c4_pager_weekend c4_query_submit_border c4_query_submit)] => 0xf8f8f8],
+	[[qw(c4_pager_a)]=> 0xe8e8e8],
+	[b_mobile_toggler_selected => 0x0],
     ],
     Constant => [
 	[ThreePartPage_want_ForumDropDown => 1],
@@ -45,9 +47,41 @@ my($_SELF) = __PACKAGE__->new({
 	     };
 	 }],
     ],
+    CSS => [
+	[c4_query_what => 'width: 25em;'],
+        [c4_form => q{IfUserAgent(
+            '!is_msie_6_or_before',
+            '
+                position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+            ',
+        );}],
+	[c4_grid => q{
+	    width: 50em;
+	    margin: auto;
+	}],
+	[c4_list => q{IfUserAgent(
+		'!is_msie_6_or_before',
+		'padding-top: 13ex;',
+	    );
+	    width: 49.5em;
+	    padding-left: .5em;
+	    margin: auto;
+        }],
+	[c4_home_bottom_pager => q{
+            width: 50em;
+            margin: auto;
+        }],
+    ],
     Font => [
+	[b_mobile_toggler_selected => []],
+	[b_mobile_toggler_a => []],
 	[c4_home => ['family=Arial, Helvetica, sans-serif', 'medium']],
 	[c4_query_submit => ['size=18px']],
+	[c4_logo_name => [qw(uppercase bold 48px)]],
+	[c4_logo_tag => [qw(uppercase bold 80%)]],
 	[c4_site_name => ['bold']],
 	[c4_excerpt => ['80%']],
 	[c4_query_what => '120%'],
@@ -60,7 +94,7 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_item_a_hover => ['underline']],
 	[c4_events_item => []],
 	[c4_venue => ['80%']],
-	[c4_copy => ['80%', 'center']],
+	[c4_copy => ['80%']],
 	[c4_site_tag => ['bold']],
 	[c4_tm => ['60%', 'style=vertical-align: top; line-height: 90%']],
 	[c4_pager => ['left']],
