@@ -104,6 +104,8 @@ sub _add_field_values {
     my(@v) = ($1, $2, $3, $4, $5, $6, $7, $8, $9);
 
     foreach my $f (@$fields) {
+	b_die('invalid field: ', $f)
+	    if ref($f);
 	my($str) = shift(@v);
 	next unless defined($str) && length($str);
 	next if $f eq 'save';
