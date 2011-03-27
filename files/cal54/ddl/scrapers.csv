@@ -222,6 +222,24 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 }
 ",3100022,RegExp,Home,http://www.rocknsoulcafe.com/calendar/,Rock N Soul Cafe,rockandsoul,3100021,s3100022
 3300021,,3300022,Full Calendar,Home,http://www.stjulien.com/events-entertainment,St Julien,stjulien,3300021,s3300022
+5100021,"{
+  repeat => [
+    [qr/$line\s*$month\s+$day\s+The Dairy Center/is => {
+      fields => [qw(summary)],
+      follow_link => {
+        once => [
+          [qr/PERFORMANCE INFO\s+$day_name,\s*$month\s*$day\s*Show at $time_ap/is => {
+            fields => [qw(none month day start_time)],
+          }],
+          [qr/\nShare\n(.+?)\n\n/is => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+",3400022,RegExp,Home,http://thedairy.frontgatetickets.com/,The Dairy Center for the Arts,dairycenter,5100021,s3400022
 3400021,,3400022,Google,Home,http://thelaughinggoat.com/events.php,The Laughing Goat Coffeehouse,thelaughinggoat,3400021,s3400022
 3500021,"{
   repeat => [
@@ -250,6 +268,28 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 ",3800022,Google,Home,http://www.wowmuseum.com/calendar.html,WOW Children's Museum,wow,3800021,s3800022
 ,"{
   location_to_venue => {
+    qr/boulder first cong/i => 'firstcongregational',
+    qr/boulder first presb/i => 'firstpresbyterian',
+  },
+  repeat => [
+    [qr/$month\s$day\,?\s*$year\,?\s*$time_ap\,\s+([^\n]+)\s*((\nDETAILS.*?\n))/is => {
+      fields => [qw(month day year start_time location link save)],
+      follow_link => {
+        once => [
+          [qr/^$line/ => {
+            fields => [qw(summary)],
+          }],
+          [qr/music selections\s+$line/is => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+",3500022,RegExp,Home,http://boulderchamberorchestra.org/concerts.html,,,,s3500022
+,"{
+  location_to_venue => {
     qr/first presbyterian/i => 'firstpresbyterian',
     qr/mountain view/i => 'mountainview',
     qr/first united/i => 'firstunited',
@@ -275,9 +315,13 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     qr/1595 Pleasant St/i => 'cu_macky',
     qr/408 UCB/i => 'cu_fiske',
     qr/1669 Euclid Av/i => 'cu_umc',
+    qr/1157 18TH ST/i => 'cu_norlin',
+    qr/1515 CENTRAL CAMPUS MALL/i => 'cu_lofttheatre',
+    qr/1030 Broadway/i => 'cu_museum',
+    qr/1905 COLORADO AV/i => 'cu_muenzinger',
   },
 }
-",1700022,Active Data,Home,http://events.colorado.edu/EventList.aspx?view=Summary,,,,cu_scraper
+",3100022,Active Data,Home,http://events.colorado.edu/EventList.aspx?view=Summary,,,,cu_scraper
 ,"{
   location_to_venue => {
     qr/Atonement Lutheran/i => 'atonementluthern',
