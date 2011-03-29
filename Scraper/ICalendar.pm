@@ -32,7 +32,7 @@ sub parse_ics {
 	    $recurrences->{_recurrence_id($vevent, 'recurrence-id')} = 1;
 	}
 	next if $_D->is_date($vevent->{dtstart});
-	next if ($vevent->{status} || '') eq 'CANCELLED';
+	next if $self->is_canceled($vevent->{status} || '');
 	next unless ($vevent->{class} || 'PUBLIC') eq 'PUBLIC';
 
 	foreach my $v (@{_explode_event($self, $vevent, $end)}) {
