@@ -206,52 +206,66 @@ sub internal_update {
 	    {begin_date => $date_time},
 	),
     }};
-    my($add_count) = 0;
-    my($refresh) = {};
-    my($e);
+    my($added, $updated, $visited) = ({}, {}, {});
     
     foreach my $event (@{$self->get('events')}) {
-	unless ($_DT->is_greater_than($event->{dtend}, $date_time)) {
+	next unless $_DT->is_greater_than($event->{dtend}, $date_time);
+	my($key) = $event->{dtstart} . ' '
+	    . $_TT->from_literal_or_die($event->{summary});
+
+	if ($visited->{$key}) {
+	    b_warn('duplicate event: ', $key);
 	    next;
 	}
-	my($key) = "$event->{dtstart} " . $_TT->from_literal_or_die($event->{summary});
-	if ($e = $refresh->{$key}) {
-	    b_warn($event, ': duplicate event: ', $e);
-	    next;
+	$visited->{$key} = $event;
+
+	if (my $e = delete($curr->{$key})) {
+	    $ce->load_from_properties($e)->update_from_vevent($event);
+	    $updated->{$key} = $event;
 	}
-	$refresh->{$key} = $event;
-	unless ($e = delete($curr->{$key})) {
+	else {
 	    $ce->create_from_vevent($event);
-	    _link_event_to_venue($self, $ce, $event);
-	    $add_count++;
-	    next;
+	    $added->{$key} = $event;
 	}
-	$ce->load_from_properties($e)->update_from_vevent($event);
 	_link_event_to_venue($self, $ce, $event);
     }
-    my($curr_count) = scalar(keys(%$curr));
-    my($new_count) = scalar(@{$self->get('events')});
-    my($to_delete) = $curr_count / ($new_count + $curr_count || 1);
-    my($delete_count) = 0;
-    if ($curr_count <= 3 || $to_delete <= .10) {
-	foreach my $v (values(%$curr)) {
-	    $ce->load_from_properties($v)->cascade_delete;
-	    $delete_count++;
-	}
-    }
-    else {
-	b_warn($curr_count, ': attempting to delete more than 10% events, not deleting');
-    }
     $self->put(
-	add_count => $add_count,
-	delete_count => $delete_count,
+	add_count => scalar(keys(%$added)),
+	delete_count => _delete_events($self, $added, $updated, $curr),
     );
     return;
+}
+
+sub is_canceled {
+    my($self, $text) = @_;
+    return $text =~ /\bcancel(l?)ed\b/i ? 1 : 0;
 }
 
 sub _bunit_dir {
     my($self) = @_;
     return $_C->is_test && $self->ureq('scraper_bunit');
+}
+
+sub _delete_events {
+    my($self, $added, $updated, $deleted) = @_;
+    # use unique event names to determine deletion percentage,
+    # avoids problems with deleted reccurring events
+    my($deleted_count) =
+	_unique_count($self, $deleted, 'RealmOwner.display_name')
+	    - _unique_count($self, $added, 'summary');
+    my($total) = _unique_count($self, $updated, 'summary') + $deleted_count;
+    my($to_delete) = $deleted_count / ($total || 1);
+    my($ce) = $_CE->new($self->req);
+
+    if ($deleted_count <= 3 || $to_delete <= .10) {
+	foreach my $v (values(%$deleted)) {
+	    $ce->load_from_properties($v)->cascade_delete;
+	}
+	return scalar(keys(%$deleted));
+    }
+    b_warn($to_delete,
+        ': attempting to delete more than 10% events, not deleting');
+    return 0;
 }
 
 sub _filter_event {
@@ -274,6 +288,7 @@ sub _filter_events {
     my($events) = [];
 
     foreach my $event (@{$self->get('events')}) {
+	next if $self->is_canceled($event->{summary});
 	$event->{dtend} ||= $event->{dtstart};
 	$event->{time_zone} ||= $self->get('time_zone');
 	next unless _filter_event($self, 'accept', $event, $aux);
@@ -318,6 +333,13 @@ sub _log_base {
     my($self, $suffix) = @_;
     $self->put(log_index => 1 + (my $li = $self->get('log_index')));
     return sprintf('%04d', $li) . ($suffix || '.html');
+}
+
+sub _unique_count {
+    my($self, $values, $field) = @_;
+    return scalar(keys(%{
+	{map(($_->{$field} => 1), values(%$values))},
+    }));
 }
 
 sub _venue_id_from_name {
