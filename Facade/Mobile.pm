@@ -13,18 +13,18 @@ __PACKAGE__->new({
     mail_host => 'm.cal54.com',
     uri => 'm.cal54',
     CSS => [
-	[c4_query_what => 'width: 15em;'],
+	[c4_query_what => 'width: 14em;'],
 	[c4_form => ''],
 	[c4_list => ''],
 	[c4_home_bottom_pager => ''],
     ],
     Font => [
-	[c4_home => ['family=Arial, Helvetica, sans-serif', '120%']],
-	[[qw(c4_logo_tag c4_logo_name)] => [qw(bold uppercase 80%)]],
-	[c4_query_what => []],
-	[c4_query_submit => []],
-	[c4_pager_month => ['65%', 'uppercase']],
-	[c4_pager_a => ['65%']],
+	[c4_home => ['family=Arial, Helvetica, sans-serif', '100%']],
+	[[qw(c4_logo_tag c4_logo_name)] => [qw(bold uppercase 120%)]],
+	[c4_query_what => ['100%']],
+	[c4_query_submit => ['100%']],
+	[c4_pager_month => ['70%', 'uppercase']],
+	[c4_pager_a => ['70%']],
     ],
 });
 

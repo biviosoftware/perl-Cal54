@@ -26,7 +26,7 @@ sub list {
 	    head => Join([
 		Title(['CAL 54']),
 		IfMobile(
-		    '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />',
+		    '<meta name="viewport" content="width=device-width" />',
 		),
 	    ]),
 	    body => _body(),
@@ -129,13 +129,12 @@ sub _list {
 
 sub _logo {
     return Link(
-	SPAN_c4_logo_text(
-	    Join([
-		SPAN_c4_logo_name('CAL 54'),
-		SPAN_c4_logo_tag(q{Boulder's Calendar}),
-	    ]),
-	),
+	Join([
+	    SPAN_c4_logo_name('CAL 54'),
+	    SPAN_c4_logo_tag(q{Boulder's Calendar}),
+	]),
 	'SITE_ROOT',
+	'c4_logo_text',
     );
 }
 
@@ -226,7 +225,7 @@ sub _pager {
 	    ),
 	    Link(
 		'>>',
-		_when_uri($_D->add_days($start, 3 * $weeks)),
+		_when_uri($_D->add_days($start, 7 * $weeks)),
 		'c4_next',
 	    ),
 	]),

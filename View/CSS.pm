@@ -20,7 +20,7 @@ form.c4_form {
   margin: auto;
   background-color: white;
   CSS('c4_form');
-!  width: 100%;
+  width: 100%;
   padding-bottom: 2.5ex;
 }
 table.c4_grid {
@@ -37,7 +37,7 @@ td.c4_left {
 img.c4_logo {
   padding-bottom: 1ex;
 }
-span.c4_logo_text {
+a.c4_logo_text {
   display: block;
   vertical-align: top;
   margin-top: -.5ex;
@@ -99,7 +99,7 @@ span.c4_pager {
   padding-top: .6ex;
   padding-bottom: .5ex;
   display: block;
-!  width: 100%;
+  width: 100%;
   Font('c4_pager');
 }
 .c4_pager .c4_month,
@@ -195,30 +195,45 @@ div.c4_copy {
   margin-top: 2ex;
   margin-bottom: 4ex;
 }
-body.c4_mobile span.c4_logo_text {
+body.c4_mobile a.c4_logo_text {
   margin-top: 0;
   margin-bottom: .5ex;
 }
+div.c4_mobile_header a.c4_logo_text,
+div.c4_mobile_header div.c4_query {
+  margin-left: .5em;
+}
 div.c4_mobile_header {
+  padding: 0;
+  width: 100%;
   padding-top: .5ex;
+!  padding-left: .5em;
 }
 div.c4_mobile_header span.c4_logo_tag {
-  margin-left: 1em;
+  margin-left: .5em;
+}
+body.c4_mobile div.c4_list {
+  text-align: left;
+  padding: 0;
+  padding-left: .5em;
+  padding-right: .5em;
 }
 div.b_mobile_toggler {
-   margin-top: 1ex;
+   text-align: center;
+   margin-top: 2ex;
 }
 body.c4_mobile .c4_query input.submit {
-  vertical-align: auto;
+  vertical-align: middle;
   background: none;
   border: none;
   Font('c4_query_submit');
   Color('c4_query_submit-background');
   padding: 0;
-  margin: auto;
-  margin-left: .5ex;
-  height: auto;
-  width: auto;
+  margin: 0;
+  margin-left: 2ex;
+  height: 5ex;
+  width: 5em;
+  font-size: 80%;
 }
 body.c4_mobile .c4_pager a.c4_prev {
   padding-left: 0;
@@ -231,25 +246,10 @@ body.c4_mobile .c4_pager .c4_month_spacer,
 body.c4_mobile .c4_pager .c4_next {
   padding-left: .5em;
 }
-div.c4_mobile_header,
-body.c4_mobile div.c4_list,
-body.c4_mobile div.c4_copy,
 body.c4_mobile div.c4_bottom_pager .c4_pager,
-body.c4_mobile div.b_mobile_toggler {
-  text-align: left;
-  padding-left: .5em;
-!  width: auto;
-}
 div.c4_mobile_header {
-  background-color: #0088ce;
-!  width: 100%;
-}
-body.c4_mobile div.c4_list {
-  width: 22em;
-}
-body.c4_mobile {
-  font-size: 120%;
-  width: 22em;
+  Color('c4_query-background');
+  width: 100%;
 }
 body.c4_mobile .c4_list .item span.time {
   display: block;

@@ -76,6 +76,7 @@ my($_SELF) = __PACKAGE__->new({
         }],
     ],
     Font => [
+	[body => []],
 	[b_mobile_toggler_selected => []],
 	[b_mobile_toggler_a => []],
 	[c4_home => ['family=Arial, Helvetica, sans-serif', 'medium']],
