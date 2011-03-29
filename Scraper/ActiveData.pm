@@ -79,7 +79,7 @@ sub _parse_event_xml {
     # iterate events, taking Address1 which match the current venue
     foreach my $event (@{$xml->{Event}}) {
 #TODO: change to accept_event config?
-	next if lc($event->{Status} || '') eq 'cancelled';
+	next if $self->is_canceled($event->{Status} || '');
 	next if ($event->{ExternalField1} || '') =~ /students|alumni/i;
 	next unless $event->{StartDate} && $event->{StartTime}
 	    && $event->{EndDate};
