@@ -16,7 +16,7 @@ my($_VL) = b_use('Model.VenueList');
 my($_D) = b_use('Type.Date');
 
 sub PAGE_SIZE {
-    return 50;
+    return b_use('Widget.IfMobile')->is_mobile(shift->req) ? 20 : 50;
 }
 
 sub execute {
