@@ -21,6 +21,16 @@
     'venue' => 'cu_art'
   },
   {
+    'description' => 'Are you a new student or faculty member at CU, Boulder? Or do you need a quick reminder of all the resources available to you as a CU affiliate? Jump Start your year with this quick introduction to library resources, research and information management tips. This is the first of ten sessions in the spring 2011 University Libraries Learner\'s Lunch series.',
+    'dtend' => '2455574 72000',
+    'dtstart' => '2455574 68400',
+    'location' => '1157 18TH ST',
+    'summary' => 'Get a Jump Start on Using the Libraries this Semester',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=5321&information_id=21685&type=&rss=rss',
+    'venue' => 'cu_norlin'
+  },
+  {
     'description' => ' Songwriter and stylist/arranger, Silent Bear has an internal  persuasiveness that   flavors his work with an equal measure of grit and  eloquence. Somewhat aloof, often mysterious, be forewarned; this bear  is   anything but silent!  In the UMC atrium, free!  
    http://umc.colorado.edu/fun/talent.html ',
     'dtend' => '2455574 72000',
@@ -474,6 +484,16 @@ Gershwin - "Summertime"',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=5205&information_id=20963&type=&rss=rss',
     'venue' => 'cu_art'
+  },
+  {
+    'description' => 'Performance Friday! Featuring Alexandra Nguyen, co-chair of the collaborative piano faculty in College of Music.   Professor Nguyen and guests will discuss performance from the perspective of the collaborative pianist, whose partners can include virtually any instrument or voice type. Doors open at 11:30 for free, light lunch. For further information, please contact Paula Anderson, 303-492-1423.',
+    'dtend' => '2455583 72000',
+    'dtstart' => '2455583 68400',
+    'location' => '1157 18TH ST',
+    'summary' => 'Performance Friday! Featuring Alexandra Nguyen',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=4200&information_id=17299&type=&rss=rss',
+    'venue' => 'cu_norlin'
   },
   {
     'description' => 'Explore the construction and use of the Hubble Space Telescope in this show about the people behind the scenes, and various careers in space. From scientists to engineers to astronauts, this show contains interviews and stories that reveal the humanity behind the science and technology.',
@@ -1847,6 +1867,16 @@ Stern has served on the faculty of the Cleveland Institute of Music and is now A
     'venue' => 'cu_art'
   },
   {
+    'description' => 'Performance Friday! featuring excerpts from Department of Theatre and Dance\'s production of Rent. Doors open at 11:30 for free, light lunch. For further information, please contact Paula Anderson, 303-492-1423.',
+    'dtend' => '2455597 72000',
+    'dtstart' => '2455597 68400',
+    'location' => '1157 18TH ST',
+    'summary' => 'Performance Friday! Featuring Excerpts from  "Rent"',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=4277&information_id=17822&type=&rss=rss',
+    'venue' => 'cu_norlin'
+  },
+  {
     'description' => '',
     'dtend' => '2455598 16200',
     'dtstart' => '2455598 9000',
@@ -2406,6 +2436,18 @@ Stern has served on the faculty of the Cleveland Institute of Music and is now A
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=5205&information_id=20980&type=&rss=rss',
     'venue' => 'cu_art'
+  },
+  {
+    'description' => ' CHA Lecture Series, featuring Xiao Qiang  (East Asian Studies, UC-Berkeley).  
+     
+   Professor Xiao\'s research interests include Participatory media, China and human rights; researching about state censorship and control of the Internet, the impact of information and communication technologies on China\'s media, politics and international relations; and running the China Digital Times news portal to explore how emerging information and communication technologies can advance the world\'s understanding of China. For further information, please contact Paula Anderson, 303-492-1423. ',
+    'dtend' => '2455603 82800',
+    'dtstart' => '2455603 82800',
+    'location' => '1157 18TH ST',
+    'summary' => 'CHA Lecture Series Featuring Xiao Qiang',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=4278&information_id=17824&type=&rss=rss',
+    'venue' => 'cu_norlin'
   },
   {
     'description' => 'Enjoy an evening under the stars with a special topic of Stellar Evolution.',
@@ -4569,6 +4611,16 @@ The Visiting Artist Program has been a vital component of the Department of Art 
     'venue' => 'cu_art'
   },
   {
+    'description' => ' Performance Friday!  featuring excerpts from CU Opera\'s production of Susannah. Doors open at 11:30 for free, light lunch. For further information, please contact Paula Anderson, 303-492-1423.',
+    'dtend' => '2455625 72000',
+    'dtstart' => '2455625 68400',
+    'location' => '1157 18TH ST',
+    'summary' => 'Performance Friday! Featuring Excerpts from Susannah',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=4279&information_id=17826&type=&rss=rss',
+    'venue' => 'cu_norlin'
+  },
+  {
     'description' => '',
     'dtend' => '2455626 5400',
     'dtstart' => '2455625 84600',
@@ -6432,6 +6484,16 @@ Enjoy this mesmerizing concert with flowing, contemporary works by the iconic co
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=5230&information_id=21432&type=&rss=rss',
     'venue' => 'cu_macky'
+  },
+  {
+    'description' => ' Performance Friday!  featuring excerpts from Department of Dance\'s Faculty Dance Concert entitled  And They Lynched Him on a Tree . Doors open at 11:30 for free, light lunch. For further information, please contact Paula Anderson, 303-492-1423.',
+    'dtend' => '2455653 68400',
+    'dtstart' => '2455653 64800',
+    'location' => '1157 18TH ST',
+    'summary' => 'Performance Friday! Featuring Excerpts from "And They Lynched Him on a Tree"',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://events.colorado.edu/EventList.aspx?view=EventDetails&eventidn=4280&information_id=17828&type=&rss=rss',
+    'venue' => 'cu_norlin'
   },
   {
     'description' => '',
