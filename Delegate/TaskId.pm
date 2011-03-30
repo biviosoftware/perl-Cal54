@@ -97,6 +97,17 @@ sub get_delegate_info {
 	    ANYBODY
 	    Action.Error
 	)],
+	[qw(
+	    ADM_EVENT_REVIEW_LIST
+	    510
+	    FORUM
+	    DATA_READ&FEATURE_SITE_ADMIN
+	    Model.ScraperList->execute_load_all
+	    Model.AdmEventQueryForm
+	    Model.AdmEventReviewList->execute_load_page
+	    View.Scraper->review_list
+	    next=ADM_EVENT_REVIEW_LIST
+        )],
     ]);
 }
 
