@@ -99,4 +99,38 @@ sub preview {
     );
 }
 
+sub review_list {
+    return shift->internal_body(Join([
+	vs_simple_form(AdmEventQueryForm => [
+	    ['AdmEventQueryForm.scraper', {
+		wf_class => 'ComboBox',
+		list_class => 'ScraperList',
+		list_display_field => Or(
+		    ['default_venue.RealmOwner.display_name'],
+		    ['Website.url'],
+		),
+		size => 80,
+		auto_submit => 1,
+	    }],
+	], 1),
+	vs_paged_list(AdmEventReviewList => [
+	    'CalendarEvent.modified_date_time',
+	    'venue.RealmOwner.display_name',
+	    'CalendarEvent.dtstart',
+	    ['RealmOwner.display_name', {
+		column_heading => String('Event'),
+		column_widget => Join([
+		    Link(
+			String(['RealmOwner.display_name']),
+			Or(['CalendarEvent.url'], ['calendar.Website.url']),
+			'title',
+		    ),
+		    BR(),
+		    SPAN_excerpt(String(['excerpt'])),
+		]),
+	    }],
+	]),
+    ]));
+}
+
 1;
