@@ -21,6 +21,7 @@ my($_END_NEWLINE_TAG) = {
 	h3
 	li
 	td
+	title
     )),
 };
 my($_START_NEWLINE_TAG) = {
