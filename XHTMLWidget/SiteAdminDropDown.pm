@@ -13,6 +13,7 @@ sub TASK_MENU_LIST {
 	'adm_venue_list',
 	'adm_calendar_event_list_form',
 	'adm_scraper_list',
+	'adm_event_review_list',
     );
 }
 
