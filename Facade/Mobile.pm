@@ -22,7 +22,7 @@ __PACKAGE__->new({
 	[c4_home => ['family=Arial, Helvetica, sans-serif', '100%']],
 	[[qw(c4_logo_tag c4_logo_name)] => [qw(bold uppercase 120%)]],
 	[c4_query_what => ['100%']],
-	[c4_query_submit => ['100%']],
+	[c4_query_submit => ['80%']],
 	[c4_pager_month => ['70%', 'uppercase']],
 	[c4_pager_a => ['70%']],
     ],
