@@ -18,13 +18,13 @@ body.c4_home {
 }
 form.c4_form {
   margin: auto;
-  background-color: white;
+  Color('c4_form-background');
   CSS('c4_form');
   width: 100%;
   padding-bottom: 2.5ex;
 }
 table.c4_grid {
-  background-color: #0088ce;
+  Color('c4_grid-background');
   height: 10ex;
   CSS('c4_grid');
 }
@@ -41,10 +41,6 @@ a.c4_logo_text {
   display: block;
   vertical-align: top;
   margin-top: -.5ex;
-}
-span.c4_logo_name,
-span.c4_logo_tag {
-  color: #ffffff;
 }
 span.c4_logo_name {
   Font('c4_logo_name');
@@ -233,7 +229,6 @@ body.c4_mobile .c4_query input.submit {
   margin-left: 2ex;
   height: 5ex;
   width: 5em;
-  font-size: 80%;
 }
 body.c4_mobile .c4_pager a.c4_prev {
   padding-left: 0;
