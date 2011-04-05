@@ -129,7 +129,19 @@ sub review_list {
 		    SPAN_excerpt(String(['excerpt'])),
 		]),
 	    }],
-	]),
+	    vs_actions_column([
+		['show', 'ADM_TOGGLE_EVENT_VISIBILITY', undef,
+		     ['is_hidden']],
+		['hide', 'ADM_TOGGLE_EVENT_VISIBILITY', undef,
+		     ['!', 'is_hidden']],
+	    ]),
+	], {
+	    row_bgcolor => If(['is_hidden'],
+	        'c4_pager_a',
+	    ),
+	    even_row_class => '',
+	    odd_row_class => '',
+	}),
     ]));
 }
 
