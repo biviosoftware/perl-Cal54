@@ -15,6 +15,10 @@ my($_S) = b_use('Bivio.Search');
 my($_VL) = b_use('Model.VenueList');
 my($_D) = b_use('Type.Date');
 
+sub EXCLUDE_HIDDEN_ROWS {
+    return 1;
+}
+
 sub PAGE_SIZE {
     return b_use('Widget.IfMobile')->is_mobile(shift->req) ? 20 : 50;
 }
@@ -131,6 +135,17 @@ sub internal_post_load_row {
     return 1;
 }
 
+sub internal_pre_load {
+    my($self) = @_;
+    return $self->EXCLUDE_HIDDEN_ROWS
+	# much faster than a left join...
+	? ' NOT EXISTS (
+            SELECT primary_id FROM row_tag_t
+            WHERE primary_id = calendar_event_t.calendar_event_id
+        ) '
+	: '';
+}
+
 sub internal_prepare_statement {
     my($self, $stmt, $query) = @_;
     $self->new_other('PopularList')->load_all;
@@ -147,9 +162,6 @@ sub internal_prepare_statement {
     $dt = $_DT->now
 	if !$dt || $_DT->is_greater_than($now, $dt);
     $stmt->where(
-#TODO: Need to deal with recurring events
-#TODO: Need to only show those recurring events that are valid for the day
-#	$stmt->GTE('CalendarEvent.dtstart', [$dt]),
 	$stmt->GTE('CalendarEvent.dtend', [$dt]),
     );
     # Don't call SUPER, because we want all events
