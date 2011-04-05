@@ -20,6 +20,7 @@ sub merge_overrides {
 		'Bivio::Agent::TaskId',
 		'Bivio::Auth::RealmType',
                 'Bivio::Type::Location',
+		'Bivio::Type::RowTagKey',
 	    ],
 	    maps => {
 		Action => ['Cal54::Action'],
