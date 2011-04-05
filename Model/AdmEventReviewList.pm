@@ -6,9 +6,25 @@ use Bivio::Base 'Model.HomeList';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
+sub EXCLUDE_HIDDEN_ROWS {
+    return 0;
+}
+
 sub internal_initialize {
     my($self) = @_;
     my($ii) = $self->merge_initialize_info($self->SUPER::internal_initialize, {
+	other => [
+	    {
+		name => 'is_hidden',
+		type => 'Boolean',
+		in_select => 1,
+		select_value => '(
+                    SELECT COUNT(*)
+                    FROM row_tag_t rt
+                    WHERE rt.primary_id = calendar_event_t.calendar_event_id
+                ) AS is_hidden',
+	    },
+	],
 	other_query_keys => ['scraper'],
     });
     unshift(@{$ii->{order_by}}, qw(
