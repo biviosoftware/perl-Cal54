@@ -99,6 +99,7 @@ my($_SELF) = __PACKAGE__->new({
  	[SITE_ROOT_MOBILE => 'mobile'],
 	[ADM_SCRAPER_LIST => '?/scrapers'],
 	[ADM_EVENT_REVIEW_LIST => '?/event-review'],
+	[ADM_TOGGLE_EVENT_VISIBILITY => '?/toggle-event-visibility'],
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],

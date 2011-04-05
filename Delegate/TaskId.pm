@@ -108,6 +108,15 @@ sub get_delegate_info {
 	    View.Scraper->review_list
 	    next=ADM_EVENT_REVIEW_LIST
         )],
+	[qw(
+	    ADM_TOGGLE_EVENT_VISIBILITY
+	    511
+	    FORUM
+	    DATA_READ&FEATURE_SITE_ADMIN
+	    Model.AdmEventReviewList->execute_load_this
+	    Model.AdmToggleEventForm
+	    next=ADM_EVENT_REVIEW_LIST
+        )],
     ]);
 }
 
