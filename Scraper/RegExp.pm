@@ -78,7 +78,8 @@ sub internal_collect_data {
     my($rec) = {
 	summary => _clean($current->{summary}),
 	description => _clean($current->{description}),
-	$current->{url} ? (url => $current->{url}) : (),
+	url => $current->{url}
+	    || $self->get('scraper_list')->get('Website.url'),
 	dtstart => _date($self, 'start', $current),
 	dtend => _date($self, 'end', $current),
 	location => $current->{location},
