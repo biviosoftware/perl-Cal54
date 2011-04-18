@@ -1,0 +1,17 @@
+# Copyright (c) 2011 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+Request();
+options({comparator => 'nested_contains'});
+req()->initialize_fully;
+[
+    [req()] => [
+	taxonomy_map => [
+	    [] => [{
+		sub3 => [qw(super1 super2 super3)],
+		sub5 => [qw(super1 super2 super3 super4)],
+		sub6 => [qw(super1 super2 super3 super4)],
+		sub1 => [qw(super1 super2)],
+	    }],
+	],
+    ],
+];
