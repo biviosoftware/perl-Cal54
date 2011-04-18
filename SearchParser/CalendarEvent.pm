@@ -7,6 +7,7 @@ use Bivio::Base 'Search.Parser';
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_M) = b_use('Biz.Model');
 my($_DT) = b_use('Type.DateTime');
+my($_TSL) = b_use('Model.TaxonomySettingList');
 
 sub do_iterate_realm_models {
     my($self, $op, $req) = @_;
@@ -50,7 +51,13 @@ sub realms_for_rebuild_db {
 	    sub {shift->get('scraper_id')},
 	    'unauth_iterate_start',
 	    'scraper_id',
-	); 
+	);
+}
+
+sub xapian_posting_synonyms {
+    my($self, $word) = @_;
+    my($seen) = $self->get_if_exists_else_put(__PACKAGE__ . '.seen' => {});
+    return [grep(!$seen->{$_}++, @{$_TSL->taxonomy_map($self->req)->{$word} || []})];
 }
 
 1;
