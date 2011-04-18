@@ -34,13 +34,13 @@ table.c4_grid td {
 td.c4_left {
   padding: 16px 1em 1ex 1.5em;
 }
-img.c4_logo {
-  padding-bottom: 1ex;
-}
 a.c4_logo_text {
   display: block;
   vertical-align: top;
   margin-top: -.5ex;
+}
+a.c4_logo_text:hover {
+  text-decoration: none;
 }
 span.c4_logo_name {
   Font('c4_logo_name');
@@ -207,6 +207,9 @@ div.c4_mobile_header {
 }
 div.c4_mobile_header span.c4_logo_tag {
   margin-left: .5em;
+}
+div.c4_mobile_header a:hover {
+  text-decoration: none;
 }
 body.c4_mobile div.c4_list {
   text-align: left;
