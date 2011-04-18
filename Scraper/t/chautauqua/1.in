@@ -6,6 +6,7 @@
     'location' => undef,
     'summary' => 'A Valentine\'s Concert & Sing-Along with Pete & Joan Wernick and The Winstons',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -15,6 +16,7 @@
     'location' => undef,
     'summary' => 'CMF Chamber Music Concert: Brahms, Foote, and Copland Part of Colorado Music Festival Chamber Music Series',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -24,6 +26,7 @@
     'location' => undef,
     'summary' => 'Son of the Sheik Starring Rudolph Valentino',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -33,6 +36,7 @@
     'location' => undef,
     'summary' => 'True Heart Susie Starring Lillian Gish',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -42,6 +46,7 @@
     'location' => undef,
     'summary' => 'The Whole Omega 3 Story Has Yet to be Told Presented by Pharmaca Integrative Pharmacy',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -51,6 +56,7 @@
     'location' => undef,
     'summary' => 'Feathers and Talons: An introduction to the ecology of Colorado birds of prey Presented by Rocky Mountain Bird Observatory',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -60,6 +66,7 @@
     'location' => undef,
     'summary' => 'Boulder Conversations with Extraordinary People: David Barrett Presented by the Boulder History Museum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -69,6 +76,7 @@
     'location' => undef,
     'summary' => 'Women\'s Health: Maintaining Your Energy and Vitality, PMS Through Menopause Presented by Pharmaca Integrative Pharmacy',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -78,6 +86,7 @@
     'location' => undef,
     'summary' => 'Beyond the Red-tailed Hawk: An introduction to the identification of Colorado birds of prey Presented by Rocky Mountain Bird Observatory',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -87,6 +96,7 @@
     'location' => undef,
     'summary' => 'Meet the Artists: Seth Wulsin, Laleh Mehran and Christopher Coleman In collaboration with the Boulder Museum of Contemporary Art',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -96,6 +106,7 @@
     'location' => undef,
     'summary' => 'Boulder Conversations with Extraordinary People: Susan Solomon, PhD Presented by the Boulder History Museum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -105,6 +116,7 @@
     'location' => undef,
     'summary' => 'Boulder Conversations with Extraordinary People: Dr. Gene Bolles Presented by the Boulder History Museum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -114,6 +126,7 @@
     'location' => undef,
     'summary' => 'Secrets to Healthy and Beautiful Skin Presented by Pharmaca Integrative Pharmacy',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -123,6 +136,7 @@
     'location' => undef,
     'summary' => 'Paleo-Explorers Dinosaur Festival Presented by CU Science Discovery',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -132,6 +146,7 @@
     'location' => undef,
     'summary' => 'Paleo-Explorers Dinosaur Festival Presented by CU Science Discovery',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -141,6 +156,7 @@
     'location' => undef,
     'summary' => 'Mad Scientist Rock',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   },
   {
@@ -150,6 +166,7 @@
     'location' => undef,
     'summary' => 'Mad Scientist Rock',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chautauqua.com/upcoming_events.php',
     'venue' => 'chautauqua'
   }
 ]

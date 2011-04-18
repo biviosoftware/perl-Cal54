@@ -36,6 +36,7 @@
     'location' => undef,
     'summary' => 'Scott Dale Trio',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.boulderado.com/musiconthemezz.html',
     'venue' => 'boulderado'
   },
   {
@@ -45,6 +46,7 @@
     'location' => undef,
     'summary' => 'Molly Greacen and the Sweet Life Brazilian Jazz Band',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.boulderado.com/musiconthemezz.html',
     'venue' => 'boulderado'
   },
   {
@@ -54,6 +56,7 @@
     'location' => undef,
     'summary' => 'Laurie Dameron Trio',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.boulderado.com/musiconthemezz.html',
     'venue' => 'boulderado'
   },
   {
@@ -63,6 +66,7 @@
     'location' => undef,
     'summary' => 'Scott Martin Trio, featuring Crystal Collins on Vocals',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.boulderado.com/musiconthemezz.html',
     'venue' => 'boulderado'
   }
 ]
