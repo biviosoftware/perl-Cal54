@@ -6,7 +6,7 @@ req()->initialize_fully;
 [
     [req()] => [
 	taxonomy_map => [
-	    [] => [{
+	    [req()] => [{
 		sub3 => [qw(super1 super2 super3)],
 		sub5 => [qw(super1 super2 super3 super4)],
 		sub6 => [qw(super1 super2 super3 super4)],
