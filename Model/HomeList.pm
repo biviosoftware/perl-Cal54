@@ -154,7 +154,7 @@ sub internal_prepare_statement {
     $self->new_other('TimeZoneList')->load_all;
     my($dt) = $query->unsafe_get('begin_date')
 	|| $query->unsafe_get('when');
-#TODO: When is less than now
+#TODO: when is less than now
     $dt = ($_D->from_literal($dt))[0];
     my($now) = $_DT->now;
     $dt = $_DEFAULT_TZ->date_time_to_utc($_DT->set_beginning_of_day($dt))
@@ -182,10 +182,23 @@ sub internal_prepare_statement {
 	want_all_public => 1,
 	no_model => 1,
     });
+    my($n) = $query->get('count');
+    $rows = [sort(
+	{
+	    $_DT->compare($a->{modified_date_time}, $b->{modified_date_time});
+	}
+	grep(
+	    $_DT->is_greater_than_or_equals($_->{modified_date_time}, $dt),
+	    @$rows,
+	),
+    )];
     $stmt->where(
 	$stmt->IN(
 	    'CalendarEvent.calendar_event_id',
-	    [map($_->{primary_id}, @$rows)],
+	    b_debug [map(
+		$_->{primary_id},
+		@$rows > $n ? splice(@$rows, 0, $n) : @$rows,
+	    )],
 	),
     );
     return;
