@@ -70,8 +70,11 @@ sub _add_event_urls {
 	$uid =~ s/\@.*$//;
 	$event->{url} = $url_by_id->{$uid . '-'
 	    . $_DT->to_string($event->{dtstart})};
-	b_warn('missing url for uid: ', $uid, ' ', $event->{dtstart})
-	    unless $event->{url};
+
+	unless ($event->{url}) {
+	    b_warn('missing url for uid: ', $uid, ' ', $event->{dtstart})
+		if $_D->compare($event->{dtstart}, $end) < 0;
+	}
     }
     return;
 }
