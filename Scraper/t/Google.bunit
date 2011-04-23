@@ -1,6 +1,6 @@
 # Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
 # $Id$
 (do('./Scraper.PL'))->(caffesole => [
-    [[qw(51)], '1/11/2011 12:00:00'],
-    [[qw(123)], '1/12/2011 19:00:00'],
+    [[qw(50)], '1/11/2011 12:00:00'],
+    [[qw(121)], '1/12/2011 19:00:00'],
 ]);

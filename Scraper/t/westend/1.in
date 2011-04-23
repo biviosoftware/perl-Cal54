@@ -1,25 +1,5 @@
 [
   {
-    'description' => 'The George Nelson Quartet creates a mix of jazz and soul that has broad appeal. The Quartet features George Nelson on Piano, Jacob Herold on tenor sax and flute, Thom Sandrock on bass, and William Garrison on Percussion.',
-    'dtend' => '2455567 3600',
-    'dtstart' => '2455567 3600',
-    'location' => undef,
-    'summary' => 'George Nelson Quartet',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://georgenelsonband.com/quartet.html',
-    'venue' => 'westend'
-  },
-  {
-    'description' => 'Over the last ten years, Kort has honed his skills as a working musician playing more than 1000 live shows throughout the U.S. and Europe. Kort writes, plays and sings Americana Music - equal parts rock, folk, country, blues and bluegrass, with a healthy dose of something fresh. After moving to Colorado in 2003, the music took a decidedly more country/bluegrass turn and dug deeper into the roots of his Scotch-Irish heritage.',
-    'dtend' => '2455574 3600',
-    'dtstart' => '2455574 3600',
-    'location' => undef,
-    'summary' => 'Kort McCumber',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.myspace.com/kortmccumber',
-    'venue' => 'westend'
-  },
-  {
     'description' => 'Music is emotion. Music is a story. Music takes you on a voyage, and that\'s exactly what Connecticut native, and recent Boulder transplant, guitarist/composer Matt Flaherty conveys in his music. Since graduating from Western Connecticut State University\'s jazz program, Matt has been teaching and playing full time. Matt plays out regularly with his bands, Hot Soup, and The Matt Flaherty Trio and is gaining a lot of recognition along the way.',
     'dtend' => '2455581 3600',
     'dtstart' => '2455581 3600',

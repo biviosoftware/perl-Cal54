@@ -1,25 +1,5 @@
 [
   {
-    'description' => 'Please join international artists Seth Wulsin, Laleh Mehran &#038; Christopher Coleman at Chautauqua\'s Community House for a preview of what they have in store for their exhibition at BMoCA from June 23 through September 11, 2011.',
-    'dtend' => '2455616 10800',
-    'dtstart' => '2455616 3600',
-    'location' => undef,
-    'summary' => 'THE DIVERSITY PROJECT: INTRODUCTORY ARTIST TALKS',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/the-diversity-project-introductory-artist-talks-2/',
-    'venue' => 'bmoca'
-  },
-  {
-    'description' => 'Celebrate the opening of our Spring 2011 Exhibitions with Brazilian artist Henrique Oliveira and Colorado artist Jessica Moon Bernstein.',
-    'dtend' => '2455618 10800',
-    'dtstart' => '2455618 1800',
-    'location' => undef,
-    'summary' => 'SPRING EXHIBITION OPENING RECEPTION: HENRIQUE OLIVEIRA & JESSICA MOON BERNSTEIN',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/opening-reception-henrique-oliveira-jessica-moon-bernstein-2/',
-    'venue' => 'bmoca'
-  },
-  {
     'description' => 'Henrique Oliveira reflects on his life, work, and contemporary Brazilian culture during a conversation with acclaimed Brazilian poet and author Adriana Lisboa.',
     'dtend' => '2455625 7200',
     'dtstart' => '2455625 7200',
@@ -60,26 +40,6 @@
     'venue' => 'bmoca'
   },
   {
-    'description' => undef,
-    'dtend' => undef,
-    'dtstart' => undef,
-    'location' => undef,
-    'summary' => 'YOUNG ARTISTS AT WORK: SPRING BREAK',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/young-artists-at-work-spring-break/',
-    'venue' => 'bmoca'
-  },
-  {
-    'description' => undef,
-    'dtend' => undef,
-    'dtstart' => undef,
-    'location' => undef,
-    'summary' => 'YOUNG ARTISTS AT WORK: BRAZILIAN FOLK ARTS',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/young-artists-at-work-brazilian-folk-arts/',
-    'venue' => 'bmoca'
-  },
-  {
     'description' => "Consider the concept of scent as art and experience Henrique Oliveira\x{2019}s exhibi\x{ad}tion in a whole new way with acclaimed perfumer Dawn Spencer Hurwitz as she interprets his installation and paintings through a series of custom blended scents.",
     'dtend' => '2455646 3600',
     'dtstart' => '2455646 3600',
@@ -107,16 +67,6 @@
     'summary' => 'JESSICA MOON BERNSTEIN ARTIST TALK',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.bmoca.org/2011/02/jessica-moon-bernstein-artist-talk/',
-    'venue' => 'bmoca'
-  },
-  {
-    'description' => undef,
-    'dtend' => undef,
-    'dtstart' => undef,
-    'location' => undef,
-    'summary' => 'COMMUNIKEY FESTIVAL CLOSING PARTY',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/communikey-festival-closing-party/',
     'venue' => 'bmoca'
   },
   {

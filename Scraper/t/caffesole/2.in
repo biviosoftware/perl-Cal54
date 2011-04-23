@@ -957,28 +957,6 @@ www.myspace.com/kristinamurray',
     'venue' => 'caffesole'
   },
   {
-    'description' => "Eyes of Infinity ~ A Collection of Work by Krystleyez
-
-Please join us for the opening reception of \"Eyes of Infinity,\" an exhibition of sacred heArtworks by Krystle Marie Smith. Paving pathways to awakening, Krystle's work provides portals into the fractalling and luminous nature of Being. Her paintings are symphonies of color and form that serenade the viewer with harmonious rhythms of the Cosmos.
-
-Honored to unveil these breath-giving visions, we invite you to gather with us on 1-11-11 as we activate conscious commUnity through art, music, and collaboration.
-
-We will embark upon the evening by recognizing the sacred heArtbeat that unifies us all through a tribal drum and rhythm circle. We encourage all musicians to bring their instruments to harmonize in this collective expression starting at 5:55. *Supercollider will be blessing us with their jazzy flavors 8:30-10:45 p.m., and the evening will culminate with a very special set by MIRAJA (Raja of Future Simple Project!)
-
-You can view more of Krystle's artwork at www.krystleyez.com and on her facebook page \"Visionary Artwork of Krystleyez\"
-
-~* \x{2665} *~
-
-http://www.facebook.com/event.php?eid=175682979133203",
-    'dtend' => '2455574 14400',
-    'dtstart' => '2455574 3600',
-    'location' => '',
-    'summary' => 'Eyes of Infinity ~ A Collection of Work by Krystleyez',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=anVyMHZ0YmRocGt2cnA3am9wc21yZnVuZjAgdGhlbGF1Z2hpbmdnb2F0QG0',
-    'venue' => 'caffesole'
-  },
-  {
     'description' => 'Ginga:
 
 Ginga formed nearly six years ago in Boulder, Colorado, performing a wide variety of Brazilian styles of music.  The quartet, comprised of Greg LaLiberte, Francisco Marques, Bill Kopper, and Raoul Rossiter has delved into choro, pagode, bossa nova, samba, Brazilian jazz, samba funk, and other styles. Everyone sings and everyone plays percussion. The topflight musicianship the band displays inspires people to dance, sing with the band, or sit and listen.
@@ -1072,22 +1050,6 @@ $5 cover',
     'summary' => 'Ginga',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'https://www.google.com/calendar/event?eid=N2lpOWtiZjE5YTZtOG1tM283NTI3N3IzN2tfMjAxMTA3MDhUMDIwMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
-    'venue' => 'caffesole'
-  },
-  {
-    'description' => 'Supercollider:
-
-Supercollider is a music collective that melds the sounds and beats of jazz, blues, funk, and rock music with a predilection for improvisational jams. The core group consists of Jon Gray (trumpet, keys, vocals), Jon Stewart (saxophone), Greg Harris (vibraphone, keys), Mark Donovan (guitar), Dan Schwindt (guitar), Garrett Sayers (bass), and Zack Littlefield (drums). Current members of Supercollider have performed, as members or as guest artists, with many other great musicians and bands, including the Greyhounds, the Motet, Kyle Hollingsworth, Ron Miles, Art Lande, Cabaret Diosa, Fat Mama, and many others. Supercollider hosts jazz night at the Laughing Goat every Tuesday Night. Performances feature Supercollider members with very talented special guests that always offer up a good time and keep the music sounding fresh.
-
-www.supercollidermusic.com
-
-$5 cover',
-    'dtend' => '2455574 19800',
-    'dtstart' => '2455574 12600',
-    'location' => '',
-    'summary' => 'Jazz Night w/ Supercollider',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=dmJvMWY1dDNjaXF1ZmR0dGpudXF1bWo0NDRfMjAxMTAxMTJUMDMzMDAwWiB0aGVsYXVnaGluZ2dvYXRAbQ',
     'venue' => 'caffesole'
   },
   {

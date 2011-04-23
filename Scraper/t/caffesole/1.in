@@ -461,34 +461,6 @@ Boulder, CO
 (Behind King Soopers)
 
 http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
-    'dtend' => '2455573 21600',
-    'dtstart' => '2455573 7200',
-    'location' => 'Caffe Sole',
-    'summary' => 'Brad Goode Jazz Quartet',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'https://www.google.com/calendar/event?eid=c2luZXByMmw3cThiYjFrbTVwZTRwbHExMWdfMjAxMTAxMTFUMDIwMDAwWiBjYWZmZXNvbGVtdXNpY0Bt',
-    'venue' => 'caffesole'
-  },
-  {
-    'description' => 'Monday night jam session at CAFFE SOLE, in South Boulder:
-
-Caffe Sole is a great venue that recently underwent a renovation and is becoming a home for live music.
-
-Please come out and play. listen or simply hang and help us keep this great jam session happening!
-
-Brad Goode               trumpet
-Stephen Thurston     piano
-Mike Facey                 bass
-Lucas Mellang          drums
-
-NO COVER CHARGE
-
-Caffe Sole
-637R South Broadway
-Boulder, CO
-(Behind King Soopers)
-
-http://www.examiner.com/jazz-in-denver/brad-goode-this-cat-listens-review',
     'dtend' => '2455580 21600',
     'dtstart' => '2455580 7200',
     'location' => 'Caffe Sole',
