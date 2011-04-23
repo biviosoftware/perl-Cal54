@@ -209,7 +209,6 @@ sub internal_update {
     my($added, $updated, $visited) = ({}, {}, {});
     
     foreach my $event (@{$self->get('events')}) {
-	next unless $_DT->is_greater_than($event->{dtend}, $date_time);
 	my($key) = $event->{dtstart} . ' '
 	    . $_TT->from_literal_or_die($event->{summary});
 
@@ -284,6 +283,7 @@ sub _filter_event {
 
 sub _filter_events {
     my($self) = @_;
+    my($date_time) = $self->get('date_time');
     my($aux) = $self->get_scraper_aux;
     my($events) = [];
 
@@ -291,6 +291,7 @@ sub _filter_events {
 	next if $self->is_canceled($event->{summary});
 	$event->{dtend} ||= $event->{dtstart};
 	$event->{time_zone} ||= $self->get('time_zone');
+	next unless $_DT->is_greater_than($event->{dtend}, $date_time);
 	next unless _filter_event($self, 'accept', $event, $aux);
 	next if _filter_event($self, 'reject', $event, $aux);
 	$event->{venue} = _venue_name_for_event($self, $event);
