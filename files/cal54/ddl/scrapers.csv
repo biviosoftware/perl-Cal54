@@ -66,12 +66,6 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 }
 ",300022,RegExp,Home,http://store-locator.barnesandnoble.com/store/2333,Barnes & Noble,barnesandnoble,300021,s300022
 500021,,500022,ICalendar,Home,http://boulderbookstore.indiebound.com/event,Boulder Book Store,boulderbookstore,500021,s500022
-600021,"{
-  accept_event => {
-    summary => qr/\bdance\b/i,
-  },
-}
-",600022,Google,Home,http://www.boulderdrafthouse.com/BD_Calendar.html,Boulder Draft House,boulderdrafthouse,600021,s600022
 700021,"{
   reject_event => {
     description => qr/(type\s*=\s*class)|(^$)/i,
