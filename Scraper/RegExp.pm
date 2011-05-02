@@ -144,7 +144,7 @@ sub _date {
 	    b_die('end_time missing a|p')
 		unless $ap;
 	    my($end_hour) = $current->{end_time} =~ /^(\d+)/;
-	    my($start_hour) = $current->{end_time} =~ /^(\d+)/;
+	    my($start_hour) = $current->{start_time} =~ /^(\d+)/;
 	    b_die('time missing start or end hour: ', $current)
 		unless $end_hour && $start_hour;
 	    $time .= ($start_hour > $end_hour
@@ -170,7 +170,8 @@ sub _date {
 	($month, $current->{day}) = split('/', $current->{month_day});
     }
     else {
-	b_die('missing "month" or "month_day": ', $current);
+#	b_die('missing "month" or "month_day": ', $current);
+	return undef;
     }
     return undef
 	unless $current->{date} || $current->{day};
