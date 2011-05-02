@@ -22,8 +22,9 @@ sub eval_scraper_aux {
 	|| b_die('scraper missing scraper_aux');
     my($date) = qr{\b(\d+/\d+/\d{4})\b};
     my($year) = qr/\b(20[1-2][0-9])\b/;
-    my($time_ap) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)\.?m\.?)/i;
-    my($time) = qr/\b([0,1]?[0-9](?:\:[0-5][0-9])?)\b/i;
+    my($time_ap) = qr/\b((?:[0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)\.?m\.?)|noon|midnight)/i;
+    my($time) = qr/\b((?:[0,1]?[0-9](?:\:[0-5][0-9])?)|noon|midnight)\b/i;
+    my($time_span) = qr/$time\s*\-\s*$time_ap/i;
     my($day_name) = _day_name_regexp();
     my($month) = _month_regexp();
     my($month_day) = qr{\b([0,1]?[0-9]/[0-3]?[0-9])\b};
@@ -129,12 +130,34 @@ sub _date {
     my($time) = $current->{$type . '_time'} || $current->{$type . '_time_pm'};
     return undef unless $time;
 
+    if (lc($time) eq 'midnight') {
+	$time = '12am';
+    }
+    elsif (lc($time) eq 'noon') {
+	$time = '12pm';
+    }
+
     unless ($time =~ /(a|p)\.?m\.?$/i) {
-	b_die('time missing a/pm: ', $time, ' ', $current)
-	    unless $current->{$type . '_time_pm'};
-	my($hour) = $time =~ /^(\d+)/;
-	return undef unless $hour && $hour > 3 && $hour < 12;
-	$time .= 'pm';
+	if ($type eq 'start' && $current->{start_time}
+		&& $current->{end_time}) {
+	    my($ap) = $current->{end_time} =~ /(a|p)/i;
+	    b_die('end_time missing a|p')
+		unless $ap;
+	    my($end_hour) = $current->{end_time} =~ /^(\d+)/;
+	    my($start_hour) = $current->{end_time} =~ /^(\d+)/;
+	    b_die('time missing start or end hour: ', $current)
+		unless $end_hour && $start_hour;
+	    $time .= ($start_hour > $end_hour
+		? ($ap =~ /p/i ? 'a' : 'p')
+		: $ap) . 'm';
+	}
+	else {
+	    b_die('time missing a/pm: ', $time, ' ', $current)
+		unless $current->{$type . '_time_pm'};
+	    my($hour) = $time =~ /^(\d+)/;
+	    return undef unless $hour && $hour > 3 && $hour < 12;
+	    $time .= 'pm';
+	}
     }
     my($month);
 
@@ -149,6 +172,8 @@ sub _date {
     else {
 	b_die('missing "month" or "month_day": ', $current);
     }
+    return undef
+	unless $current->{date} || $current->{day};
     my($date) = $current->{date} || join('/',
         $month,
 	$current->{day},
@@ -172,6 +197,7 @@ sub _process_url {
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
     my($text) = $cleaner->clean_html($self->c4_scraper_get($url), $url);
     $self->extract_once_fields($cfg, $text, $current);
+    my($once) = {%$current};
     $self->extract_repeat_fields($cfg, $text, $current, sub {
         my($self, $args, $current) = @_;
 
@@ -181,7 +207,6 @@ sub _process_url {
 
 	    if ($url) {
 		_process_url($self, $args->{follow_link}, $url, $current);
-		$current->{url} ||= $url;
 	    }
 	}
 	if ($args->{summary_from_description} && $current->{description}) {
@@ -189,8 +214,7 @@ sub _process_url {
 		$args->{summary_from_description};
 	}
 	if ($current->{url}) {
-	    $current->{url} = $cleaner->get_link_for_text(
-		$current->{url})
+	    $current->{url} = $cleaner->get_link_for_text($current->{url})
 		if $current->{url} =~ /\{/;
 	}
 	else {
@@ -198,16 +222,19 @@ sub _process_url {
 		$cleaner->unsafe_get_link_for_text($current->{summary})
 		    if $current->{summary};
 	}
-	push(@{$self->get('events')}, 
-	     $self->internal_collect_data($current))
-	    if $current->{summary};
-	delete($current->{summary});
-	delete($current->{description});
-	delete($current->{link});
-	delete($current->{url});
-	delete($current->{location});
+	$current->{url} ||= $url;
+
+	if ($current->{summary}) {
+	    push(@{$self->get('events')}, 
+		 $self->internal_collect_data($current));
+	}
+
+	foreach my $field (keys(%$current)) {
+	    delete($current->{$field})
+		unless $field eq 'month' || $once->{$field};
+	}
 	return;
-    });				     
+    });
 
     if ($cfg->{pager} && --$cfg->{pager}->{page_count} > 0) {
 	my($regexp) = $cfg->{pager}->{link};
