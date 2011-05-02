@@ -1,4 +1,31 @@
 Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_type,Website.location,Website.url,default_venue.RealmOwner.display_name,default_venue.RealmOwner.name,default_venue.RealmOwner.realm_id,scraper.RealmOwner.name
+5900021,"{
+  repeat => [
+    [qr/(Featured Events in Downtown Boulder\n+)([^\n]+?\{.*\})\n/i => {
+      fields => [qw(save link)],
+      follow_link => {
+        once => [
+          [qr/\n+([^\n]+)\n+Date\:/i => {
+            fields => [qw(summary)],
+          }],
+          [qr/\n+Date\: $day_name $month $day, $year\n/i => {
+            fields => [qw(day_name month day year)],
+          }],
+          [qr/\nTime\:\s*$time_span/is => {
+              fields => [qw(start_time end_time)],
+          }],
+         [qr/\nTime\:\s*$time_ap/is => {
+              fields => [qw(start_time)],
+          }],
+          [qr/Time\:.*?\n(.*?)\nFacebook/is => {
+             fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+",4100022,RegExp,Home,http://www.boulderdowntown.com/events,1300 Block of Pearl Street,pearlst,5900021,s4100022
 100021,"{
   pager => {
     link => qr/(Next >>\{\d+\})/i,
@@ -65,8 +92,8 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 ",800022,RSS,Home,http://www.bmoca.org/feed/,Boulder Museum of Contemporary Art,bmoca,800021,s800022
 900021,"{
   repeat => [
-    [qr/(?:$month (\d{4}).*?)?(\n$day\n)((?:[^\n]{3,}|\n)+?)\n$time\s*\-\s*$time_ap/s => {
-      fields => [qw(month year save day summary start_time_pm end_time)],
+    [qr/(?:$month (\d{4}).*?)?(\n$day\n)((?:[^\n]{3,}|\n)+?)\n$time_span/s => {
+      fields => [qw(month year save day summary start_time end_time)],
     }],
   ],
 }
@@ -107,13 +134,21 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
   ],
 }
 ",1600022,RegExp,Home,http://www.chautauqua.com/upcoming_events.php,Colorado Chautauqua Association,chautauqua,1600021,s1600022
+5700021,"{
+  repeat => [
+    [qr/\: $month $day, $year\s+$line.*?Registration.*?$time_ap.*?\n\n(\w[^\n]{80}.*?)\n\n/is => {
+      fields => [qw(month day year summary start_time description)],
+    }],
+  ],
+}
+",3900022,RegExp,Home,http://www.bfjung.org/index.php?option=com_content&view=article&id=121&Itemid=101,Community United Church of Christ,churchofchrist,5700021,s3900022
 2200021,"{
   reject_event => {
     summary => qr/^\s*$/,
   },
   repeat => [
-    [qr/(Live Music $month\:\n).*?\n\w+\s+$day\s*\w+,([^\n]+?)\($time\s*\-\s*$time_ap\)\n/si => {
-      fields => [qw(save month day summary start_time_pm end_time)],
+    [qr/(Live Music $month\:\n).*?\n$day_name\s+$day,([^\n]+?)\($time_span\)\n/is => {
+      fields => [qw(save month day_name day summary start_time end_time)],
     }],
   ],
 }
@@ -136,6 +171,19 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     ],
 }
 ",2400022,RegExp,Home,http://foxtheatre.com/Store/ChooseTicket.aspx,Fox Theatre,foxtheatre,2400021,s2400022
+5800021,"{
+  once => [
+    [qr/EVENTS for $year/ => {
+      fields => [qw(year)],
+    }],
+  ],
+  repeat => [
+    [qr/$month $day, (.*?)\.(.*?)$time_ap\n/ => {
+      fields => [qw(month day summary description start_time)],
+    }],
+  ],
+}
+",4000022,RegExp,Home,http://www.harlequinsgardens.com/classes/,Harlequin's Gardens,harlequin,5800021,s4000022
 2500021,"{
     once => [
         [qr/Live Music ${time_ap}\s*\-\s*$time_ap/, {
@@ -190,8 +238,8 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     location => qr/Boulder REI/is,
   },
   once => [
-    [qr/(.*?)Session Info.*?$date.*?$time\s*\-\s*$time_ap.*Location(.*?)Price/is, {
-        fields => [qw(description date start_time_pm end_time location)],
+    [qr/(.*?)Session Info.*?$date.*?$time_span.*Location(.*?)Price/is, {
+        fields => [qw(description date start_time end_time location)],
     }],
   ],
 }
@@ -243,11 +291,11 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 3400021,,3400022,Google,Home,http://thelaughinggoat.com/events.php,The Laughing Goat Coffeehouse,thelaughinggoat,3400021,s3400022
 3500021,"{
   repeat => [
-    [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time\s*\-\s*$time_ap\n+([^\n]+\})/s => {
-      fields => [qw(summary month day year start_time_pm end_time url)],
+    [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_span\n+([^\n]+\})/s => {
+      fields => [qw(summary month day year start_time end_time url)],
     }],
-    [qr/\n([^\n]+)\n+$day_name\s+$month\s+$day\s+$time\s*\-\s*$time_ap\n+([^\n]+\})/s => {
-      fields => [qw(summary day_name month day start_time_pm end_time url)],
+    [qr/\n([^\n]+)\n+$day_name\s+$month\s+$day\s+$time_span\n+([^\n]+\})/s => {
+      fields => [qw(summary day_name month day start_time end_time url)],
     }],
   ],
 }
@@ -260,6 +308,32 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
   ],
 }
 ",3600022,RegExp,Home,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx,The West End Tavern,westend,3600021,s3600022
+5600021,"{
+  accept_event => {
+    location => qr/Walden Ponds/i,
+  },
+  once => [
+    [qr/\n$month $year\n/s => {
+      fields => [qw(month year)],
+    }],
+  ],
+  repeat => [
+    [qr/\n$day\n$time_ap\n$line/ => {
+      fields => [qw(day start_time summary)],
+      follow_link => {
+        once => [
+          [qr/\nLocation\:\s+$line/is => {
+            fields => [qw(location)],
+          }],
+          [qr/\nAdditional Information\:\s+(.*?)\n\n/is => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+",3800022,RegExp,Home,http://www.bouldercounty.org/pages/calendar.aspx,Walden Ponds Wildlife Habitat Area,waldenponds,5600021,s3800022
 3800021,"{
     accept_event => {
       location => qr/Lafayette/i,
@@ -342,6 +416,50 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
   ],
 }
 ",3300022,RegExp,Home,http://www.boulderbachfestival.org/index.php/site/calendar/,,,,bachfestival_scraper
+,"{
+  location_to_venue => {
+    qr/pearl/i => 'pearlst',
+  },
+  once => [
+    [qr/(Pearl Street)/i => {
+      fields => [qw(location)],
+    }],
+    [qr/\n+([^\n]+)\n+Date: $day_name $month $day, $year/ => {
+      fields => [qw(description none none none year)],
+    }],
+    [qr/Time:\s*$time_span/i => {
+      fields => [qw(start_time end_time)],
+    }],
+  ],
+  repeat => [
+    [qr/\n(.*?)\- $day_name, $month $day/ => {
+      fields => [qw(summary day_name month day)],
+    }],
+  ],
+}
+",4200022,RegExp,Home,http://www.boulderdowntown.com/do/bands-on-the-bricks22,,,,s4200022
+,"{
+  location_to_venue => {
+    qr/pearl/i => 'pearlst',
+  },
+  once => [
+    [qr/(pearl)/i => {
+      fields => [qw(location)],
+    }],
+    [qr/\n+([^\n]+)\n+Date:/i => {
+      fields => [qw(summary)],
+    }],
+    [qr/\nTime: $time_span\n+(.*?)\n\n/i => {
+      fields => [qw(start_time end_time description)],
+    }],
+  ],
+  repeat => [
+    [qr/\n$day_name, $month $day $year\n/ => {
+      fields => [qw(day_name month day year)],
+    }],
+  ],
+}
+",4300022,RegExp,Home,http://www.boulderdowntown.com/do/noon-tunes21,,,,s4300022
 ,"{
   location_to_venue => {
     qr/mountain/i => 'mountainsun',
