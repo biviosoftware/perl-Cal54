@@ -1,0 +1,42 @@
+[
+  {
+    'description' => 'Visit website >> An unforgettable afternoon exploring Boulder\'s tantalizing culinary arts scene, celebrating Colorado\'s distinctive wines while strolling through some of Downtown Boulder\'s most vibrant galleries and retail stores. A portion of the event\'s proceeds will benefit Boulder\'s Emergency Family Assistance Association (efaa).',
+    'dtend' => '2455684 0',
+    'dtstart' => '2455683 72000',
+    'location' => undef,
+    'summary' => 'Taste of Pearl',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.boulderdowntown.com/events',
+    'venue' => 'pearlst'
+  },
+  {
+    'description' => 'Each Halloween, Downtown Boulder is invaded by thousands of tiny ghosts & goblins, dinosaurs & dragons, fairies & princes, super heroes and animals of every size trick-or-treating along Pearl Street',
+    'dtend' => '2455866 82800',
+    'dtstart' => '2455866 72000',
+    'location' => undef,
+    'summary' => 'Munchkin Masquerade',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.boulderdowntown.com/events',
+    'venue' => 'pearlst'
+  },
+  {
+    'description' => 'Santa counts down to the grand illumination of the Boulder County Courthouse, the Pearl Street Mall and the star on Flagstaff Mountain.',
+    'dtend' => '2455886 0',
+    'dtstart' => '2455886 0',
+    'location' => undef,
+    'summary' => 'Switch on the Holidays',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.boulderdowntown.com/events',
+    'venue' => 'pearlst'
+  },
+  {
+    'description' => 'In its 24th year, spectators will enjoy floats created and decorated by local businesses, churches and civic groups. Crowds will enjoy marching bands, lit fire engines, holiday carolers and much more. The grand finale includes an appearance by the jolly old man himself - Santa Claus!',
+    'dtend' => '2455900 3600',
+    'dtstart' => '2455900 3600',
+    'location' => undef,
+    'summary' => 'Lights of December Parade',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.boulderdowntown.com/events',
+    'venue' => 'pearlst'
+  }
+]
