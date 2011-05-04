@@ -43,4 +43,10 @@ sub internal_prepare_statement {
     return;
 }
 
+sub test_replace_scraper_aux {
+    my($self, $aux) = @_;
+    $self->internal_get->{'Scraper.scraper_aux'} = $aux;
+    return;
+}
+
 1;
