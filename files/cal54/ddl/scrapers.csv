@@ -179,16 +179,16 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 }
 ",4000022,RegExp,Home,http://www.harlequinsgardens.com/classes/,Harlequin's Gardens,harlequin,5800021,s4000022
 2500021,"{
-    once => [
-        [qr/Live Music ${time_ap}\s*\-\s*$time_ap/, {
-            fields => ['start_time', 'end_time'],
- }],
-    ],
-    repeat => [
-        [qr/\b$day_name,\s*$month\s+$day\s*~\s*$line(?:\((.*?)\))?/, {
-     fields => ['day_name', 'month', 'day', 'summary', 'description'],
- }],
-    ],
+  once => [
+    [qr/$time_ap\s*\-\s*$time_ap Live Music/, {
+      fields => [qw(start_time end_time)],
+    }],
+  ],
+  repeat => [
+    [qr/$day_name,\s*$month\s+$day\s*~\s*([^\n]+)(.*?)(\n\n)/s, {
+      fields => [qw(day_name month day summary description save)],
+    }],
+  ],
 }
 ",2500022,RegExp,Home,http://www.boulderado.com/musiconthemezz.html,Hotel Boulderado,boulderado,2500021,s2500022
 2600021,"{
