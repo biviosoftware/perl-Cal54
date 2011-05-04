@@ -157,7 +157,7 @@ sub internal_prepare_statement {
 #TODO: when is less than now
     $dt = ($_D->from_literal($dt))[0];
     my($now) = $_DT->now;
-    $dt = $_DEFAULT_TZ->date_time_to_utc($_DT->set_beginning_of_day($dt))
+    $dt = $_DT->add_seconds($_DEFAULT_TZ->date_time_to_utc($_DT->set_beginning_of_day($dt)), 1)
 	if $dt;
     $dt = $_DT->now
 	if !$dt || $_DT->is_greater_than($now, $dt);
