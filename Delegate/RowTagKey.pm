@@ -11,6 +11,8 @@ sub get_delegate_info {
     return [
 	@{$proto->SUPER::get_delegate_info},
 	HIDDEN_CALENDAR_EVENT => [100, 'Boolean'],
+	USER_ENTRY_URI => [101, 'Text64K'],
+	USER_REFERER_URI => [102, 'Text64K'],
     ];
 }
 
