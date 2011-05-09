@@ -87,7 +87,7 @@ sub _list {
 	    DIV_date(['month_day']),
 	    DIV_item(Join([
 		DIV_line(Join([
-		    Link(
+		    UserTrackingLink(
 			String(['RealmOwner.display_name']),
 			Or(['CalendarEvent.url'], ['calendar.Website.url']),
 			'title',
@@ -98,13 +98,13 @@ sub _list {
 		    ' ',
 		    SPAN_excerpt(String(['excerpt'])),
 		    DIV_line(Join([
-			Link(
+			UserTrackingLink(
 			    String(['venue.RealmOwner.display_name']),
 			    ['Website.url'],
 			    'venue',
 			),
 			' ',
-			Link(
+			UserTrackingLink(
 			    String(['address']),
 			    ['map_uri'],
 			    'address',
