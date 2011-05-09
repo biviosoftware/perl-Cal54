@@ -39,6 +39,7 @@ sub handle_new_text {
 	    ->unauth_load_or_die({realm_id => $m->get('calendar_event_id')})
 	    ->get('display_name'),
 	content_type => 'text/calendar',
+	modified_date_time => $m->get('dtstart'),
 	is_public => 1,
     );
     return $self;
