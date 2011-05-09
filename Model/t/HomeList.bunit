@@ -42,7 +42,7 @@ commit();
 		'owner.RealmOwner.display_name' => q{Nissi's},
 #TODO: Write tests just for time formatting, move outside module
 		start_end_am_pm => '5am - 7',
-		month_day => 'Thursday December 12',
+		month_day => 'Thursday December 12, 2050',
 		'CalendarEvent.time_zone' => 'AMERICA_DENVER',
 	    },
 	],
