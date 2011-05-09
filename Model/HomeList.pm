@@ -14,6 +14,14 @@ my($_TS) = b_use('Type.String');
 my($_S) = b_use('Bivio.Search');
 my($_VL) = b_use('Model.VenueList');
 my($_D) = b_use('Type.Date');
+my($_HIDE_ROWS_QUERY) = <<"EOF";
+    NOT EXISTS (
+	SELECT primary_id FROM row_tag_t
+	WHERE row_tag_t.primary_id = calendar_event_t.calendar_event_id
+	AND row_tag_t.key = @{[b_use('Type.RowTagKey')->HIDDEN_CALENDAR_EVENT->as_sql_param]}
+	AND row_tag_t.value = '1'
+    )
+EOF
 
 sub EXCLUDE_HIDDEN_ROWS {
     return 1;
@@ -61,7 +69,7 @@ sub internal_initialize {
 		'Text',
 	    ),
 	],
-	other_query_keys => [qw(where what when)],
+	other_query_keys => [qw(what)],
     });
 }
 
@@ -139,13 +147,7 @@ sub internal_post_load_row {
 
 sub internal_pre_load {
     my($self) = @_;
-    return $self->EXCLUDE_HIDDEN_ROWS
-	# much faster than a left join...
-	? ' NOT EXISTS (
-            SELECT primary_id FROM row_tag_t
-            WHERE primary_id = calendar_event_t.calendar_event_id
-        ) '
-	: '';
+    return $self->EXCLUDE_HIDDEN_ROWS ? $_HIDE_ROWS_QUERY : '';
 }
 
 sub internal_prepare_statement {
@@ -170,7 +172,6 @@ sub internal_prepare_statement {
     my($s) = ($_TS->from_literal($query->unsafe_get('what')))[0];
     return
 	unless defined($s);
-    my($when) = $s =~ s{(\d+/\d+(?:/\d+)?)}{}g ? $1 : undef;
     $s =~ s/^\s+|\s+$//;
     return
 	unless length($s);
