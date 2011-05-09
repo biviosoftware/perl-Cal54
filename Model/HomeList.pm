@@ -195,7 +195,7 @@ sub internal_prepare_statement {
     $stmt->where(
 	$stmt->IN(
 	    'CalendarEvent.calendar_event_id',
-	    b_debug [map(
+	    [map(
 		$_->{primary_id},
 		@$rows > $n ? splice(@$rows, 0, $n) : @$rows,
 	    )],
