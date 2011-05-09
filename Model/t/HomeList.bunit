@@ -46,12 +46,18 @@ commit();
 		'CalendarEvent.time_zone' => 'AMERICA_DENVER',
 	    },
 	],
-        sub {
-	    return [{what => $title_key}];
-	} => [
+        [{what => $title_key}] => [
 	    {
 		'RealmOwner.display_name' => $title_key,
 	    },
 	],
+	sub {
+	    model('RowTag')->row_tag_replace(
+		$ce->get('calendar_event_id'),
+		'HIDDEN_CALENDAR_EVENT',
+		1,
+	    );
+	    return [{what => $title_key}];
+	} => [],
     ],
 ];
