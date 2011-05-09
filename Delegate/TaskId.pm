@@ -18,6 +18,7 @@ sub get_delegate_info {
 	    ],
 	    next => 'SITE_ROOT',
 	},
+	# UserTracking added so module is loaded with tasks
 	[qw(
 	    VENUE_HOME
 	    501
@@ -116,6 +117,13 @@ sub get_delegate_info {
 	    Model.AdmEventReviewList->execute_load_this
 	    Model.AdmToggleEventForm
 	    next=ADM_EVENT_REVIEW_LIST
+        )],
+	[qw(
+	    USER_TRACKING
+	    512
+	    GENERAL
+	    ANYBODY
+	    Action.UserTracking
         )],
     ]);
 }

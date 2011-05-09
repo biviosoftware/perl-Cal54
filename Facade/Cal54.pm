@@ -100,6 +100,7 @@ my($_SELF) = __PACKAGE__->new({
 	[ADM_SCRAPER_LIST => '?/scrapers'],
 	[ADM_EVENT_REVIEW_LIST => '?/event-review'],
 	[ADM_TOGGLE_EVENT_VISIBILITY => '?/toggle-event-visibility'],
+	[USER_TRACKING => '/pub/url'],
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],
