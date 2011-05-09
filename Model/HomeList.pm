@@ -93,7 +93,9 @@ sub internal_post_load_row {
 	    $row->{dtstart_tz},
 	    'MONTH_NAME_AND_DAY_NUMBER',
 	    1,
-	);
+	)
+	. ', '
+	. $_DT->get_parts($row->{dtstart_tz}, 'year');
     if ($row->{month_day} eq $fields->{month_day}) {
 	$row->{month_day} = '';
     }
