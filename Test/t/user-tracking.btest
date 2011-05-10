@@ -1,0 +1,12 @@
+# Copyright (c) 2011 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+test_setup('Cal54');
+home_page();
+my($search) = random_string();
+submit_form(Search => {
+    _anon => $search,
+});
+login_as('adm');
+follow_link('site_hits');
+verify_text(qr/u\d+ .*?\Q$search/);
+
