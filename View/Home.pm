@@ -9,7 +9,6 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
 
-#TODO: Deal with not found URIs.  SITE_ROOT must have uri /*, but we don't want to find any page to be this page.
 #TODO: If there is no event page, then render the description in a little popup window
 
 sub list {
@@ -133,7 +132,7 @@ sub _logo {
 	    SPAN_c4_logo_name('CAL 54'),
 	    SPAN_c4_logo_tag(q{Boulder's Calendar}),
 	]),
-	'SITE_ROOT',
+	'HOME_LIST',
 	'c4_logo_text',
     );
 }
