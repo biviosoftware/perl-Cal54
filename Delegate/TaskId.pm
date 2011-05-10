@@ -12,11 +12,9 @@ sub get_delegate_info {
 	{
 	    name => 'SITE_ROOT',
 	    items => [
-		'Model.HomeQueryForm',
-		'Model.HomeList',
-		'View.Home->list',
+		'Action.ClientRedirect->execute_next',
 	    ],
-	    next => 'SITE_ROOT',
+	    next => 'HOME_LIST',
 	},
 	# UserTracking added so module is loaded with tasks
 	[qw(
@@ -73,16 +71,7 @@ sub get_delegate_info {
 	    Action.ScraperPreview
 	    View.Scraper->preview
         )],
-	[qw(
-	    SITE_ROOT_MOBILE
-	    507
-	    GENERAL
-	    ANYBODY
-	    Model.MobileQueryForm
-	    Model.HomeList
-	    View.Home->list_mobile
-	    next=SITE_ROOT_MOBILE
-        )],
+#507
 	[qw(
 	    ADM_SCRAPER_LIST
 	    508
@@ -119,8 +108,18 @@ sub get_delegate_info {
 	    next=ADM_EVENT_REVIEW_LIST
         )],
 	[qw(
-	    USER_TRACKING
+	    HOME_LIST
 	    512
+	    GENERAL
+	    ANYBODY
+	    Model.HomeQueryForm
+	    Model.HomeList
+	    View.Home->list
+	    next=HOME_LIST
+	)],
+	[qw(
+	    USER_TRACKING
+	    513
 	    GENERAL
 	    ANYBODY
 	    Action.UserTracking

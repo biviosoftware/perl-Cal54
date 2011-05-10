@@ -96,10 +96,10 @@ my($_SELF) = __PACKAGE__->new({
 	[ADM_VENUE_LIST => '?/venues'],
 	[ADM_SCRAPER_FORM => '?/scraper'],
 	[ADM_SCRAPER_PREVIEW => '?/scraper-preview'],
- 	[SITE_ROOT_MOBILE => 'mobile'],
 	[ADM_SCRAPER_LIST => '?/scrapers'],
 	[ADM_EVENT_REVIEW_LIST => '?/event-review'],
 	[ADM_TOGGLE_EVENT_VISIBILITY => '?/toggle-event-visibility'],
+	[HOME_LIST => 'search'],
 	[USER_TRACKING => '/pub/url'],
     ],
     Text => [
