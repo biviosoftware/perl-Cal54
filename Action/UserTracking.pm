@@ -64,6 +64,7 @@ sub _create_user {
     }
     $cookie->put($_ULF->USER_FIELD => $user->get('user_id'));
     $_ULF->handle_cookie_in($cookie, $self->req);
+    b_use('Model.TaskLog')->set_user_id($self->req, $user->get('user_id'));
     return;
 }
 
