@@ -31,11 +31,11 @@ $_VAR = function(v) {
       return;
     })();
 
-  if (req) {
-    req.open("GET", "$url" + escape(v.href), false);
-    req.send(null);
-  }
-  return;
+    if (req) {
+        req.open("GET", "$url" + escape(v.href), false);
+        req.send(null);
+    }
+    return;
 }
 EOF
 }
