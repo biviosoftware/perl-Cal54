@@ -22,6 +22,7 @@ my($_T) = b_use('Agent.Task');
 #TODO: Make a RowTag
 my($_TT) = b_use('Type.Text');
 my($_TZ) = b_use('Type.TimeZone')->get_default;
+my($_V) = b_use('Model.Venue');
 my($_VE) = b_use('Model.VenueEvent');
 
 sub c4_scraper_get {
@@ -345,6 +346,7 @@ sub _unique_count {
 
 sub _venue_id_from_name {
     my($self, $name) = @_;
+    $name = $_V->add_realm_prefix($name);
     my($names) = $self->get_if_defined_else_put('venue_ids', {});
     return $names->{$name}
 	||= $_RO->new($self->req)->unauth_load_or_die({
@@ -367,7 +369,8 @@ sub _venue_name_for_event {
 	}
     }
     return $venue_name
-	|| $self->get('scraper_list')->get('default_venue.RealmOwner.name');
+	|| $_V->strip_realm_prefix(
+	    $self->get('scraper_list')->get('default_venue.RealmOwner.name'));
 }
 
 1;
