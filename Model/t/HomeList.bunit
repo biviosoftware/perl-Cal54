@@ -35,6 +35,7 @@ model('VenueEvent')->create({
 });
 model('HomeQueryForm', {});
 commit();
+my($rows);
 [
     load_page => [
         [{begin_date => Date()->add_days(Date()->from_datetime($date), -1)}] => [
@@ -60,5 +61,24 @@ commit();
 	    );
 	    return [{what => $title_key}];
 	} => [],
+	inline_case(
+	    sub {
+		DateTime()->set_test_now(undef);
+	    },
+	),
+        [{count => 3}] => sub {
+	    $rows = shift->get('object')->map_rows;
+	    assert_equals(3, scalar(@$rows));
+	    return 1;
+	},
+        [{count => 3, page_number => 2}] => sub {
+	    my($rows2) = shift->get('object')->map_rows;
+	    assert_not_equals(
+		$rows->[0]->{'RealmOwner.display_name'}, 
+		$rows2->[0]->{'RealmOwner.display_name'},
+	    );
+	    assert_equals(3, scalar(@$rows2));
+	    return 1;
+	},
     ],
 ];
