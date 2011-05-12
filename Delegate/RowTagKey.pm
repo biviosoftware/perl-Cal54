@@ -10,9 +10,10 @@ sub get_delegate_info {
     my($proto) = @_;
     return [
 	@{$proto->SUPER::get_delegate_info},
-	HIDDEN_CALENDAR_EVENT => [100, 'Boolean'],
-	USER_ENTRY_URI => [101, 'Text64K'],
-	USER_REFERER_URI => [102, 'Text64K'],
+	C4_HIDDEN_CALENDAR_EVENT => [100, 'Boolean'],
+	C4_USER_ENTRY_URI => [101, 'Text64K'],
+	C4_USER_REFERER_URI => [102, 'Text64K'],
+	C4_MOST_RECENT_SEARCH => [103, 'Line'],
     ];
 }
 
