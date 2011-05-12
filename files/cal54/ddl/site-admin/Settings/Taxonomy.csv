@@ -1,0 +1,23 @@
+Supertype,Subtype
+music,"jazz, classical, rock, reggae, country, pop, latin, folk"
+classical,"oboe, symphony, bassoon, opera, recital, violin, quartet, trio, orchestra, piano, concert, recital,viola"
+jazz,"blues,zydeco,swing, bop, bebop, jamming, jam, saxophone, trombone, recital"
+rock,"r&r, r&b, rhythm and blues, funk"
+pop,"hip hop, electronic, trance"
+latin,"bossa, calypso, rumba, caribean, salsa, merengue, cuban, cumbia, vallenato, ranchera, banda, tejano, tango, flamenco"
+reggae,"dub, ska, rocksteady, roots, toasting, dancehall"
+folk,"irish, balads, world music, roots,acoustic"
+country,"bluegrass,honky tonk,banjo,hillbilly,hellbilly, hokum,rockabilly,americana,bakersfield,cajun,western,dansband,lubbock,nashville,"
+"film,movie", picture
+"kids,children,tikes,infants,toddlers","playgroup,storytime, story time,reading pals"
+education,"ged,high school,classes,diploma,conversation"
+museum,"art,exhibition,gallery,collection,exhibit"
+irish,"Patricks Day, celtic"
+adventures,"wilderness,biking,canoeing,camping,rafting,hiking,bungie jumping,racing"
+comedy,stand up
+planetarium,"stars,solar system, skies,mars,uranus,moon,jupiter,saturn,"
+gay,"Lesbian, Bisexual, Trans-gender, Queer, Inter-sexed, Allied"
+"disco,dancing","night,club"
+"super1,super2","sub1, super3, sub3"
+"super3","sub3, super4, sub5"
+"super4,super1","sub6,sub5"
