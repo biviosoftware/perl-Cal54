@@ -24,4 +24,18 @@ sub initialize_test_data {
     return @res;
 }
 
+sub internal_upgrade_db_venue_names {
+    my($self) = @_;
+    $self->model('Venue')->do_iterate(sub {
+        my($v) = @_;
+	my($ro) = $v->get_model('RealmOwner');
+	b_die() if $ro->get('name') =~ /^v\-/;
+	$ro->update({
+	    name => 'v-' . $ro->get('name'),
+	});
+	return 1;
+    }, 'unauth_iterate_start');					  
+    return;
+}
+
 1;
