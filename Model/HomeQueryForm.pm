@@ -14,11 +14,14 @@ sub execute_empty {
     unless ($self->ureq('query')) {
 	my($what);
 	if (my $uid = _uid($self)) {
-	    $what = $_L->from_literal_or_die($what)
-		if defined(
-		    $what = $self->new_other('RowTag')
-			->row_tag_get($uid, 'C4_MOST_RECENT_SEARCH')
-		);
+	    if (defined(
+		$what = $self->new_other('RowTag')
+		    ->row_tag_get($uid, 'C4_MOST_RECENT_SEARCH')
+	    )) {
+		$what = ($_L->from_literal($what))[0];
+		$what = ''
+		    unless defined($what);
+	    }
 	}
 	unless (defined($what)) {
 	    $self->internal_put_field(is_default_what => 1);
@@ -54,7 +57,7 @@ sub row_tag_replace_what {
 	if $self->unsafe_get('is_default_what');
     my($what) = $self->unsafe_get('what');
     $what = $_EMPTY_WHAT
-	unless defined($what);
+	unless defined($what) && length($what);
     $self->new_other('RowTag')->row_tag_replace(
 	$uid,
 	'C4_MOST_RECENT_SEARCH',
