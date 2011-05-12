@@ -7,7 +7,7 @@ my($tag_key) = 'tag' . random_string();
 my($desc_key) = 'desc' . random_string();
 DateTime()->set_test_now('12/12/2050 12:0:0');
 my($date) = DateTime()->now;
-req()->set_realm('nissis');
+req()->set_realm('v-nissis');
 model('CalendarEvent')->do_iterate(sub {
     my($ce) = @_;
     $ce->cascade_delete;
