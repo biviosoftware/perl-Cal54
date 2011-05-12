@@ -3,6 +3,7 @@
 package Cal54::Scraper::RegExp;
 use strict;
 use Bivio::Base 'Bivio.Scraper';
+b_use('IO.Trace');
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
@@ -15,6 +16,7 @@ my($_MONTHS) = {
 my($_DAY_NAMES) = [
     map((lc($_), lc(substr($_, 0, 3))), $_DT->english_day_of_week_list),
 ];
+our($_TRACE);
 
 sub eval_scraper_aux {
     my($self, $aux) = @_;
@@ -112,6 +114,7 @@ sub _add_field_values {
 	next unless defined($str) && length($str);
 	next if $f eq 'save';
 	$values->{$f} = $str;
+	_trace($f, ' --> ', $str) if $_TRACE;
     }
     return $values;
 }
@@ -170,7 +173,7 @@ sub _date {
 	($month, $current->{day}) = split('/', $current->{month_day});
     }
     else {
-#	b_die('missing "month" or "month_day": ', $current);
+	_trace('missing "month" or "month_day": ', $current) if $_TRACE;
 	return undef;
     }
     return undef
@@ -231,8 +234,8 @@ sub _process_url {
 	}
 
 	foreach my $field (keys(%$current)) {
-	    delete($current->{$field})
-		unless $field eq 'month' || $once->{$field};
+	    next if $field eq 'month';
+	    $current->{$field} = $once->{$field};
 	}
 	return;
     });
