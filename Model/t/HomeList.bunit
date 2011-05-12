@@ -1,7 +1,7 @@
 # Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
 # $Id$
 ListModel();
-req()->initialize_fully;
+req()->initialize_fully('HOME_LIST');
 my($title_key) = 'title' . random_string();
 my($tag_key) = 'tag' . random_string();
 my($desc_key) = 'desc' . random_string();
@@ -33,6 +33,7 @@ model('VenueEvent')->create({
     venue_id => req('auth_id'),
     calendar_event_id => $ce->get('calendar_event_id'),
 });
+model('HomeQueryForm', {});
 commit();
 [
     load_page => [
