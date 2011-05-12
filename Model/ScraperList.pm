@@ -5,6 +5,7 @@ use strict;
 use Bivio::Base 'Biz.ListModel';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
+my($_V) = b_use('Model.Venue');
 
 sub get_scraper_class {
     my($self) = @_;
@@ -41,6 +42,11 @@ sub internal_prepare_statement {
 	]),
     );
     return;
+}
+
+sub simple_venue_realm_name {
+    my($self) = @_;
+    return $_V->strip_realm_prefix($self->get('default_venue.RealmOwner.name'));
 }
 
 sub test_replace_scraper_aux {
