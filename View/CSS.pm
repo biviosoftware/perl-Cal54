@@ -266,6 +266,15 @@ body.c4_mobile .c4_prev {
 body.c4_mobile .c4_next {
   margin-top: 1em;
 }
+.c4_suggest_logo a.c4_logo_text {
+  padding: 16px 1em 1ex 1.5em;
+}
+.c4_suggest_logo a.c4_logo_text span.c4_logo_tag {
+  padding: 0 1em;
+}
+div.c4_suggest_form {
+  padding: 0 10em;
+}
 EOF
 }
 
