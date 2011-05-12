@@ -24,6 +24,7 @@ sub list {
 	    ),
 	    head => Join([
 		Title(['CAL 54']),
+		MobileDetector(),
 		IfMobile(
 		    '<meta name="viewport" content="width=device-width" />',
 		),
