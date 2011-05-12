@@ -11,10 +11,12 @@ my($_DT) = b_use('Type.DateTime');
 
 #TODO: If there is no event page, then render the description in a little popup window
 
-sub list {
-    my($self) = @_;
+sub home_base {
     view_class_map('XHTMLWidget');
     view_shortcuts(b_use('View.ThreePartPage')->VIEW_SHORTCUTS);
+    view_put(
+	home_base_body => '',
+    );
     view_main(
 	Page3({
 	    style => RealmCSS(),
@@ -29,19 +31,15 @@ sub list {
 		    '<meta name="viewport" content="width=device-width" />',
 		),
 	    ]),
-	    body => _body(),
+	    body => view_widget_value('home_base_body'),
 	    xhtml => 1,
 	}),
     );
     return;
 }
 
-sub pre_compile {
-    return;
-}
-
-sub _body {
-    return Join([
+sub list {
+    _body(Join([
 	Form({
 	    form_class => 'HomeQueryForm',
 	    class => 'c4_form',
@@ -63,7 +61,39 @@ sub _body {
 	    ),
 	}),
 	_list(),
-    ]);
+    ]));
+    return;
+}
+
+sub pre_compile {
+    my($self) = @_;
+    view_parent('Home->home_base')
+	unless $self->get('view_name') eq 'home_base';
+    return;
+}
+
+sub suggest_site {
+    _body(Join([
+	Grid([[
+	    _logo()->put(cell_class => 'c4_suggest_logo'),
+	]], {
+	    class => 'c4_grid',
+	}),
+	DIV_c4_suggest_form(vs_simple_form('SuggestSiteForm', [
+	    ['SuggestSiteForm.Website.url', {
+		size => 50,
+	    }],
+	])),
+    ]));
+    return;
+}
+
+sub _body {
+    my($body) = @_;
+    view_put(
+	home_base_body => $body,
+    );
+    return;
 }
 
 sub _form {
@@ -82,7 +112,6 @@ sub _form {
 }
 
 sub _list {
-    my($source) = @_;
     return Join([
 	IfMobile(
 	    Link(
@@ -143,6 +172,7 @@ sub _list {
 	    {class => 'c4_query c4_bottom_pager'},
 	),
 	MobileToggler(),
+	XLink('SUGGEST_SITE'),
 	DIV_c4_copy(Prose(
 	    "&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL 54&trade;'); Boulder's Calendar&trade;")),
     ]);
