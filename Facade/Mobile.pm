@@ -18,13 +18,22 @@ __PACKAGE__->new({
 	[c4_list => ''],
 	[c4_home_bottom_pager => ''],
     ],
+    Color => [
+	[c4_button => 0xffffff],
+	[c4_button_background => 0x0088ce],
+    ],
     Font => [
 	[c4_home => ['family=Arial, Helvetica, sans-serif', '100%']],
 	[[qw(c4_logo_tag c4_logo_name)] => [qw(bold uppercase 120%)]],
 	[c4_query_what => ['100%']],
 	[c4_query_submit => ['80%']],
+	[c4_button => ['100%']],
 	[c4_pager_month => ['70%', 'uppercase']],
 	[c4_pager_a => ['70%']],
+    ],
+    Text => [
+	[previous_button => 'Previous'],
+	[next_button => 'Next'],
     ],
 });
 
