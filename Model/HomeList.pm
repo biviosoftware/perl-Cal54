@@ -177,10 +177,11 @@ sub internal_prepare_statement {
     $s =~ s/^\s+|\s+$//;
     return
 	unless length($s);
+    my($offset) = ($query->get('page_number') - 1) * $query->get('count');
     my($rows) = $_S->query({
 	phrase => $s,
 	offset => 0,
-	length => 2000,
+	length => 2000 + $offset,
 	simple_class => 'CalendarEvent',
 	req => $self->req,
 #TODO: "where" will constrain the realms so we won't want all public, just those venues
@@ -197,6 +198,7 @@ sub internal_prepare_statement {
 	    @$rows,
 	),
     )];
+    splice(@$rows, 0, $offset);
     $stmt->where(
 	$stmt->IN(
 	    'CalendarEvent.calendar_event_id',
