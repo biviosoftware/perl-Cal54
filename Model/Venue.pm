@@ -6,19 +6,28 @@ use Bivio::Base 'Model.RealmOwnerBase';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
+sub add_realm_prefix {
+    my($proto, $name) = @_;
+    return $name unless $name;
+    $name = 'v-' . $name
+	unless $name =~ /^v-/;
+    return $name;
+}
+
 sub create_realm {
-    my($self, $venue, @rest) = @_;
-    ($self, @rest) = $self->create($venue)->SUPER::create_realm(@rest);
+    my($self, $venue, $realm, @rest) = @_;
+    $realm->{name} = $self->add_realm_prefix($realm->{name})
+	if $realm->{name};
+    ($self, @rest) = $self->create($venue)->SUPER::create_realm($realm, @rest);
     $self->new_other('RowTag')->create({
 	%$venue,
 	primary_id => $self->get('venue_id'),
     });
-    $self->new_other('RealmDAG')
-	->create({
-	    parent_id => $self->req('auth_id'),
-	    child_id => $self->get('venue_id'),
-	    realm_dag_type => b_use('Type.RealmDAG')->PARENT_IS_AUTHORIZED_ACCESS,
-	});
+    $self->new_other('RealmDAG')->create({
+	parent_id => $self->req('auth_id'),
+	child_id => $self->get('venue_id'),
+	realm_dag_type => b_use('Type.RealmDAG')->PARENT_IS_AUTHORIZED_ACCESS,
+    });
     return ($self, @rest);
 }
 
@@ -39,6 +48,13 @@ sub internal_initialize {
 	    [qw(venue_id RealmOwner.realm_id)],
 	],
     });
+}
+
+sub strip_realm_prefix {
+    my($self, $name) = @_;
+    return $name unless $name;
+    $name =~ s/^v-//;
+    return $name;
 }
 
 1;
