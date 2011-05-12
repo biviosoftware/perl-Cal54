@@ -124,6 +124,15 @@ sub get_delegate_info {
 	    ANYBODY
 	    Action.UserTracking
         )],
+	[qw(
+	    SUGGEST_SITE
+	    514
+	    GENERAL
+	    ANYBODY
+	    Model.SuggestSiteForm
+	    View.Home->suggest_site
+	    next=HOME_LIST
+	)],
     ]);
 }
 
