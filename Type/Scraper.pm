@@ -14,6 +14,7 @@ __PACKAGE__->compile([
     RSS => [5, 'RSS'],
     FULL_CALENDAR => 6,
     BOS_DATES => 7,
+    CALENDAR_MANAGER_DATA => 8,
     REGEXP => [10, 'RegExp'],
 ]);
 
