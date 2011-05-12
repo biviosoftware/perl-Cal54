@@ -6,6 +6,7 @@ use Bivio::Base 'View.Base';
 use Bivio::UI::ViewLanguageAUTOLOAD;
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
+my($_C) = b_use('FacadeComponent.Constant');
 
 sub form {
     return shift->internal_body(
@@ -34,6 +35,27 @@ sub list {
 	    }],
 	]),
     );
+}
+
+sub suggest_venue_mail {
+    return shift->internal_put_base_attr(
+	map(($_ => Mailbox(
+	    [sub {
+	        my($source) = @_;
+		return b_use('Model.RealmOwner')->new($source->req)
+		    ->unauth_load_or_die({
+			realm_id => $_C->get_value('site_contact_realm_id'),
+		    })->format_email;
+	    }],
+	)), qw(to from)),
+	subject => 'Venue Website Suggestion',
+	body => Join([
+	    'Suggest website: ',
+	    ['Model.SuggestSiteForm', 'Website.url'],
+	    "\n",
+	]),
+    );
+    return;
 }
 
 1;
