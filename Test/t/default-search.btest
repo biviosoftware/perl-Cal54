@@ -19,3 +19,19 @@ home_page();
 verify_form({
     _anon => 'jazz',
 });
+submit_form({
+    _anon => '',
+});
+verify_form({
+    _anon => '',
+});
+home_page();
+verify_form({
+    _anon => '',
+});
+submit_form({
+    _anon => '',
+});
+verify_form({
+    _anon => '',
+});
