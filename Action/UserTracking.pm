@@ -23,6 +23,9 @@ sub handle_pre_execute_task {
     my($cookie) = $req->ureq('cookie');
     return unless $cookie;
     return if $cookie->unsafe_get($_ULF->USER_FIELD);
+    return
+	unless $req->unsafe_get('Type.UserAgent')
+	    && $req->get('Type.UserAgent')->is_browser;
     my($self) = $proto->new($req);
 
     if ($cookie->unsafe_get($_ENTRY_URI)) {
