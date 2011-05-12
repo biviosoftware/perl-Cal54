@@ -6,6 +6,7 @@ use Bivio::Base 'Model.FormModeBaseForm';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_VL) = b_use('Model.VenueList');
+my($_V) = b_use('Model.Venue');
 
 sub LIST_MODEL {
     return 'VenueList';
@@ -27,6 +28,8 @@ sub execute_empty_edit {
 	$self->internal_put_field($field => $lm->get($field))
 	    if $lm->has_keys($field);
     }
+    $self->internal_put_field(
+	'RealmOwner.name' => $_V->strip_realm_prefix($self->get('RealmOwner.name')));
     return;
 }
 
@@ -54,6 +57,9 @@ sub execute_ok_create {
 }
 
 sub execute_ok_edit {
+    my($self) = @_;
+    $self->internal_put_field(
+	'RealmOwner.name' => $_V->add_realm_prefix($self->get('RealmOwner.name')));
     return _models(
 	sub {
 	    my($self, $model) = @_;
