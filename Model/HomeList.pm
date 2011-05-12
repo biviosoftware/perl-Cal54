@@ -51,11 +51,11 @@ sub internal_initialize {
 	other => [
 	    [qw(CalendarEvent.calendar_event_id VenueEvent.calendar_event_id)],
 	    [qw(Venue.venue_id VenueEvent.venue_id)],
-	    [_exclude_realm_owner($_VL->PRIMARY_KEY_EQUIVALENCE_LIST)],
-	    _exclude_realm_owner($_VL->EDITABLE_FIELD_LIST),
+	    [_exclude_unused($_VL->PRIMARY_KEY_EQUIVALENCE_LIST)],
+	    _exclude_unused($_VL->EDITABLE_FIELD_LIST),
 	    [qw(Venue.venue_id venue.RealmOwner.realm_id)],
 	    'venue.RealmOwner.display_name',
-	    $_VL->LOCATION_EQUIVALENCE_LIST,
+	    _exclude_unused($_VL->LOCATION_EQUIVALENCE_LIST),
 	    $self->field_decl(
 		[
 		    qw(
@@ -209,8 +209,8 @@ sub internal_prepare_statement {
     return;
 }
 
-sub _exclude_realm_owner {
-    return grep($_ !~ /RealmOwner/, @_);
+sub _exclude_unused {
+    return grep((ref($_) ? $_->[0] : $_) !~ /RealmOwner|SearchWord|Email/, @_);
 }
 
 1;
