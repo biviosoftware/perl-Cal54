@@ -12,11 +12,11 @@ sub execute_empty {
 	qw(Model.AdmEventReviewList CalendarEvent.calendar_event_id)),
 	sub {
 	    my($rt) = $self->new_other('RowTag');
-	    if ($rt->get_value('HIDDEN_CALENDAR_EVENT')) {
+	    if ($rt->get_value('C4_HIDDEN_CALENDAR_EVENT')) {
 		$rt->delete;
 	    }
 	    else {
-		$rt->replace_value(HIDDEN_CALENDAR_EVENT => 1);
+		$rt->replace_value(C4_HIDDEN_CALENDAR_EVENT => 1);
 	    }
 	});
     return $self->internal_redirect_next;

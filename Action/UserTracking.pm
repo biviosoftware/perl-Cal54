@@ -54,8 +54,8 @@ sub _create_user {
     $self->req->set_realm($user->get('user_id'));
 
     foreach my $info (
-	[USER_ENTRY_URI => $_ENTRY_URI],
-	[USER_REFERER_URI => $_REF_URI],
+	[C4_USER_ENTRY_URI => $_ENTRY_URI],
+	[C4_USER_REFERER_URI => $_REF_URI],
     ) {
 	my($key, $field) = @$info;
 	$user->new_other('RowTag')
