@@ -54,7 +54,7 @@ commit();
 	sub {
 	    model('RowTag')->row_tag_replace(
 		$ce->get('calendar_event_id'),
-		'HIDDEN_CALENDAR_EVENT',
+		'C4_HIDDEN_CALENDAR_EVENT',
 		1,
 	    );
 	    return [{what => $title_key}];
