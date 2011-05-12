@@ -44,7 +44,10 @@ my($rid);
     req_state({
     	query => sub {{this => [$rid]}},
     }),
-    empty_case($values),
+    empty_case({
+	%$values,
+	'RealmOwner.name' => 'v-' . $values->{'RealmOwner.name'},
+    }),
     [{
     	'RealmOwner.display_name' => 'dn Test',
     	'RealmOwner.name' => 'dntest',
