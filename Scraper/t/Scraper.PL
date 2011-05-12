@@ -1,6 +1,7 @@
 # Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
 # $Id$
 Request();
+my($_V) = b_use('Model.Venue');
 config({
     'Bivio::IO::Log' => {
 	directory => my $tmp = tmp_dir(),
@@ -13,7 +14,8 @@ sub {
     DateTime()->set_test_now($test_now);
     my($dir) = IO_File()->absolute_path($realm);
     my($sl) = model('ScraperList')->load_all;
-    $sl->find_row_by({'default_venue.RealmOwner.name', $realm})
+    $sl->find_row_by({'default_venue.RealmOwner.name',
+		      $_V->add_realm_prefix($realm)})
 	|| $sl->find_row_by({'scraper.RealmOwner.name', $realm})
 	|| b_die();
     $sl->test_replace_scraper_aux($scraper_aux)
