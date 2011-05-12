@@ -19,6 +19,9 @@ my($_SELF) = __PACKAGE__->new({
 	[[qw(c4_pager_weekend c4_query_submit_border c4_query_submit)] => 0xf8f8f8],
 	[[qw(c4_pager_a)]=> 0xe8e8e8],
 	[b_mobile_toggler_selected => 0x0],
+#TODO: needed for mobile only
+	[c4_button => 0xffffff],
+	[c4_button_background => 0x0088ce],
     ],
     Constant => [
 	[ThreePartPage_want_ForumDropDown => 1],
@@ -89,6 +92,8 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_pager => ['left']],
 	[c4_pager_month => ['80%', 'uppercase']],
 	[c4_pager_a => ['80%']],
+#TODO: needed for mobile only
+	[c4_button => ['100%']],
     ],
     Task => [
 	[ADM_CALENDAR_EVENT_LIST_FORM => '?/events'],
@@ -101,6 +106,7 @@ my($_SELF) = __PACKAGE__->new({
 	[ADM_TOGGLE_EVENT_VISIBILITY => '?/toggle-event-visibility'],
 	[HOME_LIST => 'search'],
 	[USER_TRACKING => '/pub/url'],
+	[SUGGEST_SITE => '/pub/suggest-site'],
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],
@@ -115,6 +121,7 @@ my($_SELF) = __PACKAGE__->new({
 	    ADM_SCRAPER_PREVIEW => 'Scraper Preview',
 	    ADM_SCRAPER_LIST => 'Scrapers',
 	    ADM_EVENT_REVIEW_LIST => 'Event Review',
+	    SUGGEST_SITE => 'Suggest a Site',
 	]],
 	['task_menu.title' => [
 	    ADM_VENUE_FORM => 'Add Venue',
@@ -148,6 +155,11 @@ my($_SELF) = __PACKAGE__->new({
 	]],
 	[AdmEventQueryForm => [
 	    scraper => 'Scraper',
+	]],
+	[SuggestSiteForm => [
+	    'prose.prologue' => q{BR(); Know of a local venue we don't cover? Let us know!},
+	    
+	    'Website.url' => 'Venue Website',
 	]],
     ],
 });
