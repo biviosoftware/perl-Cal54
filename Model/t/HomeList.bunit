@@ -66,12 +66,12 @@ my($rows);
 		DateTime()->set_test_now(undef);
 	    },
 	),
-        [{count => 3}] => sub {
+        [{count => 3, what => 'the'}] => sub {
 	    $rows = shift->get('object')->map_rows;
 	    assert_equals(3, scalar(@$rows));
 	    return 1;
 	},
-        [{count => 3, page_number => 2}] => sub {
+        [{count => 3, what => 'the', page_number => 2}] => sub {
 	    my($rows2) = shift->get('object')->map_rows;
 	    assert_not_equals(
 		$rows->[0]->{'RealmOwner.display_name'}, 
