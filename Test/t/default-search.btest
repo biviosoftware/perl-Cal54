@@ -1,0 +1,21 @@
+# Copyright (c) 2011 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+test_setup('Cal54');
+home_page();
+verify_form({
+    _anon => 'music',
+});
+submit_form({
+    _anon => 'jazz',
+});
+home_page();
+verify_form({
+    _anon => 'jazz',
+});
+submit_form({
+    _anon => 'notfindingthis',
+});
+home_page();
+verify_form({
+    _anon => 'jazz',
+});
