@@ -171,8 +171,11 @@ sub _list {
 	    [\&_pager, 1,],
 	    {class => 'c4_query c4_bottom_pager'},
 	),
+	IfMobile(
+	    '',
+	    XLink('SUGGEST_SITE', 'c4_suggest_link'),
+	),
 	MobileToggler(),
-	XLink('SUGGEST_SITE'),
 	DIV_c4_copy(Prose(
 	    "&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL 54&trade;'); Boulder's Calendar&trade;")),
     ]);

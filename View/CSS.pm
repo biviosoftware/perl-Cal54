@@ -215,9 +215,15 @@ body.c4_mobile div.c4_list {
   padding-left: .5em;
   padding-right: .5em;
 }
+a.c4_suggest_link {
+  margin-top: 1.5ex;
+  display: block;
+  text-align: center;
+  Font('c4_item_a');
+}
 div.b_mobile_toggler {
    text-align: center;
-   margin-top: 2ex;
+   margin-top: 1.5ex;
 }
 body.c4_mobile .c4_query input.submit {
   vertical-align: middle;

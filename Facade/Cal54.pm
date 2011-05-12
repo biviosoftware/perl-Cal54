@@ -121,7 +121,7 @@ my($_SELF) = __PACKAGE__->new({
 	    ADM_SCRAPER_PREVIEW => 'Scraper Preview',
 	    ADM_SCRAPER_LIST => 'Scrapers',
 	    ADM_EVENT_REVIEW_LIST => 'Event Review',
-	    SUGGEST_SITE => 'Suggest a Site',
+	    SUGGEST_SITE => 'Add your Site to CAL 54',
 	]],
 	['task_menu.title' => [
 	    ADM_VENUE_FORM => 'Add Venue',
