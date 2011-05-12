@@ -18,7 +18,7 @@ my($_HIDE_ROWS_QUERY) = <<"EOF";
     NOT EXISTS (
 	SELECT primary_id FROM row_tag_t
 	WHERE row_tag_t.primary_id = calendar_event_t.calendar_event_id
-	AND row_tag_t.key = @{[b_use('Type.RowTagKey')->HIDDEN_CALENDAR_EVENT->as_sql_param]}
+	AND row_tag_t.key = @{[b_use('Type.RowTagKey')->C4_HIDDEN_CALENDAR_EVENT->as_sql_param]}
 	AND row_tag_t.value = '1'
     )
 EOF
@@ -78,6 +78,8 @@ sub internal_post_load_row {
     return 0
 	unless shift->SUPER::internal_post_load_row(@_);
     my($fields) = $self->[$_IDI];
+    $self->req('Model.HomeQueryForm')->row_tag_replace_what
+	unless $fields->{row_tag_sentinel}++;
     my($start, $end) = map(
 	{
 	    my($x) = $_HFDT->get_widget_value($row->{$_}, 'HOUR_MINUTE_AM_PM_LC', 1);
