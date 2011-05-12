@@ -82,7 +82,18 @@ sub _form {
 }
 
 sub _list {
+    my($source) = @_;
     return Join([
+	IfMobile(
+	    Link(
+		String(vs_text('previous_button')),
+		['Model.HomeList', '->format_uri', 'PREV_LIST'],
+		{
+		    class => 'c4_prev',
+		    control => [['Model.HomeList', '->get_query'], 'has_prev']
+		},
+	    ),
+	),
 	DIV_c4_list(List(HomeList => [
 	    DIV_date(['month_day']),
 	    DIV_item(Join([
@@ -117,6 +128,16 @@ sub _list {
 		q{Your search didn't match any results.  Try a different query.},
 	    ),
 	})),
+	IfMobile(
+	    Link(
+		String(vs_text('next_button')),
+		['Model.HomeList', '->format_uri', 'NEXT_LIST'],
+		{
+		    class => 'c4_next',
+		    control => [['Model.HomeList', '->get_query'], 'has_next'],
+		},
+	    ),
+	),
 	DIV(
 	    [\&_pager, 1,],
 	    {class => 'c4_query c4_bottom_pager'},
@@ -174,61 +195,64 @@ sub _pager {
 	if $_D->is_less_than($prev, $now);
     my($first) = 1;
     return SPAN_c4_pager(
-	Join([
-	    $_D->is_less_than($start, $now) ? ()
-		: Link(
-		    '<<',
-		    _when_uri($prev),
-		    'c4_prev',
-		),
-	    map(
-		{
-		    my($week) = $_;
-		    (
-			$first ? () : SPAN_c4_week_spacer(''),
-			map(
-			    {
-				my($d) = $_D->add_days($start, $week * 7 + $_);
-				my($selected) = $_D->is_equal($d, $when) ? ' selected' : '';
-				my($day) = $_D->get_parts($d, 'day');
-				my($wday) = $_D->english_day_of_week($d);
-				my($weekend) = $_D->english_day_of_week($d) =~ /^s/i
-				    ? ' c4_weekend' : ''; 
-				my($month) = [];
-				if ($first || $day == 1) {
-				    $month = [
-					$first ? () : SPAN_c4_month_spacer(''),
-					SPAN_c4_month(
-					    $_D->english_month3($_D->get_parts($d, 'month')),
-					),
-				    ];
-				    $first = 0;
+	IfMobile(
+	    String(''),
+	    Join([
+		$_D->is_less_than($start, $now) ? ()
+		    : Link(
+			'<<',
+			_when_uri($prev),
+			'c4_prev',
+		    ),
+		map(
+		    {
+			my($week) = $_;
+			(
+			    $first ? () : SPAN_c4_week_spacer(''),
+			    map(
+				{
+				    my($d) = $_D->add_days($start, $week * 7 + $_);
+				    my($selected) = $_D->is_equal($d, $when) ? ' selected' : '';
+				    my($day) = $_D->get_parts($d, 'day');
+				    my($wday) = $_D->english_day_of_week($d);
+				    my($weekend) = $_D->english_day_of_week($d) =~ /^s/i
+					? ' c4_weekend' : ''; 
+				    my($month) = [];
+				    if ($first || $day == 1) {
+					$month = [
+					    $first ? () : SPAN_c4_month_spacer(''),
+					    SPAN_c4_month(
+						$_D->english_month3($_D->get_parts($d, 'month')),
+					    ),
+					];
+					$first = 0;
+				    }
+				    (
+					@$month,
+					$_D->is_less_than($d, $now) ? ()
+					    : Link(
+						$day,
+						_when_uri($d),
+						{
+						    class => "c4_day$selected$weekend",
+						    TITLE => $_D->english_day_of_week($d),
+						},
+					    ),
+				    );
 				}
-				(
-				    @$month,
-				    $_D->is_less_than($d, $now) ? ()
-					: Link(
-					    $day,
-					    _when_uri($d),
-					    {
-						class => "c4_day$selected$weekend",
-						TITLE => $_D->english_day_of_week($d),
-					    },
-					),
-				);
-			    }
-			    0 .. 6,
-			),
-		    );
-		}
-		0 .. ($weeks - 1),
-	    ),
-	    Link(
-		'>>',
-		_when_uri($_D->add_days($start, 7 * $weeks)),
-		'c4_next',
-	    ),
-	]),
+				    0 .. 6,
+			    ),
+			);
+		    }
+			0 .. ($weeks - 1),
+		),
+		Link(
+		    '>>',
+		    _when_uri($_D->add_days($start, 7 * $weeks)),
+		    'c4_next',
+		),
+	    ]),
+	),
     );
 }
 
