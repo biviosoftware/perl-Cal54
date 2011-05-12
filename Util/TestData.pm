@@ -35,15 +35,15 @@ sub init {
     $self->assert_test;
     $self->initialize_fully;
     $self->new_other('TestUser')->init;
-    $self->init_venues;
-    $self->init_scrapers;
+    $self->init_venues('venues.csv');
+    $self->init_scrapers('scrapers.csv');
     return;
 }
 
 sub init_scrapers {
-    my($self) = @_;
+    my($self, $filename) = @_;
     my($list) = $self->model('ScraperList')->load_all;
-    _iterate_csv($self, 'scrapers.csv', sub {
+    _iterate_csv($self, $filename, sub {
         my($v) = @_;
 	delete($v->{'Scraper.scraper_id'});
 	delete($v->{'Website.location'});
@@ -71,8 +71,8 @@ sub init_scrapers {
 }
 
 sub init_venues {
-    my($self) = @_;
-    _iterate_csv($self, 'venues.csv', sub {
+    my($self, $filename) = @_;
+    _iterate_csv($self, $filename, sub {
 	my($v) = @_;	     
         delete($v->{'Venue.venue_id'});
 	my($ro) = $self->model('RealmOwner');
@@ -109,14 +109,16 @@ sub reset_all {
 }
 
 sub _iterate_csv {
-    my($self, $csv_file, $op) = @_;
+    my($self, $filename, $op) = @_;
     $self->initialize_ui;
     $self->req->with_realm(
 	b_use('FacadeComponent.Constant')
 	    ->get_value('site_admin_realm_name', $self->req),
 	sub {
 	    foreach my $v (@{$self->new_other('CSV')
-	        ->parse_records($_F->read($csv_file))}) {
+	        ->parse_records($filename
+		    ? $_F->read($filename)
+		    : $self->read_input)}) {
 		$op->($v);
 	    }
 	});
