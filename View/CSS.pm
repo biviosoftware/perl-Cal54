@@ -200,10 +200,8 @@ div.c4_mobile_header div.c4_query {
   margin-left: .5em;
 }
 div.c4_mobile_header {
-  padding: 0;
   width: 100%;
-  padding-top: .5ex;
-!  padding-left: .5em;
+  padding: .5ex 0 1ex 0;
 }
 div.c4_mobile_header span.c4_logo_tag {
   margin-left: .5em;
@@ -251,6 +249,22 @@ div.c4_mobile_header {
 }
 body.c4_mobile .c4_list .item span.time {
   display: block;
+}
+body.c4_mobile .c4_prev,
+body.c4_mobile .c4_next {
+  Color('c4_button-background');
+  Font('c4_button');
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 6em;
+  padding: .2em .5em;
+}
+body.c4_mobile .c4_prev {
+  margin-bottom: 1em;
+}
+body.c4_mobile .c4_next {
+  margin-top: 1em;
 }
 EOF
 }
