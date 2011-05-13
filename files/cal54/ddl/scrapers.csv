@@ -348,7 +348,7 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     }],
   ],
 }
-",4300022,RegExp,Home,http://www.twentyninthstreet.com/Events/Details/35820,Twenty Ninth Street,v-twentyninthst,5900021,s4300022
+",4300022,RegExp,Home,http://www.twentyninthstreet.com/Events/Details/36582,Twenty Ninth Street,v-twentyninthst,5900021,s4300022
 5600021,"{
   accept_event => {
     location => qr/Walden Ponds/i,
