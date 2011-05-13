@@ -69,7 +69,7 @@ sub internal_initialize {
 		'Text',
 	    ),
 	],
-	other_query_keys => [qw(what)],
+	other_query_keys => [qw(what when)],
     });
 }
 
