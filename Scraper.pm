@@ -24,19 +24,28 @@ my($_TT) = b_use('Type.Text');
 my($_TZ) = b_use('Type.TimeZone')->get_default;
 my($_V) = b_use('Model.Venue');
 my($_VE) = b_use('Model.VenueEvent');
+my($_GET_CACHE) = $_C->can('is_dev') && $_C->is_dev ? {} : undef;
 
 sub c4_scraper_get {
     my($self, $uri) = @_;
     my($log) = _log($self);
-    my($d);
-    unless ($d = _bunit_dir($self)) {
-	sleep(1);
-	# ignore utf warnings
-	local($SIG{__WARN__}) = sub {};
-	return $self->extract_content($self->http_get($uri, $log));
+    if (my $d = _bunit_dir($self)) {
+	$self->put(last_uri => $self->abs_uri($uri));
+	return $self->read_file($_FP->join($d, $_FP->get_tail($log)));
     }
-    $self->put(last_uri => $self->abs_uri($uri));
-    return $self->read_file($_FP->join($d, $_FP->get_tail($log)));
+    # ignore utf warnings
+    local($SIG{__WARN__}) = sub {};
+#BEBOP: 10.74
+    if ($_GET_CACHE && $_GET_CACHE->{$uri}) {
+	$self->put(last_uri => $self->abs_uri($uri));
+	my $x = $_GET_CACHE->{$uri};
+	return \$x;
+    }
+    sleep(1);
+    my($res) = $self->extract_content($self->http_get($uri, $log));
+    $_GET_CACHE->{$uri} = $$res
+	if $_GET_CACHE;
+    return $res;
 }
 
 sub do_all {
