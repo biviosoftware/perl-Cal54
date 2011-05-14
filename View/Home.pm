@@ -19,7 +19,7 @@ sub home_base {
     );
     view_main(
 	Page3({
-	    style => RealmCSS(),
+	    style => RealmCSS('HomeCSS->site_css'),
 	    body_class => IfMobile(
 		'c4_mobile c4_home',
 		'c4_home',
