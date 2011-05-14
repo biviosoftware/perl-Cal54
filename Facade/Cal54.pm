@@ -104,9 +104,9 @@ my($_SELF) = __PACKAGE__->new({
 	[ADM_SCRAPER_LIST => '?/scrapers'],
 	[ADM_EVENT_REVIEW_LIST => '?/event-review'],
 	[ADM_TOGGLE_EVENT_VISIBILITY => '?/toggle-event-visibility'],
-	[HOME_LIST => 'search'],
-	[USER_TRACKING => '/pub/url'],
-	[SUGGEST_SITE => '/pub/suggest-site'],
+	[C4_HOME_LIST => 'search'],
+	[C4_HOME_USER_TRACKING => '/pub/url'],
+	[C4_HOME_SUGGEST_SITE => '/pub/suggest-site'],
     ],
     Text => [
 	[site_name => q{CAL 54, Inc.}],
@@ -121,7 +121,7 @@ my($_SELF) = __PACKAGE__->new({
 	    ADM_SCRAPER_PREVIEW => 'Scraper Preview',
 	    ADM_SCRAPER_LIST => 'Scrapers',
 	    ADM_EVENT_REVIEW_LIST => 'Event Review',
-	    SUGGEST_SITE => 'Add your Site to CAL 54',
+	    C4_HOME_SUGGEST_SITE => 'Add your Site to CAL 54',
 	]],
 	['task_menu.title' => [
 	    ADM_VENUE_FORM => 'Add Venue',
@@ -163,6 +163,17 @@ my($_SELF) = __PACKAGE__->new({
 	]],
     ],
 });
+
+sub internal_merge {
+    my($cfg) = shift->SUPER::internal_merge(@_);
+    # $cfg->{Task} = [
+    # 	map(
+    # 	    $_->[0] =~ /_HOME$|^C4_HOME_
+    # 	    @{$cfg->{Task}},
+    # 	),
+    # ];
+    return $cfg;
+}
 
 sub _site_admin_xlink {
     my($task) = @_;
