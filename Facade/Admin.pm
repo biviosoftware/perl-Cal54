@@ -18,6 +18,7 @@ __PACKAGE__->new({
 	[my_site_redirect_map => sub {[
  	    [qw(site-admin 0 ADM_VENUE_LIST)],
  	    [qw(site-admin 0 ADM_SCRAPER_LIST)],
+	    [qw(0 0 SITE_ROOT)],
 	]}],
 	map(_site_admin_xlink($_), qw(
             ADM_VENUE_LIST
