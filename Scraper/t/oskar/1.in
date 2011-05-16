@@ -1,0 +1,1002 @@
+[
+  {
+    'description' => 'Latin Grass with Onda free all ages 6-9pm',
+    'dtend' => '2455698 10800',
+    'dtstart' => '2455698 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Latin Grass with Onda',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Bluegrass Supergroup free all ages 6-9pm',
+    'dtend' => '2455698 10800',
+    'dtstart' => '2455698 0',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass Supergroup',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455700 18000',
+    'dtstart' => '2455700 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'bluegrass pick all levels welcome free 8-11pm',
+    'dtend' => '2455700 18000',
+    'dtstart' => '2455700 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Tribute to Bob Dylan free 7-11pm local musicians paying homage to Dylan',
+    'dtend' => '2455701 18000',
+    'dtstart' => '2455701 3600',
+    'location' => 'color#99cc66',
+    'summary' => 'Tribute to Bob Dylan',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.bobdylan.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'K.C. Groves open stage all welcome to play and join in the fun 8-10pm',
+    'dtend' => '2455702 14400',
+    'dtstart' => '2455702 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'K.C. Groves open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Danny Shafer 5:30-8:30pm free downstairs',
+    'dtend' => '2455702 9000',
+    'dtstart' => '2455701 84600',
+    'location' => 'color#66cccc',
+    'summary' => 'Danny Shafer',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.dannyshafer.com/',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Interstate Stash Express roots rock $5 8-11:30pm',
+    'dtend' => '2455703 19800',
+    'dtstart' => '2455703 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Interstate Stash Express',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Something Underground $7 8-11:30pm roots rock',
+    'dtend' => '2455703 19800',
+    'dtstart' => '2455703 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'Something Underground',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://somethingunderground.com/',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'David Richey free 4:30-6:30pm',
+    'dtend' => '2455704 1800',
+    'dtstart' => '2455703 81000',
+    'location' => 'color#cc9966',
+    'summary' => 'David Richey',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskarweasel'
+  },
+  {
+    'description' => 'Boa & the Constictors $5 8-11:30pm blues band',
+    'dtend' => '2455704 19800',
+    'dtstart' => '2455704 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'Boa & the Constictors',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://woodwardproductionco.com/boa--the-constrictors.html',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Crow Radio $5 8-11:30pm rockin\' twang',
+    'dtend' => '2455704 19800',
+    'dtstart' => '2455704 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Crow Radio',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.facebook.com/pages/Crow-Radio/113893685347392',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick & open stage free noon-3pm',
+    'dtend' => '2455704 75600',
+    'dtstart' => '2455704 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick & open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Felonius Smith free 6-9pm all ages',
+    'dtend' => '2455705 10800',
+    'dtstart' => '2455705 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Felonius Smith',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.feloniussmith.com/home',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Long Road Home free 6-9pm all ages',
+    'dtend' => '2455705 10800',
+    'dtstart' => '2455705 0',
+    'location' => 'color#99cc66',
+    'summary' => 'Long Road Home',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://longroadhomebluegrass.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Romano Paoletti open stage 6:30-8:30pm free all welcome',
+    'dtend' => '2455706 9000',
+    'dtstart' => '2455706 1800',
+    'location' => 'color#cc9966',
+    'summary' => 'Romano Paoletti open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.romanosmusic.com/',
+    'venue' => 'oskarweasel'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455707 18000',
+    'dtstart' => '2455707 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'bluegrass pick all levels welcome free 8-11pm',
+    'dtend' => '2455707 18000',
+    'dtstart' => '2455707 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Homegrown singer/songwriters free 7-10pm all are welcome',
+    'dtend' => '2455708 14400',
+    'dtstart' => '2455708 3600',
+    'location' => 'color#66cccc',
+    'summary' => 'Homegrown singer/songwriters',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'K.C. Groves open stage all welcome to play and join in the fun 8-10pm',
+    'dtend' => '2455709 14400',
+    'dtstart' => '2455709 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'K.C. Groves open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Jami Lunde duo free 5:30-8:30pm dinner music',
+    'dtend' => '2455709 9000',
+    'dtstart' => '2455708 84600',
+    'location' => 'color#66cccc',
+    'summary' => 'Jami Lunde duo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.reverbnation.com/jamilunde',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Steve Manshel from Firefall $5 8-11:30pm',
+    'dtend' => '2455710 19800',
+    'dtstart' => '2455710 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Steve Manshel from Firefall',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Onda Salsa band $6 8-11:30pm',
+    'dtend' => '2455710 19800',
+    'dtstart' => '2455710 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'Onda Salsa band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'The Jaspers w K.C. Groves free 4:30-6:30pm',
+    'dtend' => '2455711 1800',
+    'dtstart' => '2455710 81000',
+    'location' => 'color#cc9966',
+    'summary' => 'The Jaspers w K.C. Groves',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskarweasel'
+  },
+  {
+    'description' => 'Crowboy $5 8-11:30pm Alt country band',
+    'dtend' => '2455711 19800',
+    'dtstart' => '2455711 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'Crowboy',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.myspace.com/crowboymusic',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Romano Paoletti band $5 8-11:30pm rocking country',
+    'dtend' => '2455711 19800',
+    'dtstart' => '2455711 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Romano Paoletti band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.romanosmusic.com/index.html',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick & open stage free all welcome noon-3pm',
+    'dtend' => '2455711 75600',
+    'dtstart' => '2455711 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick & open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Unknown Americans free 6-9pm all ages',
+    'dtend' => '2455712 10800',
+    'dtstart' => '2455712 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Unknown Americans',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.myspace.com/theunknownamericans',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Swing Chicks free 6-9pm swing music new & vontage',
+    'dtend' => '2455712 10800',
+    'dtstart' => '2455712 0',
+    'location' => 'color#99cc66',
+    'summary' => 'Swing Chicks',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nancythorwardson.com/IonaGibsonMusic/SwingChicks.html',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'bluegrass pick all levels welcome free 8-11pm',
+    'dtend' => '2455714 18000',
+    'dtstart' => '2455714 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455714 18000',
+    'dtstart' => '2455714 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick free 6:30-8:30pm hosted by K.C. Groves or Eric thorin',
+    'dtend' => '2455715 9000',
+    'dtstart' => '2455715 1800',
+    'location' => 'color#cc9966',
+    'summary' => 'Bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.kcgroves.com/',
+    'venue' => 'oskarweasel'
+  },
+  {
+    'description' => '1st Wednesday music club free 7:30-10pm host band with speciall guests',
+    'dtend' => '2455715 14400',
+    'dtstart' => '2455715 5400',
+    'location' => 'color#99cc66',
+    'summary' => '1st Wednesday music club',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'K.C. Groves open stage 8-10pm all levels welcome acoustic open stage',
+    'dtend' => '2455716 14400',
+    'dtstart' => '2455716 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'K.C. Groves open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.kcgroves.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'David Williams solo free 5:30-8:30pm downstairs',
+    'dtend' => '2455716 9000',
+    'dtstart' => '2455715 84600',
+    'location' => 'color#66cccc',
+    'summary' => 'David Williams solo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.nodepression.com/profile/DavidWilliams39',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Teresa Lynne band $5 8-11:30pm great female harmonica player',
+    'dtend' => '2455717 19800',
+    'dtstart' => '2455717 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'Teresa Lynne band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.mistressoftheblues.com/Teresa_Lynne_and_the_Dreamboats.html',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'John alex Mason band $5 8-11:30pm- North Miss. Hill country blues',
+    'dtend' => '2455717 19800',
+    'dtstart' => '2455717 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'John alex Mason band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.johnalexmason.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Pete Kartsounes free 4:30-6:30pm',
+    'dtend' => '2455718 1800',
+    'dtstart' => '2455717 81000',
+    'location' => 'color#cc9966',
+    'summary' => 'Pete Kartsounes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarweasel'
+  },
+  {
+    'description' => 'She Groovez band $5 8-11:30pm all female funk band',
+    'dtend' => '2455718 19800',
+    'dtstart' => '2455718 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'She Groovez band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://shegroovez.com/',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Erica Brown Band $5 8-11:30pm',
+    'dtend' => '2455718 19800',
+    'dtstart' => '2455718 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Erica Brown Band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick free all ages noon-3pm hosted by Bonnie & Taylor Sims',
+    'dtend' => '2455718 75600',
+    'dtstart' => '2455718 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Jim Adam & Jon Stilwagen free all ages 6-9pm acoustic blues band',
+    'dtend' => '2455719 10800',
+    'dtstart' => '2455719 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Jim Adam & Jon Stilwagen',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.adamstilwagen.com/fr_home.cfm',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'electric blues jam 7:30-11:00pm free all are welcome',
+    'dtend' => '2455720 18000',
+    'dtstart' => '2455720 5400',
+    'location' => 'color#66cccc',
+    'summary' => 'electric blues jam',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'bluegrass pick all levels welcome free 8-11pm',
+    'dtend' => '2455721 18000',
+    'dtstart' => '2455721 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455721 18000',
+    'dtstart' => '2455721 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Monocle band 6-8:30pm free outside patio',
+    'dtend' => '2455721 9000',
+    'dtstart' => '2455721 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Monocle band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.reverbnation.com/monocleacoustic',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'K.C. Groves open stage 8-10pm all levels welcome acoustic open stage',
+    'dtend' => '2455723 14400',
+    'dtstart' => '2455723 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'K.C. Groves open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.kcgroves.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Tyler Grant free 5:30-8:30pm downstairs',
+    'dtend' => '2455723 9000',
+    'dtstart' => '2455722 84600',
+    'location' => 'color#66cccc',
+    'summary' => 'Tyler Grant',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.myspace.com/thegrantfarm',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'MojoMama band $5 8-11:30pm',
+    'dtend' => '2455724 19800',
+    'dtstart' => '2455724 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'MojoMama band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Paula Nelson band $10 8-11:30pm Buckstein opening -Willie\'s daughter from Texas',
+    'dtend' => '2455724 19800',
+    'dtstart' => '2455724 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Paula Nelson band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.paulanelsonband.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'The Strangebyrds 4:30-6:30pm free',
+    'dtend' => '2455725 1800',
+    'dtstart' => '2455724 81000',
+    'location' => 'color#cc9966',
+    'summary' => 'The Strangebyrds',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.myspace.com/cariminorandraysmith',
+    'venue' => 'oskarweasel'
+  },
+  {
+    'description' => 'Delores Scott & Jack Hadley $5 8-11:30pm Blues Diva from Chicago',
+    'dtend' => '2455725 19800',
+    'dtstart' => '2455725 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Delores Scott & Jack Hadley',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.myspace.com/325939852',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick free all ages noon-3pm hosted by Bonnie & Taylor Sims',
+    'dtend' => '2455725 75600',
+    'dtstart' => '2455725 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Todd Adelman & the Lovehandles free all ages 6-9pm',
+    'dtend' => '2455726 10800',
+    'dtstart' => '2455726 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Todd Adelman & the Lovehandles',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Colorado Goat Ropers Guild free all ages 6-9pm alt-country band',
+    'dtend' => '2455726 10800',
+    'dtstart' => '2455726 0',
+    'location' => 'color#99cc66',
+    'summary' => 'Colorado Goat Ropers Guild',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.myspace.com/hicksydix',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'electric blues jam 7:30-11:00pm free all are welcome',
+    'dtend' => '2455727 18000',
+    'dtstart' => '2455727 5400',
+    'location' => 'color#66cccc',
+    'summary' => 'electric blues jam',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'bluegrass pick all levels welcome free 8-11pm',
+    'dtend' => '2455728 18000',
+    'dtstart' => '2455728 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455728 18000',
+    'dtstart' => '2455728 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'The Prarie Scholars free 6-8:30pm outside on patio',
+    'dtend' => '2455728 9000',
+    'dtstart' => '2455728 0',
+    'location' => 'color#66cccc',
+    'summary' => 'The Prarie Scholars',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.prairiescholars.com/',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'K.C. Groves open stage 8-10pm all levels welcome acoustic open stage',
+    'dtend' => '2455730 14400',
+    'dtstart' => '2455730 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'K.C. Groves open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.kcgroves.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Russ Chapman free 5:30-8:30pm downstairs',
+    'dtend' => '2455730 9000',
+    'dtstart' => '2455729 84600',
+    'location' => 'color#66cccc',
+    'summary' => 'Russ Chapman',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.russchapman.com/',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Kentucky Parlor Pickers $5 8-11:30pm alt-country Denver band',
+    'dtend' => '2455731 19800',
+    'dtstart' => '2455731 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Kentucky Parlor Pickers',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.theparlorpickers.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Kenny Perkins band $5 8-11:30pm',
+    'dtend' => '2455731 19800',
+    'dtstart' => '2455731 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'Kenny Perkins band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Terry K & Ash Ganley free 4:30-6:30pm',
+    'dtend' => '2455732 1800',
+    'dtstart' => '2455731 81000',
+    'location' => 'color#cc9966',
+    'summary' => 'Terry K & Ash Ganley',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarweasel'
+  },
+  {
+    'description' => 'James & the Devil band $5 8-11:30pm',
+    'dtend' => '2455732 19800',
+    'dtstart' => '2455732 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'James & the Devil band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Hymn for Her $5 8-11:30pm roots rock duo',
+    'dtend' => '2455732 19800',
+    'dtstart' => '2455732 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Hymn for Her',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.hymnforher.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick free all ages noon-3pm hosted by Bonnie & Taylor Sims',
+    'dtend' => '2455732 75600',
+    'dtstart' => '2455732 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Teresa Storch band free all ages 6-9pm',
+    'dtend' => '2455733 10800',
+    'dtstart' => '2455733 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Teresa Storch band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Cowboy Dave Band free all ages 6-9pm',
+    'dtend' => '2455733 10800',
+    'dtstart' => '2455733 0',
+    'location' => 'color#99cc66',
+    'summary' => 'Cowboy Dave Band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'electric blues jam 7:30-11:00pm free all are welcome',
+    'dtend' => '2455734 18000',
+    'dtstart' => '2455734 5400',
+    'location' => 'color#66cccc',
+    'summary' => 'electric blues jam',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'bluegrass pick all levels welcome free 8-11pm',
+    'dtend' => '2455735 18000',
+    'dtstart' => '2455735 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455735 18000',
+    'dtstart' => '2455735 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Aaron & Alex 6-8:30pm free outside patio',
+    'dtend' => '2455735 9000',
+    'dtstart' => '2455735 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Aaron & Alex',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.myspace.com/aarondmccloskey',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'K.C. Groves open stage 8-10pm all levels welcome acoustic open stage',
+    'dtend' => '2455737 14400',
+    'dtstart' => '2455737 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'K.C. Groves open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.kcgroves.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Onda Salsa band $6 8-11:30pm',
+    'dtend' => '2455738 19800',
+    'dtstart' => '2455738 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'Onda Salsa band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Oakhurst gorilla grass $5 8-11:30pm',
+    'dtend' => '2455738 19800',
+    'dtstart' => '2455738 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Oakhurst gorilla grass',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Joe & Vickie Price free 4:30-6:30pm',
+    'dtend' => '2455739 1800',
+    'dtstart' => '2455738 81000',
+    'location' => 'color#cc9966',
+    'summary' => 'Joe & Vickie Price',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarweasel'
+  },
+  {
+    'description' => 'Erica Brown band $5 8-11:30pm',
+    'dtend' => '2455739 19800',
+    'dtstart' => '2455739 7200',
+    'location' => 'color#66cccc',
+    'summary' => 'Erica Brown band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Bluegrass pick free all ages noon-3pm hosted by Bonnie & Taylor Sims',
+    'dtend' => '2455739 75600',
+    'dtstart' => '2455739 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Jamesons co-dependant band free all ages 6-9pm',
+    'dtend' => '2455740 10800',
+    'dtstart' => '2455740 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Jamesons co-dependant band',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Felonius Smith free all ages 6-9pm acoustic blue band',
+    'dtend' => '2455740 10800',
+    'dtstart' => '2455740 0',
+    'location' => 'color#99cc66',
+    'summary' => 'Felonius Smith',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.feloniussmith.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'electric blues jam 7:30-11:00pm free all are welcome',
+    'dtend' => '2455741 18000',
+    'dtstart' => '2455741 5400',
+    'location' => 'color#66cccc',
+    'summary' => 'electric blues jam',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455742 18000',
+    'dtstart' => '2455742 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Connolly- Ramey duo 6-8:30pm free outside patio',
+    'dtend' => '2455742 9000',
+    'dtstart' => '2455742 0',
+    'location' => 'color#66cccc',
+    'summary' => 'Connolly- Ramey duo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.chrisrameymusic.com/fr_home.cfm',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Homegrown singer/songwriters free 7-10pm Oskar\'s employees and special guest',
+    'dtend' => '2455743 14400',
+    'dtstart' => '2455743 3600',
+    'location' => 'color#66cccc',
+    'summary' => 'Homegrown singer/songwriters',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'K.C. Groves open stage 8-10pm all levels welcome acoustic open stage',
+    'dtend' => '2455744 14400',
+    'dtstart' => '2455744 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'K.C. Groves open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.kcgroves.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Steve Manshel solo free 5:30-8:30pm',
+    'dtend' => '2455744 9000',
+    'dtstart' => '2455743 84600',
+    'location' => 'color#66cccc',
+    'summary' => 'Steve Manshel solo',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jun&yr=2011',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Bluegrass pick free all ages noon-3pm hosted by Bonnie & Taylor Sims',
+    'dtend' => '2455746 75600',
+    'dtstart' => '2455746 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'electric blues jam 7:30-11:00pm free all are welcome',
+    'dtend' => '2455748 18000',
+    'dtstart' => '2455748 5400',
+    'location' => 'color#66cccc',
+    'summary' => 'electric blues jam',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455749 18000',
+    'dtstart' => '2455749 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'K.C. Groves open stage 8-10pm all levels welcome acoustic open stage',
+    'dtend' => '2455751 14400',
+    'dtstart' => '2455751 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'K.C. Groves open stage',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.kcgroves.com/',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick free all ages noon-3pm hosted by Bonnie & Taylor Sims',
+    'dtend' => '2455753 75600',
+    'dtstart' => '2455753 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'electric blues jam 7:30-11:00pm free all are welcome',
+    'dtend' => '2455755 18000',
+    'dtstart' => '2455755 5400',
+    'location' => 'color#66cccc',
+    'summary' => 'electric blues jam',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455756 18000',
+    'dtstart' => '2455756 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick free all ages noon-3pm hosted by Bonnie & Taylor Sims',
+    'dtend' => '2455760 75600',
+    'dtstart' => '2455760 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'electric blues jam 7:30-11:00pm free all are welcome',
+    'dtend' => '2455762 18000',
+    'dtstart' => '2455762 5400',
+    'location' => 'color#66cccc',
+    'summary' => 'electric blues jam',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455763 18000',
+    'dtstart' => '2455763 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskargrill'
+  },
+  {
+    'description' => 'Bluegrass pick free all ages noon-3pm hosted by Bonnie & Taylor Sims',
+    'dtend' => '2455767 75600',
+    'dtstart' => '2455767 64800',
+    'location' => 'color#66cccc',
+    'summary' => 'Bluegrass pick',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'electric blues jam 7:30-11:00pm free all are welcome',
+    'dtend' => '2455769 18000',
+    'dtstart' => '2455769 5400',
+    'location' => 'color#66cccc',
+    'summary' => 'electric blues jam',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskarliquids'
+  },
+  {
+    'description' => 'Bluegrass pick all welcome Every Tuesday from 8-11pm Bluegrass pick upstairs hosted by K.C. groves and Eric Thorin',
+    'dtend' => '2455770 18000',
+    'dtstart' => '2455770 7200',
+    'location' => 'color#99cc66',
+    'summary' => 'Bluegrass pick all welcome',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.oskarblues.com/tunes/muisc-calendar?month=jul&yr=2011#',
+    'venue' => 'oskargrill'
+  }
+]
