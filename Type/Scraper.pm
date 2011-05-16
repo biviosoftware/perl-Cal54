@@ -15,7 +15,8 @@ __PACKAGE__->compile([
     FULL_CALENDAR => 6,
     BOS_DATES => 7,
     CALENDAR_MANAGER_DATA => 8,
-    REGEXP => [10, 'RegExp'],
+    OSKAR_BLUES => 9,
+    REG_EXP => 10,
 ]);
 
 sub as_class {
