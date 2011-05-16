@@ -357,7 +357,12 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
   ],
 }
 ",3600022,Reg Exp,Home,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx,The West End Tavern,v-westend,3600021,s3600022
-5900021,"{
+5600021,"{
+  once => [
+    [qr/\nTwenty Ninth Street LIVE\! Concert.*\n.*?\n$line/i => {
+      fields => [qw(link)],
+      follow_link => {
+
   once => [
     [qr/(6pm)/i => {
       fields => [qw(start_time)],
@@ -371,8 +376,14 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
       fields => [qw(month day summary url)],
     }],
   ],
+
+      },
+    }],
+  ],
+
+
 }
-",4300022,Reg Exp,Home,http://www.twentyninthstreet.com/Events/Details/36582,Twenty Ninth Street,v-twentyninthst,5900021,s4300022
+",3400022,Reg Exp,Home,http://www.twentyninthstreet.com/Events,Twenty Ninth Street,v-twentyninthst,5600021,s3400022
 5600021,"{
   accept_event => {
     location => qr/Walden Ponds/i,
