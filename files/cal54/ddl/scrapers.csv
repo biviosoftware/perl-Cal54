@@ -248,15 +248,16 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
   ],
 }
 ",2800022,RegExp,Home,http://www.nissis.com/lmcalendar.html,Nissi's,v-nissis,2800021,s2800022
-2900021,"{
+4100021,"{
     accept_event => {
         location => qr/boulder/i,
     },
     reject_event => {
       summary => qr/no groups or classes/i,
+      description => qr/(administrative retreat)|(\bninos\b)/i,
     },
 }
-",2900022,Google,Home,http://www.boulderparenting.org/calendar.html,Parenting Place,v-parentingplace,2900021,s2900022
+",2400022,Google,Home,http://myparentingplace.org/calendar/play-groups-and-support-groups-schedule-2/,Parenting Place,v-parentingplace,4100021,s2400022
 3000021,"{
   accept_event => {
     location => qr/Boulder REI/is,
