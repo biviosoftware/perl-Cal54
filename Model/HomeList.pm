@@ -78,8 +78,10 @@ sub internal_post_load_row {
     return 0
 	unless shift->SUPER::internal_post_load_row(@_);
     my($fields) = $self->[$_IDI];
-    $self->req('Model.HomeQueryForm')->row_tag_replace_what
-	unless $fields->{row_tag_sentinel}++;
+    if ($self->ureq('Model.HomeQueryForm')) {
+	$self->req('Model.HomeQueryForm')->row_tag_replace_what
+	    unless $fields->{row_tag_sentinel}++;
+    }
     my($start, $end) = map(
 	{
 	    my($x) = $_HFDT->get_widget_value($row->{$_}, 'HOUR_MINUTE_AM_PM_LC', 1);
