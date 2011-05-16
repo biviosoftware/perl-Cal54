@@ -2,7 +2,7 @@
 # $Id$
 package Cal54::View::Home;
 use strict;
-use Bivio::Base 'View.Method';
+use Bivio::Base 'View.HomeBase';
 use Bivio::UI::ViewLanguageAUTOLOAD;
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
@@ -11,35 +11,9 @@ my($_DT) = b_use('Type.DateTime');
 
 #TODO: If there is no event page, then render the description in a little popup window
 
-sub home_base {
-    view_class_map('XHTMLWidget');
-    view_shortcuts(b_use('View.ThreePartPage')->VIEW_SHORTCUTS);
-    view_put(
-	home_base_body => '',
-    );
-    view_main(
-	Page3({
-	    style => RealmCSS('HomeCSS->site_css'),
-	    body_class => IfMobile(
-		'c4_mobile c4_home',
-		'c4_home',
-	    ),
-	    head => Join([
-		Title(['CAL 54']),
-		MobileDetector(),
-		IfMobile(
-		    '<meta name="viewport" content="width=device-width" />',
-		),
-	    ]),
-	    body => view_widget_value('home_base_body'),
-	    xhtml => 1,
-	}),
-    );
-    return;
-}
-
 sub list {
-    _body(Join([
+    my($self) = @_;
+    return $self->internal_body(Join([
 	Form({
 	    form_class => 'HomeQueryForm',
 	    class => 'c4_form',
@@ -48,52 +22,21 @@ sub list {
 	    value => IfMobile(
 		DIV_c4_mobile_header(
 		    Join([
-			_logo(),
+			$self->internal_logo,
 			_form(),
 		    ]),
 		),
 		Grid([[
-		    _logo()->put(cell_class => 'c4_left'),
+		    $self->internal_logo
+			->put(cell_class => 'c4_left'),
 		    _form()->put(cell_class => 'c4_right'),
 		]], {
 		    class => 'c4_grid',
 		}),
 	    ),
 	}),
-	_list(),
+	_list($self),
     ]));
-    return;
-}
-
-sub pre_compile {
-    my($self) = @_;
-    view_parent('Home->home_base')
-	unless $self->get('view_name') eq 'home_base';
-    return;
-}
-
-sub suggest_site {
-    _body(Join([
-	Grid([[
-	    _logo()->put(cell_class => 'c4_suggest_logo'),
-	]], {
-	    class => 'c4_grid',
-	}),
-	DIV_c4_suggest_form(vs_simple_form('SuggestSiteForm', [
-	    ['SuggestSiteForm.Website.url', {
-		size => 50,
-	    }],
-	])),
-    ]));
-    return;
-}
-
-sub _body {
-    my($body) = @_;
-    view_put(
-	home_base_body => $body,
-    );
-    return;
 }
 
 sub _form {
@@ -112,6 +55,7 @@ sub _form {
 }
 
 sub _list {
+    my($self) = @_;
     return Join([
 	IfMobile(
 	    Link(
@@ -173,23 +117,11 @@ sub _list {
 	),
 	IfMobile(
 	    '',
-	    XLink('SUGGEST_SITE', 'c4_suggest_link'),
+	    XLink('C4_HOME_SUGGEST_SITE', 'c4_suggest_link'),
 	),
 	MobileToggler(),
-	DIV_c4_copy(Prose(
-	    "&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL 54&trade;'); Boulder's Calendar&trade;")),
+	$self->internal_copy,
     ]);
-}
-
-sub _logo {
-    return Link(
-	Join([
-	    SPAN_c4_logo_name('CAL 54'),
-	    SPAN_c4_logo_tag(q{Boulder's Calendar}),
-	]),
-	'HOME_LIST',
-	'c4_logo_text',
-    );
 }
 
 sub _when_uri {
