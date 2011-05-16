@@ -14,7 +14,7 @@ sub internal_import {
 	|| b_die('failed to parse url: ', $url);
     my($html) = $self->c4_scraper_get($url);
 
-    for (1 .. 3) {
+    for my $i (1 .. 3) {
 	my($next) = $$html =~ m{href="([^"]+)">&gt;&gt;<};
 	b_die('parse next failed') unless $next;
 
