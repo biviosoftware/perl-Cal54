@@ -2,7 +2,7 @@
 # $Id$
 package Cal54::Facade::Cal54;
 use strict;
-use Bivio::Base 'UI.FacadeBase';
+use Bivio::Base 'Facade.Cal54Base';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
@@ -14,8 +14,8 @@ my($_SELF) = __PACKAGE__->new({
 	[[qw(c4_site_name c4_site_tag c4_query_what)]=> 0x0],
 	[[qw(c4_item_a c4_item_a_hover b_mobile_toggler_a)] => 0x2200C1],
         [c4_item_a_visited => 0x551A8B],
-	[[qw(c4_date c4_time c4_query_submit_background c4_query_background c4_grid_background)] => 0x0088ce],
-	[[qw(c4_pager c4_pager_selected_border c4_form_background c4_logo_name c4_logo_tag)] => 0xffffff],
+	[[qw(c4_date c4_time c4_query_submit_background c4_query_background c4_grid_background c4_home_title_background)] => 0x0088ce],
+	[[qw(c4_pager c4_pager_selected_border c4_form_background c4_logo_name c4_logo_tag c4_home_title)] => 0xffffff],
 	[[qw(c4_pager_weekend c4_query_submit_border c4_query_submit)] => 0xf8f8f8],
 	[[qw(c4_pager_a)]=> 0xe8e8e8],
 	[b_mobile_toggler_selected => 0x0],
@@ -24,19 +24,8 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_button_background => 0x0088ce],
     ],
     Constant => [
-	[ThreePartPage_want_ForumDropDown => 1],
-	[ThreePartPage_want_dock_left_standard => 1],
-	[robots_txt_allow_all => 0],
-	[my_site_redirect_map => sub {[
- 	    [qw(site-admin 0 ADM_VENUE_LIST)],
- 	    [qw(site-admin 0 ADM_SCRAPER_LIST)],
-	]}],
-	map(_site_admin_xlink($_), qw(
-            ADM_VENUE_LIST
-	    ADM_SCRAPER_LIST
-	    ADM_CALENDAR_EVENT_LIST_FORM
-	    ADM_EVENT_REVIEW_LIST
-	)),
+	[ActionError_default_view => 'HomeOther->error_default'],
+	[ActionError_want_wiki_view => 0],
     ],
     CSS => [
 	[c4_query_what => 'width: 25em;'],
@@ -65,6 +54,12 @@ my($_SELF) = __PACKAGE__->new({
             width: 50em;
             margin: auto;
         }],
+	[c4_home_other => q{
+	    width: 49.5em;
+	    padding-left: .5em;
+	    margin: auto;
+	    text-align: center;
+        }],
     ],
     Font => [
 	[body => []],
@@ -73,6 +68,7 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_home => ['family=Arial, Helvetica, sans-serif', 'medium']],
 	[c4_query_submit => ['size=18px']],
 	[c4_logo_name => [qw(uppercase bold 48px)]],
+	[c4_home_title => [qw(uppercase bold 200%)]],
 	[c4_logo_tag => [qw(uppercase bold 80%)]],
 	[c4_site_name => ['bold']],
 	[c4_excerpt => ['80%']],
@@ -96,93 +92,41 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_button => ['100%']],
     ],
     Task => [
-	[ADM_CALENDAR_EVENT_LIST_FORM => '?/events'],
-	[ADM_VENUE_FORM => '?/edit-venue'],
-	[ADM_VENUE_LIST => '?/venues'],
-	[ADM_SCRAPER_FORM => '?/scraper'],
-	[ADM_SCRAPER_PREVIEW => '?/scraper-preview'],
-	[ADM_SCRAPER_LIST => '?/scrapers'],
-	[ADM_EVENT_REVIEW_LIST => '?/event-review'],
-	[ADM_TOGGLE_EVENT_VISIBILITY => '?/toggle-event-visibility'],
 	[C4_HOME_LIST => 'search'],
 	[C4_HOME_USER_TRACKING => '/pub/url'],
 	[C4_HOME_SUGGEST_SITE => '/pub/suggest-site'],
     ],
     Text => [
-	[site_name => q{CAL 54, Inc.}],
+	@{__PACKAGE__->internal_c4_text},
 	[c4_site_tag => q{SPAN(q{The Web's Calendar});SPAN_c4_tm('&trade;');}],
-	[site_copyright => q{bivio Software, Inc.}],
-	[home_page_uri => '/bp'],
+	[home_page_uri => '/search'],
 	[[qw(title xlink)] => [
-	    ADM_VENUE_LIST => 'Venues',
-	    ADM_CALENDAR_EVENT_LIST_FORM => 'Events',
-	    ADM_VENUE_FORM => 'Edit Venue',
-	    ADM_SCRAPER_FORM => 'Add Scraper',
-	    ADM_SCRAPER_PREVIEW => 'Scraper Preview',
-	    ADM_SCRAPER_LIST => 'Scrapers',
-	    ADM_EVENT_REVIEW_LIST => 'Event Review',
 	    C4_HOME_SUGGEST_SITE => 'Add your Site to CAL 54',
-	]],
-	['task_menu.title' => [
-	    ADM_VENUE_FORM => 'Add Venue',
-	]],
-	[Scraper => [
-	    scraper_type => 'Type',
-	    scraper_aux => 'Scraper Aux',
-	    default_venue_id => 'Default Venue',
-	]],
-	[ScraperList => [
-	    'default_venue.RealmOwner.display_name' => 'Default Venue',
-	]],
-	[[qw(VenueList VenueForm)] => [
-	    'Website.url' => 'Home Page',
-	    'calendar.Website.url' => 'Calendar Link',
-	    'RealmOwner.name' => 'Scraper Tag',
-	    'RealmOwner.display_name' => 'Full Name',
-	    'RowTag.value' => 'Tags',
-	]],
-	[SearchWords => [
-	    value => 'Search Words',
-	]],
-	[[qw(CalendarEventFilterList AdmCalendarEventList AdmCalendarEventListForm AdmEventReviewList)] => [
-	    'RealmOwner.display_name' => 'Title',
-	    'RowTag.value' => 'Tags',
-	    'CalendarEvent.modified_date_time' => 'Changed',
-	    'venue.RealmOwner.display_name' => 'Venue',
-	]],
-	[ScraperForm => [
-	    test_scraper_button => 'Run Scraper',
-	]],
-	[AdmEventQueryForm => [
-	    scraper => 'Scraper',
 	]],
 	[SuggestSiteForm => [
 	    'prose.prologue' => q{BR(); Know of a local venue we don't cover? Let us know!},
 	    
-	    'Website.url' => 'Venue Website',
+	    'Website.url' => 'Link',
+	    ok_button => 'Submit',
 	]],
     ],
 });
 
 sub internal_merge {
-    my($cfg) = shift->SUPER::internal_merge(@_);
-    # $cfg->{Task} = [
-    # 	map(
-    # 	    $_->[0] =~ /_HOME$|^C4_HOME_
-    # 	    @{$cfg->{Task}},
-    # 	),
-    # ];
+    my($proto) = shift;
+    my($cfg) = $proto->SUPER::internal_merge(@_);
+    my($base_tasks) = $proto->internal_base_tasks;
+    $cfg->{Task} = [
+    	map(
+	    {
+		my($t) = $_->[0];
+		grep($t eq $_->[0], @{$base_tasks})
+		    || $t =~ /^C4_HOME_|MAIL_RECEIVE|XAPIAN/ ? $_ : (),
+	    }
+    	    @{$cfg->{Task}},
+    	),
+    ];
     return $cfg;
-}
-
-sub _site_admin_xlink {
-    my($task) = @_;
-    return ['xlink_' . lc($task) => sub {
-        return {
-	    realm => shift->get_value('site_admin_realm_name'),
-	    task_id => $task,
-	};
-    }];
 }
 
 1;
