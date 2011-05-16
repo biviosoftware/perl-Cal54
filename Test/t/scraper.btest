@@ -10,3 +10,4 @@ verify_no_text('Bivio::Die');
 submit_form('run');
 verify_text(qr{venue.*boulderbookstore.*venue.*boulderbookstore}s);
 verify_no_text('Bivio::Die');
+follow_link('event_review');
