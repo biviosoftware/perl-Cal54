@@ -39,12 +39,14 @@ sub eval_scraper_aux {
 }
 
 sub extract_once_fields {
-    my($self, $cfg, $text, $current) = @_;
+    my($self, $cfg, $text, $current, $op) = @_;
 
     foreach my $info (@{$cfg->{once} || $cfg->{global} || []}) {
 	my($regexp, $args) = @$info;
-	_add_field_values($self, $args->{fields}, $current)
-	    if $$text =~ /$regexp/;
+	next unless $$text =~ /$regexp/;
+	_add_field_values($self, $args->{fields}, $current);
+	$op->($self, $args, $current)
+	    if $op;
     }
     return;
 }
@@ -191,6 +193,17 @@ sub _day_name_regexp {
     return qr/\b(${regexp})\b/i;
 }
 
+sub _follow_link {
+    my($self, $current, $cleaner, $cfg) = @_;
+    my($url) = $cleaner->unsafe_get_link_for_text(
+	$current->{link} || $current->{summary});
+
+    if ($url) {
+	_process_url($self, $cfg, $url, $current);
+    }
+    return;
+}
+
 sub _month_regexp {
     my($regexp) = join('|', keys(%$_MONTHS));
     return qr/\b(${regexp})\b/i;
@@ -200,19 +213,18 @@ sub _process_url {
     my($self, $cfg, $url, $current) = @_;
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
     my($text) = $cleaner->clean_html($self->c4_scraper_get($url), $url);
-    $self->extract_once_fields($cfg, $text, $current);
+    $self->extract_once_fields($cfg, $text, $current, sub {
+        my($self, $args, $current) = @_;				   
+	_follow_link($self, $current, $cleaner, $args->{follow_link})
+	    if $args->{follow_link};
+	return;
+    });
     my($once) = {%$current};
     $self->extract_repeat_fields($cfg, $text, $current, sub {
         my($self, $args, $current) = @_;
+	_follow_link($self, $current, $cleaner, $args->{follow_link})
+	    if $args->{follow_link};
 
-	if ($args->{follow_link}) {
-	    my($url) = $cleaner->unsafe_get_link_for_text(
-		$current->{link} || $current->{summary});
-
-	    if ($url) {
-		_process_url($self, $args->{follow_link}, $url, $current);
-	    }
-	}
 	if ($args->{summary_from_description} && $current->{description}) {
 	    ($current->{summary}) = $current->{description} =~
 		$args->{summary_from_description};
