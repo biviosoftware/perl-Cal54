@@ -2,4 +2,13 @@
 # $Id$
 (do('./Scraper.PL'))->(chautauqua => [
     [[qw(17)], '1/16/2011 12:00:00'],
-]);
+], <<'EOF');
+{
+    repeat => [
+	[qr{((?:[^\n]+\n)+)\w+,\s*$month\s+$day,\s+$year,\s+$time_ap.*?\n\n((?:[^\n]+\n)+)\n}s, {
+	    fields => [qw(summary month day year start_time description)],
+	}],
+    ],
+}
+EOF
+

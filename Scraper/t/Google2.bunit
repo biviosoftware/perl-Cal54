@@ -1,5 +1,14 @@
 # Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
 # $Id$
 (do('./Scraper.PL'))->(parentingplace => [
-    [[qw(121)], '1/30/2011 18:00:00'],
-]);
+    [[qw(121)], '1/30/2011 18:00:00']
+], <<'EOF');
+{
+    accept_event => {
+	location => qr/boulder/i,
+    },
+    reject_event => {
+	summary => qr/no groups or classes/i,
+    },
+}
+EOF
