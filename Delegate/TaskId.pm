@@ -9,14 +9,6 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 sub get_delegate_info {
     my($proto) = @_;
     return $proto->merge_task_info(@{$proto->standard_components}, [
-	{
-	    name => 'SITE_ROOT',
-	    items => [
-		'Action.ClientRedirect->execute_next',
-	    ],
-	    next => 'HOME_LIST',
-	},
-	# UserTracking added so module is loaded with tasks
 	[qw(
 	    VENUE_HOME
 	    501
@@ -108,30 +100,30 @@ sub get_delegate_info {
 	    next=ADM_EVENT_REVIEW_LIST
         )],
 	[qw(
-	    HOME_LIST
+	    C4_HOME_LIST
 	    512
 	    GENERAL
 	    ANYBODY
 	    Model.HomeQueryForm
 	    Model.HomeList
 	    View.Home->list
-	    next=HOME_LIST
+	    next=C4_HOME_LIST
 	)],
 	[qw(
-	    USER_TRACKING
+	    C4_HOME_USER_TRACKING
 	    513
 	    GENERAL
 	    ANYBODY
 	    Action.UserTracking
         )],
 	[qw(
-	    SUGGEST_SITE
+	    C4_HOME_SUGGEST_SITE
 	    514
 	    GENERAL
 	    ANYBODY
 	    Model.SuggestSiteForm
-	    View.Home->suggest_site
-	    next=HOME_LIST
+	    View.HomeOther->suggest_site
+	    next=C4_HOME_LIST
 	)],
     ]);
 }
