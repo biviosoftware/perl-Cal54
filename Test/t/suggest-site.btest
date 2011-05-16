@@ -5,7 +5,7 @@ home_page();
 follow_link('add_your_site');
 my($text) = 'website ' . random_string();
 submit_form({
-    website => $text,
+    link => $text,
 });
 login_as('adm');
 follow_link('site-contact', 'Mail');
