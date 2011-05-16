@@ -14,7 +14,7 @@ sub get_html_field_attributes {
 sub render {
     my($self, $source, $buffer) = @_;
     my($url) = $source->req->format_stateless_uri({
-	task_id => 'USER_TRACKING',
+	task_id => 'C4_HOME_USER_TRACKING',
 	query => {
 	    x => '',
 	},
