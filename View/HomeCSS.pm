@@ -269,14 +269,22 @@ body.c4_mobile .c4_prev {
 body.c4_mobile .c4_next {
   margin-top: 1em;
 }
-.c4_suggest_logo a.c4_logo_text {
-  padding: 16px 1em 1ex 1.5em;
+table.c4_suggest_site td.c4_left {
+  width: 10em;
 }
-.c4_suggest_logo a.c4_logo_text span.c4_logo_tag {
-  padding: 0 1em;
+table.c4_suggest_site td.c4_right {
+  Color('c4_home_title-background');
 }
-div.c4_suggest_form {
-  padding: 0 10em;
+table.c4_suggest_site div.c4_home_title {
+  Font('c4_home_title');
+  text-align: center;
+}
+div.c4_home_other {
+   CSS('c4_home_other');
+}
+div.c4_home_other * {
+   margin: auto;
+   margin-top: 2ex;
 }
 EOF
 }
