@@ -7,6 +7,6 @@ my($text) = 'website ' . random_string();
 submit_form({
     link => $text,
 });
-login_as('adm');
+login_as_adm();
 follow_link('site-contact', 'Mail');
 verify_text($text);

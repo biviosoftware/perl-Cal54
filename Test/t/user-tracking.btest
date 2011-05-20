@@ -6,7 +6,6 @@ my($search) = random_string();
 submit_form(Search => {
     _anon => $search,
 });
-login_as('adm');
+login_as_adm();
 follow_link('site_hits');
 verify_text(qr/u\d+ .*?\Q$search/);
-
