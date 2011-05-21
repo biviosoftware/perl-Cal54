@@ -1,4 +1,4 @@
-# Copyright (c) 2011 bivio Software, Inc.  All Rights Reserved.
+# Copyright (c) 2011 CAL54, Inc.  All Rights Reserved.
 # $Id$
 package Cal54::Model::Scraper;
 use strict;

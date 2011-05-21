@@ -1,4 +1,4 @@
-# Copyright (c) 2010 bivio Software, Inc.  All rights reserved.
+# Copyright (c) 2010 CAL54, Inc.  All rights reserved.
 # $Id$
 package Cal54::Delegate::TaskId;
 use strict;

@@ -1,4 +1,4 @@
-# Copyright (c) 2010-2011 bivio Software, Inc.  All Rights Reserved.
+# Copyright (c) 2010-2011 CAL54, Inc.  All Rights Reserved.
 # $Id$
 package Cal54::View::Home;
 use strict;

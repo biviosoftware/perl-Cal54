@@ -1,4 +1,4 @@
-# Copyright (c) 2011 bivio Software, Inc.  All Rights Reserved.
+# Copyright (c) 2011 CAL54, Inc.  All Rights Reserved.
 # $Id$
 package Cal54::View::HomeBase;
 use strict;
@@ -18,14 +18,14 @@ sub internal_body {
 
 sub internal_copy {
     return DIV_c4_copy(Prose(
-	"&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL 54&trade;'); Boulder's Calendar&trade;"));
+	"&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL54&trade;'); Boulder's Calendar&trade;"));
     
 }
 
 sub internal_logo {
     return Link(
 	Join([
-	    SPAN_c4_logo_name('CAL 54'),
+	    SPAN_c4_logo_name('CAL54'),
 	    SPAN_c4_logo_tag(q{Boulder's Calendar}),
 	]),
 	'C4_HOME_LIST',
@@ -47,7 +47,7 @@ sub xhtml {
 		'c4_home',
 	    ),
 	    head => Join([
-		Title(['CAL 54', q{Boulder's Calendar}, 'Events, Concerts, Lectures']),
+		Title(['CAL54', q{Boulder's Calendar}, 'Events, Concerts, Lectures']),
 		MobileDetector(),
 		IfMobile(
 		    META({

@@ -1,4 +1,4 @@
-# Copyright (c) 2010 bivio Software, Inc.  All Rights Reserved.
+# Copyright (c) 2010 CAL54, Inc.  All Rights Reserved.
 # $Id$
 (do('./Scraper.PL'))->(chautauqua => [
     [[qw(17)], '1/16/2011 12:00:00'],

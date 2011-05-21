@@ -1,4 +1,4 @@
-# Copyright (c) 2010-2011 bivio Software, Inc.  All rights reserved.
+# Copyright (c) 2010-2011 CAL54, Inc.  All rights reserved.
 # $Id$
 package Cal54::Facade::Cal54;
 use strict;
@@ -101,7 +101,7 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_site_tag => q{SPAN(q{The Web's Calendar});SPAN_c4_tm('&trade;');}],
 	[home_page_uri => '/search'],
 	[[qw(title xlink)] => [
-	    C4_HOME_SUGGEST_SITE => 'Add your Site to CAL 54',
+	    C4_HOME_SUGGEST_SITE => 'Add your Site to CAL54',
 	]],
 	[SuggestSiteForm => [
 	    'prose.prologue' => q{BR(); Know of a local venue we don't cover? Let us know!},

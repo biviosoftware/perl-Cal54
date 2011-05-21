@@ -1,4 +1,4 @@
-# Copyright (c) 2010 bivio Software, Inc.  All rights reserved.
+# Copyright (c) 2010 CAL54, Inc.  All rights reserved.
 # $Id$
 package Cal54::BConf;
 use strict;
@@ -61,7 +61,7 @@ sub merge_overrides {
 	version => 10,
 	root => 'Cal54',
 	prefix => 'c4',
-	owner => 'bivio Software, Inc.',
+	owner => 'CAL54, Inc.',
     }));
 }
 
