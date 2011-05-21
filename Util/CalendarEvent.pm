@@ -46,6 +46,24 @@ sub clear_events {
     return 'deleted ' . $count . ' events';
 }
 
+sub delete_scraper {
+    my($self) = @_;
+    my($scraper) = $self->model('Scraper')->load;
+    my($count) = 0;
+    $self->model('CalendarEvent')->do_iterate(sub {
+       my($ce) = @_;
+       $self->unauth_model('VenueEvent', {
+	   calendar_event_id => $ce->get('calendar_event_id'),
+       })->delete;
+       $ce->cascade_delete;
+       $count++;
+       return 1;
+   });
+    $self->print($count, " events\n");
+    $scraper->cascade_delete;
+    return;
+}
+
 sub import_events {
     my($self) = @_;
     $self->initialize_ui;
