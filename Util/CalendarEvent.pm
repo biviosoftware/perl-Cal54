@@ -13,6 +13,7 @@ sub USAGE {
 usage: bivio CalendarEvent [options] command [args..]
 commands
   clear_events -- clear all events for a venue
+  delete_scraper -- delete a scraper and all events associated with it
   import_events -- scrape and import events for a venue
   import_events_for_all_venues -- scrape all venues
 EOF
