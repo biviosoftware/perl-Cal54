@@ -1,4 +1,4 @@
-# Copyright (c) 2011 bivio Software Inc.  All Rights Reserved.
+# Copyright (c) 2011 CAL54, Inc.  All rights reserved.
 # $Id$
 package Cal54::Action::ScraperPreview;
 use strict;

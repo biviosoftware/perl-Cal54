@@ -1,4 +1,4 @@
-# Copyright (c) 2011 IEEE SA, Inc.  All Rights Reserved.
+# Copyright (c) 2011 CAL54, Inc.  All rights reserved.
 # $Id$
 package Cal54::Model::AdmToggleEventForm;
 use strict;
