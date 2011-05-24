@@ -338,6 +338,25 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 ",3400022,Reg Exp,Home,http://thedairy.frontgatetickets.com/,The Dairy Center for the Arts,v-dairycenter,5100021,s3400022
 3400021,,3400022,Google,Home,http://thelaughinggoat.com/events.php,The Laughing Goat Coffeehouse,v-thelaughinggoat,3400021,s3400022
 5800021,,4200022,Calendar Manager Data,Home,http://www.thelazydog.com/data/calendars.xml,The Lazy Dog,v-lazydog,5800021,s4200022
+6300021,"{
+  pager => {
+    link => qr/\n($month.*?\{\d+\})/,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/\n$line$time_ap/ => {
+      fields => [qw(summary)],
+      follow_link => {
+        once => [
+          [qr/\n$day_name, $month, $day\n+The Oriental.*?\n$time_ap.*?\n+(.*)/is => {
+            fields => [qw(day_name month day start_time description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+",4500022,Reg Exp,Home,http://www.theorientaltheater.com/calendar/view,The Oriental Theater,v-oriental,6300021,s4500022
 3500021,"{
   repeat => [
     [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_span\n+([^\n]+\})/s => {
