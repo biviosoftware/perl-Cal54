@@ -48,7 +48,7 @@ sub {
 			} => sub {
 			    assert_equals(
 				read_file("$case_dir.in"),
-				read_file((glob("$tmp/*/*/*/*/*.pl"))[0]),
+				read_file((glob("$tmp/*/*/*/*.pl"))[0]),
 			    );
 			    # This keeps the CVS directory clean
 			    unlink("$case_dir.out");
