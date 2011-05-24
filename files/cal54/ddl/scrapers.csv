@@ -52,8 +52,8 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     page_count => 3,
   },
   repeat => [
-    [qr/(about this event.*)$/mi => {
-      fields => ['link'],
+    [qr/((about this event.*))$/mi => {
+      fields => [qw(link url)],
       follow_link => {
         once => [
           [qr/Event Icon\n+$line(.*?)\n\w+\s+$month\s+$day,\s+$year\s+$time_ap/s => {
@@ -71,7 +71,7 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     description => qr/(type\s*=\s*class)|(^$)/i,
     summary => qr/\bPAL\b/i,
   },
-  accept_entry => {
+  accept_event => {
     location => qr/3800\s+Kalmia/i,
   },
 },
@@ -222,7 +222,7 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     }],
   ],
   repeat => [
-    [qr/$day_name,\s*$month\s+$day\s*~\s*([^\n]+)(.*?)(\n\n)/s, {
+    [qr/\n$day_name,\s*$month\s+$day\s*~\s*([^\n]+)(.*?)(\n+$day_name|MENU)/s, {
       fields => [qw(day_name month day summary description save)],
     }],
   ],
