@@ -234,6 +234,17 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
   },
 }
 ",2600022,Google,Home,http://www.johnnyscigars.com/calendar/,Johnny's Cigar Bar,v-cigar,2600021,s2600022
+6400021,"{
+  default_values => {
+    start_time => '5:30pm',
+  },
+  repeat => [
+    [qr/\n(.*?)\: $month $day\n+$line/ => {
+      fields => [qw(summary month day description)],
+    }],
+  ],
+}
+",4600022,Reg Exp,Home,http://www.millenniumfac.com/ArtistSeries.html,Millennium Harvest House,v-millennium,6400021,s4600022
 2800021,"{
   repeat => [
     [qr/($month\s*>.*)/, {
