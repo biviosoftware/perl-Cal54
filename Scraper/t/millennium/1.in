@@ -1,0 +1,132 @@
+[
+  {
+    'description' => 'What exactly is Reckless Red? It began as an online conversation between singer CJ Nicolai and drummer John Ware about art and gratification. And it grew into grew into a band that plays loose and rude, expecting the unexpected from each other. That band is Reckless Red -- home for CJ\'s throaty, un-girly pipes that wreck all your "girl singer" notions ...and also home for a handful of players from the heartland and both coasts who bring together all the right spices of blues and country. The band cooks up a swampy, muscle-bound sound that\'s brewed from a lifetime of experience in the studio, on giant stages, and in backwoods dives. The resulting Reckless Red soup is anything but narrow -- and it\'s made from bluesy stock that\'s rich in the roots of Americana and never far from a raw, gritty edge.',
+    'dtend' => '2455709 84600',
+    'dtstart' => '2455709 84600',
+    'location' => undef,
+    'summary' => 'Reckless Red',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'Rebecca and her band offer a rich palette of covers and originals, which can be specially chosen and mixed for the unique needs and tastes of any occasion, from the most elegant and sophisticated to the most casual or funky. Touted by the Denver Post as "sultry vocalist," Rebecca leads her duo, trio or full band through sets that honor the range of human experience. From jazz, blues, R&B, funk and pop to Latin rock and country,Rebecca and the band weave together performances aimed to please. Accomplished musicians for many years, the band members have played with such artists as George Benson, Nelson Rangell, Matt "guitar" Murphy from the Blues Brothers, Robben Ford, Koko Taylor, Pat Bergeson (Lyle Lovett guitarist), Chris Leuzinger (Garth Brooks guitarist), and Sam Bush with Sugar Hill.',
+    'dtend' => '2455716 84600',
+    'dtstart' => '2455716 84600',
+    'location' => undef,
+    'summary' => 'Rebecca Folsom',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'One of Denver\'s hottest bands! Chase not only has a powerful, velvety voice, he has a stage presence that is engaging. He has that energy that makes you want to get up out of your chair and dance and move to the rhythm of the music. He is truly an artist and a seasoned vocalist. Chase has been performing in the US, Europe & the Orient for the past 20 years. He sings a wide range of music such as reggae, jazz, pop, R&B and blues. From Frank Sinatra and Louis Armstrong to Luther Vandross-- Chase uses his creativity and style to craft new experiences for you.',
+    'dtend' => '2455723 84600',
+    'dtstart' => '2455723 84600',
+    'location' => undef,
+    'summary' => 'Chase N The Dream',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'Taking their name from a small mountain town in the Rocky Mountains of Colorado, DOTSERO means "Something Unique" according to Ute Native American legend to some. It means DOT-ZERO on the earliest geographical railroad maps to others, but to jazz fans worldwide DOTSERO means Smooth Jazz at its best, full of life energy and spontaneity that few artists in the genre have been able to match. A no nonsense sax and guitar driven thrill ride of energy and excitement. As much fun to watch as they are to listen to. The band has performed at major jazz festivals; Red Rocks Amphitheatre, JVC Winter Park Jazz Fest, Jazz Trax Catalina Island Jazz Fest and The Cancun Jazz Festival, among others. From Ala Carte Ala Park in San Francisco to West Palm Beach\'s Sunfest, DOTSERO has crisscrossed the nation performing their exciting brand of jazz.',
+    'dtend' => '2455730 84600',
+    'dtstart' => '2455730 84600',
+    'location' => undef,
+    'summary' => 'Dotsero',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'FACe is an all-vocal rock band that uses an amazing range of sounds including vocal percussion or "beat-box," rock, pop, funk and upbeat jazz to simulate a 5-piece rock band. this 7-member vocal band leaves audiences astonished when they realize the "instruments" they just heard are vocal! FACe performs power versions of top 40 hits, plus \'70s and \'80s oldies. Steve Glotzer, a familiar face in the music scene for over thirty years, will open the show. A talented performer, Steve\'s music has also been featured in movies and TV, on such shows as Oprah, Desperate Housewives, Wife Swap, ED, One Life To Live, Passions, King of the Hill, Martha Stewart Living, The Weather Channel and in the movies Friends with Money and A Guy Thing....',
+    'dtend' => '2455737 84600',
+    'dtstart' => '2455737 84600',
+    'location' => undef,
+    'summary' => 'FACE',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'Steve Manshel is an award winning singer/songwriter/guitarist, and veteran of the legendary group Firefall. With an energetic and versatile blend of musicianship and humor, Steve and his band provide fun and excitement through their varied repertoire. For the last decade, Steve has toured internationally and shared the stage with other great acts such as the Doobie Brothers, Foreigner, America, and John Michael Montgomery. He has performed at Fiddler\'s Green, House of Blues, Mile High Stadium and state and county fairs across America. The Steve Manshel Band delivers classic and contemporary rock and a country-rock show as well.',
+    'dtend' => '2455737 84600',
+    'dtstart' => '2455737 84600',
+    'location' => undef,
+    'summary' => 'Steve Manshel',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'Recognized by the Rocky Mountain News as Denver\'s Top Male Vocalist, Byron Shaw\'s resume has garnered more than its fair share of notable line items. But his most impressive undertaking to date may be his solo effort, an eclectic exploration of dub, jazz, funk, hip-hop and soul called the Byron Shaw Projex. Joined by some of Denver\'s finest, the Byron Shaw Projex is a dervish of soul-shaking grooves; a funk junket through years and genres that drifts past only once in a lapis moon... all aboard! Byron says of his band, "It\'s kinda like Portishead meets Rick James at a Tito Puente concert with Bob Marley\'s sons throwing the after party!"',
+    'dtend' => '2455744 84600',
+    'dtstart' => '2455744 84600',
+    'location' => undef,
+    'summary' => 'Byron Shaw Projex',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'The Ricardo Pena Band is a variety band well known for their impressive musicianship and versatility. Whether they are playing the best of Latin rock, classic rock, R&B, funk, the Beatles, salsa, romantic bolero, pop, jazz or country, their sound is always authentic to the style, their dancing beats impossible to resist, and their vocals and harmonies hard to beat. Ricardo Pena has performed to rave reviews across the country -- the Southern Mirror writes, "Pena is a wonder on lead guitar, piano/keyboards and vocals." The band performs Ricardo\'s original material as well as popular favorites.',
+    'dtend' => '2455737 84600',
+    'dtstart' => '2455737 84600',
+    'location' => undef,
+    'summary' => 'Ricardo Pena',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'With great passion and precision, Soul Sacrifice faithfully recreates the music of the legendary band, Santana. Featuring burning renditions of Latin-infused rock classics such as Oye Coma Va, Black Magic Woman, Jingo and Soul Sacrifice; plus a breathtaking delivery of guitar ballads including Europa and Samba Pa Ti, the band captures and delivers up the signature multi-cultural sound and spirit that is Santana. Soul Sacrifice features Steve Glotzer on lead guitar and vocals, Scott Mast on hand percussion and vocals, Joe Morton on drums and vocals, Greg Klicker on bass and vocals and Sheldon Sands on keys and vocals.',
+    'dtend' => '2455758 84600',
+    'dtstart' => '2455758 84600',
+    'location' => undef,
+    'summary' => 'Soul Sacrifice',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'UABRS is an acclaimed U2 tribute band that passionately recreates authentic U2 concerts. Covering the War tour in 1983 to present day, each show has amazed fans with their ability to recreate famous U2 shows and has solidified their reputation for sold out venues - including the world-famous Red Rocks! Billy Bunting had been a rabid U2 fan since he saw the band in New Haven, CT in 1981. Billy never forgot Bono climbing up to the balcony of this old theatre singing "Sunday Bloody Sunday" at the top of his lungs and thought, "I want to do that!" From that point forward, Billy immersed himself in U2 music and that event helped shape Billy as a singer. After 20+ years as professional musicians, Billy and Jerry Bousquet returned to their roots and formed UABRS. UABRS got its start by recreating the legendary 1983 "Live at Red Rocks" concert on New Year\'s Eve 2005 at a sold out show at the Paramount Theater in Denver, CO. It went over huge!!! The fans were taken back to that foggy June 5th evening and ended the night by singing the refrain from "40" as the band left the stage. It was EXACTLY like Red Rocks and Billy "Bono", Ted "The Tedge", Todd "Adam" and Jerry "Larry" have never looked back -- providing fans the best U2 experience this side of Dublin!! Not only does UABRS play and sound like U2, their amazing attention to detail creates a visual experience that the most ardent U2 fan would recognize. UABRS makes every effort to replicate wardrobe, stage props, video/audio choreography, instruments and equipment from many famous U2 concerts around the world.',
+    'dtend' => '2455765 84600',
+    'dtstart' => '2455765 84600',
+    'location' => undef,
+    'summary' => 'Under a Blood Red Sky',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'The extensive entertainment experience and vast repertoire of music which includes Golden Oldies, Beach, Motown, Country, Jazz, Rock, Funk, Rhythm and Blues and Contemporary allows Soul School to offer music that concert attendees are sure to enjoy regardless of age!',
+    'dtend' => '2455772 84600',
+    'dtstart' => '2455772 84600',
+    'location' => undef,
+    'summary' => 'Soul School',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'Judge Roughneck is one of Colorado\'s premier bands! Having a loyal nationwide fan base, and repeatedly voted Denver\'s best ska/reggae act, Judge Roughneck has gained both commercial success and critical acclaim. Due to the band\'s widespread appeal, they have been asked to perform once again at this year\'s Reggae on the Rocks Festival at Colorado\'s Red Rocks Amphitheater. Judge Roughneck routinely draws hundreds of fans to its shows across Colorado, including back-to back- to-back sellout shows at Herman\'s Hideaway in Denver, capacity 500. The band has also been played on numerous Denver area commercial radio stations including KBCO, KTCL, KBPI and Alice 106. Judge Roughneck\'s unique brand of pop-reggae pays tribute to both the early \'80\'s British 2-Tone movement and the original jazz laced ska of Jamaica, while infusing a generous dose of soul and R&B. The result is a unique, high-energy dance sound that entertains a wide audience.',
+    'dtend' => '2455779 84600',
+    'dtstart' => '2455779 84600',
+    'location' => undef,
+    'summary' => 'Judge Roughneck',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  },
+  {
+    'description' => 'Best known for their "Chaka Khan" style vocals, dynamic horn section and Hammond organ-laced grooves, Funkiphino is a powerhouse band that delivers a huge 11-piece sound. Their original music can be described as "euro-funk" style acid-jazz sprinkled with retro Oakland-style horns. With soulful female vocal leads and harmonies soaring together seamlessly, the band delivers quality, soul-inspired music. Funkiphino is a Colorado favorite and performs regularly for the Denver Broncos\' game day entertainment. They also performed for the 2005 Presidential Inaugural Independence Ball in Washington D.C. and their music video "Foolish Games" was featured on Frontier Airline\'s flights in 2005-06.',
+    'dtend' => '2455786 84600',
+    'dtstart' => '2455786 84600',
+    'location' => undef,
+    'summary' => 'Funkiphino',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.millenniumfac.com/ArtistSeries.html',
+    'venue' => 'millennium'
+  }
+]
