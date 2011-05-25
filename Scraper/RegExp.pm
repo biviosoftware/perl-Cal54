@@ -41,6 +41,12 @@ sub eval_scraper_aux {
 sub extract_once_fields {
     my($self, $cfg, $text, $current, $op) = @_;
 
+    if ($cfg->{default_values}) {
+	foreach my $f (keys(%{$cfg->{default_values}})) {
+	    $current->{$f} = $cfg->{default_values}->{$f};
+	}
+    }
+
     foreach my $info (@{$cfg->{once} || $cfg->{global} || []}) {
 	my($regexp, $args) = @$info;
 	next unless $$text =~ /$regexp/;
