@@ -202,6 +202,20 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     ],
 }
 ",2400022,Reg Exp,Home,http://foxtheatre.com/Store/ChooseTicket.aspx,Fox Theatre,v-foxtheatre,2400021,s2400022
+6500021,"{
+  repeat => [
+    [qr/\n$month $day\s*\-?\s*$time_span\s*\-?$line/ => {
+      fields => [qw(month day start_time end_time summary)],
+    }],
+    [qr/\n$day_name, $month $day\s*\-?\s*$time_ap\n$line(.*?)\n\n/s => {
+      fields => [qw(day_name month day start_time summary description)],
+    }],
+    [qr/\n$day_name, $month $day\s*\-?\s*$time_span\n$line(.*?)\n\n/s => {
+      fields => [qw(day_name month day start_time end_time summary description)],
+    }],
+  ],
+}
+",4700022,Reg Exp,Home,http://www.goldhillinn.com/music.html,Gold Hill Inn,v-goldhill,6500021,s4700022
 5800021,"{
   once => [
     [qr/EVENTS for $year/ => {
@@ -368,7 +382,7 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
   ],
 }
 ",4500022,Reg Exp,Home,http://www.theorientaltheater.com/calendar/view,The Oriental Theater,v-oriental,6300021,s4500022
-3500021,"{
+5400021,"{
   repeat => [
     [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_span\n+([^\n]+\})/s => {
       fields => [qw(summary month day year start_time end_time url)],
@@ -376,9 +390,12 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     [qr/\n([^\n]+)\n+$day_name\s+$month\s+$day\s+$time_span\n+([^\n]+\})/s => {
       fields => [qw(summary day_name month day start_time end_time url)],
     }],
+    [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_span/s => {
+      fields => [qw(summary month day year start_time end_time)],
+    }],
   ],
 }
-",3500022,Reg Exp,Home,http://www.theribhouse.com/center-stage,The Rib House - Boulder,v-ribhouse,3500021,s3500022
+",3200022,Reg Exp,Home,http://www.theribhouse.com/center-stage,The Rib House - Boulder,v-ribhouse,5400021,s3200022
 3600021,"{
   repeat => [
     [qr/(?:$month\s+)?$day\s+(.*?)\s*,\s*$time_ap(.*?)\n($month|$day|926 pearl)/is, {
