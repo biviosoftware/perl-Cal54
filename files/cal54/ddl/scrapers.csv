@@ -178,7 +178,7 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
     summary => qr/^\s*$/,
   },
   repeat => [
-    [qr/(Live Music $month\:\n).*?\n$day_name\s+$day,([^\n]+?)\($time_span\)\n/is => {
+    [qr/(.*Live Music $month\:).*?$day_name\s+$day,([^\n]+?)\($time_span\)\s*/is => {
       fields => [qw(save month day_name day summary start_time end_time)],
     }],
   ],
@@ -328,16 +328,19 @@ Scraper.default_venue_id,Scraper.scraper_aux,Scraper.scraper_id,Scraper.scraper_
 ",3100022,Reg Exp,Home,http://www.rocknsoulcafe.com/calendar/,Rock N Soul Cafe,v-rockandsoul,3100021,s3100022
 3300021,,3300022,Full Calendar,Home,http://www.stjulien.com/events-entertainment,St Julien,v-stjulien,3300021,s3300022
 6000021,"{
+  reject_event => {
+    summary => qr/\bTBA\b/i,
+  },
   once => [
-    [qr/Music Schedule All Times $time_span/i => {
+    [qr/Music Schedule.*?$time_span/is => {
       fields => [qw(start_time end_time)],
     }],
   ],
   repeat => [
-    [qr/(Music Schedule.*\n+.*?)$month $day \- ([^\-\n]*?) $time_span/ => {
+    [qr/(Music Schedule.*\n+.*?)\s*$month $day\s*\-\s*([^\-\n]*?) $time_span/ => {
       fields => [qw(save month day summary start_time end_time)],
     }],
-    [qr/(Music Schedule.*\n+)$month $day \- (.*?)(\n|$month)/ => {
+    [qr/(Music Schedule.*\n+)\s*$month $day\s*\-?\s*(.*?)(\n|$month)/ => {
       fields => [qw(save month day summary save)],
     }],
   ],
