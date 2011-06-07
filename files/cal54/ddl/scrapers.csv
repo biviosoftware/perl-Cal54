@@ -1,5 +1,5 @@
 default_venue.RealmOwner.name,Scraper.scraper_type,scraper.RealmOwner.name,Website.url,Scraper.scraper_aux
-v-pearlst,Reg Exp,s100022,http://www.boulderdowntown.com/events,"{
+v-pearlst,Reg Exp,,http://www.boulderdowntown.com/events,"{
   repeat => [
     [qr/(Featured Events in Downtown Boulder\n+)([^\n]+?\{.*\})\n/i => {
       fields => [qw(save link)],
@@ -26,7 +26,7 @@ v-pearlst,Reg Exp,s100022,http://www.boulderdowntown.com/events,"{
   ],
 }
 "
-v-firstbankcenter,Reg Exp,s200022,http://1stbankcenter.com/events/,"{
+v-firstbankcenter,Reg Exp,,http://1stbankcenter.com/events/,"{
   pager => {
     link => qr/(Next >>\{\d+\})/i,
     page_count => 3,
@@ -45,8 +45,8 @@ v-firstbankcenter,Reg Exp,s200022,http://1stbankcenter.com/events/,"{
   ],
 }
 "
-v-avery,Google,s300022,http://www.averybrewing.com/index.php?option=com_googlecalendar&Itemid=70,
-v-barnesandnoble,Reg Exp,s400022,http://store-locator.barnesandnoble.com/store/2333,"{
+v-avery,Google,,http://www.averybrewing.com/index.php?option=com_googlecalendar&Itemid=70,
+v-barnesandnoble,Reg Exp,,http://store-locator.barnesandnoble.com/store/2333,"{
   pager => {
     link => qr/\n(next\{\d+\})/is,
     page_count => 3,
@@ -65,8 +65,8 @@ v-barnesandnoble,Reg Exp,s400022,http://store-locator.barnesandnoble.com/store/2
   ],
 }
 "
-v-boulderbookstore,ICalendar,s500022,http://boulderbookstore.indiebound.com/event,
-v-historymuseum,Reg Exp,s4800022,http://www.boulderhistory.org/calendar.asp,"{
+v-boulderbookstore,ICalendar,,http://boulderbookstore.indiebound.com/event,
+v-historymuseum,Reg Exp,,http://www.boulderhistory.org/calendar.asp,"{
   accept_event => {
     location => qr/Boulder History Museum/i,
   },
@@ -90,7 +90,7 @@ v-historymuseum,Reg Exp,s4800022,http://www.boulderhistory.org/calendar.asp,"{
   ],
 }
 "
-v-jcc,Google,s600022,http://boulderjcc.org/Calendar/Home.aspx,"{
+v-jcc,Google,,http://boulderjcc.org/Calendar/Home.aspx,"{
   reject_event => {
     description => qr/(type\s*=\s*class)|(^$)/i,
     summary => qr/\bPAL\b/i,
@@ -100,7 +100,7 @@ v-jcc,Google,s600022,http://boulderjcc.org/Calendar/Home.aspx,"{
   },
 },
 "
-v-bmoca,RSS,s700022,http://www.bmoca.org/feed/,"{
+v-bmoca,RSS,,http://www.bmoca.org/feed/,"{
   once => [
     [qr/$month\s+$day,\s+$year\; $time_ap(?: to $time_ap)?[.;]\s*\](.*)/is => {
       fields => [qw(month day year start_time end_time description)],
@@ -108,7 +108,7 @@ v-bmoca,RSS,s700022,http://www.bmoca.org/feed/,"{
   ],
 }
 "
-v-boulderoutlook,Reg Exp,s800022,http://www.boulderoutlook.com/musiccalendar.html,"{
+v-boulderoutlook,Reg Exp,,http://www.boulderoutlook.com/musiccalendar.html,"{
   repeat => [
     [qr/(?:$month (\d{4}).*?)?(\n$day\n)((?:[^\n]{3,}|\n)+?)\n$time_span/s => {
       fields => [qw(month year save day summary start_time end_time)],
@@ -116,15 +116,15 @@ v-boulderoutlook,Reg Exp,s800022,http://www.boulderoutlook.com/musiccalendar.htm
   ],
 }
 "
-v-bpl_reynolds,Evanced,s900022,http://events.boulderlibrary.org?lib=2,
-v-bpl_main,Evanced,s1000022,http://events.boulderlibrary.org?lib=0,"{
+v-bpl_reynolds,Evanced,,http://events.boulderlibrary.org?lib=2,
+v-bpl_main,Evanced,,http://events.boulderlibrary.org?lib=0,"{
   reject_event => {
     summary => qr/canceled/i,
   },
 }
 "
-v-bpl_meadows,Evanced,s1100022,http://events.boulderlibrary.org?lib=3,
-v-bouldertheatre,Reg Exp,s1200022,http://www.bouldertheater.com/,"{
+v-bpl_meadows,Evanced,,http://events.boulderlibrary.org?lib=3,
+v-bouldertheatre,Reg Exp,,http://www.bouldertheater.com/,"{
   repeat => [
     [qr/\n$month_day(?:\n| )$line/s => {
       fields => [qw(month_day summary)],
@@ -142,9 +142,9 @@ v-bouldertheatre,Reg Exp,s1200022,http://www.bouldertheater.com/,"{
   ],
 }
 "
-v-bunit_venue,Google,s1300022,http://test.bunit/cal,
-v-caffesole,Google,s1400022,http://www.caffesole.com/events.html,
-v-chautauqua,Reg Exp,s1500022,http://www.chautauqua.com/upcoming_events.php,"{
+v-bunit_venue,Google,,http://test.bunit/cal,
+v-caffesole,Google,,http://www.caffesole.com/events.html,
+v-chautauqua,Reg Exp,,http://www.chautauqua.com/upcoming_events.php,"{
   repeat => [
     [qr/(view all.*?\})/i => {
       fields => [qw(link)],
@@ -159,7 +159,7 @@ v-chautauqua,Reg Exp,s1500022,http://www.chautauqua.com/upcoming_events.php,"{
   ],
 }
 "
-v-churchofchrist,Reg Exp,s1600022,http://www.bfjung.org/index.php?option=com_content&view=article&id=121&Itemid=101,"{
+v-churchofchrist,Reg Exp,,http://www.bfjung.org/index.php?option=com_content&view=article&id=121&Itemid=101,"{
   repeat => [
     [qr/\: $month $day, $year\s+$line.*?Registration.*?$time_ap.*?\n\n(\w[^\n]{80}.*?)\n\n/is => {
       fields => [qw(month day year summary start_time description)],
@@ -167,7 +167,7 @@ v-churchofchrist,Reg Exp,s1600022,http://www.bfjung.org/index.php?option=com_con
   ],
 }
 "
-v-conoroneill,Reg Exp,s1700022,http://www.conoroneills.com/boulder/calendar/month.php,"{
+v-conoroneill,Reg Exp,,http://www.conoroneills.com/boulder/calendar/month.php,"{
   pager => {
     link => qr/(next month\s*>>.*?\})/i,
     page_count => 2,
@@ -197,18 +197,18 @@ v-conoroneill,Reg Exp,s1700022,http://www.conoroneills.com/boulder/calendar/mont
   ],
 }
 "
-v-cuvee,Reg Exp,s1800022,http://www.chezcuvee.com/ChezCuvee/Live_Music.html,"{
+v-cuvee,Reg Exp,,http://www.chezcuvee.com/ChezCuvee/Live_Music.html,"{
   reject_event => {
     summary => qr/^\s*$/,
   },
   repeat => [
-    [qr/(.*Live Music $month\:).*?$day_name\s+$day,([^\n]+?)\($time_span\)\s*/is => {
+    [qr/(.*Live Music $month\:).*?$day_name\s+$day,\s+(?:Closed|No Music|(.*?)\($time_span\))\s*/is => {
       fields => [qw(save month day_name day summary start_time end_time)],
     }],
   ],
 }
 "
-v-foxtheatre,Reg Exp,s1900022,http://foxtheatre.com/Store/ChooseTicket.aspx,"{
+v-foxtheatre,Reg Exp,,http://foxtheatre.com/Store/ChooseTicket.aspx,"{
     repeat => [
  [qr{^$month_day\s+(.*?)\s*$}m, {
      fields => [qw(month_day summary)],
@@ -226,7 +226,7 @@ v-foxtheatre,Reg Exp,s1900022,http://foxtheatre.com/Store/ChooseTicket.aspx,"{
     ],
 }
 "
-v-goldhill,Reg Exp,s4700022,http://www.goldhillinn.com/music.html,"{
+v-goldhill,Reg Exp,,http://www.goldhillinn.com/music.html,"{
   repeat => [
     [qr/\n$month $day\s*\-?\s*$time_span\s*\-?$line/ => {
       fields => [qw(month day start_time end_time summary)],
@@ -240,7 +240,7 @@ v-goldhill,Reg Exp,s4700022,http://www.goldhillinn.com/music.html,"{
   ],
 }
 "
-v-harlequin,Reg Exp,s2000022,http://www.harlequinsgardens.com/classes/,"{
+v-harlequin,Reg Exp,,http://www.harlequinsgardens.com/classes/,"{
   once => [
     [qr/EVENTS for $year/ => {
       fields => [qw(year)],
@@ -253,7 +253,7 @@ v-harlequin,Reg Exp,s2000022,http://www.harlequinsgardens.com/classes/,"{
   ],
 }
 "
-v-boulderado,Reg Exp,s2100022,http://www.boulderado.com/musiconthemezz.html,"{
+v-boulderado,Reg Exp,,http://www.boulderado.com/musiconthemezz.html,"{
   once => [
     [qr/$time_ap\s*\-\s*$time_ap Live Music/, {
       fields => [qw(start_time end_time)],
@@ -266,13 +266,13 @@ v-boulderado,Reg Exp,s2100022,http://www.boulderado.com/musiconthemezz.html,"{
   ],
 }
 "
-v-cigar,Google,s2200022,http://www.johnnyscigars.com/calendar/,"{
+v-cigar,Google,,http://www.johnnyscigars.com/calendar/,"{
   reject_event => {
     summary => qr/happy\s+hour/i,
   },
 }
 "
-v-millennium,Reg Exp,s4600022,http://www.millenniumfac.com/ArtistSeries.html,"{
+v-millennium,Reg Exp,,http://www.millenniumfac.com/ArtistSeries.html,"{
   default_values => {
     start_time => '5:30pm',
   },
@@ -283,7 +283,7 @@ v-millennium,Reg Exp,s4600022,http://www.millenniumfac.com/ArtistSeries.html,"{
   ],
 }
 "
-v-nissis,Reg Exp,s2300022,http://www.nissis.com/lmcalendar.html,"{
+v-nissis,Reg Exp,,http://www.nissis.com/lmcalendar.html,"{
   repeat => [
     [qr/($month\s*>.*)/, {
       fields => ['link'],
@@ -304,7 +304,7 @@ v-nissis,Reg Exp,s2300022,http://www.nissis.com/lmcalendar.html,"{
   ],
 }
 "
-v-parentingplace,Google,s2400022,http://myparentingplace.org/calendar/play-groups-and-support-groups-schedule-2/,"{
+v-parentingplace,Google,,http://myparentingplace.org/calendar/play-groups-and-support-groups-schedule-2/,"{
     accept_event => {
         location => qr/boulder/i,
     },
@@ -314,7 +314,7 @@ v-parentingplace,Google,s2400022,http://myparentingplace.org/calendar/play-group
     },
 }
 "
-v-rei,RSS,s2500022,http://www.rei.com/storesrss/44,"{
+v-rei,RSS,,http://www.rei.com/storesrss/44,"{
   accept_event => {
     location => qr/Boulder REI/is,
   },
@@ -325,7 +325,7 @@ v-rei,RSS,s2500022,http://www.rei.com/storesrss/44,"{
   ],
 }
 "
-v-rockandsoul,Reg Exp,s2600022,http://www.rocknsoulcafe.com/calendar/,"{
+v-rockandsoul,Reg Exp,,http://www.rocknsoulcafe.com/calendar/,"{
   pager => {
     link => qr/\n(>>\{\d})\n/s,
     page_count => 3,
@@ -350,8 +350,8 @@ v-rockandsoul,Reg Exp,s2600022,http://www.rocknsoulcafe.com/calendar/,"{
   ],
 }
 "
-v-stjulien,Full Calendar,s2700022,http://www.stjulien.com/events-entertainment,
-v-sunrose,Reg Exp,s2800022,http://www.sunrosecafe.com/,"{
+v-stjulien,Full Calendar,,http://www.stjulien.com/events-entertainment,
+v-sunrose,Reg Exp,,http://www.sunrosecafe.com/,"{
   reject_event => {
     summary => qr/\bTBA\b/i,
   },
@@ -370,7 +370,7 @@ v-sunrose,Reg Exp,s2800022,http://www.sunrosecafe.com/,"{
   ],
 }
 "
-v-dairycenter,Reg Exp,s2900022,http://thedairy.frontgatetickets.com/,"{
+v-dairycenter,Reg Exp,,http://thedairy.frontgatetickets.com/,"{
   repeat => [
     [qr/$line\s*$month\s+$day\s+The Dairy Center/is => {
       fields => [qw(summary)],
@@ -388,9 +388,9 @@ v-dairycenter,Reg Exp,s2900022,http://thedairy.frontgatetickets.com/,"{
   ],
 }
 "
-v-thelaughinggoat,Google,s3000022,http://thelaughinggoat.com/events.php,
-v-lazydog,Calendar Manager Data,s3100022,http://www.thelazydog.com/data/calendars.xml,
-v-oriental,Reg Exp,s4500022,http://www.theorientaltheater.com/calendar/view,"{
+v-thelaughinggoat,Google,,http://thelaughinggoat.com/events.php,
+v-lazydog,Calendar Manager Data,,http://www.thelazydog.com/data/calendars.xml,
+v-oriental,Reg Exp,,http://www.theorientaltheater.com/calendar/view,"{
   pager => {
     link => qr/\n($month.*?\{\d+\})/,
     page_count => 3,
@@ -409,7 +409,7 @@ v-oriental,Reg Exp,s4500022,http://www.theorientaltheater.com/calendar/view,"{
   ],
 }
 "
-v-ribhouse,Reg Exp,s3200022,http://www.theribhouse.com/center-stage,"{
+v-ribhouse,Reg Exp,,http://www.theribhouse.com/center-stage,"{
   repeat => [
     [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_span\n+([^\n]+\})/s => {
       fields => [qw(summary month day year start_time end_time url)],
@@ -423,7 +423,7 @@ v-ribhouse,Reg Exp,s3200022,http://www.theribhouse.com/center-stage,"{
   ],
 }
 "
-v-westend,Reg Exp,s3300022,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx,"{
+v-westend,Reg Exp,,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx,"{
   repeat => [
     [qr/(?:$month\s+)?$day\s+(.*?)\s*,\s*$time_ap(.*?)\n($month|$day|926 pearl)/is, {
       fields => [qw(month day summary start_time description save)],
@@ -431,7 +431,7 @@ v-westend,Reg Exp,s3300022,http://www.thewestendtavern.com/Events/LiveMusic/tabi
   ],
 }
 "
-v-twentyninthst,Reg Exp,s3400022,http://www.twentyninthstreet.com/Events,"{
+v-twentyninthst,Reg Exp,,http://www.twentyninthstreet.com/Events,"{
   once => [
     [qr/\nTwenty Ninth Street LIVE\! Concert.*\n.*?\n$line/i => {
       fields => [qw(link)],
@@ -458,7 +458,7 @@ v-twentyninthst,Reg Exp,s3400022,http://www.twentyninthstreet.com/Events,"{
 
 }
 "
-v-waldenponds,Reg Exp,s3500022,http://www.bouldercounty.org/pages/calendar.aspx,"{
+v-waldenponds,Reg Exp,,http://www.bouldercounty.org/pages/calendar.aspx,"{
   accept_event => {
     location => qr/Walden Ponds/i,
   },
@@ -484,13 +484,13 @@ v-waldenponds,Reg Exp,s3500022,http://www.bouldercounty.org/pages/calendar.aspx,
   ],
 }
 "
-v-wow,Google,s3600022,http://www.wowmuseum.com/calendar.html,"{
+v-wow,Google,,http://www.wowmuseum.com/calendar.html,"{
     accept_event => {
       location => qr/Lafayette/i,
     },
 }
 "
-,Reg Exp,s3700022,http://boulderchamberorchestra.org/concerts.html,"{
+,Reg Exp,,http://boulderchamberorchestra.org/concerts.html,"{
   location_to_venue => {
     qr/boulder first cong/i => 'firstcongregational',
     qr/boulder first presb/i => 'firstpresbyterian',
@@ -566,7 +566,7 @@ v-wow,Google,s3600022,http://www.wowmuseum.com/calendar.html,"{
   ],
 }
 "
-,Reg Exp,s4100022,http://www.boulderdowntown.com/do/bands-on-the-bricks22,"{
+,Reg Exp,,http://www.boulderdowntown.com/do/bands-on-the-bricks22,"{
   location_to_venue => {
     qr/pearl/i => 'pearlst',
   },
@@ -588,7 +588,7 @@ v-wow,Google,s3600022,http://www.wowmuseum.com/calendar.html,"{
   ],
 }
 "
-,Reg Exp,s4200022,http://www.boulderdowntown.com/do/noon-tunes21,"{
+,Reg Exp,,http://www.boulderdowntown.com/do/noon-tunes21,"{
   location_to_venue => {
     qr/pearl/i => 'pearlst',
   },
