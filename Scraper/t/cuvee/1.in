@@ -51,10 +51,10 @@
   },
   {
     'description' => undef,
-    'dtend' => '2455720 14400',
-    'dtstart' => '2455720 3600',
+    'dtend' => '2455722 14400',
+    'dtstart' => '2455722 3600',
     'location' => undef,
-    'summary' => 'Closed Tuesday 7th, No Music Wednesday 8th, Adam Bodine on Piano with Kalin Capra on Bass',
+    'summary' => 'Adam Bodine on Piano with Kalin Capra on Bass',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html',
     'venue' => 'cuvee'
@@ -101,10 +101,10 @@
   },
   {
     'description' => undef,
-    'dtend' => '2455727 14400',
-    'dtstart' => '2455727 3600',
+    'dtend' => '2455729 14400',
+    'dtstart' => '2455729 3600',
     'location' => undef,
-    'summary' => 'Closed Tuesday 14th, No Music Wednesday 15th, Eric Wiggs, Contemporary Jazz',
+    'summary' => 'Eric Wiggs, Contemporary Jazz',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html',
     'venue' => 'cuvee'
@@ -151,10 +151,10 @@
   },
   {
     'description' => undef,
-    'dtend' => '2455734 14400',
-    'dtstart' => '2455734 3600',
+    'dtend' => '2455736 14400',
+    'dtstart' => '2455736 3600',
     'location' => undef,
-    'summary' => 'Closed Tuesday 21st, No Music Wednesday 22nd, Annie Booth on Piano with Bass',
+    'summary' => 'Annie Booth on Piano with Bass',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html',
     'venue' => 'cuvee'
@@ -191,10 +191,10 @@
   },
   {
     'description' => undef,
-    'dtend' => '2455741 14400',
-    'dtstart' => '2455741 3600',
+    'dtend' => '2455743 14400',
+    'dtstart' => '2455743 3600',
     'location' => undef,
-    'summary' => 'Closed Tuesday 28th, No Music Wednesday 29th, Doug Yager Jazz Trio, Saxophone, Bass and Piano',
+    'summary' => 'Doug Yager Jazz Trio, Saxophone, Bass and Piano',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html',
     'venue' => 'cuvee'
@@ -221,10 +221,10 @@
   },
   {
     'description' => undef,
-    'dtend' => '2455685 14400',
-    'dtstart' => '2455685 3600',
+    'dtend' => '2455687 14400',
+    'dtstart' => '2455687 3600',
     'location' => undef,
-    'summary' => 'Closed Tuesday 3rd, No Music Wednesday 4th, Chris Kroger Jazz on Piano',
+    'summary' => 'Chris Kroger Jazz on Piano',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html',
     'venue' => 'cuvee'
@@ -271,10 +271,10 @@
   },
   {
     'description' => undef,
-    'dtend' => '2455692 14400',
-    'dtstart' => '2455692 3600',
+    'dtend' => '2455694 14400',
+    'dtstart' => '2455694 3600',
     'location' => undef,
-    'summary' => 'Closed Tuesday 10th, No Music Wednesday 11th, Adam Bodine on Piano with Kalin Capra on Bass',
+    'summary' => 'Adam Bodine on Piano with Kalin Capra on Bass',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html',
     'venue' => 'cuvee'
@@ -321,10 +321,10 @@
   },
   {
     'description' => undef,
-    'dtend' => '2455699 14400',
-    'dtstart' => '2455699 3600',
+    'dtend' => '2455701 14400',
+    'dtstart' => '2455701 3600',
     'location' => undef,
-    'summary' => 'Closed Tuesday 17th, No Music Wednesday 18th, The Boulder Blues Mafia',
+    'summary' => 'The Boulder Blues Mafia',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html',
     'venue' => 'cuvee'
@@ -371,10 +371,10 @@
   },
   {
     'description' => undef,
-    'dtend' => '2455706 14400',
-    'dtstart' => '2455706 3600',
+    'dtend' => '2455708 14400',
+    'dtstart' => '2455708 3600',
     'location' => undef,
-    'summary' => 'Closed Tuesday 24th, No Music Wednesday 25th, Lea Holz, Vocal on Piano',
+    'summary' => 'Lea Holz, Vocal on Piano',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html',
     'venue' => 'cuvee'
