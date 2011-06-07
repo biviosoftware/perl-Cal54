@@ -1,7 +1,7 @@
 # Copyright (c) 2010 CAL54, Inc.  All Rights Reserved.
 # $Id$
 ListModel();
-req()->initialize_fully('HOME_LIST');
+req()->initialize_fully('C4_HOME_LIST');
 my($title_key) = 'title' . random_string();
 my($tag_key) = 'tag' . random_string();
 my($desc_key) = 'desc' . random_string();
