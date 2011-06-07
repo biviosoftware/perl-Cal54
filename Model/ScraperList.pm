@@ -33,6 +33,17 @@ sub internal_initialize {
     });
 }
 
+sub internal_post_load_row {
+    my($self, $row) = @_;
+    return 0
+	unless shift->SUPER::internal_post_load_row(@_);
+
+    unless ($row->{'scraper.RealmOwner.name'} =~ /\_/) {
+	$row->{'scraper.RealmOwner.name'} = undef;
+    }
+    return 1;
+}
+
 sub internal_prepare_statement {
     my($self, $stmt) = @_;
     $stmt->from(
