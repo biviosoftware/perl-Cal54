@@ -121,7 +121,6 @@ sub internal_post_load_row {
 	    qw(
 	        Address.street1
 		Address.city
-		Phone.phone
 	    ),
 	),
     );

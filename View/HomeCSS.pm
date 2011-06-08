@@ -157,6 +157,7 @@ div.c4_list {
   margin-right: .5em;
 }
 .c4_list .item .venue,
+.c4_list .item .phone,
 .c4_list .item .address {
   Font('c4_venue');
 }

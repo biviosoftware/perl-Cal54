@@ -93,6 +93,12 @@ sub _list {
 			    ['map_uri'],
 			    'address',
 			),
+			If(['Phone.phone'],
+			   Join([
+			       ' ',
+			       SPAN_phone(['Phone.phone']),
+			   ]),
+		       ),
 		    ])),
 		]),
 	    ])),
