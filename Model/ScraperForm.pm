@@ -36,7 +36,12 @@ sub execute_ok_create {
 	realm_id => $scraper->get('scraper_id'),
 	%{$self->get_model_properties('Website')},
     });
-    return;
+    return {
+	task_id => $self->req('task_id'),
+	query => {
+	    'ListQuery.this' => $scraper->get('scraper_id'),
+	},
+    };
 }
 
 sub execute_ok_edit {
