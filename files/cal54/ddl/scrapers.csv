@@ -450,6 +450,14 @@ v-westend,Reg Exp,,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/De
   ],
 }
 "
+v-tridentcafe,Reg Exp,,http://tridentcafe.com/concerts/,"{
+  repeat => [
+    [qr/\n$month $day $time_ap $line/ => {
+      fields => [qw(month day start_time summary)],
+    }],
+  ],
+}
+"
 v-twentyninthst,Reg Exp,,http://www.twentyninthstreet.com/Events,"{
   once => [
     [qr/\nTwenty Ninth Street LIVE\! Concert.*\n.*?\n$line/i => {
