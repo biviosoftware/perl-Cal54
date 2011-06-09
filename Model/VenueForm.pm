@@ -5,8 +5,9 @@ use strict;
 use Bivio::Base 'Model.FormModeBaseForm';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
-my($_VL) = b_use('Model.VenueList');
+my($_E) = b_use('Type.Email');
 my($_V) = b_use('Model.Venue');
+my($_VL) = b_use('Model.VenueList');
 
 sub LIST_MODEL {
     return 'VenueList';
@@ -77,7 +78,7 @@ sub internal_initialize {
         visible => [
 	    $self->field_decl(
 		[map(
-		    ($_ =~ /street2|phone|SearchWords/ ? [$_, undef, 'NONE']
+		    ($_ =~ /street2|phone|SearchWords|email/ ? [$_, undef, 'NONE']
 		        : $_ =~ /state/ ? [$_, 'USState']
 			: $_ =~ /zip/ ? [$_, 'USZipCode']
 			: $_),
@@ -96,6 +97,12 @@ sub internal_pre_execute {
     my($self) = @_;
     foreach my $eq ($_VL->LOCATION_EQUIVALENCE_LIST) {
 	$self->internal_put_field($eq->[0], $eq->[1]->[0]);
+    }
+    unless ($self->get('Email.email')) {
+	$self->internal_put_field('Email.email' =>
+	    $_E->format_ignore($self->get('RealmOwner.name'). '@bivio.biz',
+	        $self->req))
+	    if $self->get('RealmOwner.name');
     }
     return shift->SUPER::internal_pre_execute(@_);
 }
