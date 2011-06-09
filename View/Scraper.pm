@@ -10,14 +10,16 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 sub form {
     return shift->internal_put_base_attr(
 	tools => TaskMenu([
-	    Link('HTML Calendar',
-		 ['Model.ScraperForm', 'Website.url']),
-	    Link('Scraper Calendar', URI({
-		task_id => 'ADM_SCRAPER_PREVIEW',
-		query => {
-		    x => ['Model.ScraperForm', 'Website.url'],
-		},
-	    })),
+	    If(['Type.FormMode', '->eq_edit'],
+	       Link('HTML Calendar', ['Model.ScraperForm', 'Website.url'])),
+	    If(['Type.FormMode', '->eq_edit'],
+	       Link('Scraper Calendar', URI({
+		   task_id => 'ADM_SCRAPER_PREVIEW',
+		   query => {
+		       x => ['Model.ScraperForm', 'Website.url'],
+		   },
+	       })),
+	    ),
 	    'ADM_SCRAPER_LIST',
 	]),
 	body => Join([
