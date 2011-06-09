@@ -350,6 +350,25 @@ v-rockandsoul,Reg Exp,,http://www.rocknsoulcafe.com/calendar/,"{
   ],
 }
 "
+v-steinbaugh,Reg Exp,,http://www.downtownlouisvilleco.com/street-faire/,"{
+  reject_event => {
+    summary => qr/no fair/i,
+  },
+  once => [
+    [qr/Music is (.*)? to (\d+)/i => {
+      fields => [qw(start_time_pm end_time_pm)],
+    }],
+    [qr/Music $year/i => {
+      fields => [qw(year)],
+    }],
+  ],
+  repeat => [
+    [qr/\n$month $day(.*?)\n\n(.*?)\n/s => {
+      fields => [qw(month day summary description)],
+    }],
+  ],
+}
+"
 v-stjulien,Full Calendar,,http://www.stjulien.com/events-entertainment,
 v-sunrose,Reg Exp,,http://www.sunrosecafe.com/,"{
   reject_event => {
