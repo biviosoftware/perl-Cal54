@@ -430,7 +430,7 @@ v-oriental,Reg Exp,,http://www.theorientaltheater.com/calendar/view,"{
 "
 v-ribhouse,Reg Exp,,http://www.theribhouse.com/center-stage,"{
   repeat => [
-    [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_span\n+([^\n]+\})/s => {
+    [qr/\n([^\n]+)\n+$month\s+$day,?\s*$year\s+$time_span\n+([^\n]+\})/s => {
       fields => [qw(summary month day year start_time end_time url)],
     }],
     [qr/\n([^\n]+)\n+$day_name\s+$month\s+$day\s+$time_span\n+([^\n]+\})/s => {
