@@ -69,6 +69,7 @@ sub execute_other {
 
     foreach my $event (@{$self->get('events')}) {
 	my($tz) = $event->{time_zone};
+	next unless $tz;
 	$event->{time_zone} = $tz->get_short_desc;
 
 	foreach my $f (qw(dtstart dtend)) {
