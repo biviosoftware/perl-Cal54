@@ -22,6 +22,7 @@
 <TD>&nbsp;</TD>
 <TD>(888) 555-1212</TD>
 </TR>
+<img align="baseline" style="width: 199px; height: 244px;" alt="Doug Yager Trio performs" class="l" src="/images/stories/DYT_March11_2011.jpg" />The Doug Yager Trio</h1>
 EOF
 		=> [string_ref(<<'EOF')],
 FLINTSTONE, FRED
@@ -36,6 +37,9 @@ Phone Number
 
 (888) 555-1212
 
+
+Doug Yager Trio performs
+The Doug Yager Trio
 
 EOF
 	    [string_ref(<<'EOF'), 'http://x.com']
