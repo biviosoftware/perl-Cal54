@@ -134,9 +134,10 @@ sub html_parser_start {
 	_append_text($self, ' ')
 	    unless $fields->{soft_newline};
     }
-    elsif ($tag eq 'img') {
-	_append_text($self, $attrs->{alt})
-	    if $attrs->{alt};
+    elsif ($tag eq 'img' && $attrs->{alt}) {
+	$fields->{text} .= "\n";
+	_append_text($self, $attrs->{alt});
+	$fields->{text} .= "\n";
     }
     return;
 }
