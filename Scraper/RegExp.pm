@@ -135,24 +135,31 @@ sub _clean {
     return $str;
 }
 
-sub _date {
-    my($self, $type, $current) = @_;
-    # month, day, year, start_time, end_time, start_time_pm, end_time_pm
-    my($time) = $current->{$type . '_time'} || $current->{$type . '_time_pm'};
-    return undef unless $time;
-
+sub _convert_named_time {
+    my($self, $time) = @_;
     if (lc($time) eq 'midnight') {
 	$time = '12am';
     }
     elsif (lc($time) eq 'noon') {
 	$time = '12pm';
     }
+    return $time;
+}
+
+sub _date {
+    my($self, $type, $current) = @_;
+    # month, day, year, start_time, end_time, start_time_pm, end_time_pm
+    my($time) = $current->{$type . '_time'} || $current->{$type . '_time_pm'};
+    return undef unless $time;
+    $time = _convert_named_time($self, $time);
 
     unless ($time =~ /(a|p)\.?m\.?$/i) {
 	if ($type eq 'start' && $current->{start_time}
 		&& $current->{end_time}) {
+	    $current->{end_time} =
+		_convert_named_time($self, $current->{end_time});
 	    my($ap) = $current->{end_time} =~ /(a|p)/i;
-	    b_die('end_time missing a|p')
+	    b_die('end_time missing a|p: ', $current)
 		unless $ap;
 	    my($end_hour) = $current->{end_time} =~ /^(\d+)/;
 	    my($start_hour) = $current->{start_time} =~ /^(\d+)/;
