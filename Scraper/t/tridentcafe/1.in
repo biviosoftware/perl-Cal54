@@ -1,0 +1,42 @@
+[
+  {
+    'description' => 'An evening of Mediterranean music.',
+    'dtend' => '2455724 7200',
+    'dtstart' => '2455724 7200',
+    'location' => undef,
+    'summary' => 'Zahara',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://tridentcafe.com/concerts/',
+    'venue' => 'tridentcafe'
+  },
+  {
+    'description' => 'An evening of magic, fusing the musical traditions of Scotland and India.',
+    'dtend' => '2455725 7200',
+    'dtstart' => '2455725 7200',
+    'location' => undef,
+    'summary' => 'Andrew Forbes & Nabin Shrestha',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://tridentcafe.com/concerts/',
+    'venue' => 'tridentcafe'
+  },
+  {
+    'description' => undef,
+    'dtend' => '2455731 7200',
+    'dtstart' => '2455731 7200',
+    'location' => undef,
+    'summary' => 'The Corvettes',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://tridentcafe.com/concerts/',
+    'venue' => 'tridentcafe'
+  },
+  {
+    'description' => 'A raucous good time as the cast improvise stories provided by the audience. Fun! $7.00 at the door.',
+    'dtend' => '2455732 5400',
+    'dtstart' => '2455732 5400',
+    'location' => undef,
+    'summary' => 'Playback Theatre',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://tridentcafe.com/concerts/',
+    'venue' => 'tridentcafe'
+  }
+]
