@@ -35,7 +35,6 @@ sub c4_scraper_get {
     }
     # ignore utf warnings
     local($SIG{__WARN__}) = sub {};
-#BEBOP: 10.74
     if ($_GET_CACHE && $_GET_CACHE->{$uri}) {
 	$self->put(last_uri => $self->abs_uri($uri));
 	my $x = $_GET_CACHE->{$uri};
