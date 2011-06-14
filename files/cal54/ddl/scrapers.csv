@@ -266,6 +266,17 @@ v-boulderado,Reg Exp,,http://www.boulderado.com/musiconthemezz.html,"{
   ],
 }
 "
+v-innisfree,Reg Exp,,http://www.innisfreepoetry.com/,"{
+  repeat => [
+    [qr/\n$day_name $month $day\s*\-?\s*(.*?) at $time_ap\n+($month|$line)/ => {
+      fields => [qw(day_name month day summary start_time save ignore description)],
+    }],
+    [qr/\n$day_name $month $day\s*\-?\s*$time_ap\s*\-?\s*$line\n*($month|$line)/ => {
+      fields => [qw(day_name month day start_time summary save ignore description)],
+    }],
+  ],
+}
+"
 v-cigar,Google,,http://www.johnnyscigars.com/calendar/,"{
   reject_event => {
     summary => qr/happy\s+hour/i,
