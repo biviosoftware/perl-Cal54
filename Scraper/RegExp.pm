@@ -111,6 +111,14 @@ sub month_as_int {
 	|| b_die('invalid month value: ', $name);
 }
 
+sub pre_parse_html {
+    my($self, $cfg, $html) = @_;
+    return
+	unless $cfg->{pre_parse_html};
+    $cfg->{pre_parse_html}->($html);
+    return;
+}
+
 sub _add_field_values {
     my($self, $fields, $values) = @_;
     my(@v) = ($1, $2, $3, $4, $5, $6, $7, $8, $9);
@@ -224,8 +232,10 @@ sub _month_regexp {
 
 sub _process_url {
     my($self, $cfg, $url, $current) = @_;
+    my($html) = $self->c4_scraper_get($url);
+    $self->pre_parse_html($cfg, $html);
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
-    my($text) = $cleaner->clean_html($self->c4_scraper_get($url), $url);
+    my($text) = $cleaner->clean_html($html, $url);
     $self->extract_once_fields($cfg, $text, $current, sub {
         my($self, $args, $current) = @_;				   
 	_follow_link($self, $current, $cleaner, $args->{follow_link})
