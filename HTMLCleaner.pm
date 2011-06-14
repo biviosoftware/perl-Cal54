@@ -179,6 +179,7 @@ sub _parse_text {
     my($parser, $text) = @_;
     my($self) = $parser->{__PACKAGE__->package_name};
     _append_text($self, $text);
+    return;
 }
 
 1;
