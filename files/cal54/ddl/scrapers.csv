@@ -385,16 +385,11 @@ v-sunrose,Reg Exp,,http://www.sunrosecafe.com/,"{
   reject_event => {
     summary => qr/\bTBA\b/i,
   },
-  once => [
-    [qr/Music Schedule.*?$time_span/is => {
-      fields => [qw(start_time end_time)],
-    }],
-  ],
+  default_values => {
+    start_time => '7pm',
+  },
   repeat => [
-    [qr/(Music Schedule.*\n+.*?)\s*$month $day\s*\-\s*([^\-\n]*?) $time_span/ => {
-      fields => [qw(save month day summary start_time end_time)],
-    }],
-    [qr/(Music Schedule.*\n+)\s*$month $day\s*\-?\s*(.*?)(\n|$month)/ => {
+    [qr/(Music Schedule.*\n+.*?)\s*$month $day\s*\-?\s*(.*?)($month|\n)/ => {
       fields => [qw(save month day summary save)],
     }],
   ],
