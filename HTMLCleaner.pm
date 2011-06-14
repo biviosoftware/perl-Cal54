@@ -43,7 +43,7 @@ sub clean_html {
     };
     b_die('invalid url: ', $url) unless $url =~ m{\://};
     my($parser) = b_use('Ext.HTMLParser')->new($self);
-    $parser->{__PACKAGE__} = $self;
+    $parser->{$self->package_name} = $self;
     # register text handler, includes whitespace
     $parser->handler(text => \&_parse_text, 'self,text');
     $parser->unbroken_text(1);
@@ -56,7 +56,7 @@ sub clean_html {
     $fields->{text} =~ s/( )+$//mg;
     $fields->{text} =~ s/(\n{3})\n+/$1/g;
     $fields->{text} =~ s/(\w)\s([,.;]\s)/$1$2/g;
-    delete($parser->{__PACKAGE__});
+    delete($parser->{$self->package_name});
     return \($fields->{text} . "\n");
 }
 
@@ -177,7 +177,7 @@ sub _append_text {
 
 sub _parse_text {
     my($parser, $text) = @_;
-    my($self) = $parser->{__PACKAGE__};
+    my($self) = $parser->{__PACKAGE__->package_name};
     _append_text($self, $text);
 }
 
