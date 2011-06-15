@@ -65,6 +65,7 @@ table:
   </tr>
 
 <tr><td>cell3</td><td>cell4</td></tr>
+<tr><td><a href="/x">some text</td>
   </table>
    more text    
 Bach’s at St. John&#8217;s
@@ -88,6 +89,7 @@ cell2
 cell3
 cell4
 
+some text{3}
 more text Bach's at St. John's
 EOF
 	],
