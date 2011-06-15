@@ -94,6 +94,10 @@ sub html_parser_end {
 	    $fields->{soft_newline} = 0;
 	}
     }
+    if ($fields->{href} && $tag =~ /^(td|tr|table)$/) {
+	# end missing link in bad html
+	$tag = 'a';
+    }
     if ($tag eq 'a') {
 
 	if ($fields->{href} && $fields->{text} !~ /(\n|\})$/s) {
