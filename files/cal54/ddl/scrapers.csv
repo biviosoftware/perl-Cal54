@@ -643,6 +643,34 @@ v-wow,Google,,http://www.wowmuseum.com/calendar.html,"{
   ],
 }
 "
+,Reg Exp,,http://www.comusic.org/myadmin/Calendar/calendar_month_listing.asp?CalendarID=2714&NavPageID=69016,"{
+  location_to_venue => {
+    qr/chautauqua/i => 'chautauqua',
+    qr/rembrandt/i => 'rembrandtyard',
+  },
+  reject_event => {
+    description => qr/^$/,
+  },
+  repeat => [
+    [qr/\n(.*?\})\n+$day_name, $month $day, $year\: $time_ap - $time_ap/ => {
+      fields => [qw(summary day_name month day year start_time end_time)],
+      follow_link => {
+        once => [
+          [qr/Location\:\n$line/ => {
+            fields => [qw(location)],
+          }],
+          [qr/Notes:\n(.*)?BUY NOW/is => {
+            fields => [qw(description)],
+          }],
+          [qr/BUY NOW.*?\n+([^\n].*)\nStart\:/is => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
 ,Bos Dates,mountainsunpub_scraper,http://www.mountainsunpub.com/BosDatesLite200/calendar.php,"{
   location_to_venue => {
     qr/mountain/i => 'mountainsun',
