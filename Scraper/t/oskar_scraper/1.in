@@ -470,8 +470,8 @@
     'venue' => 'oskargrill'
   },
   {
-    'description' => 'Tyler Grant free 5:30-8:30pm downstairs',
-    'dtend' => '2455723 9000',
+    'description' => 'Tyler Grant free 5:30-12:00am downstairs',
+    'dtend' => '2455722 64800',
     'dtstart' => '2455722 84600',
     'location' => 'color#66cccc',
     'summary' => 'Tyler Grant',
