@@ -173,7 +173,9 @@ sub _date {
 	    my($start_hour) = $current->{start_time} =~ /^(\d+)/;
 	    b_die('time missing start or end hour: ', $current)
 		unless $end_hour && $start_hour;
-	    $time .= ($start_hour > $end_hour
+	    $time .= (
+		($start_hour > $end_hour)
+		    || ($end_hour eq '12' && $start_hour ne '12')
 		? ($ap =~ /p/i ? 'a' : 'p')
 		: $ap) . 'm';
 	}
