@@ -2,11 +2,14 @@
 # $Id$
 test_setup('Cal54');
 home_page();
-follow_link('add_your_site');
+follow_link('comments_or_suggestions');
 my($text) = 'website ' . random_string();
+my($email) = 'email_' . random_string() . '@gmail.com';
 submit_form({
-    link => $text,
+    _anon => $text,
+    email => $email,
 });
 login_as_adm();
 follow_link('site-contact', 'Mail');
 verify_text($text);
+verify_text($email);
