@@ -123,6 +123,8 @@ sub init_scrapers {
 	    $list->find_row_by('Website.url', $v->{'Website.url'})
 		? $list->format_query('THIS_DETAIL')
 		: undef);
+	$self->print('added scraper: ', $v->{'Website.url'}, "\n")
+	    unless $self->req('query');
 	$self->model('ScraperForm', $v);
 	$self->unauth_model('RealmOwner', {
 	    realm_id => $self->req(qw(Model.Scraper scraper_id)),
@@ -145,6 +147,8 @@ sub init_venues {
 	    })
 		? $ro->format_query_for_this
 		: undef);
+	$self->print('added venue: ', $v->{'RealmOwner.display_name'}, "\n")
+	    unless $self->req('query');
 	$self->model('VenueForm', $v);
 	$self->req->clear_nondurable_state;
     });
