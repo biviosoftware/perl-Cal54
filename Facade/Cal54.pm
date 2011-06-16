@@ -101,12 +101,12 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_site_tag => q{SPAN(q{The Web's Calendar});SPAN_c4_tm('&trade;');}],
 	[home_page_uri => '/search'],
 	[[qw(title xlink)] => [
-	    C4_HOME_SUGGEST_SITE => 'Add your Site to CAL54',
+	    C4_HOME_SUGGEST_SITE => 'Comments or Suggestions?',
 	]],
 	[SuggestSiteForm => [
-	    'prose.prologue' => q{BR(); Know of a local venue we don't cover? Let us know!},
-	    
-	    'Website.url' => 'Link',
+	    'prose.prologue' => q{BR(); Know of a local venue we don't cover? Let us know!BR();BR(); Any other comments, questions, or suggestions are appreciated.BR();BR();},
+	    'suggestion' => '',
+	    'email' => 'Your email (optional)',
 	    ok_button => 'Submit',
 	]],
     ],

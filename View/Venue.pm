@@ -48,10 +48,9 @@ sub suggest_venue_mail {
 		    })->format_email;
 	    }],
 	)), qw(to from)),
-	subject => 'Venue Website Suggestion',
+	subject => Prose("Suggestion from If([qw(Model.SuggestSiteForm email)], [qw(Model.SuggestSiteForm email)], 'anonymous');"),
 	body => Join([
-	    'Suggest website: ',
-	    ['Model.SuggestSiteForm', 'Website.url'],
+	    ['Model.SuggestSiteForm', 'suggestion'],
 	    "\n",
 	]),
     );

@@ -283,7 +283,8 @@ table.c4_suggest_site div.c4_home_title {
 div.c4_home_other {
    CSS('c4_home_other');
 }
-div.c4_home_other * {
+div.c4_home_other .simple,
+div.c4_home_other .standard_submit {
    margin: auto;
    margin-top: 2ex;
 }

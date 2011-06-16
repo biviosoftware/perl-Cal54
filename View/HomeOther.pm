@@ -33,9 +33,7 @@ sub suggest_site {
     return shift->internal_body(
 	vs_text_as_prose('title.C4_HOME_SUGGEST_SITE'),
 	vs_simple_form('SuggestSiteForm', [
-	    ['SuggestSiteForm.Website.url', {
-		size => 50,
-	    }],
+	    map({"SuggestSiteForm.$_"} qw(suggestion email)),
 	]),
     );
 }

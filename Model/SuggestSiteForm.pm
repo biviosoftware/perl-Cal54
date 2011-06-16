@@ -18,9 +18,14 @@ sub internal_initialize {
         version => 1,
 	visible => [
 	    {
-		name => 'Website.url',
-		type => 'String',
+		name => 'suggestion',
+		type => 'Text',
 		constraint => 'NOT_NULL',
+	    },
+	    {
+		name => 'email',
+		type => 'Email.email',
+		constraint => 'NONE',
 	    },
 	],
     });
