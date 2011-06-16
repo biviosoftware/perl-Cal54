@@ -402,9 +402,9 @@ v-dairycenter,Reg Exp,,http://thedairy.frontgatetickets.com/,"{
       follow_link => {
         once => [
           [qr/PERFORMANCE INFO\s+$day_name,\s*$month\s*$day\s*Show at $time_ap/is => {
-            fields => [qw(none month day start_time)],
+            fields => [qw(save month day start_time)],
           }],
-          [qr/\nShare\n(.+?)\n\n/is => {
+          [qr/\n\n($line+)\n\n+PERFORMANCE INFO/i => {
             fields => [qw(description)],
           }],
         ],
