@@ -144,6 +144,7 @@ v-bouldertheatre,Reg Exp,,http://www.bouldertheater.com/,"{
 "
 v-bunit_venue,Google,,http://test.bunit/cal,
 v-caffesole,Google,,http://www.caffesole.com/events.html,
+v-cannonmine,Google,,http://cannonmine.net/index.php/calendar/Cannon%20Mine%20Calendar%20of%20events,
 v-chautauqua,Reg Exp,,http://www.chautauqua.com/upcoming_events.php,"{
   repeat => [
     [qr/(view all.*?\})/i => {
@@ -157,6 +158,12 @@ v-chautauqua,Reg Exp,,http://www.chautauqua.com/upcoming_events.php,"{
       },
     }],
   ],
+}
+"
+v-ciantano,Google,,http://ciatanowinery.com/winery/content/view/33/44/,"{
+  accept_event => {
+    location => qr/ciatano winery/i,
+  },
 }
 "
 v-churchofchrist,Reg Exp,,http://www.bfjung.org/index.php?option=com_content&view=article&id=121&Itemid=101,"{
@@ -208,6 +215,7 @@ v-cuvee,Reg Exp,,http://www.chezcuvee.com/ChezCuvee/Live_Music.html,"{
   ],
 }
 "
+v-dickensopera,Google,,http://www.dickensoperahouse.com/calendar.htm,
 v-foxtheatre,Reg Exp,,http://foxtheatre.com/Store/ChooseTicket.aspx,"{
     repeat => [
  [qr{^$month_day\s+(.*?)\s*$}m, {
