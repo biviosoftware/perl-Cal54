@@ -24,17 +24,13 @@ sub initialize_test_data {
     return @res;
 }
 
-sub internal_upgrade_db_venue_names {
+sub internal_upgrade_db_oskar_blues {
     my($self) = @_;
-    $self->model('Venue')->do_iterate(sub {
-        my($v) = @_;
-	my($ro) = $v->get_model('RealmOwner');
-	b_die() if $ro->get('name') =~ /^v\-/;
-	$ro->update({
-	    name => 'v-' . $ro->get('name'),
+    $self->req->with_realm('oskar_scraper', sub {
+        $self->model('Scraper')->load->update({
+	    scraper_type => b_use('Type.Scraper')->REG_EXP,
 	});
-	return 1;
-    }, 'unauth_iterate_start');					  
+    });			       
     return;
 }
 
