@@ -466,10 +466,15 @@ v-westend,Reg Exp,,http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/De
 "
 v-tridentcafe,Reg Exp,,http://tridentcafe.com/concerts/,"{
   repeat => [
-    [qr/\n$month $day $time_ap $line/ => {
-      fields => [qw(month day start_time summary)],
+    [qr/\n$month $day $time_ap (.+?)!!!(.*?)\n/ => {
+      fields => [qw(month day start_time summary description)],
     }],
   ],
+  pre_parse_html => sub {
+     my($html) = @_;
+     $$html =~ s{(<p><strong>.+?</strong>.+?<strong>.+?</strong>)}{$1!!!}mg;
+     return;
+  },
 }
 "
 v-twentyninthst,Reg Exp,,http://www.twentyninthstreet.com/Events,"{
