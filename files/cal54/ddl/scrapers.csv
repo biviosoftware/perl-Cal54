@@ -696,7 +696,13 @@ v-wow,Google,,http://www.wowmuseum.com/calendar.html,"{
   ],
 }
 "
-,Oskar Blues,oskar_scraper,http://www.oskarblues.com/tunes/muisc-calendar,"{
+,Reg Exp,oskar_scraper,http://www.oskarblues.com/tunes/muisc-calendar,"{
+  pre_parse_html => sub {
+    my($html) = @_;
+    $$html =~ s/(\<span style=""background-color\:(.*?)\;""\>)/$1 color$2 /g
+      || b_die();
+    return;
+  },
   pager => {
     link => qr/next\s*(>>\{\d+\})/i,
     page_count => 3,
