@@ -95,7 +95,7 @@ sub import_events {
 	        || $self->usage_error('venue not found: ',
 		    $self->req(qw(auth_realm owner display_name)));
     }
-    $_S->do_one($list, $_DT->now);
+    $_S->do_one($list, $_DT->now, $self->unsafe_get('force'));
     return;
 }
 
