@@ -62,7 +62,7 @@ sub do_all {
 }
 
 sub do_one {
-    my($proto, $scraper_list, $date_time) = @_;
+    my($proto, $scraper_list, $date_time, $force) = @_;
     my($self) = $scraper_list->get_scraper_class->new({
 	req => $scraper_list->req,
 #TODO: Do not hardwire
@@ -74,6 +74,7 @@ sub do_one {
 	events => [],
 	failures => 0,
 	tz => $_TZ,
+	force => $force ? 1 : 0,
     });
     $self->req->with_realm(
 	$scraper_list->get('Scraper.scraper_id'),
@@ -82,7 +83,7 @@ sub do_one {
 		sub {
 		    $self->internal_import;
 		    b_die('no events')
-			unless @{$self->get('events')};
+			if _missing_future_events($self);
 		    _filter_events($self);
 		    _log($self, $_R->to_string($self->get('events')), '.pl');
 		    $self->internal_update;
@@ -265,7 +266,7 @@ sub _delete_events {
     my($to_delete) = $deleted_count / ($total || 1);
     my($ce) = $_CE->new($self->req);
 
-    if ($deleted_count <= 3 || $to_delete <= .10) {
+    if ($deleted_count <= 3 || $to_delete <= .10 || $self->get('force')) {
 	foreach my $v (values(%$deleted)) {
 	    $ce->load_from_properties($v)->cascade_delete;
 	}
@@ -343,6 +344,24 @@ sub _log_base {
     my($self, $suffix) = @_;
     $self->put(log_index => 1 + (my $li = $self->get('log_index')));
     return sprintf('%04d', $li) . ($suffix || '.html');
+}
+
+sub _missing_future_events {
+    my($self) = @_;
+    return 0 if @{$self->get('events')};
+    return 1 if @{$_CEFL->new($self->req)->map_iterate(
+	sub {
+	    return 1;
+	},{
+	    begin_date => $self->get('date_time'),
+	}),
+    };
+    my($has_events);
+    $_CE->new($self->req)->do_iterate(sub {
+        $has_events = 1;					 
+        return 0;
+    });
+    return $has_events ? 0 : 1;
 }
 
 sub _unique_count {
