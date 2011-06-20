@@ -2,4 +2,22 @@
 # $Id$
 (do('./Scraper.PL'))->(dairycenter => [
     [[qw(20)], '03/27/2011 12:00:00'],
-]);
+], <<'EOF');
+{
+  repeat => [
+    [qr/$line\s*$month\s+$day\s+The Dairy Center/is => {
+      fields => [qw(summary)],
+      follow_link => {
+        once => [
+          [qr/PERFORMANCE INFO\s+$day_name,\s*$month\s*$day\s*Show at $time_ap/is => {
+            fields => [qw(none month day start_time)],
+          }],
+          [qr/\nShare\n(.+?)\n\n/is => {
+	    fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+EOF
