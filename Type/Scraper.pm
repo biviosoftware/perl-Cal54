@@ -15,6 +15,7 @@ __PACKAGE__->compile([
     FULL_CALENDAR => 6,
     BOS_DATES => 7,
     CALENDAR_MANAGER_DATA => 8,
+#TODO: remove OSKAR_BLUES after production upgrade
     OSKAR_BLUES => 9,
     REG_EXP => 10,
 ]);

@@ -4,6 +4,8 @@ package Cal54::Scraper::OskarBlues;
 use strict;
 use Bivio::Base 'Scraper.RegExp';
 
+#TODO: remove this module
+
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub c4_scraper_get {
