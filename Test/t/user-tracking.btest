@@ -2,6 +2,12 @@
 # $Id$
 test_setup('Cal54');
 home_page();
+
+# make sure non-robot items are visible
+verify_link('>>');
+verify_link('mobile');
+verify_link('^15$');
+
 my($search) = random_string();
 submit_form(Search => {
     _anon => $search,
