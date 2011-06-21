@@ -25,6 +25,7 @@ my($_TZ) = b_use('Type.TimeZone')->get_default;
 my($_V) = b_use('Model.Venue');
 my($_VE) = b_use('Model.VenueEvent');
 my($_GET_CACHE) = $_C->can('is_dev') && $_C->is_dev ? {} : undef;
+my($_TWENTY_FOUR_HOURS) = 60 * 60 * 24;
 
 sub c4_scraper_get {
     my($self, $uri) = @_;
@@ -306,6 +307,8 @@ sub _filter_events {
 	next if _filter_event($self, 'reject', $event, $aux);
 	$event->{venue} = _venue_name_for_event($self, $event);
 	next unless $event->{venue};
+	next if $_DT->diff_seconds($event->{dtend}, $event->{dtstart})
+	    > $_TWENTY_FOUR_HOURS;
 	push(@$events, $event);
     }
     $self->put(events => $events);
