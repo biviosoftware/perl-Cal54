@@ -49,7 +49,7 @@ sub _form {
 		VALUE => 'Search',
 		class => 'submit',
 	    }),
-	    [\&_pager, 0],
+	    _no_robots([\&_pager, 0]),
 	]),
     );
 }
@@ -117,17 +117,22 @@ sub _list {
 		},
 	    ),
 	),
-	DIV(
+	_no_robots(DIV(
 	    [\&_pager, 1,],
 	    {class => 'c4_query c4_bottom_pager'},
-	),
+	)),
 	IfMobile(
 	    '',
 	    XLink('C4_HOME_SUGGEST_SITE', 'c4_suggest_link'),
 	),
-	MobileToggler(),
+	_no_robots(MobileToggler()),
 	$self->internal_copy,
     ]);
+}
+
+sub _no_robots {
+    my($widget) = @_;
+    return If(['!', 'Type.UserAgent', '->eq_browser_robot'], $widget);
 }
 
 sub _when_uri {
