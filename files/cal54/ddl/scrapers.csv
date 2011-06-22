@@ -642,16 +642,16 @@ v-wow,Google,,http://www.wowmuseum.com/calendar.html,"{
     [qr/(pearl)/i => {
       fields => [qw(location)],
     }],
-    [qr/\n+([^\n]+)\n+Date:/i => {
-      fields => [qw(summary)],
+    [qr/\nTime: $time_span\n/i => {
+      fields => [qw(start_time end_time)],
     }],
-    [qr/\nTime: $time_span\n+(.*?)\n\n/i => {
-      fields => [qw(start_time end_time description)],
+    [qr/\n(Lunchtime concerts .*?)\n/i => {
+      fields => [qw(description)],
     }],
   ],
   repeat => [
-    [qr/\n$day_name, $month $day $year\n/ => {
-      fields => [qw(day_name month day year)],
+    [qr/\n$month $day\n+$line/ => {
+      fields => [qw(month day summary)],
     }],
   ],
 }
