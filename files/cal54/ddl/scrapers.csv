@@ -910,25 +910,6 @@ v-pepsicenter,Reg Exp,,http://www.pepsicenter.com/Calendar.aspx,"{
   ],
 }
 "
-v-artsresource,Reg Exp,,http://www.artsresource.org/index.cfm?objectid=2FC67455-E0CA-99EC-2B0B132B7AAF3B9A,"{
-  reject_event => {
-    description => qr/\-\s*\d+\/\d+\/\d+/s,
-    summary => qr/now showing.*?/i,
-  },
-  repeat => [
-    [qr/$line\s*$date\n+$line/s => {
-      fields => [qw(summary ignore ignore)],
-      follow_link => {
-        once => [
-          [qr/$line\s*$date\s*$time_ap\s*to\s*$time_ap\n+$line/is => {
-            fields => [qw(ignore date start_time end_time description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
 v-boulderbookstore,ICalendar,,http://boulderbookstore.indiebound.com/event,
 v-invescofieldatmilehigh,Reg Exp,,http://www.invescofieldatmilehigh.com/calendar_events/overview,"{
   pager => {
