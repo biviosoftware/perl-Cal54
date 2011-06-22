@@ -29,7 +29,20 @@ sub list {
 		    query => 'THIS_DETAIL',
 		},
 	    }],
-	    'Address.street1',
+	    ['Address.street1', {
+		column_heading => String('Address'),
+		column_widget => Join([
+		    String(['Address.street1']),
+		    If(Not(Equals(
+			['Address.city'],
+			'Boulder')),
+		       Join([
+			   ', ',
+			   String(['Address.city']),
+		       ]),
+		    ),
+		]),
+	    }],
 	    ['calendar.Website.url', {
 		uri => ['calendar.Website.url'],
 	    }],
