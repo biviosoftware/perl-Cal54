@@ -400,6 +400,30 @@ v-innisfree,Reg Exp,,http://www.innisfreepoetry.com/,"{
   ],
 }
 "
+v-invescofieldatmilehigh,Reg Exp,,http://www.invescofieldatmilehigh.com/index.php?section=calendar_events&subsection=overview,"{
+  pager => {
+    link => qr/(>>\{\d+\})/,
+    page_count => 3,
+  },
+  once => [
+    [qr/$month $year/ => {
+      fields => [qw(month year)],
+    }],
+  ],
+  repeat => [
+    [qr/$day\n+(\D+), $time_ap.*\}\n/ => {
+      fields => [qw(day summary start_time)],
+      follow_link => {
+        once => [
+          [qr// => {
+            fields => [qw()],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
 v-cigar,Google,,http://www.johnnyscigars.com/calendar/,"{
   reject_event => {
     summary => qr/happy\s+hour/i,
@@ -499,6 +523,41 @@ v-parentingplace,Google,,http://myparentingplace.org/calendar/play-groups-and-su
       summary => qr/no groups or classes/i,
       description => qr/(administrative retreat)|(\bninos\b)/i,
     },
+}
+"
+v-pepsicenter,Reg Exp,,http://www.pepsicenter.com/Calendar.aspx,"{
+  pre_parse_html => sub {
+    my($html) = @_;
+    $$html =~ s{(<img src=""/images/Calendar/ArrowNext.gif"")}{nextpage$1};
+    return;
+  },
+  pager => {
+    link => qr/(nextpage.*?)\n/i,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/$day\n+(\D+)\n($line)/i => {
+      fields => [qw(ignore summary link url)],
+      follow_link => {
+        once => [
+          [qr/Print\n+(.*?)\nPepsi\n/is => {
+            fields => [qw(description)],
+          }],
+          [qr/$day_name, $month $day, $time_ap/ => {
+            fields => [qw(day_name month day start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+v-redrocksonline,Reg Exp,,http://www.redrocksonline.com/Calendar.aspx,"{
+  repeat => [
+    [qr/$day_name, $month $day, $year\n$line\s*$time_ap/s => {
+      fields => [qw(day_name month day year summary start_time)],
+    }],
+  ],
 }
 "
 v-rei,RSS,,http://www.rei.com/storesrss/44,"{
@@ -888,57 +947,6 @@ v-wow,Google,,http://www.wowmuseum.com/calendar.html,"{
   repeat => [
     [qr/(\n$day\n)(?:(?:\*\n(.*?)(color\S+)(.*?$time_span[^\n]+?(\{\d+\})?)\n)|(?:\*\n.*?\n))/ => {
       fields => [qw(save day summary location description start_time end_time url)],
-    }],
-  ],
-}
-"
-v-pepsicenter,Reg Exp,,http://www.pepsicenter.com/Calendar.aspx,"{
-  repeat => [
-    [qr/$day\n+(\D+)\n($line)/i => {
-      fields => [qw(ignore summary link url)],
-      follow_link => {
-        once => [
-          [qr/Print\n+$line/i => {
-            fields => [qw(description)],
-          }],
-          [qr/$day_name, $month $day, $time_ap/ => {
-            fields => [qw(day_name month day start_time)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-v-boulderbookstore,ICalendar,,http://boulderbookstore.indiebound.com/event,
-v-invescofieldatmilehigh,Reg Exp,,http://www.invescofieldatmilehigh.com/calendar_events/overview,"{
-  pager => {
-    link => qr/(>>\{\d+\})/,
-    page_count => 3,
-  },
-  once => [
-    [qr/$month $year/ => {
-      fields => [qw(month year)],
-    }],
-  ],
-  repeat => [
-    [qr/$day\n+(\D+), $time_ap.*\}\n/ => {
-      fields => [qw(day summary start_time)],
-      follow_link => {
-        once => [
-          [qr// => {
-            fields => [qw()],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-v-redrocksonline,Reg Exp,,http://www.redrocksonline.com/Calendar.aspx,"{
-  repeat => [
-    [qr/$day_name, $month $day, $year\n$line\s*$time_ap/s => {
-      fields => [qw(day_name month day year summary start_time)],
     }],
   ],
 }
