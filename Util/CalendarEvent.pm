@@ -147,7 +147,8 @@ sub init_venues {
 	    })
 		? $ro->format_query_for_this
 		: undef);
-	$self->print('added venue: ', $v->{'RealmOwner.display_name'}, "\n")
+	$self->print('added venue: ', $v->{'RealmOwner.display_name'},
+	    ', ', $v->{'Address.city'}, "\n")
 	    unless $self->req('query');
 	$self->model('VenueForm', $v);
 	$self->req->clear_nondurable_state;
