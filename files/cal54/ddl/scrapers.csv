@@ -892,3 +892,21 @@ v-wow,Google,,http://www.wowmuseum.com/calendar.html,"{
   ],
 }
 "
+v-pepsicenter,Reg Exp,,http://www.pepsicenter.com/Calendar.aspx,"{
+  repeat => [
+    [qr/$day\n+(\D+)\n($line)/i => {
+      fields => [qw(ignore summary link url)],
+      follow_link => {
+        once => [
+          [qr/Print\n+$line/i => {
+            fields => [qw(description)],
+          }],
+          [qr/$day_name, $month $day, $time_ap/ => {
+            fields => [qw(day_name month day start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
