@@ -954,3 +954,11 @@ v-invescofieldatmilehigh,Reg Exp,,http://www.invescofieldatmilehigh.com/calendar
   ],
 }
 "
+v-redrocksonline,Reg Exp,,http://www.redrocksonline.com/Calendar.aspx,"{
+  repeat => [
+    [qr/$day_name, $month $day, $year\n$line\s*$time_ap/s => {
+      fields => [qw(day_name month day year summary start_time)],
+    }],
+  ],
+}
+"
