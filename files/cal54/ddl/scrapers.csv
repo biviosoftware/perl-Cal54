@@ -65,6 +65,44 @@ v-barnesandnoble,Reg Exp,,http://store-locator.barnesandnoble.com/store/2333,"{
   ],
 }
 "
+v-cityoflafayettereccenter,Reg Exp,,http://www.cityoflafayette.com/Calendar.asp,"{
+  accept_event => {
+    location => qr/Bob L. Burger Recreation Center/i,
+  },
+  repeat => [
+    [qr/$time_ap\n$line/i=> {
+      fields => [qw(ignore summary)],
+      follow_link => {
+        once => [
+          [qr/Location:\n+$line/i => {
+            fields => [qw(location)],
+          }],
+          [qr/Details:\n+$line/i => {
+            fields => [qw(description)],
+          }],
+          [qr/Starts:\n$time_ap\n+Ends:\n$time_ap/i => {
+            fields => [qw(start_time end_time)],
+          }],
+          [qr/$day_name, $month $day, $year\n+SET REMINDER/i => {
+            fields => [qw(day_name month day year)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+v-bordersbroomfield,Reg Exp,,http://www.borders.com/online/store/StoreDetailView_415,"{
+  reject_event => {
+    description => qr/cancelled/i,
+  },
+  repeat => [
+    [qr/$line\s*$line\s*$line\s*$month $day, $year $time_ap/ => {
+      fields => [qw(summary description ignore month day year start_time)],
+    }],
+  ],
+}
+"
 v-boulderbookstore,ICalendar,,http://boulderbookstore.indiebound.com/event,
 v-historymuseum,Reg Exp,,http://www.boulderhistory.org/calendar.asp,"{
   accept_event => {
@@ -143,6 +181,44 @@ v-bouldertheatre,Reg Exp,,http://www.bouldertheater.com/,"{
 }
 "
 v-bunit_venue,Google,,http://test.bunit/cal,
+v-butterflies,Reg Exp,,http://www.butterflies.org/events/calendar.php,"{
+  once => [
+    [qr/event dates for $year/i => {
+      fields => [qw(year)],
+    }],
+    [qr/\n$day_name\n$month\. $day\n(Tripod Photography.*\})\n/i => {
+      fields => [qw(ignore ignore ignore summary)],
+      follow_link => {
+        once => [
+          [qr/Adopt a Butterfly\{\d+\}\n\n\n$line/i => {
+            fields => [qw(description)],
+          }],
+        ],
+        repeat => [
+          [qr/$month $day\n$time_ap/ => {
+            fields => [qw(month day start_time)],
+          }],
+        ],
+      },
+    }],
+    [qr/\n$day_name\n$month\. $day\n(Sunset Stroll.*\})\n/i => {
+      fields => [qw(ignore ignore ignore summary)],
+      follow_link => {
+        once => [
+          [qr/Adopt a Butterfly\{\d+\}\n\n\n$line/i => {
+            fields => [qw(description)],
+          }],
+        ],
+        repeat => [
+          [qr/$month $day\n$time_span/ => {
+            fields => [qw(month day start_time end_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
 v-caffesole,Google,,http://www.caffesole.com/events.html,
 v-cannonmine,Google,,http://cannonmine.net/index.php/calendar/Cannon%20Mine%20Calendar%20of%20events,
 v-chautauqua,Reg Exp,,http://www.chautauqua.com/upcoming_events.php,"{
@@ -216,6 +292,29 @@ v-cuvee,Reg Exp,,http://www.chezcuvee.com/ChezCuvee/Live_Music.html,"{
 }
 "
 v-dickensopera,Google,,http://www.dickensoperahouse.com/calendar.htm,
+v-flatironcrossing,Reg Exp,,http://www.flatironcrossing.com/Events?list=all,"{
+  once => [
+    [qr/summer nights concert series\s*$month $day, $year\s*($line)/is => {
+      fields => [qw(ignore ignore year link url)],
+      follow_link => {
+        once => [
+          [qr/beginning at $time_ap/is => {
+            fields => [qw(start_time)],
+          }],
+          [qr/(summer nights concert series)/i => {
+            fields => [qw(description)],
+          }],
+        ],
+        repeat => [
+          [qr/$month $day\s*\-\s*(.*?)\n(click here.*\})/ => {
+            fields => [qw(month day summary url)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
 v-foxtheatre,Reg Exp,,http://foxtheatre.com/Store/ChooseTicket.aspx,"{
     repeat => [
  [qr{^$month_day\s+(.*?)\s*$}m, {
@@ -232,6 +331,22 @@ v-foxtheatre,Reg Exp,,http://foxtheatre.com/Store/ChooseTicket.aspx,"{
      }
  }],
     ],
+}
+"
+v-frascafoodandwine,Reg Exp,,http://www.frascafoodandwine.com/calendar.html,"{
+  default_values => {
+    start_time => '5:30pm',
+  },
+  once => [
+    [qr/$year Calendar/i => {
+      fields => [qw(year)],
+    }],
+  ],
+  repeat => [
+    [qr/$day_name, $month $day.*\n$line/ => {
+      fields => [qw(day_name month day summary)],
+    }],
+  ],
 }
 "
 v-goldhill,Reg Exp,,http://www.goldhillinn.com/music.html,"{
@@ -288,6 +403,59 @@ v-innisfree,Reg Exp,,http://www.innisfreepoetry.com/,"{
 v-cigar,Google,,http://www.johnnyscigars.com/calendar/,"{
   reject_event => {
     summary => qr/happy\s+hour/i,
+  },
+}
+"
+v-lefthandbooks,Reg Exp,,http://www.lefthandbooks.org/lhbevents.html,"{
+  once => [
+    [qr/left hand events for $month $year/i => {
+      fields => [qw(month year)],
+    }],
+  ],
+  repeat => [
+    [qr/-+?\n$month\. $day \($day_name\.\) @ $time_ap\: $line/si => {
+      fields => [qw(none day day_name start_time summary)],
+    }],
+  ],
+}
+"
+v-louisvilleco,Reg Exp,,http://www.louisvilleco.gov/GOVERNMENT/BoardsCommissions/CulturalCouncil/CulturalCouncilEvents/tabid/393/Default.aspx,"{
+  once => [
+    [qr/Time: $time_span/i => {
+      fields => [qw(start_time end_time)],
+    }],
+  ],
+  repeat => [
+    [qr/$month $day \-\s*$line\s*$line/s => {
+      fields => [qw(month day summary description)],
+    }],
+  ],
+}
+"
+v-farmersmarketlouis,Reg Exp,,http://farmersmarketlouis.blogspot.com/,"{
+  once => [
+    [qr/$year sponsors/i => {
+      fields => [qw(year)],
+    }],
+  ],
+  repeat => [
+    [qr/$line\s*\*\*\s*$month $day $time_ap - $time_ap/ => {
+      fields => [qw(summary month day start_time end_time)],
+    }],
+  ],
+}
+"
+v-luckypiepizza,Reg Exp,,http://www.luckypiepizza.com/lucky-pie-events.html,"{
+  repeat => [
+    [qr/(.+?)\-.*\s*$month $day @ $time_ap\n$line/ => {
+      fields => [qw(summary month day start_time description)],
+    }],
+  ],
+}
+"
+v-madcapimprov,Google,,http://www.madcapimprov.com/ourshows/ticketsandtimes.html,"{
+  reject_event => {
+    summary => qr/SOLD OUT/i,
   },
 }
 "
@@ -722,173 +890,5 @@ v-wow,Google,,http://www.wowmuseum.com/calendar.html,"{
       fields => [qw(save day summary location description start_time end_time url)],
     }],
   ],
-}
-"
-v-cityoflafayettereccenter,Reg Exp,,http://www.cityoflafayette.com/Calendar.asp,"{
-  accept_event => {
-    location => qr/Bob L. Burger Recreation Center/i,
-  },
-  repeat => [
-    [qr/$time_ap\n$line/i=> {
-      fields => [qw(ignore summary)],
-      follow_link => {
-        once => [
-          [qr/Location:\n+$line/i => {
-            fields => [qw(location)],
-          }],
-          [qr/Details:\n+$line/i => {
-            fields => [qw(description)],
-          }],
-          [qr/Starts:\n$time_ap\n+Ends:\n$time_ap/i => {
-            fields => [qw(start_time end_time)],
-          }],
-          [qr/$day_name, $month $day, $year\n+SET REMINDER/i => {
-            fields => [qw(day_name month day year)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-v-bordersbroomfield,Reg Exp,,http://www.borders.com/online/store/StoreDetailView_415,"{
-  reject_event => {
-    description => qr/cancelled/i,
-  },
-  repeat => [
-    [qr/$line\s*$line\s*$line\s*$month $day, $year $time_ap/ => {
-      fields => [qw(summary description ignore month day year start_time)],
-    }],
-  ],
-}
-"
-v-butterflies,Reg Exp,,http://www.butterflies.org/events/calendar.php,"{
-  once => [
-    [qr/event dates for $year/i => {
-      fields => [qw(year)],
-    }],
-    [qr/\n$day_name\n$month\. $day\n(Tripod Photography.*\})\n/i => {
-      fields => [qw(ignore ignore ignore summary)],
-      follow_link => {
-        once => [
-          [qr/Adopt a Butterfly\{\d+\}\n\n\n$line/i => {
-            fields => [qw(description)],
-          }],
-        ],
-        repeat => [
-          [qr/$month $day\n$time_ap/ => {
-            fields => [qw(month day start_time)],
-          }],
-        ],
-      },
-    }],
-    [qr/\n$day_name\n$month\. $day\n(Sunset Stroll.*\})\n/i => {
-      fields => [qw(ignore ignore ignore summary)],
-      follow_link => {
-        once => [
-          [qr/Adopt a Butterfly\{\d+\}\n\n\n$line/i => {
-            fields => [qw(description)],
-          }],
-        ],
-        repeat => [
-          [qr/$month $day\n$time_span/ => {
-            fields => [qw(month day start_time end_time)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-v-flatironcrossing,Reg Exp,,http://www.flatironcrossing.com/Events?list=all,"{
-  once => [
-    [qr/summer nights concert series\s*$month $day, $year\s*($line)/is => {
-      fields => [qw(ignore ignore year link url)],
-      follow_link => {
-        once => [
-          [qr/beginning at $time_ap/is => {
-            fields => [qw(start_time)],
-          }],
-          [qr/(summer nights concert series)/i => {
-            fields => [qw(description)],
-          }],
-        ],
-        repeat => [
-          [qr/$month $day\s*\-\s*(.*?)\n(click here.*\})/ => {
-            fields => [qw(month day summary url)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-v-frascafoodandwine,Reg Exp,,http://www.frascafoodandwine.com/calendar.html,"{
-  default_values => {
-    start_time => '5:30pm',
-  },
-  once => [
-    [qr/$year Calendar/i => {
-      fields => [qw(year)],
-    }],
-  ],
-  repeat => [
-    [qr/$day_name, $month $day.*\n$line/ => {
-      fields => [qw(day_name month day summary)],
-    }],
-  ],
-}
-"
-v-lefthandbooks,Reg Exp,,http://www.lefthandbooks.org/lhbevents.html,"{
-  once => [
-    [qr/left hand events for $month $year/i => {
-      fields => [qw(month year)],
-    }],
-  ],
-  repeat => [
-    [qr/-+?\n$month\. $day \($day_name\.\) @ $time_ap\: $line/si => {
-      fields => [qw(none day day_name start_time summary)],
-    }],
-  ],
-}
-"
-v-louisvilleco,Reg Exp,,http://www.louisvilleco.gov/GOVERNMENT/BoardsCommissions/CulturalCouncil/CulturalCouncilEvents/tabid/393/Default.aspx,"{
-  once => [
-    [qr/Time: $time_span/i => {
-      fields => [qw(start_time end_time)],
-    }],
-  ],
-  repeat => [
-    [qr/$month $day \-\s*$line\s*$line/s => {
-      fields => [qw(month day summary description)],
-    }],
-  ],
-}
-"
-v-farmersmarketlouis,Reg Exp,,http://farmersmarketlouis.blogspot.com/,"{
-  once => [
-    [qr/$year sponsors/i => {
-      fields => [qw(year)],
-    }],
-  ],
-  repeat => [
-    [qr/$line\s*\*\*\s*$month $day $time_ap - $time_ap/ => {
-      fields => [qw(summary month day start_time end_time)],
-    }],
-  ],
-}
-"
-v-luckypiepizza,Reg Exp,,http://www.luckypiepizza.com/lucky-pie-events.html,"{
-  repeat => [
-    [qr/(.+?)\-.*\s*$month $day @ $time_ap\n$line/ => {
-      fields => [qw(summary month day start_time description)],
-    }],
-  ],
-}
-"
-v-madcapimprov,Google,,http://www.madcapimprov.com/ourshows/ticketsandtimes.html,"{
-  reject_event => {
-    summary => qr/SOLD OUT/i,
-  },
 }
 "
