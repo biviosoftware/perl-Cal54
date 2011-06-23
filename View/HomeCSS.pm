@@ -281,12 +281,26 @@ table.c4_suggest_site div.c4_home_title {
   text-align: center;
 }
 div.c4_home_other {
-   CSS('c4_home_other');
+  CSS('c4_home_other');
 }
 div.c4_home_other .simple,
 div.c4_home_other .standard_submit {
-   margin: auto;
-   margin-top: 2ex;
+  margin: auto;
+  margin-top: 2ex;
+}
+div.featured {
+  position: fixed;
+  padding-left: 1em;
+  top: 12ex;
+  width: 12em;
+}
+div.featured span.title {
+  Color('c4_featured-background');
+  Font('c4_featured');
+  display: block;
+  text-align: center;
+  margin-bottom: 1ex;
+  padding: 0.2ex 0;
 }
 EOF
 }

@@ -19,6 +19,8 @@ my($_SELF) = __PACKAGE__->new({
 	[[qw(c4_pager_weekend c4_query_submit_border c4_query_submit)] => 0xf8f8f8],
 	[[qw(c4_pager_a)]=> 0xe8e8e8],
 	[b_mobile_toggler_selected => 0x0],
+	[c4_featured => 0xffffff],
+	[c4_featured_background => 0x0088ce],
 #TODO: needed for mobile only
 	[c4_button => 0xffffff],
 	[c4_button_background => 0x0088ce],
@@ -88,6 +90,7 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_pager => ['left']],
 	[c4_pager_month => ['80%', 'uppercase']],
 	[c4_pager_a => ['80%']],
+	[c4_featured => ['100%']],
 #TODO: needed for mobile only
 	[c4_button => ['100%']],
     ],
