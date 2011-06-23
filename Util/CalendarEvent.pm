@@ -123,11 +123,12 @@ sub init_scrapers {
 	    $list->find_row_by('Website.url', $v->{'Website.url'})
 		? $list->format_query('THIS_DETAIL')
 		: undef);
+	my($is_new_scraper) = $self->req('query') ? 0 : 1;
+	$self->model('ScraperForm', $v);
 	$self->print('added scraper: ',
 	    $self->req(qw(Model.Scraper scraper_id)),
 	    ' ', $v->{'Website.url'}, "\n")
-	    unless $self->req('query');
-	$self->model('ScraperForm', $v);
+	    if $is_new_scraper;
 	$self->unauth_model('RealmOwner', {
 	    realm_id => $self->req(qw(Model.Scraper scraper_id)),
 	})->update({
