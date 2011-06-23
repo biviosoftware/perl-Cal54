@@ -8,3 +8,5 @@ home_page();
 verify_no_link('>>');
 verify_no_link('mobile');
 verify_no_link('^15$');
+
+home_page();
