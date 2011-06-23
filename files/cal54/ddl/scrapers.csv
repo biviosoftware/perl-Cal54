@@ -974,3 +974,9 @@ v-ogdentheatre,Reg Exp,,http://www.ogdentheatre.net/events.php,"{
   ],
 }
 "
+v-arugularistorante,Google,,http://www.arugularistorante.com/events/,"{
+  reject_event => {
+    summary => qr/CLOSED/i
+  },
+}
+"
