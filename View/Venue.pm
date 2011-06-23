@@ -19,9 +19,10 @@ sub form {
 
 sub list {
     return shift->internal_put_base_attr(
-	tools => TaskMenu([
-	    'ADM_VENUE_FORM',
-	]),
+	tools => TaskMenu([qw(
+	    ADM_VENUE_LIST_CSV
+	    ADM_VENUE_FORM
+	)]),
 	body => vs_paged_list(VenueList => [
 	    ['RealmOwner.display_name', {
 		wf_list_link => {
@@ -48,6 +49,24 @@ sub list {
 	    }],
 	]),
     );
+}
+
+sub list_csv {
+    return shift->internal_body(CSV(VenueList => [
+	qw(
+	    RealmOwner.display_name
+	    RealmOwner.creation_date_time
+	    Address.street1
+	    Address.street2
+	    Address.city
+	    Address.state
+	    Address.zip
+	    Phone.phone
+	    Website.url
+	),
+    ], {
+	want_iterate_start => 1,
+    }));
 }
 
 sub suggest_venue_mail {
