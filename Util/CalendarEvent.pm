@@ -123,7 +123,9 @@ sub init_scrapers {
 	    $list->find_row_by('Website.url', $v->{'Website.url'})
 		? $list->format_query('THIS_DETAIL')
 		: undef);
-	$self->print('added scraper: ', $v->{'Website.url'}, "\n")
+	$self->print('added scraper: ',
+	    $self->req(qw(Model.Scraper scraper_id)),
+	    ' ', $v->{'Website.url'}, "\n")
 	    unless $self->req('query');
 	$self->model('ScraperForm', $v);
 	$self->unauth_model('RealmOwner', {
