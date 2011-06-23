@@ -51,10 +51,12 @@ sub internal_initialize {
     my($self) = @_;
     return $self->merge_initialize_info($self->SUPER::internal_initialize, {
         version => 1,
+	can_iterate => 1,
         primary_key => [[$self->PRIMARY_KEY_EQUIVALENCE_LIST, 'RealmDAG.child_id']],
 	order_by => ['RealmOwner.display_name'],
 	other => [
 	    'RealmOwner.name',
+	    'RealmOwner.creation_date_time',
 	    $self->EDITABLE_FIELD_LIST,
 	    $self->LOCATION_EQUIVALENCE_LIST,
 	    ['RealmDAG.realm_dag_type', [b_use('Type.RealmDAG')->PARENT_IS_AUTHORIZED_ACCESS]],
