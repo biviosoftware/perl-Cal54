@@ -951,7 +951,7 @@ v-wow,Google,,http://www.wowmuseum.com/calendar.html,"{
   ],
 }
 "
-v-mychildsmuseum,Reg Exp,,http://www.mychildsmuseum.org/calendar/Default.aspxs,"{
+v-mychildsmuseum,Reg Exp,,http://www.mychildsmuseum.org/calendar/Default.aspx,"{
   repeat => [
     [qr/$line\s*$line\s*$day_name, $month $day, $year/s => {
       fields => [qw(summary description day_name month day year)],
