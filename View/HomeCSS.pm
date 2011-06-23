@@ -290,9 +290,9 @@ div.c4_home_other .standard_submit {
 }
 div.featured {
   position: fixed;
-  padding-left: 1em;
+  padding-left: 2em;
   top: 12ex;
-  width: 12em;
+  width: 15em;
 }
 div.featured span.title {
   Color('c4_featured-background');
