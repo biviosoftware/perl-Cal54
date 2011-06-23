@@ -111,7 +111,7 @@ sub _list {
 		}),
 		DIV_featured(
 		    Join([
-			SPAN_title('Featured'),
+			SPAN_title('Featured Event'),
 			DIV_date(q{Sunday June 26, 2011}),
 			DIV_item(Join([
 			    DIV_line(
