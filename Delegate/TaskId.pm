@@ -125,6 +125,13 @@ sub get_delegate_info {
 	    View.HomeOther->suggest_site
 	    next=C4_HOME_LIST
 	)],
+	[qw(
+	    ADM_VENUE_LIST_CSV
+	    515
+	    FORUM
+	    DATA_READ&FEATURE_SITE_ADMIN
+	    View.Venue->list_csv
+        )],
     ]);
 }
 

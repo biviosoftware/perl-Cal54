@@ -34,6 +34,7 @@ __PACKAGE__->new({
 	[ADM_CALENDAR_EVENT_LIST_FORM => '?/events'],
 	[ADM_VENUE_FORM => '?/edit-venue'],
 	[ADM_VENUE_LIST => '?/venues'],
+	[ADM_VENUE_LIST_CSV => '?/venues.csv'],
 	[ADM_SCRAPER_FORM => '?/scraper'],
 	[ADM_SCRAPER_PREVIEW => '?/scraper-preview'],
 	[ADM_SCRAPER_LIST => '?/scrapers'],
@@ -45,6 +46,7 @@ __PACKAGE__->new({
 	[home_page_uri => '/bp'],
 	[[qw(title xlink)] => [
 	    ADM_VENUE_LIST => 'Venues',
+	    ADM_VENUE_LIST_CSV => 'Export Venues',
 	    ADM_CALENDAR_EVENT_LIST_FORM => 'Events',
 	    ADM_VENUE_FORM => 'Edit Venue',
 	    ADM_SCRAPER_FORM => 'Add Scraper',
@@ -69,6 +71,7 @@ __PACKAGE__->new({
 	    'RealmOwner.name' => 'Scraper Tag',
 	    'RealmOwner.display_name' => 'Full Name',
 	    'RowTag.value' => 'Tags',
+	    'RealmOwner.creation_date_time' => 'Created',
 	]],
 	[SearchWords => [
 	    value => 'Search Words',
