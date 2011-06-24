@@ -980,3 +980,11 @@ v-arugularistorante,Google,,http://www.arugularistorante.com/events/,"{
   },
 }
 "
+v-heritagesquare,Reg Exp,,http://www.heritagesquare.info/events.html,"{
+  repeat => [
+    [qr/$month $day\s*$line\s*$line\s*$time_ap/s => {
+      fields => [qw(month day ignore summary start_time)],
+    }],
+  ],
+}
+"
