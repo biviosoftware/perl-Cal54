@@ -41,7 +41,8 @@ sub c4_scraper_get {
 	my $x = $_GET_CACHE->{$uri};
 	return \$x;
     }
-    sleep(1);
+    my($aux) = $self->get_scraper_aux;
+    sleep($aux->{crawl_delay} || 1);
     my($res) = $self->extract_content($self->http_get($uri, $log));
     $_GET_CACHE->{$uri} = $$res
 	if $_GET_CACHE;
