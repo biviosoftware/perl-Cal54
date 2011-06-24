@@ -146,6 +146,8 @@ sub _list {
 		    empty_list_widget => DIV_c4_empty_list(
 			q{Your search didn't match any results.  Try a different query.},
 		    ),
+		    cell_expand => 1,
+		    cell_align => 'top',
 		}),
 		IfMobile(
 		    Simple(''),
