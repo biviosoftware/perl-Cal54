@@ -988,3 +988,18 @@ v-heritagesquare,Reg Exp,,http://www.heritagesquare.info/events.html,"{
   ],
 }
 "
+v-minersalley,Reg Exp,,http://www.minersalley.com/cgi-bin/calendar.pl?view=Month&style=List&view=Four-Week,"{
+  repeat => [
+    [qr/$day_name, $month $day\{\d+\}\n\* $time_ap \:\n$line/ => {
+      fields => [qw(day_name month day start_time summary)],
+      follow_link => {
+        once => [
+          [qr/Description:\n$line/i => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
