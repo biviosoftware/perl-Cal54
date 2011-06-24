@@ -1003,3 +1003,16 @@ v-minersalley,Reg Exp,,http://www.minersalley.com/cgi-bin/calendar.pl?view=Month
   ],
 }
 "
+v-budweisereventscenter,Reg Exp,,http://www.budweisereventscenter.com/calendar.cfm,"{
+  once => [
+    [qr/$month $year\n+next month/i => {
+      fields => [qw(month year)],
+    }],
+  ],
+  repeat => [
+    [qr/$day\n+(.+?\})\n$time_ap/ => {
+      fields => [qw(day summary start_time)],
+    }],
+  ],
+}
+"
