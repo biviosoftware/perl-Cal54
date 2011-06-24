@@ -1016,3 +1016,14 @@ v-budweisereventscenter,Reg Exp,,http://www.budweisereventscenter.com/calendar.c
   ],
 }
 "
+v-hi_dive,Reg Exp,,http://www.hi-dive.com/,"{
+  accept_event => {
+    location => qr/Hi-Dive/i,
+  },
+  repeat => [
+    [qr/$day_name, $month $day.*\n+$line\n+$line?\n+at\n$line\n+doors at $time_ap/i => {
+      fields => [qw(day_name month day summary description location start_time)],
+    }],
+  ],
+}
+"
