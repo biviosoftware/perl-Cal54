@@ -289,9 +289,7 @@ div.c4_home_other .standard_submit {
   margin-top: 2ex;
 }
 div.featured {
-  position: fixed;
   padding-left: 1em;
-  top: 12ex;
   width: 15em;
 }
 div.featured span.title {
