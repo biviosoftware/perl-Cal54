@@ -456,19 +456,6 @@ v-louisvilleco,Reg Exp,,http://www.louisvilleco.gov/GOVERNMENT/BoardsCommissions
   ],
 }
 "
-v-farmersmarketlouis,Reg Exp,,http://farmersmarketlouis.blogspot.com/,"{
-  once => [
-    [qr/$year sponsors/i => {
-      fields => [qw(year)],
-    }],
-  ],
-  repeat => [
-    [qr/$line\s*\*\*\s*$month $day $time_ap - $time_ap/ => {
-      fields => [qw(summary month day start_time end_time)],
-    }],
-  ],
-}
-"
 v-luckypiepizza,Reg Exp,,http://www.luckypiepizza.com/lucky-pie-events.html,"{
   repeat => [
     [qr/(.+?)\-.*\s*$month $day @ $time_ap\n$line/ => {
@@ -1023,6 +1010,19 @@ v-hi_dive,Reg Exp,,http://www.hi-dive.com/,"{
   repeat => [
     [qr/$day_name, $month $day.*\n+$line\n+$line?\n+at\n$line\n+doors at $time_ap/i => {
       fields => [qw(day_name month day summary description location start_time)],
+    }],
+  ],
+}
+"
+v-farmersmarketlouis,Reg Exp,,http://farmersmarketlouis.blogspot.com/,"{
+  once => [
+    [qr/$year sponsors/i => {
+      fields => [qw(year)],
+    }],
+  ],
+  repeat => [
+    [qr/\*\*\s*$month $day $time_ap - $time_ap.*\n$line/ => {
+      fields => [qw(month day start_time end_time summary)],
     }],
   ],
 }
