@@ -1027,3 +1027,11 @@ v-farmersmarketlouis,Reg Exp,,http://farmersmarketlouis.blogspot.com/,"{
   ],
 }
 "
+v-boulderhumane,Reg Exp,,http://www.boulderhumane.org/get-involved/events-calendar,"{
+  repeat => [
+    [qr/$line\n+(.+?\n.+?\n.+?)\n+$line?\n+Where: (.+?)\n.*?\n+When: $date \- $time_ap \- $time_ap/ => {
+      fields => [qw(summary description ignore location date start_time end_time)],
+    }],
+  ],
+}
+"
