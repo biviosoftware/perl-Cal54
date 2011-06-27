@@ -1035,3 +1035,23 @@ v-boulderhumane,Reg Exp,,http://www.boulderhumane.org/get-involved/events-calend
   ],
 }
 "
+v-meadowlarkbar,Reg Exp,,http://www.meadowlarkbar.com/calendar.htm,"{
+  once => [
+    [qr/calendar of events for $month/i => {
+      fields => [qw(month)],
+    }],
+  ],
+  repeat => [
+    [qr/$day\n$line\n/ => {
+      fields => [qw(day summary)],
+      follow_link => {
+        once => [
+          [qr/$month $day, $year .*?@ $time_ap/ => {
+            fields => [qw(ignore ignore year start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
