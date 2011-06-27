@@ -149,10 +149,10 @@ sub _list {
 		    cell_expand => 1,
 		    cell_align => 'top',
 		}),
-		IfMobile(
-		    Simple(''),
-		    _featured_item(),
-		)->put(cell_align => 'top'),
+		# IfMobile(
+		#     Simple(''),
+		#     _featured_item(),
+		# )->put(cell_align => 'top'),
 	    ]]),
 	),
 	IfMobile(
