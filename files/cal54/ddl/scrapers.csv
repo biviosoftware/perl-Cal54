@@ -1077,3 +1077,11 @@ v-meadowlarkbar,Reg Exp,,http://www.meadowlarkbar.com/calendar.htm,"{
   ],
 }
 "
+v-dickssportinggoodspark,Reg Exp,,http://www.dickssportinggoodspark.com/Stadium/Events.aspx,"{
+  repeat => [
+    [qr/(.+?)\n$month $day, $year at $time_ap.*\n$line/i => {
+      fields => [qw(summary month day year start_time description)],
+    }],
+  ],
+}
+"
