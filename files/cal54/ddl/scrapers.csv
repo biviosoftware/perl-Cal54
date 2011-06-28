@@ -967,6 +967,28 @@ v-arugularistorante,Google,,http://www.arugularistorante.com/events/,"{
   },
 }
 "
+v-hermanshideaway,Reg Exp,,http://www.hermanshideaway.com/calendar,"{
+  pager => {
+    link => qr/(\n$month .\{\d+\}\n)/,
+    page_count => 2,
+  },
+  repeat => [
+    [qr/$day\n(.+?\})\n$time_ap/ => {
+      fields => [qw(ignore summary ignore)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day/is => {
+            fields => [qw(day_name month day)],
+          }],
+          [qr/show $time_ap/i => {
+            fields => [qw(start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
 v-heritagesquare,Reg Exp,,http://www.heritagesquare.info/events.html,"{
   repeat => [
     [qr/$month $day\s*$line\s*$line\s*$time_ap/s => {
