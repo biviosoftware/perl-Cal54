@@ -1079,3 +1079,43 @@ v-dickssportinggoodspark,Reg Exp,,http://www.dickssportinggoodspark.com/Stadium/
   ],
 }
 "
+v-bluebirdtheater,Reg Exp,,http://bluebirdtheater.net/events.php,"{
+  pager => {
+    link => qr/(Next >>.*\})/i,
+    page_count => 3,
+  },
+  reject_event => {
+    summary => qr/with/i,
+  },
+  repeat => [
+    [qr/(.+?)\n(.+?)\n$month $day, $year, $time_ap/ => {
+      fields => [qw(summary description month day year start_time)],
+    }],
+    [qr/(.+?)\n$month $day, $year, $time_ap/ => {
+      fields => [qw(summary month day year start_time)],
+    }],
+  ],
+}
+"
+v-curioustheatre,Reg Exp,,http://www.curioustheatre.org/index.php?s=20,"{
+  pager => {
+    link => qr/(\>\>.*\})/,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/$day\n(.+?\})/ => {
+      fields => [qw(ignore summary)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day, $year\n$time_ap/ => {
+            fields => [qw(day_name month day year start_time)],
+          }],
+          [qr/\$\d+.*\n+$line/ => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
