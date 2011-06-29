@@ -193,12 +193,7 @@ sub internal_date_time {
 
 sub internal_parse_xml {
     my($self, $url) = @_;
-    my($xml, $err) = XML::Simple::xml_in(${$self->c4_scraper_get($url)},
-        NoAttr => 1,
-	SuppressEmpty => undef,
-	KeyAttr => [],
-    );
-    b_die('xml parse error: ', $err) if $err;
+    my($xml) = $self->parse_xml($self->c4_scraper_get($url));
     b_die('no xml data for url: ', $url) unless keys(%$xml);
     return $xml;
 }
@@ -250,6 +245,17 @@ sub internal_update {
 sub is_canceled {
     my($self, $text) = @_;
     return $text =~ /\bcancel(l?)ed\b/i ? 1 : 0;
+}
+
+sub parse_xml {
+    my($proto, $content) = @_;
+    my($xml, $err) = XML::Simple::xml_in($$content,
+        NoAttr => 1,
+	SuppressEmpty => undef,
+	KeyAttr => [],
+    );
+    b_die('xml parse error: ', $err) if $err;
+    return $xml;
 }
 
 sub _bunit_dir {
