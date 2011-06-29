@@ -1127,3 +1127,18 @@ v-denvercoliseum,Reg Exp,,http://www.denvercoliseum.com/EventCalendar.aspx,"{
   ],
 }
 "
+v-herbsbar,Reg Exp,,http://www.herbsbar.com/events.cfm,"{
+  accept_event => {
+    location => qr/herb/i,
+  },
+  pager => {
+    link => qr/(Next \>\>.*\})/i,
+    page_count => 2,
+  },
+  repeat => [
+    [qr/$day_name, $month $day\n(.+?)\n$time_ap\n$line/ => {
+      fields => [qw(day_name month day summary start_time location)],
+    }],
+  ],
+}
+"
