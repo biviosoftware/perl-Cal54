@@ -961,12 +961,6 @@ v-ogdentheatre,Reg Exp,,http://www.ogdentheatre.net/events.php,"{
   ],
 }
 "
-v-arugularistorante,Google,,http://www.arugularistorante.com/events/,"{
-  reject_event => {
-    summary => qr/CLOSED/i
-  },
-}
-"
 v-hermanshideaway,Reg Exp,,http://www.hermanshideaway.com/calendar,"{
   pager => {
     link => qr/(\n$month .\{\d+\}\n)/,
