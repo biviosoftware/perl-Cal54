@@ -4,7 +4,7 @@ test_setup('Cal54');
 login_as_adm();
 do_test_backdoor(TestData => 'reset_all');
 go_back();
-follow_link(qw(venues add_venue));
+follow_link(qw(Venues add_venue));
 my($base) = random_string();
 submit_form(my $values = {
     name => my $name = "$base Test",

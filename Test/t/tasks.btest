@@ -12,4 +12,4 @@ test_deviance(qr{404 Not Found}i);
 visit_uri('/pub/login');
 test_conformance();
 login_as('adm', undef, 'admin.cal54');
-follow_link('venues');
+follow_link('Venues');
