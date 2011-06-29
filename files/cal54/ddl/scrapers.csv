@@ -1119,3 +1119,11 @@ v-curioustheatre,Reg Exp,,http://www.curioustheatre.org/index.php?s=20,"{
   ],
 }
 "
+v-denvercoliseum,Reg Exp,,http://www.denvercoliseum.com/EventCalendar.aspx,"{
+  repeat => [
+    [qr/$day_name, $month $day, $year\n+$line\n+(.+?)\n+$time_ap\n(.+?)/ => {
+      fields => [qw(day_name month day year ignore summary start_time location)],
+    }],
+  ],
+}
+"
