@@ -8,11 +8,15 @@ use Bivio::UI::ViewLanguageAUTOLOAD;
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub form {
+    my($can_preview) = And(
+	['Type.FormMode', '->eq_edit'],
+	['Model.ScraperForm', 'Scraper.scraper_type', '->can_preview'],
+    );
     return shift->internal_put_base_attr(
 	tools => TaskMenu([
-	    If(['Type.FormMode', '->eq_edit'],
+	    If($can_preview,
 	       Link('HTML Calendar', ['Model.ScraperForm', 'Website.url'])),
-	    If(['Type.FormMode', '->eq_edit'],
+	    If($can_preview,
 	       Link('Scraper Calendar', URI({
 		   task_id => 'ADM_SCRAPER_PREVIEW',
 		   query => {
