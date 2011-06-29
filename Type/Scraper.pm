@@ -15,8 +15,6 @@ __PACKAGE__->compile([
     FULL_CALENDAR => 6,
     BOS_DATES => 7,
     CALENDAR_MANAGER_DATA => 8,
-#TODO: remove OSKAR_BLUES after production upgrade
-    OSKAR_BLUES => 9,
     REG_EXP => 10,
 ]);
 
@@ -25,6 +23,11 @@ sub as_class {
     my($res) = shift->get_short_desc;
     $res =~ s/\s//g;
     return $res;
+}
+
+sub can_preview {
+    my($self) = @_;
+    return $self->equals_by_name(qw(RSS REG_EXP));
 }
 
 sub is_continuous {
