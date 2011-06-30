@@ -1173,3 +1173,43 @@ v-threekingstavern,Reg Exp,,http://www.3kingstavern.com/calendar/,"{
   ],
 }
 "
+v-soiled_dove,Reg Exp,,http://www.tavernhg.com/soiled_dove/shows?site=soiled_dove,"{
+  reject_event => {
+    summary => qr/Tickets on Sale/i,
+  },
+  repeat => [
+    [qr/Tickets on Sale.*\n(.+?\})/i => {
+      fields => [qw(summary)],
+      follow_link => {
+        once => [
+          [qr/Artist_website\n+$line/i => {
+            fields => [qw(description)],
+          }],
+          [qr/Show: $time_ap/i => {
+            fields => [qw(start_time)],
+          }],
+          [qr/$day_name, $month $day\n$line/i => {
+            fields => [qw(day_name month day ignore)],
+          }],
+        ],
+      },
+    }],
+    [qr/$day_name, $month $day\s*((.+?\}))/is => {
+      fields => [qw(ignore ignore ignore link url)],
+      follow_link => {
+        once => [
+          [qr/Artist_website\n+$line/i => {
+            fields => [qw(description)],
+          }],
+          [qr/Show: $time_ap/i => {
+            fields => [qw(start_time)],
+          }],
+          [qr/$day_name, $month $day\n$line/i => {
+            fields => [qw(day_name month day summary)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
