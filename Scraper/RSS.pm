@@ -6,17 +6,29 @@ use Bivio::Base 'Scraper.RegExp';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
+sub clean_description {
+    my($self, $item) = @_;
+    my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
+
+    if ($item->{description} =~ /\<.*\>/) {
+	$item->{description} = ${$cleaner->clean_html(
+	    \($item->{description}),
+	    $item->{link},
+	)};
+    }
+    else {
+	$item->{description} = $self->internal_clean($item->{description});
+    }
+    return;
+}
+
 sub internal_import {
     my($self) = @_;
     my($xml) = $self->internal_parse_xml(
 	$self->get('scraper_list')->get('Website.url'));
-    my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
 
     foreach my $item (@{$xml->{channel}->{item}}) {
-	$item->{description} = ${$cleaner->clean_html(
-	    \($item->{description}),
-	    $item->{link},
-	)} if $item->{description} =~ /\<.*\>/;
+	$self->clean_description($item);
 	my($current) = {
 	    summary => $item->{title},
 	    url => $item->{link},
