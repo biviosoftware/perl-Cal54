@@ -1142,3 +1142,34 @@ v-herbsbar,Reg Exp,,http://www.herbsbar.com/events.cfm,"{
   ],
 }
 "
+v-threekingstavern,Reg Exp,,http://www.3kingstavern.com/calendar/,"{
+  reject_event => {
+    summary => qr/w\/.*/i,
+  },
+  accept_event => {
+    location => qr/Three Kings Tavern/i,
+  },
+  pager => {
+    link => qr/\n($month .\{\d+\})\n/,
+    page_count => '3',
+  },
+  repeat => [
+    [qr/$day\n((.+?\}))\n$time_ap/ => {
+      fields => [qw(ignore link url ignore)],
+      follow_link => {
+        once => [
+          [qr/$line\n+$day_name, $month, $day/ => {
+            fields => [qw(summary day_name month day year)],
+          }],
+          [qr/(.+?)\n(.+?)\n+$day_name, $month, $day/ => {
+            fields => [qw(summary description day_name month day year)],
+          }],
+          [qr/(.+?\})\n$time_ap/ => {
+            fields => [qw(location start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
