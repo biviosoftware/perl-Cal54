@@ -1213,3 +1213,36 @@ v-soiled_dove,Reg Exp,,http://www.tavernhg.com/soiled_dove/shows?site=soiled_dov
   ],
 }
 "
+,Reg Exp,,http://www.coclubs.com/calendar/,"{
+  pager => {
+    link => qr/format\?\n+.+?\n+($line)/i,
+    page_count => 2,
+  },
+  reject_event => {
+    summary => qr/Ladies Night|$day_name|beat the clock|climax/i,
+  },
+  location_to_venue => {
+    qr/Vinyl/i => 'coclubs_vinyl',
+    qr/Church/i => 'coclubs_thechurch',
+    qr/Buddha/i => 'coclubs_funkybuddha',
+    qr/2am/i => 'coclubs_2am',
+    qr/Bar Standard/i => 'coclubs_barstandard',
+    qr/City Hall/i => 'coclubs_cityhall',
+    qr/Milk/i => 'coclubs_milk',
+    qr/Mo's/i => 'coclubs_mos',
+    qr/Living Room/i => 'coclubs_livingroom',
+  },
+  repeat => [
+    [qr/$line\n+$day_name $month $day\n+$line/ => {
+      fields => [qw(summary ignore ignore ignore location)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day\n+$time_ap/ => {
+            fields => [qw(day_name month day start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
