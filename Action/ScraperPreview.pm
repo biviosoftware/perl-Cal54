@@ -5,6 +5,7 @@ use strict;
 use Bivio::Base 'Biz.Action';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
+my($_RSS) = b_use('Scraper.RSS');
 
 sub execute {
     my($self) = shift->new(@_);
@@ -31,10 +32,7 @@ sub _parse_content {
 	my($items) = [];
 
 	foreach my $item (@{$xml->{channel}->{item}}) {
-	    $item->{description} = ${$cleaner->clean_html(
-	        \($item->{description}),
-		$item->{link},
-	    )} if $item->{description} =~ /\<.*\>/;
+	    $_RSS->clean_description($item);
 	    push(@$items, {
 		description => $item->{description},
 		summary => $item->{title},
