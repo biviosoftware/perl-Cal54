@@ -1254,3 +1254,11 @@ v-sparktheater,Reg Exp,,http://sparktheater.org/tickets/,"{
   ],
 }
 "
+v-skylarklounge,Reg Exp,,http://www.skylarklounge.com/cal.cfm,"{
+  repeat => [
+    [qr/$day_name, $month $day, $year, $time_ap\n$line/ => {
+      fields => [qw(day_name month day year start_time summary)],
+    }],
+  ],
+}
+"
