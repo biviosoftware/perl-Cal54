@@ -1290,3 +1290,30 @@ v-skylarklounge,Reg Exp,,http://www.skylarklounge.com/cal.cfm,"{
   ],
 }
 "
+v-benderstavern,Reg Exp,,http://www.benderstavern.com/calendar/,"{
+  reject_event => {
+    summary => qr/Bingo yo/i,
+   },
+  pager => {
+    link => qr/(\n$month .\{\d+\}\n)/,
+    page_count => 3,
+  },
+  once => [
+    [qr/$month $year/ => {
+      fields => [qw(month year)],
+    }],
+  ],
+  repeat => [
+    [qr/(.+?)\n$time_ap/ => {
+      fields => [qw(summary ignore)],
+      follow_link => {
+        once => [
+          [qr/$day_name, \d+\/$day $time_ap/ => {
+            fields => [qw(day_name day start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
