@@ -1344,3 +1344,23 @@ v-loladenver,Reg Exp,,http://www.loladenver.com/Events/LiveMusic/tabid/636/Defau
   ],
 }
 "
+,Reg Exp,,http://events.swallowhill.com/Default.asp,"{
+  pager => {
+    link => qr/(Next \>\{\d+\})\n/i,
+    page_count => '4',
+  },
+  reject_event => {
+    summary => qr/discount/i,
+  },
+  location_to_venue => {
+    qr/daniel/i => 'swallowhill_danielshall',
+    qr/tuft/i => 'swallowhill_tufttheatre',
+    qr/four mile/i => 'fourmilepark',
+  },
+  repeat => [
+    [qr/$line\n+$day_name $date\n$time_ap .*\n$line/ => {
+      fields => [qw(summary day_name date start_time location)],
+    }],
+  ],
+}
+"
