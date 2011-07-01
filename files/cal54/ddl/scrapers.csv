@@ -1317,3 +1317,18 @@ v-benderstavern,Reg Exp,,http://www.benderstavern.com/calendar/,"{
   ],
 }
 "
+v-appaloosagrill,Reg Exp,,http://www.appaloosagrill.com/music,"{
+  repeat => [
+    [qr/$day.*\}\n$line/ => {
+      fields => [qw(day summary)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day $year, $time_ap/ => {
+            fields => [qw(day_name month day year start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
