@@ -1262,3 +1262,31 @@ v-skylarklounge,Reg Exp,,http://www.skylarklounge.com/cal.cfm,"{
   ],
 }
 "
+,Reg Exp,,http://www.thewalnutroom.com/calendar,"{
+  location_to_venue => {
+    qr/The Walnut Room/i => 'thewalnutroom',
+    qr/The Walnut Room Pizzeria/i => 'thewalnutroompizzeria',
+  },
+  reject_event => {
+    summary => qr/@/,
+  },
+  repeat => [
+    [qr/((.+?\}))\n$time_ap\@ (.+?)\n/ => {
+      fields => [qw(link url start_time location)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day/ => {
+            fields => [qw(day_name month day)],
+          }],
+          [qr/(.+?) on \d+\/\d+\/\d+ at The Walnut Room.*\n/i => {
+            fields => [qw(summary ignore)],
+          }],
+          [qr/(.+?) @ The Pizzeria/i => {
+            fields => [qw(summary)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
