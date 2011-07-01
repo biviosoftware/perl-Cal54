@@ -1332,3 +1332,15 @@ v-appaloosagrill,Reg Exp,,http://www.appaloosagrill.com/music,"{
   ],
 }
 "
+v-loladenver,Reg Exp,,http://www.loladenver.com/Events/LiveMusic/tabid/636/Default.aspx,"{
+  default_values => {
+    start_time => '2:30pm',
+    end_time => '5:00pm',
+  },
+  repeat => [
+    [qr/$month $day: (.+?)\n/ => {
+      fields => [qw(month day summary)],
+    }],
+  ],
+}
+"
