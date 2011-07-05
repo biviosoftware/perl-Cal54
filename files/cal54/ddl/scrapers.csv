@@ -1364,3 +1364,22 @@ v-loladenver,Reg Exp,,http://www.loladenver.com/Events/LiveMusic/tabid/636/Defau
   ],
 }
 "
+v-cervantesmasterpiece,Reg Exp,,http://www.cervantesmasterpiece.com/calendar/view/2011/7#5,"{
+  accept_event => {
+    location => qr/cervantes/i,
+  },
+  reject_event => {
+    location => qr/cancelled/i,
+  },
+  once => [
+    [qr/$month $year/ => {
+      fields => [qw(month year)],
+    }],
+  ],
+  repeat => [
+    [qr/$day\n(.+?)\n$time_ap@(.+?)\n/ => {
+      fields => [qw(day summary start_time location)],
+    }],
+  ],
+}
+"
