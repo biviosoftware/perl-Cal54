@@ -1398,3 +1398,14 @@ v-betanightclub,Reg Exp,,http://fla.vor.us/wafform.aspx?_act=eventlisting&Client
   ],
 }
 "
+v-thinmantavern,Reg Exp,,http://www.thinmantavern.com/2011/06/its_time_for_summer_movie_seas.html,"{
+  default_values => {
+    start_time => '7:30pm',
+  },
+  repeat => [
+    [qr/$month $day \- (.+?)\n/ => {
+      fields => [qw(month day summary)],
+    }],
+  ],
+}
+"
