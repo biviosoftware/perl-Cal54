@@ -1383,3 +1383,18 @@ v-cervantesmasterpiece,Reg Exp,,http://www.cervantesmasterpiece.com/calendar/vie
   ],
 }
 "
+v-betanightclub,Reg Exp,,http://fla.vor.us/wafform.aspx?_act=eventlisting&ClientID=642,"{
+  repeat => [
+    [qr/(.+?\})\n+(.+?)\n$month $day $year\n/ => {
+      fields => [qw(summary ignore month day year)],
+      follow_link => {
+        once => [
+          [qr/show starts at\n+$time_ap/i => {
+            fields => [qw(start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
