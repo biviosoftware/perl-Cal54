@@ -11,6 +11,9 @@ __PACKAGE__->new({
     http_host => 'admin.cal54.com',
     mail_host => 'admin.cal54.com',
     uri => 'admin.cal54',
+    Color => [
+	@{__PACKAGE__->internal_c4_color},
+    ],
     Constant => [
 	[ThreePartPage_want_ForumDropDown => 1],
 	[ThreePartPage_want_dock_left_standard => 1],

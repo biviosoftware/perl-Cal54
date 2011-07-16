@@ -58,7 +58,7 @@ sub merge_overrides {
 	}),
     },
     $proto->default_merge_overrides({
-	version => 10,
+	version => $proto->CURRENT_VERSION,
 	root => 'Cal54',
 	prefix => 'c4',
 	owner => 'CAL54, Inc.',

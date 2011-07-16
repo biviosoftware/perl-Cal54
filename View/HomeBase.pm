@@ -8,6 +8,10 @@ use Bivio::UI::ViewLanguageAUTOLOAD;
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
 
+sub VIEW_SHORTCUTS {
+    return 'Cal54::ViewShortcuts';
+}
+
 sub internal_body {
     my(undef, $body) = @_;
     view_put(
@@ -16,26 +20,41 @@ sub internal_body {
     return;
 }
 
-sub internal_copy {
-    return DIV_c4_copy(Prose(
-	"&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL54&trade;'); Boulder's Calendar&trade;"));
+sub internal_footer {
+    return Join([
+	vs_unless_robot(
+	    Join([
+		IfMobile(
+		    '',
+		    XLink('C4_HOME_SUGGEST_SITE', 'c4_home_suggest_site'),
+		),
+		MobileToggler(),
+	    ]),
+	),
+	TaskMenu([
+	    'c4_about',
+	    'C4_HOME_LIST',
+	], {
+	    class => 'c4_footer_menu task_menu',
+	}),
+	DIV_c4_copy(Prose(
+	"&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL54&trade;'); SPAN_c4_site_tag('Make a ');SPAN_c4_site_local('local');SPAN_c4_site_tag(' scene.&trade;');")),
+    ]);
     
 }
 
 sub internal_logo {
     return Link(
-	Join([
-	    SPAN_c4_logo_name('CAL54'),
-	    SPAN_c4_logo_tag(q{Boulder's Calendar}),
-	]),
+	SPAN_c4_logo(''),
 	'C4_HOME_LIST',
-	'c4_logo_text',
+	'c4_logo',
     );
 }
 
 sub xhtml {
+    my($proto) = @_;
     view_class_map('XHTMLWidget');
-    view_shortcuts(b_use('View.ThreePartPage')->VIEW_SHORTCUTS);
+    view_shortcuts($proto->VIEW_SHORTCUTS);
     view_put(
 	home_base_body => '',
     );
@@ -47,7 +66,7 @@ sub xhtml {
 		'c4_home',
 	    ),
 	    head => Join([
-		Title(['CAL54', q{Boulder's Calendar}, 'Events, Concerts, Lectures']),
+		Title(['CAL54', q{Make a LOCAL scene}, 'Events, Concerts, Lectures, Live Music']),
 		MobileDetector(),
 		IfMobile(
 		    META({

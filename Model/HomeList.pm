@@ -73,6 +73,23 @@ sub internal_initialize {
     });
 }
 
+sub internal_load_rows {
+    my($self, $query) = @_;
+    my(@res) = shift->SUPER::internal_load_rows(@_);
+    my($fields) = $self->[$_IDI];
+    $query->put(
+	defined($fields->{next_page}) ? (
+	    has_next => 1,
+	    next_page => $fields->{next_page},
+	) : (),
+	defined($fields->{prev_page}) ? (
+	    has_prev => 1,
+	    prev_page => $fields->{prev_page},
+	) : (),
+    );
+    return @res;
+}
+
 sub internal_post_load_row {
     my($self, $row) = @_;
     return 0
@@ -155,9 +172,11 @@ sub internal_pre_load {
 
 sub internal_prepare_statement {
     my($self, $stmt, $query) = @_;
-    $self->new_other('PopularList')->load_all;
-    $self->new_other('WhenList')->load_all;
-    $self->[$_IDI] = {month_day => ''};
+    my($fields) = $self->[$_IDI] = {
+	month_day => '',
+	prev_page => undef,
+	next_page => undef,
+    };
     $self->new_other('TimeZoneList')->load_all;
     my($dt) = $query->unsafe_get('begin_date')
 	|| $query->unsafe_get('when');
@@ -175,7 +194,7 @@ sub internal_prepare_statement {
     my($s) = ($_TS->from_literal($query->unsafe_get('what')))[0];
     return
 	unless defined($s);
-    $s =~ s/^\s+|\s+$//;
+    $s =~ s/^\s+|\s+$//g;
     return
 	unless length($s);
     my($offset) = ($query->get('page_number') - 1) * $query->get('count');
@@ -200,12 +219,20 @@ sub internal_prepare_statement {
 	),
     )];
     splice(@$rows, 0, $offset);
+    $fields->{next_page} = $query->get('page_number') + 1
+	if my $has_next = @$rows > $n;
+    $fields->{prev_page} = $query->get('page_number') - 1
+	if $offset;
+    $query->put(
+	has_prev => 1,
+	has_next => $has_next,
+    );
     $stmt->where(
 	$stmt->IN(
 	    'CalendarEvent.calendar_event_id',
 	    [map(
 		$_->{primary_id},
-		@$rows > $n ? splice(@$rows, 0, $n) : @$rows,
+		$has_next ? splice(@$rows, 0, $n) : @$rows,
 	    )],
 	),
     );

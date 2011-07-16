@@ -12,6 +12,9 @@ sub internal_site_css {
 div.c4_scraper {
    width: 50em;
 }
+tr.c4_event_hidden {
+  Color('c4_event_hidden-background');
+}
 EOF
 }
 

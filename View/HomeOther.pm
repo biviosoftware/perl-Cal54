@@ -14,9 +14,9 @@ sub error_default {
     );
 }
 
-sub internal_body {
+sub internal_title_and_body {
     my($self, $title, $body) = @_;
-    return $self->SUPER::internal_body(Join([
+    return $self->internal_body(Join([
 	Grid([[
 	    $self->internal_logo->put(cell_class => 'c4_left'),
 	    DIV_c4_home_title($title)
@@ -25,12 +25,19 @@ sub internal_body {
 	    class => 'c4_grid c4_suggest_site',
 	}),
 	DIV_c4_home_other($body),
-	$self->internal_copy,
+	$self->internal_footer,
     ]));
 }
 
+sub wiki_view {
+    return shift->internal_title_and_body(
+	vs_text_as_prose('wiki_view_topic'),
+	Wiki(),
+    );
+}
+
 sub suggest_site {
-    return shift->internal_body(
+    return shift->internal_title_and_body(
 	vs_text_as_prose('title.C4_HOME_SUGGEST_SITE'),
 	vs_simple_form('SuggestSiteForm', [
 	    map({"SuggestSiteForm.$_"} qw(suggestion email)),

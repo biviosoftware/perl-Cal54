@@ -18,10 +18,6 @@ __PACKAGE__->new({
 	[c4_list => ''],
 	[c4_home_bottom_pager => ''],
     ],
-    Color => [
-	[c4_button => 0xffffff],
-	[c4_button_background => 0x0088ce],
-    ],
     Constant => [
 	[robots_txt_allow_all => 0],
     ],

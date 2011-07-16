@@ -142,11 +142,8 @@ sub review_list {
 		     ['!', 'is_hidden']],
 	    ]),
 	], {
-	    row_bgcolor => If(['is_hidden'],
-	        'c4_pager_a',
-	    ),
-	    even_row_class => '',
-	    odd_row_class => '',
+	    even_row_class => If(['is_hidden'], 'c4_event_hidden'),
+	    odd_row_class => If(['is_hidden'], 'c4_event_hidden'),
 	}),
     ]));
 }

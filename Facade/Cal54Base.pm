@@ -13,4 +13,10 @@ sub internal_c4_text {
     ];
 }
 
+sub internal_c4_color {
+    return [
+	[c4_event_hidden_background => 0xefe98a],
+    ];
+}
+
 1;

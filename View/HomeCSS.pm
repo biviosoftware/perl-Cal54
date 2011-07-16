@@ -29,34 +29,20 @@ table.c4_grid td {
   vertical-align: top;
 }
 td.c4_left {
-  padding: 16px 1em 1ex 1.5em;
+  padding: 14px .5em 0 .5em;
 }
-a.c4_logo_text {
+a.c4_logo {
+  background: Icon('logo'); left no-repeat;
+  height: Icon(qw(logo height));px;
+  width: Icon(qw(logo width));px;
   display: block;
   vertical-align: top;
-  margin-top: -.5ex;
 }
-a.c4_logo_text:hover {
+a.c4_logo:hover {
   text-decoration: none;
 }
-span.c4_logo_name {
-  Font('c4_logo_name');
-}
-td.c4_left span.c4_logo_name {
-  display: block;
-  margin-bottom: .2ex;
-  margin-right: -.2ex;
-}
-span.c4_logo_tag {
-  Font('c4_logo_tag');
-}
-td.c4_left span.c4_logo_tag {
-  margin-top: -1.5ex;
-  display: block;
-  text-align: right;
-}
 table.c4_grid td.c4_right {
-  padding-right: 1.5em;
+  padding-right: .5em;
   padding-top: 20px;
 } 
 div.c4_query {
@@ -89,7 +75,7 @@ span.c4_pager a.c4_weekend {
   Font('c4_pager_weekend');
 }
 span.c4_pager {
-  padding-top: .6ex;
+  padding-top: 4px;
   padding-bottom: .5ex;
   display: block;
   width: 100%;
@@ -182,6 +168,12 @@ div.c4_copy {
 span.c4_site_name {
   Font('c4_site_name');
 }
+span.c4_site_tag {
+  Font('c4_site_tag');
+}
+span.c4_site_local {
+  Font('c4_site_local');
+}
 div.c4_copy {
   Font('c4_copy');
 }
@@ -189,20 +181,19 @@ div.c4_copy {
   margin-top: 2ex;
   margin-bottom: 4ex;
 }
-body.c4_mobile a.c4_logo_text {
-  margin-top: 0;
-  margin-bottom: .5ex;
+div.c4_mobile_header a.c4_logo {
+  margin-bottom: 1ex;
+  margin-left: auto;
+  margin-right: auto;
 }
-div.c4_mobile_header a.c4_logo_text,
 div.c4_mobile_header div.c4_query {
-  margin-left: .5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 div.c4_mobile_header {
   width: 100%;
   padding: .5ex 0 1ex 0;
-}
-div.c4_mobile_header span.c4_logo_tag {
-  margin-left: .5em;
 }
 div.c4_mobile_header a:hover {
   text-decoration: none;
@@ -213,7 +204,14 @@ body.c4_mobile div.c4_list {
   padding-left: .5em;
   padding-right: .5em;
 }
-a.c4_suggest_link {
+div.c4_footer_menu {
+  margin-top: 1.5ex;
+  text-align: center;
+}
+div.c4_footer_menu a {
+  Font('c4_item_a');
+}
+a.c4_home_suggest_site {
   margin-top: 1.5ex;
   display: block;
   text-align: center;

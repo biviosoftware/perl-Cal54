@@ -11,23 +11,22 @@ my($_SELF) = __PACKAGE__->new({
     http_host => 'www.cal54.com',
     mail_host => 'cal54.com',
     Color => [
-	[[qw(c4_site_name c4_site_tag c4_query_what)]=> 0x0],
-	[[qw(c4_item_a c4_item_a_hover b_mobile_toggler_a)] => 0x2200C1],
-        [c4_item_a_visited => 0x551A8B],
-	[[qw(c4_date c4_time c4_query_submit_background c4_query_background c4_grid_background c4_home_title_background)] => 0x0088ce],
-	[[qw(c4_pager c4_pager_selected_border c4_form_background c4_logo_name c4_logo_tag c4_home_title)] => 0xffffff],
+	@{__PACKAGE__->internal_c4_color},
+	[[qw(c4_site_name c4_site_tag c4_query_what b_mobile_toggler_selected)]=> 0x0],
+	[[qw(c4_item_a c4_item_a_hover b_mobile_toggler_a)] => 0x0077b3],
+        [c4_item_a_visited => 0x591899],
+	[[qw(c4_date c4_time c4_query_submit_background c4_query_background c4_grid_background c4_home_title_background c4_featured_background c4_button_background)] => 0xc82127],
+	[[qw(c4_pager c4_pager_selected_border c4_form_background c4_logo_name c4_logo_tag c4_home_title c4_featured c4_button c4_query_submit)] => 0xffffff],
 	[[qw(c4_pager_weekend c4_query_submit_border c4_query_submit)] => 0xf8f8f8],
 	[[qw(c4_pager_a)]=> 0xe8e8e8],
-	[b_mobile_toggler_selected => 0x0],
-	[c4_featured => 0xffffff],
-	[c4_featured_background => 0x0088ce],
-#TODO: needed for mobile only
-	[c4_button => 0xffffff],
-	[c4_button_background => 0x0088ce],
     ],
     Constant => [
 	[ActionError_default_view => 'HomeOther->error_default'],
 	[ActionError_want_wiki_view => 0],
+	[xlink_c4_about => {
+	    task_id => 'C4_HOME_WIKI_VIEW',
+	    path_info => 'About',
+	}],
     ],
     CSS => [
 	[c4_query_what => 'width: 25em;'],
@@ -65,14 +64,12 @@ my($_SELF) = __PACKAGE__->new({
     ],
     Font => [
 	[body => []],
-	[b_mobile_toggler_selected => []],
-	[b_mobile_toggler_a => []],
+	[b_mobile_toggler_selected => ['normal_weight']],
+	[b_mobile_toggler_a => ['normal_weight']],
 	[c4_home => ['family=Arial, Helvetica, sans-serif', 'medium']],
 	[c4_query_submit => ['size=18px']],
 	[c4_logo_name => [qw(uppercase bold 48px)]],
 	[c4_home_title => [qw(uppercase bold 200%)]],
-	[c4_logo_tag => [qw(uppercase bold 80%)]],
-	[c4_site_name => ['bold']],
 	[c4_excerpt => ['80%']],
 	[c4_query_what => '120%'],
 	[c4_pager_weekend => 'bold'],
@@ -93,18 +90,27 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_featured => ['100%']],
 #TODO: needed for mobile only
 	[c4_button => ['100%']],
+	[c4_site_local => ['bold', 'family="American Typewriter", Courier']],
+	[c4_site_tag => ['family="American Typewriter", Courier']],
+	[c4_site_name => ['bold', 'family="American Typewriter", Courier']],
     ],
     Task => [
 	[C4_HOME_LIST => 'search'],
 	[C4_HOME_USER_TRACKING => '/pub/url'],
 	[C4_HOME_SUGGEST_SITE => '/pub/suggest-site'],
+	[C4_HOME_WIKI_VIEW => '/bp/*'],
     ],
     Text => [
 	@{__PACKAGE__->internal_c4_text},
+	[Image_alt => [
+	    c4_local => 'This establishment supports local events by local artists.',
+	]],
 	[c4_site_tag => q{SPAN(q{The Web's Calendar});SPAN_c4_tm('&trade;');}],
 	[home_page_uri => '/search'],
 	[[qw(title xlink)] => [
 	    C4_HOME_SUGGEST_SITE => 'Comments or Suggestions?',
+	    c4_about => 'About',
+	    C4_HOME_LIST => 'Home',
 	]],
 	[SuggestSiteForm => [
 	    'prose.prologue' => q{BR(); Know of a local venue we don't cover? Let us know!BR();BR(); Any other comments, questions, or suggestions are appreciated.BR();BR();},

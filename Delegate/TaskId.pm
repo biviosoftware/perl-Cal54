@@ -132,6 +132,16 @@ sub get_delegate_info {
 	    DATA_READ&FEATURE_SITE_ADMIN
 	    View.Venue->list_csv
         )],
+	[qw(
+	    C4_HOME_WIKI_VIEW
+	    516
+	    GENERAL
+	    ANYBODY
+	    Action.SiteForum
+	    Action.WikiView->execute_prepare_html
+	    View.HomeOther->wiki_view
+	    want_author=0
+	)],
     ]);
 }
 
