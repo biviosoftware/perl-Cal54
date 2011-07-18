@@ -1409,3 +1409,11 @@ v-thinmantavern,Reg Exp,,http://www.thinmantavern.com/2011/06/its_time_for_summe
   ],
 }
 "
+v-atasteofcolorado,Reg Exp,,http://www.atasteofcolorado.com/music_main.asp,"{
+  repeat => [
+    [qr/$day_name, $month $day, $time_ap\n.+? by\n.+?\}\n+$line/ => {
+      fields => [qw(day_name month day start_time summary)],
+    }],
+  ],
+}
+"
