@@ -1007,14 +1007,25 @@ v-minersalley,Reg Exp,,http://www.minersalley.com/cgi-bin/calendar.pl?view=Month
 }
 "
 v-budweisereventscenter,Reg Exp,,http://www.budweisereventscenter.com/calendar.cfm,"{
+  pager => {
+    link => qr/\n\w{3}\n($month\{\d+\})/,
+    page_count => 2,
+  },
   once => [
     [qr/$month $year\n+next month/i => {
-      fields => [qw(month year)],
+      fields => [qw(ignore year)],
     }],
   ],
   repeat => [
     [qr/$day\n+(.+?\})\n$time_ap/ => {
-      fields => [qw(day summary start_time)],
+      fields => [qw(ignore summary ignore)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day, $year - $time_ap\n$line\n+$line/ => {
+            fields => [qw(day_name month day year start_time ignore description)],
+          }],
+        ],
+      },
     }],
   ],
 }
