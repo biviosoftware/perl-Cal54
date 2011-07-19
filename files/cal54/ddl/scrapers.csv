@@ -1430,3 +1430,11 @@ v-atasteofcolorado,Reg Exp,,http://www.atasteofcolorado.com/music_main.asp,"{
 "
 v-dickensopera,Google,,http://www.dickensoperahouse.com/calendar.htm,
 v-dickensoperahouse,Google,,http://www.dickensoperahouse.com/calendar.htm,
+v-hodishalfnote,Reg Exp,,http://www.hodishalfnote.com/,"{
+  repeat => [
+    [qr/$date (\d+\:\d+)\:\d+.*\}\n$line/ => {
+      fields => [qw(date start_time_pm summary)],
+    }],
+  ],
+}
+"
