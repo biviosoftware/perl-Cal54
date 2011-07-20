@@ -1465,3 +1465,30 @@ v-hodishalfnote,Reg Exp,,http://www.hodishalfnote.com/,"{
   ],
 }
 "
+,Reg Exp,,http://www.denvermusicvenues.com/events/Soda-Jerk-Presents.htm,"{
+  pager => {
+    link => qr/\|\n($month\{\d+\})/,
+    page_count => 2,
+  },
+  location_to_venue => {
+    qr/sheep/i => 'denvermusicvenues_sheep',
+    qr/marquis/i => 'denvermusicvenues_marquis',
+    qr/summit/i => 'denvermusicvenues_summit',
+  },
+  repeat => [
+    [qr/$month $day, $year\n+(.+?\})/ => {
+      fields => [qw(month day year summary)],
+      follow_link => {
+        once => [
+          [qr/door time.*?$time_ap/i => {
+            fields => [qw(start_time)],
+          }],
+          [qr/you are at $line/i => {
+            fields => [qw(location)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
