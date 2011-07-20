@@ -1438,3 +1438,30 @@ v-hodishalfnote,Reg Exp,,http://www.hodishalfnote.com/,"{
   ],
 }
 "
+,Reg Exp,,http://calendar.botanicgardens.org/calendar,"{
+  pager => {
+    link => qr/\n($month.*?\{\d+\})\n/,
+    page_count => 2,
+  },
+  reject_event => {
+    summary => qr/free|cancelled/i,
+    location => qr/sold out/i,
+  },
+  location_to_venue => {
+    qr/denver botanic gardens at chatfield/i => 'botanicgardens_chatfield',
+    qr/denver botanic gardens/i => 'botanicgardens',
+  },
+  repeat => [
+    [qr/(.+?\})\n$time_ap\s*@ $line/ => {
+      fields => [qw(summary ignore location)],
+      follow_link => {
+        once => [
+          [qr/$month $day, $time_ap\s*-\s*$time_ap\n/ => {
+            fields => [qw(month day start_time end_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
