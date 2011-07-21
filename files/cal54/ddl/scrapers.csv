@@ -1503,3 +1503,14 @@ v-tutti103,Reg Exp,,http://www.tutti103.com/Upcoming_Events.html,"{
   ],
 }
 "
+v-denverparamount,Reg Exp,,http://www.denverparamount.com/,"{
+  repeat => [
+    [qr/(.+?\})\n+.*?\n+.*?$day_name, $month $day, $year - $time_ap/ => {
+      fields => [qw(summary day_name month day year start_time)],
+    }],
+    [qr/(.+?\})\n+(.+?) \/\/ $month $day, $year - $time_ap/ => {
+      fields => [qw(summary description month day year start_time)],
+    }],
+  ],
+}
+"
