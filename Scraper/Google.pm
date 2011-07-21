@@ -15,14 +15,21 @@ sub internal_import {
     my($end) = $_D->add_months($start, 6);
     my($html) = $self->c4_scraper_get(
 	$self->get('scraper_list')->get('Website.url'));
-    my($cal_id) =
-	$$html =~ m{www\.google\.com/calendar/embed\?[^"]*?src=(.*?)(\&|")};
-    b_die('failed to parse cal_id: ', $html)
-	unless $cal_id;
-    return unless $self->parse_ics($self->c4_scraper_get(
-	'http://www.google.com/calendar/ical/' . $cal_id
-	    . '/public/basic.ics'), $start, $end);
-    _add_event_urls($self, $cal_id, $start, $end);
+    my($query) = $$html =~ m{www\.google\.com/calendar/embed\?([^"]+)"};
+    b_die('failed to parse calendar url: ', $html)
+	unless $query;
+    my($found_src);
+
+    while ($query =~ m{src=(.*?)(\&|")}g) {
+	my($cal_id) = $1;
+	$found_src = 1;
+	next unless $self->parse_ics($self->c4_scraper_get(
+	    'http://www.google.com/calendar/ical/' . $cal_id
+		. '/public/basic.ics'), $start, $end);
+	_add_event_urls($self, $cal_id, $start, $end);
+    }
+    b_die('missing src in query: ', $query)
+	unless $found_src;
     return;    
 }
 
@@ -66,6 +73,7 @@ sub _add_event_urls {
     }
 
     foreach my $event (@{$self->get('events')}) {
+	next unless $event->{uid};
 	my($uid) = delete($event->{uid});
 	$uid =~ s/\@.*$//;
 	$event->{url} = $url_by_id->{$uid . '-'
