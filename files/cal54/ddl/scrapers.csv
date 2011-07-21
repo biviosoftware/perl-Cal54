@@ -1492,3 +1492,11 @@ v-hodishalfnote,Reg Exp,,http://www.hodishalfnote.com/,"{
   ],
 }
 "
+v-tutti103,Reg Exp,,http://www.tutti103.com/Upcoming_Events.html,"{
+  repeat => [
+    [qr/$day_name.*?\s*$month $day\n+$line\n+.+?$time_ap\s*.*?\s*$time_ap/ => {
+      fields => [qw(day_name month day summary start_time end_time)],
+    }],
+  ],
+}
+"
