@@ -1514,3 +1514,18 @@ v-denverparamount,Reg Exp,,http://www.denverparamount.com/,"{
   ],
 }
 "
+v-arvadacenter,Reg Exp,,http://arvadacenter.org/on-stage,"{
+  repeat => [
+    [qr/(.+?\})\n$month $day\nbuy tickets.*\}/i => {
+      fields => [qw(summary ignore ignore)],
+      follow_link => {
+        once => [
+          [qr/$month $day, $year\n+$line\n+.*?starts.*?$time_ap/ => {
+            fields => [qw(month day year ignore start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
