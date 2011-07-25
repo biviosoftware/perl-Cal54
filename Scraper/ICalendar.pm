@@ -12,11 +12,20 @@ my($_RR) = b_use('MIME.RRule');
 
 sub internal_import {
     my($self) = @_;
-    my($html) = $self->c4_scraper_get(
-	$self->get('scraper_list')->get('Website.url'));
-    my($ical_url) = $$html =~ m{"(http[^"]+/ical/[^"]+)"};
-    b_die('no ical ref') unless $ical_url;
-    $self->parse_ics($self->c4_scraper_get($ical_url));
+    my($url) = $self->get('scraper_list')->get('Website.url');
+
+    unless ($url =~ /ical/) {
+	my($html) = $self->c4_scraper_get($url);
+	my($ical_url) = $$html =~ m{["'](\w+://[^"']+/ical/[^"']+)["']};
+
+	unless ($ical_url) {
+	    ($ical_url) = $$html =~ m{["'](\w+://[^"']+feed=ical[^"']*)["']};
+	}
+	b_die('no ical ref:') unless $ical_url;
+	$url = $ical_url;
+    }
+    $url =~ s/webcal:/http:/;
+    $self->parse_ics($self->c4_scraper_get($url));
     return;    
 }
 
