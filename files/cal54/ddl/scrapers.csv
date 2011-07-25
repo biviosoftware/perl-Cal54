@@ -1540,3 +1540,23 @@ v-rockbottom_denverdowntown,Reg Exp,,http://www.rockbottom.com/denver-downtown/e
   ],
 }
 "
+v-gothictheatre,Reg Exp,,http://www.gothictheatre.com/calendar/,"{
+  pager => {
+    link => qr/\n($month.*?\{\d+\})\n/,
+    page_count => 3,
+  },
+  accept_event => {
+    location => qr/gothic theatre/i,
+  },
+  once => [
+    [qr/$month $year/ => {
+      fields => [qw(month year)],
+    }],
+  ],
+  repeat => [
+    [qr/$day\n(.+?\})\n$time_ap\@\s*$line/ => {
+      fields => [qw(day summary start_time location)],
+    }],
+  ],
+}
+"
