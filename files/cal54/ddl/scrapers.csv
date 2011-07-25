@@ -1576,3 +1576,28 @@ v-hudsongardens,Reg Exp,,http://www.hudsongardens.org/content/concerts2011.php,"
   ],
 }
 "
+v-elitchgardens,Reg Exp,,http://elitchgardens.com/entertainment/concerts/,"{
+  default_values => {
+    start_time => '7 pm',
+  },
+  repeat => [
+    [qr/$month $day\n$line\n+$line/ => {
+      fields => [qw(month day summary description)],
+    }],
+  ],
+  once => [
+    [qr/$year concert series/i => {
+      fields => [qw(year)],
+    }],
+  ],
+}
+"
+v-townhallartscenter,Reg Exp,,http://www.townhallartscenter.com/concerts_events.asp,"{
+  repeat => [
+    [qr/$line\n*$day_name, $month $day, $year.*?\s*$time_ap\n+$line/s => {
+      fields => [qw(summary day_name month day year start_time description)],
+    }],
+  ],
+}
+"
+
