@@ -1560,3 +1560,19 @@ v-gothictheatre,Reg Exp,,http://www.gothictheatre.com/calendar/,"{
   ],
 }
 "
+v-hudsongardens,Reg Exp,,http://www.hudsongardens.org/content/concerts2011.php,"{
+  default_values => {
+    start_time => '6:30 pm',
+  },
+  once => [
+    [qr/$year schedule/i, => {
+      fields => [qw(year)],
+    }],
+  ],
+  repeat => [
+    [qr/(.+?) - $day_name, $month $day\n$line/i => {
+      fields => [qw(summary day_name month day description)],
+    }],
+  ],
+}
+"
