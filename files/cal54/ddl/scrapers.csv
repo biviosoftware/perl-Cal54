@@ -1575,26 +1575,4 @@ v-hudsongardens,Reg Exp,,http://www.hudsongardens.org/content/concerts2011.php,"
     }],
   ],
 }
-
-"
-v-library_louisvilleco,Reg Exp,,http://library.louisvilleco.gov/RESOURCES/EventCalendar/tabid/537/ModuleID/771/mctl/EventMonth/Default.aspx,"{
-  repeat => [
-    [qr/(($time_ap - (.+?)\{\d+\}))\n/ => {
-      fields => [qw(link url ignore summary)],
-      follow_link => {
-        once => [
-          [qr/end date\/time:\n$day_name, $month $day, $year $time_ap/i => {
-            fields => [qw(ignore ignore ignore ignore end_time)],
-          }],
-          [qr/$day_name, $month $day, $year $time_ap\n/ => {
-            fields => [qw(day_name month day year start_time)],
-          }],
-          [qr/description:\n+$line/i => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
 "
