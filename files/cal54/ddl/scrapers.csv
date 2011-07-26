@@ -1627,3 +1627,17 @@ v-lannies,ICalendar,,http://lannies.com/?page_id=6735,"{
   },
 }
 "
+v-grizzlyrose,Reg Exp,,http://www.grizzlyrose.com/calendar/default.html,"{
+  default_values => {
+    start_time => '8:30 pm',
+  },
+  repeat => [
+    [qr/\n$month $day\n+(.+?\})\n(.+?\})/ => {
+      fields => [qw(month day summary description)],
+    }],
+    [qr/\n$month $day\n+(.+?\})/ => {
+      fields => [qw(month day summary)],
+    }],
+  ],
+}
+"
