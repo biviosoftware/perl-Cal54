@@ -149,6 +149,8 @@ sub html_parser_start {
 sub unsafe_get_link_for_text {
     my($self, $text) = @_;
     my($fields) = $self->[$_IDI];
+    return undef
+	unless $fields->{links};
     my($index) = $text =~ /.*?\{(\d+)\}/;
     return undef
 	unless defined($index) && $index < @{$fields->{links}};
