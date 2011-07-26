@@ -1621,3 +1621,9 @@ v-library_louisvilleco,Reg Exp,,http://library.louisvilleco.gov/RESOURCES/EventC
   ],
 }
 "
+v-lannies,ICalendar,,http://lannies.com/?page_id=6735,"{
+  reject_event => {
+    summary => qr/date is moving/i
+  },
+}
+"
