@@ -1600,7 +1600,6 @@ v-townhallartscenter,Reg Exp,,http://www.townhallartscenter.com/concerts_events.
   ],
 }
 "
-
 v-library_louisvilleco,Reg Exp,,http://library.louisvilleco.gov/RESOURCES/EventCalendar/tabid/537/ModuleID/771/mctl/EventMonth/Default.aspx,"{
   repeat => [
     [qr/(($time_ap - (.+?\})))/ => {
