@@ -1641,3 +1641,14 @@ v-grizzlyrose,Reg Exp,,http://www.grizzlyrose.com/calendar/default.html,"{
   ],
 }
 "
+v-jazzatjacks,RSS,,http://www.localendar.com/public/long49?style=M3,"{
+  reject_event => {
+    summary => qr/happy|\$/i,
+  },
+  repeat => [
+    [qr/$day_name, $day $month $year $time_ap/ => {
+      fields => [qw(day_name day month year start_time)],
+    }],
+  ],
+}
+"
