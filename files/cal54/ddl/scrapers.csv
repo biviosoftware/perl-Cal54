@@ -1663,3 +1663,14 @@ v-operacolorado,Reg Exp,,http://www.operacolorado.org/about/calendar/,"{
   ],
 }
 "
+v-milehighmarketplace,Reg Exp,,http://milehighmarketplace.com/en/Events/,"{
+  accept_event => {
+    location => qr/marketplace stage/i,
+  },
+  repeat => [
+    [qr/$day_name, $month $day\n(.+?) - (.+?)\n$time_ap - $time_ap/ => {
+      fields => [qw(day_name month day summary location start_time end_time)],
+    }],
+  ],
+}
+"
