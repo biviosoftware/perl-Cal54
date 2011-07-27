@@ -1652,3 +1652,14 @@ v-jazzatjacks,RSS,,http://www.localendar.com/public/long49?style=M3,"{
   ],
 }
 "
+v-operacolorado,Reg Exp,,http://www.operacolorado.org/about/calendar/,"{
+  accept_event => {
+    location => qr/ellie caulkins opera house/i,
+  },
+  repeat => [
+    [qr/$line\n*$day_name, $month $day, $year at $time_ap\n$line/ => {
+      fields => [qw(summary day_name month day year start_time location)],
+    }],
+  ],
+}
+"
