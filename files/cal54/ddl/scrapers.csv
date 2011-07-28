@@ -465,11 +465,6 @@ v-luckypiepizza,Reg Exp,,http://www.luckypiepizza.com/lucky-pie-events.html,"{
 }
 "
 v-madcapimprov,Google,,http://www.madcapimprov.com/ourshows/ticketsandtimes.html,"{
-  reject_event => {
-    summary => qr/SOLD OUT/i,
-  },
-}
-"
 v-millennium,Reg Exp,,http://www.millenniumfac.com/ArtistSeries.html,"{
   default_values => {
     start_time => '5:30pm',
