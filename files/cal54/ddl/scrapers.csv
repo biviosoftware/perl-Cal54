@@ -1613,39 +1613,6 @@ v-milehighmarketplace,Reg Exp,,http://milehighmarketplace.com/en/Events/,"{
   ],
 }
 "
-,Reg Exp,,http://www.coclubs.com/calendar/,"{
-  pager => {
-    link => qr/format\?\n+.+?\n+($line)/i,
-    page_count => 2,
-  },
-  reject_event => {
-    summary => qr/Ladies Night|$day_name|beat the clock|climax|happy hour/i,
-  },
-  location_to_venue => {
-    qr/Vinyl/i => 'coclubs_vinyl',
-    qr/Church/i => 'coclubs_thechurch',
-    qr/Buddha/i => 'coclubs_funkybuddha',
-    qr/2am/i => 'coclubs_2am',
-    qr/Bar Standard/i => 'coclubs_barstandard',
-    qr/City Hall/i => 'coclubs_cityhall',
-    qr/Milk/i => 'coclubs_milk',
-    qr/Mo's/i => 'coclubs_mos',
-    qr/Living Room/i => 'coclubs_livingroom',
-  },
-  repeat => [
-    [qr/$line\n+$day_name $month $day\n+$line/ => {
-      fields => [qw(summary ignore ignore ignore location)],
-      follow_link => {
-        once => [
-          [qr/$day_name, $month $day\n+$time_ap/ => {
-            fields => [qw(day_name month day start_time)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
 ,Reg Exp,,http://www.thewalnutroom.com/calendar,"{
   location_to_venue => {
     qr/The Walnut Room/i => 'thewalnutroom',
@@ -1677,6 +1644,42 @@ v-milehighmarketplace,Reg Exp,,http://milehighmarketplace.com/en/Events/,"{
                 }],
               ],
             },
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+,Reg Exp,,http://www.coclubs.com/calendar/,"{
+  pager => {
+    link => qr/format\?\n+.+?\n+($line)/i,
+    page_count => 2,
+  },
+  reject_event => {
+    summary => qr/Ladies Night|$day_name|beat the clock|climax|happy hour/i,
+  },
+  location_to_venue => {
+    qr/Vinyl/i => 'coclubs_vinyl',
+    qr/Church/i => 'coclubs_thechurch',
+    qr/Buddha/i => 'coclubs_funkybuddha',
+    qr/2am/i => 'coclubs_2am',
+    qr/Bar Standard/i => 'coclubs_barstandard',
+    qr/City Hall/i => 'coclubs_cityhall',
+    qr/Milk/i => 'coclubs_milk',
+    qr/Mo's/i => 'coclubs_mos',
+    qr/Living Room/i => 'coclubs_livingroom',
+  },
+  repeat => [
+    [qr/$line\n+$day_name $month $day\n+$line/ => {
+      fields => [qw(summary day_name month day location)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day\n+$time_ap/ => {
+            fields => [qw(ignore ignore ignore start_time)],
+          }],
+          [qr/\/\/ \d+\+\n+(.+?\n+.+?\n)/ => {
+            fields => [qw(description)],
           }],
         ],
       },
