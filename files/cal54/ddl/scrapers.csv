@@ -1425,6 +1425,9 @@ v-hodishalfnote,Reg Exp,,http://www.hodishalfnote.com/,"{
           [qr/you are at $line/i => {
             fields => [qw(location)],
           }],
+          [qr/buy tickets\n+.*?\n+(.+?)\n/i => {
+            fields => [qw(description)],
+          }],
         ],
       },
     }],
