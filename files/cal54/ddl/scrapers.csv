@@ -543,6 +543,13 @@ v-redrocksonline,Reg Exp,,http://www.redrocksonline.com/Calendar.aspx,"{
   repeat => [
     [qr/$day_name, $month $day, $year\n$line\s*$time_ap/s => {
       fields => [qw(day_name month day year summary start_time)],
+      follow_link => {
+        once => [
+          [qr/purchase tickets.*?:\n.+?\}\n+(.+?\n+.+?\n)/i => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
     }],
   ],
 }
