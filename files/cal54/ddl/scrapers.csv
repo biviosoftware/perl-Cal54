@@ -1386,7 +1386,6 @@ v-hodishalfnote,Reg Exp,,http://www.hodishalfnote.com/,"{
   },
   reject_event => {
     summary => qr/free|cancelled/i,
-    location => qr/sold out/i,
   },
   location_to_venue => {
     qr/denver botanic gardens at chatfield/i => 'botanicgardens_chatfield',
