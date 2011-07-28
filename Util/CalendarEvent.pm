@@ -103,6 +103,12 @@ sub import_events_for_all_venues {
     my($self) = @_;
     $self->initialize_ui;
     $_S->do_all($self->model('ScraperList')->unauth_load_all);
+    $self->commit_or_rollback;
+    $self->req->set_realm(undef);
+    $self->req->set_user(undef);
+    $self->new_other('Search')->put(
+	force => 1,
+    )->rebuild_db;
     return;
 }
 
