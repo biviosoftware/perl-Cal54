@@ -1228,7 +1228,7 @@ v-soiled_dove,Reg Exp,,http://www.tavernhg.com/soiled_dove/shows?site=soiled_dov
 "
 v-sparktheater,Reg Exp,,http://sparktheater.org/tickets/,"{
   repeat => [
-    [qr/\d+ (.+?) $day_name $month $day @ $time_ap\n+$line\n+$line/ => {
+    [qr/\d+ (.+?) $day_name $month $day @ $time_ap.+?\}\n+$line?\n+$line/ => {
       fields => [qw(summary day_name month day start_time ignore description)],
     }],
   ],
