@@ -1373,8 +1373,18 @@ v-dickensopera,Google,,http://www.dickensoperahouse.com/calendar.htm,
 v-dickensoperahouse,Google,,http://www.dickensoperahouse.com/calendar.htm,
 v-hodishalfnote,Reg Exp,,http://www.hodishalfnote.com/,"{
   repeat => [
-    [qr/$date (\d+\:\d+)\:\d+.*\}\n$line/ => {
-      fields => [qw(date start_time_pm summary)],
+    [qr/(($date \d+\:\d+\:\d+.*\}))\n$line/ => {
+      fields => [qw(link url date summary)],
+      follow_link => {
+        once => [
+          [qr/share this event\n+$line\n+$line/i => {
+            fields => [qw(ignore description)],
+          }],
+          [qr/$year $time_ap/ => {
+            fields => [qw(ignore start_time)],
+          }],
+        ],
+      },
     }],
   ],
 }
