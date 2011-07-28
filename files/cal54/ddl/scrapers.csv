@@ -1240,34 +1240,6 @@ v-skylarklounge,Reg Exp,,http://www.skylarklounge.com/cal.cfm,"{
   ],
 }
 "
-,Reg Exp,,http://www.thewalnutroom.com/calendar,"{
-  location_to_venue => {
-    qr/The Walnut Room/i => 'thewalnutroom',
-    qr/The Walnut Room Pizzeria/i => 'thewalnutroompizzeria',
-  },
-  reject_event => {
-    summary => qr/@/,
-  },
-  repeat => [
-    [qr/((.+?\}))\n$time_ap\@ (.+?)\n/ => {
-      fields => [qw(link url start_time location)],
-      follow_link => {
-        once => [
-          [qr/$day_name, $month $day/ => {
-            fields => [qw(day_name month day)],
-          }],
-          [qr/(.+?) on \d+\/\d+\/\d+ at The Walnut Room.*\n/i => {
-            fields => [qw(summary ignore)],
-          }],
-          [qr/(.+?) @ The Pizzeria/i => {
-            fields => [qw(summary)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
 v-benderstavern,Reg Exp,,http://www.benderstavern.com/calendar/,"{
   reject_event => {
     summary => qr/Bingo yo/i,
@@ -1667,6 +1639,44 @@ v-milehighmarketplace,Reg Exp,,http://milehighmarketplace.com/en/Events/,"{
         once => [
           [qr/$day_name, $month $day\n+$time_ap/ => {
             fields => [qw(day_name month day start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+,Reg Exp,,http://www.thewalnutroom.com/calendar,"{
+  location_to_venue => {
+    qr/The Walnut Room/i => 'thewalnutroom',
+    qr/The Walnut Room Pizzeria/i => 'thewalnutroompizzeria',
+  },
+  reject_event => {
+    summary => qr/@/,
+  },
+  repeat => [
+    [qr/((.+?\}))\n$time_ap\@ (.+?)\n/ => {
+      fields => [qw(link url start_time location)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day/ => {
+            fields => [qw(day_name month day)],
+          }],
+          [qr/(.+?) on \d+\/\d+\/\d+ at The Walnut Room.*\n/i => {
+            fields => [qw(summary ignore)],
+          }],
+          [qr/$time_ap\n+$line\n+(.+?) @ the pizzeria.+?\n/i => {
+            fields => [qw(ignore ignore summary)],
+          }],
+          [qr/((\(read more\)\{\d+\}))/i => {
+            fields => [qw(link url)],
+            follow_link => {
+              once => [
+                [qr/add to favorites\n+$line\n/i => {
+                  fields => [qw(description)],
+                }],
+              ],
+            },
           }],
         ],
       },
