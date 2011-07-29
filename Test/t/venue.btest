@@ -18,6 +18,7 @@ submit_form(my $values = {
     state => 'CO',
     zip => '80303',
 });
+find_page_with_text($name);
 follow_link($name);
 verify_form($values);
 submit_form($values = {
