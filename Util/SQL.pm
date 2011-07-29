@@ -24,14 +24,4 @@ sub initialize_test_data {
     return @res;
 }
 
-sub internal_upgrade_db_oskar_blues {
-    my($self) = @_;
-    $self->req->with_realm('oskar_scraper', sub {
-        $self->model('Scraper')->load->update({
-	    scraper_type => b_use('Type.Scraper')->REG_EXP,
-	});
-    });			       
-    return;
-}
-
 1;
