@@ -534,6 +534,9 @@ v-pepsicenter,Reg Exp,,http://www.pepsicenter.com/Calendar.aspx,"{
 }
 "
 v-redrocksonline,Reg Exp,,http://www.redrocksonline.com/Calendar.aspx,"{
+  reject_event => {
+    summary => qr/private event/i,
+  },
   repeat => [
     [qr/$day_name, $month $day, $year\n$line\s*$time_ap/s => {
       fields => [qw(day_name month day year summary start_time)],
