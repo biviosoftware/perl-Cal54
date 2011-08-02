@@ -1566,7 +1566,7 @@ v-library_louisvilleco,Reg Exp,,http://library.louisvilleco.gov/RESOURCES/EventC
           [qr/end date\/time\:\n$day_name, $month $day, $year $time_ap/i => {
             fields => [qw(day_name month day year end_time)],
           }],
-          [qr/description:\n+$line/ => {
+          [qr/description:\n+$line/i => {
             fields => [qw(description)],
           }],
         ],
