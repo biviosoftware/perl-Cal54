@@ -410,7 +410,7 @@ v-invescofieldatmilehigh,Reg Exp,,http://www.invescofieldatmilehigh.com/index.ph
     }],
   ],
   repeat => [
-    [qr/$day\n+(\D+), $time_ap.*\}\n/ => {
+    [qr/$day\n+(\D+) $time_ap.*\}\n/ => {
       fields => [qw(day summary start_time)],
       follow_link => {
         once => [
