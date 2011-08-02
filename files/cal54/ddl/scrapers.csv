@@ -1712,3 +1712,19 @@ v-milehighmarketplace,Reg Exp,,http://milehighmarketplace.com/en/Events/,"{
   ],
 }
 "
+v-cityparkpavilion,Reg Exp,,http://www.cityparkjazz.org/schedule.html,"{
+  accept_event => {
+    location => qr/pavilion.*city park/i,
+  },
+  once => [
+    [qr/all $year summer concerts are from (\d+) - $time_ap at the (.+?)\n/i => {
+      fields => [qw(ignore start_time_pm end_time location)],
+    }],
+  ],
+  repeat => [
+    [qr/$month $day, $year - $line\n+$line/ => {
+      fields => [qw(month day year summary description)],
+    }],
+  ],
+}
+"
