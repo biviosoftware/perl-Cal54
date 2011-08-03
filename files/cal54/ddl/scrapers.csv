@@ -1728,3 +1728,11 @@ v-cityparkpavilion,Reg Exp,,http://www.cityparkjazz.org/schedule.html,"{
   ],
 }
 "
+v-nationalwestern,Reg Exp,,http://www.nationalwestern.com/schedule/,"{
+  repeat => [
+    [qr/(\n$day_name, $month $day, $year\n+)$time_ap\n(.*?)\n(.+?)\n(.+?)\n\n/s => {
+      fields => [qw(save day_name month day year start_time summary location description)],
+    }],
+  ],
+}
+"
