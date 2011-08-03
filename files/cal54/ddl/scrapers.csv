@@ -1736,3 +1736,23 @@ v-nationalwestern,Reg Exp,,http://www.nationalwestern.com/schedule/,"{
   ],
 }
 "
+v-bovinemetropolis,Reg Exp,,http://www.bovinemetropolis.com/improv/bovine/view=BOV006,"{
+  repeat => [
+    [qr/$day\n$time_ap\n(.+?\})\n+/ => {
+      fields => [qw(ignore ignore summary)],
+      follow_link => {
+        once => [
+          [qr/players\{\d+\}\n+$line\n$line\n+$line/i => {
+            fields => [qw(summary ignore description)],
+          }],
+        ],
+        repeat => [
+          [qr/$day_name, $month $day.*\nat $time_ap/i => {
+            fields => [qw(day_name month day start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
