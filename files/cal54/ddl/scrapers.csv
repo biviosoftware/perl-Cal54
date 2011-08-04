@@ -1796,3 +1796,25 @@ v-jazzon2ndave,Reg Exp,,http://www.jazzon2ndave.com/performance-schedule.html,"{
   ],
 }
 "
+v-dazzlejazz,Reg Exp,,http://www.dazzlejazz.com/index.php?s=20,"{
+  pager => {
+    link => qr/\d{4}\n(\>\>\{\d+\}\n)/,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/($day)\n(.+?\})/ => {
+      fields => [qw(save ignore summary)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day, $year/ => {
+            fields => [qw(day_name month day year)],
+          }],
+          [qr/.*$time_ap :: (.+?) ::.*?\n+(.+?\n+.+?\n)/ => {
+            fields => [qw(start_time ignore description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
