@@ -1756,3 +1756,27 @@ v-bovinemetropolis,Reg Exp,,http://www.bovinemetropolis.com/improv/bovine/view=B
   ],
 }
 "
+v-larimerlounge,Reg Exp,,http://larimerlounge.com/calendar.cfm,"{
+  reject_event => {
+    summary => qr/happy hour/i,
+  },
+  repeat => [
+    [qr/((view details\{\d+\}))/i => {
+      fields => [qw(link url)],
+      follow_link => {
+        once => [
+          [qr/$day_name $month $day \| $line\n+$line/ => {
+            fields => [qw(day_name month day ignore summary)],
+          }],
+          [qr/$time_ap\n+doors open/i => {
+            fields => [qw(start_time)],
+          }],
+          [qr/(.+? @ $time_ap\{\d+\}\n$line)/ => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
