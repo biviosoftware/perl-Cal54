@@ -1780,3 +1780,19 @@ v-larimerlounge,Reg Exp,,http://larimerlounge.com/calendar.cfm,"{
   ],
 }
 "
+v-jazzon2ndave,Reg Exp,,http://www.jazzon2ndave.com/performance-schedule.html,"{
+  default_values => {
+    month => 'August',
+    day => '20',
+    year => '2011',
+  },
+  repeat => [
+    [qr/(\d+:\d{2})(.+?)\n\((.+?)\)/ => {
+      fields => [qw(start_time_pm summary description)],
+    }],
+    [qr/(\d+:\d{2})(.+?)\n\((.+?\n.+?)\)/ => {
+      fields => [qw(start_time_pm summary description)],
+    }],
+  ],
+}
+"
