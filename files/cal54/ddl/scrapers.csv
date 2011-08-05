@@ -1830,3 +1830,25 @@ v-niwot_rhythm,Reg Exp,,http://www.niwot.com/events/rhythm_on_the_rails/,"{
   ],
 }
 "
+v-bandimere,Reg Exp,,http://www.bandimere.com/calendar/,"{
+  pager => {
+    link => qr/\d{4}(\n$month\{\d+\}\n)/,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/$day\n(.+?\})/ => {
+      fields => [qw(ignore summary)],
+      follow_link => {
+        once => [
+          [qr/first run: $time_ap/i => {
+            fields => [qw(start_time)],
+          }],
+          [qr/$day_name, $month $day, $year/ => {
+            fields => [qw(day_name month day year)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
