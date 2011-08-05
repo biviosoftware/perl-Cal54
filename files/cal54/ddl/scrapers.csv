@@ -1495,7 +1495,7 @@ v-arvadacenter,Reg Exp,,http://arvadacenter.org/on-stage,"{
 "
 v-rockbottom_denverdowntown,Reg Exp,,http://www.rockbottom.com/denver-downtown/events,"{
   default_values => {
-    start_time => '5pm',
+    start_time => '6pm',
   },
   repeat => [
     [qr/$month $day:$line/ => {
