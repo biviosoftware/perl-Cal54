@@ -399,40 +399,6 @@ v-innisfree,Reg Exp,,http://www.innisfreepoetry.com/,"{
   ],
 }
 "
-v-invescofieldatmilehigh,Reg Exp,,http://www.invescofieldatmilehigh.com/index.php?section=calendar_events&subsection=overview,"{
-  pager => {
-    link => qr/(>>\{\d+\})/,
-    page_count => 3,
-  },
-  once => [
-    [qr/$month $year/ => {
-      fields => [qw(month year)],
-    }],
-  ],
-  repeat => [
-    [qr/$day\n+(\D+): $time_ap.*\}\n/ => {
-      fields => [qw(day summary start_time)],
-      follow_link => {
-        once => [
-          [qr// => {
-            fields => [qw()],
-          }],
-        ],
-      },
-    }],
-    [qr/$day\n+(\D+), $time_ap.*\}\n/ => {
-      fields => [qw(day summary start_time)],
-      follow_link => {
-        once => [
-          [qr// => {
-            fields => [qw()],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
 v-cigar,Google,,http://www.johnnyscigars.com/calendar/,"{
   reject_event => {
     summary => qr/happy\s+hour/i,
@@ -1845,6 +1811,36 @@ v-bandimere,Reg Exp,,http://www.bandimere.com/calendar/,"{
           }],
           [qr/$day_name, $month $day, $year/ => {
             fields => [qw(day_name month day year)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+v-invescofieldatmilehigh,Reg Exp,,http://www.invescofieldatmilehigh.com/index.php?section=calendar_events&subsection=overview,"{
+  pager => {
+    link => qr/(>>\{\d+\})/,
+    page_count => 3,
+  },
+  once => [
+    [qr/$month $year/ => {
+      fields => [qw(month year)],
+    }],
+  ],
+  repeat => [
+    [qr/$day\n+(\D+): $time_ap.*\}\n/ => {
+      fields => [qw(day summary start_time)],
+    }],
+    [qr/$day\n+(\D+), $time_ap.*\}\n/ => {
+      fields => [qw(day summary start_time)],
+    }],
+    [qr/$day\n+(\D+\{\d+\})\n+/ => {
+      fields => [qw(day summary)],
+      follow_link => {
+        once => [
+          [qr/\n$day_name, $month $day, $year $time_ap/ => {
+            fields => [qw(ignore ignore ignore ignore start_time)],
           }],
         ],
       },
