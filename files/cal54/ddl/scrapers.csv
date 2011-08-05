@@ -1818,3 +1818,15 @@ v-dazzlejazz,Reg Exp,,http://www.dazzlejazz.com/index.php?s=20,"{
   ],
 }
 "
+v-niwot_rhythm,Reg Exp,,http://www.niwot.com/events/rhythm_on_the_rails/,"{
+  default_values => {
+    start_time => '6:45pm',
+    end_time => '8:45pm',
+  },
+  repeat => [
+    [qr/($month)\n+\d+\/$day:\n(.+?\})\n$line?/ => {
+      fields => [qw(save month day summary description)],
+    }],
+  ],
+}
+"
