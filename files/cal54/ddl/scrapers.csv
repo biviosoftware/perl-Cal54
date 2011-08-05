@@ -1848,3 +1848,14 @@ v-invescofieldatmilehigh,Reg Exp,,http://www.invescofieldatmilehigh.com/index.ph
   ],
 }
 "
+v-foothillsanimalshelter,Reg Exp,,http://www.foothillsanimalshelter.org/news-events/events/,"{
+  accept_event => {
+    location => qr/foothills animal shelter/i,
+  },
+  repeat => [
+    [qr/$line\n+$day_name, $month $day\n+$time_ap-$time_ap\n+$line\n+$line/ => {
+      fields => [qw(summary day_name month day start_time end_time location description)],
+    }],
+  ],
+}
+"
