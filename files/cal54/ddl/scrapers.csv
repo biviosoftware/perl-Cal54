@@ -1859,3 +1859,16 @@ v-foothillsanimalshelter,Reg Exp,,http://www.foothillsanimalshelter.org/news-eve
   ],
 }
 "
+v-mckinners,Reg Exp,,http://www.mckinners.com/,"{
+  once => [
+    [qr/live music starts at $time_ap/i => {
+      fields => [qw(start_time)],
+    }],
+  ],
+  repeat => [
+    [qr/$month (\d+).+?- (.+?)\n$line/ => {
+      fields => [qw(month day summary description)],
+    }],
+  ],
+}
+"
