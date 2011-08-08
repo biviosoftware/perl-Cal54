@@ -1910,3 +1910,19 @@ v-piperinn,Reg Exp,,http://www.piperinn.com/Portals/0/Skins/piperindexnew//Event
   ],
 }
 "
+v-bridgewatergrill,Reg Exp,,http://www.bridgewatergrill.com/live-music,"{
+  reject_event => {
+    summary => qr/no music/i,
+  },
+  once => [
+    [qr/evenings $time_ap to $time_ap/i => {
+      fields => [qw(start_time end_time)],
+    }],
+  ],
+  repeat => [
+    [qr/$month (\d+).*?\n+$line/ => {
+      fields => [qw(month day summary)],
+    }],
+  ],
+}
+"
