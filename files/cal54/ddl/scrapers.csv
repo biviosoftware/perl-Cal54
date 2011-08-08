@@ -1889,3 +1889,11 @@ v-qspub,Reg Exp,,http://www.qspub.com/live_entertainment_calendar,"{
   ],
 }
 "
+v-littletonbarandgrill,Reg Exp,,http://www.littletonbarandgrill.com/events/Rox-Bar-Grill.htm,"{
+  repeat => [
+    [qr/(.+?)\n.+?\n+$month $day, $year @ $time_ap/ => {
+      fields => [qw(summary month day year start_time)],
+    }],
+  ],
+}
+"
