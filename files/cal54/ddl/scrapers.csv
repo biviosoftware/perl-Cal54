@@ -1872,3 +1872,20 @@ v-mckinners,Reg Exp,,http://www.mckinners.com/,"{
   ],
 }
 "
+v-thedraftsportsgrill,Google,,http://www.thedraftsportsgrill.com/frames/calendars/monthly.htm,"{
+  reject_event => {
+    summary => qr/guy\'s night|ladies night/i,
+  },
+}
+"
+v-qspub,Reg Exp,,http://www.qspub.com/live_entertainment_calendar,"{
+  repeat => [
+    [qr/($month \d+ & $day\n(.+?)$time_ap)/ => {
+      fields => [qw(save month day summary start_time)],
+    }],
+    [qr/$month $day.*?\n(.+?)$time_ap/ => {
+      fields => [qw(month day summary start_time)],
+    }],
+  ],
+}
+"
