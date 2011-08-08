@@ -1897,3 +1897,16 @@ v-littletonbarandgrill,Reg Exp,,http://www.littletonbarandgrill.com/events/Rox-B
   ],
 }
 "
+v-piperinn,Reg Exp,,http://www.piperinn.com/Portals/0/Skins/piperindexnew//Events/tabid/53/Default.aspx,"{
+  once => [
+    [qr/$month $year/ => {
+      fields => [qw(month year)],
+    }],
+  ],
+  repeat => [
+    [qr/$day\nlive music\n$time_ap\n$line/i => {
+      fields => [qw(day start_time summary)],
+    }],
+  ],
+}
+"
