@@ -92,17 +92,6 @@ v-cityoflafayettereccenter,Reg Exp,,http://www.cityoflafayette.com/Calendar.asp,
   ],
 }
 "
-v-bordersbroomfield,Reg Exp,,http://www.borders.com/online/store/StoreDetailView_415,"{
-  reject_event => {
-    description => qr/cancelled/i,
-  },
-  repeat => [
-    [qr/$line\s*$line\s*$line\s*$month $day, $year $time_ap/ => {
-      fields => [qw(summary description ignore month day year start_time)],
-    }],
-  ],
-}
-"
 v-boulderbookstore,ICalendar,,http://boulderbookstore.indiebound.com/event,
 v-historymuseum,Reg Exp,,http://www.boulderhistory.org/calendar.asp,"{
   accept_event => {
