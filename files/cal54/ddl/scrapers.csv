@@ -1878,11 +1878,14 @@ v-thedraftsportsgrill,Google,,http://www.thedraftsportsgrill.com/frames/calendar
 "
 v-qspub,Reg Exp,,http://www.qspub.com/live_entertainment_calendar,"{
   repeat => [
-    [qr/($month \d+ & $day\n(.+?)$time_ap)/ => {
+    [qr/(\n$month\.? \d+) \& $day(\n(.+?)$time_ap\n)/ => {
+      fields => [qw(save month day save summary start_time)],
+    }],
+    [qr/(\n)$month\.? $day.*?\n(.+?)$time_ap\n/ => {
       fields => [qw(save month day summary start_time)],
     }],
-    [qr/$month $day.*?\n(.+?)$time_ap/ => {
-      fields => [qw(month day summary start_time)],
+    [qr/\n$day_name $month $day (.+?)$time/ => {
+      fields => [qw(day_name month day summary start_time_pm)],
     }],
   ],
 }
