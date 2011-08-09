@@ -86,13 +86,15 @@ sub internal_collect_data {
 	next unless $v;
 	$v =~ s/\{\d+\}//g;
     }
+    my($start_time, $end_time) =
+	$self->internal_parse_times($current, $self->get_scraper_aux);
     my($rec) = {
 	summary => _clean($current->{summary}),
 	description => _clean($current->{description}),
 	url => $current->{url}
 	    || $self->get('scraper_list')->get('Website.url'),
-	dtstart => _date($self, 'start', $current),
-	dtend => _date($self, 'end', $current),
+	dtstart => _date($self, $current, $start_time),
+	dtend => _date($self, $current, $end_time),
 	location => $current->{location},
     };
     return $rec;
@@ -103,6 +105,37 @@ sub internal_import {
     _process_url($self, $self->get_scraper_aux,
         $self->get('scraper_list')->get('Website.url'), {});
     return;
+}
+
+sub internal_parse_times {
+    my($self, $current, $aux) = @_;
+    my($start, $start_ap) = _normalize_time($self, 'start', $current);
+    return undef unless $start;
+    my($end, $end_ap) = _normalize_time($self, 'end', $current);
+    my($start_hour) = $start =~ /^(\d+)/;
+
+    if ($aux->{max_start_hour}) {
+	$start_ap = $start_hour > $aux->{max_start_hour}
+	    ? 'am' : 'pm';
+    }
+
+    unless ($start_ap) {
+	b_die('missing start time am/pm: ', $current)
+	    unless $end_ap;
+	my($end_hour) = $end =~ /^(\d+)/;
+	b_die('time missing start or end hour: ', $current)
+	    unless $end_hour && $start_hour;
+	$start_ap = ($start_hour > $end_hour)
+	    || ($end_hour eq '12' && $start_hour ne '12')
+		? ($end_ap eq 'pm' ? 'am' : 'pm')
+		: $end_ap;
+    }
+    return (
+	$start . $start_ap,
+	$end
+	    ? ($end . $end_ap)
+	    : undef
+    );
 }
 
 sub month_as_int {
@@ -143,50 +176,10 @@ sub _clean {
     return $str;
 }
 
-sub _convert_named_time {
-    my($self, $time) = @_;
-    if (lc($time) eq 'midnight') {
-	$time = '12am';
-    }
-    elsif (lc($time) eq 'noon') {
-	$time = '12pm';
-    }
-    return $time;
-}
-
 sub _date {
-    my($self, $type, $current) = @_;
-    # month, day, year, start_time, end_time, start_time_pm, end_time_pm
-    my($time) = $current->{$type . '_time'} || $current->{$type . '_time_pm'};
-    return undef unless $time;
-    $time = _convert_named_time($self, $time);
-
-    unless ($time =~ /(a|p)\.?m\.?$/i) {
-	if ($type eq 'start' && $current->{start_time}
-		&& $current->{end_time}) {
-	    $current->{end_time} =
-		_convert_named_time($self, $current->{end_time});
-	    my($ap) = $current->{end_time} =~ /(a|p)/i;
-	    b_die('end_time missing a|p: ', $current)
-		unless $ap;
-	    my($end_hour) = $current->{end_time} =~ /^(\d+)/;
-	    my($start_hour) = $current->{start_time} =~ /^(\d+)/;
-	    b_die('time missing start or end hour: ', $current)
-		unless $end_hour && $start_hour;
-	    $time .= (
-		($start_hour > $end_hour)
-		    || ($end_hour eq '12' && $start_hour ne '12')
-		? ($ap =~ /p/i ? 'a' : 'p')
-		: $ap) . 'm';
-	}
-	else {
-	    b_die('time missing a/pm: ', $time, ' ', $current)
-		unless $current->{$type . '_time_pm'};
-	    my($hour) = $time =~ /^(\d+)/;
-	    return undef unless $hour && $hour > 3 && $hour < 12;
-	    $time .= 'pm';
-	}
-    }
+    my($self, $current, $time) = @_;
+    return undef
+	unless $time;
     my($month);
 
     if ($current->{date}) {
@@ -232,6 +225,28 @@ sub _month_regexp {
     return qr/\b(${regexp})\b/i;
 }
 
+sub _normalize_time {
+    my($self, $type, $current) = @_;
+    my($time) = $current->{"${type}_time"} || $current->{"${type}_time_pm"};
+    return undef unless $time;
+
+    if (lc($time) eq 'midnight') {
+	return qw(12 am);
+    }
+    elsif (lc($time) eq 'noon') {
+	return qw(12 pm);
+    }
+    elsif ($time =~ /(a|p)/i) {
+	my($ap) = $1;
+	$time =~ s/\s*(a|p).*$//i;
+	return ($time, lc($ap) . 'm');
+    }
+    elsif ($current->{"${type}_time_pm"}) {
+	return ($time, $time =~ /^12/ ? 'am' : 'pm');
+    }
+    return ($time, '');
+}
+
 sub _process_url {
     my($self, $cfg, $url, $current) = @_;
     my($html) = $self->c4_scraper_get($url);
@@ -267,7 +282,7 @@ sub _process_url {
 
 	if ($current->{summary}) {
 	    push(@{$self->get('events')}, 
-		 $self->internal_collect_data($current));
+	        $self->internal_collect_data($current));
 	}
 
 	foreach my $field (keys(%$current)) {
