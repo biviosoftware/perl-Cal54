@@ -11,6 +11,7 @@ my($_MONTHS) = {
     map((
 	(lc($_->get_name) => $_->as_int),
 	(lc(substr($_->get_name, 0, 3)), $_->as_int),
+	(lc(substr($_->get_name, 0, 4)), $_->as_int),
     ), b_use('Type.Month')->get_list),
 };
 my($_DAY_NAMES) = [
