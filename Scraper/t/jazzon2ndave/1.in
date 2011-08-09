@@ -1,0 +1,62 @@
+[
+  {
+    'description' => 'CCJA All Stars',
+    'dtend' => '2455794 61200',
+    'dtstart' => '2455794 61200',
+    'location' => undef,
+    'summary' => 'Colorado Conservatory for the Jazz Arts',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.jazzarts.org/',
+    'venue' => 'jazzon2ndave'
+  },
+  {
+    'description' => 'Salsa and Latin Jazz',
+    'dtend' => '2455794 66600',
+    'dtstart' => '2455794 66600',
+    'location' => undef,
+    'summary' => 'Conjunto Colores',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.conjuntocolores.com/',
+    'venue' => 'jazzon2ndave'
+  },
+  {
+    'description' => 'Straight-Ahead Jazz',
+    'dtend' => '2455794 72000',
+    'dtstart' => '2455794 72000',
+    'location' => undef,
+    'summary' => 'Paul Warburton Quartet with Brad Goode',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.paulwarburton.com/',
+    'venue' => 'jazzon2ndave'
+  },
+  {
+    'description' => 'Big Band Jazz',
+    'dtend' => '2455794 77400',
+    'dtstart' => '2455794 77400',
+    'location' => undef,
+    'summary' => 'CU Jazz Ensemble -- Directed by Dr. John Davis',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://music.colorado.edu/ensembles/jazz',
+    'venue' => 'jazzon2ndave'
+  },
+  {
+    'description' => 'Contemporary Jazz',
+    'dtend' => '2455794 82800',
+    'dtstart' => '2455794 82800',
+    'location' => undef,
+    'summary' => 'Don Grusin Quartet',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.dongrusin.com/',
+    'venue' => 'jazzon2ndave'
+  },
+  {
+    'description' => 'New Orleans Jazz/Blues Legend, and from the HBO Series "Treme"',
+    'dtend' => '2455795 1800',
+    'dtstart' => '2455795 1800',
+    'location' => undef,
+    'summary' => 'Henry Butler',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.henrybutler.com/',
+    'venue' => 'jazzon2ndave'
+  }
+]

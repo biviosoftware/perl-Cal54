@@ -1,0 +1,27 @@
+# Copyright (c) 2011 CAL54, Inc.  All Rights Reserved.
+[
+    class() => [
+	internal_parse_times => [
+	    [{
+		start_time => 7,
+		end_time => '10pm',
+	    }] => [qw(7pm 10pm)],
+	    [{
+		start_time => 10,
+		end_time_pm => 3,
+	    }] => [qw(10am 3pm)],
+	    [{
+		start_time => '7:30',
+		end_time_pm => '12:00',
+	    }] => [qw(7:30pm 12:00am)],
+	    [{
+		start_time_pm => '7:30',
+	    }] => ['7:30pm', undef],
+	    [{
+		start_time => '11',
+	    }, {
+		max_start_hour => '9',
+	    }] => ['11am', undef],
+	],
+    ],
+];
