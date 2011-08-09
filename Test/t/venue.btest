@@ -33,6 +33,7 @@ submit_form($values = {
     state => 'NM',
     zip => '19199',
 });
+find_page_with_text($name);
 follow_link($name);
 verify_form($values);
 
