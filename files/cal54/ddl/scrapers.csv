@@ -463,7 +463,7 @@ v-nissis,Reg Exp,,http://www.nissis.com/lmcalendar.html,"{
         ],
         repeat => [
           [qr/(\n$day\s+)$time\s*\-\s*$time\s(.*?)(\n$time|\n$day\n|\nGathering Place)/s, {
-            fields => [qw(save day start_time_pm end_time_pm description save)],
+            fields => [qw(save day start_time end_time_pm description save)],
             summary_from_description => qr/(?:^|\n)([^\n]+\{\d+\})\n/s,
           }],
         ],
@@ -1747,17 +1747,15 @@ v-larimerlounge,Reg Exp,,http://larimerlounge.com/calendar.cfm,"{
 }
 "
 v-jazzon2ndave,Reg Exp,,http://www.jazzon2ndave.com/performance-schedule.html,"{
+  max_start_hour => 8,
   default_values => {
     month => 'August',
     day => '20',
     year => '2011',
   },
   repeat => [
-    [qr/(\d+:\d{2})(.+?)\n\((.+?)\)/ => {
-      fields => [qw(start_time_pm summary description)],
-    }],
-    [qr/(\d+:\d{2})(.+?)\n\((.+?\n.+?)\)/ => {
-      fields => [qw(start_time_pm summary description)],
+    [qr/\n$time(.+?)\n\((.+?)\)\n+$line/s => {
+      fields => [qw(start_time summary description url)],
     }],
   ],
 }
