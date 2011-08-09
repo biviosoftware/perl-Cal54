@@ -1703,18 +1703,22 @@ v-nationalwestern,Reg Exp,,http://www.nationalwestern.com/schedule/,"{
 }
 "
 v-bovinemetropolis,Reg Exp,,http://www.bovinemetropolis.com/improv/bovine/view=BOV006,"{
+  pager => {
+    link => qr/\n(\w+ >>\{\d+\})/i,
+    page_count => 3,
+  },
+  once => [
+    [qr/$month $year Sunday/i => {
+      fields => [qw(month year)],
+    }],
+  ],
   repeat => [
-    [qr/$day\n$time_ap\n(.+?\})\n+/ => {
-      fields => [qw(ignore ignore summary)],
+    [qr/(\n$day\n)$time_ap\n$line/ => {
+      fields => [qw(save day start_time summary)],
       follow_link => {
         once => [
-          [qr/players\{\d+\}\n+$line\n$line\n+$line/i => {
-            fields => [qw(summary ignore description)],
-          }],
-        ],
-        repeat => [
-          [qr/$day_name, $month $day.*\nat $time_ap/i => {
-            fields => [qw(day_name month day start_time)],
+          [qr/Players\{\d+\}\n+$line\n*$line\n*(.+?)\nTickets/is => {
+            fields => [qw(ignore ignore description)],
           }],
         ],
       },
@@ -1851,7 +1855,7 @@ v-foothillsanimalshelter,Reg Exp,,http://www.foothillsanimalshelter.org/news-eve
     location => qr/foothills animal shelter/i,
   },
   repeat => [
-    [qr/$line\n+$day_name, $month $day\n+$time_ap-$time_ap\n+$line\n+$line/ => {
+    [qr/$line\n+$day_name, $month $day\n+$time_span\n+$line\n+$line/ => {
       fields => [qw(summary day_name month day start_time end_time location description)],
     }],
   ],
