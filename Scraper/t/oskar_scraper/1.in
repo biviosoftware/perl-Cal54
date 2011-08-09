@@ -471,7 +471,7 @@
   },
   {
     'description' => 'Tyler Grant free 5:30-12:00am downstairs',
-    'dtend' => '2455722 64800',
+    'dtend' => '2455722 84600',
     'dtstart' => '2455722 84600',
     'location' => 'color#66cccc',
     'summary' => 'Tyler Grant',

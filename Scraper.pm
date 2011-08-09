@@ -308,6 +308,10 @@ sub _filter_events {
     foreach my $event (@{$self->get('events')}) {
 	next if $self->is_canceled($event->{summary});
 	$event->{dtend} ||= $event->{dtstart};
+
+	if ($_DT->is_greater_than($event->{dtstart}, $event->{dtend})) {
+	    $event->{dtend} = $event->{dtstart};
+	}
 	$event->{time_zone} ||= $self->get('time_zone');
 	next unless $_DT->is_greater_than($event->{dtend}, $date_time);
 	next unless _filter_event($self, 'accept', $event, $aux);
