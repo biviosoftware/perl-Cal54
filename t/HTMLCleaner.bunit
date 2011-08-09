@@ -7,6 +7,14 @@
 	clean_html => [
 	    [string_ref(''), 'http://x.com'] => [string_ref("\n")],
 	    [string_ref(<<'EOF'), 'http://x.com']
+<caption>August
+     &nbsp;
+     2011</caption>
+EOF
+		=> [string_ref(<<'EOF')],
+August 2011
+EOF
+	    [string_ref(<<'EOF'), 'http://x.com']
 <FONT FACE="Arial">
 <H3>FLINTSTONE , FRED</H3>
 </FONT>
