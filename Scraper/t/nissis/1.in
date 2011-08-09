@@ -611,8 +611,8 @@
   },
   {
     'description' => 'EASTER SUNDAY BRUNCH Reservations Recommended $19.95 $10.95.... 13 and under Under 5.... free Music by TBA SUNDAY EVENING CLOSED',
-    'dtend' => '2455677 14400',
-    'dtstart' => '2455677 14400',
+    'dtend' => '2455676 75600',
+    'dtstart' => '2455676 57600',
     'location' => undef,
     'summary' => 'EASTER SUNDAY BRUNCH',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
