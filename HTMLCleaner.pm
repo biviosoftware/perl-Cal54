@@ -163,9 +163,10 @@ sub unsafe_get_link_for_text {
 sub _append_text {
     my($self, $text) = @_;
     my($fields) = $self->[$_IDI];
-    $text =~ s/\s+/ /g;
     my($leading_white) = $text =~ /^(\s+)/;
     my($trailing_white) = $text =~ /\S(\s+)$/;
+    $text = ${$self->clean_text(\$text)};
+    $text =~ s/\s+/ /g;
     if ($fields->{soft_newline} && $fields->{text} !~ /\n$/s) {
 	$fields->{text} .= "\n";
 	$fields->{soft_newline} = 0;
@@ -174,7 +175,7 @@ sub _append_text {
 	$fields->{text} =~ /\s$/ || $fields->{text} eq ''
 	    ? ''
 	    : ($leading_white ? ' ' : ''),
-	${$self->clean_text(\$text)},
+        $text,
 	$trailing_white ? ' ' : '',
     );
     $fields->{text} .= $value;
