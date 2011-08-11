@@ -2,12 +2,14 @@
 # $Id$
 ListModel();
 req()->initialize_fully('C4_HOME_LIST');
-my($title_key) = 'title' . random_string();
+my($title_key) = 'bunit-title' . random_string();
 my($tag_key) = 'tag' . random_string();
 my($desc_key) = 'desc' . random_string();
 DateTime()->set_test_now('12/12/2050 12:0:0');
 my($date) = DateTime()->now;
-req()->set_realm('v-nissis');
+req()->set_realm(unauth_model('Scraper', {
+    default_venue_id => realm_id('v-nissis'),
+})->get('scraper_id'));
 model('CalendarEvent')->do_iterate(sub {
     my($ce) = @_;
     $ce->cascade_delete;
@@ -15,36 +17,45 @@ model('CalendarEvent')->do_iterate(sub {
 }, 'unauth_iterate_start', {
     url => 'http://homelist.bunit',
 });
-my($ce) = model('CalendarEvent')->create_realm(
-    {
+
+my($ce);
+foreach my $i (0 .. 7) {
+    my($d) = DateTime()->add_days($date, + $i);
+    my($m) = model('CalendarEvent')->create_realm({
 	realm_id => req('auth_id'),
-	dtstart => $date,
-	dtend => DateTime()->add_seconds($date, '7200'),
+	dtstart => $d,
+	dtend => DateTime()->add_seconds($d, 7200),
 	time_zone => TimeZone()->AMERICA_DENVER,
 	location => $tag_key,
-	description => $desc_key,
+	description => $desc_key . "_$i",
 	url => 'http://homelist.bunit',
     },
     {
 	display_name => $title_key,
-    },
-);
-model('VenueEvent')->create({
-    venue_id => req('auth_id'),
-    calendar_event_id => $ce->get('calendar_event_id'),
-});
-model('HomeQueryForm', {});
+    });
+    model('VenueEvent')->create({
+	venue_id => realm_id('v-nissis'),
+	calendar_event_id => $m->get('calendar_event_id'),
+    });
+    $ce = $m;
+}
+
 commit();
+model('HomeQueryForm', {});
+DateTime()->set_test_now(DateTime()->add_days($date, 7));
+$date = DateTime()->now;
+
+#req()->set_realm(undef);
 my($rows);
 [
     load_page => [
         [{begin_date => Date()->add_days(Date()->from_datetime($date), -1)}] => [
 	    {
 		'RealmOwner.display_name' => $title_key,
-		'owner.RealmOwner.display_name' => q{Nissi's},
+		'venue.RealmOwner.display_name' => q{Nissi's},
 #TODO: Write tests just for time formatting, move outside module
 		start_end_am_pm => '5am - 7',
-		month_day => 'Thursday December 12, 2050',
+		month_day => 'Thursday December 19, 2050',
 		'CalendarEvent.time_zone' => 'AMERICA_DENVER',
 	    },
 	],
@@ -66,16 +77,16 @@ my($rows);
 		DateTime()->set_test_now(undef);
 	    },
 	),
-        [{count => 3, what => 'the'}] => sub {
+        [{count => 3, what => $title_key}] => sub {
 	    $rows = shift->get('object')->map_rows;
 	    assert_equals(3, scalar(@$rows));
 	    return 1;
 	},
-        [{count => 3, what => 'the', page_number => 2}] => sub {
+        [{count => 3, what => $title_key, page_number => 2}] => sub {
 	    my($rows2) = shift->get('object')->map_rows;
 	    assert_not_equals(
-		$rows->[0]->{'RealmOwner.display_name'}, 
-		$rows2->[0]->{'RealmOwner.display_name'},
+		$rows->[0]->{'CalendarEvent.calendar_event_id'},
+		$rows2->[0]->{'CalendarEvent.calendar_event_id'},
 	    );
 	    assert_equals(3, scalar(@$rows2));
 	    return 1;
