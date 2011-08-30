@@ -74,13 +74,13 @@ sub delete_scraper {
 sub export_scrapers {
     my($self) = @_;
     return _csv($self, 'ScraperList',
-        'default_venue.RealmOwner.name,Scraper.scraper_type,scraper.RealmOwner.name,Website.url,Scraper.scraper_aux');
+        'Website.url,default_venue.RealmOwner.name,Scraper.scraper_type,scraper.RealmOwner.name,Scraper.scraper_aux', 'o=3a');
 }
 
 sub export_venues {
     my($self) = @_;
     return _csv($self, 'VenueList',
-        'RealmOwner.name,RealmOwner.display_name,Website.url,calendar.Website.url,Email.email,Phone.phone,Address.street1,Address.street2,Address.city,Address.state,Address.zip,Address.country,SearchWords.value');
+        'RealmOwner.display_name,RealmOwner.name,Website.url,calendar.Website.url,Email.email,Phone.phone,Address.street1,Address.street2,Address.city,Address.state,Address.zip,Address.country,SearchWords.value');
 }
 
 sub import_events {
@@ -166,9 +166,9 @@ sub init_venues {
 }
 
 sub _csv {
-    my($self, $list, $cols) = @_;
+    my($self, $list, $cols, $query) = @_;
     $self->req->set_realm('site-admin');
-    my($csv) = $self->new_other('ListModel')->csv($list, '', $cols);
+    my($csv) = $self->new_other('ListModel')->csv($list, $query || '', $cols);
     $$csv =~ s/\n+Notes:.*$/\n/s || b_die();
     return $csv;
 }
