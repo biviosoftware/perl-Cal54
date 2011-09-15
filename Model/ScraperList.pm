@@ -55,8 +55,10 @@ sub internal_prepare_statement {
 }
 
 sub test_replace_scraper_aux {
-    my($self, $aux) = @_;
+    my($self, $aux, $url) = @_;
     $self->internal_get->{'Scraper.scraper_aux'} = $aux;
+    $self->internal_get->{'Website.url'} = $url
+	if $url;
     return;
 }
 
