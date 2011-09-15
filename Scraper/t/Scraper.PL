@@ -8,7 +8,7 @@ config({
     },
 });
 sub {
-    my($realm, $test_cases, $scraper_aux) = @_;
+    my($realm, $test_cases, $scraper_aux, $url) = @_;
     req()->initialize_fully;
     req()->set_realm('site-admin');
     DateTime()->set_test_now($test_now);
@@ -18,7 +18,7 @@ sub {
 		      $_V->add_realm_prefix($realm)})
 	|| $sl->find_row_by({'scraper.RealmOwner.name', $realm})
 	|| b_die();
-    $sl->test_replace_scraper_aux($scraper_aux)
+    $sl->test_replace_scraper_aux($scraper_aux, $url)
 	if $scraper_aux;
     my($case) = 1;
     return [
