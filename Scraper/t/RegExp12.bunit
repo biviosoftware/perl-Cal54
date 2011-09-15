@@ -2,4 +2,15 @@
 # $Id$
 (do('./Scraper.PL'))->(cuvee => [
     [[qw(42)], '05/01/2011 12:00:00'],
-]);
+], <<'EOF', 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html');
+{
+  reject_event => {
+    summary => qr/^\s*$/,
+  },
+  repeat => [
+    [qr/(.*Live Music $month\:).*?$day_name\s+$day,\s+(?:Closed|No Music|(.*?)\($time_span\))\s*/is => {
+      fields => [qw(save month day_name day summary start_time end_time)],
+    }],
+  ],
+}
+EOF
