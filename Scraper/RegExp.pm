@@ -15,7 +15,8 @@ my($_MONTHS) = {
     ), b_use('Type.Month')->get_list),
 };
 my($_DAY_NAMES) = [
-    map((lc($_), lc(substr($_, 0, 3))), $_DT->english_day_of_week_list),
+    map((lc($_), lc(substr($_, 0, 3)), lc(substr($_, 0, 4))),
+	$_DT->english_day_of_week_list),
 ];
 our($_TRACE);
 
