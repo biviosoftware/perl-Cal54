@@ -539,7 +539,7 @@ http://www.butterflies.org/events/calendar.php,v-butterflies,Reg Exp,,"{
   ],
 }
 "
-http://www.cervantesmasterpiece.com/calendar/view/2011/7#5,v-cervantesmasterpiece,Reg Exp,,"{
+http://www.cervantesmasterpiece.com/calendar/view,v-cervantesmasterpiece,Reg Exp,,"{
   accept_event => {
     location => qr/cervantes/i,
   },
@@ -649,13 +649,15 @@ http://www.curioustheatre.org/index.php?s=20,v-curioustheatre,Reg Exp,,"{
   ],
 }
 "
-http://www.chezcuvee.com/ChezCuvee/Live_Music.html,v-cuvee,Reg Exp,,"{
-  reject_event => {
-    summary => qr/^\s*$/,
-  },
+http://www.chezcuvee.com/live_music/,v-cuvee,Reg Exp,,"{
+  once => [
+    [qr/from $time_span/i => {
+      fields => [qw(start_time end_time)],
+    }],
+  ],
   repeat => [
-    [qr/(.*Live Music $month\:).*?$day_name\s+$day,\s+(?:Closed|No Music|(.*?)\($time_span\))\s*/is => {
-      fields => [qw(save month day_name day summary start_time end_time)],
+    [qr/^$day_name\.?,?\s+$month\.?\s+$day\n+$line/m => {
+      fields => [qw(day_name month day summary)],
     }],
   ],
 }
@@ -1409,7 +1411,7 @@ http://www.sunrosecafe.com/,v-sunrose,Reg Exp,,"{
     start_time => '7pm',
   },
   repeat => [
-    [qr/(Music Schedule.*\n+.*?)\s*$month $day\s*\-?\s*(.*?)($month|\n)/ => {
+    [qr/(Music Schedule.*\n+.*?)\s*$month\.?\s$day\s*\-?\s*(.*?)($month|\n)/ => {
       fields => [qw(save month day summary save)],
     }],
   ],
