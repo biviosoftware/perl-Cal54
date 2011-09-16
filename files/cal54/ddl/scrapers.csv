@@ -117,9 +117,10 @@ http://www.rei.com/storesrss/44,v-rei,RSS,,"{
   ],
 }
 "
-http://bouldersymphony.org/category/20102011-season/feed/,,RSS,bouldersymphony_scraper,"{
+http://bouldersymphony.org/category/2011-2012-season/feed/,,RSS,bouldersymphony_scraper,"{
   location_to_venue => {
     qr/first presbyterian/i => 'firstpresbyterian',
+    qr/bethany lutheran/i => 'bethanylutheran',
     qr/mountain view/i => 'mountainview',
     qr/first united/i => 'firstunited',
   },
@@ -129,8 +130,14 @@ http://bouldersymphony.org/category/20102011-season/feed/,,RSS,bouldersymphony_s
     }],
   ],
   repeat => [
-    [qr/$month\s+$day,?\s+$year\s+at\s+$time_ap(.*?\sat\s+([a-z].*?)\n)/is => {
-      fields => [qw(month day year start_time save location)],
+    [qr/$month\.?\s+$day,?\s+$time_ap \($day_name\)(\n$month.*?\n$line)/is => {
+      fields => [qw(month day start_time day_name save ignore location)],
+    }],
+    [qr/($month\.?\s+$day,?\s+)$time_ap \& ($time_ap \($day_name\)\s+$line)/is => {
+      fields => [qw(save month day start_time save ignore day_name location)],
+    }],
+    [qr/$month\.?\s+$day,?\s+$time_ap \($day_name\)\s+$line/is => {
+      fields => [qw(month day start_time day_name location)],
     }],
   ],
 }
@@ -1641,19 +1648,30 @@ http://www.niwot.com/events/rhythm_on_the_rails/,v-niwot_rhythm,Reg Exp,,"{
 "
 http://boulderchamberorchestra.org/concerts.html,,Reg Exp,,"{
   location_to_venue => {
-    qr/boulder first cong/i => 'firstcongregational',
-    qr/boulder first presb/i => 'firstpresbyterian',
+    qr/first cong/i => 'firstcongregational',
+    qr/broomfield auditorium/i => 'broomfieldauditorium',
+    qr/first baptist/i => 'firstbaptist',
+    qr/first presb/i => 'firstpresbyterian',
+    qr/montview/i => 'montviewpresbyterian',
+    qr/saint john/i => 'stjohns',
+    qr/first united method/i => 'firstunited',
+    qr/jefferson unitarian/i => 'jeffersonunitarian',
   },
   repeat => [
-    [qr/$month\s$day\,?\s*$year\,?\s*$time_ap\,\s+([^\n]+)\s*((\nDETAILS.*?\n))/is => {
-      fields => [qw(month day year start_time location link save)],
+    [qr/(MORE DETAILS.*\})/i => {
+      fields => [qw(link)],
       follow_link => {
         once => [
-          [qr/^$line/ => {
+          [qr/(Boulder Chamber .*?)\n/ => {
             fields => [qw(summary)],
           }],
-          [qr/music selections\s+$line/is => {
+          [qr/classical music Boulder, Colorado\n+(.*?)\n$day_name/s => {
             fields => [qw(description)],
+          }],
+        ],
+        repeat => [
+          [qr/$day_name, $month $day, $year at $time_ap\n$line/ => {
+            fields => [qw(day_name month day year start_time location)],
           }],
         ],
       },
@@ -1711,15 +1729,24 @@ http://www.boulderbachfestival.org/index.php/site/calendar/,,Reg Exp,bachfestiva
   location_to_venue => {
     qr/Atonement Lutheran/i => 'atonementluthern',
     qr/First United Methodist/i => 'firstunited',
-    qr/St. John's Cathedral/i => 'stjohns',
+    qr/St. John/i => 'stjohns',
+    qr/First Congre/i => 'firstcongregational',
+    qr/Grace Lutheran/i => 'gracelutheran',
+    qr/Mountain View/i => 'mountainview',
+    qr/St. Andrew/i => 'standrews',
   },
+  once => [
+    [qr/(Boulder Bach Festival)/i => {
+      fields => [qw(summary)],
+    }],
+  ],
   repeat => [
-    [qr/$month $day, $year, $time_ap\n+([^\n]+?\})/is => {
-      fields => [qw(month day year start_time_pm summary)],
+    [qr/$day_name, $month $day, $year at $time_ap\n+($line)/is => {
+      fields => [qw(day_name month day year start_time link url)],
       follow_link => {
           once => [
-            [qr/press release\{\d+\}\n+(.*)?where:(.*?)\n/is => {
-              fields => [qw(description location)],
+            [qr/contact us\n.*?$day_name,.*?\n+(($line\n*$line+))/is => {
+              fields => [qw(ignore description location)],
             }],
           ],
       },
@@ -1868,18 +1895,28 @@ http://www.denvermusicvenues.com/events/Soda-Jerk-Presents.htm,,Reg Exp,,"{
 http://www.oskarblues.com/tunes/muisc-calendar,,Reg Exp,oskar_scraper,"{
   pre_parse_html => sub {
     my($html) = @_;
-    $$html =~ s/(\<span style=""background-color\:(.*?)\;""\>)/$1 color$2 /g
-      || b_die();
+    die('missing year')
+      unless $$html =~ /.*?(\w+) (20\d{2})</;
+    my($month, $year) = ($1, $2);
+    $month = b_use('Scraper.RegExp')->month_as_int($month);
+    $month++;
+    if ($month > 12) {
+      $month = 1;
+      $year++;
+    }
+    my($next_url) = ""http://www.oskarblues.com/?eme_ajaxCalendar=true&calmonth=$month&calyear=$year&full=1&long_events=0&category=0&author=&contact_person=&location_id="";
+    die('next link')
+      unless $$html =~ s/(href="")#("">&gt;&gt;<)/$1$next_url$2/;
     return;
   },
   pager => {
-    link => qr/next\s*(>>\{\d+\})/i,
+    link => qr/\n(>>\{\d+\})/i,
     page_count => 3,
   },
   location_to_venue => {
-    qr/99cc66/i => 'oskargrill',
-    qr/66cccc/i => 'oskarliquids',
-    qr/cc9966/i => 'oskarweasel',
+    qr/grill/i => 'oskargrill',
+    qr/liquids/i => 'oskarliquids',
+    qr/weasel/i => 'oskarweasel',
   },
   once => [
     [qr/\n$month $year\n/ => {
@@ -1887,8 +1924,15 @@ http://www.oskarblues.com/tunes/muisc-calendar,,Reg Exp,oskar_scraper,"{
     }],
   ],
   repeat => [
-    [qr/(\n$day\n)(?:(?:\*\n(.*?)(color\S+)(.*?$time_span[^\n]+?(\{\d+\})?)\n)|(?:\*\n.*?\n))/ => {
-      fields => [qw(save day summary location description start_time end_time url)],
+    [qr/\n(.*?})\n\((.*?)\)/ => {
+      fields => [qw(summary location)],
+      follow_link => {
+        once => [
+          [qr/From\: $time_ap to $time_ap on $month, $day $year\n+$line+\n+$line/i => {
+            fields => [qw(start_time end_time month day year ignore description)],
+          }],
+        ],
+      },
     }],
   ],
 }
