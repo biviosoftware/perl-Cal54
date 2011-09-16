@@ -2,4 +2,24 @@
 # $Id$
 (do('./Scraper.PL'))->(bachfestival_scraper => [
     [[qw(2)], '03/08/2011 12:00:00'],
-]);
+], <<'EOF');
+{
+  location_to_venue => {
+    qr/Atonement Lutheran/i => 'atonementluthern',
+    qr/First United Methodist/i => 'firstunited',
+    qr/St. John's Cathedral/i => 'stjohns',
+  },
+  repeat => [
+    [qr/$month $day, $year, $time_ap\n+([^\n]+?\})/is => {
+      fields => [qw(month day year start_time_pm summary)],
+      follow_link => {
+        once => [
+          [qr/press release\{\d+\}\n+(.*)?where:(.*?)\n/is => {
+            fields => [qw(description location)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+EOF
