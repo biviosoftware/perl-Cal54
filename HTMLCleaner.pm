@@ -141,7 +141,7 @@ sub html_parser_start {
     elsif ($tag eq 'img' && $attrs->{alt}) {
 	$fields->{text} .= "\n";
 	_append_text($self, $attrs->{alt});
-	$fields->{text} .= "\n";
+	$fields->{text} .= ($fields->{href} ? ' ' : "\n");
     }
     return;
 }
