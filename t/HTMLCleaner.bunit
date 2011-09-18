@@ -50,6 +50,22 @@ Doug Yager Trio performs
 The Doug Yager Trio
 
 EOF
+	    [string_ref(<<'EOF'), 'http://x.com'],
+<div id="perf_details">
+<h2>Joshua Bell</h2>
+<a href="//coloradosymphony.org/current-season/performance/9/1845/joshua-bell1"><img alt="Learn More" title="Learn More" class="button" src="//coloradosymphony.org/images/templates/button_learn_more.gif" /></a>
+<a href="http://tickets.coloradosymphony.org/single/SelectSeating.aspx?p=1845"><img alt="Ticket Information" title="Ticket Information" class="button" src="//coloradosymphony.org/images/templates/button_ticket_info.gif" /></a>
+</div>
+EOF
+	    => [string_ref(<<'EOF')],
+Joshua Bell
+
+Learn More{0}
+
+Ticket Information{1}
+
+
+EOF
 	    [string_ref(<<'EOF'), 'http://x.com']
 <html><body>
 
