@@ -61,7 +61,6 @@ sub extract_once_fields {
 
 sub extract_repeat_fields {
     my($self, $cfg, $text, $current, $op) = @_;
-    my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
 
     foreach my $info (@{$cfg->{repeat} || []}) {
 	my($regexp, $args) = @$info;
