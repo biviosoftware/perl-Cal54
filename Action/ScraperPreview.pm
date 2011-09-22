@@ -27,7 +27,8 @@ sub _parse_content {
     my($content) = $scraper->extract_content($scraper->http_get($uri));
 
     # rss
-    if ($$content =~ /^\s*\<\?xml version/) {
+    if ($$content =~ /^\s*\<\?xml version/
+        && $$content =~ /\<channel\>/) {
 	my($xml) = b_use('Bivio.Scraper')->parse_xml($content);
 	my($items) = [];
 
