@@ -892,6 +892,29 @@ http://www.harlequinsgardens.com/classes/,v-harlequin,Reg Exp,,"{
   ],
 }
 "
+http://www.harmonymusichouse.com/concerts,v-harmonymusic,Reg Exp,,"{
+  repeat => [
+    [qr/\nBuy Tickets$line/ => {
+      fields => [qw(link)],
+      follow_link => {
+        pre_parse_html => sub {
+          my($html) = @_;
+          $$html =~ s/alt="".*?""//g;
+          return;
+        },
+        once => [
+          [qr/\nDate.*?$month $day,? $year,? $time_ap/i => {
+            fields => [qw(month day year start_time)],
+          }],
+          [qr/\nConcerts\n+$line+\n+$line(.*?)Tickets/is => {
+            fields => [qw(ignore summary description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
 http://www.herbsbar.com/events.cfm,v-herbsbar,Reg Exp,,"{
   accept_event => {
     location => qr/herb/i,
@@ -1411,6 +1434,19 @@ http://sparktheater.org/tickets/,v-sparktheater,Reg Exp,,"{
     }],
   ],
 }
+"
+http://www.starbardenver.com/Star_Bar_Denver/Specials_and_Events.html,v-starbar,Reg Exp,,"{
+  once => [
+    [qr/(9)/ => {
+      fields => [qw(start_time_pm)],
+    }],
+  ],
+  repeat => [
+    [qr{\n$day_name $month_day \- (.*?)(?:at $time)?\.?\n}i => {
+      fields => [qw(day_name month_day summary start_time_pm)],
+    }],
+  ],
+},
 "
 http://www.downtownlouisvilleco.com/street-faire/,v-steinbaugh,Reg Exp,,"{
   reject_event => {
