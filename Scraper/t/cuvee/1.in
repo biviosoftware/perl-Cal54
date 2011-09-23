@@ -381,16 +381,6 @@
   },
   {
     'description' => undef,
-    'dtend' => '2455709 14400',
-    'dtstart' => '2455709 3600',
-    'location' => undef,
-    'summary' => '(Private Event) Doug Yager Jazz Trio',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.chezcuvee.com/ChezCuvee/Live_Music.html',
-    'venue' => 'cuvee'
-  },
-  {
-    'description' => undef,
     'dtend' => '2455710 14400',
     'dtstart' => '2455710 3600',
     'location' => undef,
