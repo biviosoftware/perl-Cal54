@@ -214,6 +214,7 @@ sub internal_update {
 	),
     }};
     my($added, $updated, $visited) = ({}, {}, {});
+    my($desc_max) = $ce->get_field_type('description')->get_width - 20;
     
     foreach my $event (@{$self->get('events')}) {
 	my($key) = $event->{dtstart} . ' '
@@ -224,6 +225,13 @@ sub internal_update {
 	    next;
 	}
 	$visited->{$key} = $event;
+#TODO: need a better way, missed unicode characters count as 1 char,
+#      but postgres treats as multiple bytes
+	if ($event->{description}
+	    && length($event->{description}) > $desc_max) {
+	    $event->{description} =
+		substr($event->{description}, 0, $desc_max);
+	}
 
 	if (my $e = delete($curr->{$key})) {
 	    $ce->load_from_properties($e)->update_from_vevent($event);
