@@ -89,6 +89,9 @@ http://events.boulderlibrary.org?lib=0,v-bpl_main,Evanced,,"{
 "
 http://events.boulderlibrary.org?lib=3,v-bpl_meadows,Evanced,,
 http://www.bmoca.org/feed/,v-bmoca,RSS,,"{
+  reject_event => {
+    summary => qr/working title/i,
+  },
   once => [
     [qr/$month\s+$day,\s+$year\; $time_ap(?: to $time_ap)?[.;]\s*\](.*)/is => {
       fields => [qw(month day year start_time end_time description)],
@@ -977,8 +980,8 @@ http://www.hodishalfnote.com/,v-hodishalfnote,Reg Exp,,"{
       fields => [qw(link url date summary)],
       follow_link => {
         once => [
-          [qr/share this event\n+$line\n+$line/i => {
-            fields => [qw(ignore description)],
+          [qr/\nBuy Tickets.*?\n(?:\n+[^\n]+?\})+\n*($line+)/is => {
+            fields => [qw(description)],
           }],
           [qr/$year $time_ap/ => {
             fields => [qw(ignore start_time)],
@@ -1742,7 +1745,7 @@ http://calendar.botanicgardens.org/calendar,,Reg Exp,,"{
     page_count => 2,
   },
   reject_event => {
-    summary => qr/free|cancelled/i,
+    summary => qr/(free day)|cancelled/i,
   },
   location_to_venue => {
     qr/denver botanic gardens at chatfield/i => 'botanicgardens_chatfield',
@@ -1755,6 +1758,12 @@ http://calendar.botanicgardens.org/calendar,,Reg Exp,,"{
         once => [
           [qr/$month $day, $time_ap\s*-\s*$time_ap\n/ => {
             fields => [qw(month day start_time end_time)],
+          }],
+          [qr/\nDenver Botanic.*?\n(.*?)\npress/is => {
+            fields => [qw(description)],
+          }],
+          [qr/\nMore Information.*?\n+(.*?)\npress/is => {
+            fields => [qw(description)],
           }],
         ],
       },
@@ -1861,7 +1870,7 @@ http://www.coclubs.com/calendar/,,Reg Exp,,"{
     page_count => 2,
   },
   reject_event => {
-    summary => qr/Ladies Night|$day_name|beat the clock|climax|happy hour/i,
+    summary => qr/(Ladies|Femmes) Night|beat the clock|climax|happy hour/i,
   },
   location_to_venue => {
     qr/Vinyl/i => 'coclubs_vinyl',
@@ -1882,7 +1891,7 @@ http://www.coclubs.com/calendar/,,Reg Exp,,"{
           [qr/$day_name, $month $day\n+$time_ap/ => {
             fields => [qw(ignore ignore ignore start_time)],
           }],
-          [qr/\/\/ \d+\+\n+(.+?\n+.+?\n)/ => {
+          [qr/\/\/ \d+\+\n+(.*?)\n(Select Tickets|Artists Appearing)/is => {
             fields => [qw(description)],
           }],
         ],
@@ -1940,7 +1949,7 @@ http://www.denvermusicvenues.com/events/Soda-Jerk-Presents.htm,,Reg Exp,,"{
           [qr/you are at $line/i => {
             fields => [qw(location)],
           }],
-          [qr/buy tickets\n+.*?\n+(.+?)\n/i => {
+          [qr/buy tickets.*?\n+.*?\n+(.+?)\n\[view all events/is => {
             fields => [qw(description)],
           }],
         ],
@@ -1999,12 +2008,16 @@ http://www.thewalnutroom.com/calendar,,Reg Exp,,"{
     qr/The Walnut Room/i => 'thewalnutroom',
     qr/The Walnut Room Pizzeria/i => 'thewalnutroompizzeria',
   },
+  pager => {
+    link => qr/(\w+ ->.*?\})/i,
+    page_count => 2,
+  },
   reject_event => {
     summary => qr/@/,
   },
   repeat => [
     [qr/((.+?\}))\n$time_ap\@ (.+?)\n/ => {
-      fields => [qw(link url start_time location)],
+      fields => [qw(url link start_time location)],
       follow_link => {
         once => [
           [qr/$day_name, $month $day/ => {
@@ -2016,11 +2029,11 @@ http://www.thewalnutroom.com/calendar,,Reg Exp,,"{
           [qr/$time_ap\n+$line\n+(.+?) @ the pizzeria.+?\n/i => {
             fields => [qw(ignore ignore summary)],
           }],
-          [qr/((\(read more\)\{\d+\}))/i => {
-            fields => [qw(link url)],
+          [qr/(\(read more\)\{\d+\})/i => {
+            fields => [qw(link)],
             follow_link => {
               once => [
-                [qr/add to favorites\n+$line\n/i => {
+                [qr/add to favorites.*?\n+(.*?)\nHome\{/is => {
                   fields => [qw(description)],
                 }],
               ],
