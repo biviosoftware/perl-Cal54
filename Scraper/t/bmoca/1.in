@@ -110,16 +110,6 @@
     'venue' => 'bmoca'
   },
   {
-    'description' => 'Experience a dynamic selection of performance art at this experimental showcase featuring work by local artists exploring various forms.',
-    'dtend' => '2455695 3600',
-    'dtstart' => '2455695 3600',
-    'location' => undef,
-    'summary' => '[WORKING TITLE]',
-    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.bmoca.org/2011/02/working-title-2/',
-    'venue' => 'bmoca'
-  },
-  {
     'description' => 'WASTE LAND by Lucy Walker follows renowned artist Vik Muniz as he journeys from Brooklyn to his native Brazil and the world\'s largest garbage dump, Jardim Gramacho, where he collaborates with an eclectic band of "catadores" - or self-designated pickers of recyclable materials. PLASTIC BAG, by critically acclaimed filmmaker Ramin Bahrani, traces the epic, existential journey of a plastic bag searching for its maker.',
     'dtend' => '2455702 3600',
     'dtstart' => '2455702 3600',
