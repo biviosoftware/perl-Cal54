@@ -174,6 +174,7 @@ sub _clean {
     return $str unless $str;
     $str =~ s/\s+/ /g;
     $str=~ s/^\s+|\s+$//g;
+    $str =~ s/^[^A-Z0-9"]+//i;;
     return $str;
 }
 
@@ -208,6 +209,21 @@ sub _date {
 sub _day_name_regexp {
     my($regexp) = join('|', @$_DAY_NAMES);
     return qr/\b(${regexp})\b/i;
+}
+
+sub _fixup_url {
+    my($self, $current, $cleaner, $url) = @_;
+
+    if ($current->{url}) {
+	$current->{url} = $cleaner->get_link_for_text($current->{url})
+	    if $current->{url} =~ /\{/;
+    }
+    elsif ($current->{summary}) {
+	$current->{url} ||=
+	    $cleaner->unsafe_get_link_for_text($current->{summary})
+	    || $url;
+    }
+    return;
 }
 
 sub _follow_link {
@@ -256,6 +272,7 @@ sub _process_url {
     my($text) = $cleaner->clean_html($html, $url);
     $self->extract_once_fields($cfg, $text, $current, sub {
         my($self, $args, $current) = @_;				   
+	_fixup_url($self, $current, $cleaner, $url);
 	_follow_link($self, $current, $cleaner, $args->{follow_link})
 	    if $args->{follow_link};
 	return;
@@ -263,23 +280,13 @@ sub _process_url {
     my($once) = {%$current};
     $self->extract_repeat_fields($cfg, $text, $current, sub {
         my($self, $args, $current) = @_;
-	_follow_link($self, $current, $cleaner, $args->{follow_link})
-	    if $args->{follow_link};
-
 	if ($args->{summary_from_description} && $current->{description}) {
 	    ($current->{summary}) = $current->{description} =~
 		$args->{summary_from_description};
 	}
-	if ($current->{url}) {
-	    $current->{url} = $cleaner->get_link_for_text($current->{url})
-		if $current->{url} =~ /\{/;
-	}
-	else {
-	    $current->{url} =
-		$cleaner->unsafe_get_link_for_text($current->{summary})
-		    if $current->{summary};
-	}
-	$current->{url} ||= $url;
+	_fixup_url($self, $current, $cleaner, $url);
+	_follow_link($self, $current, $cleaner, $args->{follow_link})
+	    if $args->{follow_link};
 
 	if ($current->{summary}) {
 	    push(@{$self->get('events')}, 
