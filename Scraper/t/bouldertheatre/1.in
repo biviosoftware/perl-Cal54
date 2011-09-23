@@ -40,7 +40,7 @@
     'venue' => 'bouldertheatre'
   },
   {
-    'description' => 'KGNU Presents BAO BAO FESTIVAL The 8th Annual BaoBao Festival presents a vibrant performance of traditional West African dance, drumming, music and storytelling in the historic Boulder Theatre. BaoBao performers include former members of the Ghana National Dance Ensemble. Local community performers will also be featured including: ***1000 Voices led by Nii Armah Sowah ***Streetside Studio Dancers ***Hip hop dance troupe Break EFX This diverse and educational experience will engage and entertain world culture fans of all ages.',
+    'description' => 'KGNU Presents BAO BAO FESTIVAL The 8th Annual BaoBao Festival presents a vibrant performance of traditional West African dance, drumming, music and storytelling in the historic Boulder Theatre. BaoBao performers include former members of the Ghana National Dance Ensemble. Local community performers will also be featured including: 1000 Voices led by Nii Armah Sowah Streetside Studio Dancers Hip hop dance troupe Break EFX This diverse and educational experience will engage and entertain world culture fans of all ages.',
     'dtend' => '2455627 7200',
     'dtstart' => '2455627 7200',
     'location' => undef,
