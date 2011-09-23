@@ -53,6 +53,7 @@ sub clean_html {
 	local($SIG{__WARN__}) = sub {};
         $parser->parse($$html);
     }
+    $fields->{text} =~ s/[*_\-]{3,}/ /g;
     $fields->{text} =~ s/( )+$//mg;
     $fields->{text} =~ s/(\n{3})\n+/$1/g;
     $fields->{text} =~ s/(\w)\s([,.;]\s)/$1$2/g;
