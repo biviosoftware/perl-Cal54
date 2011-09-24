@@ -10,7 +10,7 @@
     'venue' => 'bmoca'
   },
   {
-    'description' => "Receive insiders' treatment with BMoCA at three fine art venues in Denver. Experi\x{ad}ence some of the city's best art on these carefully curated, expertly guided tours through private collections, galleries and museums. Tour followed by drinks and conversation at a distinct eatery in Denver.",
+    'description' => 'Receive insiders\' treatment with BMoCA at three fine art venues in Denver. Experience some of the city\'s best art on these carefully curated, expertly guided tours through private collections, galleries and museums. Tour followed by drinks and conversation at a distinct eatery in Denver.',
     'dtend' => '2455626 82800',
     'dtstart' => '2455626 57600',
     'location' => undef,
@@ -40,7 +40,7 @@
     'venue' => 'bmoca'
   },
   {
-    'description' => "Consider the concept of scent as art and experience Henrique Oliveira's exhibi\x{ad}tion in a whole new way with acclaimed perfumer Dawn Spencer Hurwitz as she interprets his installation and paintings through a series of custom blended scents.",
+    'description' => 'Consider the concept of scent as art and experience Henrique Oliveira\'s exhibition in a whole new way with acclaimed perfumer Dawn Spencer Hurwitz as she interprets his installation and paintings through a series of custom blended scents.',
     'dtend' => '2455646 3600',
     'dtstart' => '2455646 3600',
     'location' => undef,
@@ -70,7 +70,7 @@
     'venue' => 'bmoca'
   },
   {
-    'description' => "Make your own reusable tote or bike panniers from recycled materials with exhibiting artist Jessica Moon Bernstein. Also, collect tips on how to make your studio greener or incorporate recycled materials in your work at our free interac\x{ad}tive Earth Day Art Booths from 11am - 2pm.",
+    'description' => 'Make your own reusable tote or bike panniers from recycled materials with exhibiting artist Jessica Moon Bernstein. Also, collect tips on how to make your studio greener or incorporate recycled materials in your work at our free interactive Earth Day Art Booths from 11am - 2pm.',
     'dtend' => '2455675 61200',
     'dtstart' => '2455675 61200',
     'location' => undef,
@@ -90,11 +90,11 @@
     'venue' => 'bmoca'
   },
   {
-    'description' => "Join us for a celebration of children at El Dia del Nino. For this traditional Mexican holiday, The Mexican Cultural Center and the Consulate General of Mexico in collaboration with BMoCA will present workshops, storytelling, dancing perfor\x{ad}mances, and authentic food while children and parents alike learn about the history of Mexico.",
+    'description' => 'Join us for a celebration of children at El Dia del Nino. For this traditional Mexican holiday, The Mexican Cultural Center and the Consulate General of Mexico in collaboration with BMoCA will present workshops, storytelling, dancing performances, and authentic food while children and parents alike learn about the history of Mexico.',
     'dtend' => '2455682 68400',
     'dtstart' => '2455682 61200',
     'location' => undef,
-    'summary' => "CELEBRATION OF EL D\x{cd}A DEL NI\x{d1}O [THE DAY OF CHILDREN]",
+    'summary' => 'CELEBRATION OF EL DIA DEL NINO [THE DAY OF CHILDREN]',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.bmoca.org/2011/02/celebration-of-el-dia-del-nino-the-day-of-children/',
     'venue' => 'bmoca'
@@ -114,7 +114,7 @@
     'dtend' => '2455702 3600',
     'dtstart' => '2455702 3600',
     'location' => undef,
-    'summary' => "FILMS: WASTE LAND WITH VIK MU\x{d1}IZ & PLASTIC BAG",
+    'summary' => 'FILMS: WASTE LAND WITH VIK MUNIZ & PLASTIC BAG',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'url' => 'http://www.bmoca.org/2011/02/films-waste-land-with-vik-muniz-plastic-bag/',
     'venue' => 'bmoca'
