@@ -9,6 +9,7 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 sub clean_description {
     my($self, $item) = @_;
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
+    $item->{title} = $self->internal_clean($item->{title});
 
     if ($item->{description} =~ /\<.*\>/) {
 	$item->{description} = ${$cleaner->clean_html(
