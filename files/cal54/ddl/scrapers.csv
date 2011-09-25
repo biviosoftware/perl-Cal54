@@ -20,6 +20,7 @@ http://ciatanowinery.com/winery/content/view/33/44/,v-ciantano,Google,,"{
   },
 }
 "
+http://www.coloradofeedandgrain.com/events.html,v-feedandgrain,Google,,
 http://www.dickensoperahouse.com/calendar.htm,v-dickensopera,Google,,
 http://www.johnnyscigars.com/calendar/,v-cigar,Google,,"{
   reject_event => {
@@ -40,7 +41,7 @@ http://myparentingplace.org/calendar/play-groups-and-support-groups-schedule-2/,
 "
 http://www.thedraftsportsgrill.com/frames/calendars/monthly.htm,v-thedraftsportsgrill,Google,,"{
   reject_event => {
-    summary => qr/guy\'s night|ladies night/i,
+    summary => qr/guy\'s night|ladies night|wine.*drafts/i,
   },
 }
 "
@@ -1121,6 +1122,25 @@ http://www.lefthandbooks.org/lhbevents.html,v-lefthandbooks,Reg Exp,,"{
   ],
 }
 "
+http://www.lincolnsroadhouse.com/hungry.html,v-lincolnsroad,Reg Exp,,"{
+  pre_parse_html => sub {
+    my($html) = @_;
+    $$html =~ s/\:Pm/pm/ig;
+    $$html =~ s/(>Sun: )/$1 3pm /ig;
+    return;
+  },
+  once => [
+    [qr/Start Times.*? $time_ap/i => {
+      fields => [qw(start_time)],
+    }]
+  ],
+  repeat => [
+    [qr/\n$day_name\: $time_ap?\s*$month_day\n+$line/ => {
+      fields => [qw(day_name start_time month_day summary)],
+    }],
+  ],
+}
+"
 http://www.loladenver.com/Events/LiveMusic/tabid/636/Default.aspx,v-loladenver,Reg Exp,,"{
   default_values => {
     start_time => '2:30pm',
@@ -1184,6 +1204,21 @@ http://www.luckypiepizza.com/lucky-pie-events.html,v-luckypiepizza,Reg Exp,,"{
   repeat => [
     [qr/(.+?)\-.*\s*$month $day @ $time_ap\n$line/ => {
       fields => [qw(summary month day start_time description)],
+    }],
+  ],
+}
+"
+http://www.maryslakelodge.com/music.htm,v-maryslake,Reg Exp,,"{
+  pre_parse_html => sub {
+    my($html) = @_;
+    $$html =~ s/(sun|mon|tues|wed|thurs),/$1, 7-10pm/ig || die();
+    $$html =~ s/(fri|sat|sun),/$1, 8-11pm/ig || die();
+    return;
+  },
+
+  repeat => [
+    [qr/(\n)$day_name, $time_span $month\.? $day\:? $line/ => {
+      fields => [qw(save day_name start_time end_time month day summary)],
     }],
   ],
 }
@@ -1484,6 +1519,21 @@ http://www.sunrosecafe.com/,v-sunrose,Reg Exp,,"{
   ],
 }
 "
+http://buffalorose.net/calendarmasters/top.html,v-buffalorose,Reg Exp,,"{
+  repeat => [
+    [qr/(($month).*?\n)/ => {
+      fields => [qw(link month)],
+      follow_link => {
+        repeat => [
+          [qr/\n$day\n((?:[^\n]+\n)+)(.*?)\n((?:[^\n]*$time_ap)|$day\n)/is => {
+            fields => [qw(day summary description save start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
 http://www.mychildsmuseum.org/calendar/Default.aspx,v-mychildsmuseum,Reg Exp,,"{
   repeat => [
     [qr/$line\s*$line\s*$day_name, $month $day, $year/s => {
@@ -1706,6 +1756,22 @@ http://www.niwot.com/events/rhythm_on_the_rails/,v-niwot_rhythm,Reg Exp,,"{
   ],
 }
 "
+http://www.zephyrloungecolorado.com/LiveMusic.htm,v-zephyrlounge,Reg Exp,,"{
+  once => [
+    [qr/\n(9\s*pm)/i => {
+      fields => [qw(start_time)],
+    }],
+  ],
+  reject_event => {
+    summary => qr/T.\s*B.\s*A/i,
+  },
+  repeat => [
+    [qr/\n$day_name, $month $day\n+$line(.*?)(\n$day_name|\nLive Music)/is => {
+      fields => [qw(day_name month day summary description save)],
+    }],
+  ],
+}
+"
 http://boulderchamberorchestra.org/concerts.html,,Reg Exp,,"{
   location_to_venue => {
     qr/first cong/i => 'firstcongregational',
@@ -1772,6 +1838,13 @@ http://calendar.botanicgardens.org/calendar,,Reg Exp,,"{
 }
 "
 http://events.swallowhill.com/Default.asp,,Reg Exp,,"{
+  pre_parse_html => sub {
+    my($html) = @_;
+    # Javascript:popUp('EventDetail','performancedetailpopup.asp?evt=1767', 400, 480,'no','yes','no','no')
+    # http://events.swallowhill.com/performancedetailpopup.asp?evt=1767
+    $$html =~ s{""Javascript\:popUp[^""]+?(evt=\d+).*?""}{/performancedetailpopup.asp?$1}g;
+    return;
+  },
   pager => {
     link => qr/(Next \>\{\d+\})\n/i,
     page_count => '4',
@@ -1783,10 +1856,18 @@ http://events.swallowhill.com/Default.asp,,Reg Exp,,"{
     qr/daniel/i => 'swallowhill_danielshall',
     qr/tuft/i => 'swallowhill_tufttheatre',
     qr/four mile/i => 'fourmilepark',
+    qr/cafe/i => 'swallowhill_cafe',
   },
   repeat => [
     [qr/$line\n+$day_name $date\n$time_ap .*\n$line/ => {
       fields => [qw(summary day_name date start_time location)],
+      follow_link => {
+        once => [
+          [qr/Performance Date.*?\n+(Presented.*?\n+|[^\n]+Presents\n+)?$line\n+(.*)?\nClose\{/is => {
+            fields => [qw(ignore ignore description)],
+          }],
+        ],
+      },
     }],
   ],
 }
