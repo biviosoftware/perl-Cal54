@@ -15,7 +15,8 @@ my($_MONTHS) = {
     ), b_use('Type.Month')->get_list),
 };
 my($_DAY_NAMES) = [
-    map((lc($_), lc(substr($_, 0, 3)), lc(substr($_, 0, 4))),
+    map((lc($_), lc(substr($_, 0, 3)), lc(substr($_, 0, 4)),
+        lc(substr($_, 0, 5))),
 	$_DT->english_day_of_week_list),
 ];
 our($_TRACE);
@@ -31,7 +32,7 @@ sub eval_scraper_aux {
     my($time_span) = qr/$time\s*\-\s*$time_ap/i;
     my($day_name) = _day_name_regexp();
     my($month) = _month_regexp();
-    my($month_day) = qr{\b([0,1]?[0-9]/[0-3]?[0-9])\b};
+    my($month_day) = qr{\b([0,1]?[0-9](?:/|-)[0-3]?[0-9])\b};
     my($day) = qr/\b([0-3]?[0-9])(?:st|nd|rd|th)?\b/i;
     my($line) = qr/([^\n]+)\n/;
     my($res) = eval($aux);
@@ -190,7 +191,7 @@ sub _date {
 	$month = $self->month_as_int($current->{month});
     }
     elsif ($current->{month_day}) {
-	($month, $current->{day}) = split('/', $current->{month_day});
+	($month, $current->{day}) = split(q{/|-}, $current->{month_day});
     }
     else {
 	_trace('missing "month" or "month_day": ', $current) if $_TRACE;
