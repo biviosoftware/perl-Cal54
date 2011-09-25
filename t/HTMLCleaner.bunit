@@ -66,6 +66,22 @@ Ticket Information{1}
 
 
 EOF
+	    [string_ref(<<'EOF'), 'http://x.com'],
+<p class="monthselect"><b><u>2011:</u></b> <a href="http://buffalorose.net/calendarmasters/september-2011.html" target="mainFrame">September</a> <a href="http://buffalorose.net/calendarmasters/october-2011.html" target="mainFrame">October </a><a href="http://buffalorose.net/calendarmasters/november-2011.html" target="mainFrame">November</a> <a href="http://buffalorose.net/calendarmasters/december-2011.html" target="mainFrame">December</a></font> 2012: <a href="http://buffalorose.net/calendarmasters/january-2012.html" target="mainFrame">January </a><a href="http://buffalorose.net/calendarmasters/february-2012.html" target="mainFrame"> February</a></p>
+EOF
+	    => [string_ref(<<'EOF')],
+
+2011:
+September{0}
+October{1}
+November{2}
+December{3}
+2012:
+January{4}
+February{5}
+
+
+EOF
 	    [string_ref(<<'EOF'), 'http://x.com']
 <html><body>
 
