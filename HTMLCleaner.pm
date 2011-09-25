@@ -105,6 +105,7 @@ sub html_parser_end {
 	    my($index) = scalar(@{$fields->{links}});
 	    push(@{$fields->{links}}, $fields->{href});
 	    $fields->{text} =~ s/\s+$//;
+	    $fields->{soft_newline} = 0;
 	    _append_text($self, '{' . $index . '}');
 	    $fields->{soft_newline} = 1;
 	}
