@@ -965,12 +965,22 @@ http://www.heritagesquare.info/events.html,v-heritagesquare,Reg Exp,,"{
 }
 "
 http://www.hi-dive.com/,v-hi_dive,Reg Exp,,"{
-  accept_event => {
-    location => qr/Hi-Dive/i,
-  },
   repeat => [
-    [qr/$day_name, $month $day.*\n+$line\n+$line?\n+at\n$line\n+doors at $time_ap/i => {
-      fields => [qw(day_name month day summary description location start_time)],
+    [qr/$day_name, $month $day.*\n+$line/ => {
+      fields => [qw(day_name month day link)],
+      follow_link => {
+        once => [
+          [qr/^(.*?) on \d+\/.*?at (Hi-Dive)\n/i => {
+            fields => [qw(summary location)],
+          }],
+          [qr/Show at $time_ap/i => {
+            fields => [qw(start_time)],
+          }],
+          [qr/\nAdd 1 2.*?\n+$line\n*(.*?)\((Read More|Add To Favorites)/is => {
+            fields => [qw(ignore description)],
+          }],
+        ],
+      },
     }],
   ],
 }
@@ -1324,8 +1334,15 @@ http://www.nissis.com/lmcalendar.html,v-nissis,Reg Exp,,"{
 "
 http://www.ogdentheatre.net/events.php,v-ogdentheatre,Reg Exp,,"{
   repeat => [
-    [qr/\n(.*?\})\n$line?$month $day, $year, $time_ap/ => {
-      fields => [qw(summary description month day year start_time)],
+    [qr/\n((?:[^\n]+\n)+)$month $day, $year, $time_ap/ => {
+      fields => [qw(summary month day year start_time)],
+      follow_link => {
+        once => [
+          [qr/Websites\n+(?:[^\n]+?\{.*?\n+|\|\n+)+(.*?)Service and handling fees/is => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
     }],
   ],
 }
@@ -1352,11 +1369,11 @@ http://www.pepsicenter.com/Calendar.aspx,v-pepsicenter,Reg Exp,,"{
     page_count => 3,
   },
   repeat => [
-    [qr/$day\n+(\D+)\n($line)/i => {
-      fields => [qw(ignore summary link url)],
+    [qr/$day\n+$line/i => {
+      fields => [qw(ignore summary)],
       follow_link => {
         once => [
-          [qr/Print\n+(.*?)\nPepsi\n/is => {
+          [qr/\nPrint\{.*?\n+(.*?)\nPepsi\{/is => {
             fields => [qw(description)],
           }],
           [qr/$day_name, $month $day, $time_ap/ => {
