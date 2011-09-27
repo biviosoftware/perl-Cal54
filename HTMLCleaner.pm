@@ -140,10 +140,15 @@ sub html_parser_start {
 	_append_text($self, ' ')
 	    unless $fields->{soft_newline};
     }
-    elsif ($tag eq 'img' && $attrs->{alt}) {
-	$fields->{text} .= "\n";
-	_append_text($self, $attrs->{alt});
-	$fields->{text} .= ($fields->{href} ? ' ' : "\n");
+    elsif ($tag eq 'img') {
+	if ($fields->{href} && ! $attrs->{alt}) {
+	    $attrs->{alt} = $attrs->{src};
+	}
+	if ($attrs->{alt}) {
+	    $fields->{text} .= "\n";
+	    _append_text($self, $attrs->{alt});
+	    $fields->{text} .= ($fields->{href} ? ' ' : "\n");
+	}
     }
     return;
 }
