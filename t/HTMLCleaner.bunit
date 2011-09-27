@@ -83,6 +83,24 @@ February{5}
 
 EOF
 	    [string_ref(<<'EOF'), 'http://x.com']
+<td align="center" class="month" style="padding-bottom: 3px;" width="576" valign="center">
+
+&nbsp;&nbsp;<a href="calendar.cfm?curntdate={d '2011-08-27'}"><img src="images/arrow_left.jpg" border="0" width="20" height="20"></a>
+&nbsp;&nbsp;September
+&nbsp;&nbsp;<a href="calendar.cfm?curntdate={d '2011-10-27'}"><img src="images/arrow_right.jpg" border="0" width="20" height="20"></a>
+</td>
+EOF
+		=> [string_ref(<<'EOF')],
+
+
+images/arrow_left.jpg{0}
+September
+
+images/arrow_right.jpg{1}
+
+
+EOF
+	    [string_ref(<<'EOF'), 'http://x.com']
 <html><body>
 
 hi there <a>some text</a> and more<br />
