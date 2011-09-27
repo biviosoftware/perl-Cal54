@@ -11,7 +11,7 @@
   },
   {
     'description' => 'Receive insiders\' treatment with BMoCA at three fine art venues in Denver. Experience some of the city\'s best art on these carefully curated, expertly guided tours through private collections, galleries and museums. Tour followed by drinks and conversation at a distinct eatery in Denver.',
-    'dtend' => '2455626 82800',
+    'dtend' => '2455626 57600',
     'dtstart' => '2455626 57600',
     'location' => undef,
     'summary' => 'DENVER ART TOUR',
@@ -21,7 +21,7 @@
   },
   {
     'description' => 'Explore performance art at BMoCA during this experiential workshop through exercises involving body, gesture, voice, language, sound, and silence.',
-    'dtend' => '2455632 14400',
+    'dtend' => '2455632 7200',
     'dtstart' => '2455632 7200',
     'location' => undef,
     'summary' => 'PERFORMANCE WORKSHOP WITH FRANCES CHARTERIS',
@@ -31,7 +31,7 @@
   },
   {
     'description' => 'Bring your best art for this one-night exhibition. Great food, DJ, dancing, and a Bob Ross inspired paint-off! Presented by The Studio Project, BMoCA\'s Youth Art Advisory Internship.',
-    'dtend' => '2455633 18000',
+    'dtend' => '2455633 7200',
     'dtstart' => '2455633 7200',
     'location' => undef,
     'summary' => 'TEEN OPEN WALL',
@@ -91,7 +91,7 @@
   },
   {
     'description' => 'Join us for a celebration of children at El Dia del Nino. For this traditional Mexican holiday, The Mexican Cultural Center and the Consulate General of Mexico in collaboration with BMoCA will present workshops, storytelling, dancing performances, and authentic food while children and parents alike learn about the history of Mexico.',
-    'dtend' => '2455682 68400',
+    'dtend' => '2455682 61200',
     'dtstart' => '2455682 61200',
     'location' => undef,
     'summary' => 'CELEBRATION OF EL DIA DEL NINO [THE DAY OF CHILDREN]',
@@ -101,7 +101,7 @@
   },
   {
     'description' => 'Learn this classic Brazilian dance and Samba the night away at our upcoming Carnival-inspired closing celebration on June 4th. One-hour lesson followed by an open dance session from 8 - 10pm.',
-    'dtend' => '2455688 14400',
+    'dtend' => '2455688 3600',
     'dtstart' => '2455688 3600',
     'location' => undef,
     'summary' => 'SAMBA',
