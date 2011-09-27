@@ -92,9 +92,9 @@ http://www.bmoca.org/feed/,v-bmoca,RSS,,"{
   reject_event => {
     summary => qr/working title/i,
   },
-  once => [
-    [qr/$month\s+$day,\s+$year\; $time_ap(?: to $time_ap)?[.;]\s*\](.*)/is => {
-      fields => [qw(month day year start_time end_time description)],
+  repeat => [
+    [qr/(\[\s+).*?$month\s+$day,\s+$year\; $time_ap(.*?\](.*))/is => {
+      fields => [qw(save month day year start_time save description)],
     }],
   ],
 }
@@ -254,12 +254,22 @@ http://www.appaloosagrill.com/music,v-appaloosagrill,Reg Exp,,"{
 "
 http://arvadacenter.org/on-stage,v-arvadacenter,Reg Exp,,"{
   repeat => [
-    [qr/(.+?\})\n$month $day\nbuy tickets.*\}/i => {
-      fields => [qw(summary ignore ignore)],
+    [qr/(.+?\})\n$month $day.*?\nbuy tickets.*\}/i => {
+      fields => [qw(summary)],
       follow_link => {
         once => [
-          [qr/$month $day, $year\n+$line\n+.*?starts.*?$time_ap/ => {
-            fields => [qw(month day year ignore start_time)],
+          [qr/Group Sales.*?\n+$month.*?\n+(?:[^\n]+)+(.*?)\n(\d{4} |Previews )/is => {
+              fields => [qw(ignore description)],
+          }],
+          [qr/(Buy Tickets.*?})/ => {
+              fields => [qw(link)],
+              follow_link => {
+                repeat => [
+                  [qr/\n$day_name, $month $day, $year, at $time_ap/ => {
+                    fields => [qw(day_name month day year start_time)],
+                  }],
+                ],
+              },
           }],
         ],
       },
@@ -1033,14 +1043,17 @@ http://www.hudsongardens.org/content/concerts2011.php,v-hudsongardens,Reg Exp,,"
 "
 http://www.boulderhumane.org/get-involved/events-calendar,v-boulderhumane,Reg Exp,,"{
   repeat => [
-    [qr/$line\n+(.+?\n.+?\n.+?)\n+$line?\n+Where: (.+?)\n.*?\n+When: $date \- $time_ap \- $time_ap/ => {
-      fields => [qw(summary description ignore location date start_time end_time)],
+    [qr/(.* Events\{.*?}\n+)$line(.*?)Where\:$line.*?When\: .*?$month $day, $year, $time_span.*?\n/is => {
+      fields => [qw(save summary description location month day year start_time end_time)],
     }],
   ],
 }
 "
 http://www.innisfreepoetry.com/,v-innisfree,Reg Exp,,"{
   repeat => [
+    [qr/\n$day_name $month $day at $time_ap\s*\-?\s*$line\n*(?:[^\n]+\n)+\n*(.*?)(\n$day_name|\nNext Page)/is => {
+      fields => [qw(day_name month day start_time summary description save)],
+    }],
     [qr/\n$day_name $month $day\s*\-?\s*(.*?) at $time_ap\n+($month|$line)/ => {
       fields => [qw(day_name month day summary start_time save ignore description)],
     }],
@@ -1095,6 +1108,10 @@ http://www.jazzon2ndave.com/performance-schedule.html,v-jazzon2ndave,Reg Exp,,"{
 }
 "
 http://larimerlounge.com/calendar.cfm,v-larimerlounge,Reg Exp,,"{
+  pager => {
+    link => qr/(arrow_right.*?\})/i,
+    page_count => 3,
+  },
   reject_event => {
     summary => qr/happy hour/i,
   },
@@ -1106,11 +1123,8 @@ http://larimerlounge.com/calendar.cfm,v-larimerlounge,Reg Exp,,"{
           [qr/$day_name $month $day \| $line\n+$line/ => {
             fields => [qw(day_name month day ignore summary)],
           }],
-          [qr/$time_ap\n+doors open/i => {
-            fields => [qw(start_time)],
-          }],
-          [qr/(.+? @ $time_ap\{\d+\}\n$line)/ => {
-            fields => [qw(description)],
+          [qr/Show starts at $time_ap.*?\n+(.*?)\nCALENDAR/is => {
+            fields => [qw(start_time description)],
           }],
         ],
       },
@@ -1385,14 +1399,21 @@ http://www.pepsicenter.com/Calendar.aspx,v-pepsicenter,Reg Exp,,"{
 }
 "
 http://www.piperinn.com/Portals/0/Skins/piperindexnew//Events/tabid/53/Default.aspx,v-piperinn,Reg Exp,,"{
+  pager => {
+    link => qr/(\n\>.*?})/i,
+    page_count => 3,
+  },
   once => [
     [qr/$month $year/ => {
       fields => [qw(month year)],
     }],
   ],
   repeat => [
-    [qr/$day\nlive music\n$time_ap\n$line/i => {
+    [qr/.*$day\n.*?live music\n$time_ap\n$line/is => {
       fields => [qw(day start_time summary)],
+    }],
+    [qr/.*$day\n.*?live music\n(.+?)$time_ap/is => {
+      fields => [qw(day summary start_time)],
     }],
   ],
 }
@@ -1908,7 +1929,7 @@ http://www.boulderbachfestival.org/index.php/site/calendar/,,Reg Exp,bachfestiva
       fields => [qw(day_name month day year start_time link url)],
       follow_link => {
           once => [
-            [qr/contact us\n.*?$day_name,.*?\n+(($line\n*$line+))/is => {
+            [qr/contact us.*\}\n.*?$day_name,.*?\n+(($line\n*$line+))/is => {
               fields => [qw(ignore description location)],
             }],
           ],
@@ -2001,6 +2022,7 @@ http://www.comusic.org/myadmin/Calendar/calendar_month_listing.asp?CalendarID=27
   location_to_venue => {
     qr/chautauqua/i => 'chautauqua',
     qr/rembrandt/i => 'rembrandtyard',
+    qr/rocky mountain center/i => 'rockymountaincenter',
   },
   reject_event => {
     description => qr/^$/,
@@ -2013,7 +2035,7 @@ http://www.comusic.org/myadmin/Calendar/calendar_month_listing.asp?CalendarID=27
           [qr/Location\:\n$line/ => {
             fields => [qw(location)],
           }],
-          [qr/Notes:\n(.*)?BUY NOW/is => {
+          [qr/Notes:\n(.*)?(BUY NOW|\nTickets|\nStart\:)/is => {
             fields => [qw(description)],
           }],
           [qr/BUY NOW.*?\n+([^\n].*)\nStart\:/is => {
