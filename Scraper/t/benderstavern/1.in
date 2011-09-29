@@ -1,0 +1,446 @@
+[
+  {
+    'description' => '
+
+Happy Friigin New Year everyone!! Come celebrate with Cuthroat Drifters, Neon Neighbors, Eliot Street Lunatic and Bronze
+
+
+',
+    'dtend' => '2455928 25200',
+    'dtstart' => '2455928 10800',
+    'location' => undef,
+    'summary' => 'Cuthroat Drifters, Neon Neighbors and Eliot Street Lunatic & Bronze',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '48800',
+    'url' => 'http://www.benderstavern.com/show/detail/48800',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455893 25200',
+    'dtstart' => '2455893 10800',
+    'location' => undef,
+    'summary' => 'Distant Haven',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '51338',
+    'url' => 'http://www.benderstavern.com/show/detail/51338',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+This the night beofore Thanksgiving people, let\'s paaaarty - a 4 day weekend awaits us!!!
+
+
+',
+    'dtend' => '2455890 25200',
+    'dtstart' => '2455890 10800',
+    'location' => undef,
+    'summary' => 'Neon Neighbors, Cuthroat Drifters and more TBA',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '48798',
+    'url' => 'http://www.benderstavern.com/show/detail/48798',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455886 25200',
+    'dtstart' => '2455886 10800',
+    'location' => undef,
+    'summary' => 'Firestorm Studios Showcase featuring Cazic, Dripfed, Kastigation, Angelic Desolation',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '50412',
+    'url' => 'http://www.benderstavern.com/show/detail/50412',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455885 25200',
+    'dtstart' => '2455885 10800',
+    'location' => undef,
+    'summary' => 'Cuthroat Drifters and more TBA ...',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '48802',
+    'url' => 'http://www.benderstavern.com/show/detail/48802',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455879 25200',
+    'dtstart' => '2455879 10800',
+    'location' => undef,
+    'summary' => 'Porn & Chicken',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '50692',
+    'url' => 'http://www.benderstavern.com/show/detail/50692',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455878 27000',
+    'dtstart' => '2455878 12600',
+    'location' => undef,
+    'summary' => 'Barstool Messiah with Bronze with Ill Will, Congress of the Crow and Randy Olinger acoustic (Workhorse, Nautilus)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '50632',
+    'url' => 'http://www.benderstavern.com/show/detail/50632',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455874 25200',
+    'dtstart' => '2455874 10800',
+    'location' => undef,
+    'summary' => 'Scott H. Biram',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '50706',
+    'url' => 'http://www.benderstavern.com/show/detail/50706',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455872 21600',
+    'dtstart' => '2455872 7200',
+    'location' => undef,
+    'summary' => 'Be The Ant, False Colours, In The Whale, The Blackouts',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '50268',
+    'url' => 'http://www.benderstavern.com/show/detail/50268',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455871 21600',
+    'dtstart' => '2455871 7200',
+    'location' => undef,
+    'summary' => 'Big Tattoo and more tba',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '50888',
+    'url' => 'http://www.benderstavern.com/show/detail/50888',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+It is a seasonal tradition ... Halloween weekend with Slim Cessna\'s Auto Club in Denver at Benders Tavern!!!
+
+
+',
+    'dtend' => '2455865 14400',
+    'dtstart' => '2455865 0',
+    'location' => undef,
+    'summary' => 'Slim Cessna\'s Auto Club, The Limbs and Saturn Cowboys',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '45762',
+    'url' => 'http://www.benderstavern.com/show/detail/45762',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455864 23400',
+    'dtstart' => '2455864 9000',
+    'location' => undef,
+    'summary' => 'Red Stinger cd release with special guests Fear the Calm, Engine Ear, Straight Outta Luck and The Shaloms (Ramones tribute)',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '44350',
+    'url' => 'http://www.benderstavern.com/show/detail/44350',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+Opera on Tap is a national non-profit organization whose mission is to break down the stereotype that opera is a stuffy or elitist art form by bringing it to bars. Each month, local singers let their hair down and bring you into what feels like an after hours backstage party, singing some of opera\'s best known and little known pieces in a friendly, relaxed atmosphere. Tonight\'s theme? Vice! If your mama told you not to do it, we will raise a pint and celebrate it in song. To learn more about the Colorado chapter of OOT, check out our website (http://www.operaontap.com/colorado/) or follow us on Facebook (http://www.facebook.com/ OOTCO ?ref=ts&sk=wall).
+
+
+',
+    'dtend' => '2455862 16200',
+    'dtstart' => '2455862 1800',
+    'location' => undef,
+    'summary' => 'Opera On Tap - local opera singers bring the art form to its unlikliest venue - a rock\'n\'roll bar!',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '50242',
+    'url' => 'http://www.benderstavern.com/show/detail/50242',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+*Carlos Newman, drummer of Dirty Backseat Lovers, is having a Birthday ... this is his party!!!
+
+
+',
+    'dtend' => '2455858 21600',
+    'dtstart' => '2455858 7200',
+    'location' => undef,
+    'summary' => 'Angie Stevens and the Beautiful Wreck, Dirty Backseat Lovers, Afternoon Delight and Luke Schmaltz (King Rat) acoustic set',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '44432',
+    'url' => 'http://www.benderstavern.com/show/detail/44432',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+Cabaret Otaku and the Colorado chapter of Opera on Tap will be presenting "Dances of Death" on Friday, October 21st and Saturday, October 22nd, featuring a staged production of Hugo Kurt Weill\'s one-act opera Mahagonny Songspiel and Hugo Distler\'s Totentanz. We are exploring the themes of man\'s ongoing search for life\'s purpose and ultimate mortality as we approach All Hallows\' Eve.
+
+
+Cabaret Otaku is an organization created by professional classical performers who seek to put artistic control back in the hands of the artists themselves. We believe that by allowing the performers to work cooperatively in developing their own projects, each individual will be provided the opportunity to expand their creative potential and produce the best work possible. Additionally, we strive to perform in pubs, public spaces and other non-traditional venues, thereby bringing our craft to new, untapped audiences. We aim for experimentation, originality, and alternative means of presenting our evolving art to keep it relevant to our own generation and those to come.
+
+
+',
+    'dtend' => '2455857 18000',
+    'dtstart' => '2455857 3600',
+    'location' => undef,
+    'summary' => 'Dances Of Death',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '40372',
+    'url' => 'http://www.benderstavern.com/show/detail/40372',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+FREE SHOW !
+
+
+',
+    'dtend' => '2455857 14400',
+    'dtstart' => '2455857 0',
+    'location' => undef,
+    'summary' => 'Dave Connelly on the Tavern Stage performing acoustic versions of tunes by Johnny Cash, Lady Gaga, Katy Perry, Weezer and more',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '50974',
+    'url' => 'http://www.benderstavern.com/show/detail/50974',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+Jucifer Bio
+JUCIFER
+
+
+Gazelle Amber Valentine - guitar, vocals Edgar Livengood - drums
+
+
+"Jucifer wield a Sleep-like density and enough metallic power to jostle Ozzy back to sanity" -
+Alternative Press
+
+
+"As anyone who\'s borne witness to their earth-shattering, boundary-smashing sonic rituals can
+attest...Shit\'s intense" - Terrorizer
+
+
+About JUCIFER :
+
+
+* Founded in 1993, Jucifer consists of the married couple of Gazelle Amber Valentine (guitar,
+vocals) and Edgar Livengood (drums). They are known to have pioneered the two piece
+sludge/doom metal band, the single-instrument wall of sound, and the combination of melodic
+hooks with monolithic down-tuned guitars recently popularized by newer bands. Valentine was
+featured in Guitar Player magazine twice as a result of her ground breaking style.
+
+
+* Jucifer is literally always on tour -- since 2001, the couple has lived in its RV and had no
+permanent residence, playing hundreds of shows throughout North America and Europe over the
+course of each year. During their existence the band has played and toured with everyone from
+Mastodon and High On Fire to Melt-Banana, Eyehategod, Melvins, Lubricated Goat and Mike Watt.
+
+
+* Jucifer has been compared to the Melvins, Jesus Lizard, Black Sabbath, Slayer, Morbid Angel,
+Neurosis, Sunn O))), Lightning Bolt, Celtic Frost, My Bloody Valentine, and Portishead. Jucifer
+describes its own sound as: "A peasant revolt etched in bone at 140 db."
+
+
+* Gazelle Amber Valentine typically performs live with a wall of amplification, at times using as many
+as 25 cabinets but recently averaging 19; 5 guitar cabs and 14 bass cabs. She has said the band
+brings a stadium show production to the club and theater setting.
+
+
+* Slayer\'s Dave Lombardo names Jucifer drummer Edgar Livengood as one of his two favorite
+drummers, along with The Melvins\' Dale Crover.
+
+
+* Jucifer has albums out on labels such as Capricorn, Alternative Tentacles, and Relapse.
+
+
+* Jucifer\'s previous album, 2008\'s L\'Autrichienne, was a concept album about Marie Antoinette and
+the French Revolution.
+
+
+* Jucifer is the subject of two films currently in the works -- one with director David Hall (known for
+his Maryland Deathfest documentary and his feature films based on the music of Today is the Day
+and Fuck the Facts) and one with director Derek Cianfrance (director of Blue Valentine, starring
+Ryan Gosling and Michelle Williams.)
+
+
+* Jucifer\'s seventh album, 2010\'s Throned In Blood, is a concept album about the atrocities of war.
+Throned In Blood was released on Jucifer\'s own new label, Nomadic Fortress. It has been a
+longtime goal of the band to start its own label; moving toward a fully self-sufficient model.
+Relapse continues to support Jucifer and has inked a distribution deal with Nomadic Fortress to
+distribute its output. Forthcoming releases by Nomadic Fortress will include other bands along
+with Jucifer\'s own material. Alternative Tentacles has licensed the LP version of Throned In Blood
+as they did with L\'Autrichienne.
+
+
+Nomadic Fortress will reissue Jucifer\'s 1994 4-track EP Nadir in summer 2011, and plans to issue a
+split featuring Jucifer & Aaron Deal (Salome) in fall 2011. Jucifer is in the process of recording a
+new studio album as well, slated for release in spring of 2012.
+
+
+* Jucifer toured North America, Europe, and Russia throughout 2010 and 2011 in support of
+Throned in Blood, including Maryland Deathfest 2010, SWR Barroselas 2010 (Portugal), Stoned Hand
+Of Doom 2010 (Italy), Asymmetry 2011 (Poland) and Durbuy Rock 2011 (Belgium).
+
+
+',
+    'dtend' => '2455851 23400',
+    'dtstart' => '2455851 9000',
+    'location' => undef,
+    'summary' => 'Jucifer with En Tu Oblivion, Screwtape Zombies and The Hits',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '49392',
+    'url' => 'http://www.benderstavern.com/show/detail/49392',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+Nautilus is a project several years in the making comprised of some top brass local talent from bands such as Workhorse and others. Their initial recording is finally completed ... This is a show to raise the necessary funds for the final step; turning the year+ long recording project into a physical product. Come support your local badasses!
+
+
+',
+    'dtend' => '2455850 21600',
+    'dtstart' => '2455850 7200',
+    'location' => undef,
+    'summary' => 'Nautilus with Chingaso, Fire In The Asylum and Low Gravity',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '48412',
+    'url' => 'http://www.benderstavern.com/show/detail/48412',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+Collapse features ex-members of Cephalic Carnage, Nicaraguan Death Squad melts faces and earwax, Royal Talons are leaving for a tour 3 days after this ... it\'s a tour kickoff for them. Come scream with us!!!
+
+
+',
+    'dtend' => '2455844 21600',
+    'dtstart' => '2455844 7200',
+    'location' => undef,
+    'summary' => 'Collapse with Nicaraguan Death Squad and Royal Talons',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '49064',
+    'url' => 'http://www.benderstavern.com/show/detail/49064',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455843 21600',
+    'dtstart' => '2455843 7200',
+    'location' => undef,
+    'summary' => 'Shoot To Please, The Host Club and more TBA',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '47790',
+    'url' => 'http://www.benderstavern.com/show/detail/47790',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+FREE SHOW !
+
+
+',
+    'dtend' => '2455843 14400',
+    'dtstart' => '2455843 0',
+    'location' => undef,
+    'summary' => 'Dave Connelly on the Tavern Stage performing acoustic versions of tunes by Johnny Cash, Lady Gaga, Katy Perry, Weezer and more',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '50972',
+    'url' => 'http://www.benderstavern.com/show/detail/50972',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+This is a time honored American pastime straight outa the 20th century. Come see what people in strip malls and trailer parks have been raving about for decades. Make new friends. Yes have some ...
+
+
+',
+    'dtend' => '2455841 21600',
+    'dtstart' => '2455841 7200',
+    'location' => undef,
+    'summary' => 'On the Tavern side - Bingo!! Hosted by Laura J.',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '51358',
+    'url' => 'http://www.benderstavern.com/show/detail/51358',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+',
+    'dtend' => '2455837 21600',
+    'dtstart' => '2455837 7200',
+    'location' => undef,
+    'summary' => 'Seismic Event, Pearls For Breakfast, Red Fox Run and Seek',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '46580',
+    'url' => 'http://www.benderstavern.com/show/detail/46580',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+This a Bands 4 Bands showcase that will feature kick ass music, a guitar giveaway and much more TBA ...
+
+
+',
+    'dtend' => '2455836 21600',
+    'dtstart' => '2455836 7200',
+    'location' => undef,
+    'summary' => 'Bands For Bands Presents: Elete, Dysdania, Broken Couches, Ploy For Extinction and Burn Down Valor',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '48590',
+    'url' => 'http://www.benderstavern.com/show/detail/48590',
+    'venue' => 'benderstavern'
+  },
+  {
+    'description' => '
+
+Sign up starts at 9pm. Come sing your favorite rock and pop hits from the 70s, 80s, 90s, 2000s and beyond!! Great setting for birthdays, office parties, get togethers and general tomfoolery. Sing it loud, sing it proud!!!
+
+
+',
+    'dtend' => '2455835 21600',
+    'dtstart' => '2455835 7200',
+    'location' => undef,
+    'summary' => 'Alley Kat Karaoke with Allison Young ... Starring you!',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => '49036',
+    'url' => 'http://www.benderstavern.com/show/detail/49036',
+    'venue' => 'benderstavern'
+  }
+]
