@@ -44,7 +44,6 @@ sub internal_import {
 		    _add_event($self, $current);
 		    return;
 	        });
-		
 	}
 	else {
 	    _add_event($self, $current);
