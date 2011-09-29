@@ -23,8 +23,8 @@ our($_TRACE);
 
 sub eval_scraper_aux {
     my($self, $aux) = @_;
-    $aux ||= $self->get('scraper_list')->get('Scraper.scraper_aux')
-	|| b_die('scraper missing scraper_aux');
+    $aux ||= $self->get('scraper_list')->get('Scraper.scraper_aux');
+    return {} unless $aux;
     my($date) = qr{\b(\d+/\d+/\d{4})\b};
     my($year) = qr/\b(20[1-2][0-9])\b/;
     my($time_ap) = qr/\b((?:[0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)\.?m\.?)|noon|midnight)/i;
