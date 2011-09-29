@@ -2,7 +2,7 @@
 # $Id$
 package Cal54::Scraper::ICalendar;
 use strict;
-use Bivio::Base 'Bivio.Scraper';
+use Bivio::Base 'Scraper.RegExp';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
@@ -26,7 +26,7 @@ sub internal_import {
     }
     $url =~ s/webcal:/http:/;
     $self->parse_ics($self->c4_scraper_get($url));
-    return;    
+    return;
 }
 
 sub parse_ics {
