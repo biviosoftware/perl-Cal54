@@ -28,7 +28,9 @@ sub form {
 	]),
 	body => Join([
 	    vs_simple_form(ScraperForm => [
-		'ScraperForm.Website.url',
+		[ 'ScraperForm.Website.url', {
+		    size => 80,
+		}],
 		'ScraperForm.Scraper.scraper_type',
 		['ScraperForm.Scraper.default_venue_id', {
 		    choices => ['Model.VenueList'],
