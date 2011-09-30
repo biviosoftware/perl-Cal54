@@ -27,8 +27,8 @@ sub eval_scraper_aux {
     return {} unless $aux;
     my($date) = qr{\b(\d+/\d+/\d{4})\b};
     my($year) = qr/\b(20[1-2][0-9])\b/;
-    my($time_ap) = qr/\b((?:[0,1]?[0-9](?:\:[0-5][0-9])?\s*(?:a|p)\.?m\.?)|noon|midnight)/i;
-    my($time) = qr/\b((?:[0,1]?[0-9](?:\:[0-5][0-9])?)|noon|midnight)\b/i;
+    my($time_ap) = qr/\b((?:[0,1]?[0-9]\s*(?:\:\s*[0-5][0-9])?\s*(?:a|p)\.?m\.?)|noon|midnight)/i;
+    my($time) = qr/\b((?:[0,1]?[0-9]\s*(?:\:\s*[0-5][0-9])?)|noon|midnight)\b/i;
     my($time_span) = qr/$time\s*\-\s*$time_ap/i;
     my($day_name) = _day_name_regexp();
     my($month) = _month_regexp();
