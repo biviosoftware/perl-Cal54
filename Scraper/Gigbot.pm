@@ -28,7 +28,7 @@ sub internal_import {
                 [qr/\n([^\n]+?)\n*\(Read More/is => {
                     fields => [qw(description)],
                 }],
-                [qr/at\n(.*?)\n/i => {
+                [qr/\bat\n(.*?)\n/i => {
                     fields => [qw(location)],
                 }],
             ],
