@@ -10,8 +10,11 @@ sub clean_description {
     my($self, $item) = @_;
     my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
     $item->{title} = $self->internal_clean($item->{title});
+    my($use_raw_description) = ref($self)
+	? $self->get_scraper_aux->{use_raw_description}
+	: 0;
 
-    if ($item->{description} =~ /\<.*\>/) {
+    if ($item->{description} =~ /\<.*\>/ && ! $use_raw_description) {
 	$item->{description} = ${$cleaner->clean_html(
 	    \($item->{description}),
 	    $item->{link},
