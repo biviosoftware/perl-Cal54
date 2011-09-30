@@ -172,6 +172,7 @@ sub internal_date_time {
     # mm/dd/yyyy hh(a|p)m
     # yyyy/mm/dd hh:mm (a|p)m
     $str =~ s/(a|p)\.?(m)\.?/$1$2/i;
+    $str =~ s/\s*\:\s*/\:/g;
     my($d, $t) = $str =~ m,^([\d/]+)\s+(.*?)\s*$,;
     b_die('unparsable date/time: ', $str)
 	unless $t;
