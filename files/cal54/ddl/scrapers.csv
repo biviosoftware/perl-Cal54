@@ -20,7 +20,6 @@ http://ciatanowinery.com/winery/content/view/33/44/,v-ciantano,Google,,"{
   },
 }
 "
-http://www.coloradofeedandgrain.com/events.html,v-feedandgrain,Google,,
 http://www.dickensoperahouse.com/calendar.htm,v-dickensopera,Google,,
 http://www.johnnyscigars.com/calendar/,v-cigar,Google,,"{
   reject_event => {
@@ -123,6 +122,7 @@ http://www.rei.com/storesrss/44,v-rei,RSS,,"{
 }
 "
 http://bouldersymphony.org/category/2011-2012-season/feed/,,RSS,bouldersymphony_scraper,"{
+  use_raw_description => 1,
   location_to_venue => {
     qr/first presbyterian/i => 'firstpresbyterian',
     qr/bethany lutheran/i => 'bethanylutheran',
@@ -290,11 +290,11 @@ http://1stbankcenter.com/events/,v-firstbankcenter,Reg Exp,,"{
     page_count => 3,
   },
   repeat => [
-    [qr/(All Dates\n+)(?:[^\n]+[^}]\n)*([^\n]+\})\n(?:[^\n]+\n)*?$month $day, $year, $time_ap\n.*?\n\n/s => {
+    [qr/(All Dates\n+)(?:http.*?\n).*?([^\n]+\}\n.*?)$month $day, $year, $time_ap\n.*?\n\n/s => {
       fields => [qw(save summary month day year start_time)],
       follow_link => {
         once => [
-          [qr/Ticket Prices[^\n]+\n+.*?(?:(?:\n|[^\n]+\}\n))+(?:[^\n]+\}\n)+\n(.*?)\n{3}/si => {
+          [qr/Ticket Prices.*?\n(?:[^\n]{0,50}\n)+(.*?)\n1STBANK/is => {
             fields => [qw(description)],
           }],
         ],
@@ -963,8 +963,8 @@ http://www.heritagesquare.info/events.html,v-heritagesquare,Reg Exp,,"{
 "
 http://www.hodishalfnote.com/,v-hodishalfnote,Reg Exp,,"{
   repeat => [
-    [qr/(($date \d+\:\d+\:\d+.*\}))\n$line/ => {
-      fields => [qw(link url date summary)],
+    [qr/$month $day, $year $time_ap(.*?)\n$line/ => {
+      fields => [qw(month day year start_time link summary)],
       follow_link => {
         once => [
           [qr/\nBuy Tickets.*?\n(?:\n+[^\n]+?\})+\n*($line+)/is => {
