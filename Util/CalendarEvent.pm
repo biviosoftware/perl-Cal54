@@ -115,6 +115,11 @@ sub import_events_for_all_venues {
 sub init_scrapers {
     my($self, $filename) = @_;
     my($list) = $self->model('ScraperList')->load_all;
+    my($visited_urls) = {
+	@{$list->map_rows(sub {
+	    return shift->get(qw(Website.url Scraper.scraper_id));
+	})}
+    };
     _iterate_csv($self, $filename, sub {
         my($v) = @_;
 	$v->{'Scraper.scraper_type'} =
@@ -125,6 +130,7 @@ sub init_scrapers {
 		name => $v->{'default_venue.RealmOwner.name'},
 	    })->get('realm_id')
 	    : undef;
+	delete($visited_urls->{$v->{'Website.url'}});
 	$self->req->put(query =>
 	    $list->find_row_by('Website.url', $v->{'Website.url'})
 		? $list->format_query('THIS_DETAIL')
@@ -142,6 +148,8 @@ sub init_scrapers {
 	}) if $v->{'scraper.RealmOwner.name'} =~ /\_/;
 	$self->req->clear_nondurable_state;
     });
+    b_info('orphaned urls: ', $visited_urls)
+	if %$visited_urls;
     return;
 }
 
