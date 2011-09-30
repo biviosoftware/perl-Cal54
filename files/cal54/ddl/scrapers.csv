@@ -231,15 +231,15 @@ http://www.gothictheatre.com/home/subscribe,,Gigbot,,"{
     [qr/at (The Gothic Theatre)/i => {
       fields => [qw(location)],
     }],
-#    [qr/at\n(Moe's Original BBQ and Bowl|Moe's Original BBQ \- Denver)/i => {
-#      fields => [qw(location)],
-#    }],
-#    [qr/\nArtist Info.*?Add To Favorites.*?\n+$line(.*?)\(Read More/is => {
-#      fields => [qw(ignore description)],
-#    }],
-#    [qr/\nAdd 1 2 3.*?\n([^\n]+?)\n*\(Read More/is => {
-#      fields => [qw(description)],
-#    }],
+    [qr/at\n(Moe's Original BBQ and Bowl|Moe's Original BBQ \- Denver)/i => {
+      fields => [qw(location)],
+    }],
+    [qr/\nArtist Info.*?Add To Favorites.*?\n+$line(.*?)\(Read More/is => {
+      fields => [qw(ignore description)],
+    }],
+    [qr/\nAdd 1 2 3.*?\n([^\n]+?)\n*\(Read More/is => {
+      fields => [qw(description)],
+    }],
   ],
 }
 "
