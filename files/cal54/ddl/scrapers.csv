@@ -185,6 +185,7 @@ http://www.hermanshideaway.com/home/subscribe,v-hermanshideaway,Gigbot,,"{
   ],
 }
 "
+http://www.denver3.com/home/subscribe,v-larumba,Gigbot,,
 http://www.theorientaltheater.com/home/subscribe,v-oriental,Gigbot,,"{
   once => [
     [qr/\nThe Oriental.*?\n$time_ap.*?\n+(.*)/is => {
@@ -219,28 +220,6 @@ http://www.cervantesmasterpiece.com/home/subscribe,,Gigbot,,"{
     qr/masterpiece/i => 'cervantesmasterpiece',
     qr/other/i => 'cervantesother',
   },
-}
-"
-http://www.gothictheatre.com/home/subscribe,,Gigbot,,"{
-  location_to_venue => {
-    qr/gothic/i => 'gothictheatre',
-    qr/bowl/i => 'moesoriginal',
-    qr/denver/i => 'moesdenver',
-  },
-  once => [
-    [qr/at (The Gothic Theatre)/i => {
-      fields => [qw(location)],
-    }],
-    [qr/at\n(Moe's Original BBQ and Bowl|Moe's Original BBQ \- Denver)/i => {
-      fields => [qw(location)],
-    }],
-    [qr/\nArtist Info.*?Add To Favorites.*?\n+$line(.*?)\(Read More/is => {
-      fields => [qw(ignore description)],
-    }],
-    [qr/\nAdd 1 2 3.*?\n([^\n]+?)\n*\(Read More/is => {
-      fields => [qw(description)],
-    }],
-  ],
 }
 "
 http://www.hi-dive.com/home/subscribe,,Gigbot,,"{
@@ -1399,6 +1378,24 @@ http://www.qspub.com/live_entertainment_calendar,v-qspub,Reg Exp,,"{
   ],
 }
 "
+http://quixotes.frontgatetickets.com/,v-quixotes,Reg Exp,,"{
+  repeat => [
+    [qr/$line\s*$month\s+$day\s+Quixote/is => {
+      fields => [qw(summary)],
+      follow_link => {
+        once => [
+          [qr/PERFORMANCE INFO\s+$day_name,\s*$month\s*$day\s*(?:Show|Doors) at $time_ap/is => {
+            fields => [qw(save month day start_time)],
+          }],
+          [qr/\n\n($line+)\n\n+PERFORMANCE INFO/i => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
 http://www.redrocksonline.com/Calendar.aspx,v-redrocksonline,Reg Exp,,"{
   reject_event => {
     summary => qr/private event/i,
@@ -2017,5 +2014,13 @@ http://www.oskarblues.com/tunes/muisc-calendar,,Reg Exp,oskar_scraper,"{
       },
     }],
   ],
+}
+"
+http://www.ticketfly.com/api/events/upcoming.rss?orgId=745,v-gothictheatre,Ticket Fly,,
+http://www.ticketfly.com/api/events/upcoming.rss?orgId=755,,Ticket Fly,,"{
+  location_to_venue => {
+    qr/denver/i => 'moesdenver',
+    qr/englewood/i => 'moesoriginal',
+  },
 }
 "
