@@ -14,6 +14,10 @@ sub clean_description {
 	? $self->get_scraper_aux->{use_raw_description}
 	: 0;
 
+    if (! $item->{description} && $item->{'content:encoded'}) {
+	$item->{description} = $item->{'content:encoded'};
+    }
+
     if ($item->{description} =~ /\<.*\>/ && ! $use_raw_description) {
 	$item->{description} = ${$cleaner->clean_html(
 	    \($item->{description}),
@@ -37,20 +41,26 @@ sub internal_import {
 	    summary => $item->{title},
 	    url => $item->{link},
 	};
-	$self->extract_once_fields($self->get_scraper_aux,
-            \($item->{description}), $current);
+	$self->internal_parse_item($item, $current);
+    }
+    return;
+}
 
-	if ($self->get_scraper_aux->{repeat}) {
-	    $self->extract_repeat_fields($self->get_scraper_aux,
-	        \($item->{description}), $current, sub {
-		    my($self, $args, $current) = @_;
-		    _add_event($self, $current);
-		    return;
-	        });
-	}
-	else {
-	    _add_event($self, $current);
-	}
+sub internal_parse_item {
+    my($self, $item, $current) = @_;
+    $self->extract_once_fields($self->get_scraper_aux,
+        \($item->{description}), $current);
+
+    if ($self->get_scraper_aux->{repeat}) {
+	$self->extract_repeat_fields($self->get_scraper_aux,
+	    \($item->{description}), $current, sub {
+		my($self, $args, $current) = @_;
+		_add_event($self, $current);
+		return;
+	    });
+    }
+    else {
+	_add_event($self, $current);
     }
     return;
 }
