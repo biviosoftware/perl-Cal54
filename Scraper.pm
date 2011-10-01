@@ -316,6 +316,7 @@ sub _filter_events {
 
     foreach my $event (@{$self->get('events')}) {
 	next if $self->is_canceled($event->{summary});
+	next if _is_private($self, $event->{summary});
 	$event->{dtend} ||= $event->{dtstart};
 
 	if ($_DT->is_greater_than($event->{dtstart}, $event->{dtend})) {
@@ -333,6 +334,11 @@ sub _filter_events {
     }
     $self->put(events => $events);
     return;
+}
+
+sub _is_private {
+    my($self, $summary) = @_;
+    return ($summary || '') =~ /private (party|event)/i ? 1 : 0;
 }
 
 sub _link_event_to_venue {
