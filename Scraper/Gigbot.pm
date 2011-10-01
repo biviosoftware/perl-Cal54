@@ -25,7 +25,7 @@ sub internal_import {
 	my($text) = $cleaner->clean_html($html, $url);
 	$self->extract_once_fields($self->eval_scraper_aux('{
             once => [
-                [qr/\n([^\n]+?)\n*\(Read More/is => {
+                [qr/\n([^\n]+?)\n*\(?Read More/is => {
                     fields => [qw(description)],
                 }],
                 [qr/\bat\n(.*?)\n/i => {
@@ -36,8 +36,7 @@ sub internal_import {
 	$self->extract_once_fields($self->get_scraper_aux, $text, $event);
 	$event->{description} =~ s/\{\d+\}//g
 	    if $event->{description};
-	push(@$events, $event)
-	    unless $event->{summary} =~ /private (party|event)/i;
+	push(@$events, $event);
     }
     $self->put(events => $events);
     return;
