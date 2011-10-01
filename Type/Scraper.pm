@@ -17,6 +17,7 @@ __PACKAGE__->compile([
     CALENDAR_MANAGER_DATA => 8,
     GIGBOT => 9,
     REG_EXP => 10,
+    TICKET_FLY => 11,
 ]);
 
 sub as_class {
@@ -28,7 +29,7 @@ sub as_class {
 
 sub can_preview {
     my($self) = @_;
-    return $self->equals_by_name(qw(RSS REG_EXP));
+    return $self->equals_by_name(qw(RSS REG_EXP TICKET_FLY));
 }
 
 sub is_continuous {
