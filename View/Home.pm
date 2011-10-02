@@ -225,7 +225,8 @@ sub _meta {
     my($n, $v) = @$_;
     return META({
 	PROPERTY => ($n eq 'app_id' ? 'fb' : 'og') . ":$n",
-	CONTENT => $v,
+	# May be unitialized, and Join doesn't like that
+	CONTENT => Or($v, ''),
     });
 }
 
