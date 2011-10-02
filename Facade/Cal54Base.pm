@@ -8,7 +8,7 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub internal_c4_text {
     return [
-	[site_name => q{CAL54, Inc.}],
+	[site_name => q{CAL54}],
 	[site_copyright => q{CAL54, Inc.}],
     ];
 }
