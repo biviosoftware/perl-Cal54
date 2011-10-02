@@ -17,8 +17,8 @@ sub list {
     my($self) = @_;
     view_pre_execute(sub {
         my($req) = shift->req;
-#	return
-#	    unless $_F->get_from_source($req)->get('want_local_file_cache');
+	return
+	    unless $_F->get_from_source($req)->get('want_local_file_cache');
 #TODO: Share with LocalFilePlain, probably set_cache_max_age on Agent.Reply
 	# Facebook only checks once a day so setting to an hour for "this"
 	# pages is reasonable.  Setting the search page to one minute allows
