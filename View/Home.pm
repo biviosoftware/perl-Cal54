@@ -16,18 +16,15 @@ my($_F) = b_use('UI.Facade');
 sub list {
     my($self) = @_;
     view_pre_execute(sub {
-        my($req) = shift->req;
-	return
-	    unless $_F->get_from_source($req)->get('want_local_file_cache');
-#TODO: Share with LocalFilePlain, probably set_cache_max_age on Agent.Reply
 	# Facebook only checks once a day so setting to an hour for "this"
 	# pages is reasonable.  Setting the search page to one minute allows
 	# us to avoid multiple hits from facebook on /search.
-	my($max_age) = $req->get('Model.HomeList')->c4_has_this
-	    ? 60 * 60 : 60;
+        my($req) = shift->req;
         $req->get('reply')
-	    ->set_header('Cache-Control', "max-age=$max_age")
-	    ->set_header(Expires => $_DT->rfc822($_DT->add_seconds($_DT->now, $max_age)));
+	    ->set_cache_max_age(
+		$req->get('Model.HomeList')->c4_has_this ? 60 * 60 : 60,
+		$req,
+	    );
 	return;
     });
     view_put(
