@@ -22,7 +22,7 @@ sub list {
         my($req) = shift->req;
         $req->get('reply')
 	    ->set_cache_max_age(
-		$req->get('Model.HomeList')->c4_has_this ? 60 * 60 : 60,
+		$req->get('Model.HomeList')->c4_has_cursor ? 60 * 60 : 60,
 		$req,
 	    );
 	return;
@@ -41,7 +41,7 @@ sub list {
 		[locale => 'en_US'],
 	    ),
 	    If(
-		['Model.HomeList', '->c4_has_this'],
+		['Model.HomeList', '->c4_has_cursor'],
 		Join([
 		    map(_meta(@$_),
 			[description => ['Model.HomeList', '->c4_description']],
@@ -130,7 +130,8 @@ sub _list {
 		    DIV_date(['month_day']),
 		    DIV_item(Join([
 			DIV_line(Join([
-			    vs_unless_robot(
+			    If(
+				vs_unless_robot(1, ['->c4_has_this']),
 				UserTrackingLink(
 				    String(['RealmOwner.display_name']),
 				    Or(['CalendarEvent.url'], ['calendar.Website.url']),
