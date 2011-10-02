@@ -9,25 +9,37 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
 my($_HTML) = b_use('Bivio.HTML');
+my($_F) = b_use('UI.Facade');
 
 #TODO: If there is no event page, then render the description in a little popup window
 
 sub list {
     my($self) = @_;
-   view_put(
+    view_pre_execute(sub {
+        my($req) = shift->req;
+#	return
+#	    unless $_F->get_from_source($req)->get('want_local_file_cache');
+#TODO: Share with LocalFilePlain, probably set_cache_max_age on Agent.Reply
+	# Facebook only checks once a day so setting to an hour for "this"
+	# pages is reasonable.  Setting the search page to one minute allows
+	# us to avoid multiple hits from facebook on /search.
+	my($max_age) = $req->get('Model.HomeList')->c4_has_this
+	    ? 60 * 60 : 60;
+        $req->get('reply')
+	    ->set_header('Cache-Control', "max-age=$max_age")
+	    ->set_header(Expires => $_DT->rfc822($_DT->add_seconds($_DT->now, $max_age)));
+	return;
+    });
+    view_put(
 	home_base_html_tag_attrs => ' xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xml:lang="en_US" lang="en_US"',
 	home_base_head => Join([
 	    Title(['CAL54', ['Model.HomeList', '->c4_title']]),
 	    map(_meta(@$_),
 		[title => ['Model.HomeList', '->c4_title']],
 		[site_name => vs_site_name()],
-		[image => URI({
-		    require_absolute => 1,
-		    facade_uri => 'cal54',
-		    uri => ['UI.Facade', 'Icon', '->get_uri', 'logo'],
-		})],
+		[image => _abs_uri(['UI.Facade', 'Icon', '->get_uri', 'logo'])],
 		[type => 'activity'],
-		[url => ['Model.HomeList', '->c4_format_uri']],
+		[url => _abs_uri(['Model.HomeList', '->c4_format_uri'])],
 		[app_id => '237465832943306'],
 		[locale => 'en_US'],
 	    ),
@@ -50,11 +62,7 @@ sub list {
     );
     return $self->internal_body(Join([
 	q[<div id="fb-root"></div><script type="text/javascript">window.fbAsyncInit=function(){FB.init({appId:'237465832943306',status:false,cookie:false,xfbml:true,oauth:false,channelUrl:'],
-        URI({
-            require_absolute => 1,
-            facade_uri => 'cal54',
-            uri => '/f/channel.html',
-        }),
+	_abs_uri('/f/channel.html'),
 	q['})};(function(){var e=document.createElement('script');e.src=document.location.protocol+'//connect.facebook.net/en_US/all.js';e.async=true;document.getElementById('fb-root').appendChild(e);}());</script>],
 	Form({
 	    form_class => 'HomeQueryForm',
@@ -80,6 +88,15 @@ sub list {
 	}),
 	_list($self),
     ]));
+}
+
+sub _abs_uri {
+    return URI({
+	uri => shift,
+	require_absolute => 1,
+	facade_uri => 'cal54',
+	uri => ,
+    });
 }
 
 sub _form {
@@ -166,7 +183,7 @@ sub _list {
 					LAYOUT => 'button_count',
 					COLORSCHEME => 'light',
 					FONT => 'arial',
-					'HREF' => ['->c4_format_uri'],
+					HREF => _abs_uri(['->c4_format_uri']),
 				    }),
 				),
 			    ),
