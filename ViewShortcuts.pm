@@ -7,8 +7,8 @@ use Bivio::UI::ViewLanguageAUTOLOAD;
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub vs_unless_robot {
-    my(undef, $widget) = @_;
-    return If(['!', 'Type.UserAgent', '->eq_browser_robot'], $widget);
+    my(undef, $widget, $else) = @_;
+    return If([['->req'], '!', 'Type.UserAgent', '->eq_browser_robot'], $widget, $else);
 }
 
 1;
