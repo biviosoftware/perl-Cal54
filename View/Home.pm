@@ -8,15 +8,58 @@ use Bivio::UI::ViewLanguageAUTOLOAD;
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
+my($_HTML) = b_use('Bivio.HTML');
 
 #TODO: If there is no event page, then render the description in a little popup window
 
 sub list {
     my($self) = @_;
+   view_put(
+	home_base_html_tag_attrs => ' xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xml:lang="en_US" lang="en_US"',
+	home_base_head => Join([
+	    Title(['CAL54', ['Model.HomeList', '->c4_title']]),
+	    map(_meta(@$_),
+		[title => ['Model.HomeList', '->c4_title']],
+		[site_name => vs_site_name()],
+		[image => URI({
+		    require_absolute => 1,
+		    facade_uri => 'cal54',
+		    uri => ['UI.Facade', 'Icon', '->get_uri', 'logo'],
+		})],
+		[type => 'activity'],
+		[url => ['Model.HomeList', '->c4_format_uri']],
+		[app_id => '237465832943306'],
+		[locale => 'en_US'],
+	    ),
+	    If(
+		['Model.HomeList', '->c4_has_this'],
+		Join([
+		    map(_meta(@$_),
+			[description => ['Model.HomeList', '->c4_description']],
+			['street-address' => ['Model.HomeList', 'Address.street1']],
+			['locality' => ['Model.HomeList', 'Address.city']],
+			['region' => ['Model.HomeList', 'Address.state']],
+			['postal-code' => ['Model.HomeList', 'Address.zip']],
+			['country-name' => ['Model.HomeList', 'Address.country']],
+			['phone_number' => ['Model.HomeList', 'Phone.phone']],
+			['email' => ['Model.HomeList', 'Email.email']],
+		    ),
+		]),
+	    ),
+	]),
+    );
     return $self->internal_body(Join([
+	q[<div id="fb-root"></div><script type="text/javascript">window.fbAsyncInit=function(){FB.init({appId:'237465832943306',status:false,cookie:false,xfbml:true,oauth:false,channelUrl:'],
+        URI({
+            require_absolute => 1,
+            facade_uri => 'cal54',
+            uri => '/f/channel.html',
+        }),
+	q['})};(function(){var e=document.createElement('script');e.src=document.location.protocol+'//connect.facebook.net/en_US/all.js';e.async=true;document.getElementById('fb-root').appendChild(e);}());</script>],
 	Form({
 	    form_class => 'HomeQueryForm',
 	    class => 'c4_form',
+	    STYLE => 'z-index:1000',
 	    form_method => 'get',
 	    want_hidden_fields => 0,
 	    value => IfMobile(
@@ -39,44 +82,6 @@ sub list {
     ]));
 }
 
-sub _featured_item {
-    return DIV_featured(Join([
-	SPAN_title('Featured Event'),
-	DIV_date(q{Sunday June 26, 2011}),
-	DIV_item(Join([
-	    DIV_line(
-		UserTrackingLink(
-		    'Riff Raff - RDS Foundation Fundraiser',
-		    'http://rdsfoundation.org/index.php?option=com_content&task=view&id=32',
-		    'title',
-		),
-	    ),
-	    Join([
-		SPAN_time(q{6pm - 9}),
-		' ',
-		SPAN_excerpt(
-		    q{Boulder's Riff Raff will be playing for the fundraising dinner of the RDS Foundation (www.rdsfoundation.org - we raise money for people with bipolar disorder to get the treatment they need and can't afford).  Tickets for this outdoor event are $50 which include the concert and a catered full dinner and wine from Laudisio's.}
-		),
-		DIV_line(Join([
-		    UserTrackingLink(
-			q{BC Interiors},
-			'http://www.bcinteriors.com/',
-			'venue',
-		    ),
-		    ' ',
-		    UserTrackingLink(
-			'3390 Valmont Rd, Boulder',
-			'http://maps.google.com/maps?q=BC+Interiors+3390+Valmont+Rd,+Boulder+CO,+80301',
-			'address',
-		    ),
-		    ' ',
-		    SPAN_phone('303.555.5555'),
-		])),
-	    ]),
-	])),
-    ]));
-}
-
 sub _form {
     return DIV_c4_query(
 	Join([
@@ -95,26 +100,35 @@ sub _form {
 sub _list {
     my($self) = @_;
     return Join([
-	vs_unless_robot(IfMobile(
-	    Link(
-		String(vs_text('previous_button')),
-		['Model.HomeList', '->format_uri', 'PREV_LIST'],
-		{
-		    class => 'c4_prev',
-		    control => [['Model.HomeList', '->get_query'], 'has_prev']
-		},
+	vs_unless_robot(
+	    IfMobile(
+		Link(
+		    String(vs_text('previous_button')),
+		    ['Model.HomeList', '->format_uri', 'PREV_LIST'],
+		    {
+			class => 'c4_prev',
+			control => [['Model.HomeList', '->get_query'], 'has_prev']
+		    },
+		),
 	    ),
-	)),
+	),
 	DIV_c4_list(
 	    Grid([[
 		List(HomeList => [
 		    DIV_date(['month_day']),
 		    DIV_item(Join([
 			DIV_line(Join([
-			    UserTrackingLink(
-				String(['RealmOwner.display_name']),
-				Or(['CalendarEvent.url'], ['calendar.Website.url']),
-				'title',
+			    vs_unless_robot(
+				UserTrackingLink(
+				    String(['RealmOwner.display_name']),
+				    Or(['CalendarEvent.url'], ['calendar.Website.url']),
+				    'title',
+				),
+				Link(
+				    String(['RealmOwner.display_name']),
+				    ['->c4_format_uri'],
+				    'title',
+				),
 			    ),
 			])),
 			Join([
@@ -140,6 +154,23 @@ sub _list {
 				    ]),
 				),
 			    ])),
+			    vs_unless_robot(
+				DIV_c4_fb_like(
+				    Tag({
+					tag_if_empty => 1,
+					value => '',
+					tag => 'fb:like',
+					SHOW_FACES => 'false',
+					SEND => 'false',
+					WIDTH => 90,
+					LAYOUT => 'button_count',
+					COLORSCHEME => 'light',
+					FONT => 'arial',
+					'HREF' => ['->c4_format_uri'],
+				    }),
+				),
+			    ),
+
 			]),
 		    ])),
 		], {
@@ -149,10 +180,6 @@ sub _list {
 		    cell_expand => 1,
 		    cell_align => 'top',
 		}),
-		# IfMobile(
-		#     Simple(''),
-		#     _featured_item(),
-		# )->put(cell_align => 'top'),
 	    ]]),
 	),
 	vs_unless_robot(
@@ -177,6 +204,14 @@ sub _list {
 	),
 	$self->internal_footer,
     ]);
+}
+
+sub _meta {
+    my($n, $v) = @$_;
+    return META({
+	PROPERTY => ($n eq 'app_id' ? 'fb' : 'og') . ":$n",
+	CONTENT => $v,
+    });
 }
 
 1;
