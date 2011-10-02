@@ -54,7 +54,6 @@ sub list {
 			['postal-code' => ['Model.HomeList', 'Address.zip']],
 			['country-name' => ['Model.HomeList', 'Address.country']],
 			['phone_number' => ['Model.HomeList', 'Phone.phone']],
-			['email' => ['Model.HomeList', 'Email.email']],
 		    ),
 		]),
 	    ),
