@@ -95,7 +95,6 @@ sub _abs_uri {
 	uri => shift,
 	require_absolute => 1,
 	facade_uri => 'cal54',
-	uri => ,
     });
 }
 
