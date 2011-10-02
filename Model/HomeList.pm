@@ -34,7 +34,7 @@ sub PAGE_SIZE {
 
 sub c4_description {
     my($self) = @_;
-    return $self->c4_has_this
+    return $self->c4_has_cursor
 	? $self->get('excerpt')
 	: q{The complete calendar of events, activities, fun things to do for Boulder and Denver, CO.  It's completely free, just like Google!};
 }
@@ -57,22 +57,25 @@ sub c4_format_uri {
     return $self->req->format_uri({
 	path_info => undef,
 	task_id => 'C4_HOME_LIST',
-	query => $self->c4_has_this ? {
+	query => $self->c4_has_cursor ? {
 	    'ListQuery.this' => $self->get('CalendarEvent.calendar_event_id'),
 	} : undef,
     });
 }
 
+sub c4_has_cursor {
+    my($self) = @_;
+    return $self->has_cursor || $self->c4_has_this ? 1 : 0;
+}
+
 sub c4_has_this {
     my($self) = @_;
-    return $self->has_cursor
-	|| $self->get_query->unsafe_get('this') && $self->set_cursor_or_die(0)
-	? 1 : 0;
+    return $self->get_query->unsafe_get('this') && $self->set_cursor_or_die(0) ? 1 : 0;
 }
 
 sub c4_title {
     my($self) = @_;
-    return $self->c4_has_this
+    return $self->c4_has_cursor
 	? join(' ', $self->get(qw(RealmOwner.display_name month_day start_end_am_pm)))
 	    : 'Make a LOCAL scene - Search for Events, Concerts, Lectures, Activities';
 }
