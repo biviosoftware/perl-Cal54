@@ -34,7 +34,7 @@ sub list {
 	    map(_meta(@$_),
 		[title => ['Model.HomeList', '->c4_title']],
 		[site_name => vs_site_name()],
-		[image => _abs_uri(['UI.Facade', 'Icon', '->get_uri', 'logo'])],
+		[image => _abs_uri(['UI.Facade', 'Icon', '->get_uri', 'fb-logo'])],
 		[type => 'activity'],
 		[url => _abs_uri(['Model.HomeList', '->c4_format_uri'])],
 		[app_id => '237465832943306'],
