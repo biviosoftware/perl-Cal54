@@ -57,14 +57,17 @@ sub c4_format_uri {
     return $self->req->format_uri({
 	path_info => undef,
 	task_id => 'C4_HOME_LIST',
-	query => $self->has_cursor ? {
+	query => $self->c4_has_this ? {
 	    'ListQuery.this' => $self->get('CalendarEvent.calendar_event_id'),
 	} : undef,
     });
 }
 
 sub c4_has_this {
-    return shift->get_query->unsafe_get('this') ? 1 : 0;
+    my($self) = @_;
+    return $self->has_cursor
+	|| $self->get_query->unsafe_get('this') && $self->set_cursor_or_die(0)
+	? 1 : 0;
 }
 
 sub c4_title {
