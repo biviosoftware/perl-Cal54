@@ -56,17 +56,19 @@ sub xhtml {
     view_class_map('XHTMLWidget');
     view_shortcuts($proto->VIEW_SHORTCUTS);
     view_put(
+	home_base_html_tag_attrs => '',
+	home_base_head => Title(['CAL54', 'Make a LOCAL scene', 'Search for Events, Concerts, Lectures, Live Music']),
 	home_base_body => '',
     );
     view_main(
-	Page3({
+	Page({
 	    style => RealmCSS('HomeCSS->site_css'),
 	    body_class => IfMobile(
 		'c4_mobile c4_home',
 		'c4_home',
 	    ),
 	    head => Join([
-		Title(['CAL54', q{Make a LOCAL scene}, 'Events, Concerts, Lectures, Live Music']),
+		view_widget_value('home_base_head'),
 		MobileDetector(),
 		IfMobile(
 		    META({
@@ -75,6 +77,7 @@ sub xhtml {
 		    }),
 		),
 	    ]),
+	    html_tag_attrs => view_widget_value('home_base_html_tag_attrs'),
 	    body => view_widget_value('home_base_body'),
 	    xhtml => 1,
 	}),
