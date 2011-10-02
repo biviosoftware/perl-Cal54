@@ -14,6 +14,7 @@ my($_TS) = b_use('Type.String');
 my($_S) = b_use('Bivio.Search');
 my($_VL) = b_use('Model.VenueList');
 my($_D) = b_use('Type.Date');
+my($_THIS_DETAIL) = b_use('Biz.QueryType')->THIS_DETAIL;
 my($_HIDE_ROWS_QUERY) = <<"EOF";
     NOT EXISTS (
 	SELECT primary_id FROM row_tag_t
@@ -31,8 +32,46 @@ sub PAGE_SIZE {
     return b_use('Widget.IfMobile')->is_mobile(shift->req) ? 20 : 50;
 }
 
+sub c4_description {
+    my($self) = @_;
+    return $self->c4_has_this
+	? $self->get('excerpt')
+	: q{The complete calendar of events, activities, fun things to do for Boulder and Denver, CO.  It's completely free, just like Google!};
+}
+
 sub execute {
-    return shift->execute_load_page(@_);
+    my($proto, $req) = @_;
+    my($self) = shift->new($req);
+    my($query) = $self->parse_query_from_request;
+    if ($query->unsafe_get('this')) {
+	return
+	    if $self->unsafe_load_this($query);
+	$query->delete('this');
+    }
+    $self->load_page($query);
+    return;
+}
+
+sub c4_format_uri {
+    my($self) = @_;
+    return $self->req->format_uri({
+	path_info => undef,
+	task_id => 'C4_HOME_LIST',
+	query => $self->has_cursor ? {
+	    'ListQuery.this' => $self->get('CalendarEvent.calendar_event_id'),
+	} : undef,
+    });
+}
+
+sub c4_has_this {
+    return shift->get_query->unsafe_get('this') ? 1 : 0;
+}
+
+sub c4_title {
+    my($self) = @_;
+    return $self->c4_has_this
+	? join(' ', $self->get(qw(RealmOwner.display_name month_day start_end_am_pm)))
+	    : 'Make a LOCAL scene - Search for Events, Concerts, Lectures, Activities';
 }
 
 sub internal_initialize {
@@ -178,6 +217,8 @@ sub internal_prepare_statement {
 	next_page => undef,
     };
     $self->new_other('TimeZoneList')->load_all;
+    return 1
+	if $query->unsafe_get('this');
     my($dt) = $query->unsafe_get('begin_date')
 	|| $query->unsafe_get('when');
 #TODO: when is less than now
