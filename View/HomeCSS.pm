@@ -19,6 +19,7 @@ form.c4_form {
   CSS('c4_form');
   width: 100%;
   padding-bottom: 2.5ex;
+  z-index: 1;
 }
 table.c4_grid {
   Color('c4_grid-background');
@@ -297,6 +298,10 @@ div.featured span.title {
   text-align: center;
   margin-bottom: 1ex;
   padding: 0.2ex 0;
+}
+.c4_fb_like {
+  height: 20px;
+  z-index: 0;
 }
 EOF
 }
