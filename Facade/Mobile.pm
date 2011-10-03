@@ -26,13 +26,8 @@ __PACKAGE__->new({
 	[[qw(c4_logo_tag c4_logo_name)] => [qw(bold uppercase 120%)]],
 	[c4_query_what => ['100%']],
 	[c4_query_submit => ['80%']],
-	[c4_button => ['100%']],
 	[c4_pager_month => ['70%', 'uppercase']],
 	[c4_pager_a => ['70%']],
-    ],
-    Text => [
-	[previous_button => 'Previous'],
-	[next_button => 'Next'],
     ],
 });
 
