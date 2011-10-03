@@ -24,8 +24,7 @@ sub render_tag_value {
     my($self, $source, $buffer) = @_;
     my($is_bottom) = $self->render_simple_attr(is_bottom => $source);
     my($now) = $_D->local_today;
-    my($when) = ($_D->from_literal($source->ureq(qw(Model.HomeQueryForm when))))[0]
-	|| $now;
+    my($when) = $source->req('Model.HomeList')->c4_first_date;
     my($start) = $_D->set_beginning_of_week($when);
     my($weeks) = 3 + $is_bottom * 2;
     my($prev) = $_D->add_days($start, -3 * 7);
