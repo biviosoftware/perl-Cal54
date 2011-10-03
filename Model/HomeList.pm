@@ -29,7 +29,8 @@ sub EXCLUDE_HIDDEN_ROWS {
 }
 
 sub PAGE_SIZE {
-    return b_use('Widget.IfMobile')->is_mobile(shift->req) ? 20 : 50;
+    # return b_use('Widget.IfMobile')->is_mobile(shift->req) ? 20 : 50;
+    return 20;
 }
 
 sub c4_description {
@@ -37,6 +38,10 @@ sub c4_description {
     return $self->c4_has_cursor
 	? $self->get('excerpt')
 	: q{The complete calendar of events, activities, fun things to do for Boulder and Denver, CO.  It's completely free, just like Google!};
+}
+
+sub c4_first_date {
+    return shift->[$_IDI]->{first_date};
 }
 
 sub execute {
@@ -77,7 +82,7 @@ sub c4_title {
     my($self) = @_;
     return $self->c4_has_cursor
 	? join(' ', $self->get(qw(RealmOwner.display_name month_day start_end_am_pm)))
-	    : 'Make a LOCAL scene - Search for Events, Concerts, Lectures, Activities';
+	: 'Make a LOCAL scene - Search for Events, Concerts, Lectures, Activities';
 }
 
 sub internal_initialize {
@@ -207,6 +212,8 @@ sub internal_post_load_row {
 		),
 	    ),
 	);
+    $fields->{first_date} = $_D->from_datetime($row->{dtstart_tz})
+	unless $fields->{first_row_seen}++;
     return 1;
 }
 
@@ -221,6 +228,7 @@ sub internal_prepare_statement {
 	month_day => '',
 	prev_page => undef,
 	next_page => undef,
+	first_row_seen => 0,
     };
     $self->new_other('TimeZoneList')->load_all;
     return 1
@@ -234,6 +242,7 @@ sub internal_prepare_statement {
 	if $dt;
     $dt = $_DT->now
 	if !$dt || $_DT->is_greater_than($now, $dt);
+    $fields->{first_date} = $_D->from_datetime($_DEFAULT_TZ->date_time_from_utc($dt));
     $stmt->where(
 	$stmt->GTE('CalendarEvent.dtend', [$dt]),
     );
