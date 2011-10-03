@@ -253,8 +253,8 @@ div.c4_mobile_header {
 body.c4_mobile .c4_list .item span.time {
   display: block;
 }
-body.c4_mobile .c4_prev,
-body.c4_mobile .c4_next {
+body .c4_prev_button,
+body .c4_next_button {
   Color('c4_button-background');
   Font('c4_button');
   display: block;
@@ -263,10 +263,10 @@ body.c4_mobile .c4_next {
   width: 6em;
   padding: .2em .5em;
 }
-body.c4_mobile .c4_prev {
+body .c4_prev_button {
   margin-bottom: 1em;
 }
-body.c4_mobile .c4_next {
+body .c4_next_button {
   margin-top: 1em;
 }
 table.c4_suggest_site td.c4_left {
