@@ -93,6 +93,7 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_site_local => ['bold', 'family="American Typewriter", Courier']],
 	[c4_site_tag => ['family="American Typewriter", Courier']],
 	[c4_site_name => ['bold', 'family="American Typewriter", Courier']],
+	[c4_button => ['100%']],
     ],
     Task => [
 	[C4_HOME_LIST => 'search'],
@@ -118,6 +119,8 @@ my($_SELF) = __PACKAGE__->new({
 	    'email' => 'Your email (optional)',
 	    ok_button => 'Submit',
 	]],
+	[previous_button => 'Previous'],
+	[next_button => 'Next'],
     ],
 });
 
