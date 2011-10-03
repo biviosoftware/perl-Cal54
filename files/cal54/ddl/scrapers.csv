@@ -1320,16 +1320,16 @@ http://www.denverparamount.com/,v-denverparamount,Reg Exp,,"{
 http://www.pepsicenter.com/Calendar.aspx,v-pepsicenter,Reg Exp,,"{
   pre_parse_html => sub {
     my($html) = @_;
-    $$html =~ s{(<img src=""/images/Calendar/ArrowNext.gif"")}{nextpage$1};
+    $$html =~ s/ alt="".*?""/ alt="" ""/g;
     return;
   },
   pager => {
-    link => qr/(nextpage.*?)\n/i,
+    link => qr/(ArrowNext.*?)\n/i,
     page_count => 3,
   },
   repeat => [
-    [qr/$day\n+$line/i => {
-      fields => [qw(ignore summary)],
+    [qr/\b$day\n+([^\n]+?)($time_ap.*?\})/i => {
+      fields => [qw(ignore summary link)],
       follow_link => {
         once => [
           [qr/\nPrint\{.*?\n+(.*?)\nPepsi\{/is => {
