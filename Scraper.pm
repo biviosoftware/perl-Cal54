@@ -151,9 +151,17 @@ sub internal_catch {
 }
 
 sub internal_clean {
-    my($self, $value) = @_;
+    my($self, $value, $is_display) = @_;
+    return $value unless $value;
     $value = ${$_HC->clean_text(\$value)};
     $value =~ s{<.*?>}{ }sg;
+
+    if ($is_display) {
+	$value =~ s/\b\S+\.(jpg|jpeg|gif|png)\b//ig;
+	$value =~ s/\s+/ /g;
+	$value=~ s/^\s+|\s+$//g;
+	$value =~ s/^[^A-Z0-9"]+//i;;
+    }
     return $value;
 }
 
@@ -315,6 +323,9 @@ sub _filter_events {
     my($events) = [];
 
     foreach my $event (@{$self->get('events')}) {
+	$event->{summary} = $self->internal_clean($event->{summary}, 1);
+	$event->{description} =
+	    $self->internal_clean($event->{description}, 1);
 	next if $self->is_canceled($event->{summary});
 	next if _is_private($self, $event->{summary});
 	$event->{dtend} ||= $event->{dtstart};
