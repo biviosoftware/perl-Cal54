@@ -33,8 +33,8 @@ sub internal_import {
 	next if lc($event->{time} || '') eq 'all day';
 	next if $event->{enddate} && ($event->{enddate} ne $event->{date});
 	push(@{$self->get('events')}, {
-	    summary => $self->internal_clean($event->{title}),
-	    description => $self->internal_clean($event->{description}),
+	    summary => $event->{title},
+	    description => $event->{description},
 	    dtstart => $self->internal_date_time(
 		$event->{date1} . ' ' . $event->{time}),
 	    dtend => $self->internal_date_time(

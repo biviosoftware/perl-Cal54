@@ -16,8 +16,8 @@ sub internal_import {
 	foreach my $event (@{_items($self, $cal, qw(Events Event))}) {
 	    next if $event->{AllDay} eq 'true';
 	    push(@{$self->get('events')}, {
-		summary => $self->internal_clean($event->{Title}),
-		description => $self->internal_clean($event->{Description}),
+		summary => $event->{Title},
+		description => $event->{Description},
 		dtstart => $_DT->from_literal_or_die($event->{From}),
 		dtend => $_DT->from_literal_or_die($event->{To}),
 	    });

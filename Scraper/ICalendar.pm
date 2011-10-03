@@ -49,8 +49,8 @@ sub parse_ics {
 	    next if $_DT->compare($v->{dtstart}, $start) < 0;
 	    push(@{$self->get('events')}, {
 		map(($_ => $v->{$_}), qw(dtend dtstart uid url location)),
-		summary => $self->internal_clean($v->{summary}),
-		description => $self->internal_clean($v->{description}),
+		summary => $v->{summary},
+		description => $v->{description},
 	    });
 	}
     }

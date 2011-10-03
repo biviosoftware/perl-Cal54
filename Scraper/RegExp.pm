@@ -91,8 +91,8 @@ sub internal_collect_data {
     my($start_time, $end_time) =
 	$self->internal_parse_times($current, $self->get_scraper_aux);
     my($rec) = {
-	summary => _clean($current->{summary}),
-	description => _clean($current->{description}),
+	summary => $current->{summary},
+	description => $current->{description},
 	url => $current->{url}
 	    || $self->get('scraper_list')->get('Website.url'),
 	dtstart => _date($self, $current, $start_time),
@@ -168,15 +168,6 @@ sub _add_field_values {
 	_trace($f, ' --> ', $str) if $_TRACE;
     }
     return $values;
-}
-
-sub _clean {
-    my($str) = @_;
-    return $str unless $str;
-    $str =~ s/\s+/ /g;
-    $str=~ s/^\s+|\s+$//g;
-    $str =~ s/^[^A-Z0-9"]+//i;;
-    return $str;
 }
 
 sub _date {
