@@ -1,7 +1,6 @@
 [
   {
-    'description' => 'Co-sponsored by Cathy Busha, Co-Director of Out Boulder, and Louise Haimowitz, Director of Clinical Services at Parenting Place. This group is for lesbian, gay, bisexual, or transgender parents with children ages 0-12, as well as parents-to-be and those contemplating parenthood. Meets once a month.
-Contact Louise for further information and location. 303-449-0177 x17, louise@myparentingplace.org.',
+    'description' => 'Co-sponsored by Cathy Busha, Co-Director of Out Boulder, and Louise Haimowitz, Director of Clinical Services at Parenting Place. This group is for lesbian, gay, bisexual, or transgender parents with children ages 0-12, as well as parents-to-be and those contemplating parenthood. Meets once a month. Contact Louise for further information and location. 303-449-0177 x17, louise@myparentingplace.org.',
     'dtend' => '2455592 82800',
     'dtstart' => '2455592 75600',
     'location' => 'Boulder or Longmont - location changes.',
@@ -11,8 +10,7 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Co-sponsored by Cathy Busha, Co-Director of Out Boulder, and Louise Haimowitz, Director of Clinical Services at Parenting Place. This group is for lesbian, gay, bisexual, or transgender parents with children ages 0-12, as well as parents-to-be and those contemplating parenthood. Meets once a month.
-Contact Louise for further information and location. 303-449-0177 x17, louise@myparentingplace.org.',
+    'description' => 'Co-sponsored by Cathy Busha, Co-Director of Out Boulder, and Louise Haimowitz, Director of Clinical Services at Parenting Place. This group is for lesbian, gay, bisexual, or transgender parents with children ages 0-12, as well as parents-to-be and those contemplating parenthood. Meets once a month. Contact Louise for further information and location. 303-449-0177 x17, louise@myparentingplace.org.',
     'dtend' => '2455620 82800',
     'dtstart' => '2455620 75600',
     'location' => 'Boulder or Longmont - location changes.',
@@ -92,22 +90,7 @@ Contact Louise for further information and location. 303-449-0177 x17, louise@my
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Who:
-Mothers and fathers with their adopted children, as well as those
-awaiting adoptions. Families involved with domestic, foreign, foster-adopt
-and kinship adoptions are welcome to attend.
-
-Why:
-The goal of the Adoption Support Group is to provide a setting where
-families with shared experiences can gather and receive support, education, and a
-sense of  community.  Subjects to be addressed will include helping a child
-adjust to his/her new environment,  strengthening the parent-child bond,
-incorporating the child\'s history, and how and when to address adoption questions.
-
-Facilitation:
-Louise Haimowitz is a licensed clinical social worker with over
-25 years of experience working with families, developing effective
-parenting skills and healthy  parent-child attachments.',
+    'description' => 'Who: Mothers and fathers with their adopted children, as well as those awaiting adoptions. Families involved with domestic, foreign, foster-adopt and kinship adoptions are welcome to attend. Why: The goal of the Adoption Support Group is to provide a setting where families with shared experiences can gather and receive support, education, and a sense of community. Subjects to be addressed will include helping a child adjust to his/her new environment, strengthening the parent-child bond, incorporating the child\'s history, and how and when to address adoption questions. Facilitation: Louise Haimowitz is a licensed clinical social worker with over 25 years of experience working with families, developing effective parenting skills and healthy parent-child attachments.',
     'dtend' => '2455597 61200',
     'dtstart' => '2455597 55800',
     'location' => '1235 Pine Street, Boulder CO 80302',
@@ -117,22 +100,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Who:
-Mothers and fathers with their adopted children, as well as those
-awaiting adoptions. Families involved with domestic, foreign, foster-adopt
-and kinship adoptions are welcome to attend.
-
-Why:
-The goal of the Adoption Support Group is to provide a setting where
-families with shared experiences can gather and receive support, education, and a
-sense of  community.  Subjects to be addressed will include helping a child
-adjust to his/her new environment,  strengthening the parent-child bond,
-incorporating the child\'s history, and how and when to address adoption questions.
-
-Facilitation:
-Louise Haimowitz is a licensed clinical social worker with over
-25 years of experience working with families, developing effective
-parenting skills and healthy  parent-child attachments.',
+    'description' => 'Who: Mothers and fathers with their adopted children, as well as those awaiting adoptions. Families involved with domestic, foreign, foster-adopt and kinship adoptions are welcome to attend. Why: The goal of the Adoption Support Group is to provide a setting where families with shared experiences can gather and receive support, education, and a sense of community. Subjects to be addressed will include helping a child adjust to his/her new environment, strengthening the parent-child bond, incorporating the child\'s history, and how and when to address adoption questions. Facilitation: Louise Haimowitz is a licensed clinical social worker with over 25 years of experience working with families, developing effective parenting skills and healthy parent-child attachments.',
     'dtend' => '2455604 61200',
     'dtstart' => '2455604 55800',
     'location' => '1235 Pine Street, Boulder CO 80302',
@@ -142,22 +110,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Who:
-Mothers and fathers with their adopted children, as well as those
-awaiting adoptions. Families involved with domestic, foreign, foster-adopt
-and kinship adoptions are welcome to attend.
-
-Why:
-The goal of the Adoption Support Group is to provide a setting where
-families with shared experiences can gather and receive support, education, and a
-sense of  community.  Subjects to be addressed will include helping a child
-adjust to his/her new environment,  strengthening the parent-child bond,
-incorporating the child\'s history, and how and when to address adoption questions.
-
-Facilitation:
-Louise Haimowitz is a licensed clinical social worker with over
-25 years of experience working with families, developing effective
-parenting skills and healthy  parent-child attachments.',
+    'description' => 'Who: Mothers and fathers with their adopted children, as well as those awaiting adoptions. Families involved with domestic, foreign, foster-adopt and kinship adoptions are welcome to attend. Why: The goal of the Adoption Support Group is to provide a setting where families with shared experiences can gather and receive support, education, and a sense of community. Subjects to be addressed will include helping a child adjust to his/her new environment, strengthening the parent-child bond, incorporating the child\'s history, and how and when to address adoption questions. Facilitation: Louise Haimowitz is a licensed clinical social worker with over 25 years of experience working with families, developing effective parenting skills and healthy parent-child attachments.',
     'dtend' => '2455611 61200',
     'dtstart' => '2455611 55800',
     'location' => '1235 Pine Street, Boulder CO 80302',
@@ -167,22 +120,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Who:
-Mothers and fathers with their adopted children, as well as those
-awaiting adoptions. Families involved with domestic, foreign, foster-adopt
-and kinship adoptions are welcome to attend.
-
-Why:
-The goal of the Adoption Support Group is to provide a setting where
-families with shared experiences can gather and receive support, education, and a
-sense of  community.  Subjects to be addressed will include helping a child
-adjust to his/her new environment,  strengthening the parent-child bond,
-incorporating the child\'s history, and how and when to address adoption questions.
-
-Facilitation:
-Louise Haimowitz is a licensed clinical social worker with over
-25 years of experience working with families, developing effective
-parenting skills and healthy  parent-child attachments.',
+    'description' => 'Who: Mothers and fathers with their adopted children, as well as those awaiting adoptions. Families involved with domestic, foreign, foster-adopt and kinship adoptions are welcome to attend. Why: The goal of the Adoption Support Group is to provide a setting where families with shared experiences can gather and receive support, education, and a sense of community. Subjects to be addressed will include helping a child adjust to his/her new environment, strengthening the parent-child bond, incorporating the child\'s history, and how and when to address adoption questions. Facilitation: Louise Haimowitz is a licensed clinical social worker with over 25 years of experience working with families, developing effective parenting skills and healthy parent-child attachments.',
     'dtend' => '2455618 61200',
     'dtstart' => '2455618 55800',
     'location' => '1235 Pine Street, Boulder CO 80302',
@@ -192,22 +130,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Who:
-Mothers and fathers with their adopted children, as well as those
-awaiting adoptions. Families involved with domestic, foreign, foster-adopt
-and kinship adoptions are welcome to attend.
-
-Why:
-The goal of the Adoption Support Group is to provide a setting where
-families with shared experiences can gather and receive support, education, and a
-sense of  community.  Subjects to be addressed will include helping a child
-adjust to his/her new environment,  strengthening the parent-child bond,
-incorporating the child\'s history, and how and when to address adoption questions.
-
-Facilitation:
-Louise Haimowitz is a licensed clinical social worker with over
-25 years of experience working with families, developing effective
-parenting skills and healthy  parent-child attachments.',
+    'description' => 'Who: Mothers and fathers with their adopted children, as well as those awaiting adoptions. Families involved with domestic, foreign, foster-adopt and kinship adoptions are welcome to attend. Why: The goal of the Adoption Support Group is to provide a setting where families with shared experiences can gather and receive support, education, and a sense of community. Subjects to be addressed will include helping a child adjust to his/her new environment, strengthening the parent-child bond, incorporating the child\'s history, and how and when to address adoption questions. Facilitation: Louise Haimowitz is a licensed clinical social worker with over 25 years of experience working with families, developing effective parenting skills and healthy parent-child attachments.',
     'dtend' => '2455625 61200',
     'dtstart' => '2455625 55800',
     'location' => '1235 Pine Street, Boulder CO 80302',
@@ -217,22 +140,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Who:
-Mothers and fathers with their adopted children, as well as those
-awaiting adoptions. Families involved with domestic, foreign, foster-adopt
-and kinship adoptions are welcome to attend.
-
-Why:
-The goal of the Adoption Support Group is to provide a setting where
-families with shared experiences can gather and receive support, education, and a
-sense of  community.  Subjects to be addressed will include helping a child
-adjust to his/her new environment,  strengthening the parent-child bond,
-incorporating the child\'s history, and how and when to address adoption questions.
-
-Facilitation:
-Louise Haimowitz is a licensed clinical social worker with over
-25 years of experience working with families, developing effective
-parenting skills and healthy  parent-child attachments.',
+    'description' => 'Who: Mothers and fathers with their adopted children, as well as those awaiting adoptions. Families involved with domestic, foreign, foster-adopt and kinship adoptions are welcome to attend. Why: The goal of the Adoption Support Group is to provide a setting where families with shared experiences can gather and receive support, education, and a sense of community. Subjects to be addressed will include helping a child adjust to his/her new environment, strengthening the parent-child bond, incorporating the child\'s history, and how and when to address adoption questions. Facilitation: Louise Haimowitz is a licensed clinical social worker with over 25 years of experience working with families, developing effective parenting skills and healthy parent-child attachments.',
     'dtend' => '2455632 61200',
     'dtstart' => '2455632 55800',
     'location' => '1235 Pine Street, Boulder CO 80302',
@@ -242,22 +150,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Who:
-Mothers and fathers with their adopted children, as well as those
-awaiting adoptions. Families involved with domestic, foreign, foster-adopt
-and kinship adoptions are welcome to attend.
-
-Why:
-The goal of the Adoption Support Group is to provide a setting where
-families with shared experiences can gather and receive support, education, and a
-sense of  community.  Subjects to be addressed will include helping a child
-adjust to his/her new environment,  strengthening the parent-child bond,
-incorporating the child\'s history, and how and when to address adoption questions.
-
-Facilitation:
-Louise Haimowitz is a licensed clinical social worker with over
-25 years of experience working with families, developing effective
-parenting skills and healthy  parent-child attachments.',
+    'description' => 'Who: Mothers and fathers with their adopted children, as well as those awaiting adoptions. Families involved with domestic, foreign, foster-adopt and kinship adoptions are welcome to attend. Why: The goal of the Adoption Support Group is to provide a setting where families with shared experiences can gather and receive support, education, and a sense of community. Subjects to be addressed will include helping a child adjust to his/her new environment, strengthening the parent-child bond, incorporating the child\'s history, and how and when to address adoption questions. Facilitation: Louise Haimowitz is a licensed clinical social worker with over 25 years of experience working with families, developing effective parenting skills and healthy parent-child attachments.',
     'dtend' => '2455639 57600',
     'dtstart' => '2455639 52200',
     'location' => '1235 Pine Street, Boulder CO 80302',
@@ -267,7 +160,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children.  Japanese fluency recommended. Contact Michiko 303-442-3699. Also on 2nd Monday of each month, 9:00-11:00am.',
+    'description' => 'A playgroup for parents who want to share their Japanese language and culture with their children. Japanese fluency recommended. Contact Michiko 303-442-3699. Also on 2nd Monday of each month, 9:00-11:00am.',
     'dtend' => '2455617 82800',
     'dtstart' => '2455617 75600',
     'location' => 'Boulder',
@@ -487,7 +380,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist, for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
     'dtend' => '2455596 68400',
     'dtstart' => '2455596 63000',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
@@ -497,7 +390,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist, for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
     'dtend' => '2455603 68400',
     'dtstart' => '2455603 63000',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
@@ -507,7 +400,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist, for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
     'dtend' => '2455610 68400',
     'dtstart' => '2455610 63000',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
@@ -517,7 +410,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist, for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
     'dtend' => '2455617 68400',
     'dtstart' => '2455617 63000',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
@@ -527,7 +420,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist, for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
     'dtend' => '2455624 68400',
     'dtstart' => '2455624 63000',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
@@ -537,7 +430,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist, for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
     'dtend' => '2455631 68400',
     'dtstart' => '2455631 63000',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
@@ -547,7 +440,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist,  for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
+    'description' => 'For postpartum parents with their newborns up through 9 months old. A therapeutic group facilitated by a licensed psychotherapist, for mothers who are seeking emotional support, comaraderie, and guidance on infant care.',
     'dtend' => '2455638 64800',
     'dtstart' => '2455638 59400',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder',
@@ -697,7 +590,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos. Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
     'dtend' => '2455595 66600',
     'dtstart' => '2455595 63000',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
@@ -707,7 +600,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos. Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
     'dtend' => '2455602 66600',
     'dtstart' => '2455602 63000',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
@@ -717,7 +610,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos. Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
     'dtend' => '2455609 66600',
     'dtstart' => '2455609 63000',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
@@ -727,7 +620,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos. Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
     'dtend' => '2455616 66600',
     'dtstart' => '2455616 63000',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
@@ -737,7 +630,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos. Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
     'dtend' => '2455623 66600',
     'dtstart' => '2455623 63000',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
@@ -747,7 +640,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos. Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
     'dtend' => '2455630 66600',
     'dtstart' => '2455630 63000',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
@@ -757,7 +650,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos.  Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
+    'description' => 'Una opotunidad para los padres de ninos pequenos para renirse y hablar sobre los retos de criar a sus hijos. Clases de Ingles. Jueves en Lafayette 10-12 llama a Ginny 303-604-9070',
     'dtend' => '2455637 63000',
     'dtstart' => '2455637 59400',
     'location' => 'Parenting Place, 1235 Pine St, Boulder 80302',
@@ -837,7 +730,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children. German fluency recommended. Contact Sandra, 303-582-9335 for more information.',
     'dtend' => '2455594 63000',
     'dtstart' => '2455594 57600',
     'location' => '1235 Pine Street, Boulder, CO',
@@ -847,7 +740,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children. German fluency recommended. Contact Sandra, 303-582-9335 for more information.',
     'dtend' => '2455601 63000',
     'dtstart' => '2455601 57600',
     'location' => '1235 Pine Street, Boulder, CO',
@@ -857,7 +750,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children. German fluency recommended. Contact Sandra, 303-582-9335 for more information.',
     'dtend' => '2455608 63000',
     'dtstart' => '2455608 57600',
     'location' => '1235 Pine Street, Boulder, CO',
@@ -867,7 +760,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children. German fluency recommended. Contact Sandra, 303-582-9335 for more information.',
     'dtend' => '2455615 63000',
     'dtstart' => '2455615 57600',
     'location' => '1235 Pine Street, Boulder, CO',
@@ -877,7 +770,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children. German fluency recommended. Contact Sandra, 303-582-9335 for more information.',
     'dtend' => '2455622 63000',
     'dtstart' => '2455622 57600',
     'location' => '1235 Pine Street, Boulder, CO',
@@ -887,7 +780,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children. German fluency recommended. Contact Sandra, 303-582-9335 for more information.',
     'dtend' => '2455629 63000',
     'dtstart' => '2455629 57600',
     'location' => '1235 Pine Street, Boulder, CO',
@@ -897,7 +790,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children.  German fluency recommended.  Contact Sandra, 303-582-9335 for more information.',
+    'description' => 'German Playgroup - A playgroup for parents who want to share their German language and culture with their children. German fluency recommended. Contact Sandra, 303-582-9335 for more information.',
     'dtend' => '2455636 59400',
     'dtstart' => '2455636 54000',
     'location' => '1235 Pine Street, Boulder, CO',
@@ -907,7 +800,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Mondays. Email reminders are sent the day of group. To get added to the email list, contact Sue, 303-449-0177x0, sue@myparentingplace.org.',
+    'description' => 'Opportunity to meet other dads and for children to play together. A good way to give moms the night off. 1st & 3rd Mondays. Email reminders are sent the day of group. To get added to the email list, contact Sue, 303-449-0177x0, sue@myparentingplace.org.',
     'dtend' => '2455601 10800',
     'dtstart' => '2455601 3600',
     'location' => '1235 Pine Street, Boulder, 80302',
@@ -917,7 +810,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Mondays. Email reminders are sent the day of group. To get added to the email list, contact Sue, 303-449-0177x0, sue@myparentingplace.org.',
+    'description' => 'Opportunity to meet other dads and for children to play together. A good way to give moms the night off. 1st & 3rd Mondays. Email reminders are sent the day of group. To get added to the email list, contact Sue, 303-449-0177x0, sue@myparentingplace.org.',
     'dtend' => '2455629 10800',
     'dtstart' => '2455629 3600',
     'location' => '1235 Pine Street, Boulder, 80302',
@@ -927,7 +820,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children. French fluency recommended. Contact Elisabeth 303-543-0565.',
     'dtend' => '2455593 66600',
     'dtstart' => '2455593 61200',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
@@ -937,7 +830,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children. French fluency recommended. Contact Elisabeth 303-543-0565.',
     'dtend' => '2455600 66600',
     'dtstart' => '2455600 61200',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
@@ -947,7 +840,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children. French fluency recommended. Contact Elisabeth 303-543-0565.',
     'dtend' => '2455607 66600',
     'dtstart' => '2455607 61200',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
@@ -957,7 +850,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children. French fluency recommended. Contact Elisabeth 303-543-0565.',
     'dtend' => '2455614 66600',
     'dtstart' => '2455614 61200',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
@@ -967,7 +860,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children. French fluency recommended. Contact Elisabeth 303-543-0565.',
     'dtend' => '2455621 66600',
     'dtstart' => '2455621 61200',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
@@ -977,7 +870,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children. French fluency recommended. Contact Elisabeth 303-543-0565.',
     'dtend' => '2455628 66600',
     'dtstart' => '2455628 61200',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
@@ -987,7 +880,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children.  French fluency recommended.  Contact Elisabeth 303-543-0565.',
+    'description' => 'French Playgroup - A playgroup for parents who want to share their French language and culture with their children. French fluency recommended. Contact Elisabeth 303-543-0565.',
     'dtend' => '2455635 63000',
     'dtstart' => '2455635 57600',
     'location' => 'Parenting Place, 1235 Pine Street, Boulder, CO 80302',
@@ -997,12 +890,7 @@ parenting skills and healthy  parent-child attachments.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Zumba with Maya Vigil
-A Latin-Based Fitness Class
-
-Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
-Everyone Welcome! No Registration Required.
-Please wear tennis shoes and bring water!',
+    'description' => 'Zumba with Maya Vigil A Latin-Based Fitness Class Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more Everyone Welcome! No Registration Required. Please wear tennis shoes and bring water!',
     'dtend' => '2455593 64800',
     'dtstart' => '2455593 61200',
     'location' => '1235 Pine Street, Boulder, CO 80302',
@@ -1012,12 +900,7 @@ Please wear tennis shoes and bring water!',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Zumba with Maya Vigil
-A Latin-Based Fitness Class
-
-Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
-Everyone Welcome! No Registration Required.
-Please wear tennis shoes and bring water!',
+    'description' => 'Zumba with Maya Vigil A Latin-Based Fitness Class Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more Everyone Welcome! No Registration Required. Please wear tennis shoes and bring water!',
     'dtend' => '2455600 64800',
     'dtstart' => '2455600 61200',
     'location' => '1235 Pine Street, Boulder, CO 80302',
@@ -1027,12 +910,7 @@ Please wear tennis shoes and bring water!',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Zumba with Maya Vigil
-A Latin-Based Fitness Class
-
-Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
-Everyone Welcome! No Registration Required.
-Please wear tennis shoes and bring water!',
+    'description' => 'Zumba with Maya Vigil A Latin-Based Fitness Class Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more Everyone Welcome! No Registration Required. Please wear tennis shoes and bring water!',
     'dtend' => '2455607 64800',
     'dtstart' => '2455607 61200',
     'location' => '1235 Pine Street, Boulder, CO 80302',
@@ -1042,12 +920,7 @@ Please wear tennis shoes and bring water!',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Zumba with Maya Vigil
-A Latin-Based Fitness Class
-
-Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
-Everyone Welcome! No Registration Required.
-Please wear tennis shoes and bring water!',
+    'description' => 'Zumba with Maya Vigil A Latin-Based Fitness Class Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more Everyone Welcome! No Registration Required. Please wear tennis shoes and bring water!',
     'dtend' => '2455614 64800',
     'dtstart' => '2455614 61200',
     'location' => '1235 Pine Street, Boulder, CO 80302',
@@ -1057,12 +930,7 @@ Please wear tennis shoes and bring water!',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Zumba with Maya Vigil
-A Latin-Based Fitness Class
-
-Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
-Everyone Welcome! No Registration Required.
-Please wear tennis shoes and bring water!',
+    'description' => 'Zumba with Maya Vigil A Latin-Based Fitness Class Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more Everyone Welcome! No Registration Required. Please wear tennis shoes and bring water!',
     'dtend' => '2455621 64800',
     'dtstart' => '2455621 61200',
     'location' => '1235 Pine Street, Boulder, CO 80302',
@@ -1072,12 +940,7 @@ Please wear tennis shoes and bring water!',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Zumba with Maya Vigil
-A Latin-Based Fitness Class
-
-Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
-Everyone Welcome! No Registration Required.
-Please wear tennis shoes and bring water!',
+    'description' => 'Zumba with Maya Vigil A Latin-Based Fitness Class Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more Everyone Welcome! No Registration Required. Please wear tennis shoes and bring water!',
     'dtend' => '2455628 64800',
     'dtstart' => '2455628 61200',
     'location' => '1235 Pine Street, Boulder, CO 80302',
@@ -1087,12 +950,7 @@ Please wear tennis shoes and bring water!',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Zumba with Maya Vigil
-A Latin-Based Fitness Class
-
-Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more
-Everyone Welcome! No Registration Required.
-Please wear tennis shoes and bring water!',
+    'description' => 'Zumba with Maya Vigil A Latin-Based Fitness Class Come learn Salsa, Merengue, Cha Cha Cha, Cumbia and much more Everyone Welcome! No Registration Required. Please wear tennis shoes and bring water!',
     'dtend' => '2455635 61200',
     'dtstart' => '2455635 57600',
     'location' => '1235 Pine Street, Boulder, CO 80302',
@@ -1172,8 +1030,7 @@ Please wear tennis shoes and bring water!',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
-CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'description' => 'Support group for Single Moms with children ages 0-5. Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation. CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'dtend' => '2455595 9000',
     'dtstart' => '2455595 1800',
     'location' => 'Boulder',
@@ -1183,8 +1040,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
-CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'description' => 'Support group for Single Moms with children ages 0-5. Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation. CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'dtend' => '2455602 9000',
     'dtstart' => '2455602 1800',
     'location' => 'Boulder',
@@ -1194,8 +1050,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
-CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'description' => 'Support group for Single Moms with children ages 0-5. Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation. CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'dtend' => '2455609 9000',
     'dtstart' => '2455609 1800',
     'location' => 'Boulder',
@@ -1205,8 +1060,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
-CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'description' => 'Support group for Single Moms with children ages 0-5. Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation. CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'dtend' => '2455616 9000',
     'dtstart' => '2455616 1800',
     'location' => 'Boulder',
@@ -1216,8 +1070,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
-CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'description' => 'Support group for Single Moms with children ages 0-5. Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation. CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'dtend' => '2455623 9000',
     'dtstart' => '2455623 1800',
     'location' => 'Boulder',
@@ -1227,8 +1080,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
-CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'description' => 'Support group for Single Moms with children ages 0-5. Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation. CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'dtend' => '2455630 9000',
     'dtstart' => '2455630 1800',
     'location' => 'Boulder',
@@ -1238,8 +1090,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Support group for Single Moms with children ages 0-5.  Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation.
-CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
+    'description' => 'Support group for Single Moms with children ages 0-5. Child care and dinner provided, while mothers receive emotional support and the camaraderie of other mothers. Discussions explore the challenges of raising children as a single parent, as well as healthy co-parenting after separation. CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'dtend' => '2455637 5400',
     'dtstart' => '2455636 84600',
     'location' => 'Boulder',
@@ -1319,7 +1170,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
+    'description' => 'Opportunity to meet other dads and for children to play together. A good way to give moms the night off. 1st & 3rd Wednesdays 6-8pm',
     'dtend' => '2455615 10800',
     'dtstart' => '2455615 3600',
     'location' => '1235 Pine Street, Boulder, 80302',
@@ -1329,7 +1180,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
+    'description' => 'Opportunity to meet other dads and for children to play together. A good way to give moms the night off. 1st & 3rd Wednesdays 6-8pm',
     'dtend' => '2455671 7200',
     'dtstart' => '2455671 0',
     'location' => '1235 Pine Street, Boulder, 80302',
@@ -1339,7 +1190,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
+    'description' => 'Opportunity to meet other dads and for children to play together. A good way to give moms the night off. 1st & 3rd Wednesdays 6-8pm',
     'dtend' => '2455699 7200',
     'dtstart' => '2455699 0',
     'location' => '1235 Pine Street, Boulder, 80302',
@@ -1349,7 +1200,7 @@ CONTACT LOUISE, 303-449-0177x17m louise@myparentingplace.org.',
     'venue' => 'parentingplace'
   },
   {
-    'description' => 'Opportunity to meet other dads and for children to play together.  A good way to give moms the night off.  1st & 3rd Wednesdays 6-8pm',
+    'description' => 'Opportunity to meet other dads and for children to play together. A good way to give moms the night off. 1st & 3rd Wednesdays 6-8pm',
     'dtend' => '2455762 7200',
     'dtstart' => '2455762 0',
     'location' => '1235 Pine Street, Boulder, 80302',

@@ -1,6 +1,6 @@
 [
   {
-    'description' => ' Linda Fairstein will speak about and sign  Silent Mercy.  ',
+    'description' => 'Linda Fairstein will speak about and sign Silent Mercy.',
     'dtend' => '2455644 9000',
     'dtstart' => '2455644 9000',
     'location' => undef,
@@ -11,7 +11,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Tracy Ross will speak about and sign  The Source of all Things: A Memoir.  ',
+    'description' => 'Tracy Ross will speak about and sign The Source of all Things: A Memoir.',
     'dtend' => '2455637 9000',
     'dtstart' => '2455637 9000',
     'location' => undef,
@@ -22,7 +22,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Join us for an afternoon with local Boulder authors Cara Lopez Lee, Carolyn Jones, Kathy Guyton and Kristen Moeller!   Cara Lopez Lee, author of  They Only Eat Their Husbands . "A delightfully engaging read. Lee reminds us that in travel as in life, the inward journey is as messy, important and rewarding as the outward one." --Kyle Wagner, travel editor, The Denver Post  Carolyn Jones, author of  Opening the Gates of the Heart . This is a book that speaks to those on a journey of self-awareness, healing, and awakening. Through up-lifting prose and photographs, award-winning author and photographer Carolyn Jones shares with us her own journey of emotional and spiritual healing, from feelings of worthlessness and deep despair, to joy and peace.  Kathy Guyton, author of  U.S. State Names .  "Whether you have a specific state in mind or want to know a little bit about all of them, this is a fun book to read. Even the states you think are fairly obvious (like Virginia) there\'s more to the story than you thought. My target states were Arizona and California (and both were interesting to read!) but I have enjoyed randomly reading other chapters."  --Liza Weissler  Kristen Moeller, author of  Waiting for Jack . "By the end of this book and your personal exploration, you will see where you wait for life to begin. You will see that all the answers you need come from within. You will learn to stop hiding your magnificence and stop jacking around. You will become, as Kristen proclaims, \'a fierce disruption of the ordinary.\'"  --Jack Canfield, Co-author, Chicken Soup for the Soul   ',
+    'description' => 'Join us for an afternoon with local Boulder authors Cara Lopez Lee, Carolyn Jones, Kathy Guyton and Kristen Moeller! Cara Lopez Lee, author of They Only Eat Their Husbands . "A delightfully engaging read. Lee reminds us that in travel as in life, the inward journey is as messy, important and rewarding as the outward one." --Kyle Wagner, travel editor, The Denver Post Carolyn Jones, author of Opening the Gates of the Heart . This is a book that speaks to those on a journey of self-awareness, healing, and awakening. Through up-lifting prose and photographs, award-winning author and photographer Carolyn Jones shares with us her own journey of emotional and spiritual healing, from feelings of worthlessness and deep despair, to joy and peace. Kathy Guyton, author of U.S. State Names . "Whether you have a specific state in mind or want to know a little bit about all of them, this is a fun book to read. Even the states you think are fairly obvious (like Virginia) there\'s more to the story than you thought. My target states were Arizona and California (and both were interesting to read!) but I have enjoyed randomly reading other chapters." --Liza Weissler Kristen Moeller, author of Waiting for Jack . "By the end of this book and your personal exploration, you will see where you wait for life to begin. You will see that all the answers you need come from within. You will learn to stop hiding your magnificence and stop jacking around. You will become, as Kristen proclaims, \'a fierce disruption of the ordinary.\'" --Jack Canfield, Co-author, Chicken Soup for the Soul',
     'dtend' => '2455634 75600',
     'dtstart' => '2455634 75600',
     'location' => undef,
@@ -33,7 +33,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Rabbi Naomi Levy will speak about and sign  Hope Will Find You.  ',
+    'description' => 'Rabbi Naomi Levy will speak about and sign Hope Will Find You.',
     'dtend' => '2455632 9000',
     'dtstart' => '2455632 9000',
     'location' => undef,
@@ -44,7 +44,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Doreen Cronin will speak about and sign  The Trouble with Chickens: A J.J. Tully Mystery.  ',
+    'description' => 'Doreen Cronin will speak about and sign The Trouble with Chickens: A J.J. Tully Mystery.',
     'dtend' => '2455631 5400',
     'dtstart' => '2455631 5400',
     'location' => undef,
@@ -55,7 +55,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Lisa Napoli will speak about and sign  Radio Shangri-La.    ',
+    'description' => 'Lisa Napoli will speak about and sign Radio Shangri-La.',
     'dtend' => '2455630 9000',
     'dtstart' => '2455630 9000',
     'location' => undef,
@@ -66,7 +66,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Mazin Qumsiyeh will speak about and sign  Popular Resistance in Palestine . ',
+    'description' => 'Mazin Qumsiyeh will speak about and sign Popular Resistance in Palestine .',
     'dtend' => '2455629 9000',
     'dtstart' => '2455629 9000',
     'location' => undef,
@@ -77,7 +77,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Boulder Ballet Presents the "Wizard of Oz Storytime." ',
+    'description' => 'Boulder Ballet Presents the "Wizard of Oz Storytime."',
     'dtend' => '2455626 64800',
     'dtstart' => '2455626 64800',
     'location' => undef,
@@ -88,7 +88,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Yann Martel will speak about and sign  Beatrice & Virgil.  ',
+    'description' => 'Yann Martel will speak about and sign Beatrice & Virgil.',
     'dtend' => '2455624 9000',
     'dtstart' => '2455624 9000',
     'location' => undef,
@@ -99,7 +99,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Jonathan Evison will speak about and sign  West of Here.  ',
+    'description' => 'Jonathan Evison will speak about and sign West of Here.',
     'dtend' => '2455623 9000',
     'dtstart' => '2455623 9000',
     'location' => undef,
@@ -110,7 +110,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Ever wondered how a book goes from your laptop to the shelves of Boulder Book Store?  Literary agent Sara Megibow is here to tell you how the publishing process works. She\'ll also give tips on what agents are looking for, how to query an agent, how to pitch your book, and how essential those first few pages really are. We\'ll end the afternoon with a Q&A, so bring questions!      With special guest Sara Megibow, Associate Literary Agent, Nelson Literary Agency, LLC  Sara has worked at the Nelson Literary Agency since 2006. As an Associate Literary Agent, Sara is actively acquiring new clients and enthusiastically celebrating sales for her first authors. The Nelson Literary Agency specializes in representing young adult and middle grade fiction, romance (all genres except category and inspirational), science fiction and fantasy, commercial and women\'s fiction (including chick lit) and high concept literary fiction. Nelson Literary Agency is a member of AAR, RWA, SFWA and SCBWI. Please visit our website  www.nelsonagency.com  for submission guidelines, and feel free to visit Sara\'s Publisher\'s Marketplace site ( www.publishersmarketplace.com/members/SaraMegibow ) to learn more about her personal tastes and recent sales.     ',
+    'description' => 'Ever wondered how a book goes from your laptop to the shelves of Boulder Book Store? Literary agent Sara Megibow is here to tell you how the publishing process works. She\'ll also give tips on what agents are looking for, how to query an agent, how to pitch your book, and how essential those first few pages really are. We\'ll end the afternoon with a Q&A, so bring questions! With special guest Sara Megibow, Associate Literary Agent, Nelson Literary Agency, LLC Sara has worked at the Nelson Literary Agency since 2006. As an Associate Literary Agent, Sara is actively acquiring new clients and enthusiastically celebrating sales for her first authors. The Nelson Literary Agency specializes in representing young adult and middle grade fiction, romance (all genres except category and inspirational), science fiction and fantasy, commercial and women\'s fiction (including chick lit) and high concept literary fiction. Nelson Literary Agency is a member of AAR, RWA, SFWA and SCBWI. Please visit our website www.nelsonagency.com for submission guidelines, and feel free to visit Sara\'s Publisher\'s Marketplace site ( www.publishersmarketplace.com/members/SaraMegibow ) to learn more about her personal tastes and recent sales.',
     'dtend' => '2455620 75600',
     'dtstart' => '2455620 75600',
     'location' => undef,
@@ -121,7 +121,7 @@
     'venue' => 'boulderbookstore'
   },
   {
-    'description' => ' Starting your writing career, or looking to amp up your writing career?  Join us as Sara Megibow, a literary agent with Nelson Literary Agency, talks about how to break in to publishing as a writer.       Sara has worked at the Nelson Literary Agency since 2006. As an Associate Literary Agent, Sara is actively acquiring new clients and enthusiastically celebrating sales for her first authors. The Nelson Literary Agency specializes in representing young adult and middle grade fiction, romance (all genres except category and inspirational), science fiction and fantasy, commercial and women\'s fiction (including chick lit) and high concept literary fiction. Nelson Literary Agency is a member of AAR, RWA, SFWA and SCBWI. Please visit their website  www.nelsonagency.com  for submission guidelines, and feel free to visit Sara\'s Publisher\'s Marketplace site ( www.publishersmarketplace.com/members/SaraMegibow ) to learn more about her personal tastes and recent sales. ',
+    'description' => 'Starting your writing career, or looking to amp up your writing career? Join us as Sara Megibow, a literary agent with Nelson Literary Agency, talks about how to break in to publishing as a writer. Sara has worked at the Nelson Literary Agency since 2006. As an Associate Literary Agent, Sara is actively acquiring new clients and enthusiastically celebrating sales for her first authors. The Nelson Literary Agency specializes in representing young adult and middle grade fiction, romance (all genres except category and inspirational), science fiction and fantasy, commercial and women\'s fiction (including chick lit) and high concept literary fiction. Nelson Literary Agency is a member of AAR, RWA, SFWA and SCBWI. Please visit their website www.nelsonagency.com for submission guidelines, and feel free to visit Sara\'s Publisher\'s Marketplace site ( www.publishersmarketplace.com/members/SaraMegibow ) to learn more about her personal tastes and recent sales.',
     'dtend' => '2455620 79200',
     'dtstart' => '2455620 75600',
     'location' => undef,

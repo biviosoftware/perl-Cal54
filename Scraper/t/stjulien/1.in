@@ -8,10 +8,7 @@
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Rating: PG-13
-
-
-Run Time: 113 Minutes',
+    'description' => 'Rating: PG-13 Run Time: 113 Minutes',
     'dtend' => '2455621 19800',
     'dtstart' => '2455621 9000',
     'summary' => 'Dirty Dancing',
@@ -19,30 +16,7 @@ Run Time: 113 Minutes',
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Happy Hour: 4pm - 7pm
-
-
-Band: Irish Band
-
-
-Dancers: Celtic Dancers from 6:30pm - 9:30pm
-
-
-Food Specials
-
-
-Entree Plate of Traditional Irish Food :: $9.99 :: 5pm - 10p
-Three Course Dinner (offered in Jill\'s Restaurant only), includes:
-Appetizer (choice)
-Irish Steel Cut Oatmeal Soup :: smoked chicken, mushrooms
-Dubliner Cheese Pie :: bacon, leeks, tomato
-
-Entree (choice)
-Irish Stew :: braised Fox Fire Farms lamb, root vegetables
-Corned Beef Brisket :: colcannon, braised cabbage
-
-Dessert
-Sticky Pudding :: Guiness ice cream',
+    'description' => 'Happy Hour: 4pm - 7pm Band: Irish Band Dancers: Celtic Dancers from 6:30pm - 9:30pm Food Specials Entree Plate of Traditional Irish Food :: $9.99 :: 5pm - 10p Three Course Dinner (offered in Jill\'s Restaurant only), includes: Appetizer (choice) Irish Steel Cut Oatmeal Soup :: smoked chicken, mushrooms Dubliner Cheese Pie :: bacon, leeks, tomato Entree (choice) Irish Stew :: braised Fox Fire Farms lamb, root vegetables Corned Beef Brisket :: colcannon, braised cabbage Dessert Sticky Pudding :: Guiness ice cream',
     'dtend' => '2455639 12600',
     'dtstart' => '2455638 81000',
     'summary' => 'St Patricks Day',
@@ -82,10 +56,7 @@ Sticky Pudding :: Guiness ice cream',
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Rating: PG
-
-
-Run Time: 107 minutes',
+    'description' => 'Rating: PG Run Time: 107 minutes',
     'dtend' => '2455628 9000',
     'dtstart' => '2455628 9000',
     'summary' => 'Footloose',
@@ -117,10 +88,7 @@ Run Time: 107 minutes',
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Rating: PG
-
-
-Run Time: 110 minutes',
+    'description' => 'Rating: PG Run Time: 110 minutes',
     'dtend' => '2455635 5400',
     'dtstart' => '2455635 5400',
     'summary' => 'Grease',
@@ -152,10 +120,7 @@ Run Time: 110 minutes',
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Rating: PG-13
-
-
-Run Time: 113 Minutes',
+    'description' => 'Rating: PG-13 Run Time: 113 Minutes',
     'dtend' => '2455642 5400',
     'dtstart' => '2455642 5400',
     'summary' => 'Chicago',
@@ -195,10 +160,7 @@ Run Time: 113 Minutes',
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Rating: PG-13
-
-
-Run Time: 94 Minutes',
+    'description' => 'Rating: PG-13 Run Time: 94 Minutes',
     'dtend' => '2455649 5400',
     'dtstart' => '2455649 5400',
     'summary' => 'Little Shop of Horrors',
@@ -238,10 +200,7 @@ Run Time: 94 Minutes',
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Rating: PG-13
-
-
-Run Time: 94 Minutes',
+    'description' => 'Rating: PG-13 Run Time: 94 Minutes',
     'dtend' => '2455656 5400',
     'dtstart' => '2455656 5400',
     'summary' => 'Anchorman',
@@ -289,10 +248,7 @@ Run Time: 94 Minutes',
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Rating: PG-13
-
-
-Run Time: 97 Minutes',
+    'description' => 'Rating: PG-13 Run Time: 97 Minutes',
     'dtend' => '2455663 5400',
     'dtstart' => '2455663 5400',
     'summary' => 'Tommy Boy',
@@ -332,10 +288,7 @@ Run Time: 97 Minutes',
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Rating: PG
-
-
-Run Time: 87 Minutes',
+    'description' => 'Rating: PG Run Time: 87 Minutes',
     'dtend' => '2455670 5400',
     'dtstart' => '2455670 5400',
     'summary' => 'Airplane',
@@ -383,10 +336,7 @@ Run Time: 87 Minutes',
     'venue' => 'stjulien'
   },
   {
-    'description' => 'Rating: PG-13
-
-
-Run Time: 102 Minutes',
+    'description' => 'Rating: PG-13 Run Time: 102 Minutes',
     'dtend' => '2455677 5400',
     'dtstart' => '2455677 5400',
     'summary' => 'Ferris Buellers Day Off',
