@@ -118,7 +118,7 @@ sub _list {
 		    String(vs_text('previous_button')),
 		    ['Model.HomeList', '->format_uri', 'PREV_LIST'],
 		    {
-			class => 'c4_prev',
+			class => 'c4_prev_button',
 			control => [['Model.HomeList', '->get_query'], 'has_prev']
 		    },
 		),
@@ -183,7 +183,6 @@ sub _list {
 				    }),
 				),
 			    ),
-
 			]),
 		    ])),
 		], {
@@ -198,20 +197,20 @@ sub _list {
 	vs_unless_robot(
 	    Join([
 		DIV(
-		    IfMobile(
+#		    IfMobile(
 			Link(
 			    String(vs_text('next_button')),
 			    ['Model.HomeList', '->format_uri', 'NEXT_LIST'],
 			    {
-				class => 'c4_next',
+				class => 'c4_next_button',
 				control => [['Model.HomeList', '->get_query'], 'has_next'],
 			    },
 			),
-			DIV(
-			    C4HomePager(1),
-			    {class => 'c4_query c4_bottom_pager'},
-			),
-		    ),
+# 			DIV(
+# 			    C4HomePager(1),
+# 			    {class => 'c4_query c4_bottom_pager'},
+# 			),
+# 		    ),
 		),
 	    ]),
 	),
