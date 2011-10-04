@@ -10,6 +10,7 @@ sub eval_scraper_aux {
     my($self) = @_;
     return shift->SUPER::eval_scraper_aux(<<'EOF');
 {
+  crawl_delay => 5,
   pager => {
     link => qr/(Next >>.*\})/i,
     page_count => 3,
