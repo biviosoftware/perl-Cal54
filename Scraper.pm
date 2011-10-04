@@ -326,6 +326,7 @@ sub _filter_events {
 	$event->{summary} = $self->internal_clean($event->{summary}, 1);
 	$event->{description} =
 	    $self->internal_clean($event->{description}, 1);
+	next unless $event->{summary};
 	next if $self->is_canceled($event->{summary});
 	next if _is_private($self, $event->{summary});
 	$event->{dtend} ||= $event->{dtstart};
