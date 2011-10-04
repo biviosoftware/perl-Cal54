@@ -263,25 +263,6 @@ http://www.boulderdowntown.com/events,v-pearlst,Reg Exp,,"{
   ],
 }
 "
-http://1stbankcenter.com/events/,v-firstbankcenter,Reg Exp,,"{
-  pager => {
-    link => qr/(Next >>\{\d+\})/i,
-    page_count => 3,
-  },
-  repeat => [
-    [qr/(All Dates\n+)(?:http.*?\n).*?([^\n]+\}\n.*?)$month $day, $year, $time_ap\n.*?\n\n/s => {
-      fields => [qw(save summary month day year start_time)],
-      follow_link => {
-        once => [
-          [qr/Ticket Prices.*?\n(?:[^\n]{0,50}\n)+(.*?)\n1STBANK/is => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
 http://www.appaloosagrill.com/music,v-appaloosagrill,Reg Exp,,"{
   pager => {
     link => qr/(Next month.*?\})/i,
@@ -387,24 +368,6 @@ http://fla.vor.us/wafform.aspx?_act=eventlisting&ClientID=642,v-betanightclub,Re
           }],
         ],
       },
-    }],
-  ],
-}
-"
-http://bluebirdtheater.net/events.php,v-bluebirdtheater,Reg Exp,,"{
-  pager => {
-    link => qr/(Next >>.*\})/i,
-    page_count => 3,
-  },
-  reject_event => {
-    summary => qr/with/i,
-  },
-  repeat => [
-    [qr/(.+?)\n(.+?)\n$month $day, $year, $time_ap/ => {
-      fields => [qw(summary description month day year start_time)],
-    }],
-    [qr/(.+?)\n$month $day, $year, $time_ap/ => {
-      fields => [qw(summary month day year start_time)],
     }],
   ],
 }
@@ -1291,21 +1254,6 @@ http://www.nissis.com/lmcalendar.html,v-nissis,Reg Exp,,"{
   ],
 }
 "
-http://www.ogdentheatre.net/events.php,v-ogdentheatre,Reg Exp,,"{
-  repeat => [
-    [qr/\n((?:[^\n]+\n)+)$month $day, $year, $time_ap/ => {
-      fields => [qw(summary month day year start_time)],
-      follow_link => {
-        once => [
-          [qr/Websites\n+(?:[^\n]+?\{.*?\n+|\|\n+)+(.*?)Service and handling fees/is => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
 http://www.denverparamount.com/,v-denverparamount,Reg Exp,,"{
   repeat => [
     [qr/(.+?\})\n+.*?\n+.*?$day_name, $month $day, $year - $time_ap/ => {
@@ -1429,8 +1377,15 @@ http://www.rockbottom.com/denver-downtown/events,v-rockbottom_denverdowntown,Reg
 }
 "
 http://www.rocknsoulcafe.com/calendar/,v-rockandsoul,Reg Exp,,"{
+  pre_parse_html => sub {
+    my($html) = @_;
+    # bad html
+    $$html =~ s/><<</>&lt;&lt;</g;
+    $$html =~ s/>>></>&gt;&gt;</g;
+    return;
+  },
   pager => {
-    link => qr/\n(>>\{\d})\n/s,
+    link => qr/(\n>>.*?\})/,
     page_count => 3,
   },
   repeat => [
@@ -2024,3 +1979,6 @@ http://www.ticketfly.com/api/events/upcoming.rss?orgId=755,,Ticket Fly,,"{
   },
 }
 "
+http://1stbankcenter.com/events/,v-firstbankcenter,AEGLive,,
+http://bluebirdtheater.net/events.php,v-bluebirdtheater,AEGLive,,
+http://www.ogdentheatre.net/events.php,v-ogdentheatre,AEGLive,,
