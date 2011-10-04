@@ -18,6 +18,7 @@ __PACKAGE__->compile([
     GIGBOT => 9,
     REG_EXP => 10,
     TICKET_FLY => 11,
+    AEG_LIVE => [12, 'AEGLive'],
 ]);
 
 sub as_class {
@@ -29,7 +30,7 @@ sub as_class {
 
 sub can_preview {
     my($self) = @_;
-    return $self->equals_by_name(qw(RSS REG_EXP TICKET_FLY));
+    return $self->equals_by_name(qw(RSS REG_EXP TICKET_FLY AEG_LIVE));
 }
 
 sub is_continuous {
