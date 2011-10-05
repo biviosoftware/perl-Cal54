@@ -3,11 +3,13 @@
 package Cal54::Scraper::Google;
 use strict;
 use Bivio::Base 'Scraper.ICalendar';
+b_use('IO.Trace');
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
 my($_JSON) = b_use('MIME.JSON');
+our($_TRACE);
 
 sub internal_import {
     my($self) = @_;
@@ -80,8 +82,9 @@ sub _add_event_urls {
 	    . $_DT->to_string($event->{dtstart})};
 
 	unless ($event->{url}) {
-	    b_warn('missing url for uid: ', $uid, ' ', $event->{dtstart})
-		if $_D->compare($event->{dtstart}, $end) < 0;
+	    $event->{summary} = undef;
+	    _trace('missing url for uid: ', $uid, ' ', $event->{dtstart})
+		if $_TRACE && $_D->compare($event->{dtstart}, $end) < 0;
 	}
     }
     return;
