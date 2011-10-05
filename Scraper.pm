@@ -209,6 +209,7 @@ sub internal_parse_xml {
 
 sub internal_update {
     my($self) = @_;
+    my($aux) = $self->get_scraper_aux;
     my($ce) = $_CE->new($self->req);
     my($date_time) = $self->get('date_time');
     my($curr) = {@{$_CEFL->new($self->req)
@@ -230,7 +231,8 @@ sub internal_update {
 	    . $_TT->from_literal_or_die($event->{summary});
 
 	if ($visited->{$key}) {
-	    b_warn('duplicate event: ', $key);
+	    b_warn('duplicate event: ', $key)
+		unless $aux->{ignore_duplicates};
 	    next;
 	}
 	$visited->{$key} = $event;
