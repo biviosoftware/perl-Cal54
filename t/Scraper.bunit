@@ -7,14 +7,14 @@ model('CalendarEvent')->delete_all({realm_id => req('auth_id')});
 my($now) = Date('1/15/2011');
 [
     sub {
-	return class()
-	    ->new({
-		date_time => $now,
-		req => req(),
-		scraper_list => model('ScraperList')->load_all
-		    ->set_cursor_or_die(0),
-		force => 0,
-	    });
+	return class()->new({
+	    date_time => $now,
+	    req => req(),
+	    scraper_list => model('ScraperList')->load_all->find_row_by({
+		'Website.url' => 'http://test.bunit/cal',
+	    }),
+	    force => 0,
+	});
     } => [
 	{
 	    method => 'internal_update',
