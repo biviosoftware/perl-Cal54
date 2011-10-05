@@ -237,15 +237,19 @@ sub internal_prepare_statement {
 	|| $query->unsafe_get('when');
 #TODO: when is less than now
     $dt = ($_D->from_literal($dt))[0];
-    my($now) = $_DT->now;
     $dt = $_DT->add_seconds($_DEFAULT_TZ->date_time_to_utc($_DT->set_beginning_of_day($dt)), 1)
 	if $dt;
-    $dt = $_DT->now
-	if !$dt || $_DT->is_greater_than($now, $dt);
+    my($now) = $_DT->now;
+    my($date_field);
+    if (!$dt || $_DT->is_greater_than($now, $dt)) {
+	$dt = $now;
+	$date_field = 'CalendarEvent.dtend';
+    }
+    else {
+	$date_field = 'CalendarEvent.dtstart';
+    }
     $fields->{first_date} = $_D->from_datetime($_DEFAULT_TZ->date_time_from_utc($dt));
-    $stmt->where(
-	$stmt->GTE('CalendarEvent.dtend', [$dt]),
-    );
+    $stmt->where($stmt->GTE($date_field, [$dt]));
     # Don't call SUPER, because we want all events
     my($s) = ($_TS->from_literal($query->unsafe_get('what')))[0];
     return
