@@ -286,6 +286,7 @@ http://www.appaloosagrill.com/music,v-appaloosagrill,Reg Exp,,"{
 }
 "
 http://arvadacenter.org/on-stage,v-arvadacenter,Reg Exp,,"{
+  ignore_duplicates => 1,
   repeat => [
     [qr/(.+?\})\n$month $day.*?\nbuy tickets.*\}/i => {
       fields => [qw(summary)],
@@ -373,6 +374,7 @@ http://fla.vor.us/wafform.aspx?_act=eventlisting&ClientID=642,v-betanightclub,Re
 }
 "
 http://www.cityoflafayette.com/Calendar.asp,v-cityoflafayettereccenter,Reg Exp,,"{
+  ignore_duplicates => 1,
   accept_event => {
     location => qr/Bob L. Burger Recreation Center/i,
   },
@@ -572,6 +574,7 @@ http://www.butterflies.org/events/calendar.php,v-butterflies,Reg Exp,,"{
 }
 "
 http://www.chautauqua.com/upcoming_events.php,v-chautauqua,Reg Exp,,"{
+  ignore_duplicates => 1,
   repeat => [
     [qr/(view all.*?\})/i => {
       fields => [qw(link)],
@@ -676,6 +679,7 @@ http://www.chezcuvee.com/live_music/,v-cuvee,Reg Exp,,"{
 }
 "
 http://www.dazzlejazz.com/index.php?s=20,v-dazzlejazz,Reg Exp,,"{
+  ignore_duplicates => 1,
   pager => {
     link => qr/\d{4}\n(\>\>\{\d+\}\n)/,
     page_count => 3,
@@ -1927,6 +1931,7 @@ http://www.denvermusicvenues.com/events/Soda-Jerk-Presents.htm,,Reg Exp,,"{
 }
 "
 http://www.oskarblues.com/tunes/muisc-calendar,,Reg Exp,oskar_scraper,"{
+  ignore_duplicates => 1,
   pre_parse_html => sub {
     my($html) = @_;
     die('missing year')
