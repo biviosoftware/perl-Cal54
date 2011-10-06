@@ -717,6 +717,17 @@ http://www.denvercoliseum.com/EventCalendar.aspx,v-denvercoliseum,Reg Exp,,"{
   ],
 }
 "
+http://www.denverzoo.org/visitors/events.asp,v-denverzoo,Reg Exp,,"{
+  repeat => [
+    [qr/($line$line.*?$month\s+)$day,?(.*?from $time_span)/ => {
+      fields => [qw(save summary description month day save start_time end_time)],
+    }],
+    [qr/$line$day_name,? $month $day\n$time_span\n(?:Admission.*?\n)?\n*($line+)/ => {
+      fields => [qw(summary day_name month day start_time end_time description)],
+    }],
+  ],
+}
+"
 http://www.dickssportinggoodspark.com/Stadium/Events.aspx,v-dickssportinggoodspark,Reg Exp,,"{
   repeat => [
     [qr/(.+?)\n$month $day, $year at $time_ap.*\n$line/i => {
@@ -927,7 +938,7 @@ http://www.hodishalfnote.com/,v-hodishalfnote,Reg Exp,,"{
 "
 http://www.boulderado.com/musiconthemezz.html,v-boulderado,Reg Exp,,"{
   once => [
-    [qr/$time_ap\s*\-\s*$time_ap Live Music/, {
+    [qr/$time_span Live Music/, {
       fields => [qw(start_time end_time)],
     }],
   ],
@@ -1437,11 +1448,9 @@ http://sparktheater.org/tickets/,v-sparktheater,Reg Exp,,"{
 }
 "
 http://www.starbardenver.com/Star_Bar_Denver/Specials_and_Events.html,v-starbar,Reg Exp,,"{
-  once => [
-    [qr/(9)/ => {
-      fields => [qw(start_time_pm)],
-    }],
-  ],
+  default_values => {
+    start_time => '9pm',
+  },
   repeat => [
     [qr{\n$day_name $month_day \- (.*?)(?:at $time)?\.?\n}i => {
       fields => [qw(day_name month_day summary start_time_pm)],
@@ -1531,6 +1540,9 @@ http://thedairy.frontgatetickets.com/,v-dairycenter,Reg Exp,,"{
 }
 "
 http://www.theribhouse.com/center-stage,v-ribhouse,Reg Exp,,"{
+  default_values => {
+    start_time => '8pm',
+  },
   repeat => [
     [qr/\n([^\n]+)\n+$month\s+$day,?\s*$year\s+$time_span\n+([^\n]+\})/s => {
       fields => [qw(summary month day year start_time end_time url)],
@@ -1540,6 +1552,9 @@ http://www.theribhouse.com/center-stage,v-ribhouse,Reg Exp,,"{
     }],
     [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_span/s => {
       fields => [qw(summary month day year start_time end_time)],
+    }],
+    [qr/$line$month $day, $year/ => {
+      fields => [qw(summary month day year)],
     }],
   ],
 }
