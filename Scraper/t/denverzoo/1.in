@@ -1,0 +1,222 @@
+[
+  {
+    'description' => 'There once was a very ugly bug, with spotted legs, googly eyes and a horrible hairy back. She wonders why her friends have pretty small eyes, shiny green backs, or nice fluttery wings. Follow her story as she learns that just being herself is the best defense.',
+    'dtend' => '2455841 60300',
+    'dtstart' => '2455841 57600',
+    'location' => undef,
+    'summary' => 'The Very Ugly Bug by Liz Pichon',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'There once was a very ugly bug, with spotted legs, googly eyes and a horrible hairy back. She wonders why her friends have pretty small eyes, shiny green backs, or nice fluttery wings. Follow her story as she learns that just being herself is the best defense.',
+    'dtend' => '2455842 60300',
+    'dtstart' => '2455842 57600',
+    'location' => undef,
+    'summary' => 'The Very Ugly Bug by Liz Pichon',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'There once was a very ugly bug, with spotted legs, googly eyes and a horrible hairy back. She wonders why her friends have pretty small eyes, shiny green backs, or nice fluttery wings. Follow her story as she learns that just being herself is the best defense.',
+    'dtend' => '2455843 60300',
+    'dtstart' => '2455843 57600',
+    'location' => undef,
+    'summary' => 'The Very Ugly Bug by Liz Pichon',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Miss Spider can\'t understand why insects flee in panic at her approach. A timely rainstorm provides the perfect opportunity for Miss Spider to prove her good intentions, as she lovingly nurtures a rain-soaked moth with sweets and warm brew. Good news travels quickly, and before long her web is abuzz with a full-scale tea party.',
+    'dtend' => '2455854 60300',
+    'dtstart' => '2455854 57600',
+    'location' => undef,
+    'summary' => 'Miss Spiders Tea Party by David Kirk',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Miss Spider can\'t understand why insects flee in panic at her approach. A timely rainstorm provides the perfect opportunity for Miss Spider to prove her good intentions, as she lovingly nurtures a rain-soaked moth with sweets and warm brew. Good news travels quickly, and before long her web is abuzz with a full-scale tea party.',
+    'dtend' => '2455856 56700',
+    'dtstart' => '2455856 54000',
+    'location' => undef,
+    'summary' => 'Miss Spiders Tea Party by David Kirk',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Miss Spider can\'t understand why insects flee in panic at her approach. A timely rainstorm provides the perfect opportunity for Miss Spider to prove her good intentions, as she lovingly nurtures a rain-soaked moth with sweets and warm brew. Good news travels quickly, and before long her web is abuzz with a full-scale tea party.',
+    'dtend' => '2455857 60300',
+    'dtstart' => '2455857 57600',
+    'location' => undef,
+    'summary' => 'Miss Spiders Tea Party by David Kirk',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Think you might want to clean up after camels or serve lunch to leopards when you grow up? Come pretend with us! Through play-based activities, children will find out more about what zoo keepers do in their daily routines.',
+    'dtend' => '2455846 61200',
+    'dtstart' => '2455846 57600',
+    'location' => undef,
+    'summary' => 'When I Grow Up I Want to Be a Zoo Keeper!',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Think you might want to clean up after camels or serve lunch to leopards when you grow up? Come pretend with us! Through play-based activities, children will find out more about what zoo keepers do in their daily routines.',
+    'dtend' => '2455848 61200',
+    'dtstart' => '2455848 57600',
+    'location' => undef,
+    'summary' => 'When I Grow Up I Want to Be a Zoo Keeper!',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Think you might want to clean up after camels or serve lunch to leopards when you grow up? Come pretend with us! Through play-based activities, children will find out more about what zoo keepers do in their daily routines.',
+    'dtend' => '2455849 61200',
+    'dtstart' => '2455849 57600',
+    'location' => undef,
+    'summary' => 'When I Grow Up I Want to Be a Zoo Keeper!',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Think you might want to clean up after camels or serve lunch to leopards when you grow up? Come pretend with us! Through play-based activities, children will find out more about what zoo keepers do in their daily routines.',
+    'dtend' => '2455850 61200',
+    'dtstart' => '2455850 57600',
+    'location' => undef,
+    'summary' => 'When I Grow Up I Want to Be a Zoo Keeper!',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Ewwww! Why do bugs get a bad rap? Explore the difference between insects and spiders in this creepy crawly class that will help you find the cuddly in these crawlies.',
+    'dtend' => '2455863 56700',
+    'dtstart' => '2455863 54000',
+    'location' => undef,
+    'summary' => 'Creepy Crawlies',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Ewwww! Why do bugs get a bad rap? Explore the difference between insects and spiders in this creepy crawly class that will help you find the cuddly in these crawlies.',
+    'dtend' => '2455864 61200',
+    'dtstart' => '2455864 57600',
+    'location' => undef,
+    'summary' => 'Creepy Crawlies',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Ewwww! Why do bugs get a bad rap? Explore the difference between insects and spiders in this creepy crawly class that will help you find the cuddly in these crawlies.',
+    'dtend' => '2455866 61200',
+    'dtstart' => '2455866 57600',
+    'location' => undef,
+    'summary' => 'Creepy Crawlies',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Bats aren\'t scary-they\'re furry little m a.m.mals that fly, eat bugs or fruit and do a whole lot of good in their ecosystem. Learn the truth about these mysterious animals in this class that will leave you batty for bats!',
+    'dtend' => '2455849 64800',
+    'dtstart' => '2455849 54000',
+    'location' => undef,
+    'summary' => 'Going Batty',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Bats aren\'t scary-they\'re furry little m a.m.mals that fly, eat bugs or fruit and do a whole lot of good in their ecosystem. Learn the truth about these mysterious animals in this class that will leave you batty for bats!',
+    'dtend' => '2455850 64800',
+    'dtstart' => '2455850 54000',
+    'location' => undef,
+    'summary' => 'Going Batty',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'If I were an insect I\'d have green and purple striped wings and buzz when I fly! If you were an insect, what would you do? Explore basic characteristics of insects through animal encounters and play.',
+    'dtend' => '2455863 64800',
+    'dtstart' => '2455863 54000',
+    'location' => undef,
+    'summary' => 'Monster Mash!',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'If I were an insect I\'d have green and purple striped wings and buzz when I fly! If you were an insect, what would you do? Explore basic characteristics of insects through animal encounters and play.',
+    'dtend' => '2455864 64800',
+    'dtstart' => '2455864 54000',
+    'location' => undef,
+    'summary' => 'Monster Mash!',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Investigate animals with fangs, stingers and lethal bites, as you discover the reasons behind their deadly venom. Plus, take a peek at their poisonous cousins at Toxins University. What\'s the difference? Join us and find out!',
+    'dtend' => '2455843 77400',
+    'dtstart' => '2455843 70200',
+    'location' => undef,
+    'summary' => 'Venom!',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Take "green" action and save some green at Denver Zoo\'s fall recycling event.',
+    'dtend' => '2455844 79200',
+    'dtstart' => '2455844 54000',
+    'location' => undef,
+    'summary' => 'Recycling Event',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Green Sprouts Festival is a fun, festive and educational one-day event for the whole family that celebrates and promotes the nurturing of life through nature. From pregnancy to childhood, parents can learn about and explore eco-friendly, community-involved, natural, and healthy options to raising their families.',
+    'dtend' => '2455844 82800',
+    'dtstart' => '2455844 57600',
+    'location' => undef,
+    'summary' => 'ReDirect Guide Green Sprouts Festival',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Join Mike\'s Camera at the Denver Zoo for an early morning photographic lecture, a private up-close animal experience and a guided walking tour long before the doors opens to the public. Mike\'s Camera lead instructor, Brian Rabin, will start with a brief introduction on composition for photographing wildlife.',
+    'dtend' => '2455858 57600',
+    'dtstart' => '2455858 46800',
+    'location' => undef,
+    'summary' => 'Photography Workshop and Photo Safari',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  },
+  {
+    'description' => 'Advance ticket sales only, this event sells out Admission: SOLD OUT! Tickets will not be available at the door. All sales are final, no refunds or exchanges will be made.',
+    'dtend' => '2455864 10800',
+    'dtstart' => '2455864 0',
+    'location' => undef,
+    'summary' => 'Boo at the Zoo After Dark',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'venue' => 'denverzoo'
+  }
+]
