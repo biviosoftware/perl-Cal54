@@ -403,8 +403,8 @@ http://www.cityoflafayette.com/Calendar.asp,v-cityoflafayettereccenter,Reg Exp,,
 "
 http://coloradosymphony.org/current-season/all/,v-boettcherconcert,Reg Exp,,"{
   repeat => [
-    [qr/(.*\n$month $year\n).*?\n$day_name $day\n$line\n+(Learn More.*?)\n+.*?Ticket Information.*?\n/is => {
-      fields => [qw(save month year day_name day summary link)],
+    [qr/(.*\n$month $year\n).*?\n$day_name $day\n$line\n+((Learn More.*?))\n+.*?Ticket Information.*?\n/is => {
+      fields => [qw(save month year day_name day summary link url)],
       follow_link => {
         once => [
           [qr/\n$day_name $time_ap\n+(.*?)\nTicket Information/is => {
@@ -1290,8 +1290,8 @@ http://www.pepsicenter.com/Calendar.aspx,v-pepsicenter,Reg Exp,,"{
     page_count => 3,
   },
   repeat => [
-    [qr/\b$day\n+([^\n]+?)($time_ap.*?\})/i => {
-      fields => [qw(ignore summary link)],
+    [qr/\b$day\n+([^\n]+?)(($time_ap.*?\}))/i => {
+      fields => [qw(ignore summary link url)],
       follow_link => {
         once => [
           [qr/\nPrint\{.*?\n+(.*?)\nPepsi\{/is => {
