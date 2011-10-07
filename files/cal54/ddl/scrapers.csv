@@ -784,6 +784,18 @@ http://www.flatironcrossing.com/Events?list=all,v-flatironcrossing,Reg Exp,,"{
       },
     }],
   ],
+  repeat => [
+    [qr/((?:story time|halloween party).*?)\n\n/is => {
+      fields => [qw(link)],
+      follow_link => {
+        once => [
+          [qr/back to events directory.*?\n+$line\n*$month $day, $year\n+(?:[^\n]{0,30}\n)*(.*?$time_span.*?)\n\n/i => {
+            fields => [qw(summary month day year description start_time end_time)],
+          }],
+        ],
+      },
+    }],
+  ],
 }
 "
 http://www.foothillsanimalshelter.org/news-events/events/,v-foothillsanimalshelter,Reg Exp,,"{
@@ -938,7 +950,7 @@ http://www.hodishalfnote.com/,v-hodishalfnote,Reg Exp,,"{
 "
 http://www.boulderado.com/musiconthemezz.html,v-boulderado,Reg Exp,,"{
   once => [
-    [qr/$time_span Live Music/, {
+    [qr/$time_ap\s*\-\s*$time_ap Live Music/, {
       fields => [qw(start_time end_time)],
     }],
   ],
@@ -1096,19 +1108,6 @@ http://www.loladenver.com/Events/LiveMusic/tabid/636/Default.aspx,v-loladenver,R
   repeat => [
     [qr/$month $day: (.+?)\n/ => {
       fields => [qw(month day summary)],
-    }],
-  ],
-}
-"
-http://www.louisvilleco.gov/GOVERNMENT/BoardsCommissions/CulturalCouncil/CulturalCouncilEvents/tabid/393/Default.aspx,v-louisvilleco,Reg Exp,,"{
-  once => [
-    [qr/Time: $time_span/i => {
-      fields => [qw(start_time end_time)],
-    }],
-  ],
-  repeat => [
-    [qr/$month $day \-\s*$line\s*$line/s => {
-      fields => [qw(month day summary description)],
     }],
   ],
 }
@@ -1941,6 +1940,18 @@ http://www.denvermusicvenues.com/events/Soda-Jerk-Presents.htm,,Reg Exp,,"{
           }],
         ],
       },
+    }],
+  ],
+}
+"
+http://www.louisvilleco.gov/GOVERNMENT/BoardsCommissions/CulturalCouncil/CulturalCouncilEvents/tabid/393/Default.aspx,,Reg Exp,,"{
+  location_to_venue => {
+    qr/arts/i => 'louisvillearts',
+    qr/park/ => 'louisvilleco',
+  },
+  repeat => [
+    [qr/\n\n((?:[^\n]+\n)+)Date: (?:$day_name, )?$month? $day\nTime: $time_ap.*?\nVenue:\n?$line.*?\n\n([^\n].*?)\n\n/is => {
+      fields => [qw(summary day_name month day start_time location description)],
     }],
   ],
 }
