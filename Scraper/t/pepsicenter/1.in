@@ -6,7 +6,7 @@
     'location' => undef,
     'summary' => 'WWE RAW World Tour 2011',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/Calendar.aspx',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=JqRzBS2l0rE=',
     'venue' => 'pepsicenter'
   },
   {
@@ -16,7 +16,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Red Wings',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/Calendar.aspx',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=Qny1oPL7cOM=',
     'venue' => 'pepsicenter'
   },
   {
@@ -26,7 +26,7 @@
     'location' => undef,
     'summary' => 'Foo Fighters',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/Calendar.aspx',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=YaOTgh0Szjs=',
     'venue' => 'pepsicenter'
   },
   {
@@ -36,7 +36,7 @@
     'location' => undef,
     'summary' => 'Keith Urban',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/Calendar.aspx',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=ivtQwXb3EeU=',
     'venue' => 'pepsicenter'
   },
   {
@@ -46,7 +46,7 @@
     'location' => undef,
     'summary' => 'Jimmy Buffett',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/Calendar.aspx',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=0dg6SQkO+lE=',
     'venue' => 'pepsicenter'
   },
   {
@@ -56,7 +56,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Blackhawks',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/Calendar.aspx',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=kiD43TrjwnY=',
     'venue' => 'pepsicenter'
   },
   {
@@ -66,7 +66,7 @@
     'location' => undef,
     'summary' => 'Jason Aldean',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/Calendar.aspx',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=PIcZfZRhINU=',
     'venue' => 'pepsicenter'
   },
   {
@@ -76,7 +76,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Oilers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/Calendar.aspx',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=5vXZMHGN6Cs=',
     'venue' => 'pepsicenter'
   },
   {
@@ -86,7 +86,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Kings',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/Calendar.aspx',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=+50D5wR1MGY=',
     'venue' => 'pepsicenter'
   },
   {
@@ -96,7 +96,7 @@
     'location' => undef,
     'summary' => 'Avalance vs. Coyotes',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=RMobuOfnlK8=',
     'venue' => 'pepsicenter'
   },
   {
@@ -106,7 +106,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Warriors',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=da/kn1lGzDs=',
     'venue' => 'pepsicenter'
   },
   {
@@ -116,7 +116,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Flames',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=oQm70mAlteA=',
     'venue' => 'pepsicenter'
   },
   {
@@ -126,7 +126,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Cavaliers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=YDqzLVCaPSw=',
     'venue' => 'pepsicenter'
   },
   {
@@ -136,7 +136,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Trail Blazers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=xexMhwhmieg=',
     'venue' => 'pepsicenter'
   },
   {
@@ -146,7 +146,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Islanders',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=kEOcEBOMYwI=',
     'venue' => 'pepsicenter'
   },
   {
@@ -156,7 +156,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Flames',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=/TmiKgI6HX4=',
     'venue' => 'pepsicenter'
   },
   {
@@ -166,7 +166,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Stars',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=Hq9ML0ViFWA=',
     'venue' => 'pepsicenter'
   },
   {
@@ -176,7 +176,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Wizards',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=3MbExIjsJXk=',
     'venue' => 'pepsicenter'
   },
   {
@@ -186,7 +186,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Sharks',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=jazizlG8v4o=',
     'venue' => 'pepsicenter'
   },
   {
@@ -196,7 +196,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Bulls',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=zP19Jpg3LG4=',
     'venue' => 'pepsicenter'
   },
   {
@@ -206,7 +206,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Canucks',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=NBOyd2tDUdc=',
     'venue' => 'pepsicenter'
   },
   {
@@ -216,7 +216,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Mavericks',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=cVjOPNQCrH8=',
     'venue' => 'pepsicenter'
   },
   {
@@ -226,7 +226,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Oilers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=GnJZUR5OTDE=',
     'venue' => 'pepsicenter'
   },
   {
@@ -236,7 +236,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Hornets',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=OC6q1PszJW0=',
     'venue' => 'pepsicenter'
   },
   {
@@ -246,7 +246,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Stars',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=MVCEjsmkrtk=',
     'venue' => 'pepsicenter'
   },
   {
@@ -256,7 +256,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Pacers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=T/htGqjJaCg=',
     'venue' => 'pepsicenter'
   },
   {
@@ -266,7 +266,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Devils',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=11/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=9IwWWy/DHuA=',
     'venue' => 'pepsicenter'
   },
   {
@@ -276,7 +276,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Thunder',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=sGBF7bt1fQk=',
     'venue' => 'pepsicenter'
   },
   {
@@ -286,7 +286,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Blues',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=alM+fNZ2acg=',
     'venue' => 'pepsicenter'
   },
   {
@@ -296,7 +296,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Kings',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=+6AH8OGGg8I=',
     'venue' => 'pepsicenter'
   },
   {
@@ -306,7 +306,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Red Wings',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=nJZP2DfeZTE=',
     'venue' => 'pepsicenter'
   },
   {
@@ -316,7 +316,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Magic',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=rzQGht0Qzso=',
     'venue' => 'pepsicenter'
   },
   {
@@ -326,7 +326,7 @@
     'location' => undef,
     'summary' => 'Disney on Ice "Toy Story 3"',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=65ta8yWh4ek=',
     'venue' => 'pepsicenter'
   },
   {
@@ -336,7 +336,7 @@
     'location' => undef,
     'summary' => 'Disney On Ice "Toy Story 3"',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=M5EnCCHBvuA=',
     'venue' => 'pepsicenter'
   },
   {
@@ -346,7 +346,7 @@
     'location' => undef,
     'summary' => 'Disney On Ice "Toy Story 3"',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=ZjF74FeLaCg=',
     'venue' => 'pepsicenter'
   },
   {
@@ -356,7 +356,7 @@
     'location' => undef,
     'summary' => 'Disney On Ice "Toy Story 3"',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=B8SA7aLiRLI=',
     'venue' => 'pepsicenter'
   },
   {
@@ -366,7 +366,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Sharks',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=/wNKHCctvoc=',
     'venue' => 'pepsicenter'
   },
   {
@@ -376,7 +376,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Jazz',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=Dk85AOUpFhI=',
     'venue' => 'pepsicenter'
   },
   {
@@ -386,7 +386,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Capitals',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=aLESGf8UbbE=',
     'venue' => 'pepsicenter'
   },
   {
@@ -396,7 +396,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Flyers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=qP/n7u7U08Y=',
     'venue' => 'pepsicenter'
   },
   {
@@ -406,7 +406,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs Timberwolves',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=vuczo6noPCE=',
     'venue' => 'pepsicenter'
   },
   {
@@ -416,7 +416,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Blues',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=AydATQwYh0o=',
     'venue' => 'pepsicenter'
   },
   {
@@ -426,7 +426,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs LA Clippers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=M4R1sbPQX+A=',
     'venue' => 'pepsicenter'
   },
   {
@@ -436,7 +436,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Lightning',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=u28gz646z/s=',
     'venue' => 'pepsicenter'
   },
   {
@@ -446,7 +446,7 @@
     'location' => undef,
     'summary' => 'Trans-Siberian Orchestra',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=2IufudmjNlA=',
     'venue' => 'pepsicenter'
   },
   {
@@ -456,7 +456,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Jets',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=lN/WuXCdXx8=',
     'venue' => 'pepsicenter'
   },
   {
@@ -466,7 +466,7 @@
     'location' => undef,
     'summary' => 'Nuggets vs 76ers',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=ErNtH8Ohb4Y=',
     'venue' => 'pepsicenter'
   },
   {
@@ -476,7 +476,7 @@
     'location' => undef,
     'summary' => 'Avalanche vs. Coyotes',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.pepsicenter.com/calendar.aspx?viewDate=12/3/2011',
+    'url' => 'http://www.pepsicenter.com/events/event.aspx?eid=4dRQ8PCpDLg=',
     'venue' => 'pepsicenter'
   }
 ]
