@@ -7,6 +7,7 @@ my($tag_key) = 'tag' . random_string();
 my($desc_key) = 'desc' . random_string();
 DateTime()->set_test_now('12/12/2050 12:0:0');
 my($date) = DateTime()->now;
+my($prev_date) = Date()->add_days(Date()->from_datetime($date), -1);
 req()->set_realm(unauth_model('Scraper', {
     default_venue_id => realm_id('v-nissis'),
 })->get('scraper_id'));
@@ -18,7 +19,8 @@ model('CalendarEvent')->do_iterate(sub {
     url => 'http://homelist.bunit',
 });
 
-my($ce);
+my($last_ce);
+my($first_ce);
 foreach my $i (0 .. 7) {
     my($d) = DateTime()->add_days($date, + $i);
     my($m) = model('CalendarEvent')->create_realm({
@@ -37,7 +39,8 @@ foreach my $i (0 .. 7) {
 	venue_id => realm_id('v-nissis'),
 	calendar_event_id => $m->get('calendar_event_id'),
     });
-    $ce = $m;
+    $last_ce = $m;
+    $first_ce ||= $m;
 }
 
 commit();
@@ -49,7 +52,7 @@ $date = DateTime()->now;
 my($rows);
 [
     load_page => [
-        [{begin_date => Date()->add_days(Date()->from_datetime($date), -1)}] => [
+        [{begin_date => $prev_date}] => [
 	    {
 		'RealmOwner.display_name' => $title_key,
 		'venue.RealmOwner.display_name' => q{Nissi's},
@@ -66,7 +69,7 @@ my($rows);
 	],
 	sub {
 	    model('RowTag')->row_tag_replace(
-		$ce->get('calendar_event_id'),
+		$last_ce->get('calendar_event_id'),
 		'C4_HIDDEN_CALENDAR_EVENT',
 		1,
 	    );
@@ -89,6 +92,28 @@ my($rows);
 		$rows2->[0]->{'CalendarEvent.calendar_event_id'},
 	    );
 	    assert_equals(3, scalar(@$rows2));
+	    return 1;
+	},
+    ],
+    execute => [
+	sub {
+	    req()->put(query => {this => $first_ce->get('calendar_event_id')});
+	    [req()];
+	} => sub {
+	    $rows = req()->get(class())->map_rows;
+	    assert_equals(1, scalar(@$rows));
+	    assert_equals(
+		$first_ce->get('calendar_event_id'),
+		$rows->[0]->{'CalendarEvent.calendar_event_id'},
+	    );
+	    return 1;
+	},
+	sub {
+	    req()->put(query => {this => ['999999999'], count => 2});
+	    [req()];
+	} => sub {
+	    $rows = req()->get(class())->map_rows;
+	    assert_equals(2, scalar(@$rows));
 	    return 1;
 	},
     ],
