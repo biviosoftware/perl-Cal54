@@ -51,7 +51,7 @@ sub execute {
     if ($query->unsafe_get('this')) {
 	return
 	    if $self->unsafe_load_this($query);
-	$query->delete('this');
+	$query->put(this => undef);
     }
     $self->load_page($query);
     return;
@@ -231,7 +231,7 @@ sub internal_prepare_statement {
 	first_row_seen => 0,
     };
     $self->new_other('TimeZoneList')->load_all;
-    return 1
+    return _prepare_this($self, $stmt, $query)
 	if $query->unsafe_get('this');
     my($dt) = $query->unsafe_get('begin_date')
 	|| $query->unsafe_get('when');
@@ -301,6 +301,17 @@ sub internal_prepare_statement {
 
 sub _exclude_unused {
     return grep((ref($_) ? $_->[0] : $_) !~ /RealmOwner|SearchWord|Email/, @_);
+}
+
+sub _prepare_this {
+    my($self, $stmt, $query) = @_;
+    $stmt->where(
+	$stmt->EQ(
+	    'CalendarEvent.calendar_event_id',
+	    $query->get('this'),
+        ),
+    );
+    return;
 }
 
 1;
