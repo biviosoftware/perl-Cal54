@@ -195,24 +195,14 @@ sub _list {
 	    ]]),
 	),
 	vs_unless_robot(
-	    Join([
-		DIV(
-#		    IfMobile(
-			Link(
-			    String(vs_text('next_button')),
-			    ['Model.HomeList', '->format_uri', 'NEXT_LIST'],
-			    {
-				class => 'c4_next_button',
-				control => [['Model.HomeList', '->get_query'], 'has_next'],
-			    },
-			),
-# 			DIV(
-# 			    C4HomePager(1),
-# 			    {class => 'c4_query c4_bottom_pager'},
-# 			),
-# 		    ),
-		),
-	    ]),
+	    Link(
+		String(vs_text('next_button')),
+		['Model.HomeList', '->format_uri', 'NEXT_LIST'],
+		{
+		    class => 'c4_next_button',
+		    control => [['Model.HomeList', '->get_query'], 'has_next'],
+		},
+	    ),
 	),
 	$self->internal_footer,
     ]);
