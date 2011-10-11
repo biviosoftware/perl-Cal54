@@ -100,12 +100,15 @@ my($rows);
 	    req()->put(query => {this => $first_ce->get('calendar_event_id')});
 	    [req()];
 	} => sub {
-	    $rows = req()->get(class())->map_rows;
+	    my($list) = req(class());
+	    $rows = $list->map_rows;
 	    assert_equals(1, scalar(@$rows));
 	    assert_equals(
 		$first_ce->get('calendar_event_id'),
 		$rows->[0]->{'CalendarEvent.calendar_event_id'},
 	    );
+	    assert_equals(0, $list->get_query->get('has_next'));
+	    assert_equals(0, $list->get_query->get('has_prev'));
 	    return 1;
 	},
 	sub {
