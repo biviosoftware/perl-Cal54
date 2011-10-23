@@ -1,0 +1,27 @@
+# Copyright (c) 2011 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+ListModel();
+req()->initialize_fully('C4_HOME_LIST');
+model('HomeQueryForm', {});
+[
+    {
+	method => 'execute',
+	compute_params => sub {
+	    my(undef, $params) = @_;
+	    req('r')->header_in('Referer', $params->[0]);
+	    req()->put(query => {page_number => '3'});
+	    return [req()];
+	},
+	compute_return => sub {
+	    return [
+		req(class())->get_query->unsafe_get('page_number'),
+		req(class())->get_query->unsafe_get('what'),
+	    ];
+	},
+    } => [
+	'http://www.google.com/url?rct=j&q=cal%2054%20boulder' => [1, 'boulder'],
+	'http://search.yahoo.com/url?p=edgar+winter' => [1, 'edgar winter'],
+	'http://www.yahoo.com/url?q=hello+there' => [3, undef],
+	'rubish' => [3, undef],
+    ],
+];
