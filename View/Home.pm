@@ -40,6 +40,11 @@ sub list {
 		[app_id => '237465832943306'],
 		[locale => 'en_US'],
 	    ),
+	    META({
+		NAME => 'robots',
+		CONTENT => 'noarchive',
+		control => ['Type.UserAgent', '->is_robot_search'],
+	    }),
 	    If(
 		['Model.HomeList', '->c4_has_cursor'],
 		Join([
@@ -57,9 +62,13 @@ sub list {
 	]),
     );
     return $self->internal_body(Join([
-	q[<div id="fb-root"></div><script type="text/javascript">window.fbAsyncInit=function(){FB.init({appId:'237465832943306',status:false,cookie:false,xfbml:true,oauth:false,channelUrl:'],
-	_abs_uri('/f/channel.html'),
-	q['})};(function(){var e=document.createElement('script');e.src=document.location.protocol+'//connect.facebook.net/en_US/all.js';e.async=true;document.getElementById('fb-root').appendChild(e);}());</script>],
+	vs_unless_robot(
+	    Join([
+		q[<div id="fb-root"></div><script type="text/javascript">window.fbAsyncInit=function(){FB.init({appId:'237465832943306',status:false,cookie:false,xfbml:true,oauth:false,channelUrl:'],
+		_abs_uri('/f/channel.html'),
+		q['})};(function(){var e=document.createElement('script');e.src=document.location.protocol+'//connect.facebook.net/en_US/all.js';e.async=true;document.getElementById('fb-root').appendChild(e);}());</script>],
+	    ]),
+	),
 	Form({
 	    form_class => 'HomeQueryForm',
 	    class => 'c4_form',
@@ -194,15 +203,13 @@ sub _list {
 		}),
 	    ]]),
 	),
-	vs_unless_robot(
-	    Link(
-		String(vs_text('next_button')),
-		['Model.HomeList', '->format_uri', 'NEXT_LIST'],
-		{
-		    class => 'c4_next_button',
-		    control => [['Model.HomeList', '->get_query'], 'has_next'],
-		},
-	    ),
+	Link(
+	    String(vs_text('next_button')),
+	    ['Model.HomeList', '->format_uri', 'NEXT_LIST'],
+	    {
+		class => 'c4_next_button',
+		control => [['Model.HomeList', '->get_query'], 'has_next'],
+	    },
 	),
 	$self->internal_footer,
     ]);
