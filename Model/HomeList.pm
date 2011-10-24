@@ -26,7 +26,6 @@ my($_HIDE_ROWS_QUERY) = <<"EOF";
 	AND row_tag_t.value = '1'
     )
 EOF
-my($_IDI) = __PACKAGE__->instance_data_index;
 
 sub EXCLUDE_HIDDEN_ROWS {
     return 1;
