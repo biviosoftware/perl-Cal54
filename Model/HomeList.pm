@@ -1,11 +1,13 @@
-# Copyright (c) 2010 CAL54, Inc.  All Rights Reserved.
+# Copyright (c) 2010-2011 CAL54, Inc.  All Rights Reserved.
 # $Id$
 package Cal54::Model::HomeList;
 use strict;
 use Bivio::Base 'Model.CalendarEventList';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
+use URI ();
 my($_IDI) = __PACKAGE__->instance_data_index;
+my($_AC) = b_use('Ext.ApacheConstants');
 my($_DEFAULT_TZ) = b_use('Type.TimeZone')->get_default;
 my($_DT) = b_use('Type.DateTime');
 my($_HFDT) = b_use('HTMLFormat.DateTime');
@@ -14,6 +16,7 @@ my($_TS) = b_use('Type.String');
 my($_S) = b_use('Bivio.Search');
 my($_VL) = b_use('Model.VenueList');
 my($_D) = b_use('Type.Date');
+my($_UA) = b_use('Type.UserAgent');
 my($_THIS_DETAIL) = b_use('Biz.QueryType')->THIS_DETAIL;
 my($_HIDE_ROWS_QUERY) = <<"EOF";
     NOT EXISTS (
@@ -23,6 +26,7 @@ my($_HIDE_ROWS_QUERY) = <<"EOF";
 	AND row_tag_t.value = '1'
     )
 EOF
+my($_IDI) = __PACKAGE__->instance_data_index;
 
 sub EXCLUDE_HIDDEN_ROWS {
     return 1;
@@ -42,19 +46,6 @@ sub c4_description {
 
 sub c4_first_date {
     return shift->[$_IDI]->{first_date};
-}
-
-sub execute {
-    my($proto, $req) = @_;
-    my($self) = shift->new($req);
-    my($query) = $self->parse_query_from_request;
-    if ($query->unsafe_get('this')) {
-	return
-	    if $self->unsafe_load_this($query);
-	$query->put(this => undef);
-    }
-    $self->load_page($query);
-    return;
 }
 
 sub c4_format_uri {
@@ -83,6 +74,32 @@ sub c4_title {
     return $self->c4_has_cursor
 	? join(' ', $self->get(qw(RealmOwner.display_name month_day start_end_am_pm)))
 	: 'Make a LOCAL scene - Search for Events, Concerts, Lectures, Activities';
+}
+
+sub execute {
+    my($proto, $req) = @_;
+    my($self) = shift->new($req);
+    my($query) = $self->parse_query_from_request;
+    my($this) = $query->unsafe_get('this');
+    $self->[$_IDI] = {
+	robot => my $robot = $_UA->is_robot_search($req),
+    };
+    return {
+	task_id => 'C4_HOME_LIST',
+	query => $this && {'ListQuery.this' => $this},
+	http_status_code => $_AC->HTTP_MOVED_PERMANENTLY,
+    } if $robot
+	&& ($query->unsafe_get('when')
+	|| !$self->ureq(qw(Model.HomeQueryForm is_default_what)));
+    if ($this) {
+	return
+	    if $self->unsafe_load_this($query);
+	$query->put(this => undef);
+    }
+    _query_from_referrer($self, \$query)
+	unless $robot;
+    $self->load_page($query);
+    return;
 }
 
 sub internal_initialize {
@@ -157,6 +174,7 @@ sub internal_post_load_row {
 	}
 	qw(dtstart_tz dtend_tz),
     );
+# add in "tonight" and "tomorrow" and "evening" and "today" for robots on first page
     if ($start eq $end) {
 	$row->{start_end_am_pm} = $start;
     }
@@ -193,6 +211,8 @@ sub internal_post_load_row {
     );
     $row->{excerpt} = ${$_TS->canonicalize_and_excerpt(
 	$row->{'CalendarEvent.description'} || '',
+	# COUPLING: View.Home sets robots => noarchive if search robot
+	$fields->{robot} ? 1_000_000 : undef,
     )};
     $row->{map_uri} = 'http://maps.google.com/maps?q='
 	. $_HTML->escape_query(
@@ -224,12 +244,14 @@ sub internal_pre_load {
 
 sub internal_prepare_statement {
     my($self, $stmt, $query) = @_;
-    my($fields) = $self->[$_IDI] = {
+    my($fields) = $self->[$_IDI] ||= {};
+    %$fields = (
+	%$fields,
 	month_day => '',
 	prev_page => undef,
 	next_page => undef,
 	first_row_seen => 0,
-    };
+    );
     $self->new_other('TimeZoneList')->load_all;
     return _prepare_this($self, $stmt, $query)
 	if $query->unsafe_get('this');
@@ -311,6 +333,30 @@ sub _prepare_this {
 	    $query->get('this'),
         ),
     );
+    return;
+}
+
+sub _query_from_referrer {
+    my($self, $query) = @_;
+    return
+	unless my $r = $self->ureq('r');
+    return
+	unless my $ref = $r->header_in('Referer');
+    my($uri) = URI->new($ref);
+    return
+	unless $uri->can('host')
+	&& $uri->host =~ /^(?:www\.(?:google|bing)|search\.(?:yahoo|aol))\.com$/
+	&& $uri->can('query')
+	&& $uri->query;
+    my($q) = {$uri->query_form};
+    return
+	unless my $search = $q->{q} || $q->{p};
+    $search =~ s/\bcal\s*54(?:[\.\s]*com)?\b//;
+    $search =~ s/\s+/ /g;
+    $search =~ s/^\s+|\s+$//g;
+    return
+	unless $search;
+    $$query = $self->parse_query({what => $search});
     return;
 }
 
