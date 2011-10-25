@@ -2,31 +2,40 @@
 # $Id$
 test_setup('Cal54');
 set_user_agent_to_actual_browser();
-home_page();
-verify_no_text('noarchive');
-verify_text('connect.facebook.net');
-verify_link('>>');
-verify_link('mobile');
-verify_text('>Next<');
-my($uri) = get_uri();
-visit_uri(my $not_found = "$uri?what=donotfindthis");
-verify_text("Your search didn't match any results.");
-verify_no_text('>Next<');
+my($not_found);
+my($actual_browser) = sub {
+    home_page();
+    verify_no_text('noarchive');
+    verify_text('connect.facebook.net');
+    verify_link('>>');
+    verify_link('mobile');
+    verify_text('>Next<');
+    my($uri) = get_uri();
+    visit_uri($not_found = "$uri?what=donotfindthis");
+    verify_text("Your search didn't match any results.");
+    verify_no_text('>Next<');
+    return;
+};
+$actual_browser->();
 set_user_agent_to_robot_search();
-home_page();
-verify_text('noarchive');
-verify_no_text('connect.facebook.net');
-verify_no_link('>>');
-verify_no_link('mobile');
-visit_uri($not_found);
-verify_text('>Next<');
-set_user_agent_to_robot_other();
-home_page();
-verify_no_text('noarchive');
-verify_no_text('connect.facebook.net');
-verify_no_link('>>');
-verify_no_link('mobile');
-verify_text('>Next<');
-visit_uri($not_found);
-verify_no_text('>Next<');
-
+my($robot) = sub {
+    my($search) = @_;
+    home_page();
+    $search ? verify_text('noarchive') : verify_no_text('noarchive');
+    verify_no_text('connect.facebook.net');
+    verify_no_link('>>');
+    verify_no_link('mobile');
+    verify_text('>Next<');
+    visit_uri($not_found);
+    $search ? verify_text('>Next<') : verify_no_text('>Next<');
+    return;
+};
+$robot->(1);
+#BEBOP: 11.35
+user_agent('libwww-perl/5.79');
+#set_user_agent_to_robot_other();
+$robot->(0);
+#BEBOP: 11.35
+user_agent(undef);
+#reset_user_agent();
+$actual_browser->();
