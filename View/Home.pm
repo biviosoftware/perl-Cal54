@@ -43,7 +43,7 @@ sub list {
 	    META({
 		NAME => 'robots',
 		CONTENT => 'noarchive',
-		control => ['Type.UserAgent', '->is_robot_search'],
+		control => ['Model.HomeList', '->c4_noarchive'],
 	    }),
 	    If(
 		['Model.HomeList', '->c4_has_cursor'],
