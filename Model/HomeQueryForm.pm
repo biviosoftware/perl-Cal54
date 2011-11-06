@@ -131,7 +131,7 @@ sub _query_search_click {
 	unless my $r = $self->ureq('r');
     return
 	unless my $ref = $r->header_in('Referer');
-    my($ref) = URI->new($ref);
+    $ref = URI->new($ref);
     return
 	unless $ref->can('host')
 	&& $ref->host =~ /^(?:www\.(?:google|bing|search-results)|search\.(?:yahoo|aol|mywebsearch|comcast)|int.ask)\.(?:com|net)$/
