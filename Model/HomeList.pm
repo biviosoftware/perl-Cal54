@@ -7,7 +7,6 @@ use Bivio::Base 'Model.CalendarEventList';
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 use URI ();
 my($_IDI) = __PACKAGE__->instance_data_index;
-my($_AC) = b_use('Ext.ApacheConstants');
 my($_DEFAULT_TZ) = b_use('Type.TimeZone')->get_default;
 my($_DT) = b_use('Type.DateTime');
 my($_HFDT) = b_use('HTMLFormat.DateTime');
@@ -68,6 +67,10 @@ sub c4_has_this {
     return $self->get_query->unsafe_get('this') && $self->set_cursor_or_die(0) ? 1 : 0;
 }
 
+sub c4_noarchive {
+    return shift->[$_IDI]->{is_robot_search};
+}
+
 sub c4_title {
     my($self) = @_;
     return $self->c4_has_cursor
@@ -80,24 +83,17 @@ sub execute {
     my($self) = shift->new($req);
     my($query) = $self->parse_query_from_request;
     my($this) = $query->unsafe_get('this');
-    $self->[$_IDI] = {
-	robot => my $robot = $_UA->is_robot_search($req),
-    };
-    return {
-	task_id => 'C4_HOME_LIST',
-	query => $this && {'ListQuery.this' => $this},
-	http_status_code => $_AC->HTTP_MOVED_PERMANENTLY,
-    } if $robot
-	&& ($query->unsafe_get('when')
-	|| !$self->ureq(qw(Model.HomeQueryForm is_default_what)));
     if ($this) {
 	return
 	    if $self->unsafe_load_this($query);
 	$query->put(this => undef);
     }
-    _query_from_referrer($self, \$query)
-	unless $robot;
     $self->load_page($query);
+    return
+	if $self->get_result_set_size > 0
+	|| !$self->req(qw(Model.HomeQueryForm is_search_click));
+    $self->req->put(query => undef);
+    $self->load_page({});
     return;
 }
 
@@ -161,9 +157,10 @@ sub internal_post_load_row {
     return 0
 	unless shift->SUPER::internal_post_load_row(@_);
     my($fields) = $self->[$_IDI];
-    if ($self->ureq('Model.HomeQueryForm')) {
-	$self->req('Model.HomeQueryForm')->row_tag_replace_what
-	    unless $fields->{row_tag_sentinel}++;
+    unless ($fields->{row_tag_sentinel}++) {
+	my($hqf) = $self->ureq('Model.HomeQueryForm');
+	$hqf->row_tag_replace_what
+	    if $hqf;
     }
     my($start, $end) = map(
 	{
@@ -173,7 +170,7 @@ sub internal_post_load_row {
 	}
 	qw(dtstart_tz dtend_tz),
     );
-# add in "tonight" and "tomorrow" and "evening" and "today" for robots on first page
+#TODO: add in "tonight" and "tomorrow" and "evening" and "today" for robots on first page
     if ($start eq $end) {
 	$row->{start_end_am_pm} = $start;
     }
@@ -210,8 +207,11 @@ sub internal_post_load_row {
     );
     $row->{excerpt} = ${$_TS->canonicalize_and_excerpt(
 	$row->{'CalendarEvent.description'} || '',
-	# COUPLING: View.Home sets robots => noarchive if search robot
-	$fields->{robot} ? 1_000_000 : undef,
+	# COUPLING: View.Home sets robots => noarchive if search robot so we don't
+	# give away this data to the world.  Of course, people will be able to scrape
+	# by saying they are google bot.  We could also check IPs of search bots.
+
+	$fields->{is_robot_search} ? 1_000_000 : undef,
     )};
     $row->{map_uri} = 'http://maps.google.com/maps?q='
 	. $_HTML->escape_query(
@@ -243,14 +243,13 @@ sub internal_pre_load {
 
 sub internal_prepare_statement {
     my($self, $stmt, $query) = @_;
-    my($fields) = $self->[$_IDI] ||= {};
-    %$fields = (
-	%$fields,
+    my($fields) = $self->[$_IDI] = {
+	is_robot_search => $_UA->is_robot_search_verified($self->req),
 	month_day => '',
 	prev_page => undef,
 	next_page => undef,
 	first_row_seen => 0,
-    );
+    };
     $self->new_other('TimeZoneList')->load_all;
     return _prepare_this($self, $stmt, $query)
 	if $query->unsafe_get('this');
@@ -332,30 +331,6 @@ sub _prepare_this {
 	    $query->get('this'),
         ),
     );
-    return;
-}
-
-sub _query_from_referrer {
-    my($self, $query) = @_;
-    return
-	unless my $r = $self->ureq('r');
-    return
-	unless my $ref = $r->header_in('Referer');
-    my($uri) = URI->new($ref);
-    return
-	unless $uri->can('host')
-	&& $uri->host =~ /^(?:www\.(?:google|bing)|search\.(?:yahoo|aol))\.com$/
-	&& $uri->can('query')
-	&& $uri->query;
-    my($q) = {$uri->query_form};
-    return
-	unless my $search = $q->{q} || $q->{p};
-    $search =~ s/\bcal\s*54(?:[\.\s]*com)?\b//;
-    $search =~ s/\s+/ /g;
-    $search =~ s/^\s+|\s+$//g;
-    return
-	unless $search;
-    $$query = $self->parse_query({what => $search});
     return;
 }
 
