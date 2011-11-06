@@ -37,7 +37,6 @@ sub internal_initialize {
 
 sub internal_prepare_statement {
     my($self, $stmt, $query) = @_;
-
     if (my $scraper = $query->unsafe_get('scraper')) {
 	my($list) = $self->req('Model.ScraperList');
 	$list = $list->find_row_by(
