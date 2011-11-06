@@ -1,0 +1,28 @@
+# Copyright (c) 2011 CAL54, Inc.  All Rights Reserved.
+# $Id$
+test_setup('Cal54');
+home_page();
+set_user_agent_to_actual_browser();
+my($search) = random_string();
+submit_form(Search => {
+    _anon => $search,
+});
+my($tag) = random_string();
+visit_uri("/pub/url?x=" . Bivio_HTML()->escape_attr_value("http://www.bivio.biz/?$tag"));
+set_user_agent_to_robot_search();
+home_page();
+my($uri) = get_content() =~ m{<a class="title" href="/search(.+?)">}s;
+b_die('unable to find uri')
+    unless $uri;
+set_user_agent_to_actual_browser();
+visit_uri($uri);
+save_excursion(
+    sub {
+	login_as_adm();
+	follow_link('site_hits');
+	verify_text(qr/u\d+ .*?\Q$search/);
+	verify_text($tag);
+	verify_text(qr{\Q$uri});
+	return;
+    },
+);

@@ -1,0 +1,42 @@
+# Copyright (c) 2011 bivio Software, Inc.  All Rights Reserved.
+# $Id$
+Request();
+req()->initialize_fully('C4_HOME_LIST');
+[
+    [req()] => [
+	{
+	    method => 'process',
+	    compute_params => sub {
+		my($case, $params) = @_;
+		$case->get('object')->reset_instance_state;
+		req()->put(query => $params->[0]);
+		req()->get('r')->header_in(Referer => $params->[1]);
+		Type_UserAgent($params->[2] ? 'BROWSER_ROBOT_SEARCH' : 'BROWSER_FIREFOX_1')
+		    ->put_on_request(req());
+		return [];
+	    },
+	    compute_return => sub {
+		my($case, $actual) = @_;
+		return [$actual->[0] ? $actual->[0]
+		    : shift->get('object')->get(qw(what when is_robot is_default_what))];
+	    },
+	} => [
+	    [] => ['music', undef, 0, 1],
+	    [{what => 'hello'}] => ['hello', undef, 0, 0],
+	    [{when => '8/1/2011'}] => [undef, '8/1/2011', 0, 0],
+	    [{what => 'hello'}, 'http://www.google.com/?q=bye'] => ['bye', undef, 0, 0],
+	    [{what => 'hello'}, 'http://www.bivio.com/?q=bye'] => ['hello', undef, 0, 0],
+	    [{what => 'hello'}, undef, 1] => [{
+		task_id => 'C4_HOME_LIST',
+	        query => undef,
+		http_status_code => Ext_ApacheConstants()->HTTP_MOVED_PERMANENTLY,
+	    }],
+	    [{what => ''}, undef, 1] => [{
+		task_id => 'C4_HOME_LIST',
+	        query => undef,
+		http_status_code => Ext_ApacheConstants()->HTTP_MOVED_PERMANENTLY,
+	    }],
+	    [{}, undef, 1] => [undef, undef, 1, 0],
+	],
+    ],
+];
