@@ -32,11 +32,11 @@ sub handle_pre_execute_task {
     }
     return
 	unless my $r = $self->ureq('r');
-    _trace('adding cookie: ', $r->header_in('Referer'), ' ', $r->uri)
+    _trace('adding cookie: ', $r->header_in('Referer'), ' ', $r->unparsed_uri)
 	if $_TRACE;
     $cookie->put(
 	$_REF_URI => $r->header_in('Referer') || '',
-	$_ENTRY_URI => $r->uri,
+	$_ENTRY_URI => $r->unparsed_uri,
     );
     return;
 }
