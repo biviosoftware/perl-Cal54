@@ -1,16 +1,17 @@
 # Copyright (c) 2010 CAL54, Inc.  All Rights Reserved.
 # $Id$
 test_setup('Cal54');
+save_cookies_in_history(1);
 set_user_agent_to_actual_browser();
-my($not_found);
+my($not_found, $uri);
 my($actual_browser) = sub {
     home_page();
+    $uri = get_uri();
     verify_no_text('noarchive');
     verify_text('connect.facebook.net');
     verify_link('>>');
     verify_link('mobile');
     verify_text('>Next<');
-    my($uri) = get_uri();
     visit_uri($not_found = "$uri?what=donotfindthis");
     verify_text("Your search didn't match any results.");
     verify_no_text('>Next<');
@@ -26,16 +27,24 @@ my($robot) = sub {
     verify_no_link('>>');
     verify_no_link('mobile');
     verify_text('>Next<');
+    visit_uri("$uri?what=hello");
+    verify_uri(qr{\Q$uri\E$});
+    visit_uri("$uri?what=");
+    verify_uri(qr{\Q$uri\E$});
+    visit_uri("$uri?when=" . Type_Date()->now_as_string);
+    verify_uri(qr{\Q$uri\E$});
     visit_uri($not_found);
-    $search ? verify_text('>Next<') : verify_no_text('>Next<');
+    verify_text('>Next<');
+    my($uri) = get_content() =~ /<a class="title" href="(.+?)"/;
+    b_die('improve href extraction')
+	unless $uri;
+    visit_uri($uri);
+    verify_uri(qr{\Q$uri});
+    verify_no_text('>Next<');
     return;
 };
 $robot->(1);
-#BEBOP: 11.35
-user_agent('libwww-perl/5.79');
-#set_user_agent_to_robot_other();
+set_user_agent_to_robot_other();
 $robot->(0);
-#BEBOP: 11.35
-user_agent(undef);
-#reset_user_agent();
+reset_user_agent();
 $actual_browser->();
