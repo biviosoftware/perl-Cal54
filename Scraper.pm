@@ -56,7 +56,13 @@ sub do_all {
 	sub {
 	    my($it) = @_;
 	    $_A->reset_warn_counter;
-	    $_T->commit($proto->do_one($it, $date_time)->req);
+	    my($scraper) = $proto->do_one($it, $date_time);
+	    if ($scraper->unsafe_get('die')) {
+		$_T->rollback($scraper->req);
+	    }
+	    else {
+		$_T->commit($scraper->req);
+	    }
 	    return 1;
 	},
     );
@@ -294,9 +300,9 @@ sub _delete_events {
 	}
 	return scalar(keys(%$deleted));
     }
-    b_warn($to_delete,
+    b_die($to_delete,
         ': attempting to delete more than 10% events, not deleting');
-    return 0;
+    return;
 }
 
 sub _filter_event {
