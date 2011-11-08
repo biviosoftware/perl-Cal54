@@ -274,6 +274,7 @@ sub is_canceled {
 
 sub parse_xml {
     my($proto, $content) = @_;
+    $$content =~ s/\&\#x1[EF]\;//g; 
     return _simplify_xml(
 	XML::Parser->new(Style => 'Tree')->parse($$content)->[1]);
 }
