@@ -3,7 +3,7 @@
 package Cal54::Scraper;
 use strict;
 use Bivio::Base 'HTML.Scraper';
-use XML::Simple ();
+use XML::Parser ();
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_A) = b_use('IO.Alert');
@@ -268,13 +268,8 @@ sub is_canceled {
 
 sub parse_xml {
     my($proto, $content) = @_;
-    my($xml, $err) = XML::Simple::xml_in($$content,
-        NoAttr => 1,
-	SuppressEmpty => undef,
-	KeyAttr => [],
-    );
-    b_die('xml parse error: ', $err) if $err;
-    return $xml;
+    return _simplify_xml(
+	XML::Parser->new(Style => 'Tree')->parse($$content)->[1]);
 }
 
 sub _bunit_dir {
@@ -405,6 +400,37 @@ sub _missing_future_events {
         return 0;
     });
     return $has_events ? 0 : 1;
+}
+
+sub _simplify_xml {
+    my($values) = @_;
+    # ignore attributes
+    shift(@$values);
+    my($text_value);
+    my($key_values);
+
+    for (my $i = 0; $i < @$values; $i += 2) {
+	my($n, $v) = (@$values)[$i, $i + 1];
+	if ($n eq '0') {
+	    $text_value = $v;
+	    next;
+	}
+	die() unless ref($v) eq 'ARRAY';
+	my($v2) = _simplify_xml($v);
+	next unless defined $v2;
+	$key_values ||= {};
+	
+	if (defined($key_values->{$n})) {
+	    unless (ref($key_values->{$n}) eq 'ARRAY') {
+		$key_values->{$n} = [$key_values->{$n}];
+	    }
+	    push(@{$key_values->{$n}}, $v2);
+	}
+	else {
+	    $key_values->{$n} = $v2;
+	}
+    }
+    return $key_values ? $key_values : $text_value;
 }
 
 sub _unique_count {
