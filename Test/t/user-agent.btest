@@ -22,6 +22,7 @@ set_user_agent_to_robot_search();
 my($robot) = sub {
     my($search) = @_;
     home_page();
+    my($home_page_uri) = get_uri();
     $search ? verify_text('noarchive') : verify_no_text('noarchive');
     verify_no_text('connect.facebook.net');
     verify_no_link('>>');
@@ -35,12 +36,14 @@ my($robot) = sub {
     verify_uri(qr{\Q$uri\E$});
     visit_uri($not_found);
     verify_text('>Next<');
-    my($uri) = get_content() =~ /<a class="title" href="(.+?)"/;
+    my($uri2) = get_content() =~ /<a class="title" href="(.+?)"/;
     b_die('improve href extraction')
-	unless $uri;
-    visit_uri($uri);
-    verify_uri(qr{\Q$uri});
+	unless $uri2;
+    visit_uri($uri2);
+    verify_uri(qr{\Q$uri2});
     verify_no_text('>Next<');
+    home_page('m.cal54');
+    verify_uri($home_page_uri);
     return;
 };
 $robot->(1);

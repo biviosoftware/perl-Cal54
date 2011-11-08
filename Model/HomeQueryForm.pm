@@ -13,13 +13,15 @@ my($_UA) = b_use('Type.UserAgent');
 
 sub execute_empty {
     my($self) = @_;
+    my($res);
+    return $res
+	if $res = _mobile_robot($self);
     if (my $query = $self->ureq('query')) {
-	my($res) = _query(
-	    $self,
-	    $self->new_other('HomeList')->parse_query_from_request,
-        );
 	return $res
-	    if $res;
+	    if $res = _query(
+		$self,
+		$self->new_other('HomeList')->parse_query_from_request,
+	    );
     }
     else {
 	_no_query($self);
@@ -74,6 +76,31 @@ sub row_tag_replace_what {
 	$what,
     );
     return;
+}
+
+sub _mobile_robot {
+    my($self) = @_;
+    return
+	unless $self->get('is_robot');
+#BEBOP: 11.38
+#     return b_use('XHTMLWidget.MobileDetector')
+# 	->robot_redirect_for_desktop($self->req);
+    my($req) = $self->req;
+    my($f) = b_use('UI.Facade')->get_from_source($req);
+    return
+	unless $f->matches_class_name('Mobile');
+    $f->get('parent')->setup_request($req);
+    if (my $cookie = $req->unsafe_get('cookie')) {
+	$cookie->put(mobile => 0);
+    }
+    return {
+	require_absolute => 1,
+	task_id => $req->get('task_id'),
+	carry_query => 0,
+	carry_path_info => 0,
+	http_status_code => b_use('Ext.ApacheConstants')
+	    ->HTTP_MOVED_PERMANENTLY,
+    };
 }
 
 sub _no_query {
