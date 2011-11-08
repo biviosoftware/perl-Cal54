@@ -100,6 +100,7 @@ my($_SELF) = __PACKAGE__->new({
 	[C4_HOME_USER_TRACKING => '/pub/url'],
 	[C4_HOME_SUGGEST_SITE => '/pub/suggest-site'],
 	[C4_HOME_WIKI_VIEW => '/bp/*'],
+	[LOGIN => undef],
     ],
     Text => [
 	@{__PACKAGE__->internal_c4_text},
