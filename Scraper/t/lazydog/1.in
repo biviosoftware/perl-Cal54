@@ -1,88 +1,88 @@
 [
   {
     'description' => '',
-    'dtend' => '2455695 10800',
-    'dtstart' => '2455695 10800',
+    'dtend' => '2455695 14400',
+    'dtstart' => '2455695 14400',
     'summary' => 'Funktion',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455696 10800',
-    'dtstart' => '2455696 10800',
+    'dtend' => '2455696 14400',
+    'dtstart' => '2455696 14400',
     'summary' => 'Interstate Stash Express',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455697 10800',
-    'dtstart' => '2455697 10800',
+    'dtend' => '2455697 14400',
+    'dtstart' => '2455697 14400',
     'summary' => 'Casual Sinners',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455702 10800',
-    'dtstart' => '2455702 10800',
+    'dtend' => '2455702 14400',
+    'dtstart' => '2455702 14400',
     'summary' => 'Calder\'s Revolver with The Gromet and Tin Horn Player',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455703 10800',
-    'dtstart' => '2455703 10800',
+    'dtend' => '2455703 14400',
+    'dtstart' => '2455703 14400',
     'summary' => 'Boulder Comedy Night - 7pm Dream Doctor\'s',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455704 10800',
-    'dtstart' => '2455704 10800',
+    'dtend' => '2455704 14400',
+    'dtstart' => '2455704 14400',
     'summary' => 'Rocktin Grove',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455709 10800',
-    'dtstart' => '2455709 10800',
+    'dtend' => '2455709 14400',
+    'dtstart' => '2455709 14400',
     'summary' => 'Fierce Bad Rabbit',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455710 10800',
-    'dtstart' => '2455710 10800',
+    'dtend' => '2455710 14400',
+    'dtstart' => '2455710 14400',
     'summary' => 'The Riot with Bop Skizzum',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455711 10800',
-    'dtstart' => '2455711 10800',
+    'dtend' => '2455711 14400',
+    'dtstart' => '2455711 14400',
     'summary' => 'Little Brazil with The Photo Atlas',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455717 10800',
-    'dtstart' => '2455717 10800',
+    'dtend' => '2455717 14400',
+    'dtstart' => '2455717 14400',
     'summary' => 'Ear Meal',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
   },
   {
     'description' => '',
-    'dtend' => '2455718 10800',
-    'dtstart' => '2455718 10800',
+    'dtend' => '2455718 14400',
+    'dtstart' => '2455718 14400',
     'summary' => 'By All Means',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
     'venue' => 'lazydog'
