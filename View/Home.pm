@@ -133,7 +133,8 @@ sub _list {
 		),
 	    ),
 	),
-	DIV_c4_list(
+	DIV_c4_list(Join([
+	    IfMobile('', DIV_c4_home_list_title(vs_text('c4_home_list_title'))),
 	    Grid([[
 		List(HomeList => [
 		    DIV_date(['month_day']),
@@ -202,7 +203,7 @@ sub _list {
 		    cell_align => 'top',
 		}),
 	    ]]),
-	),
+	])),
 	Link(
 	    String(vs_text('next_button')),
 	    ['Model.HomeList', '->format_uri', 'NEXT_LIST'],
