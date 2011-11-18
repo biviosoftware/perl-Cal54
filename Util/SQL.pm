@@ -24,4 +24,18 @@ sub initialize_test_data {
     return @res;
 }
 
+sub internal_upgrade_db_typo_20111118 {
+    my($self) = @_;
+    $self->req->with_realm(
+	'v-denverparamount',
+	sub {
+	    $self->req(qw(auth_realm owner))->update({
+		display_name => 'Paramount Theatre',
+	    });
+	    return;
+	},
+    );
+    return;
+}
+
 1;
