@@ -39,7 +39,7 @@ sub c4_description {
     my($self) = @_;
     return $self->c4_has_cursor
 	? $self->get('excerpt')
-	: q{The complete calendar of events, activities, fun things to do for Boulder and Denver, CO.  It's completely free, just like Google!};
+	: q{The complete calendar of events, activities, fun things to do for Boulder and Denver, CO.};
 }
 
 sub c4_first_date {
@@ -75,7 +75,7 @@ sub c4_title {
     my($self) = @_;
     return $self->c4_has_cursor
 	? join(' ', $self->get(qw(RealmOwner.display_name month_day start_end_am_pm)))
-	: 'Make a LOCAL scene - Search for Events, Concerts, Lectures, Activities';
+	: b_use('FacadeComponent.Text')->get_value('c4_home_title', $self->req);
 }
 
 sub execute {
