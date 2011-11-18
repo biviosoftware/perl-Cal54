@@ -110,6 +110,10 @@ span.c4_pager {
   padding-right: .2em;
   margin-left: .5em;
 }
+div.c4_home_list_title {
+  margin-bottom: 1ex;
+  Font('c4_home_list_title');
+}
 div.c4_list {
   CSS('c4_list');
 }

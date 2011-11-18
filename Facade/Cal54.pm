@@ -15,7 +15,7 @@ my($_SELF) = __PACKAGE__->new({
 	[[qw(c4_site_name c4_site_tag c4_query_what b_mobile_toggler_selected)]=> 0x0],
 	[[qw(c4_item_a c4_item_a_hover b_mobile_toggler_a)] => 0x0077b3],
         [c4_item_a_visited => 0x591899],
-	[[qw(c4_date c4_time c4_query_submit_background c4_query_background c4_grid_background c4_home_title_background c4_featured_background c4_button_background)] => 0xc82127],
+	[[qw(c4_date c4_time c4_query_submit_background c4_query_background c4_grid_background c4_home_title_background c4_featured_background c4_button_background c4_home_list_title)] => 0xc82127],
 	[[qw(c4_pager c4_pager_selected_border c4_form_background c4_logo_name c4_logo_tag c4_home_title c4_featured c4_button c4_query_submit)] => 0xffffff],
 	[[qw(c4_pager_weekend c4_query_submit_border c4_query_submit)] => 0xf8f8f8],
 	[[qw(c4_pager_a)]=> 0xe8e8e8],
@@ -94,6 +94,7 @@ my($_SELF) = __PACKAGE__->new({
 	[c4_site_tag => ['family="American Typewriter", Courier']],
 	[c4_site_name => ['bold', 'family="American Typewriter", Courier']],
 	[c4_button => ['100%']],
+	[c4_home_list_title => ['120%', 'bold', 'center']],
     ],
     Task => [
 	[C4_HOME_LIST => 'search'],
