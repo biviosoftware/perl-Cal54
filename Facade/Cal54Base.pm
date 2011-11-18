@@ -10,6 +10,8 @@ sub internal_c4_text {
     return [
 	[site_name => q{CAL54}],
 	[site_copyright => q{CAL54, Inc.}],
+	[c4_home_title => q{Calendar of Events, Concerts, Lectures, Activities for Boulder/Denver}],
+	[c4_home_list_title => q{The Searchable Event Calendar for Boulder and Denver}],
     ];
 }
 
