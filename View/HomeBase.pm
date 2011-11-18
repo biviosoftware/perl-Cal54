@@ -57,7 +57,7 @@ sub xhtml {
     view_shortcuts($proto->VIEW_SHORTCUTS);
     view_put(
 	home_base_html_tag_attrs => '',
-	home_base_head => Title(['CAL54', 'Make a LOCAL scene', 'Search for Events, Concerts, Lectures, Live Music']),
+	home_base_head => Title(['CAL54', vs_text('c4_home_title')]),
 	home_base_body => '',
     );
     view_main(
