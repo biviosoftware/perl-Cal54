@@ -44,7 +44,7 @@ sub {
 			    IO_File()->rm_rf($tmp);
 			    req()->put(scraper_bunit => $case_dir);
 			    DateTime()->set_test_now($test_now);
-			    return [$sl, DateTime()->now];
+			    return [$sl, DateTime()->now, 1];
 			} => sub {
 			    assert_equals(
 				read_file("$case_dir.in"),
