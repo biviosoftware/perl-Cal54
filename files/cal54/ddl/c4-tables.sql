@@ -36,3 +36,10 @@ CREATE TABLE venue_event_t (
   CONSTRAINT venue_event_t1 PRIMARY KEY(calendar_event_id)
 )
 /
+CREATE TABLE geo_position_t (
+  realm_id NUMERIC(18) NOT NULL,
+  latitude NUMERIC(11,8) NOT NULL,
+  longitude NUMERIC(11,8) NOT NULL,
+  CONSTRAINT geo_position_t1 PRIMARY KEY(realm_id)
+)
+/
