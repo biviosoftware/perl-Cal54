@@ -24,6 +24,20 @@ sub initialize_test_data {
     return @res;
 }
 
+sub internal_upgrade_db_geo_position {
+    my($self) = @_;
+    $self->run(<<'EOF');
+CREATE TABLE geo_position_t (
+  realm_id NUMERIC(18) NOT NULL,
+  latitude NUMERIC(11,8) NOT NULL,
+  longitude NUMERIC(11,8) NOT NULL,
+  CONSTRAINT geo_position_t1 PRIMARY KEY(realm_id)
+)
+/
+EOF
+    return;
+}
+
 sub internal_upgrade_db_typo_20111118 {
     my($self) = @_;
     $self->req->with_realm(
