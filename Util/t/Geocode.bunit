@@ -1,0 +1,14 @@
+# Copyright (c) 2011 CAL54, Inc.  All Rights Reserved.
+# $Id$
+Request();
+[
+    class() => [
+	address_to_geoposition => [
+	    ['2701 Iris Avenue 80304'] => [
+		'2701 Iris Ave, Boulder, CO 80304, USA',
+		'40.03650230',
+		'-105.26250920',
+	    ],
+	],
+    ],
+];
