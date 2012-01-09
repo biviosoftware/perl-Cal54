@@ -57,12 +57,24 @@ sub internal_initialize {
 	other => [
 	    'RealmOwner.name',
 	    'RealmOwner.creation_date_time',
+	    'GeoPosition.latitude',
+	    'GeoPosition.longitude',
 	    $self->EDITABLE_FIELD_LIST,
 	    $self->LOCATION_EQUIVALENCE_LIST,
 	    ['RealmDAG.realm_dag_type', [b_use('Type.RealmDAG')->PARENT_IS_AUTHORIZED_ACCESS]],
 	],
 	auth_id => [qw(RealmDAG.parent_id)],
     });
+}
+
+sub internal_prepare_statement {
+    my($self, $stmt) = @_;
+    $stmt->from(
+	$stmt->LEFT_JOIN_ON(qw(Venue GeoPosition), [
+	    [qw(Venue.venue_id GeoPosition.realm_id)],
+	]),
+    );
+    return;
 }
 
 1;
