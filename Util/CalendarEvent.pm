@@ -79,8 +79,10 @@ sub export_scrapers {
 
 sub export_venues {
     my($self) = @_;
+    $self->initialize_fully;
+    $self->new_other('Geocode')->process_all_venues;
     return _csv($self, 'VenueList',
-        'RealmOwner.display_name,RealmOwner.name,Website.url,calendar.Website.url,Email.email,Phone.phone,Address.street1,Address.street2,Address.city,Address.state,Address.zip,Address.country,SearchWords.value');
+        'RealmOwner.display_name,RealmOwner.name,Website.url,calendar.Website.url,Email.email,Phone.phone,Address.street1,Address.street2,Address.city,Address.state,Address.zip,Address.country,GeoPosition.latitude,GeoPosition.longitude,SearchWords.value');
 }
 
 sub import_events {
@@ -156,7 +158,7 @@ sub init_scrapers {
 sub init_venues {
     my($self, $filename) = @_;
     _iterate_csv($self, $filename, sub {
-	my($v) = @_;	     
+	my($v) = @_;
 	my($ro) = $self->model('RealmOwner');
 	$self->req->put(query =>
 	    $ro->unauth_load({
@@ -168,6 +170,14 @@ sub init_venues {
 	    ', ', $v->{'Address.city'}, "\n")
 	    unless $self->req('query');
 	$self->model('VenueForm', $v);
+	$ro->unauth_load({
+	    name => $v->{'RealmOwner.name'},
+	}) unless $ro->is_loaded;
+	$self->model('GeoPosition')->unauth_create_or_update({
+	    realm_id => $ro->get('realm_id'),
+	    latitude => $v->{'GeoPosition.latitude'},
+	    longitude => $v->{'GeoPosition.longitude'},
+	}) if $v->{'GeoPosition.latitude'} && $v->{'GeoPosition.longitude'};
 	$self->req->clear_nondurable_state;
     });
     return;
