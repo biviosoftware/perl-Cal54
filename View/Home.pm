@@ -62,13 +62,13 @@ sub list {
 	]),
     );
     return $self->internal_body(Join([
-	vs_unless_robot(
-	    Join([
-		q[<div id="fb-root"></div><script type="text/javascript">window.fbAsyncInit=function(){FB.init({appId:'237465832943306',status:false,cookie:false,xfbml:true,oauth:false,channelUrl:'],
-		_abs_uri('/f/channel.html'),
-		q['})};(function(){var e=document.createElement('script');e.src=document.location.protocol+'//connect.facebook.net/en_US/all.js';e.async=true;document.getElementById('fb-root').appendChild(e);}());</script>],
-	    ]),
-	),
+# 	vs_unless_robot(
+# 	    Join([
+# 		q[<div id="fb-root"></div><script type="text/javascript">window.fbAsyncInit=function(){FB.init({appId:'237465832943306',status:false,cookie:false,xfbml:true,oauth:false,channelUrl:'],
+# 		_abs_uri('/f/channel.html'),
+# 		q['})};(function(){var e=document.createElement('script');e.src=document.location.protocol+'//connect.facebook.net/en_US/all.js';e.async=true;document.getElementById('fb-root').appendChild(e);}());</script>],
+# 	    ]),
+# 	),
 	Form({
 	    form_class => 'HomeQueryForm',
 	    class => 'c4_form',
@@ -143,58 +143,113 @@ sub _list {
 			    If(
 				vs_unless_robot(1, ['->c4_has_this']),
 				UserTrackingLink(
-				    String(['RealmOwner.display_name']),
+				    SPAN(
+					String(['RealmOwner.display_name']),
+					{
+					    ITEMPROP => 'name',
+					},
+				    ),
 				    Or(['CalendarEvent.url'], ['calendar.Website.url']),
-				    'title',
+				    {
+					class => 'title',
+					ITEMPROP => 'url',
+				    },
 				),
 				Link(
-				    String(['RealmOwner.display_name']),
+				    SPAN(
+					String(['RealmOwner.display_name']),
+					{
+					    ITEMPROP => 'name',
+					},
+				    ),
 				    ['->c4_format_uri'],
-				    'title',
+				    {
+					class => 'title',
+					ITEMPROP => 'url',
+				    },
 				),
 			    ),
 			])),
 			Join([
+			    _meta_dates(),
 			    SPAN_time(String(['start_end_am_pm'])),
 			    ' ',
-			    SPAN_excerpt(String(['excerpt'])),
+			    SPAN_excerpt(
+				String(['excerpt']),
+				{
+				    ITEMPROP => 'description',
+			        },
+			    ),
 			    DIV_line(Join([
 				UserTrackingLink(
-				    String(['venue.RealmOwner.display_name']),
+				    SPAN(
+					String(['venue.RealmOwner.display_name']),
+					{
+					    ITEMPROP => 'name',
+					},
+				    ),
 				    ['Website.url'],
-				    'venue',
+				    {
+					class => 'venue',
+					ITEMPROP => 'url',
+				    },
 				),
 				' ',
-				UserTrackingLink(
-				    String(['address']),
-				    ['map_uri'],
-				    'address',
+				SPAN(
+				    Join([
+					UserTrackingLink(
+					    String(['address']),
+					    ['map_uri'],
+					    {
+						class => 'address',
+						ITEMPROP => 'maps',
+					    },
+					),
+					_meta_address(),
+				    ]),
+				    {
+					ITEMPROP  => 'address',
+					ITEMTYPE => 'http://schema.org/PostalAddress',
+					ITEMSCOPE => 'itemscope',
+				    },
 				),
-				If (['Phone.phone'],
+				If(['Phone.phone'],
 				    Join([
 					' ',
-					SPAN_phone(['Phone.phone']),
+					SPAN_phone(
+					    String(['Phone.phone']),
+					    {
+						ITEMPROP => 'telephone',
+					    },
+					),
 				    ]),
 				),
-			    ])),
-			    vs_unless_robot(
-				DIV_c4_fb_like(
-				    Tag({
-					tag_if_empty => 1,
-					value => '',
-					tag => 'fb:like',
-					SHOW_FACES => 'false',
-					SEND => 'false',
-					WIDTH => 90,
-					LAYOUT => 'button_count',
-					COLORSCHEME => 'light',
-					FONT => 'arial',
-					HREF => _abs_uri(['->c4_format_uri']),
-				    }),
-				),
-			    ),
+			    ]), {
+				ITEMPROP => 'location',
+				ITEMSCOPE => 'itemscope',
+				ITEMTYPE => 'http://schema.org/LocalBusiness',
+			    }),
+# 			    vs_unless_robot(
+# 				DIV_c4_fb_like(
+# 				    Tag({
+# 					tag_if_empty => 1,
+# 					value => '',
+# 					tag => 'fb:like',
+# 					SHOW_FACES => 'false',
+# 					SEND => 'false',
+# 					WIDTH => 90,
+# 					LAYOUT => 'button_count',
+# 					COLORSCHEME => 'light',
+# 					FONT => 'arial',
+# 					HREF => _abs_uri(['->c4_format_uri']),
+# 				    }),
+# 				),
+# 			    ),
 			]),
-		    ])),
+		    ]), {
+			ITEMSCOPE => 'itemscope',
+			ITEMTYPE => 'http://schema.org/Event',
+		    }),
 		], {
 		    empty_list_widget => DIV_c4_empty_list(
 			q{Your search didn't match any results.  Try a different query.},
@@ -223,6 +278,37 @@ sub _meta {
 	# May be unitialized, and Join doesn't like that
 	CONTENT => Or($v, ''),
     });
+}
+
+sub _meta_address {
+    return map(
+	META(
+	    {
+		CONTENT => ["Address.$_->[0]"],
+		ITEMPROP => $_->[1],
+	    },
+	),
+	[qw(street1 streetAddress)],
+	[qw(city addressLocality)],
+	[qw(state addressRegion)],
+	[qw(zip postalCode)],
+	[qw(country addressCountry)],
+    );
+}
+
+sub _meta_dates {
+    return map(
+	META(
+	    {
+		CONTENT => [
+		    sub {$_DT->to_xml($_[1])},
+		    ["CalendarEvent.dt$_"],
+		],
+		ITEMPROP => $_ . 'Date',
+	    },
+	),
+	qw(start end),
+    );
 }
 
 1;
