@@ -4,7 +4,7 @@ Request();
 [
     [] => [
 	scrape_co_theaters => [
-	    [] => qr{Chez Artiste,fandango_aabvd.*Denver FilmCenter/Colfax,fandango_aawfm.*720.596.4740}s,
+	    [] => qr{Chez Artiste,v-fandango_aabvd.*Denver FilmCenter/Colfax,v-fandango_aawfm.*720.596.4740}s,
 	],
     ],
 ];

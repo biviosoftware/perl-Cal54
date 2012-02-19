@@ -77,7 +77,7 @@ sub scrape_co_theaters {
 	}
 	$res .= ${$_CSV->from_one_row([
 	    $info->{display_name},
-	    "fandango_$info->{code}",
+	    "v-fandango_$info->{code}",
 	    $info->{uri},
 	    $info->{uri},
 	    '',
