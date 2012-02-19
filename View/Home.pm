@@ -62,13 +62,6 @@ sub list {
 	]),
     );
     return $self->internal_body(Join([
-# 	vs_unless_robot(
-# 	    Join([
-# 		q[<div id="fb-root"></div><script type="text/javascript">window.fbAsyncInit=function(){FB.init({appId:'237465832943306',status:false,cookie:false,xfbml:true,oauth:false,channelUrl:'],
-# 		_abs_uri('/f/channel.html'),
-# 		q['})};(function(){var e=document.createElement('script');e.src=document.location.protocol+'//connect.facebook.net/en_US/all.js';e.async=true;document.getElementById('fb-root').appendChild(e);}());</script>],
-# 	    ]),
-# 	),
 	Form({
 	    form_class => 'HomeQueryForm',
 	    class => 'c4_form',
@@ -229,22 +222,6 @@ sub _list {
 				ITEMSCOPE => 'itemscope',
 				ITEMTYPE => 'http://schema.org/LocalBusiness',
 			    }),
-# 			    vs_unless_robot(
-# 				DIV_c4_fb_like(
-# 				    Tag({
-# 					tag_if_empty => 1,
-# 					value => '',
-# 					tag => 'fb:like',
-# 					SHOW_FACES => 'false',
-# 					SEND => 'false',
-# 					WIDTH => 90,
-# 					LAYOUT => 'button_count',
-# 					COLORSCHEME => 'light',
-# 					FONT => 'arial',
-# 					HREF => _abs_uri(['->c4_format_uri']),
-# 				    }),
-# 				),
-# 			    ),
 			]),
 		    ]), {
 			ITEMSCOPE => 'itemscope',
