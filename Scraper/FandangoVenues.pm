@@ -8,6 +8,7 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_F) = b_use('IO.File');
 my($_R) = b_use('IO.Ref');
 my($_G) = b_use('ShellUtil.Geocode');
+my($_V) = b_use('Model.Venue');
 my($_CSV) = b_use('ShellUtil.CSV');
 my($_DIRECTORY) = 'FandangoVenues';
 
@@ -77,7 +78,7 @@ sub scrape_co_theaters {
 	}
 	$res .= ${$_CSV->from_one_row([
 	    $info->{display_name},
-	    "v-fandango_$info->{code}",
+	    $_V->add_realm_prefix("fandango_$info->{code}"),
 	    $info->{uri},
 	    $info->{uri},
 	    '',
