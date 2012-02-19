@@ -48,10 +48,17 @@ sub c4_first_date {
 
 sub c4_format_uri {
     my($self) = @_;
+    my($chc) = $self->c4_has_cursor;
     return $self->req->format_uri({
+	$chc && $self->c4_noarchive
+	    ? (seo_uri_prefix => join(
+		' ',
+		$self->get(qw(RealmOwner.display_name venue.RealmOwner.display_name)),
+	    ))
+	    : (),
 	path_info => undef,
 	task_id => 'C4_HOME_LIST',
-	query => $self->c4_has_cursor ? {
+	query => $chc ? {
 	    'ListQuery.this' => $self->get('CalendarEvent.calendar_event_id'),
 	} : undef,
     });
@@ -92,6 +99,7 @@ sub execute {
     return
 	if $self->get_result_set_size > 0
 	|| !$self->req(qw(Model.HomeQueryForm is_search_click));
+b_info('here');
     $self->req->put(query => undef);
     $self->load_page({});
     return;
