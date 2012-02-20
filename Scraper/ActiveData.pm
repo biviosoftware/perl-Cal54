@@ -78,13 +78,14 @@ sub _parse_event_xml {
 
     # iterate events, taking Address1 which match the current venue
     foreach my $event (@{$xml->{Event}}) {
+	next unless ref($event) eq 'HASH';
 #TODO: change to accept_event config?
 	next if $self->is_canceled($event->{Status} || '');
 	next if ($event->{ExternalField1} || '') =~ /students|alumni/i;
 	next unless $event->{StartDate} && $event->{StartTime}
 	    && $event->{EndDate};
 	push(@{$self->get('events')}, {
-	    location => $event->{Address1},
+	    location => $event->{Address1} || $event->{Building},
 	    summary => $self->internal_clean($event->{EventName}),
 	    description => $self->internal_clean($event->{EventDescription}),
 	    dtstart => _date_time($self, $event, 'Start'),
