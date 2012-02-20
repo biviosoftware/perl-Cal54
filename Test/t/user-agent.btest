@@ -8,7 +8,6 @@ my($actual_browser) = sub {
     home_page();
     $uri = get_uri();
     verify_no_text('noarchive');
-    verify_text('connect.facebook.net');
     verify_link('>>');
     verify_link('mobile');
     verify_text('>Next<');
@@ -24,7 +23,6 @@ my($robot) = sub {
     home_page();
     my($home_page_uri) = get_uri();
     $search ? verify_text('noarchive') : verify_no_text('noarchive');
-    verify_no_text('connect.facebook.net');
     verify_no_link('>>');
     verify_no_link('mobile');
     verify_text('>Next<');
