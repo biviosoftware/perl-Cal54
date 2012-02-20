@@ -231,8 +231,12 @@ sub internal_update {
     }};
     my($added, $updated, $visited) = ({}, {}, {});
     my($desc_max) = $ce->get_field_type('description')->get_width - 20;
+    my($summary_max) = b_use('Type.Text')->get_width - 10;
     
     foreach my $event (@{$self->get('events')}) {
+	if ($event->{summary} && length($event->{summary}) > $summary_max) {
+	    $event->{summary} = substr($event->{summary}, 0, $summary_max);
+	}
 	my($key) = $event->{dtstart} . ' '
 	    . $_TT->from_literal_or_die($event->{summary});
 
