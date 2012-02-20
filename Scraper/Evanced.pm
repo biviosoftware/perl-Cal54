@@ -13,11 +13,14 @@ sub internal_import {
     my($self) = @_;
     my($start) = $_D->add_days($self->get('date_time'), -1);
     my($end) = $_D->add_months($start, 6);
-    my($host, $lib) = $self->get('scraper_list')->get('Website.url')
-	=~ m,^(http\://.*?)\?lib=(\d+),;
-    b_die('unparsable evanced url: ',
-	$self->get('scraper_list')->get('Website.url'))
+    my($url) = $self->get('scraper_list')->get('Website.url');
+    my($lib) = $url =~ m,lib=(\d+),;
+    b_die('unparsable evanced url: ', $url)
 	unless defined($lib);
+    my($html) = $self->c4_scraper_get($url);
+    my($host) = $$html =~ m,"(http://[^"]+?)/eventsxml\.asp[^"]+",;
+    b_die('unparsable eventsxml host')
+	unless $host;
     my($xml) = $self->internal_parse_xml($host . '/eventsxml.asp?'
         . join('&',
 	    'lib=' . $lib,
