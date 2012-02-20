@@ -45,7 +45,7 @@ sub internal_import {
 sub parse_ics {
     my($self, $ics_text) = @_;
     # fixup bad ics
-    $$ics_text =~ s/\r\n.*?(\n\w+\:)/$1/sg;
+    $$ics_text =~ s/\r\n/\\n/sg;
 #TODO: ics missing tz, assumes denver
     unless ($$ics_text =~ /\nTZID\:/) {
 	$$ics_text =~ s/(DTEND:.*?\n)/$1TZID:America\/Denver\n/g;
