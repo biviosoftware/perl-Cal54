@@ -11,7 +11,7 @@ my($tag) = random_string();
 visit_uri("/pub/url?x=" . Bivio_HTML()->escape_attr_value("http://www.bivio.biz/?$tag"));
 set_user_agent_to_robot_search();
 home_page();
-my($uri) = get_content() =~ m{<a class="title" href="/search(.+?)">}s;
+my($uri) = get_content() =~ m{<a class="title" .*?href="/search(.+?)">}s;
 b_die('unable to find uri')
     unless $uri;
 set_user_agent_to_actual_browser();
