@@ -2,4 +2,22 @@
 # $Id$
 (do('./Scraper.PL'))->(bouldertheatre => [
     [[qw(30)], '2/27/2011 12:00:00'],
-]);
+], <<'EOF');
+{
+  repeat => [
+    [qr/\n$month_day(?:\n| )$line/s => {
+      fields => [qw(month_day summary)],
+      follow_link => {
+        once => [
+          [qr/^Date\/Time: $month $day, $year, $time_ap/im => {
+            fields => [qw(month day year start_time)],
+          }],
+          [qr/\n\d+\/\d+\n[^\n]+\n{3,}(.*?)\nmon\/year/s => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+EOF
