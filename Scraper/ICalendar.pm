@@ -34,6 +34,7 @@ sub parse_ics {
     $start ||= $_D->get_min;
     $end ||= $_D->get_max;
     my($recurrences) = {};
+    $self->pre_parse_html($self->get_scraper_aux, $ical);
 
     foreach my $vevent (reverse(@{$_MC->from_ics($ical)})) {
 
