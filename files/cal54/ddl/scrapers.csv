@@ -91,7 +91,7 @@ http://events.colorado.edu/EventList.aspx?view=Summary,,Active Data,cu_scraper,"
 }
 "
 http://events.boulderlibrary.org?lib=2,v-bpl_reynolds,Evanced,,
-http://bplnow.boulderlibrary.org/calendar?lib=0&et=All&age=All,v-bpl_main,Evanced,,"{
+http://events.boulderlibrary.org?lib=0,v-bpl_main,Evanced,,"{
   reject_event => {
     summary => qr/canceled/i,
   },
