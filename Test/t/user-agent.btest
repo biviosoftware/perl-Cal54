@@ -34,7 +34,7 @@ my($robot) = sub {
     verify_uri(qr{\Q$uri\E$});
     visit_uri($not_found);
     verify_text('>Next<');
-    my($uri2) = get_content() =~ /<a class="title" href="(.+?)"/;
+    my($uri2) = get_content() =~ /<a class="title" .*?href="(.+?)"/;
     b_die('improve href extraction')
 	unless $uri2;
     visit_uri($uri2);
