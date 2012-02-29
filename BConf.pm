@@ -42,7 +42,7 @@ sub merge_overrides {
 	},
 	'Bivio::UI::Facade' => {
 	    default => 'Cal54',
-	    http_suffix => 'www.cal54.com',
+	    http_host => 'www.cal54.com',
 	    mail_host => 'cal54.com',
 	},
 	'Bivio::UI::View::ThreePartPage' => {
