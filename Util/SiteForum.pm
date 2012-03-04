@@ -1,4 +1,4 @@
-# Copyright (c) 2011 CAL54, Inc.  All Rights Reserved.
+# Copyright (c) 2011-2012 CAL54, Inc.  All Rights Reserved.
 # $Id$
 package Cal54::Util::SiteForum;
 use strict;
@@ -11,11 +11,11 @@ sub init_realms {
     my(@res) = shift->SUPER::init_realms(@_);
     my($req) = $self->initialize_fully;
     $self->model('EmailAlias')->create({
-	$req->format_email('external', $req),
+	incoming => $req->format_email('external', $req),
     	outgoing => $self->CONTACT_REALM,
     });
     $self->model('EmailAlias')->create({
-	$req->format_email('jmrukkers', $req),
+	incoming => $req->format_email('jmrukkers', $req),
     	outgoing => 'jmrukkers@gmail.com',
     });
     return @res;
