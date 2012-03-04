@@ -232,7 +232,6 @@ sub internal_update {
     my($added, $updated, $visited) = ({}, {}, {});
     my($desc_max) = $ce->get_field_type('description')->get_width - 20;
     my($summary_max) = b_use('Type.Text')->get_width - 10;
-    
     foreach my $event (@{$self->get('events')}) {
 	if ($event->{summary} && length($event->{summary}) > $summary_max) {
 	    $event->{summary} = substr($event->{summary}, 0, $summary_max);
@@ -407,7 +406,7 @@ sub _missing_future_events {
     };
     my($has_events);
     $_CE->new($self->req)->do_iterate(sub {
-        $has_events = 1;					 
+        $has_events = 1;
         return 0;
     });
     return $has_events ? 0 : 1;
@@ -430,7 +429,6 @@ sub _simplify_xml {
 	my($v2) = _simplify_xml($v);
 	next unless defined $v2;
 	$key_values ||= {};
-	
 	if (defined($key_values->{$n})) {
 	    unless (ref($key_values->{$n}) eq 'ARRAY') {
 		$key_values->{$n} = [$key_values->{$n}];
