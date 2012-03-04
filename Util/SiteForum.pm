@@ -1,6 +1,6 @@
 # Copyright (c) 2011 CAL54, Inc.  All Rights Reserved.
 # $Id$
-package Cal54::Util::SiteForm;
+package Cal54::Util::SiteForum;
 use strict;
 use Bivio::Base 'ShellUtil';
 
