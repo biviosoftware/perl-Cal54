@@ -38,6 +38,20 @@ EOF
     return;
 }
 
+sub internal_upgrade_db_time_zone {
+    my($self) = @_;
+    $self->initialize_ui;
+    my($tz) = b_use('Type.TimeZone')->AMERICA_DENVER;
+    $self->model('CalendarEvent')->do_iterate(sub {
+        my($ce) = @_;
+	$ce->update({
+	    time_zone => $tz,
+	});
+	return 1;
+    }, 'unauth_iterate_start');
+    return;
+}
+
 sub internal_upgrade_db_typo_20111118 {
     my($self) = @_;
     $self->req->with_realm(
