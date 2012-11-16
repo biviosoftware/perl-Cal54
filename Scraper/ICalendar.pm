@@ -36,7 +36,7 @@ sub parse_ics {
     my($recurrences) = {};
     $self->pre_parse_html($self->get_scraper_aux, $ical);
 
-    foreach my $vevent (reverse(@{$_MC->from_ics($ical)})) {
+    foreach my $vevent (reverse(@{$_MC->vevents_from_ics($ical)})) {
 
 	if ($vevent->{'recurrence-id'}) {
 	    $recurrences->{_recurrence_id($vevent, 'recurrence-id')} = 1;
