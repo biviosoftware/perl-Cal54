@@ -18,12 +18,19 @@ sub internal_import {
 	    push(@{$self->get('events')}, {
 		summary => $event->{Title},
 		description => $event->{Description},
-		dtstart => $_DT->from_literal_or_die($event->{From}),
-		dtend => $_DT->from_literal_or_die($event->{To}),
+		dtstart => _date_time($self, $event->{From}),
+		dtend => _date_time($self, $event->{To}),
 	    });
 	}
     }
     return;
+}
+
+sub _date_time {
+    my($self, $v) = @_;
+    $v =~ s/T/ /;
+    return $self->get('time_zone')->date_time_to_utc(
+	$_DT->from_literal_or_die($v));
 }
 
 sub _items {
