@@ -6,12 +6,6 @@ use base 'Bivio::BConf';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
-sub dev_overrides {
-    my($proto, $pwd, $host, $user, $http_port) = @_;
-    return {
-    };
-}
-
 sub merge_overrides {
     my($proto, $host) = @_;
     return Bivio::IO::Config->merge_list({
