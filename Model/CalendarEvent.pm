@@ -16,7 +16,10 @@ sub cascade_delete {
 }
 
 sub create {
-    my($self) = @_;
+    my($self, $values) = @_;
+#TODO: hacked to reduce description size due to unicode expansion
+    $values->{description} = substr($values->{description}, 3000)
+	if $values->{description};
     my($res) = shift->SUPER::create(@_);
     $_S->update_model($self->req, $self);
     return $res;
