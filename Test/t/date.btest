@@ -11,6 +11,6 @@ my($date) = Type_Date()->date_from_parts(
 my($tomorrow) = Type_Date()->add_days($date, 1);
 my($tomorrow_day) = Type_Date()->get_parts($tomorrow, 'day');
 follow_link(qr{^$tomorrow_day$});
-my($mon2, $day2, $year2) = get_content() =~ m{<div class="date">\w+\s+(\w+) (\d+), (\d+)</div>};
-test_ok($tomorrow_day <= $day)
-    if $mon eq $mon2;
+($mon, $day, $year) = get_content() =~ m{<div class="date">\w+\s+(\w+) (\d+), (\d+)</div>};
+test_ok($tomorrow_day <= $day);
+
