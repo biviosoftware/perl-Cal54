@@ -100,8 +100,7 @@ sub internal_pre_execute {
     }
     unless ($self->get('Email.email')) {
 	$self->internal_put_field('Email.email' =>
-	    $_E->format_ignore($self->get('RealmOwner.name'). '@bivio.biz',
-	        $self->req))
+	    $_E->format_ignore($self->get('RealmOwner.name'), $self->req))
 	    if $self->get('RealmOwner.name');
     }
     return shift->SUPER::internal_pre_execute(@_);
