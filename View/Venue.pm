@@ -76,7 +76,10 @@ sub suggest_venue_mail {
 	        my($source) = @_;
 		return b_use('Model.RealmOwner')->new($source->req)
 		    ->unauth_load_or_die({
-			realm_id => $_C->get_value('site_contact_realm_id'),
+			realm_id => $_C->get_value(
+			    'site_contact_realm_id',
+			    $source->req,
+			),
 		    })->format_email;
 	    }],
 	)), qw(to from)),
