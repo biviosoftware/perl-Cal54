@@ -11,5 +11,5 @@ submit_form({
 });
 login_as_adm();
 follow_link('site-contact', 'Mail');
-verify_text($text);
+poll_page(verify_text => $text);
 verify_text($email);
