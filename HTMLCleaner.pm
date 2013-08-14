@@ -42,6 +42,7 @@ sub clean_html {
 	url => $url,
     };
     b_die('invalid url: ', $url) unless $url =~ m{\://};
+    ($fields->{base_uri}) = $$html =~ /\<base href="(.*?)"/i;
     my($parser) = b_use('Ext.HTMLParser')->new($self);
     $parser->{$self->package_name} = $self;
     # register text handler, includes whitespace
@@ -164,7 +165,8 @@ sub unsafe_get_link_for_text {
     my($url) = $fields->{links}->[$index];
     return $url if $url =~ m{^http.*?\://};
     return undef if $url =~ /^\w+\:/;
-    return URI->new_abs($url, $fields->{url})->as_string;
+    return URI->new_abs(
+	$url, $fields->{base_uri} || $fields->{url})->as_string;
 }
 
 sub _append_text {
