@@ -38,7 +38,7 @@ sub internal_footer {
 	    class => 'c4_footer_menu task_menu',
 	}),
 	DIV_c4_copy(Prose(
-	"&copy; @{[$_DT->now_as_year]} SPAN_c4_site_name('CAL54&trade;'); SPAN_c4_site_tag('Make a ');SPAN_c4_site_local('local');SPAN_c4_site_tag(' scene.&trade;');")),
+	"&copy; @{[$_DT->now_as_year]} vs_text('site_copyright'); BR(); SPAN_c4_site_tag('Make a ');SPAN_c4_site_local('local');SPAN_c4_site_tag(' scene.&trade;');")),
     ]);
     
 }
