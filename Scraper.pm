@@ -90,8 +90,10 @@ sub do_one {
 	    return $self->internal_catch(
 		sub {
 		    $self->internal_import;
-		    b_die('no events')
-			if _missing_future_events($self);
+		    if (_missing_future_events($self)) {
+			b_warn('no events');
+			return;
+		    }
 		    _filter_events($self);
 		    _log($self, $_R->to_string($self->get('events')), '.pl');
 		    $self->internal_update;
@@ -397,6 +399,7 @@ sub _log_base {
 sub _missing_future_events {
     my($self) = @_;
     return 0 if @{$self->get('events')};
+    return 0 if $self->package_name =~ /Defunct/;
     return 1 if @{$_CEFL->new($self->req)->map_iterate(
 	sub {
 	    return 1;
