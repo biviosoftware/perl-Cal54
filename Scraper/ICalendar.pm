@@ -21,6 +21,13 @@ sub internal_import {
 	unless ($ical_url) {
 	    ($ical_url) = $$html =~ m{["'](\w+://[^"']+feed=ical[^"']*)["']};
 	}
+	unless ($ical_url) {
+	    # href="webcal://www.conoroneills.com/boulder/?plugin=all-in-one-event-calendar&controller=ai1ec_exporter_controller&action=export_events&cb=608177437"
+	    ($ical_url) = $$html =~ m{"(webcal://.*?)"};
+	}
+	unless ($ical_url) {
+	    $ical_url = $url;
+	}
 	b_die('no ical ref:') unless $ical_url;
 	$url = $ical_url;
     }
@@ -32,7 +39,7 @@ sub internal_import {
 sub parse_ics {
     my($self, $ical, $start, $end) = @_;
     $start ||= $_D->get_min;
-    $end ||= $_D->get_max;
+    $end ||= $_D->add_months($_D->local_today, 12);
     my($recurrences) = {};
     $self->pre_parse_html($self->get_scraper_aux, $ical);
 
@@ -72,7 +79,7 @@ sub _explode_event {
 sub _recurrence_id {
     my($vevent, $date_field) = @_;
     return join('-',
-        map($vevent->{$_}, qw(uid sequence), $date_field || 'dtstart'));
+        map($vevent->{$_} || (), qw(uid sequence), $date_field || 'dtstart'));
 }
 
 1;
