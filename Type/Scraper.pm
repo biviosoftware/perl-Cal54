@@ -19,6 +19,7 @@ __PACKAGE__->compile([
     REG_EXP => 10,
     TICKET_FLY => 11,
     AEG_LIVE => [12, 'AEGLive'],
+    DEFUNCT => 13,
 ]);
 
 sub as_class {
