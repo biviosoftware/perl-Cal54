@@ -6,7 +6,7 @@
     'location' => undef,
     'summary' => 'The Very Ugly Bug by Liz Pichon',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -16,7 +16,7 @@
     'location' => undef,
     'summary' => 'The Very Ugly Bug by Liz Pichon',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -26,7 +26,7 @@
     'location' => undef,
     'summary' => 'The Very Ugly Bug by Liz Pichon',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -36,7 +36,7 @@
     'location' => undef,
     'summary' => 'Miss Spiders Tea Party by David Kirk',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -46,7 +46,7 @@
     'location' => undef,
     'summary' => 'Miss Spiders Tea Party by David Kirk',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -56,7 +56,7 @@
     'location' => undef,
     'summary' => 'Miss Spiders Tea Party by David Kirk',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -66,7 +66,7 @@
     'location' => undef,
     'summary' => 'When I Grow Up I Want to Be a Zoo Keeper!',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -76,7 +76,7 @@
     'location' => undef,
     'summary' => 'When I Grow Up I Want to Be a Zoo Keeper!',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -86,7 +86,7 @@
     'location' => undef,
     'summary' => 'When I Grow Up I Want to Be a Zoo Keeper!',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -96,7 +96,7 @@
     'location' => undef,
     'summary' => 'When I Grow Up I Want to Be a Zoo Keeper!',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -106,7 +106,7 @@
     'location' => undef,
     'summary' => 'Creepy Crawlies',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -116,7 +116,7 @@
     'location' => undef,
     'summary' => 'Creepy Crawlies',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -126,7 +126,7 @@
     'location' => undef,
     'summary' => 'Creepy Crawlies',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -136,7 +136,7 @@
     'location' => undef,
     'summary' => 'Going Batty',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -146,7 +146,7 @@
     'location' => undef,
     'summary' => 'Going Batty',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -156,7 +156,7 @@
     'location' => undef,
     'summary' => 'Monster Mash!',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -166,7 +166,7 @@
     'location' => undef,
     'summary' => 'Monster Mash!',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -176,7 +176,7 @@
     'location' => undef,
     'summary' => 'Venom!',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -186,7 +186,7 @@
     'location' => undef,
     'summary' => 'Recycling Event',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -196,7 +196,7 @@
     'location' => undef,
     'summary' => 'ReDirect Guide Green Sprouts Festival',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -206,7 +206,7 @@
     'location' => undef,
     'summary' => 'Photography Workshop and Photo Safari',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   },
   {
@@ -216,7 +216,7 @@
     'location' => undef,
     'summary' => 'Boo at the Zoo After Dark',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://www.denverzoo.org/visitors/events.asp',
+    'url' => 'http://www.denverzoo.org/events',
     'venue' => 'denverzoo'
   }
 ]

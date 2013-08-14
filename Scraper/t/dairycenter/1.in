@@ -6,7 +6,7 @@
     'location' => undef,
     'summary' => 'David Taylor Dance Theatre: The Edge',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52080&eid=59809',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52080&eid=59809',
     'venue' => 'dairycenter'
   },
   {
@@ -16,7 +16,7 @@
     'location' => undef,
     'summary' => 'Woof! Theatre Productions: BINGO! The Musical- 3/27',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=51583&eid=59460',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=51583&eid=59460',
     'venue' => 'dairycenter'
   },
   {
@@ -26,7 +26,7 @@
     'location' => undef,
     'summary' => 'Woof! Theatre Productions: BINGO! The Musical- 3/31',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=51583&eid=59461',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=51583&eid=59461',
     'venue' => 'dairycenter'
   },
   {
@@ -36,7 +36,7 @@
     'location' => undef,
     'summary' => 'Woof! Theatre Productions: BINGO! The Musical- 4/01',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=51583&eid=59463',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=51583&eid=59463',
     'venue' => 'dairycenter'
   },
   {
@@ -46,7 +46,7 @@
     'location' => undef,
     'summary' => 'Helander Dance Theater: Humor Me!- 4/01',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52616&eid=60402',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52616&eid=60402',
     'venue' => 'dairycenter'
   },
   {
@@ -56,7 +56,7 @@
     'location' => undef,
     'summary' => 'Woof! Theatre Productions: BINGO! The Musical- 4/02',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=51583&eid=59464',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=51583&eid=59464',
     'venue' => 'dairycenter'
   },
   {
@@ -66,7 +66,7 @@
     'location' => undef,
     'summary' => 'Helander Dance Theater: Humor Me!- 4/02',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52800&eid=60595',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52800&eid=60595',
     'venue' => 'dairycenter'
   },
   {
@@ -76,7 +76,7 @@
     'location' => undef,
     'summary' => 'Playback Theatre West: A Night of Improvisational Theatre',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52888&eid=60693',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52888&eid=60693',
     'venue' => 'dairycenter'
   },
   {
@@ -86,7 +86,7 @@
     'location' => undef,
     'summary' => 'Helander Dance Theater: Humor Me!- 4/03',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52802&eid=60597',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52802&eid=60597',
     'venue' => 'dairycenter'
   },
   {
@@ -96,7 +96,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=60680',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=60680',
     'venue' => 'dairycenter'
   },
   {
@@ -106,7 +106,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61014',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=61014',
     'venue' => 'dairycenter'
   },
   {
@@ -116,7 +116,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61018',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=61018',
     'venue' => 'dairycenter'
   },
   {
@@ -126,7 +126,7 @@
     'location' => undef,
     'summary' => 'Boulder Guitar Society: Latin Guitar Journey with Alfredo Muro',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=53056&eid=60864',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=53056&eid=60864',
     'venue' => 'dairycenter'
   },
   {
@@ -136,7 +136,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61019',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=61019',
     'venue' => 'dairycenter'
   },
   {
@@ -146,7 +146,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61021',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=61021',
     'venue' => 'dairycenter'
   },
   {
@@ -156,7 +156,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61023',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=61023',
     'venue' => 'dairycenter'
   },
   {
@@ -166,7 +166,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61024',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=61024',
     'venue' => 'dairycenter'
   },
   {
@@ -176,7 +176,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61026',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=61026',
     'venue' => 'dairycenter'
   },
   {
@@ -186,7 +186,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61030',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=61030',
     'venue' => 'dairycenter'
   },
   {
@@ -196,7 +196,7 @@
     'location' => undef,
     'summary' => 'BETC: An Empty Plate in the Cafe du Grand Boeuf',
     'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
-    'url' => 'http://thedairy.frontgatetickets.com/choose.php?a=1&lid=52872&eid=61033',
+    'url' => 'http://www.thedairy.org/choose.php?a=1&lid=52872&eid=61033',
     'venue' => 'dairycenter'
   }
 ]

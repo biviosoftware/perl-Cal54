@@ -1,5 +1,0 @@
-# Copyright (c) 2011 CAL54, Inc.  All Rights Reserved.
-# $Id$
-(do('./Scraper.PL'))->(pepsicenter => [
-    [[qw(48)], '10/03/2011 16:00:00'],
-]);

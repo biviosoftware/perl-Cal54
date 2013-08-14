@@ -2,4 +2,15 @@
 # $Id$
 (do('./Scraper.PL'))->(bmoca => [
     [[qw(12)], '2/27/2011 12:00:00'],
-]);
+], <<'EOF');
+{
+  reject_event => {
+   summary => qr/working title/i,
+  },
+  repeat => [
+    [qr/(\[\s+).*?$month\s+$day,\s+$year\; $time_ap(.*?\](.*))/is => {
+      fields => [qw(save month day year start_time save description)],
+    }],
+  ],
+}
+EOF

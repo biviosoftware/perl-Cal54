@@ -2,4 +2,17 @@
 # $Id$
 (do('./Scraper.PL'))->(tridentcafe => [
     [[4], '6/1/2011 0:0:0'],
-]);
+], <<'EOF');
+{
+  repeat => [
+    [qr/\n$month $day $time_ap (.+?)!!!(.*?)\n/ => {
+      fields => [qw(month day start_time summary description)],
+    }],
+  ],
+  pre_parse_html => sub {
+    my($html) = @_;
+    $$html =~ s{(<p><strong>.+?</strong>.+?<strong>.+?</strong>)}{$1!!!}mg;
+    return;
+  },
+}
+EOF

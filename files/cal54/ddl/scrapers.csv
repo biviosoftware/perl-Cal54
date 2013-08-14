@@ -1,19 +1,6 @@
 Website.url,default_venue.RealmOwner.name,Scraper.scraper_type,scraper.RealmOwner.name,Scraper.scraper_aux
-http://averybrewing.com/calendar/,v-avery,Google,,
-http://www.barbedwirebooks.net/calendar/calendar.htm,v-barbedwire,Google,,
-http://boulderjcc.org/Calendar/Home.aspx,v-jcc,Google,,"{
-  reject_event => {
-    description => qr/(type\s*=\s*class)|(^$)/i,
-    summary => qr/\bPAL\b/i,
-  },
-  accept_event => {
-    location => qr/3800\s+Kalmia/i,
-  },
-},
-"
 http://test.bunit/cal,v-bunit_venue,Google,,
-http://www.caffesole.com/events.html,v-caffesole,Google,,
-http://www.dickensoperahouse.com/calendar.htm,v-dickensopera,Google,,
+http://www.caffesole.com/calendar.html,v-caffesole,Google,,
 http://www.innisfreepoetry.com/events/,v-innisfree,Google,,
 http://www.johnnyscigars.com/calendar/,v-cigar,Google,,"{
   reject_event => {
@@ -22,19 +9,9 @@ http://www.johnnyscigars.com/calendar/,v-cigar,Google,,"{
 }
 "
 http://www.madcapimprov.com/ourshows/ticketsandtimes.html,v-madcapimprov,Google,,
-http://myparentingplace.org/calendar/play-groups-and-support-groups-schedule-2/,v-parentingplace,Google,,"{
-    accept_event => {
-        location => qr/boulder/i,
-    },
-    reject_event => {
-      summary => qr/no groups or classes/i,
-      description => qr/(administrative retreat)|(\bninos\b)/i,
-    },
-}
-"
 http://www.thedraftsportsgrill.com/frames/calendars/monthly.htm,v-thedraftsportsgrill,Google,,"{
   reject_event => {
-    summary => qr/guy\'s night|ladies night|wine.*drafts/i,
+    summary => qr/(guy\'s night)|(ladies night)|(wine.*drafts)/i,
   },
 }
 "
@@ -46,13 +23,21 @@ http://www.wowmuseum.com/calendar.html,v-wow,Google,,"{
 }
 "
 http://boulderbookstore.indiebound.com/event,v-boulderbookstore,ICalendar,,
+http://www.conoroneills.com/boulder/?plugin=all-in-one-event-calendar&controller=ai1ec_exporter_controller&action=export_events&cb=608177437,v-conoroneill,ICalendar,,
 http://lannies.com/?page_id=6735,v-lannies,ICalendar,,"{
   reject_event => {
     summary => qr/date is moving/i
   },
 }
 "
-http://www.cubuffs.com/export/icalendar.dbml?SPSID=3932&SPID=259&DB_LANG=C&DB_OEM_ID=600&db_oem_id=600&season=2011&sport_id=259,v-cu_prentup,ICalendar,,"{
+http://www.larumba-denver.com/?plugin=all-in-one-event-calendar&controller=ai1ec_exporter_controller&action=export_events&cb=1682365599,v-larumba,ICalendar,,"{
+  reject_event => {
+    description => qr/to be announced/i,
+  },
+},
+"
+http://www.calendarwiz.com/CalendarWiz_iCal.php?crd=louisvillepubliclibrary,v-library_louisvilleco,ICalendar,,
+http://www.cubuffs.com/export/icalendar.dbml?SPSID=3932&SPID=259&DB_LANG=C&DB_OEM_ID=600&db_oem_id=600&season=2013&sport_id=259,v-cu_prentup,ICalendar,,"{
   accept_event => {
     location => qr/boulder/i,
   },
@@ -96,8 +81,17 @@ http://www.bmoca.org/feed/,v-bmoca,RSS,,"{
     summary => qr/working title/i,
   },
   repeat => [
-    [qr/(\[\s+).*?$month\s+$day,\s+$year\; $time_ap(.*?\](.*))/is => {
-      fields => [qw(save month day year start_time save description)],
+    [qr/\[\s*$month $day,? $time_span\s*\](.*)/is => {
+      fields => [qw(month day start_time end_time description)],
+    }],
+    [qr/\[\s*$day_name, $month $day,? $time_span\s*\](.*)/is => {
+      fields => [qw(day_name month day start_time end_time description)],
+    }],
+    [qr/\[\s*$day_name, $month $day,? $time_ap.*?\](.*)/is => {
+      fields => [qw(day_name month day start_time description)],
+    }],
+    [qr/\[\s*$month $day,? $time_ap.*?\](.*)/is => {
+      fields => [qw(month day start_time description)],
     }],
   ],
 }
@@ -124,7 +118,7 @@ http://www.rei.com/storesrss/44,v-rei,RSS,,"{
   ],
 }
 "
-http://bouldersymphony.org/category/2011-2012-season/feed/,,RSS,bouldersymphony_scraper,"{
+http://bouldersymphony.org/feed/,,RSS,bouldersymphony_scraper,"{
   use_raw_description => 1,
   location_to_venue => {
     qr/first presbyterian/i => 'firstpresbyterian',
@@ -162,63 +156,9 @@ http://www.mountainsunpub.com/BosDatesLite200/calendar.php,,Bos Dates,mountainsu
   ],
 }
 "
-http://www.thelazydog.com/data/calendars.xml,v-lazydog,Calendar Manager Data,,
-http://www.hermanshideaway.com/home/subscribe,v-hermanshideaway,Gigbot,,"{
-  once => [
-    [qr/\n([^\n]+?)\n*\(Read More/is => {
-      fields => [qw(description)],
-    }],
-  ],
-}
-"
-http://www.denver3.com/home/subscribe,v-larumba,Gigbot,,
-http://www.theorientaltheater.com/home/subscribe,v-oriental,Gigbot,,"{
-  once => [
-    [qr/\nThe Oriental.*?\n$time_ap.*?\n+(.*)/is => {
-      fields => [qw(ignore description)],
-    }],
-    [qr/description\:(.*)/is => {
-      fields => [qw(description)],
-    }],
-    [qr/tickets.*\n([^\n]+?)\n*\(Read More/is => {
-      fields => [qw(description)],
-    }],
-  ],
-}
-"
-http://calendar.botanicgardens.org/home/subscribe,,Gigbot,,"{
-  location_to_venue => {
-    qr/denver botanic gardens at chatfield/i => 'botanicgardens_chatfield',
-    qr/denver botanic gardens/i => 'botanicgardens',
-  },
-  once => [
-    [qr/$month $day, $time.*?\n$line\n*(.*?)\npress\{/is => {
-      fields => [qw(ignore ignore ignore location description)],
-    }],
-    [qr/\nMore Information.*?\n+(.*?)\npress/is => {
-      fields => [qw(description)],
-    }],
-  ],
-}
-"
-http://www.cervantesmasterpiece.com/home/subscribe,,Gigbot,,"{
-  location_to_venue => {
-    qr/masterpiece/i => 'cervantesmasterpiece',
-    qr/other/i => 'cervantesother',
-  },
-}
-"
-http://www.hi-dive.com/home/subscribe,,Gigbot,,"{
-  location_to_venue => {
-    qr/dive/i => 'hi_dive',
-    qr/sputnik/i => 'sputnik',
-  },
-}
-"
-http://www.thewalnutroom.com/home/subscribe,,Gigbot,,"{
-  location_to_venue => {
-    qr/The Walnut Room/i => 'thewalnutroom',
-    qr/The Walnut Room Pizzeria/i => 'thewalnutroompizzeria',
+http://www.thelazydog.com/data/calendars.xml,v-lazydog,Calendar Manager Data,,"{
+  accept_event => {
+    description => qr/music/i,
   },
 }
 "
@@ -240,26 +180,8 @@ http://www.boulderdowntown.com/events,v-pearlst,Reg Exp,,"{
          [qr/\nTime\:\s*$time_ap/is => {
               fields => [qw(start_time)],
           }],
-          [qr/Time\:.*?\n(.*?)\nFacebook/is => {
+          [qr/Time\:.*?\n+Visit website.*?\n(.*?)\nFacebook/is => {
              fields => [qw(description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-http://appaloosagrill.com/category/calendar/,v-appaloosagrill,Reg Exp,,"{
-  repeat => [
-    [qr/$line\n+$date\n/ => {
-      fields => [qw(summary date)],
-      follow_link => {
-        once => [
-          [qr/\nSubscribe.*?\n$date\n+(.*?)\nAppaloosa Hours/is => {
-            fields => [qw(ignore description)],
-          }],
-          [qr/(10:00pm)/ => {
-            fields => [qw(start_time)],
           }],
         ],
       },
@@ -270,25 +192,28 @@ http://appaloosagrill.com/category/calendar/,v-appaloosagrill,Reg Exp,,"{
 http://arvadacenter.org/on-stage,v-arvadacenter,Reg Exp,,"{
   ignore_duplicates => 1,
   repeat => [
-    [qr/(.+?\})\n$month $day.*?\nbuy tickets.*\}/i => {
-      fields => [qw(summary)],
+    [qr/(Learn More.*?)\n/i => {
+      fields => [qw(link)],
       follow_link => {
         once => [
-          [qr/Group Sales.*?\n+$month.*?\n+(?:[^\n]+)+(.*?)\n(\d{4} |Previews )/is => {
-              fields => [qw(ignore description)],
+          [qr/\n([^\n]+?) $month $day, $year\n+Buy Tickets.*?\n+\w.*?\n{2}(.*?)\nTimes and Pricing/is => {
+            fields => [qw(summary month day year description)],
           }],
-          [qr/(Buy Tickets.*?})/ => {
-              fields => [qw(link)],
-              follow_link => {
-                repeat => [
-                  [qr/\n$day_name, $month $day, $year, at $time_ap/ => {
-                    fields => [qw(day_name month day year start_time)],
-                  }],
-                ],
-              },
+        ],
+        repeat => [
+          [qr/(\nTimes and Pricing:.*?)\n$day_name, $month $day at $time_ap/is => {
+            fields => [qw(save day_name month day start_time)],
           }],
         ],
       },
+    }],
+  ],
+}
+"
+http://averybrewing.com/calendar/,v-avery,Reg Exp,,"{
+  repeat => [
+    [qr/\n([^\n]+)\nStarts: $time_ap\nEnds: $month $day, $year \- $time_ap\nLocation: Avery.*?\nDescription:$line/is => {
+      fields => [qw(summary start_time month day year end_time description)],
     }],
   ],
 }
@@ -303,13 +228,13 @@ http://www.bandimere.com/calendar/,v-bandimere,Reg Exp,,"{
       fields => [qw(ignore summary)],
       follow_link => {
         once => [
-          [qr/first run: $time_ap/i => {
+          [qr/first run.*?$time_ap/i => {
             fields => [qw(start_time)],
           }],
           [qr/$day_name, $month $day, $year/ => {
             fields => [qw(day_name month day year)],
           }],
-          [qr/\n+([^}]+)$/s => {
+          [qr/Gates Open.*?\n\n\n(.*?)\n\/images/s => {
             fields => [qw(description)],
           }],
         ],
@@ -337,20 +262,10 @@ http://store-locator.barnesandnoble.com/store/2333,v-barnesandnoble,Reg Exp,,"{
   ],
 }
 "
-http://fla.vor.us/wafform.aspx?_act=eventlisting&ClientID=642,v-betanightclub,Reg Exp,,"{
+http://www.flavorus.com/profile/Beta/10081,v-betanightclub,Reg Exp,,"{
   repeat => [
-    [qr/(.+?\})\n+(.+?)\n$month $day $year\n/ => {
-      fields => [qw(summary ignore month day year)],
-      follow_link => {
-        once => [
-          [qr/show starts at\n+$time_ap/i => {
-            fields => [qw(start_time)],
-          }],
-          [qr/\ninfo\n(.*?)\nBragging Rights/is => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
+    [qr/\n${line}by\nBeta.*?\n+$day_name, $month $day,\s*$year $time_ap/is => {
+      fields => [qw(summary day_name month day year start_time)],
     }],
   ],
 }
@@ -367,14 +282,14 @@ http://www.cityoflafayette.com/Calendar.asp,v-cityoflafayettereccenter,Reg Exp,,
   ],
 }
 "
-http://coloradosymphony.org/current-season/all/,v-boettcherconcert,Reg Exp,,"{
+http://tickets.coloradosymphony.org/single/EventListing.aspx,v-boettcherconcert,Reg Exp,,"{
   repeat => [
-    [qr/(.*\n$month $year\n).*?\n$day_name $day\n$line\n+((Learn More.*?))\n+.*?Ticket Information.*?\n/is => {
-      fields => [qw(save month year day_name day summary link url)],
+    [qr/\n\n\d{4}\/\d\d .*?\n$line\n+(.*?)\n\n/is => {
+      fields => [qw(summary description)],
       follow_link => {
-        once => [
-          [qr/\n$day_name $time_ap\n+(.*?)\nTicket Information/is => {
-            fields => [qw(day_name start_time description)],
+        repeat => [
+          [qr/\n$day_name $short_date $time_ap\: B/is => {
+            fields => [qw(day_name date start_time)],
           }],
         ],
       },
@@ -402,6 +317,17 @@ http://www.boulderhistory.org/calendar.asp,v-historymuseum,Reg Exp,,"{
           }],
         ],
       },
+    }],
+  ],
+}
+"
+http://www.boulderjcc.org/events/?continue=y,v-jcc,Reg Exp,,"{
+  reject_event => {
+    summary => qr/JCC Closed/i,
+  },
+  repeat => [
+    [qr/\n$month $day, $year\n$line.*?Tagged.*?$line\(more.*?\nTime: $time_ap/is => {
+      fields => [qw(month day year summary description start_time)],
     }],
   ],
 }
@@ -466,21 +392,22 @@ http://www.bridgewatergrill.com/live-music,v-bridgewatergrill,Reg Exp,,"{
     summary => qr/no music/i,
   },
   once => [
-    [qr/evenings $time_ap to $time_ap/i => {
+    [qr/$time_ap to $time_ap/i => {
       fields => [qw(start_time end_time)],
     }],
   ],
   repeat => [
-    [qr/$month (\d+).*?\n+$line.*?\n\n$line/s => {
+    [qr/$month (\d+).*?\n+$line.*?\n$line/s => {
       fields => [qw(month day summary description)],
     }],
   ],
 }
 "
 http://www.budweisereventscenter.com/calendar.cfm,v-budweisereventscenter,Reg Exp,,"{
+  ignore_duplicates => 1,
   pager => {
-    link => qr/\n\w{3}\n($month\{\d+\})/,
-    page_count => 2,
+    link => qr/^(next month.*?})$/im,
+    page_count => 3,
   },
   once => [
     [qr/$month $year\n+next month/i => {
@@ -492,8 +419,13 @@ http://www.budweisereventscenter.com/calendar.cfm,v-budweisereventscenter,Reg Ex
       fields => [qw(ignore summary ignore)],
       follow_link => {
         once => [
-          [qr/$day_name, $month $day, $year - $time_ap\n$line\n+$line/ => {
-            fields => [qw(day_name month day year start_time ignore description)],
+          [qr/\nBuy Tickets.*?(?:[^\n]{0,60}\n)*(.*?)\ntop\{/is => {
+            fields => [qw(description)],
+          }],
+        ],
+        repeat => [
+          [qr/$day_name, $month $day, $year - $time_ap/ => {
+            fields => [qw(day_name month day year start_time)],
           }],
         ],
       },
@@ -501,37 +433,21 @@ http://www.budweisereventscenter.com/calendar.cfm,v-budweisereventscenter,Reg Ex
   ],
 }
 "
-http://www.butterflies.org/events/calendar.php,v-butterflies,Reg Exp,,"{
-  once => [
-    [qr/event dates for $year/i => {
-      fields => [qw(year)],
-    }],
-    [qr/\n$day_name\n$month\.? $day\n(Tripod Photography.*\})\n/i => {
-      fields => [qw(ignore ignore ignore summary)],
+http://www.butterflies.org/calendar,v-butterflies,Reg Exp,,"{
+  crawl_delay => 10,
+  ignore_duplicates => 1,
+  repeat => [
+    [qr/^([\d\:]+ .m to.*?)$/im => {
+      fields => [qw(link)],
       follow_link => {
         once => [
-          [qr/(?:.*?\}\n+)+$line/i => {
-            fields => [qw(description)],
+          [qr/to $time_ap\n\n+(.*?)\n\n/is => {
+            fields => [qw(ignore description)],
           }],
         ],
         repeat => [
-          [qr/\n$month $day\n$time_span/ => {
-            fields => [qw(month day start_time end_time)],
-          }],
-        ],
-      },
-    }],
-    [qr/\n$day_name\n$month\.? $day\n(Sunset Stroll.*\})\n/i => {
-      fields => [qw(ignore ignore ignore summary)],
-      follow_link => {
-        once => [
-          [qr/(?:.*?\}\n+)+$line/i => {
-            fields => [qw(description)],
-          }],
-        ],
-        repeat => [
-          [qr/$month $day\n$time_span/ => {
-            fields => [qw(month day start_time end_time)],
+          [qr/(\n\n([A-Z][^\n]+?))\n$day_name, $month $day, $year \| $time_ap to $time_ap/is => {
+            fields => [qw(save summary day_name month day year start_time end_time)],
           }],
         ],
       },
@@ -548,122 +464,29 @@ http://www.chautauqua.com/upcoming_events.php,v-chautauqua,Reg Exp,,"{
   ],
 }
 "
-http://www.cityparkjazz.org/schedule.html,v-cityparkpavilion,Reg Exp,,"{
-  accept_event => {
-    location => qr/pavilion.*city park/i,
-  },
-  once => [
-    [qr/all concerts are from $time_span at the (.+?)\n/i => {
-      fields => [qw(start_time end_time location)],
-    }],
-  ],
-  repeat => [
-    [qr/$month $day, $year - $line\n+(?:.*\}\n+)*$line/ => {
-      fields => [qw(month day year summary description)],
-    }],
-  ],
-}
-"
-http://www.bfjung.org/index.php?option=com_content&view=article&id=121&Itemid=101,v-churchofchrist,Reg Exp,,"{
-  repeat => [
-    [qr/\: $month $day, $year\s+$line.*?Registration.*?$time_ap.*?\n\n(\w[^\n]{80}.*?)\n\n/is => {
-      fields => [qw(month day year summary start_time description)],
-    }],
-  ],
-}
-"
-http://www.conoroneills.com/boulder/calendar/month.php,v-conoroneill,Reg Exp,,"{
+http://www.modtickets.com/Mod/Tickets/Calendar.aspx?id=dazzle,v-dazzlejazz,Reg Exp,,"{
   pager => {
-    link => qr/(next month\s*>>.*?\})/i,
-    page_count => 2,
-  },
-  reject_event => {
-    summary => qr/\$|Drink Specials|Open stage/i,
-  },
-  once => [
-    [qr/Monthly calendar for\s*$month $year/is => {
-      fields => [qw(month year)],
-    }],
-    [qr/(10pm)/ => {
-      fields => [qw(start_time)],
-    }],
-  ],
-  repeat => [
-    [qr/(\n$day\{\d+\}\n+)([^\n]{8}.*?\}\n)/i => {
-      fields => [qw(save day summary)],
-      follow_link => {
-        once => [
-          [qr/$time_ap/ => {
-            fields => [qw(start_time)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-http://www.curioustheatre.org/index.php?s=20,v-curioustheatre,Reg Exp,,"{
-  pager => {
-    link => qr/(\>\>.*\})/,
+    link => qr/($month $year\{\d+\})\n>>/,
     page_count => 3,
   },
   repeat => [
-    [qr/$day\n(.+?\})/ => {
-      fields => [qw(ignore summary)],
+    [qr/(\nSundayMonday.*?\n).*?([^\n]+\}\n)/is => {
+      fields => [qw(save link)],
       follow_link => {
         once => [
-          [qr/$day_name, $month $day, $year\n$time_ap/ => {
-            fields => [qw(day_name month day year start_time)],
-          }],
-          [qr/\$\d+.*\n+$line/ => {
+          [qr/\nDescription\n+(?:\d.*?\n)*(?:(?:mon|tue|wed|thu|fri|sat|sun).*?\n)*\n(.*)/is => {
             fields => [qw(description)],
           }],
         ],
-      },
-    }],
-  ],
-}
-"
-http://www.chezcuvee.com/live_music/,v-cuvee,Reg Exp,,"{
-  once => [
-    [qr/from $time_span/i => {
-      fields => [qw(start_time end_time)],
-    }],
-  ],
-  repeat => [
-    [qr/^$day_name\.?,?\s+$month\.?\s+$day\n+$line/m => {
-      fields => [qw(day_name month day summary)],
-    }],
-  ],
-}
-"
-http://www.dazzlejazz.com/index.php?s=20,v-dazzlejazz,Reg Exp,,"{
-  ignore_duplicates => 1,
-  pager => {
-    link => qr/\d{4}\n(\>\>\{\d+\}\n)/,
-    page_count => 3,
-  },
-  repeat => [
-    [qr/($day)\n(.+?\})/ => {
-      fields => [qw(save ignore summary)],
-      follow_link => {
-        once => [
-          [qr/$day_name, $month $day, $year/ => {
-            fields => [qw(day_name month day year)],
+        repeat => [
+          [qr/(\n$line\n+$day_name, $month $day, $year\n).*?\n$time_ap/is => {
+            fields => [qw(save summary day_name month day year start_time)],
           }],
-          [qr/.*$time_ap :: (.+?) ::.*?\n+(.+?\n+.+?\n)/ => {
-            fields => [qw(start_time ignore description)],
+          [qr/$line\n+$day_name, $month $day, $year \* $time_ap/is => {
+            fields => [qw(summary day_name month day year start_time)],
           }],
         ],
       },
-    }],
-  ],
-}
-"
-http://www.atasteofcolorado.com/music_main.asp,v-atasteofcolorado,Reg Exp,,"{
-  repeat => [
-    [qr/$day_name, $month $day, $time_ap\n.+? by\n.+?\}\n+$line/ => {
-      fields => [qw(day_name month day start_time summary)],
     }],
   ],
 }
@@ -676,39 +499,58 @@ http://www.denvercoliseum.com/EventCalendar.aspx,v-denvercoliseum,Reg Exp,,"{
   ],
 }
 "
-http://www.denverzoo.org/visitors/events.asp,v-denverzoo,Reg Exp,,"{
+http://www.denverzoo.org/events,v-denverzoo,Reg Exp,,"{
   repeat => [
-    [qr/($line$line.*?$month\s+)$day,?(.*?from $time_span)/ => {
-      fields => [qw(save summary description month day save start_time end_time)],
-    }],
-    [qr/$line$day_name,? $month $day\n$time_span\n(?:Admission.*?\n)?\n*($line+)/ => {
+    [qr/\n$line\n+$day_name, $month $day\n+$time_ap to $time_ap\n(.*?)\n(Members: )?\$/is => {
       fields => [qw(summary day_name month day start_time end_time description)],
     }],
-  ],
-}
-"
-http://www.dickssportinggoodspark.com/Stadium/Events.aspx,v-dickssportinggoodspark,Reg Exp,,"{
-  repeat => [
-    [qr/(.+?)\n$month $day, $year at $time_ap.*\n$line/i => {
-      fields => [qw(summary month day year start_time description)],
+    [qr/\n$line\n+$day_name, $month $day\n+$time_ap\n(.*?)\n(Included with general admission)/is => {
+      fields => [qw(summary day_name month day start_time description)],
     }],
   ],
 }
 "
-http://elitchgardens.com/entertainment/concerts/,v-elitchgardens,Reg Exp,,"{
-  default_values => {
-    start_time => '7 pm',
-  },
+http://www.dickensoperahouse.com/shows-and-events,v-dickensopera,Reg Exp,,"{
   repeat => [
-    [qr/($month $day\n+)(.*\})\n/ => {
-        fields => [qw(save ignore ignore summary)],
-        follow_link => {
-          once => [
-            [qr/\n+$month $day\n+(($line|\n)+?)More about/ => {
-                fields => [qw(month day description)],
-            }],
-          ],
-        },
+    [qr/\n$line$month $day $time_ap/is => {
+      fields => [qw(summary month day start_time)],
+      follow_link => {
+        once => [
+          [qr/Ends at $time_ap\n+(?:Join us .*?\n)?(.*?)\nBack to (the )?calendar/is => {
+            fields => [qw(ignore description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+http://www.tickethorse.com/Widgets/v2/IFrame/VenueListEvents.aspx?id=6&color=620014&background-color=9cc65e,v-dickssportinggoodspark,Reg Exp,,"{
+  repeat => [
+    [qr/\n$month\n$day\n$day_name\n+$line\n+.*?$time_ap\n/is => {
+      fields => [qw(month day day_name summary start_time)],
+    }],
+  ],
+}
+"
+http://www.elitchgardens.com/things-to-do/shows/,v-elitchgardens,Reg Exp,,"{
+  repeat => [
+    [qr/\n(\d+\{\d+\})/is => {
+      fields => [qw(link)],
+      follow_link => {
+        repeat => [
+          [qr/\n\n((.*?))$date\n\n/is => {
+            fields => [qw(link summary date)],
+            follow_link => {
+              once => [
+                [qr/\nDate\/Time.*?\n$time_ap\n(.*?)\nLocation/is => {
+                  fields => [qw(start_time description)],
+                }],
+              ],
+            },
+          }],
+        ],
+      },
     }],
   ],
 }
@@ -726,17 +568,17 @@ http://operacolorado.org/?page_id=262,v-operacolorado,Reg Exp,,"{
 "
 http://www.flatironcrossing.com/Events?list=all,v-flatironcrossing,Reg Exp,,"{
   once => [
-    [qr/\n(summer nights concert series).*?\n$month.*?\n$month.*?\n($line)/i => {
-      fields => [qw(description ignore ignore link url)],
+    [qr/\nsummer nights concert series.*?\n(see details.*?\n)/is => {
+      fields => [qw(link)],
       follow_link => {
         once => [
-          [qr/music begins at $time_ap/is => {
-            fields => [qw(start_time)],
+          [qr/Thursdays $time_span/is => {
+            fields => [qw(start_time end_time)],
           }],
         ],
         repeat => [
-          [qr/(\n)$month_day.*? \-\n?\s*$line/ => {
-            fields => [qw(save month_day summary)],
+          [qr/(\n)$short_date.*?\n$line$line/is => {
+            fields => [qw(save date summary description)],
           }],
         ],
       },
@@ -767,7 +609,7 @@ http://www.foothillsanimalshelter.org/news-events/events/,v-foothillsanimalshelt
   ],
 }
 "
-http://foxtheatre.com/Store/ChooseTicket.aspx,v-foxtheatre,Reg Exp,,"{
+http://foxtheatre.com,v-foxtheatre,Reg Exp,,"{
   reject_event => {
     description => qr/^cancelled/i,
   },
@@ -779,7 +621,7 @@ http://foxtheatre.com/Store/ChooseTicket.aspx,v-foxtheatre,Reg Exp,,"{
           [qr{\bshow\:\s*$time_ap}i, {
             fields => ['start_time'],
           }],
-          [qr{Event Information\n+(?:Ticket Price.*?\n+)*(.*?)\n2032 14th}is, {
+          [qr{about this show...\n+(?:Ticket Price.*?\n+)*(.*?)\nMailer Signup}is, {
             fields => ['description'],
           }],
         ],
@@ -806,6 +648,13 @@ http://www.frascafoodandwine.com/calendar.html,v-frascafoodandwine,Reg Exp,,"{
 "
 http://www.goldhillinn.com/music.html,v-goldhill,Reg Exp,,"{
   repeat => [
+    [qr/\n$day_name,? $month $day\n$line((?:[^\n]+\n)+)$time_ap/is => {
+      fields => [qw(day_name month day summary description start_time)],
+    }],
+    [qr/\n$day_name,? $month $day (.*?)$time_span/i => {
+      fields => [qw(day_name month day summary start_time end_time)],
+    }],
+
     [qr/\n$month $day\s*\-?\s*$time_span\s*\-?$line/ => {
       fields => [qw(month day start_time end_time summary)],
     }],
@@ -834,13 +683,13 @@ http://www.grizzlyrose.com/calendar/default.html,v-grizzlyrose,Reg Exp,,"{
 "
 http://www.harlequinsgardens.com/classes/,v-harlequin,Reg Exp,,"{
   once => [
-    [qr/EVENTS for $year/ => {
+    [qr/\n$year CLASSES/is => {
       fields => [qw(year)],
     }],
   ],
   repeat => [
-    [qr/$month $day, (.*?)\.(.*?)$time_ap\n/ => {
-      fields => [qw(month day summary description start_time)],
+    [qr/\n$day_name\.? $month\.? $day, $time_ap.*?\:(.*?)\n/is => {
+      fields => [qw(day_name month day start_time summary)],
     }],
   ],
 }
@@ -868,7 +717,7 @@ http://www.harmonymusichouse.com/concerts,v-harmonymusic,Reg Exp,,"{
   ],
 }
 "
-http://www.herbsbar.com/events.cfm,v-herbsbar,Reg Exp,,"{
+http://www.herbsbar.com/livemusiccalendar.cfm,v-herbsbar,Reg Exp,,"{
   accept_event => {
     location => qr/herb/i,
   },
@@ -883,57 +732,18 @@ http://www.herbsbar.com/events.cfm,v-herbsbar,Reg Exp,,"{
   ],
 }
 "
-http://www.heritagesquare.info/events.html,v-heritagesquare,Reg Exp,,"{
+http://hodishalfnote.inticketing.com/events/allevents/useframe,v-hodishalfnote,Reg Exp,,"{
   repeat => [
-    [qr/$month $day\s*$line\s*$line\s*$time_ap/s => {
-      fields => [qw(month day ignore summary start_time)],
+    [qr/(\nEvent Date Venue Price\n).*?(\n[^\n]+?\{.*?\n).*?\n$day_name $time_ap\n$month $day, $year.*?\nFind tickets.*?\n(\$.*?\n)?/is => {
+      fields => [qw(save summary day_name start_time month day year)],
     }],
   ],
 }
 "
-http://www.hodishalfnote.com/,v-hodishalfnote,Reg Exp,,"{
+http://hudsongardens.org/content/concerts2013.php,v-hudsongardens,Reg Exp,,"{
   repeat => [
-    [qr/$month $day, $year $time_ap((.*?))\n$line/ => {
-      fields => [qw(month day year start_time link url summary)],
-      follow_link => {
-        once => [
-          [qr/\nBuy Tickets.*?\n(?:\n+[^\n]+?\})+\n*($line+)/is => {
-            fields => [qw(description)],
-          }],
-          [qr/$year $time_ap/ => {
-            fields => [qw(ignore start_time)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-http://www.boulderado.com/musiconthemezz.html,v-boulderado,Reg Exp,,"{
-  once => [
-    [qr/$time_ap\s*\-\s*$time_ap Live Music/, {
-      fields => [qw(start_time end_time)],
-    }],
-  ],
-  repeat => [
-    [qr/\n$day_name,\s*$month\s+$day\s*~\s*([^\n]+)(.*?)(\n+$day_name|MENU)/s, {
-      fields => [qw(day_name month day summary description save)],
-    }],
-  ],
-}
-"
-http://www.hudsongardens.org/content/concerts2011.php,v-hudsongardens,Reg Exp,,"{
-  default_values => {
-    start_time => '6:30 pm',
-  },
-  once => [
-    [qr/$year schedule/i, => {
-      fields => [qw(year)],
-    }],
-  ],
-  repeat => [
-    [qr/(.+?) - $day_name, $month $day\n$line/i => {
-      fields => [qw(summary day_name month day description)],
+    [qr/$line$day_name, $month $day\n.*?begins at $time_ap/is => {
+      fields => [qw(summary day_name month day start_time)],
     }],
   ],
 }
@@ -946,46 +756,26 @@ http://www.boulderhumane.org/get-involved/events-calendar,v-boulderhumane,Reg Ex
   ],
 }
 "
-http://www.invescofieldatmilehigh.com/index.php?section=calendar_events&subsection=overview,v-invescofieldatmilehigh,Reg Exp,,"{
-  pager => {
-    link => qr/(>>\{\d+\})/,
-    page_count => 3,
-  },
-  once => [
-    [qr/$month $year/ => {
-      fields => [qw(month year)],
-    }],
-  ],
+http://www.sportsauthorityfieldatmilehigh.com/stadium-information/event-calendar,v-invescofieldatmilehigh,Reg Exp,,"{
   repeat => [
-    [qr/$day\n+(\D+): $time_ap.*\}\n/ => {
-      fields => [qw(day summary start_time)],
-    }],
-    [qr/$day\n+(\D+), $time_ap.*\}\n/ => {
-      fields => [qw(day summary start_time)],
-    }],
-    [qr/$day\n+(\D+\{\d+\})\n+/ => {
-      fields => [qw(day summary)],
-      follow_link => {
-        once => [
-          [qr/\n$day_name, $month $day, $year $time_ap/ => {
-            fields => [qw(ignore ignore ignore ignore start_time)],
-          }],
-        ],
-      },
+    [qr/(\n$month $year\n)\n+$month $day ([^\n]+?) $time_ap\n$line/is => {
+      fields => [qw(save ignore year month day summary start_time url)],
     }],
   ],
 }
 "
-http://www.jazzon2ndave.com/performance-schedule.html,v-jazzon2ndave,Reg Exp,,"{
-  max_start_hour => 8,
+http://www.jazzon2ndave.com/,v-jazzon2ndave,Reg Exp,,"{
   default_values => {
-    month => 'August',
-    day => '20',
-    year => '2011',
+    year => 2013,
   },
+  once => [
+    [qr/Jazz on 2nd.*?\n$day_name, $month $day/is => {
+      fields => [qw(day_name month day)],
+    }],
+  ],
   repeat => [
-    [qr/\n$time(.+?)\n\((.+?)\)\n+$line/s => {
-      fields => [qw(start_time summary description url)],
+    [qr/\n$time_ap\n(.*?)$line\n/is => {
+      fields => [qw(start_time summary description)],
     }],
   ],
 }
@@ -1028,160 +818,50 @@ http://www.lefthandbooks.org/lhbevents.html,v-lefthandbooks,Reg Exp,,"{
   ],
 }
 "
-http://www.lincolnsroadhouse.com/hungry.html,v-lincolnsroad,Reg Exp,,"{
-  pre_parse_html => sub {
-    my($html) = @_;
-    $$html =~ s/\:Pm/pm/ig;
-    $$html =~ s/(>Sun: )/$1 3pm /ig;
-    return;
-  },
-  once => [
-    [qr/Start Times.*? $time_ap/i => {
-      fields => [qw(start_time)],
-    }]
-  ],
+http://www.lincolnsroadhouse.com/Music.html,v-lincolnsroad,Reg Exp,,"{
   repeat => [
-    [qr/\n$day_name\: $time_ap?\s*$month_day\n+$line/ => {
-      fields => [qw(day_name start_time month_day summary)],
+    [qr/\n$day_name\n$date\n+$time_ap\n+($line+)/is => {
+      fields => [qw(day_name date start_time summary)],
     }],
   ],
 }
 "
-http://www.loladenver.com/Events/LiveMusic/tabid/636/Default.aspx,v-loladenver,Reg Exp,,"{
-  default_values => {
-    start_time => '2:30pm',
-    end_time => '5:00pm',
-  },
+http://www.loladenver.com/events/live-music/,v-loladenver,Reg Exp,,"{
+  once => [
+    [qr/Sundays $time_span/i => {
+      fields => [qw(start_time end_time)],
+    }],
+  ],
   repeat => [
-    [qr/$month $day: (.+?)\n/ => {
+    [qr/$month $day $line/is => {
       fields => [qw(month day summary)],
     }],
   ],
 }
 "
-http://farmersmarketlouis.blogspot.com/,v-farmersmarketlouis,Reg Exp,,"{
-  once => [
-    [qr/$year sponsors/i => {
-      fields => [qw(year)],
-    }],
-  ],
+http://www.meadowlarkbar.com/events.cfm,v-meadowlarkbar,Reg Exp,,"{
   repeat => [
-    [qr/\*\*\s*$month $day $time_ap - $time_ap.*\n$line/ => {
-      fields => [qw(month day start_time end_time summary)],
+    [qr/${line}ShareThis\n+$line$month $day, $year \@ $time_ap/is => {
+      fields => [qw(summary ignore month day year start_time)],
     }],
   ],
 }
 "
-http://library.louisvilleco.gov/RESOURCES/EventCalendar/tabid/537/ModuleID/771/mctl/EventMonth/Default.aspx,v-library_louisvilleco,Reg Exp,,"{
-  repeat => [
-    [qr/(($time_ap - (.+?\})))/ => {
-      fields => [qw(link url start_time summary)],
-      follow_link => {
-        once => [
-          [qr/start date\/time\:\n$day_name, $month $day, $year $time_ap/i => {
-            fields => [qw(day_name month day year start_time)],
-          }],
-          [qr/end date\/time\:\n$day_name, $month $day, $year $time_ap/i => {
-            fields => [qw(day_name month day year end_time)],
-          }],
-          [qr/description:\n+$line/i => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-http://www.luckypiepizza.com/lucky-pie-events.html,v-luckypiepizza,Reg Exp,,"{
-  repeat => [
-    [qr/(.+?)\-.*\s*$month $day @ $time_ap\n$line/ => {
-      fields => [qw(summary month day start_time description)],
-    }],
-  ],
-}
-"
-http://www.maryslakelodge.com/music.htm,v-maryslake,Reg Exp,,"{
-  pre_parse_html => sub {
-    my($html) = @_;
-    $$html =~ s/(sun|mon|tues|wed|thurs),/$1, 7-10pm/ig || die();
-    $$html =~ s/(fri|sat|sun),/$1, 8-11pm/ig || die();
-    return;
-  },
-
-  repeat => [
-    [qr/(\n)$day_name, $time_span $month\.? $day\:? $line/ => {
-      fields => [qw(save day_name start_time end_time month day summary)],
-    }],
-  ],
-}
-"
-http://www.mckinners.com/,v-mckinners,Reg Exp,,"{
-  once => [
-    [qr/live music starts at $time_ap/i => {
-      fields => [qw(start_time)],
-    }],
-  ],
-  repeat => [
-    [qr/$month (\d+).+?- (.+?)\n$line/ => {
-      fields => [qw(month day summary description)],
-    }],
-  ],
-}
-"
-http://www.meadowlarkbar.com/calendar.htm,v-meadowlarkbar,Reg Exp,,"{
-  once => [
-    [qr/calendar of events for $month/i => {
-      fields => [qw(month)],
-    }],
-  ],
-  repeat => [
-    [qr/$day\n$line\n/ => {
-      fields => [qw(day summary)],
-      follow_link => {
-        once => [
-          [qr/$month $day, $year .*?@ $time_ap.*?\n+(.*?)\nSend this/is => {
-            fields => [qw(ignore ignore year start_time description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-http://milehighmarketplace.com/en/Events/,v-milehighmarketplace,Reg Exp,,"{
+http://milehighfleamarket.com/en/Events/,v-milehighmarketplace,Reg Exp,,"{
   accept_event => {
-    location => qr/marketplace stage/i,
+    summary => qr/flea market stage/i,
   },
   repeat => [
-    [qr/$day_name, $month $day\n(.+?) - (.+?)\n$time_ap\s*-\s*$time_ap/ => {
-      fields => [qw(day_name month day summary location start_time end_time)],
+    [qr/\n$day_name, $month $day\n(.*?)$time_ap \- $time_ap/is => {
+      fields => [qw(day_name month day summary start_time end_time)],
     }],
   ],
 }
 "
-http://www.millenniumfac.com/ArtistSeries.html,v-millennium,Reg Exp,,"{
-  default_values => {
-    start_time => '5:30pm',
-  },
+http://www.minersalley.com/calendar-of-events/,v-minersalley,Reg Exp,,"{
   repeat => [
-    [qr/\n(.*?)\: $month $day\n+$line/ => {
-      fields => [qw(summary month day description)],
-    }],
-  ],
-}
-"
-http://www.minersalley.com/cgi-bin/calendar.pl?view=Month&style=List&view=Four-Week,v-minersalley,Reg Exp,,"{
-  repeat => [
-    [qr/$day_name, $month $day\{\d+\}\n\* $time_ap \:\n$line/ => {
-      fields => [qw(day_name month day start_time summary)],
-      follow_link => {
-        once => [
-          [qr/Description:\n$line/i => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
+    [qr/$line$month $day $time_ap/is => {
+      fields => [qw(summary month day start_time)],
     }],
   ],
 }
@@ -1215,37 +895,39 @@ http://www.nissis.com/lmcalendar.html,v-nissis,Reg Exp,,"{
   ],
 }
 "
+http://www.ogdentheatre.net/events,v-ogdentheatre,Reg Exp,,"{
+  repeat => [
+    [qr/\n$day_name, $month $day, $year $time_ap\n$line/is => {
+      fields => [qw(day_name month day year start_time summary)],
+      follow_link => {
+        once => [
+          [qr/\nEvent Details\n+(.*?)\n\n/is => {
+            fields => [qw(summary)],
+          }],
+          [qr/Ticket Prices.*?\n(?:[^\n]{0,50}\n)+(.*?)Service and handling fees/is => {
+            fields => [qw(description)],
+          }],
+          [qr/Ticket Prices.*?\nWebsites\n(?:[^\n]{0,50}\n)+(.*?)Service and handling fees/is => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
 http://www.denverparamount.com/,v-denverparamount,Reg Exp,,"{
   repeat => [
-    [qr/$line\n+$day_name,? $month $day - $time_ap/ => {
+    [qr/$line\n+$day_name,? $month $day at $time_ap/is => {
       fields => [qw(summary day_name month day start_time)],
     }],
   ],
 }
 "
-http://www.pepsicenter.com/Calendar.aspx,v-pepsicenter,Reg Exp,,"{
-  pre_parse_html => sub {
-    my($html) = @_;
-    $$html =~ s/ alt="".*?""/ alt="" ""/g;
-    return;
-  },
-  pager => {
-    link => qr/(ArrowNext.*?)\n/i,
-    page_count => 3,
-  },
+http://www.tickethorse.com/Widgets/v2/IFrame/VenueListEvents.aspx?id=5&color=&background-color=,v-pepsicenter,Reg Exp,,"{
   repeat => [
-    [qr/\b$day\n+([^\n]+?)(($time_ap.*?\}))/i => {
-      fields => [qw(ignore summary link url)],
-      follow_link => {
-        once => [
-          [qr/\nPrint\{.*?\n+(.*?)\nPepsi\{/is => {
-            fields => [qw(description)],
-          }],
-          [qr/$day_name, $month $day, $time_ap/ => {
-            fields => [qw(day_name month day start_time)],
-          }],
-        ],
-      },
+    [qr/\n$month\n$day\n$day_name\n+$line\n+.*?$time_ap\n/is => {
+      fields => [qw(month day day_name summary start_time)],
     }],
   ],
 }
@@ -1270,34 +952,10 @@ http://www.piperinn.com/Portals/0/Skins/piperindexnew//Events/tabid/53/Default.a
   ],
 }
 "
-http://www.qspub.com/live_entertainment_calendar,v-qspub,Reg Exp,,"{
+http://holdmyticket.com/buy/venues/Quixotes%20True%20Blue,v-quixotes,Reg Exp,,"{
   repeat => [
-    [qr/(\n$month\.? \d+)\s*(?:\&|\-)\s*$day(\n(.+?)\n?$time_ap\n)/ => {
-      fields => [qw(save month day save summary start_time)],
-    }],
-    [qr/(\n)$month\.? $day.*?\n(.+?)\n?$time_ap\n/ => {
-      fields => [qw(save month day summary start_time)],
-    }],
-    [qr/\n$day_name $month $day (.+?)\n?$time/ => {
-      fields => [qw(day_name month day summary start_time_pm)],
-    }],
-  ],
-}
-"
-http://quixotes.frontgatetickets.com/,v-quixotes,Reg Exp,,"{
-  repeat => [
-    [qr/$line\s*$month\s+$day\s+Quixote/is => {
-      fields => [qw(summary)],
-      follow_link => {
-        once => [
-          [qr/PERFORMANCE INFO\s+$day_name,\s*$month\s*$day\s*(?:Show|Doors) at $time_ap/is => {
-            fields => [qw(save month day start_time)],
-          }],
-          [qr/\n\n($line+)\n\n+PERFORMANCE INFO/i => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
+    [qr/(\nUpcoming Events at Quixotes.*?\n).*?\n$line$month $day, $time_ap/is => {
+        fields => [qw(save summary month day start_time)],
     }],
   ],
 }
@@ -1323,9 +981,9 @@ http://www.redrocksonline.com/Calendar.aspx,v-redrocksonline,Reg Exp,,"{
   ],
 }
 "
-http://www.rockbottom.com/denver-downtown/events,v-rockbottom_denverdowntown,Reg Exp,,"{
+http://www.rockbottom.com/locations/denver-downtown/beers,v-rockbottom_denverdowntown,Reg Exp,,"{
   default_values => {
-    start_time => '6pm',
+    start_time => '7pm',
   },
   repeat => [
     [qr/$month $day $line/ => {
@@ -1355,8 +1013,8 @@ http://www.starbardenver.com/Star_Bar_Denver/Specials_and_Events.html,v-starbar,
     start_time => '9pm',
   },
   repeat => [
-    [qr{\n$day_name $month_day \- (.*?)(?:at $time)?\.?\n}i => {
-      fields => [qw(day_name month_day summary start_time_pm)],
+    [qr/$day_name $month_day \- (.*?)$day_name/is => {
+      fields => [qw(day_name month_day summary save save)],
     }],
   ],
 },
@@ -1381,6 +1039,10 @@ http://www.downtownlouisvilleco.com/street-faire/,v-steinbaugh,Reg Exp,,"{
 }
 "
 http://www.stjulien.com/events-entertainment,v-stjulien,Reg Exp,,"{
+  reject_event => {
+    summary => qr/happy\s+hour/i,
+    description => qr/happy\s+hour/i,
+  },
   pager => {
     link => qr/(Next.*?\})/i,
     page_count => 3,
@@ -1408,27 +1070,14 @@ http://www.sunrosecafe.com/,v-sunrose,Reg Exp,,"{
   reject_event => {
     summary => qr/\bTBA\b/i,
   },
-  default_values => {
-    start_time => '7pm',
-  },
-  repeat => [
-    [qr/(Music Schedule.*\n+.*?)\s*$month\.?\s$day\s*\-?\s*(.*?)($month|\n)/ => {
-      fields => [qw(save month day summary save)],
+  once => [
+    [qr/$month $day, $time_span/i => {
+      fields => [qw(ignore ignore start_time end_time)],
     }],
   ],
-}
-"
-http://buffalorose.net/calendarmasters/top.html,v-buffalorose,Reg Exp,,"{
   repeat => [
-    [qr/(($month).*?\n)/ => {
-      fields => [qw(link month)],
-      follow_link => {
-        repeat => [
-          [qr/\n$day\n((?:[^\n]+\n)+)(.*?)\n((?:[^\n]*$time_ap)|$day\n)/is => {
-            fields => [qw(day summary description save start_time)],
-          }],
-        ],
-      },
+    [qr/$month $day \- $line/ => {
+      fields => [qw(month day summary)],
     }],
   ],
 }
@@ -1448,80 +1097,22 @@ http://www.mychildsmuseum.org/calendar/Default.aspx,v-mychildsmuseum,Reg Exp,,"{
   ],
 }
 "
-http://thedairy.frontgatetickets.com/,v-dairycenter,Reg Exp,,"{
-  repeat => [
-    [qr/$line\s*$month\s+$day\s+The Dairy Center/is => {
-      fields => [qw(summary)],
-      follow_link => {
-        once => [
-          [qr/PERFORMANCE INFO\s+$day_name,\s*$month\s*$day\s*Show at $time_ap/is => {
-            fields => [qw(save month day start_time)],
-          }],
-          [qr/\n\n($line+)\n\n+PERFORMANCE INFO/i => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-http://www.theribhouse.com/center-stage,v-ribhouse,Reg Exp,,"{
-  default_values => {
-    start_time => '8pm',
+http://www.thedairy.org/events/category/performances/month/,v-dairycenter,Reg Exp,,"{
+  pager => {
+    link => qr/(>>\{\d+\})/,
+    page_count => 3,
   },
   repeat => [
-    [qr/\n([^\n]+)\n+$month\s+$day,?\s*$year\s+$time_span\n+([^\n]+\})/s => {
-      fields => [qw(summary month day year start_time end_time url)],
-    }],
-    [qr/\n([^\n]+)\n+$day_name\s+$month\s+$day\s+$time_span\n+([^\n]+\})/s => {
-      fields => [qw(summary day_name month day start_time end_time url)],
-    }],
-    [qr/\n([^\n]+)\n+$month\s+$day,\s*$year\s+$time_span/s => {
-      fields => [qw(summary month day year start_time end_time)],
-    }],
-    [qr/$line$month $day, $year/ => {
-      fields => [qw(summary month day year)],
+    [qr/\n[\d\:]+\s(.*?)$month $day \@ $time_ap.*?\n$line/is => {
+      fields => [qw(summary month day start_time description)],
     }],
   ],
 }
 "
-http://www.tavernhg.com/soiled_dove/shows?site=soiled_dove,v-soiled_dove,Reg Exp,,"{
+http://holdmyticket.com/buy/venues/The%20Oriental%20Theater,v-oriental,Reg Exp,,"{
   repeat => [
-    [qr/\n$day_name, $month $day\n($line+)/ => {
-      fields => [qw(day_name month day summary)],
-      follow_link => {
-        once => [
-          [qr/Show\: $time_ap/i => {
-            fields => [qw(start_time)],
-          }],
-          [qr/(?:Artist_website|Buy_tickets).*?\n+(?:(?:[A-Z0-9 {}]*\n)|(?:[^\n]{0,100}\n))*(.*?)\n\(C\)/is => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-http://www.thinmantavern.com/2011/06/its_time_for_summer_movie_seas.html,v-thinmantavern,Reg Exp,,"{
-  default_values => {
-    start_time => '7:30pm',
-  },
-  repeat => [
-    [qr/$month $day \- (.+?)\n/ => {
-      fields => [qw(month day summary)],
-    }],
-  ],
-}
-"
-http://www.thewestendtavern.com/Events/LiveMusic/tabid/318/Default.aspx,v-westend,Reg Exp,,"{
-  default_values => {
-    start_time => '6pm',
-  },
-  repeat => [
-    [qr/\n$day_name, $month $day\:\n?$line(.*?)\n/, {
-      fields => [qw(day_name month day summary description)],
+    [qr/(\nUpcoming Events at The.*?\n).*?\n$line$month $day, $time_ap/is => {
+        fields => [qw(save summary month day start_time)],
     }],
   ],
 }
@@ -1536,15 +1127,10 @@ http://www.townhallartscenter.com/concerts_events.asp,v-townhallartscenter,Reg E
 "
 http://tridentcafe.com/concerts/,v-tridentcafe,Reg Exp,,"{
   repeat => [
-    [qr/\n$month $day $time_ap (.+?)!!!(.*?)\n/ => {
-      fields => [qw(month day start_time summary description)],
+    [qr/$day_name, $month $day, $year. ([^\n]*?)$time_ap/is => {
+      fields => [qw(day_name month day year summary start_time)],
     }],
   ],
-  pre_parse_html => sub {
-     my($html) = @_;
-     $$html =~ s{(<p><strong>.+?</strong>.+?<strong>.+?</strong>)}{$1!!!}mg;
-     return;
-  },
 }
 "
 http://www.tutti103.com/Upcoming_Events.html,v-tutti103,Reg Exp,,"{
@@ -1611,18 +1197,6 @@ http://www.bouldercounty.org/pages/calendar.aspx,v-waldenponds,Reg Exp,,"{
   ],
 }
 "
-http://www.niwot.com/events/rhythm_on_the_rails/,v-niwot_rhythm,Reg Exp,,"{
-  default_values => {
-    start_time => '6:45pm',
-    end_time => '8:45pm',
-  },
-  repeat => [
-    [qr/($month)\n+\d+\/$day:\n(.+?\})\n$line?/ => {
-      fields => [qw(save month day summary description)],
-    }],
-  ],
-}
-"
 http://www.zephyrloungecolorado.com/LiveMusic.htm,v-zephyrlounge,Reg Exp,,"{
   once => [
     [qr/\n(9\s*pm)/i => {
@@ -1633,7 +1207,7 @@ http://www.zephyrloungecolorado.com/LiveMusic.htm,v-zephyrlounge,Reg Exp,,"{
     summary => qr/T.\s*B.\s*A/i,
   },
   repeat => [
-    [qr/\n$day_name, $month $day\n+$line(.*?)(\n$day_name|\nLive Music)/is => {
+    [qr/\n$day_name. $month $day\n+$line(.*?)(\n$day_name|\nLive Music)/is => {
       fields => [qw(day_name month day summary description save)],
     }],
   ],
@@ -1651,7 +1225,7 @@ http://boulderchamberorchestra.org/concerts.html,,Reg Exp,,"{
     qr/jefferson unitarian/i => 'jeffersonunitarian',
   },
   repeat => [
-    [qr/(MORE DETAILS.*\})/i => {
+    [qr/(MORE INFO.*\})/i => {
       fields => [qw(link)],
       follow_link => {
         once => [
@@ -1672,41 +1246,39 @@ http://boulderchamberorchestra.org/concerts.html,,Reg Exp,,"{
   ],
 }
 "
-http://events.swallowhill.com/Default.asp,,Reg Exp,,"{
-  pre_parse_html => sub {
-    my($html) = @_;
-    # Javascript:popUp('EventDetail','performancedetailpopup.asp?evt=1767', 400, 480,'no','yes','no','no')
-    # http://events.swallowhill.com/performancedetailpopup.asp?evt=1767
-    $$html =~ s{""Javascript\:popUp[^""]+?(evt=\d+).*?""}{/performancedetailpopup.asp?$1}g;
-    return;
+http://eat.oskarblues.com/events/,,Reg Exp,oskar_scraper,"{
+  location_to_venue => {
+    qr/grill/i => 'oskargrill',
+    qr/liquids/i => 'oskarliquids',
+    qr/weasel/i => 'oskarweasel',
   },
-  pager => {
+  repeat => [
+    [qr/\n$month $day, $year $time_ap \- $time_ap\n$line$line/is => {
+      fields => [qw(month day year start_time end_time summary location)],
+    }],
+  ],
+}
+"
+https://swallowhillmusic.org/concerts/index.cfm?page=All,,Reg Exp,,"{
+  xpager => {
     link => qr/(Next \>\{\d+\})\n/i,
     page_count => '4',
-  },
-  reject_event => {
-    summary => qr/discount/i,
   },
   location_to_venue => {
     qr/daniel/i => 'swallowhill_danielshall',
     qr/tuft/i => 'swallowhill_tufttheatre',
     qr/four mile/i => 'fourmilepark',
     qr/cafe/i => 'swallowhill_cafe',
+    qr/botanic/i => 'botanicgardens',
   },
   repeat => [
-    [qr/$line\n+$day_name $date\n$time_ap .*\n$line/ => {
-      fields => [qw(summary day_name date start_time location)],
-      follow_link => {
-        once => [
-          [qr/Performance Date.*?\n+(Presented.*?\n+|[^\n]+Presents\n+)?$line\n+(.*)?\nClose\{/is => {
-            fields => [qw(ignore ignore description)],
-          }],
-        ],
-      },
+    [qr/$day_name\n+$short_date\n+$time_ap\n+$line\n+$line.*?\n\@$line\n+$line/is => {
+      fields => [qw(day_name date start_time ignore summary location description)],
     }],
   ],
 }
 "
+http://www.botanicgardens.org/calendar,,Reg Exp,,
 http://www.boulderbachfestival.org/index.php/site/calendar/,,Reg Exp,bachfestival_scraper,"{
   location_to_venue => {
     qr/Atonement Lutheran/i => 'atonementluthern',
@@ -1723,7 +1295,7 @@ http://www.boulderbachfestival.org/index.php/site/calendar/,,Reg Exp,bachfestiva
     }],
   ],
   repeat => [
-    [qr/$day_name, $month $day, $year at $time_ap\n+($line)/is => {
+    [qr/$day_name, $month $day, $year [^\n]+$time_ap\n+($line)/is => {
       fields => [qw(day_name month day year start_time link url)],
       follow_link => {
           once => [
@@ -1736,7 +1308,10 @@ http://www.boulderbachfestival.org/index.php/site/calendar/,,Reg Exp,bachfestiva
   ],
 }
 "
-http://www.boulderdowntown.com/do/bands-on-the-bricks22,,Reg Exp,,"{
+http://www.boulderdowntown.com/events/bands-on-the-bricks,,Reg Exp,,"{
+  default_values => {
+    start_time => '7pm',
+  },
   location_to_venue => {
     qr/pearl/i => 'pearlst',
   },
@@ -1744,21 +1319,18 @@ http://www.boulderdowntown.com/do/bands-on-the-bricks22,,Reg Exp,,"{
     [qr/(Pearl Street)/i => {
       fields => [qw(location)],
     }],
-    [qr/\n+([^\n]+)\n+Date: $day_name $month $day, $year/ => {
-      fields => [qw(description none none none year)],
-    }],
-    [qr/Time:\s*$time_span/i => {
-      fields => [qw(start_time end_time)],
-    }],
   ],
   repeat => [
-    [qr/\n(.*?)\- $day_name, $month $day/ => {
-      fields => [qw(summary day_name month day)],
+    [qr/\n$month $day.*?\n$line$line/i => {
+      fields => [qw(month day summary description)],
     }],
   ],
 }
 "
-http://www.boulderdowntown.com/do/noon-tunes21,,Reg Exp,,"{
+http://www.boulderdowntown.com/events/noon-tunes,,Reg Exp,,"{
+  default_values => {
+    start_time => 'noon',
+  },
   location_to_venue => {
     qr/pearl/i => 'pearlst',
   },
@@ -1766,81 +1338,13 @@ http://www.boulderdowntown.com/do/noon-tunes21,,Reg Exp,,"{
     [qr/(pearl)/i => {
       fields => [qw(location)],
     }],
-    [qr/\nTime: $time_span\n/i => {
-      fields => [qw(start_time end_time)],
-    }],
-    [qr/\n(Lunchtime concerts .*?)\n/i => {
+    [qr/\n(Engaging lunchtime summer concert .*?)\n/i => {
       fields => [qw(description)],
     }],
   ],
   repeat => [
-    [qr/\n$month $day\n+$line/ => {
-      fields => [qw(month day summary)],
-    }],
-  ],
-}
-"
-http://www.coclubs.com/calendar/,,Reg Exp,,"{
-  pager => {
-    link => qr/format\?\n+.+?\n+($line)/i,
-    page_count => 2,
-  },
-  reject_event => {
-    summary => qr/(Ladies|Femmes) Night|beat the clock|climax|happy hour/i,
-  },
-  location_to_venue => {
-    qr/Vinyl/i => 'coclubs_vinyl',
-    qr/Church/i => 'coclubs_thechurch',
-    qr/Buddha/i => 'coclubs_funkybuddha',
-    qr/2am/i => 'coclubs_2am',
-    qr/Bar Standard/i => 'coclubs_barstandard',
-    qr/City Hall/i => 'coclubs_cityhall',
-    qr/Milk/i => 'coclubs_milk',
-    qr/Mo's/i => 'coclubs_mos',
-    qr/Living Room/i => 'coclubs_livingroom',
-  },
-  repeat => [
-    [qr/$line\n+$day_name $month $day\n+$line/ => {
-      fields => [qw(summary day_name month day location)],
-      follow_link => {
-        once => [
-          [qr/$day_name, $month $day\n+$time_ap/ => {
-            fields => [qw(ignore ignore ignore start_time)],
-          }],
-          [qr/\/\/ \d+\+\n+(.*?)\n(Select Tickets|Artists Appearing)/is => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
-http://www.comusic.org/myadmin/Calendar/calendar_month_listing.asp?CalendarID=2714&NavPageID=69016,,Reg Exp,,"{
-  location_to_venue => {
-    qr/chautauqua/i => 'chautauqua',
-    qr/rembrandt/i => 'rembrandtyard',
-    qr/rocky mountain center/i => 'rockymountaincenter',
-  },
-  reject_event => {
-    description => qr/^$/,
-  },
-  repeat => [
-    [qr/\n(.*?\})\n+$day_name, $month $day, $year\: $time_ap - $time_ap/ => {
-      fields => [qw(summary day_name month day year start_time end_time)],
-      follow_link => {
-        once => [
-          [qr/Location\:\n$line/ => {
-            fields => [qw(location)],
-          }],
-          [qr/Notes:\n(.*)?(BUY NOW|\nTickets|\nStart\:)/is => {
-            fields => [qw(description)],
-          }],
-          [qr/BUY NOW.*?\n+([^\n].*)\nStart\:/is => {
-            fields => [qw(description)],
-          }],
-        ],
-      },
+    [qr/(\n)$month $day\n+$line/ => {
+      fields => [qw(save month day summary)],
     }],
   ],
 }
@@ -1887,54 +1391,10 @@ http://www.louisvilleco.gov/GOVERNMENT/BoardsCommissions/CulturalCouncil/Cultura
   ],
 }
 "
-http://www.oskarblues.com/tunes/muisc-calendar,,Reg Exp,oskar_scraper,"{
-  ignore_duplicates => 1,
-  pre_parse_html => sub {
-    my($html) = @_;
-    die('missing year')
-      unless $$html =~ /.*?(\w+) (20\d{2})</;
-    my($month, $year) = ($1, $2);
-    $month = b_use('Scraper.RegExp')->month_as_int($month);
-    $month++;
-    if ($month > 12) {
-      $month = 1;
-      $year++;
-    }
-    my($next_url) = ""http://www.oskarblues.com/?eme_ajaxCalendar=true&calmonth=$month&calyear=$year&full=1&long_events=0&category=0&author=&contact_person=&location_id="";
-    die('next link')
-      unless $$html =~ s/(href="")#("">&gt;&gt;<)/$1$next_url$2/;
-    return;
-  },
-  pager => {
-    link => qr/\n(>>\{\d+\})/i,
-    page_count => 3,
-  },
-  location_to_venue => {
-    qr/grill/i => 'oskargrill',
-    qr/liquids/i => 'oskarliquids',
-    qr/weasel/i => 'oskarweasel',
-  },
-  once => [
-    [qr/\n$month $year\n/ => {
-      fields => [qw(month year)],
-    }],
-  ],
-  repeat => [
-    [qr/\n(.*?})\n\((.*?)\)/ => {
-      fields => [qw(summary location)],
-      follow_link => {
-        once => [
-          [qr/From\: $time_ap to $time_ap on $month, $day $year\n+$line+\n+$line/i => {
-            fields => [qw(start_time end_time month day year ignore description)],
-          }],
-        ],
-      },
-    }],
-  ],
-}
-"
+http://www.ticketfly.com/api/events/upcoming.rss?venueId=4245,v-beautybardenver,Ticket Fly,,
 http://www.ticketfly.com/api/events/upcoming.rss?venueId=3093,v-benderstavern,Ticket Fly,,
 http://www.ticketfly.com/api/events/upcoming.rss?orgId=745,v-gothictheatre,Ticket Fly,,
+http://www.ticketfly.com/api/events/upcoming.rss?orgId=1123,v-hermanshideaway,Ticket Fly,,
 http://www.ticketfly.com/api/events/upcoming.rss?orgId=755,,Ticket Fly,,"{
   location_to_venue => {
     qr/denver/i => 'moesdenver',
@@ -1942,6 +1402,161 @@ http://www.ticketfly.com/api/events/upcoming.rss?orgId=755,,Ticket Fly,,"{
   },
 }
 "
+http://www.ticketfly.com/api/events/upcoming.rss?orgId=931,,Ticket Fly,,"{
+  location_to_venue => {
+    qr/masterpiece/i => 'cervantesmasterpiece',
+    qr/other/i => 'cervantesother',
+  },
+}
+"
+"http://www.ticketfly.com/api/events/upcoming.rss?venueId=2875,2751,2753,2955,2957,2755,2961",,Ticket Fly,,"{
+  location_to_venue => {
+    qr/Vinyl/i => 'coclubs_vinyl',
+    qr/Church/i => 'coclubs_thechurch',
+    qr/Buddha/i => 'coclubs_funkybuddha',
+    qr/2am/i => 'coclubs_2am',
+    qr/Bar Standard/i => 'coclubs_barstandard',
+    qr/City Hall/i => 'coclubs_cityhall',
+    qr/Milk/i => 'coclubs_milk',
+    qr/Mo's/i => 'coclubs_mos',
+    qr/Living Room/i => 'coclubs_livingroom',
+  },
+}
+"
+"http://www.ticketfly.com/api/events/upcoming.rss?venueId=2881,2883",,Ticket Fly,,"{
+  location_to_venue => {
+    qr/The Walnut Room/i => 'thewalnutroom',
+    qr/Broadway/i => 'thewalnutroompizzeria',
+  },
+}
+"
+http://www.ticketfly.com/api/events/upcoming.rss?venueId=3699,,Ticket Fly,,"{
+  location_to_venue => {
+    qr/dive/i => 'hi_dive',
+    qr/sputnik/i => 'sputnik',
+  },
+}
+"
 http://1stbankcenter.com/events/,v-firstbankcenter,AEGLive,,
-http://bluebirdtheater.net/events.php,v-bluebirdtheater,AEGLive,,
-http://www.ogdentheatre.net/events.php,v-ogdentheatre,AEGLive,,
+http://www.bluebirdtheater.net/events,v-bluebirdtheater,AEGLive,,
+http://appaloosagrill.com/category/calendar/,v-appaloosagrill,Defunct,,"{
+  repeat => [
+    [qr/$line\n+$date\n/ => {
+      fields => [qw(summary date)],
+      follow_link => {
+        once => [
+          [qr/\nSubscribe.*?\n$date\n+(.*?)\nAppaloosa Hours/is => {
+            fields => [qw(ignore description)],
+          }],
+          [qr/(10:00pm)/ => {
+            fields => [qw(start_time)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+http://www.barbedwirebooks.net/calendar/calendar.htm,v-barbedwire,Defunct,,
+http://www.cityparkjazz.org/schedule.html,v-cityparkpavilion,Defunct,,"{
+  accept_event => {
+    location => qr/pavilion.*city park/i,
+  },
+  once => [
+    [qr/all concerts are from $time_span at the (.+?)\n/i => {
+      fields => [qw(start_time end_time location)],
+    }],
+  ],
+  repeat => [
+    [qr/$month $day, $year - $line\n+(?:.*\}\n+)*$line/ => {
+      fields => [qw(month day year summary description)],
+    }],
+  ],
+}
+"
+http://www.curioustheatre.org/index.php?s=20,v-curioustheatre,Defunct,,"{
+  pager => {
+    link => qr/(\>\>.*\})/,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/$day\n(.+?\})/ => {
+      fields => [qw(ignore summary)],
+      follow_link => {
+        once => [
+          [qr/$day_name, $month $day, $year\n$time_ap/ => {
+            fields => [qw(day_name month day year start_time)],
+          }],
+          [qr/\$\d+.*\n+$line/ => {
+            fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+http://www.atasteofcolorado.com/music.asp,v-atasteofcolorado,Defunct,,"{
+  repeat => [
+    [qr/$day_name, $month $day, $time_ap\n.+? by\n.+?\}\n+$line/ => {
+      fields => [qw(day_name month day start_time summary)],
+    }],
+  ],
+}
+"
+http://www.heritagesquare.info/events.htm,v-heritagesquare,Defunct,,"{
+  repeat => [
+    [qr/$month $day\s*$line\s*$line\s*$time_ap/s => {
+      fields => [qw(month day ignore summary start_time)],
+    }],
+  ],
+}
+"
+http://www.boulderado.com,v-boulderado,Defunct,,"{
+  once => [
+    [qr/$time_ap\s*\-\s*$time_ap Live Music/, {
+      fields => [qw(start_time end_time)],
+    }],
+  ],
+  repeat => [
+    [qr/\n$day_name,\s*$month\s+$day\s*~\s*([^\n]+)(.*?)(\n+$day_name|MENU)/s, {
+      fields => [qw(day_name month day summary description save)],
+    }],
+  ],
+}
+"
+http://www.luckypiepizza.com/lucky-pie-events.html,v-luckypiepizza,Defunct,,
+http://www.maryslakelodge.com/music.htm,v-maryslake,Defunct,,
+http://www.mckinners.com/,v-mckinners,Defunct,,
+http://www.millenniumfac.com/ArtistSeries.html,v-millennium,Defunct,,
+http://myparentingplace.org/calendar/play-groups-and-support-groups-schedule-2/,v-parentingplace,Defunct,,"{
+    accept_event => {
+        location => qr/boulder/i,
+    },
+    reject_event => {
+      summary => qr/no groups or classes/i,
+      description => qr/(administrative retreat)|(\bninos\b)/i,
+    },
+}
+"
+http://www.qspub.com/live_entertainment_calendar,v-qspub,Defunct,,"{
+  repeat => [
+    [qr/(\n$month\.? \d+)\s*(?:\&|\-)\s*$day(\n(.+?)\n?$time_ap\n)/ => {
+      fields => [qw(save month day save summary start_time)],
+    }],
+    [qr/(\n)$month\.? $day.*?\n(.+?)\n?$time_ap\n/ => {
+      fields => [qw(save month day summary start_time)],
+    }],
+    [qr/\n$day_name $month $day (.+?)\n?$time/ => {
+      fields => [qw(day_name month day summary start_time_pm)],
+    }],
+  ],
+}
+"
+http://www.buffalorose.net/,v-buffalorose,Defunct,,
+http://www.theribhouse.com/center-stage,v-ribhouse,Defunct,,
+http://www.tavernhg.com/soiled-dove/shows,v-soiled_dove,Defunct,,
+http://www.thinmantavern.com,v-thinmantavern,Defunct,,
+http://www.thewestendtavern.com,v-westend,Defunct,,
+http://www.niwot.com/niwot-events,v-niwot_rhythm,Defunct,,
+http://www.comusic.org,,Defunct,,

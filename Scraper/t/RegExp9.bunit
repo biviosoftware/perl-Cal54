@@ -2,4 +2,31 @@
 # $Id$
 (do('./Scraper.PL'))->(pearlst => [
     [[qw(4)], '04/29/2011 12:00:00'],
-]);
+], <<'EOF');
+{
+    repeat => [
+	[qr/(Featured Events in Downtown Boulder\n+)([^\n]+?\{.*\})\n/i => {
+	    fields => [qw(save link)],
+	    follow_link => {
+		once => [
+		    [qr/\n+([^\n]+)\n+Date\:/i => {
+			fields => [qw(summary)],
+		    }],
+		    [qr/\n+Date\: $day_name $month $day, $year\n/i => {
+			fields => [qw(day_name month day year)],
+		    }],
+		    [qr/\nTime\:\s*$time_span/is => {
+			fields => [qw(start_time end_time)],
+		    }],
+		    [qr/\nTime\:\s*$time_ap/is => {
+			fields => [qw(start_time)],
+		    }],
+		    [qr/Time\:.*?\n(.*?)\nFacebook/is => {
+			fields => [qw(description)],
+		    }],
+		],
+	    },
+	}],
+    ],
+}
+EOF
