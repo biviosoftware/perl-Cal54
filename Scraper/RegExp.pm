@@ -25,7 +25,8 @@ sub eval_scraper_aux {
     my($self, $aux) = @_;
     $aux ||= $self->get('scraper_list')->get('Scraper.scraper_aux');
     return {} unless $aux;
-    my($date) = qr{\b(\d+/\d+/\d{4})\b};
+    my($date) = qr{\b(\d+[/.]\d+[/.]\d{4})\b};
+    my($short_date) = qr{\b(\d+[/.]\d+[/.]\d{2})\b};
     my($year) = qr/\b(20[1-2][0-9])\b/;
     my($time_ap) = qr/\b((?:[0,1]?[0-9]\s*(?:\:\s*[0-5][0-9])?\s*(?:a|p)\.?m\.?)|noon|midnight)/i;
     my($time) = qr/\b((?:[0,1]?[0-9]\s*(?:\:\s*[0-5][0-9])?)|noon|midnight)\b/i;
@@ -177,6 +178,8 @@ sub _date {
     my($month);
 
     if ($current->{date}) {
+	$current->{date} =~ s,\.,\/,g;
+	$current->{date} =~ s,/(\d\d)$,/20$1,;
     }
     elsif ($current->{month}) {
 	$month = $self->month_as_int($current->{month});
