@@ -16,6 +16,7 @@ usage: bivio CalendarEvent [options] command [args..]
 commands
   clear_events -- clear all events for a venue
   delete_scraper -- delete a scraper and all events associated with it
+  delete_dead_scrapers -- deletes scrapers not in the scrapers.csv
   export_venues -- export venues.csv
   export_scrapers -- export scrapers.csv
   import_events -- scrape and import events for a venue
@@ -51,6 +52,32 @@ sub clear_events {
  	return 1;
     });
     return 'deleted ' . $count . ' events';
+}
+
+sub delete_dead_scrapers {
+    my($self) = @_;
+    my($list) = $self->model('ScraperList')->load_all;
+    my($visited_urls) = {
+	@{$list->map_rows(sub {
+	    return shift->get(qw(Website.url Scraper.scraper_id));
+	})}
+    };
+    my($count) = scalar(keys(%$visited_urls));
+    _iterate_csv($self, undef, sub {
+        my($v) = @_;
+	delete($visited_urls->{$v->{'Website.url'}});
+	return 1;
+    });
+    b_die('no records matched')
+	if $count == scalar(keys(%$visited_urls));
+
+    foreach my $id (values(%$visited_urls)) {
+	$self->req->with_realm($id, sub {
+            $self->clear_events;
+	    $self->new_other('RealmAdmin')->delete_auth_realm;
+	});
+    }
+    return;
 }
 
 sub delete_scraper {
