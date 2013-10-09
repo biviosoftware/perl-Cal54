@@ -15,6 +15,7 @@ sub USAGE {
 usage: bivio CalendarEvent [options] command [args..]
 commands
   clear_events -- clear all events for a venue
+  clean_page -- input html file, output HTMLCleaner text
   delete_scraper -- delete a scraper and all events associated with it
   delete_dead_scrapers -- deletes scrapers not in the scrapers.csv
   export_venues -- export venues.csv
@@ -24,6 +25,14 @@ commands
   init_scrapers -- create/update scrapers from scrapers.csv
   init_venues -- create/update venues from venues.csv
 EOF
+}
+
+sub clean_page {
+    my($self) = @_;
+    return b_use('Cal54::HTMLCleaner')->new->clean_html(
+	$self->read_input,
+	'http://ignore/',
+    );
 }
 
 sub clear_events {
