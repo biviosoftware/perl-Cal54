@@ -58,7 +58,7 @@ my($rows);
 		'venue.RealmOwner.display_name' => q{Nissi's},
 #TODO: Write tests just for time formatting, move outside module
 		start_end_am_pm => '5am - 7',
-		month_day => 'Monday December 19, 2050',
+		month_day => qr/December 19, 2050/,
 		'CalendarEvent.time_zone' => 'AMERICA_DENVER',
 	    },
 	],
