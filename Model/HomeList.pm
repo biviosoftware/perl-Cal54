@@ -99,7 +99,6 @@ sub execute {
     return
 	if $self->get_result_set_size > 0
 	|| !$self->req(qw(Model.HomeQueryForm is_search_click));
-b_info('here');
     $self->req->put(query => undef);
     $self->load_page({});
     return;
