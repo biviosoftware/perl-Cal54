@@ -122,7 +122,7 @@ sub get_delegate_info {
 	    GENERAL
 	    ANYBODY
 	    Model.SuggestSiteForm
-	    View.HomeOther->suggest_site
+	    View.Home->suggest_site
 	    next=C4_HOME_LIST
 	)],
 	[qw(
@@ -139,7 +139,7 @@ sub get_delegate_info {
 	    ANYBODY
 	    Action.SiteForum
 	    Action.WikiView->execute_prepare_html
-	    View.HomeOther->wiki_view
+	    View.Home->wiki_view
 	    want_author=0
 	)],
     ]);
