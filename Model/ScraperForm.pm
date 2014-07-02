@@ -6,6 +6,7 @@ use Bivio::Base 'Model.FormModeBaseForm';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
+my($_TZ) = b_use('Type.TimeZone')->get_default;
 
 sub LIST_MODEL {
     return 'ScraperList';
@@ -59,7 +60,10 @@ sub execute_other {
     $list->find_row_by('Scraper.scraper_id', $self->req(qw(Model.Scraper scraper_id)))
 	|| b_die('scraper not in ScraperList');
     my($die) = Bivio::Die->catch(sub {
-        my($scraper) = $list->get_scraper_class->do_one($list, $_DT->now);
+        my($scraper) = $list->get_scraper_class->do_one(
+	    $list,
+	    $_TZ->date_time_from_utc($_DT->now),
+	);
 	$self->internal_put_field(events => $scraper->get('events'));
 	$self->internal_put_field(error => $scraper->get('die')->as_string)
 	    if $scraper->unsafe_get('die');
