@@ -36,6 +36,8 @@ sub eval_scraper_aux {
     my($month_day) = qr{\b([0,1]?[0-9](?:/|-)[0-3]?[0-9])\b};
     my($day) = qr/\b([0-3]?[0-9])(?:st|nd|rd|th)?\b/i;
     my($line) = qr/([^\n]+)\n/;
+    my($link) = qr/([^\n]+?\})\n/;
+    my($am_pm) = qr/\b(am|pm)\b/i;
     my($res) = eval($aux);
     b_die('eval failed: ', $@)
 	if $@;
@@ -166,7 +168,7 @@ sub _add_field_values {
 	next unless defined($str) && length($str);
 	next if $f eq 'save';
 	$values->{$f} = $str;
-	_trace($f, ' --> ', $str) if $_TRACE;
+ 	_trace($f, ' --> ', $str) if $_TRACE;
     }
     return $values;
 }
@@ -186,6 +188,9 @@ sub _date {
     }
     elsif ($current->{month_day}) {
 	($month, $current->{day}) = split(q{/|-}, $current->{month_day});
+    }
+    elsif ($current->{month_int}) {
+	$month = $current->{month_int};
     }
     else {
 	_trace('missing "month" or "month_day": ', $current) if $_TRACE;
@@ -256,7 +261,7 @@ sub _normalize_time {
     elsif ($current->{"${type}_time_pm"}) {
 	return ($time, $time =~ /^12/ ? 'am' : 'pm');
     }
-    return ($time, '');
+    return $time, $current->{am_pm} || '';
 }
 
 sub _process_url {
