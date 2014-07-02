@@ -7,7 +7,7 @@ use Bivio::Base 'Bivio.Scraper';
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
-my($_RE) = b_use('Cal54::Scraper::RegExp');
+my($_JSON) = b_use('MIME.JSON');
 
 sub internal_import {
     my($self) = @_;
@@ -16,49 +16,29 @@ sub internal_import {
     my($url) = $self->get('scraper_list')->get('Website.url');
     $url =~ s{(//.*?)/.*$}{$1};
     $url .= '/';
-    my($json) = $self->c4_scraper_get($url
-        . 'layout/set/popup/content/view/events/(category)/0'
+
+    my($json) = $_JSON->from_text($self->c4_scraper_get($url
+	. '/api/events/getall'
 	. '?'
 	. join('&',
-	    '_=' . $_DT->to_unix($_DT->now) . '000',
-	    'start=' . $_DT->to_unix($start),
-	    'end=' . $_DT->to_unix($end)));
-    my($cleaner) = b_use('Bivio.HTMLCleaner')->new;
+	    'startMs=' . $_DT->to_unix($start) . '000',
+	    'endMs=' . $_DT->to_unix($end) . '000',
+	    'calendarName=' . 'Events+and+Entertainment',
+	 ),
+    ));
 
-    while ($$json =~ m{url\:\s+'([^']+)'}g) {
-	my($event_url) = $1;
-	_add_event($self, $event_url, $cleaner, $url);
+    foreach my $record (@$json) {
+	next if $record->{allDay} eq 'true';
+	next unless $record->{content};
+	next if $record->{content} =~ /\$/;	
+	next if length($record->{content}) > 30;
+	push(@{$self->get('events')}, {
+	    summary => $record->{title},
+	    description => $record->{content},
+	    dtstart => $_DT->from_literal_or_die($record->{start}),
+	    dtend => $_DT->from_literal_or_die($record->{end}),
+	});
     }
-    return;
-}
-
-sub _add_event {
-    my($self, $event_url, $cleaner, $url) = @_;
-    my($html) = $self->c4_scraper_get($url
-        . 'layout/set/modal/' . $event_url);
-    my($str) = $cleaner->clean_html($html, $url);
-    $$str =~ s{\bclose\{\d+\}}{}g;
-    my($qr) = $_RE->eval_scraper_aux(
-	'qr/(.*)?$day_name\s+$month\s+$day,\s+$year\s*\-\s*$time_ap\s*(?:\-\s*$time_ap)?(.*)$/s');
-    my($summary, undef, $month, $day, $year, $start, $end, $desc) =
-	$$str =~ $qr;
-
-    unless ($start) {
-	b_warn('parse failed: ', $str);
-	next;
-    }
-    my($date) = join('/',
-        $_RE->month_as_int($month),
-	$day,
-	$year);
-    push(@{$self->get('events')}, {
-	summary => $self->internal_clean($summary),
-	description => $self->internal_clean($desc),
-	dtstart => $self->internal_date_time($date . ' ' . $start),
-	dtend => $end
-	    ? $self->internal_date_time($date . ' ' . $end)
-	    : undef,
-    });
     return;
 }
 
