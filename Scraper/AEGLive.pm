@@ -26,7 +26,7 @@ sub eval_scraper_aux {
           [qr/Ticket Prices.*?\n(?:[^\n]{0,50}\n)+(.*?)Service and handling fees/is => {
             fields => [qw(description)],
           }],
-          [qr/Ticket Prices.*?\nWebsites\n(?:[^\n]{0,50}\n)+(.*?)Service and handling fees/is => {
+          [qr/\nWebsites\n(?:[^\n]{0,50}\n)+(.*?)Service and handling fees/is => {
             fields => [qw(description)],
           }],
         ],
