@@ -24,12 +24,25 @@ sub internal_initialize {
 	    Scraper.default_venue_id
 	    scraper.RealmOwner.name
 	)],
-	order_by => [qw(
-	    default_venue.RealmOwner.display_name
-	    default_venue.RealmOwner.name
-	    Website.url
-	    Scraper.scraper_type
-	)],
+	order_by => [
+	    qw(
+	        default_venue.RealmOwner.display_name
+		default_venue.RealmOwner.name
+		Website.url
+		Scraper.scraper_type
+	    ),
+	    {
+		name => 'event_count',
+		type => 'Integer',
+		in_select => 1,
+		select_value => '(
+                    SELECT COUNT(*)
+                    FROM calendar_event_t ce
+                    WHERE ce.realm_id = scraper_t.scraper_id
+                    AND ce.dtstart > current_timestamp
+                ) AS event_count',
+	    },
+	],
     });
 }
 
