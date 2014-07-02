@@ -77,6 +77,7 @@ sub list {
 	        default_venue.RealmOwner.display_name
 		Scraper.scraper_type
 	    )),
+	    'event_count',
 	    'Website.url',
 	]),
     );
