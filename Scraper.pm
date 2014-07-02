@@ -43,6 +43,9 @@ sub c4_scraper_get {
     }
     my($aux) = $self->get_scraper_aux;
     sleep($aux->{crawl_delay} || 1);
+    $self->get('user_agent')->parse_head(0)
+	if $aux->{no_parse_head};
+    $self->put(accept_encoding => 1);
     my($res) = $self->extract_content($self->http_get($uri, $log));
     $_GET_CACHE->{$uri} = $$res
 	if $_GET_CACHE;
@@ -51,7 +54,7 @@ sub c4_scraper_get {
 
 sub do_all {
     my($proto, $scraper_list) = @_;
-    my($date_time) = $_DT->now;
+    my($date_time) = $_TZ->date_time_from_utc($_DT->now);
     $scraper_list->do_rows(
 	sub {
 	    my($it) = @_;
