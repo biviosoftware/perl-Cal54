@@ -2,16 +2,18 @@
 # $Id$
 package Cal54::View::Home;
 use strict;
-use Bivio::Base 'View.HomeBase';
+use Bivio::Base 'View.Base';
 use Bivio::UI::ViewLanguageAUTOLOAD;
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
-my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
-my($_HTML) = b_use('Bivio.HTML');
-my($_F) = b_use('UI.Facade');
 
-#TODO: If there is no event page, then render the description in a little popup window
+sub error_default {
+    return shift->internal_body(
+	vs_text_as_prose('title', [[qw(->req task_id)], '->get_name']),
+	b_use('View.Error')->default_body,
+    );
+}
 
 sub list {
     my($self) = @_;
@@ -27,65 +29,62 @@ sub list {
 	    );
 	return;
     });
-    view_put(
-	home_base_html_tag_attrs => ' xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xml:lang="en_US" lang="en_US"',
-	home_base_head => Join([
-	    Title(['CAL54', ['Model.HomeList', '->c4_title']]),
-	    map(_meta(@$_),
-		[title => ['Model.HomeList', '->c4_title']],
-		[site_name => vs_site_name()],
-		[image => _abs_uri(['UI.Facade', 'Icon', '->get_uri', 'fb-logo'])],
-		[type => 'activity'],
-		[url => _abs_uri(['Model.HomeList', '->c4_format_uri'])],
-		[app_id => '237465832943306'],
-		[locale => 'en_US'],
-	    ),
-	    META({
-		NAME => 'robots',
-		CONTENT => 'noarchive',
-		control => ['Model.HomeList', '->c4_noarchive'],
-	    }),
-	    If(
-		['Model.HomeList', '->c4_has_cursor'],
-		Join([
-		    map(_meta(@$_),
-			[description => ['Model.HomeList', '->c4_description']],
-			['street-address' => ['Model.HomeList', 'Address.street1']],
-			['locality' => ['Model.HomeList', 'Address.city']],
-			['region' => ['Model.HomeList', 'Address.state']],
-			['postal-code' => ['Model.HomeList', 'Address.zip']],
-			['country-name' => ['Model.HomeList', 'Address.country']],
-			['phone_number' => ['Model.HomeList', 'Phone.phone']],
-		    ),
-		]),
-	    ),
-	]),
+    view_unsafe_put(
+	xhtml_adorned_title => _head_title_and_meta($self),
+	xhtml_title => '',
+	xhtml_dock_left => _nav_bar($self),
     );
     return $self->internal_body(Join([
-	Form({
-	    form_class => 'HomeQueryForm',
-	    class => 'c4_form',
-	    STYLE => 'z-index:1000',
-	    form_method => 'get',
-	    want_hidden_fields => 0,
-	    value => IfMobile(
-		DIV_c4_mobile_header(
-		    Join([
-			$self->internal_logo,
-			_form(),
-		    ]),
-		),
-		Grid([[
-		    $self->internal_logo
-			->put(cell_class => 'c4_left'),
-		    _form()->put(cell_class => 'c4_right'),
-		]], {
-		    class => 'c4_grid',
-		}),
-	    ),
+	LocalFileAggregator({
+	    view_values => [
+		InlineJavaScript(Simple(<<'EOF')),
+$(function () {
+    'use strict';
+    $('#bivio_search_field').click(function () {
+        if (window.innerWidth < 767) {
+            var that = this;
+            setTimeout(function() {
+                that.setSelectionRange(0, 9999);
+            }, 1);
+            $('html, body').animate({
+                scrollTop: $('#bivio_search_field').offset().top - 5
+            }, 500);
+        }
+    });
+});
+EOF
+	    ],
 	}),
-	_list($self),
+	DIV_row(
+	    DIV(
+		_list($self),
+		'col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-9',
+	    ),
+	),
     ]));
+}
+
+sub suggest_site {
+    my($self) = @_;
+    return _title_and_body(
+	$self,
+	vs_text_as_prose('title.C4_HOME_SUGGEST_SITE'),
+	vs_placeholder_form('SuggestSiteForm', [
+	    map({"SuggestSiteForm.$_"} qw(suggestion email)),
+	    '*ok_button',
+	]),
+    );
+}
+
+sub wiki_view {
+    view_unsafe_put(
+	xhtml_title => '',
+    );
+    return _title_and_body(
+	shift,
+	vs_text_as_prose('wiki_view_topic'),
+	Wiki(),
+    );
 }
 
 sub _abs_uri {
@@ -96,73 +95,96 @@ sub _abs_uri {
     });
 }
 
-sub _form {
-    return DIV_c4_query(
-	Join([
-	    Hidden('when'),
-	    Text('what', {class => 'c4_what', size => 50}),
-	    INPUT({
-		TYPE => 'submit',
-		VALUE => 'Search',
-		class => 'submit',
-	    }),
-	    vs_unless_robot(IfMobile('', C4HomePager(0))),
-	]),
+sub _event_name_link {
+    my($self) = @_;
+    return UserTrackingLink(
+	H4(
+	    String(['RealmOwner.display_name']),
+	    {
+		ITEMPROP => 'name',
+	    },
+	),
+	IfRobot(
+	    If(
+		['->c4_has_this'],
+		Or(['CalendarEvent.url'], ['calendar.Website.url']),
+		['->c4_format_uri'],
+	    ),
+	    Or(['CalendarEvent.url'], ['calendar.Website.url']),
+	),
+	{
+	    class => 'text-info',
+	    ITEMPROP => 'url',
+	},
     );
+}
+
+sub _head_title_and_meta {
+    return Join([
+	Title(['CAL54', vs_text('c4_home_title')]),
+	map(_meta(@$_),
+	    [title => ['Model.HomeList', '->c4_title']],
+	    [site_name => vs_site_name()],
+	    [image => _abs_uri(['UI.Facade', 'Icon', '->get_uri', 'fb-logo'])],
+	    [type => 'activity'],
+	    [url => _abs_uri(['Model.HomeList', '->c4_format_uri'])],
+	    [app_id => '237465832943306'],
+	    [locale => 'en_US'],
+	),
+	META({
+	    NAME => 'robots',
+	    CONTENT => 'noarchive',
+	    control => ['Model.HomeList', '->c4_noarchive'],
+	}),
+	If(
+	    ['Model.HomeList', '->c4_has_cursor'],
+	    Join([
+		map(_meta(@$_),
+		    [description => ['Model.HomeList', '->c4_description']],
+		    ['street-address' => ['Model.HomeList', 'Address.street1']],
+		    ['locality' => ['Model.HomeList', 'Address.city']],
+		    ['region' => ['Model.HomeList', 'Address.state']],
+		    ['postal-code' => ['Model.HomeList', 'Address.zip']],
+		    ['country-name' => ['Model.HomeList', 'Address.country']],
+		    ['phone_number' => ['Model.HomeList', 'Phone.phone']],
+		),
+	    ]),
+	),
+	If(
+	    [['Model.HomeList', '->get_query'], 'has_next'],
+	    LINK({
+		REL => 'next',
+		HREF => URI({
+		    require_absolute => 1,
+		    query => ['Model.HomeList', '->format_query', 'NEXT_LIST'],
+		}),
+	    }),
+	),
+	If(
+	    [['Model.HomeList', '->get_query'], 'has_prev'],
+	    LINK({
+		REL => 'prev',
+		HREF => URI({
+		    require_absolute => 1,
+		    query => ['Model.HomeList', '->format_query', 'PREV_LIST'],
+		}),
+	    }),
+	),
+    ]);
 }
 
 sub _list {
     my($self) = @_;
     return Join([
-	vs_unless_robot(
-	    IfMobile(
-		Link(
-		    String(vs_text('previous_button')),
-		    ['Model.HomeList', '->format_uri', 'PREV_LIST'],
-		    {
-			class => 'c4_prev_button',
-			control => [['Model.HomeList', '->get_query'], 'has_prev']
-		    },
-		),
-	    ),
-	),
 	DIV_c4_list(Join([
-	    IfMobile('', DIV_c4_home_list_title(vs_text('c4_home_list_title'))),
+	    H3(vs_text('c4_home_list_title'))->put(
+		class => 'text-primary hidden-xs',
+	    ),
 	    Grid([[
 		List(HomeList => [
 		    DIV_date(['month_day']),
 		    DIV_item(Join([
-			DIV_line(Join([
-			    If(
-				vs_unless_robot(1, ['->c4_has_this']),
-				UserTrackingLink(
-				    SPAN(
-					String(['RealmOwner.display_name']),
-					{
-					    ITEMPROP => 'name',
-					},
-				    ),
-				    Or(['CalendarEvent.url'], ['calendar.Website.url']),
-				    {
-					class => 'title',
-					ITEMPROP => 'url',
-				    },
-				),
-				Link(
-				    SPAN(
-					String(['RealmOwner.display_name']),
-					{
-					    ITEMPROP => 'name',
-					},
-				    ),
-				    ['->c4_format_uri'],
-				    {
-					class => 'title',
-					ITEMPROP => 'url',
-				    },
-				),
-			    ),
-			])),
+			DIV_line(_event_name_link($self)),
 			Join([
 			    _meta_dates(),
 			    SPAN_time(String(['start_end_am_pm'])),
@@ -231,7 +253,6 @@ sub _list {
 		    empty_list_widget => DIV_c4_empty_list(
 			q{Your search didn't match any results.  Try a different query.},
 		    ),
-		    cell_expand => 1,
 		    cell_align => 'top',
 		}),
 	    ]]),
@@ -240,11 +261,11 @@ sub _list {
 	    String(vs_text('next_button')),
 	    ['Model.HomeList', '->format_uri', 'NEXT_LIST'],
 	    {
-		class => 'c4_next_button',
+		class => 'btn btn-primary btn-lg c4_next_button',
 		control => [['Model.HomeList', '->get_query'], 'has_next'],
+		REL => 'next',
 	    },
 	),
-	$self->internal_footer,
     ]);
 }
 
@@ -286,6 +307,75 @@ sub _meta_dates {
 	),
 	qw(start end),
     );
+}
+
+sub _nav_bar {
+    return NAV(
+	DIV_container(	    
+	    DIV_row(Join([
+		DIV(
+		    Link(
+			Image('logo'),
+			'C4_HOME_LIST',
+		    ),
+		    'col-md-3 col-md-offset-1 col-sm-4 c4_logo_holder',
+		),
+		DIV(
+		    Form(
+			'HomeQueryForm',
+			Join([
+			    DIV(
+				Join([
+				    Text('what', {
+					ID => 'bivio_search_field',
+					size => 50,
+					class => 'form-control input-lg',
+				    }),
+				    SPAN(
+					BUTTON('Search', {
+					    class => 'btn btn-default btn-lg',
+					    TYPE => 'submit',
+					}),
+					'input-group-btn'
+				    ),
+				]),
+				'input-group',
+			    ),
+			    DIV(
+				C4HomePager(0),
+				'hidden-xs',
+			    ),
+			]),
+		    )->put(
+			class => 'navbar-form',
+			form_method => 'get',
+			want_hidden_fields => 0,
+		    ),
+		    'col-sm-8 col-md-7',
+		),
+	    ]),	
+	)),
+    )->put(class => 'navbar navbar-default navbar-static-top');
+}
+
+sub _title_and_body {
+    my($self, $title, $body) = @_;
+    view_unsafe_put(
+	xhtml_dock_left => NAV(DIV_container(	    
+	    DIV_row(Join([
+		DIV(
+		    Link(
+			Image('logo'),
+			'C4_HOME_LIST',
+		    ),
+		    'c4_logo_subform',
+		),
+	    ])),
+	))->put(class => 'navbar navbar-default navbar-static-top'),
+    );
+    return $self->internal_body(Join([
+	DIV_c4_home_other($body),
+    ]));
 }
 
 1;

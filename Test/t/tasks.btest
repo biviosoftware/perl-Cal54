@@ -4,12 +4,8 @@ test_setup('Cal54');
 home_page();
 visit_uri('/pub/url?x=/anything');
 go_back();
-follow_link('comments_or_suggestions');
-submit_form({
-    _anon => 'some-site.com',
-});
 test_deviance(qr{404 Not Found}i);
 visit_uri('/pub/login');
 test_conformance();
-login_as('adm', undef, 'admin.cal54');
+login_as_adm();
 follow_link('Venues');

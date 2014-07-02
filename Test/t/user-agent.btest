@@ -9,7 +9,6 @@ my($actual_browser) = sub {
     $uri = get_uri();
     verify_no_text('noarchive');
     verify_link('>>');
-    verify_link('mobile');
     verify_text('>Next<');
     visit_uri($not_found = "$uri?what=donotfindthis");
     verify_text("Your search didn't match any results.");
@@ -23,8 +22,8 @@ my($robot) = sub {
     home_page();
     my($home_page_uri) = get_uri();
     $search ? verify_text('noarchive') : verify_no_text('noarchive');
-    verify_no_link('>>');
-    verify_no_link('mobile');
+#TODO: verify link has rel="nofollow"    
+#    verify_no_link('>>');
     verify_text('>Next<');
     visit_uri("$uri?what=hello");
     verify_uri(qr{\Q$uri\E$});
@@ -34,7 +33,7 @@ my($robot) = sub {
     verify_uri(qr{\Q$uri\E$});
     visit_uri($not_found);
     verify_text('>Next<');
-    my($uri2) = get_content() =~ /<a class="title" .*?href="(.+?)"/;
+    my($uri2) = get_content() =~ /<a class="text-info" .*?href="(.+?)"/;
     b_die('improve href extraction')
 	unless $uri2;
     visit_uri($uri2);

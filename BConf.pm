@@ -6,6 +6,10 @@ use base 'Bivio::BConf';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
+sub IS_2014STYLE {
+    return 1;
+}
+
 sub merge_overrides {
     my($proto, $host) = @_;
     return Bivio::IO::Config->merge_list({
