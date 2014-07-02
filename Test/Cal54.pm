@@ -8,7 +8,13 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub login_as_adm {
     my($self) = @_;
-    return $self->login_as('adm', undef, 'admin.cal54');
+    $self->home_page('admin.cal54');
+    $self->follow_link('Login');
+    $self->submit_form('1#0', {
+	email => 'adm',
+	password => 'password'
+    });
+    return;
 }
 
 1;
