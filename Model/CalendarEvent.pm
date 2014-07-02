@@ -43,9 +43,7 @@ sub get_auth_user_id {
 
 sub get_content {
     my($self) = @_;
-    my($owner) = $self->new_other('VenueEvent')->unauth_load_or_die({
-	calendar_event_id => $self->get('calendar_event_id'),
-    })->get_model('RealmOwner');
+    my($owner) = $self->get_venue_realm;
     return \(
 	join(
 	    ' ',
@@ -67,6 +65,13 @@ sub get_content {
 
 sub get_search_excerpt {
     return ${$_TS->canonicalize_and_excerpt(shift->get('description') || '')};
+}
+
+sub get_venue_realm {
+    my($self) = @_;
+    return $self->new_other('VenueEvent')->unauth_load_or_die({
+	calendar_event_id => $self->get('calendar_event_id'),
+    })->get_model('RealmOwner')    
 }
 
 sub is_searchable {
