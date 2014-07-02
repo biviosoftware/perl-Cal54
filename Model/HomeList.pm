@@ -104,6 +104,13 @@ sub execute {
     return;
 }
 
+sub format_date_time {
+    my($proto, $dt) = @_;
+    my($res) = $_HFDT->get_widget_value($dt, 'HOUR_MINUTE_AM_PM_LC', 1);
+    $res =~ s/(:00|\s)//g;
+    return $res;
+}
+
 sub internal_initialize {
     my($self) = @_;
     my($info) = $self->SUPER::internal_initialize;
@@ -170,11 +177,7 @@ sub internal_post_load_row {
 	    if $hqf;
     }
     my($start, $end) = map(
-	{
-	    my($x) = $_HFDT->get_widget_value($row->{$_}, 'HOUR_MINUTE_AM_PM_LC', 1);
-	    $x =~ s/(:00|\s)//g;
-	    $x;
-	}
+	$self->format_date_time($row->{$_}),
 	qw(dtstart_tz dtend_tz),
     );
 #TODO: add in "tonight" and "tomorrow" and "evening" and "today" for robots on first page
@@ -218,7 +221,9 @@ sub internal_post_load_row {
 	# give away this data to the world.  Of course, people will be able to scrape
 	# by saying they are google bot.  We could also check IPs of search bots.
 
-	$fields->{is_robot_search} ? 1_000_000 : undef,
+	$fields->{is_robot_search}
+	    ? 1_000_000
+	    : $fields->{has_this} ? 200 : undef,
     )};
     $row->{map_uri} = 'http://maps.google.com/maps?q='
 	. $_HTML->escape_query(
@@ -256,6 +261,7 @@ sub internal_prepare_statement {
 	prev_page => undef,
 	next_page => undef,
 	first_row_seen => 0,
+	has_this => $query->unsafe_get('this'),
     };
     $self->new_other('TimeZoneList')->load_all;
     return _prepare_this($self, $stmt, $query)
