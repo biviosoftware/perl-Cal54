@@ -25,8 +25,13 @@ sub clean_description {
 	)};
     }
     else {
-	$item->{description} = $self->internal_clean($item->{description});
+	$item->{description} =  $self->internal_clean($item->{description});
     }
+    $item->{description} = join(
+	"\n",
+	$self->internal_clean($item->{title} || ''),
+	$item->{description},
+    );
     return;
 }
 
