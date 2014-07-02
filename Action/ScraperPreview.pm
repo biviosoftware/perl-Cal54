@@ -24,6 +24,8 @@ sub execute {
 sub _parse_content {
     my($self, $uri, $cleaner) = @_;
     my($scraper) = b_use('HTML.Scraper')->new;
+    $scraper->get('user_agent')->parse_head(0);
+    $scraper->put(accept_encoding => 1);
     my($content) = $scraper->extract_content($scraper->http_get($uri));
 
     # rss
