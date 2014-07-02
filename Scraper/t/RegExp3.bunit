@@ -2,5 +2,26 @@
 # $Id$
 (do('./Scraper.PL'))->(nissis => [
     [[qw(77)], '1/17/2011 12:00:00'],
-]);
+], <<'EOF', 'http://www.nissis.com/lmcalendar.html');
+{
+  repeat => [
+    [qr/($month\s*>.*)/, {
+      fields => ['link'],
+      follow_link => {
+        once => [
+          [qr/$month\s+$year/, {
+            fields => [qw(month year)],
+          }],
+        ],
+        repeat => [
+          [qr/(\n$day\s+)$time\s*\-\s*$time\s(.*?)(\n$time|\n$day\n|\nGathering Place)/s, {
+            fields => [qw(save day start_time end_time_pm description save)],
+            summary_from_description => qr/(?:^|\n)([^\n]+\{\d+\})\n/s,
+          }],
+        ],
+      },
+    }],
+  ],
+}
+EOF
 
