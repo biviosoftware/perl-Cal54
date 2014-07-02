@@ -34,7 +34,10 @@ sub render_tag_value {
     Link(
 	'<<',
 	_when_uri($prev),
-	'c4_prev',
+	{
+	    class => 'c4_prev',
+	    REL => 'nofollow',
+	},
     )->initialize_and_render($source, $buffer)
 	if $_D->is_greater_than_or_equals($start, $now);
     foreach my $week (0 .. ($weeks - 1)) {
@@ -61,6 +64,7 @@ sub render_tag_value {
 		{
 		    class => "c4_day$selected$weekend",
 		    TITLE => $_D->english_day_of_week($d),
+		    REL => 'nofollow',
 		},
 	    )->initialize_and_render($source, $buffer)
 		if $_D->is_greater_than_or_equals($d, $now);
@@ -69,7 +73,10 @@ sub render_tag_value {
     Link(
 	'>>',
 	_when_uri($_D->add_days($start, 7 * $weeks)),
-	'c4_next',
+	{
+	    class => 'c4_next',
+	    REL => 'nofollow',
+	},
     )->initialize_and_render($source, $buffer);
     return;
 }
