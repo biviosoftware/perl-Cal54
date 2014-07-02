@@ -31,7 +31,7 @@ __PACKAGE__->new({
 	)),
     ],
     Font => [
-	[body => ['family=Arial, Helvetica, sans-serif', 'medium']],
+	@{__PACKAGE__->internal_c4_font},
     ],
     Task => [
 	[ADM_CALENDAR_EVENT_LIST_FORM => '?/events'],
@@ -43,6 +43,10 @@ __PACKAGE__->new({
 	[ADM_SCRAPER_LIST => '?/scrapers'],
 	[ADM_EVENT_REVIEW_LIST => '?/event-review'],
 	[ADM_TOGGLE_EVENT_VISIBILITY => '?/toggle-event-visibility'],
+    ],
+    CSS => [
+	@{__PACKAGE__->internal_c4_css},
+	[html_body => 'padding-top: 35px;'],
     ],
     Text => [
 	@{__PACKAGE__->internal_c4_text},
@@ -67,6 +71,7 @@ __PACKAGE__->new({
 	]],
 	[ScraperList => [
 	    'default_venue.RealmOwner.display_name' => 'Default Venue',
+	    event_count => 'Event Count',
 	]],
 	[[qw(VenueList VenueForm)] => [
 	    'Website.url' => 'Home Page',
