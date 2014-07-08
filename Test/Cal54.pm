@@ -6,6 +6,13 @@ use Bivio::Base 'TestLanguage.HTTP';
 
 our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
+sub find_page_with_text {
+    my($self, $pattern) = @_;
+    $self->follow_link(qr/^_1$/)
+	until $self->text_exists($pattern);
+    return;
+}
+
 sub login_as_adm {
     my($self) = @_;
     $self->home_page('admin.cal54');
