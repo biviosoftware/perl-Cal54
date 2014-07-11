@@ -9,7 +9,8 @@ our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
 
 sub error_default {
-    return shift->internal_body(
+    return _title_and_body(
+	shift,
 	vs_text_as_prose('title', [[qw(->req task_id)], '->get_name']),
 	b_use('View.Error')->default_body,
     );
@@ -341,9 +342,12 @@ sub _nav_bar {
 				]),
 				'input-group',
 			    ),
-			    DIV(
-				C4HomePager(0),
-				'hidden-xs',
+			    IfRobot(
+				BR(),
+				DIV(
+				    C4HomePager(0),
+				    'hidden-xs',
+				),
 			    ),
 			]),
 		    )->put(
