@@ -21,6 +21,9 @@ sub internal_parse_item {
             [qr/.*?$date $time_ap/s => {
                 fields => [qw(date start_time)],
             }],
+            [qr/\bfree\b.*?\n+(.*?)\nVenue Information/is => {
+                fields => [qw(description)],
+            }],
             [qr/buy tickets.*?\n+(.*?)\nVenue Information/is => {
                 fields => [qw(description)],
             }],
