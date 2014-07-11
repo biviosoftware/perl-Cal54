@@ -91,8 +91,15 @@ sub execute {
     my($query) = $self->parse_query_from_request;
     my($this) = $query->unsafe_get('this');
     if ($this) {
-	return
-	    if $self->unsafe_load_this($query);
+	if ($self->unsafe_load_this($query)) {
+	    # don't let search engines revisit expired events
+	    b_die('NOT_FOUND', 'expired event')
+		if $_DT->is_greater_than(
+		    $_DEFAULT_TZ->date_time_from_utc($_DT->now),
+		    $self->get('dtend_tz'),
+		);
+	    return;
+	}
 	$query->put(this => undef);
     }
     $self->load_page($query);
