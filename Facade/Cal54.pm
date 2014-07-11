@@ -20,7 +20,6 @@ my($_SELF) = __PACKAGE__->new({
     ],
     Constant => [
 	[ActionError_default_view => 'Home->error_default'],
-	[ActionError_want_wiki_view => 0],
 	[xlink_c4_about => {
 	    task_id => 'C4_HOME_WIKI_VIEW',
 	    path_info => 'About',
