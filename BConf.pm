@@ -48,6 +48,7 @@ sub merge_overrides {
 	},
 	$proto->merge_http_log({
 	    ignore_list => [
+                'NOT_FOUND.* referer=<undef>',
 	    ],
 	    error_list => [
 	    ],
