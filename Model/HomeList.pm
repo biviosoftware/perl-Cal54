@@ -100,6 +100,9 @@ sub execute {
 		);
 	    return;
 	}
+	else {
+	    b_die('NOT_FOUND', 'event not found');
+	}
 	$query->put(this => undef);
     }
     $self->load_page($query);
