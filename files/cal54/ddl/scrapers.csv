@@ -640,6 +640,9 @@ http://www.ticketweb.com/snl/VenueListings.action?venueId=366605,v-grizzlyrose,R
 "
 http://www.harlequinsgardens.com/classes/,v-harlequin,Reg Exp,,"{
   repeat => [
+    [qr/\n$day_name\.?,? $month_day, $time_ap.*?\:(.*?)\.(.*?)\n/is => {
+      fields => [qw(day_name month_day start_time summary description)],
+    }],
     [qr/\n$day_name\.?,? $month_day, $time_ap.*?\:(.*?)\n/is => {
       fields => [qw(day_name month_day start_time summary)],
     }],
