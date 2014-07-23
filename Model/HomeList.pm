@@ -51,10 +51,7 @@ sub c4_format_uri {
     my($chc) = $self->c4_has_cursor;
     return $self->req->format_uri({
 	$chc && $self->c4_noarchive
-	    ? (seo_uri_prefix => join(
-		' ',
-		$self->get(qw(RealmOwner.display_name venue.RealmOwner.display_name)),
-	    ))
+	    ? (seo_uri_prefix => _seo_prefix_value($self))
 	    : (),
 	path_info => undef,
 	task_id => 'C4_HOME_LIST',
@@ -355,6 +352,20 @@ sub _prepare_this {
         ),
     );
     return;
+}
+
+sub _seo_prefix_value {
+    my($self) = @_;
+    my($val) = join(
+	' ',
+	$self->get(qw(RealmOwner.display_name venue.RealmOwner.display_name)),
+    );
+    # don't let value exceed Apache2 file name size
+    if (length($val) > 255) {
+	$val = substr($val, 0, 255);
+	$val =~ s/\s\S+\s*$//;
+    }
+    return $val;
 }
 
 1;
