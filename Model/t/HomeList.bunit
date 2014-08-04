@@ -114,10 +114,6 @@ my($rows);
 	sub {
 	    req()->put(query => {this => ['999999999'], count => 2});
 	    [req()];
-	} => sub {
-	    $rows = req()->get(class())->map_rows;
-	    assert_equals(2, scalar(@$rows));
-	    return 1;
-	},
+	} => Bivio::DieCode->NOT_FOUND,
     ],
 ];
