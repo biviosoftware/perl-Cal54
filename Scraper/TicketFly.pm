@@ -4,7 +4,6 @@ package Cal54::Scraper::TicketFly;
 use strict;
 use Bivio::Base 'Scraper.RSS';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub clean_description {
     my($self, $item) = @_;

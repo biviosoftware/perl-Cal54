@@ -4,7 +4,6 @@ package Cal54::Model::MobileQueryForm;
 use strict;
 use Bivio::Base 'Model.ListQueryForm';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub internal_query_fields {
     return [

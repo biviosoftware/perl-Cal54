@@ -4,7 +4,6 @@ package Cal54::Test::Cal54;
 use strict;
 use Bivio::Base 'TestLanguage.HTTP';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub find_page_with_text {
     my($self, $pattern) = @_;

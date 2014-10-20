@@ -4,7 +4,6 @@ package Cal54::Delegate::Location;
 use strict;
 use Bivio::Base 'Delegate.SimpleLocation';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub get_delegate_info {
     return [

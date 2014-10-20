@@ -4,7 +4,6 @@ package Cal54::Scraper::AEGLive;
 use strict;
 use Bivio::Base 'Scraper.RegExp';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub eval_scraper_aux {
     my($self) = @_;

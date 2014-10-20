@@ -4,7 +4,6 @@ package Cal54::Model::Venue;
 use strict;
 use Bivio::Base 'Model.RealmOwnerBase';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub add_realm_prefix {
     my($proto, $name) = @_;

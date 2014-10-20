@@ -4,7 +4,6 @@ package Cal54::Facade::Cal54;
 use strict;
 use Bivio::Base 'Facade.Cal54Base';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
 
 my($_SELF) = __PACKAGE__->new({

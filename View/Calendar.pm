@@ -5,7 +5,6 @@ use strict;
 use Bivio::Base 'View';
 use Bivio::UI::ViewLanguageAUTOLOAD;
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub adm_list {
     vs_put_pager('AdmCalendarEventListForm');

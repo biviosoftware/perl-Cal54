@@ -4,7 +4,6 @@ package Cal54::Model::VenueForm;
 use strict;
 use Bivio::Base 'Model.FormModeBaseForm';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_E) = b_use('Type.Email');
 my($_V) = b_use('Model.Venue');
 my($_VL) = b_use('Model.VenueList');

@@ -5,8 +5,6 @@ use strict;
 use Bivio::Base 'Action.EmptyReply';
 b_use('IO.Trace');
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
-our($_TRACE);
 my($_ENTRY_URI) = 'c4e';
 my($_REF_URI) = 'c4r';
 my($_UCF) = b_use('Model.UserCreateForm');

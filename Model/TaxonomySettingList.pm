@@ -4,7 +4,6 @@ package Cal54::Model::TaxonomySettingList;
 use strict;
 use Bivio::Base 'Model.RealmSettingList';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_C) = b_use('FacadeComponent.Constant');
 my($_STEMMER) = b_use('Search.Xapian')->get_stemmer;
 

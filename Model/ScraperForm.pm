@@ -4,7 +4,6 @@ package Cal54::Model::ScraperForm;
 use strict;
 use Bivio::Base 'Model.FormModeBaseForm';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
 my($_TZ) = b_use('Type.TimeZone')->get_default;
 

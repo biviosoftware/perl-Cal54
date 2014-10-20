@@ -4,7 +4,6 @@ package Cal54::Facade::Admin;
 use strict;
 use Bivio::Base 'Facade.Cal54Base';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 __PACKAGE__->new({
     is_production => 1,

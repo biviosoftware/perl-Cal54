@@ -4,7 +4,6 @@ package Cal54::Scraper::ICalendar;
 use strict;
 use Bivio::Base 'Scraper.RegExp';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
 my($_MC) = b_use('MIME.Calendar');

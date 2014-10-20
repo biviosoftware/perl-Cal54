@@ -4,6 +4,5 @@ package Cal54::ViewShortcuts;
 use Bivio::Base 'Bivio::UI::Bootstrap::ViewShortcuts';
 use Bivio::UI::ViewLanguageAUTOLOAD;
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 1;

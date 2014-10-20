@@ -4,7 +4,6 @@ package Cal54::SearchParser::CalendarEvent;
 use strict;
 use Bivio::Base 'Search.Parser';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_M) = b_use('Biz.Model');
 my($_DT) = b_use('Type.DateTime');
 my($_TSL) = b_use('Model.TaxonomySettingList');

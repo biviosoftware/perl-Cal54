@@ -6,7 +6,6 @@ use Bivio::Base 'Bivio::UNIVERSAL';
 use HTML::Parser ();
 use URI ();
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_IDI) = __PACKAGE__->instance_data_index;
 my($_HTML) = b_use('Bivio.HTML');
 my($_S) = b_use('Type.String');

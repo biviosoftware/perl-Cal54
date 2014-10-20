@@ -4,7 +4,6 @@ package Cal54::Model::AdmCalendarEventListForm;
 use strict;
 use Bivio::Base 'Biz.ListFormModel';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_VL) = b_use('Model.VenueList');
 my($_SW) = __PACKAGE__->get_instance('SearchWords')->get_field_type('value');
 

@@ -4,7 +4,6 @@ package Cal54::Util::Geocode;
 use strict;
 use Bivio::Base 'Bivio.ShellUtil';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_S) = b_use('HTML.Scraper');
 my($_API_URI) = 'http://maps.googleapis.com/maps/api/geocode/json';
 my($_HTML) = b_use('Bivio.HTML');

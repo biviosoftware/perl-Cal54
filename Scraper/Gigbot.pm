@@ -4,7 +4,6 @@ package Cal54::Scraper::Gigbot;
 use strict;
 use Bivio::Base 'Scraper.ICalendar';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub internal_import {
     my($self) = @_;

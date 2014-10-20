@@ -5,11 +5,9 @@ use strict;
 use Bivio::Base 'Scraper.ICalendar';
 b_use('IO.Trace');
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
 my($_JSON) = b_use('MIME.JSON');
-our($_TRACE);
 
 sub internal_import {
     my($self) = @_;

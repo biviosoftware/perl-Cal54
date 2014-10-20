@@ -4,7 +4,6 @@ package Cal54::Model::HomeList;
 use strict;
 use Bivio::Base 'Model.CalendarEventList';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 use URI ();
 my($_IDI) = __PACKAGE__->instance_data_index;
 my($_DEFAULT_TZ) = b_use('Type.TimeZone')->get_default;

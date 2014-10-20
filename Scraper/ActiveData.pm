@@ -4,7 +4,6 @@ package Cal54::Scraper::ActiveData;
 use strict;
 use Bivio::Base 'Bivio.Scraper';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
 

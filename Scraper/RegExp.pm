@@ -5,7 +5,6 @@ use strict;
 use Bivio::Base 'Bivio.Scraper';
 b_use('IO.Trace');
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
 my($_MONTHS) = {
     map((
@@ -19,7 +18,6 @@ my($_DAY_NAMES) = [
         lc(substr($_, 0, 5))),
 	$_DT->english_day_of_week_list),
 ];
-our($_TRACE);
 
 sub eval_scraper_aux {
     my($self, $aux) = @_;

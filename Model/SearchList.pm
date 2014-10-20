@@ -4,7 +4,6 @@ package Cal54::Model::SearchList;
 use strict;
 use Bivio::Base 'Model';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
 my($_DTWTZ) = b_use('Type.DateTimeWithTimeZone');
 my($_HL) = b_use('Model.HomeList');

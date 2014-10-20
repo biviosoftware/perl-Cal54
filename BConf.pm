@@ -4,7 +4,6 @@ package Cal54::BConf;
 use strict;
 use base 'Bivio::BConf';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub IS_2014STYLE {
     return 1;

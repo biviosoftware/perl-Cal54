@@ -4,7 +4,6 @@ package Cal54::Model::CalendarEvent;
 use strict;
 use Bivio::Base 'Model';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
 my($_S) = b_use('Bivio.Search');
 my($_TS) = b_use('Type.String');

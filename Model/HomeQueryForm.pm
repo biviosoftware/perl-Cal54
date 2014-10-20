@@ -4,7 +4,6 @@ package Cal54::Model::HomeQueryForm;
 use strict;
 use Bivio::Base 'Model.ListQueryForm';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_L) = b_use('Type.Line');
 my($_EMPTY_WHAT) = ' ';
 my($_ULF) = b_use('Model.UserLoginForm');

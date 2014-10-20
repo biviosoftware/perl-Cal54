@@ -5,7 +5,6 @@ use strict;
 use Bivio::Base 'HTML.Scraper';
 use XML::Parser ();
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_A) = b_use('IO.Alert');
 my($_C) = b_use('IO.Config');
 my($_CE) = b_use('Model.CalendarEvent');

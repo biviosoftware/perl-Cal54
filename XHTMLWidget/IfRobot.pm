@@ -4,7 +4,6 @@ package Cal54::XHTMLWidget::IfRobot;
 use strict;
 use Bivio::Base 'Widget.If';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub initialize {
     my($self) = @_;

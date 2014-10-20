@@ -4,7 +4,6 @@ package Cal54::Action::ScraperPreview;
 use strict;
 use Bivio::Base 'Biz.Action';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_RSS) = b_use('Scraper.RSS');
 
 sub execute {

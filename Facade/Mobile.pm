@@ -4,7 +4,6 @@ package Cal54::Facade::Mobile;
 use strict;
 use Bivio::Base 'Facade.Cal54';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 __PACKAGE__->new({
     clone => 'Cal54',

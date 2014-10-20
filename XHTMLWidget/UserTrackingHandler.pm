@@ -4,7 +4,6 @@ package Cal54::XHTMLWidget::UserTrackingHandler;
 use strict;
 use Bivio::Base 'HTMLWidget.JavaScript';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_VAR) = __PACKAGE__->var_name('c4_uth');
 
 sub get_html_field_attributes {

@@ -4,7 +4,6 @@ package Cal54::Util::CalendarEvent;
 use strict;
 use Bivio::Base 'Bivio.ShellUtil';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_DT) = b_use('Type.DateTime');
 my($_F) = b_use('IO.File');
 my($_S) = b_use('Bivio.Scraper');

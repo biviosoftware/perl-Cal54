@@ -4,7 +4,6 @@ package Cal54::Model::VenueList;
 use strict;
 use Bivio::Base 'Biz.ListModel';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub EDITABLE_FIELD_LIST {
     return qw(

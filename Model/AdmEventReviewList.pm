@@ -4,7 +4,6 @@ package Cal54::Model::AdmEventReviewList;
 use strict;
 use Bivio::Base 'Model.HomeList';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub EXCLUDE_HIDDEN_ROWS {
     return 0;

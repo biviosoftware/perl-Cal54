@@ -5,7 +5,6 @@ use strict;
 use Bivio::Base 'Bivio::UI::HTML::Widget::Script';
 #use Bivio::UI::ViewLanguageAUTOLOAD;
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub JAVASCRIPT_TOGGLE_FORM {
     return <<'EOF';

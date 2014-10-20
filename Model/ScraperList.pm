@@ -4,7 +4,6 @@ package Cal54::Model::ScraperList;
 use strict;
 use Bivio::Base 'Biz.ListModel';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 
 sub get_scraper_class {
     my($self) = @_;

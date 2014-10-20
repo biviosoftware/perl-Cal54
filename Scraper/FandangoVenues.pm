@@ -4,7 +4,6 @@ package Cal54::Scraper::FandangoVenues;
 use strict;
 use Bivio::Base 'HTML.Scraper';
 
-our($VERSION) = sprintf('%d.%02d', q$Revision$ =~ /\d+/g);
 my($_F) = b_use('IO.File');
 my($_R) = b_use('IO.Ref');
 my($_G) = b_use('ShellUtil.Geocode');
