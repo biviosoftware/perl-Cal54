@@ -4,6 +4,7 @@ package Cal54::Action::UserTracking;
 use strict;
 use Bivio::Base 'Action.EmptyReply';
 b_use('IO.Trace');
+our($_TRACE);
 
 my($_ENTRY_URI) = 'c4e';
 my($_REF_URI) = 'c4r';
