@@ -4,7 +4,7 @@ package Cal54::Scraper::RegExp;
 use strict;
 use Bivio::Base 'Bivio.Scraper';
 b_use('IO.Trace');
-
+our($_TRACE);
 my($_DT) = b_use('Type.DateTime');
 my($_MONTHS) = {
     map((
