@@ -4,6 +4,7 @@ package Cal54::Scraper::Google;
 use strict;
 use Bivio::Base 'Scraper.ICalendar';
 b_use('IO.Trace');
+our($_TRACE);
 
 my($_D) = b_use('Type.Date');
 my($_DT) = b_use('Type.DateTime');
