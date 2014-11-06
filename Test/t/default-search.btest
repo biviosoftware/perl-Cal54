@@ -3,35 +3,35 @@
 test_setup('Cal54');
 home_page();
 verify_form({
-    _anon => 'music',
+    Search => 'music',
 });
 submit_form({
-    _anon => 'jazz',
+    Search => 'jazz',
 });
 home_page();
 verify_form({
-    _anon => 'jazz',
+    Search => 'jazz',
 });
 submit_form({
-    _anon => 'notfindingthis',
+    Search => 'notfindingthis',
 });
 home_page();
 verify_form({
-    _anon => 'jazz',
+    Search => 'jazz',
 });
 submit_form({
-    _anon => '',
+    Search => '',
 });
 verify_form({
-    _anon => '',
+    Search => '',
 });
 home_page();
 verify_form({
-    _anon => '',
+    Search => '',
 });
 submit_form({
-    _anon => '',
+    Search => '',
 });
 verify_form({
-    _anon => '',
+    Search => '',
 });
