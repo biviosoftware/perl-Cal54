@@ -16,7 +16,7 @@ sub login_as_adm {
     my($self) = @_;
     $self->home_page('admin.cal54');
     $self->follow_link('Login');
-    $self->submit_form('1#0', {
+    $self->submit_form('Login', {
 	email => 'adm',
 	password => 'password'
     });
