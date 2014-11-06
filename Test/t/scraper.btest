@@ -3,11 +3,10 @@
 test_setup('Cal54');
 login_as_adm();
 follow_link('Scrapers', 'Boulder Book Store');
-my($run_button) = '1#1';
-submit_form($run_button);
+submit_form('run');
 verify_text(qr{venue.*boulderbookstore.*venue.*boulderbookstore}s);
 verify_no_text('Bivio::Die');
-submit_form($run_button);
+submit_form('run');
 verify_text(qr{venue.*boulderbookstore.*venue.*boulderbookstore}s);
 verify_no_text('Bivio::Die');
 follow_link('event_review');
