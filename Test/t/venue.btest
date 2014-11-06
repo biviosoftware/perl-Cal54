@@ -6,7 +6,7 @@ do_test_backdoor(TestData => 'reset_all');
 go_back();
 follow_link(qw(Venues add_venue));
 my($base) = random_string();
-submit_form('1#0', my $values = {
+submit_form('OK', my $values = {
     name => my $name = "$base Test",
     home => "http://$base.com",
     calendar => "http://$base.com/cal",
@@ -21,7 +21,7 @@ submit_form('1#0', my $values = {
 find_page_with_text($name);
 follow_link($name);
 verify_form($values);
-submit_form('1#0', $values = {
+submit_form('OK', $values = {
     name => $name = "new $base Test",
     tag => lc('v' . $base),
     home => "http://new-$base.com",
