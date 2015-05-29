@@ -25,7 +25,6 @@ http://www.wowmuseum.com/calendar.html,v-wow,Google,,"{
     },
 }
 "
-http://boulderbookstore.indiebound.com/event,v-boulderbookstore,ICalendar,,
 http://www.conoroneills.com/boulder/?plugin=all-in-one-event-calendar&controller=ai1ec_exporter_controller&action=export_events&cb=608177437,v-conoroneill,ICalendar,,
 http://lannies.com/?page_id=6735,v-lannies,ICalendar,,"{
   reject_event => {
@@ -262,6 +261,26 @@ http://tickets.coloradosymphony.org/single/EventListing.aspx,v-boettcherconcert,
           }],
           [qr/\n([^\n]+)\n+[^\n]+Symphony Sponsors/is => {
             fields => [qw(description)],
+          }],
+        ],
+      },
+    }],
+  ],
+}
+"
+http://www.boulderbookstore.net/event,v-boulderbookstore,Reg Exp,,"{
+  ignore_duplicates => 1,
+  pager => {
+    link => qr/\n(next >>\{\d+\})/is,
+    page_count => 3,
+  },
+  repeat => [
+    [qr/\n$line\n+$date \- $time_ap\n/ => {
+      fields => [qw(summary date start_time)],
+      follow_link => {
+        once => [
+          [qr/\nYou are here\n(.*?)\n\n(.*?)\nEvent date/is => {
+            fields => [qw(ignore description)],
           }],
         ],
       },
