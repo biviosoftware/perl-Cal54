@@ -1,0 +1,24 @@
+[
+  {
+    'description' => 'Homegrown Ska and Reggae tunes inspired by mountain living - The Alcapones is a group from the Front Range, CO area with a mix of vocal and instrumental music that brings a new-school feel to what was made popular in Jamaica during the 1960s.From raw originals to jazz/ska/reggae fusion, you will find that The Alcapones\' styles continuously inspire your feet on the dance floor. Raise your Spirit and celebrate life like a gangster of love!',
+    'dtend' => '2457215 27000',
+    'dtstart' => '2457215 14400',
+    'location' => undef,
+    'summary' => 'THE ALCAPONES',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => 'ai1ec-1675@www.conoroneills.com/boulder',
+    'url' => 'http://www.conoroneills.com/boulder/event/the-alcapones/',
+    'venue' => 'conoroneill'
+  },
+  {
+    'description' => 'The USMNT\'s second match of the Group Stage of the Gold Cup is at 6:30 pm tonight against Haiti. Come to Conor\'s to support US Soccer.',
+    'dtend' => '2457215 9000',
+    'dtstart' => '2457215 1800',
+    'location' => undef,
+    'summary' => 'Gold Cup: USA vs. Haiti',
+    'time_zone' => bless( sub { "DUMMY" }, 'Bivio::Type::TimeZone' ),
+    'uid' => 'ai1ec-1710@www.conoroneills.com/boulder',
+    'url' => 'http://www.conoroneills.com/boulder/event/gold-cup-usa-vs-haiti/',
+    'venue' => 'conoroneill'
+  }
+]
