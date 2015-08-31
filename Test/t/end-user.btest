@@ -5,7 +5,7 @@ home_page();
 set_user_agent_to_actual_browser();
 my($search) = random_string();
 submit_form({
-    Search => $search,
+    _anon => $search,
 });
 my($tag) = random_string();
 visit_uri("/pub/url?x=" . Bivio_HTML()->escape_attr_value("http://www.bivio.biz/?$tag"));
