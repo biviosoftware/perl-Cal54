@@ -6,8 +6,8 @@ Request();
 	address_to_geoposition => [
 	    ['2701 Iris Avenue 80304'] => [
                 '2701 Iris Ave, Boulder, CO 80304, USA',
-		'40.036573',
-		'-105.2630908',
+		'40.0368426',
+		'-105.2601975',
 	    ],
 	],
     ],
