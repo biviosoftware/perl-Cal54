@@ -2,11 +2,11 @@
 # $Id$
 test_setup('Cal54');
 login_as_adm();
-follow_link('Scrapers', 'traditional_irish_pub');
+follow_link('Scrapers', 'la_rumba');
 submit_form('run');
-verify_text(qr{venue.*conoroneill.*venue.*conoroneill}s);
+verify_text(qr{venue.*larumba.*venue.*larumba}s);
 verify_no_text('Bivio::Die');
 submit_form('run');
-verify_text(qr{venue.*conoroneill.*venue.*conoroneill}s);
+verify_text(qr{venue.*larumba.*venue.*larumba}s);
 verify_no_text('Bivio::Die');
 follow_link('event_review');
